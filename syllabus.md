@@ -1,7 +1,11 @@
-NYU Abu Dhabi
-Interactive Media Program
-Course title: Introduction to Interactive Media
-<h1>Spring 2020 Syllabus</h1>
+<h1>NYU Abu Dhabi</h1>
+<h1>Interactive Media Program</h1>
+<h1>Course title: Introduction to Interactive Media</h1>
+Course number: IM-UH 1010
+Credit Hours: 4
+Prerequisites: None
+Classroom: online
+<h1>Summer 2020 Syllabus</h1>
 This syllabus is subject to change
 <h3>Helpful Information</h3>
 <ul>
@@ -9,19 +13,12 @@ This syllabus is subject to change
  	<li>Email me anytime to set up an appointment at an alternate time or place (e.g. the lab) or for any questions or concerns: <a href="mailto:mshiloh@nyu.edu">mshiloh@nyu.edu</a></li>
  	<li>Jack Du (IM Instructor) is in the lab most of the day on weekdays: <a href="mailto:jackbdu@nyu.edu">jackbdu@nyu.edu</a>&nbsp;</li>
 </ul>
-Course title: Introduction to Interactive Media
-Course number: IM-UH 1010
-Credit Hours: 4
-Prerequisites: None
-Classroom: Arts Center IM Lab (Rm 029)
 
-Class Time: Tuesday 4:05 pm - 5:20 pm &amp; Thursday 2:40 pm - 5:20 pm
+Class Time: Sunday, Monday, Tuesday, Wednesday 1-4pm
 
 Instructor: Michael Shiloh
 Email: michael.shiloh@nyu.edu
-Office/studio: C3-156
-Office Hours: TBA&nbsp;
-Walk-in or make an appointment at any time during these hours. Otherwise, if you see me in the lab, please feel free to approach me.
+Office Hours: You may send me email at any time
 
 <strong>Course Description</strong>
 
