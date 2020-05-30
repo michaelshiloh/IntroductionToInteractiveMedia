@@ -1,3 +1,16 @@
+<h1>NYU Abu Dhabi</h1>
+<h1>Interactive Media Program</h1>
+<h1>Course title: Introduction to Interactive Media</h1>
+Course number: IM-UH 1010 
+Credit Hours: 4 
+Prerequisites: None 
+Classroom: online 
+Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)
+
+<h1>This document: Student Lead Discussion Schedule</h1>
+This is all subject to change
+
+
 Each student is responsible for leading discussion of the weekly readings.
 
 - June 1 [A Brief Rant on the Future of Interaction
