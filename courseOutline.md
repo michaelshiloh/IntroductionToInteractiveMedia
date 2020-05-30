@@ -1,18 +1,32 @@
+Course Outline
 
-<strong>Course Outline</strong>
-<ul>
- 	<li>Week 1: Introduction to Electricity</li>
- 	<li>Week 2: Introduction to Arduino: Digital Input/output</li>
- 	<li>Week 3: Analog Input, Mapping</li>
- 	<li>Week 4: Analog output, Sound, Servo motor</li>
- 	<li>Week 5: Construction and Debugging</li>
- 	<li>Week 6: Midterm, Motors</li>
- 	<li>Week 7: Introduction to Processing</li>
- 	<li>Week 8: Processing: Translation</li>
- 	<li>Week 9: Processing: Functions and Object Oriented Programming</li>
- 	<li>Week 10: Processing: Text and Arrays</li>
- 	<li>Week 11: Serial Communication between Processing and Arduino, Final Project proposals</li>
- 	<li>Week 12: Computer Vision</li>
- 	<li>Week 13: Work on Final Projects</li>
- 	<li>Week 14: Final Projects, End of Semester Showcase</li>
-</ul>
+Processing
+
+ 	Day 1: Introduction 
+ 	Day 2: Translation
+ 	Day 3: Functions and Object Oriented Programming
+ 	Day 4: Text and Arrays
+ 	Day 5: Image manipulation
+ 	Day 6: Sound
+
+Midterm
+
+ 	Day 7: Midterm Project
+
+Electronics and Arduino
+
+ 	Day 8: Introduction to Electricity
+ 	Day 9: Introduction to Arduino: Digital Input/output
+ 	Day 10: Analog Input, Mapping
+ 	Day 11: Analog output, Sound, Servo motor
+	Day 12: DC motors
+ 	Day 13: Construction and Debugging
+
+Processing and Arduino
+
+ 	Day 14: Serial Communication, Final Project proposals
+
+Final Projects
+
+ 	Day 15: Work on Final Projects
+ 	Day 16: Final Project Critique
