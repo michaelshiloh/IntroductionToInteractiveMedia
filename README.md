@@ -9,7 +9,7 @@ The current session is Summer 2020. Previous sessions will be listed
 
 [Syllabus](syllabus.md)
 
-[Course Outline](outline.md)
+[Course Outline](courseOutline.md)
 
 [Lecture notes](lectureNotes.md)
 
