@@ -19,7 +19,11 @@ Administration
 - **Record Zoom!**
 - Introductions
 - Syllabus etc.
-- What’s the class about?
+- Student lead discussions (assign dates)
+- Join the Discord server [here](https://discord.gg/NASyNHw)
+
+What’s the class about?
+
 <ul>
  	<li>
 Digital computation beyond computers (sometimes called "physical computing") considering humanistic needs in design and usability</li>
@@ -75,8 +79,6 @@ harp</a></li>
 </ul>
 </li>
 </ul>
-- Student lead discussions (assign dates)
-- Join the Discord server [here](https://discord.gg/NASyNHw)
 
 Let's get started
 
