@@ -1,20 +1,20 @@
 Each student is responsible for leading discussion of the weekly readings.
 
-June 1
-June 2
-June 3
-June 7
-June 8
-June 9
-June 10
-June 14
-June 15
-June 16
-June 17
-June 21
-June 22
-June 23
-June 24
+- June 1
+- June 2
+- June 3
+- June 7
+- June 8
+- June 9
+- June 10
+- June 14
+- June 15
+- June 16
+- June 17
+- June 21
+- June 22
+- June 23
+- June 24
 
 
 - [The Art of Interactive Design Chapter
