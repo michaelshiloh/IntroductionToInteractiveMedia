@@ -1,16 +1,17 @@
 <h1>NYU Abu Dhabi</h1>
 <h1>Interactive Media Program</h1>
 <h1>Course title: Introduction to Interactive Media</h1>
-Course number: IM-UH 1010
-Credit Hours: 4
-Prerequisites: None
-Classroom: online
+Course number: IM-UH 1010 
+Credit Hours: 4 
+Prerequisites: None 
+Classroom: online 
 Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)
 
-<h1>Summer 2020 Lecture Notes</h1>
+<h1>This document: Summer 2020 Lecture Notes</h1>
 This is all subject to change
 
-###1 June 2020
+
+### 31 May 2020
 
 Administration
 
@@ -19,6 +20,7 @@ Administration
 - Syllabus etc.
 - What’s the class about?
 - Examples
+- Student lead discussions (assign dates)
 
 Let's get started
 
@@ -33,28 +35,39 @@ Let's get started
 - Instructions for this are
 [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
 
-Please use your name for your account name so that I can more easily recognize
-it, and name your repository "Introduction to Interactive Media". If you don't
-want to use your name for privacy reasons, please choose an alias that I can
+Please use your name for your account name so that I can more easily recognize it. 
+If you don't want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
-- Create a README.md file
+
+Name your repository "Introduction to Interactive Media". 
+
+- Edit your README.md file
 	- What is README.md?
 	- What is .md?
 - Simple Markdown 
 	- **Bold**
 	- Paragraphs must be separated by a blank line
-	- ![Image](eye-calipers.jpg)
+	- Inserting images: ![](eye-calipers.jpg)
+	- Always remember to commit your changes!
 	- More [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
 
 **Processing**
+
 Simple shapes
+
 - ellipse()
 - rect();
+- size();
 - triangle(x1, y1, x2, y2, x3, y3);
 - line()
 - point()
-Confused? Use the Processing reference page!
+
+What does this all mean?
+- Functions
+- Arguments or parameters
+
 Controlling color, fill, and stroke
+
 - color()
 - stroke()
 - noStroke()
@@ -63,20 +76,35 @@ Controlling color, fill, and stroke
 - arc(100, 100, 100, 100, 0, PI, CHORD);
 - random()
 
+Confused? 
+- Google
+- Processing reference page
+
+Variables
+- int myNumber = 45;
+- int myRandomNumber = random(255);
+- int myRandomNumber = round(random(255));
+- Built-in variables
+	- width, height
+
+
+
+### 2 June 2020
+
+Look at Selfies
+
+Interaction
 
 
 ----------------
 not organized yet
 
-What size is my screen?
-
-width
-height
 
 
 
 
-Interaction
+
+
 
 mouseX
 mouseY
