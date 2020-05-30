@@ -28,8 +28,8 @@ June 24
 	article](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
 - [Making Interactive Art: Set the Stage, Then Shut Up and
 	Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/)
-- [Physical Computing’s Greatest hits and misses](Physical Computing’s
-	Greatest hits and misses) 
+- [Physical Computing’s Greatest hits and
+	misses](http://www.tigoe.net/blog/category/physicalcomputing/176/) 
 - [Graham Pullin, Design Meets Disability](docs/Design_meets_disability.pdf)
 - [Casey Reas’ Eyeo talk on chance operations](https://vimeo.com/45851523) 
 - [Her Code Got Humans on the
