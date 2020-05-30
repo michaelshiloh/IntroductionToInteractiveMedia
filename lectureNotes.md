@@ -22,56 +22,53 @@ Administration
 - What’s the class about?
 <ul>
  	<li>
-<div>Digital computation beyond computers (sometimes called "physical computing") considering humanistic needs in design and usability</div></li>
+Digital computation beyond computers (sometimes called "physical computing") considering humanistic needs in design and usability</li>
  	<li>
-<div>Computers traditionally lacked knowledge of outside world beyond a keyboard, mouse</div></li>
+Computers traditionally lacked knowledge of outside world beyond a keyboard, mouse</li>
+<li>Look critically at products and designs</li>
  	<li>
-<div>As artists and designers, we can explore new paradigms of interaction with machines and each other</div></li>
+As artists and designers, we can explore new paradigms of interaction with machines and each other</li>
  	<li>
-<div>Relatively easily and inexpensively explore creative computation through open source software and hardware</div></li>
+Relatively easily and inexpensively explore creative computation through open source software and hardware</li>
  	<li>
-<div>No background needed, strong DIY attitude</div></li>
+No background needed, strong DIY attitude</li>
  	<li>
-<div>Low barrier to entry, high ceiling</div></li>
+Low barrier to entry, high ceiling</li>
 </ul>
 - Examples
 <ul>
- 	<li>Carlos Guedes' wonderful <a href="https://vimeo.com/235763130">Phobos</a>, Orquestra Robótica Disfuncional&nbsp;(1 min)</li>
- 	<li>Sudhu Tewari's <a href="https://www.youtube.com/watch?v=MjNB3nKPMb8" rel="nofollow">Yasmin Electro Mechanical Sequencer</a></li>
- 	<li>List of&nbsp;<a href="http://eat.cca.edu/" rel="nofollow">inspirational movies</a>&nbsp;collected by&nbsp;<a href="http://www.ultrafuzz.net/" rel="nofollow">Barney Haynes</a>&nbsp;(also&nbsp;<a href="https://vimeo.com/barneyhaynes" rel="nofollow">here</a>) and shown at his Interface classes.</li>
+ 	<li>Carlos Guedes' wonderful <a href="https://vimeo.com/235763130">Phobos</a>, Orquestra Robótica Disfuncional;(1 min)</li>
+ 	<li>Sudhu Tewari's <a href="https://www.youtube.com/watch?v=MjNB3nKPMb8" >Yasmin Electro Mechanical Sequencer</a></li>
+ 	<li>List of;<a href="http://eat.cca.edu/" >inspirational movies</a>;collected by;<a href="http://www.ultrafuzz.net/" >Barney Haynes</a>;(also;<a href="https://vimeo.com/barneyhaynes" >here</a>) and shown at his Interface classes.</li>
  	<li>List collected by <a href="https://github.com/zamfi">J.D. Zamfirescu</a>
-1.1. Basic robots
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=zkpH1BjD6Wc" rel="nofollow">Tree-climbing robot</a>
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120" rel="nofollow">Insect robot</a>
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=YblSltHDbIU" rel="nofollow">Treadbot</a>
-1.1. Installations
-1.1.1. <a href="http://www.future-cities-lab.net/projects/#/murmurwall/" rel="nofollow">Murmur Wall</a>
-1.1.1.&nbsp;<a href="http://vimeo.com/72826106" rel="nofollow">Floating Couch</a>
-1.1.1.&nbsp;<a href="https://www.youtube.com/watch?v=BZysu9QcceM#t=36" rel="nofollow">Wooden Segment Mirror</a>
-1.1.1.&nbsp;<a href="https://www.youtube.com/watch?v=pNkz8wEJljc" rel="nofollow">Generative design</a>
-1.1. Art &amp; Music bots
-1.1.1.&nbsp;<a href="https://vimeo.com/71044541" rel="nofollow">Textile weaving</a>
-1.1.1. <a href="https://www.youtube.com/watch?v=czuhNcNU6qU" rel="nofollow">Projection mapping</a>
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=sLVXmsbVwUs#t=20" rel="nofollow">Laser harp</a>
-1.1.1. <a href="http://vimeo.com/57082262#at=130" rel="nofollow">Arc-o-matic</a>
-1.1.1. <a href="https://www.youtube.com/watch?v=w4cdbV2oaEc" rel="nofollow">Eggbot</a>
-1.1. Drink-makers
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=kx9D74t7GD8#t=89" rel="nofollow">Textspresso</a>
-1.1. Computer Numerical Control (CNC)
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=pCC1GXnYfFI#t=11" rel="nofollow">Shapoko / tinyg</a>
-1.1.1.&nbsp;<a href="http://www.youtube.com/watch?v=NAbiAzYhTOQ" rel="nofollow">Makerbot Replicator</a>
-1.1. Vacuuming
-1.1.1.&nbsp;<a href="https://www.youtube.com/watch?v=0DNkbZvVYvc" rel="nofollow">Roomba</a></li>
- 	<li><a href="https://www.youtube.com/watch?v=1G0MzlfMPuM" rel="nofollow">Golan Levin: Art that looks back at you</a></li>
- 	<li><a href="https://www.youtube.com/watch?v=PV_w38ldZaE" rel="nofollow">Drawdio</a></li>
- 	<li>Claire Neel's <a href="https://youtu.be/lYERKTf5YtI" rel="nofollow">reactive eye</a></li>
+<li><a href="http://www.youtube.com/watch?v=zkpH1BjD6Wc" >Tree-climbing robot</a></li>
+<li><a href="http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120" >Insect robot</a></li>
+<li><a href="http://www.youtube.com/watch?v=YblSltHDbIU" >Treadbot</a></li>
+<li><a href="http://www.future-cities-lab.net/projects/#/murmurwall/" >Murmur Wall</a></li>
+<li><a href="http://vimeo.com/72826106" >Floating Couch</a></li>
+<li><a href="https://www.youtube.com/watch?v=BZysu9QcceM#t=36" >Wooden Segment Mirror</a></li>
+<li><a href="https://www.youtube.com/watch?v=pNkz8wEJljc" >Generative design</a></li>
+<li><a href="https://vimeo.com/71044541" >Textile weaving</a></li>
+<li><a href="https://www.youtube.com/watch?v=czuhNcNU6qU" >Projection mapping</a></li>
+<li><a href="http://www.youtube.com/watch?v=sLVXmsbVwUs#t=20" >Laser
+harp</a></li>
+<li><a href="http://vimeo.com/57082262#at=130" >Arc-o-matic</a></li>
+<li><a href="https://www.youtube.com/watch?v=w4cdbV2oaEc" >Eggbot</a></li>
+<li><a href="http://www.youtube.com/watch?v=kx9D74t7GD8#t=89"
+>Textspresso</a></li>
+<li><a href="http://www.youtube.com/watch?v=pCC1GXnYfFI#t=11" >Shapoko / tinyg</a></li>
+<li><a href="http://www.youtube.com/watch?v=NAbiAzYhTOQ" >Makerbot Replicator</a></li>
+<li><a href="https://www.youtube.com/watch?v=0DNkbZvVYvc"
+>Roomba</a></li></li>
+ 	<li><a href="https://www.youtube.com/watch?v=1G0MzlfMPuM" >Golan Levin: Art that looks back at you</a></li>
+ 	<li><a href="https://www.youtube.com/watch?v=PV_w38ldZaE" >Drawdio</a></li>
+ 	<li>Claire Neel's <a href="https://youtu.be/lYERKTf5YtI" >reactive eye</a></li>
  	<li>Professor Aaron Sherwood's <a href="http://aaron-sherwood.com/works/firewall/">Reactive Wall</a></li>
  	<li><a href="http://melissafelderman.com/digitalgraffitiwall/index.html">Digital Graffiti Wall</a></li>
  	<li><a href="http://www.willjfield.com/itp-2/explorer-space-simulator/">Space Simulator</a></li>
  	<li><a href="https://vimeo.com/114414122">Wind based jug organ</a></li>
  	<li><a href="http://www.yining1023.com/?p=392">Atmospheric Touch Lamp</a></li>
  	<li><a href="http://andysigler.com/projects/dipinator/">The Dipinator</a></li>
- 	<li><a href="http://peiqi.su/peniswall.html">The Penis Wall</a></li>
  	<li><a href="http://www.gabebc.com/Jitterbox">Jitterbox</a></li>
  	<li><a href="http://macdavel.blogspot.ae/">Youtube DDR</a></li>
  	<li><a href="https://lilikha.wordpress.com/">I Hand a Dream</a></li>
