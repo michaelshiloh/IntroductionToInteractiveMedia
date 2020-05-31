@@ -13,3 +13,4 @@ recognize as you.
 - [Vee](vnling)
 - [Junior](https://github.com/jgarcia1599/IntrotoIM_Summer2020)
 - [Loan](https://github.com/loanahoang/Summer-Intro.to.IM)
+- [Chenyu](https://github.com/CyE01/IntroToIM)
