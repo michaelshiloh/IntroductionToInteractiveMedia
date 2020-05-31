@@ -194,7 +194,12 @@ here is a picture of my wonderful assignment
 [link to youtube video](https://www.youtube.com/watch?v=bIZsnKGV8TE)
 ````
 
+You can inspect the whole repository I made in class
+[here](https://github.com/michaelshiloh/introductionToIM)
 
+### 2 June 2020
+
+#### Look at Selfies
 	
 #### Animation
 - `draw()`
@@ -214,11 +219,6 @@ void draw() {
 ````
 
 `background()`
-
-
-### 2 June 2020
-
-#### Look at Selfies
 
 #### Interaction with Processing
 - Two more interesting built-in variables: `mouseX`, `mouseY`
