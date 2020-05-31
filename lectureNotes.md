@@ -14,7 +14,7 @@ This is all subject to change
 
 ### 31 May 2020
 
-Administration
+#### Administration
 
 - **Record Zoom!**
 - Introductions
@@ -22,7 +22,7 @@ Administration
 - Student lead discussions (assign dates)
 - Join the Discord server [here](https://discord.gg/NASyNHw)
 
-What’s the class about?
+#### What’s the class about?
 
 <ul>
  	<li>
@@ -80,7 +80,7 @@ harp</a></li>
 </li>
 </ul>
 
-Let's get started
+#### Let's get started
 
 **Download Processing**
 - Start now in case this takes a long time
@@ -111,7 +111,7 @@ Name your repository "Introduction to Interactive Media".
 
 **Processing**
 
-Simple shapes
+#### Simple shapes
 
 - `ellipse()`
 - `rect()`
@@ -138,7 +138,7 @@ Confused?
 - Google
 - Processing reference page
 
-Variables
+#### Variables
 - `int myNumber = 45;`
 - `int myRandomNumber = random(255);`
 - `int myRandomNumber = round(random(255));`
@@ -146,7 +146,7 @@ Variables
 	- `width`, `height`
 - Other variable types. `int` is by far most common, another common is `float`
 	
-Animation
+#### Animation
 - `draw()`
 - `setup()`
 
@@ -168,9 +168,9 @@ void draw() {
 
 ### 2 June 2020
 
-Look at Selfies
+#### Look at Selfies
 
-**Interaction with Processing**
+#### Interaction with Processing
 - Two more interesting built-in variables: `mouseX`, `mouseY`
 	- Using the cursor to draw
 - conditionals
@@ -189,7 +189,9 @@ void draw() {
 }
 ````
 
-- Loops
+Note that `mousePressed` is another built-in variable. There are many others.
+
+#### Loops
 `while()` is like `if()` but it keeps on doing it as long as condition is true
 
 ````
@@ -207,7 +209,11 @@ void setup() {
 You should get in the habit of giving meaningful names to your variables. What
 is a better name for the variable foo?
 
-- Functions
+#### Functions
+	- Clarity
+	- Reuse
+	- Easier to debug (what is debugging?)
+		- Reproduce bug with simplest possible example
 - Variable Scope
 
 ````
@@ -230,12 +236,11 @@ void draw() {
 ````
 
 
-TBA
-
-motion
             
-<h3>Motion</h3>
+#### Motion
+
 Let's use make a ball bounce on the floor. First, make a circle move:
+
 <pre>void setup() 
 { 
   size(500, 500);
@@ -254,7 +259,9 @@ void draw() {
   y+=speed;
 }
 </pre>
+
 Now, make it change directions when it hits the floor:
+
 <pre>void setup() 
 { 
   size(500, 500);
@@ -277,7 +284,9 @@ void draw() {
   }
 }
 </pre>
+
 Now, do two thing: 1) use gravity to increase its speed as it falls and 2) reduce its speed on each bounce:
+
 <pre>void setup() 
 { 
   size(500, 500);
@@ -302,11 +311,4 @@ void draw() {
   }
 }
 </pre>
-<h3>Why functions?</h3>
-<ul>
- 	<li>Reuse</li>
- 	<li>Organizing</li>
-</ul>
-
-<script src="header.md"></script>
 
