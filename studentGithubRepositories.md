@@ -12,3 +12,4 @@ recognize as you.
 - [Vu Long](https://github.com/vulongphan)
 - [Vee](vnling)
 - [Junior](https://github.com/jgarcia1599/IntrotoIM_Summer2020)
+- [Loan](https://github.com/loanahoang/Summer-Intro.to.IM)
