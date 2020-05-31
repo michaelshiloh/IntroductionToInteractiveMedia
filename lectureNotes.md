@@ -145,6 +145,56 @@ Confused?
 - Built-in variables
 	- `width`, `height`
 - Other variable types. `int` is by far most common, another common is `float`
+
+Here is the Processing program (also called a 'sketch') we played with in
+class:
+
+````
+size(400, 400);
+ellipse(width/2, height/2, 50, 50);
+
+/*
+stroke(0,255,0);
+fill(255,0,0);
+//ellipse(100,100, 50, 50);
+
+fill(255,0,0, 30);
+//rect(30, 30, 50, 80);
+
+
+// Now I will try to draw an arc
+//arc(100, 100, 100, 100, 0, radians(180), CHORD);
+
+// pick a random number up to 180
+float myRandomArcSize = random(180);
+int arcSizeAsInt = round (myRandomArcSize);
+println(myRandomArcSize + "   " + arcSizeAsInt);
+
+// convert that number to radians
+float arcSizeInRadians = radians(myRandomArcSize);
+
+print(myRandomArcSize + "    " + arcSizeInRadians);
+
+// draw the arc
+arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
+*/
+````
+
+And here is the markdown code from my very short github demo. I fixed 
+the link to the Youtube video (there is no exclamation point for links):
+
+````
+here is my first assignment
+
+here is a picture of my wonderful assignment
+
+
+![](eye-calipers.jpg)
+
+[link to youtube video](https://www.youtube.com/watch?v=bIZsnKGV8TE)
+````
+
+
 	
 #### Animation
 - `draw()`
