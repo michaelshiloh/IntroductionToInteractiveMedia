@@ -144,6 +144,7 @@ Variables
 - `int myRandomNumber = round(random(255));`
 - Built-in variables
 	- `width`, `height`
+- Other variable types. `int` is by far most common, another common is `float`
 	
 Animation
 - `draw()`
@@ -231,6 +232,81 @@ void draw() {
 
 TBA
 
-array, text
+motion
             
+<h3>Motion</h3>
+Let's use make a ball bounce on the floor. First, make a circle move:
+<pre>void setup() 
+{ 
+  size(500, 500);
+  x = width/2;
+} 
+
+float speed = 5;
+float x;
+float y = 0;
+
+void draw() {
+  background(150);
+
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+}
+</pre>
+Now, make it change directions when it hits the floor:
+<pre>void setup() 
+{ 
+  size(500, 500);
+  x = width/2;
+} 
+
+float speed = 5;
+float x;
+float y = 0;
+
+void draw() {
+  background(150);
+
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+
+  if (y&gt;=height) {
+    speed = -speed;
+  }
+}
+</pre>
+Now, do two thing: 1) use gravity to increase its speed as it falls and 2) reduce its speed on each bounce:
+<pre>void setup() 
+{ 
+  size(500, 500);
+} 
+
+float gravity = .1;
+float speed = 0;
+float x = 320;
+float y = 0;
+
+void draw() {
+  background(150);
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+
+  speed+=gravity;
+
+  if (y&gt;=height) {
+    speed = 0.95 * speed; // this slows the acceleration
+    speed = -speed; // this reverses
+  }
+}
+</pre>
+<h3>Why functions?</h3>
+<ul>
+ 	<li>Reuse</li>
+ 	<li>Organizing</li>
+</ul>
+
+<script src="header.md"></script>
 

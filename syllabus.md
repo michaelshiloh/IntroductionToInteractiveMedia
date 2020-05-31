@@ -9,16 +9,12 @@ Classroom: online
 This syllabus is subject to change
 <h3>Helpful Information</h3>
 <ul>
- 	<li>My office hours TBA</li>
- 	<li>Email me anytime to set up an appointment at an alternate time or place (e.g. the lab) or for any questions or concerns: <a href="mailto:mshiloh@nyu.edu">mshiloh@nyu.edu</a></li>
- 	<li>Jack Du (IM Instructor) is in the lab most of the day on weekdays: <a href="mailto:jackbdu@nyu.edu">jackbdu@nyu.edu</a>&nbsp;</li>
+	<li>Instructor: Michael Shiloh</li>
+ 	<li>Email me anytime for any questions or concerns: <a href="mailto:mshiloh@nyu.edu">mshiloh@nyu.edu</a></li>
+ 	<li>Jack Du (IM Instructor) is a valuable technical resource: <a href="mailto:jackbdu@nyu.edu">jackbdu@nyu.edu</a>&nbsp;</li>
+	<li>Class Time: Sunday, Monday, Tuesday, Wednesday 1-4pm</li>
 </ul>
 
-Class Time: Sunday, Monday, Tuesday, Wednesday 1-4pm
-
-Instructor: Michael Shiloh
-Email: michael.shiloh@nyu.edu
-Office Hours: You may send me email at any time
 
 <strong>Course Description</strong>
 
@@ -139,15 +135,15 @@ They require not only a clear interface, but must also return enough information
 
 There are many other good applications for this project. Discuss the specifics of yours with me!
 
-Timeline:&nbsp;
+Timeline:
 <ul>
- 	<li>Brainstorming: Wednesday November 27</li>
- 	<li>75% completed prototype Due Wednesday December 4</li>
- 	<li>User testing in class: Wednesday December 4</li>
- 	<li>In class workshop: Monday December 9</li>
- 	<li>Projects Due: Wednesday December 11</li>
+ 	<li>Brainstorming: </li>
+ 	<li>75% completed prototype: </li>
+ 	<li>User testing in class:</li>
+ 	<li>In class workshop:</li>
+ 	<li>Projects Due: </li>
 </ul>
-IM Showcase Thursday December 12
+IM Showcase 
 <ul>
  	<li>Everyone is expected to participate</li>
  	<li>Everyone is expected to help set up before the work, engage with visitors during the event, and help put everything away after the event.</li>
@@ -187,7 +183,7 @@ Phones must be in your pocket or your bag, and must not be out during class
 
 <strong>Required Tools </strong>
 
-Sparkfun Inventors Kit&nbsp; (provided on Wednesday)
+Sparkfun Inventors Kit
 
 If you drop the class you must return the kit
 
