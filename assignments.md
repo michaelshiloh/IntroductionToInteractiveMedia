@@ -3,7 +3,7 @@ All assignments will be listed here. This includes:
 - Reading assignments
 - Projects
 
-#### Due day 2 June 1
+#### Assignments Due day 2 June 1
 
 Email Assignment:
 
@@ -19,6 +19,7 @@ Reading Assignment:
 	to discuss.
 
 Production Assignment:
+
 - Make a self portrait using Processing.
 	- The portrait must be entirely created by your code i.e. you must not interact with your computer while the portrait is being made (e.g. no drawing using the mouse)
 	- The portrait does not need to be dynamic (i.e. it does not need to change while we look at it) 
@@ -34,9 +35,22 @@ chose good names.
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
+#### Assignments Due day 3 June 2
+
+Reading Assignment:
+
+- Read about variables and functions (link to to be added)
+- Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
 
 
+Production Assignment:
 
+- Using what you've learned so far, make a simple work of art. You 
+may want to look at these old computer art magazines for inspiration, but you don't need to make your so
+elaborate. Scroll through and look for images:
+	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
+	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
+	- (COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 
 
 

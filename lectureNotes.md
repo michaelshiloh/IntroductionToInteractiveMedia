@@ -207,9 +207,9 @@ You can inspect the whole repository I made in class
 	see your faces, I don't know if what I'm saying makes sense. Ask questions,
 	make comments, give me feedback. This also counts as part of your 
 	participation grade!
+- We will look at selfies and hold the discussion in the middle to break
+	things up
 
-
-#### Look at Selfies
 	
 #### Animation
 - `draw()`
@@ -229,6 +229,11 @@ void draw() {
 ````
 
 `background()`
+
+Static vs. active mode
+
+Yesterday we were able to draw without using `setup()` and `draw()`. What's
+the difference?
 
 #### Interaction with Processing
 - Two more interesting built-in variables: `mouseX`, `mouseY`
@@ -272,12 +277,30 @@ void setup() {
 You should get in the habit of giving meaningful names to your variables. What
 is a better name for the variable foo?
 
+#### Intermission I: Look at Selfies
+
+- Today: 5 (counts as participation)
+
 #### Functions
-	- Clarity (remember the three reasons for clarity: yourself, sharing,
-		grading)
-	- Reuse
-	- Easier to debug (what is debugging?)
-		- Reproduce bug with simplest possible example
+
+Every time you use one of the built-in 'commands', you are really using (or
+more properly 'executing') a built-in function. Functions are a very important
+building block of programming, and in addition to using built-in functions,
+you can also create your own. In fact, you've already been doing that, when
+you created the `setup()` and `draw()` functions. In the case of
+`setup()` and `draw()`  you have to use those names, but when you create other
+functions you can make up your own names. Just like variables names , good 
+function names make your programs easier to understand.
+
+Why create your own funtions?
+
+- Reuse
+- Clarity (remember the three reasons for clarity: yourself, sharing,
+	grading)
+- Easier to debug (what is debugging?)
+	- **Reproduce bug with simplest possible example**
+
+Let's rewrite the above to use a function
 
 
 #### Variable Scope
@@ -300,6 +323,28 @@ void draw() {
   }
 }
 ````
+
+#### Intermission II: Discussion
+
+Instructions to leader:
+
+1. You have 15 minutes. Allow 3-5 mintes at the end to wrap up, so divide the
+	 remaining 12-15 minutes into your questions or topics (say 2-5 minutes each)
+	 and move on to the next question or topic even if there are still hands
+	 raised
+
+Instructions to everyone else:
+
+1. Don't repeat what someone has already said
+
+1. Don't just say that you liked or disliked the reading. Offer critical
+	 insight. Why did you like or dislike it? What does it connect to?
+
+1. Did it change your mind about something?
+
+- Today: [A Brief Rant on the Future of Interaction
+ Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/) - 
+ Junior
 
 #### Motion
 

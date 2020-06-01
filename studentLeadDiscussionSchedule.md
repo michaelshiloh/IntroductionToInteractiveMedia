@@ -35,3 +35,22 @@ Each student is responsible for leading discussion of the weekly readings.
  Ratto](http://opendesignnow.org/index.html%3Fp=434.html) - Mike
 - June 23 [Graham Pullin, Design Meets Disability](docs/Design_meets_disability.pdf) - Rashid
 - June 24 [Her Code Got Humans on the Moon](http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/) - 
+
+
+
+Instructions to leader:
+
+1. You have 15 minutes. Allow 3-5 mintes at the end to wrap up, so divide the
+   remaining 12-15 minutes into your questions or topics (say 2-5 minutes each)
+   and move on to the next question or topic even if there are still hands
+   raised
+
+Instructions to everyone else:
+
+1. Don't repeat what someone has already said
+
+1. Don't just say that you liked or disliked the reading. Offer critical
+   insight. Why did you like or dislike it? What does it connect to?
+
+1. Did it change your mind about something?
+
