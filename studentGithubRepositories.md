@@ -10,7 +10,7 @@ recognize as you.
 
 - [Gabi](https://github.com/gabibranche/Introduction_to_Interactive_Media)
 - [Vu Long](https://github.com/vulongphan/IntroToIM)
-- [Vee](vnling)
+- [Vee](https://github.com/vnling/Introduction-to-Interactive-Media )
 - [Junior](https://github.com/jgarcia1599/IntrotoIM_Summer2020)
 - [Loan](https://github.com/loanahoang/Summer-Intro.to.IM)
 - [Chenyu](https://github.com/CyE01/IntroToIM)
