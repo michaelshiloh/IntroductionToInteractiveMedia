@@ -230,18 +230,19 @@ void draw() {
 
 `background()`
 
-Static vs. active mode
+`frameRate()`
 
 Yesterday we were able to draw without using `setup()` and `draw()`. What's
 the difference?
 
+Static vs. active mode
+
 #### Interaction with Processing
-- Two more interesting built-in variables: `mouseX`, `mouseY`
-	- Using the cursor to draw
+
 - conditionals
 
 ````
-vvoid setup() {
+void setup() {
   size(300, 300);
 }
 
@@ -254,10 +255,18 @@ void draw() {
 }
 ````
 
-Notes:
+**Important concepts**:
 1. `mousePressed` is another built-in variable. There are many others.
 1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
 	 only one of two values, `true` or `false`
+1. Note that `{` and `}` indicate the blocks
+1. The `else` part of an `if()` statement is optional (what happens if we
+	 remove it?)
+
+- Two more interesting built-in variables: `mouseX`, `mouseY`
+	- Using the cursor to draw
+	- Now use a mouse click to clear the screen
+	- (Time permitting, primitive painting program)
 
 #### Loops
 `while()` is like `if()` but it keeps on doing it as long as condition is true
@@ -421,4 +430,4 @@ void draw() {
 }
 </pre>
 
-#### `for()` loops
+#### `for()` loops (time permitting)
