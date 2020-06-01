@@ -9,7 +9,7 @@ want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
 - [Gabi](https://github.com/gabibranche/Introduction_to_Interactive_Media)
-- [Vu Long](https://github.com/vulongphan)
+- [Vu Long](https://github.com/vulongphan/IntroToIM)
 - [Vee](vnling)
 - [Junior](https://github.com/jgarcia1599/IntrotoIM_Summer2020)
 - [Loan](https://github.com/loanahoang/Summer-Intro.to.IM)
