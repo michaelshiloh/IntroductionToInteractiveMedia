@@ -39,18 +39,20 @@ interesting you discovered.
 
 Reading Assignment:
 
-- Read about variables and functions (link to to be added)
 - Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
 
 
 Production Assignment:
 
-- Using what you've learned so far, make a simple work of art. You 
-may want to look at these old computer art magazines for inspiration, but you don't need to make your so
-elaborate. Scroll through and look for images:
+- Using loops (`for()` or `while()`) in some way, 
+along with everything that you've learned so far, 
+make a simple work of art. 
+You may want to look at these old computer art magazines for inspiration, 
+but you don't need to make your so elaborate. 
+Scroll through and look for images:
 	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
-	- (COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
+	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 
 
 
