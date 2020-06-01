@@ -2,10 +2,10 @@ Course Outline
 
 Processing
 
- 	Day 1: Introduction 
- 	Day 2: Translation
+ 	Day 1: Primitive shapes, programming concepts
+ 	Day 2: Animation, conditionals, loops
  	Day 3: Functions and Object Oriented Programming
- 	Day 4: Text and Arrays
+ 	Day 4: Text, Arrays, Transformations
  	Day 5: Image manipulation
  	Day 6: Sound
 

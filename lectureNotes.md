@@ -199,6 +199,16 @@ You can inspect the whole repository I made in class
 
 ### 2 June 2020
 
+#### Administration
+
+- Please arrive on time. Late counts against your participation grade. 10
+	minutes late counts as unexcused absence. 
+- Please speak up in class! It's even more important on Zoom, since I can't
+	see your faces, I don't know if what I'm saying makes sense. Ask questions,
+	make comments, give me feedback. This also counts as part of your 
+	participation grade!
+
+
 #### Look at Selfies
 	
 #### Animation
@@ -239,7 +249,10 @@ void draw() {
 }
 ````
 
-Note that `mousePressed` is another built-in variable. There are many others.
+Notes:
+1. `mousePressed` is another built-in variable. There are many others.
+1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
+	 only one of two values, `true` or `false`
 
 #### Loops
 `while()` is like `if()` but it keeps on doing it as long as condition is true
@@ -260,11 +273,14 @@ You should get in the habit of giving meaningful names to your variables. What
 is a better name for the variable foo?
 
 #### Functions
-	- Clarity
+	- Clarity (remember the three reasons for clarity: yourself, sharing,
+		grading)
 	- Reuse
 	- Easier to debug (what is debugging?)
 		- Reproduce bug with simplest possible example
-- Variable Scope
+
+
+#### Variable Scope
 
 ````
 int foo;  // this is a global variable, visible in all functions
@@ -285,8 +301,6 @@ void draw() {
 }
 ````
 
-
-            
 #### Motion
 
 Let's use make a ball bounce on the floor. First, make a circle move:
@@ -329,7 +343,7 @@ void draw() {
 
   y+=speed;
 
-  if (y&gt;=height) {
+  if (y>=height) {
     speed = -speed;
   }
 }
@@ -355,10 +369,11 @@ void draw() {
 
   speed+=gravity;
 
-  if (y&gt;=height) {
+  if (y>=height) {
     speed = 0.95 * speed; // this slows the acceleration
     speed = -speed; // this reverses
   }
 }
 </pre>
 
+#### `for()` loops
