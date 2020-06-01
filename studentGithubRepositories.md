@@ -14,3 +14,9 @@ recognize as you.
 - [Junior](https://github.com/jgarcia1599/IntrotoIM_Summer2020)
 - [Loan](https://github.com/loanahoang/Summer-Intro.to.IM)
 - [Chenyu](https://github.com/CyE01/IntroToIM)
+- [Muhammad](https://github.com/MuhammadBinNauman/Intro-to-IM)
+- [Mike](https://github.com/mike-leo-k/intro-to-im/)
+- [Yashaswi](https://github.com/ym1929/Introduction-to-Interactive-Media)
+- [Kris](https://github.com/Quarmuz/IntroToIM.git)
+- [Zheki](https://github.com/Zheki/Intro-to-IM-Summer-2020)
+
