@@ -449,50 +449,18 @@ void draw() {
 
 #### Functions with arguments (parameters) and/or return values
 
+First, review creating a function `drawTheBall()` with no arguments using
+the last example from yesterday.
 
-
-<pre>
-float gravity = .1;
-float speed = 0;
-float x = 320;
-float y = 0;
-
-void setup() 
-{ 
-  size(500, 500);
-} 
-
-void draw() {
-
-	// Erase the previous frame
-  background(150);
-
-	// Draw the ball at the current x,y location
-  ellipse(x, y, 20, 20);
-
-	// Update things
-  y+=speed;
-
-  speed+=gravity;
-
-  if (y>=height) {
-    speed = 0.95 * speed; // this slows the acceleration
-    speed = -speed; // this reverses
-  }
-}
-</pre>
-
-First, review creating a function (`drawTheBall()`) with no arguments
-
-Next, let's tell it where to draw and the size (`drawTheBall(locationX,
-locationY, radius)`)
+Next, let's tell it where to draw and the size `drawTheBall(locationX,
+locationY, radius)`
 
 * `locationX`, `locationY`, and `radius` are arguments to the
 function `drawTheBall`. They provide information the function needs in order
 to perform its task. 
-* The parenthesis in functions are where the arguments
-belong. A function that has no arguments will have empty parenthesis.
-* You must always include the parenthesis when calling a function, 
+* The parenthesis are where the arguments belong. 
+* A function that takes no arguments will have empty parenthesis.
+* You must always include the parenthesis when defining and calling a function, 
 even if it has no arguments.
 
 Functions can take no arguments, or as many as you want. (There is a limit but
@@ -520,6 +488,12 @@ void draw() {
           roundedRandomNumber);
 }
 </pre>
+
+**A brief note about formatting** 
+* Long lines are difficult to read. Break them up in some clear way.
+* White spaces (space, 'enter', tab) doesn't affect program so use them to
+	make your program easier to read
+* Use <CTRL>t or <Command>t to properly indent your code
 
 
 Now, let's create a function that returns something. 
@@ -626,11 +600,39 @@ void draw() {
 }
 </pre>
 
-Questions about the `map()` function? Ask me, or Google, or look at [Dan
-Shiffman's](http://learningprocessing.com/examples/chp13/example-13-05-map)
+Questions about the `map()` function? Ask me, or Google, or look at Dan
+Shiffman's [map example](http://learningprocessing.com/examples/chp13/example-13-05-map)
 
 #### Object Oriented Programming (OOP)
 
 Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExample) example
 
+#### Text (time permitting)
 
+<pre>
+PFont f;
+color red;
+float x, y;
+
+String message= "Important message";
+
+void setup() {
+  size(640, 360);
+
+  f = createFont("Monaco", 32);
+  textFont(f, 32);
+  red=color(255, 0, 0);
+
+  x=width/2;
+  y=height/2;
+
+  fill(red);
+  textAlign(LEFT);
+  text(message, x, y);
+}
+
+</pre>
+
+Professor Aaron Sherwood has some more advanced examples
+using text
+[here](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
