@@ -446,6 +446,8 @@ void draw() {
 - **Today I want to hear from people who didn't speak yesterday**
 - As yesterday, we will look at homework assignments and have our discussion
 	later.
+- Look at other assignments on your own 
+- For technical questions, best to use our Discord channel
 
 #### Functions with arguments (parameters) and/or return values
 
