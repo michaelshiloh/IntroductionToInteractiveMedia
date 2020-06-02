@@ -4,7 +4,7 @@ Processing
 
  	Day 1: Primitive shapes, programming concepts
  	Day 2: Animation, conditionals, loops
- 	Day 3: Functions and Object Oriented Programming
+ 	Day 3: Functions, arrays, and Object Oriented Programming
  	Day 4: Text, Arrays, Transformations
  	Day 5: Image manipulation
  	Day 6: Sound

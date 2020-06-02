@@ -11,6 +11,8 @@ Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia
 <h1>This document: Summer 2020 Lecture Notes</h1>
 This is all subject to change
 
+[Today's lecture](#todays-lecture)
+
 
 ### 31 May 2020
 
@@ -405,15 +407,17 @@ void draw() {
 
 Now, do two thing: 1) use gravity to increase its speed as it falls and 2) reduce its speed on each bounce:
 
-<pre>void setup() 
-{ 
-  size(500, 500);
-} 
+<pre>
 
 float gravity = .1;
 float speed = 0;
 float x = 320;
 float y = 0;
+
+void setup() 
+{ 
+  size(500, 500);
+} 
 
 void draw() {
   background(150);
@@ -431,3 +435,202 @@ void draw() {
 </pre>
 
 #### `for()` loops (time permitting)
+
+### todays-lecture
+
+### 2 June 2020
+
+#### Administration
+
+- Record
+- **Today I want to hear from people who didn't speak yesterday**
+- As yesterday, we will look at homework assignments and have our discussion
+	later.
+
+#### Functions with arguments (parameters) and/or return values
+
+
+
+<pre>
+float gravity = .1;
+float speed = 0;
+float x = 320;
+float y = 0;
+
+void setup() 
+{ 
+  size(500, 500);
+} 
+
+void draw() {
+
+	// Erase the previous frame
+  background(150);
+
+	// Draw the ball at the current x,y location
+  ellipse(x, y, 20, 20);
+
+	// Update things
+  y+=speed;
+
+  speed+=gravity;
+
+  if (y>=height) {
+    speed = 0.95 * speed; // this slows the acceleration
+    speed = -speed; // this reverses
+  }
+}
+</pre>
+
+First, review creating a function (`drawTheBall()`) with no arguments
+
+Next, let's tell it where to draw and the size (`drawTheBall(locationX,
+locationY, radius)`)
+
+* `locationX`, `locationY`, and `radius` are arguments to the
+function `drawTheBall`. They provide information the function needs in order
+to perform its task. 
+* The parenthesis in functions are where the arguments
+belong. A function that has no arguments will have empty parenthesis.
+* You must always include the parenthesis when calling a function, 
+even if it has no arguments.
+
+Functions can take no arguments, or as many as you want. (There is a limit but
+it's very large - I've never run into it.)
+
+Functions can also return information to the calling function
+We've already seen
+examples of built-in functions of this sort
+when we used `random()` and `round()`:
+
+<pre>
+void setup() {
+}
+
+void draw() {
+  float someRandomNumber;
+  int roundedRandomNumber;
+
+  someRandomNumber = random(100);
+  roundedRandomNumber = round(someRandomNumber);
+
+  println( "random number = " + 
+          someRandomNumber + 
+          " random number rounded to nearest integer = " + 
+          roundedRandomNumber);
+}
+</pre>
+
+
+Now, let's create a function that returns something. 
+
+<pre>
+/* 
+ 
+ Change the color of the circle based on how far the mouse is from the center of the circle
+ 
+ Based on Dan Shiffman's example 7.4 from Learning Processing
+ http://learningprocessing.com/examples/chp07/example-07-04-returntype
+ 
+ Modified 2 June 2020 MS - changed variable names
+ */
+
+void setup() {
+  size(480, 270);
+  ellipseMode(CENTER); // probably the default anyway
+  stroke(0);
+}
+
+void draw() {
+
+  // Erase the last frame
+  background(255);
+
+  // Get the distance from the mouse to the circle center
+  float distanceMouseToCircleCenter = distance(width/2, height/2, mouseX, mouseY);
+
+  // Change the fill color according to that distance
+  fill(distanceMouseToCircleCenter*3, distanceMouseToCircleCenter*2, distanceMouseToCircleCenter);
+  // What happens if the value is greater than 255?
+
+  // Finally, draw the circle
+  ellipse(width/2, height/2, 100, 100);
+}
+
+// Calculate the distance between two points x1,y1 and x2,y2
+float distance(float x1, float y1, float x2, float y2) {
+  float dx = x1 - x2; // distance in the x axis
+  float dy = y1 - y2; // distance in the y axis
+  float d = sqrt(dx*dx + dy*dy); // The Pythagorean theorem
+  return d; // this is where we return the answer to the calling function
+}
+
+</pre>
+
+* When we have no arguments, we leave the parenthesis empty. When we have no
+	return value, we use the word `void` in place of the return type
+* Functions can only return nothing, or one thing. No more (although that
+	thing could be compound).
+* So far we have learned of two data types: `int` and `float`. We have briefly
+	mentioned `boolean` and `long`. A function can return any data type.
+
+#### Arrays
+
+Dan Shiffman has wonderful simple examples [here](http://learningprocessing.com/examples/chp09/example-09-01-array-declare). Look at Examples 9.1 - 9.7
+
+<pre>
+final int numberOfValues = 1000;
+
+float[] values = new float[numberOfValues];
+
+int n = 0;
+while (n < values.length) {
+  values[n] = random(0, 10);
+  n = n + 1;
+}
+
+for (int i = 0; i < values.length; i++) {
+  println(values[i]);
+}
+</pre>
+
+* Arrays are siginified by square brackets `[]`
+* Arrays can be of any data type, but can't be mixed types
+* All of Dan Shiffman's books, examples, and videos are excellent
+* As I mentioned yesterday, arrays and `for()` loops almost always show up
+	together. If you use an array, you are probably going to have to use a
+	`for()` loop.
+
+A more advanced array example, and introduction to the very useful `map()`
+function:
+
+<pre>
+float[] coswave; 
+
+void setup() {
+  size(900, 300);
+  
+  coswave = new float[width];
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    coswave[xPosition] = cos(radians(xPosition));
+  }
+  background(255);
+  noLoop();
+}
+
+void draw() {
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    float waveHeight = map(coswave[xPosition], -1, 1, 0, height);
+    point(xPosition, waveHeight);
+  }
+}
+</pre>
+
+Questions about the `map()` function? Ask me, or Google, or look at [Dan
+Shiffman's](http://learningprocessing.com/examples/chp13/example-13-05-map)
+
+#### Object Oriented Programming (OOP)
+
+Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExample) example
+
+

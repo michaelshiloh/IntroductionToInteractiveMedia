@@ -54,24 +54,34 @@ Scroll through and look for images:
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
 	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 
+#### Assignments Due day 4 June 3
 
+Reading Assignment:
 
+- Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
+- If you are new to functions or want to review, 
+watch Dan 
+Shiffman's [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V7Uu6ajGB2OI3hl5DZsD1Fw1WzR) tutorials. There are four videos, each less than 10 minutes.
+- Watch at least the first four of Dan shiffman's [Object Oriented
+	Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i)
+	tutorials.
 
---------------------------------
-not organized yet
+Production Assignment:
 
-
-
-
-
-
-Create a circuit with a switch that doesn’t require the use of your hands. Make a
-post on the blog about it (Due Jan. 29).
-Examples:
-Get creative with switches: https://itp.nyu.edu/physcomp/labs/labselectronics/switches/#Get_Creative_With_Switches
-Mustache Example: http://itp.nyu.edu/~tlc345/blog/mustache-switch/
-Reading :
-https://intro18summer.nyuad.im/weekly-schedule/
-Digital Input & Output
-Microcontrollers, the basics
+- Create either an artwork or a game using 
+Object Oriented Programming. 
+You may use arrays if you wish.
+Pay attention to the structure, clarity, and organization of your program. 
+As always, document your project:
+	- New folder with proper date
+	- Well commented code, especially
+	for any confusing or tricky parts 
+	- References to any examples or inspiration
+	- Functions as needed to organize your program
+	- Excellent names for variables and functions
+	- Upload code and one or more images
+	- Create a README.md
+	- Describe the overall concept of your game or artwork
+	- Include the image(s) or link(s) to video
+	- Describe any problems you ran into
 
