@@ -739,12 +739,13 @@ Same result, but using a transform:
   popMatrix();
 }
 </pre>
-
-<li>As always, Dan Shiffman has excellent
-[examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).</li>
-<ul>
- 	<li>Rotation and scaling from <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial</li>
 </ul>
 
+##### Rotation and scaling 
 
+Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial
+
+
+* As always, Dan Shiffman has excellent
+[examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
  
