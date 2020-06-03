@@ -85,3 +85,39 @@ As always, document your project:
 	- Include the image(s) or link(s) to video
 	- Describe any problems you ran into
 
+
+#### Assignments Due day 5 June 7
+
+Reading Assignment:
+
+- Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
+- Review the videos, tutorials, and examples mentioned in class if necessary
+- Watch this two part 
+<a href="https://www.youtube.com/watch?v=o9sgjuh-CBM">(part 1</a>
+and 
+<a href="https://www.youtube.com/watch?v=pkHZTWOoTLM">part 2</a>) 
+video tutorial on transformations
+- Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a> 
+video tutorial on Perlin noise</li>
+
+Production Assignment:
+
+- Create either a data visualization or a generative text. 
+- Create a simple work of art using one or more of the transformations. 
+You can modify the art project you used before.
+
+Document your project as always, with the following additions:
+
+- At the beginning of your program in a comment block include:
+	- The overall concept
+	- Your name and assignment due date
+	- Instructions for usage if it's interactive
+	- The source of your data
+
+
+
+
+
+
+
+

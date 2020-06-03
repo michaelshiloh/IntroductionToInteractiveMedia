@@ -436,8 +436,6 @@ void draw() {
 
 #### `for()` loops (time permitting)
 
-### todays-lecture
-
 ### 2 June 2020
 
 #### Administration
@@ -609,7 +607,80 @@ Shiffman's [map example](http://learningprocessing.com/examples/chp13/example-13
 
 Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExample) example
 
-#### Text (time permitting)
+### todays-lecture
+
+### 3 June 2020
+
+#### Administration
+
+- Record
+
+#### Data Visualization
+
+##### What is data visualization? Here are some examples
+
+<ul>
+ 	<li><a title="http://benfry.com/allstreets/" href="http://benfry.com/allstreets/">Ben Fry</a></li>
+ 	<li><a href="http://www.aaronkoblin.com/project/flight-patterns/">Aaron Koblin</a>&nbsp;</li>
+ 	<li>Jer Thorp
+<ul>
+ 	<li><a href="http://blog.blprnt.com/blog/blprnt/just-landed-processing-twitter-metacarta-hidden-data">just landed</a>
+<ul>
+ 	<li>just landed location</li>
+ 	<li>plus twitter home location</li>
+</ul>
+</li>
+ 	<li><a title="http://nytlabs.com/projects/cascade.html" href="http://nytlabs.com/projects/cascade.html">http://nytlabs.com/projects/cascade.html</a></li>
+ 	<li>Nytimes top <a href="https://www.flickr.com/photos/blprnt/sets/72157614008027965/with/3288898519/">coverage and connections</a>&nbsp;</li>
+</ul>
+</li>
+ 	<li><a href="http://feltron.com/FAR14.html">nicholas feltron</a>&nbsp;</li>
+</ul>
+<strong>Where to find data</strong>
+<ul>
+ 	<li>Sources
+<ul>
+ 	<li><a href="https://www.springboard.com/blog/free-public-data-sets-data-science-project/">https://www.springboard.com/blog/free-public-data-sets-data-science-project/</a></li>
+ 	<li>https://www.ndbc.noaa.gov/rt_data_access.shtml</li>
+ 	<li><a href="https://www.kaggle.com/datasets">Source</a> of datasets from Alia&nbsp;</li>
+	<li>Also look at examples from last spring. You can see their Github
+	repositories <a href="https://wp.nyu.edu/abudhabi_im_intro/student-github-repositories/">here</a></li>
+</ul>
+</li>
+ 	<li>Format
+<ul>
+ 	<li>CSV</li>
+ 	<li>Can use a spreadsheet program to open data from many formats and then save as CSV</li>
+</ul>
+</li>
+</ul>
+
+##### How to process CSV files
+
+Examples from Aaron Sherwood’s Introduction to Interactive Media <a href="https://github.com/aaronsherwood/introduction_interactive_media">Github repository</a>
+<ul>
+ 	<li>load/split strings: splitCommas.pde</li>
+ 	<li>load save table: tableSaveLoad.pde</li>
+ 	<li>forces: lettersGravityWind.pde</li>
+</ul>
+
+##### JSON: Another data format
+
+JSON is another format for organizing data in a file. It is more complex than CSV, and again Processing provides functions for parsing JSON
+
+<a href="https://processing.org/examples/loadsavejson.html">https://processing.org/examples/loadsavejson.html</a>
+
+If you want to learn more about JSON and also XML, 
+which yet another data format, 
+<a href="https://www.youtube.com/watch?v=rqROpUNb2aY">here</a> 
+is a good introductory video tutorial.
+
+<h3>Generative Text</h3>
+Pull words from a file (CSV or JSON), 
+and by using random() in a clever way,
+write poems or slogans or whatever
+
+#### Text 
 
 <pre>
 PFont f;
@@ -638,3 +709,35 @@ void setup() {
 Professor Aaron Sherwood has some more advanced examples
 using text
 [here](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
+
+#### Transformations
+
+<ul>
+ 	<li>Transforms move the canvas so you can draw in different places with the same code</li>
+ 	<li>Available 2D transforms are `translate()`, `rotate()`, and `scale()`. (Why the parenthesis?)</li>
+ 	<li>pushMatrix() and popMatrix() allow you to remember where the canvas was, and then return to it's last position</li>
+</ul>
+Draw a house at a given location, no transform:
+<pre>void house(int x, int y)
+{
+  triangle(x + 15, y, x, y + 15, x + 30, y + 15);
+  rect(x, y + 15, 30, 30);
+  rect(x + 12, y + 30, 10, 15);
+}</pre>
+Same result, but using a transform:
+<pre>void house(int x, int y)
+{
+  pushMatrix();
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+  popMatrix();
+}
+</pre>
+<ul>
+ 	<li>Rotation and scaling from <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial</li>
+</ul>
+
+
+ 
