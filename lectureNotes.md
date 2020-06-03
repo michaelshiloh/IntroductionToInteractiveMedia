@@ -692,6 +692,10 @@ String message= "Important message";
 void setup() {
   size(640, 360);
 
+	// What fonts are available?
+	String[] fontList = PFont.list();
+  printArray(fontList);
+
   f = createFont("Monaco", 32);
   textFont(f, 32);
   red=color(255, 0, 0);
@@ -735,6 +739,9 @@ Same result, but using a transform:
   popMatrix();
 }
 </pre>
+
+<li>As always, Dan Shiffman has excellent
+[examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).</li>
 <ul>
  	<li>Rotation and scaling from <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial</li>
 </ul>
