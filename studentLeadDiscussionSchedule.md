@@ -19,7 +19,7 @@ Each student is responsible for leading discussion of the weekly readings.
  article](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html) - Zheki
 - June 3 [Making Interactive Art: Set the Stage, Then Shut Up and
  Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/) - Gabi
-- June 7 [The Art of Interactive Design Chapter 1](docs/theArtOfInteractiveDesign.pdf) - Muhammad
+- June 7 [The Art of Interactive Design Chapter 1](doc/theArtOfInteractiveDesign.pdf) - Muhammad
 - June 8 [Norman,“Emotion & Design: Attractive things work
  better”](https://jnd.org/emotion_design_attractive_things_work_better/) - Chenyu
 - June 9 [Open Source Model](https://en.wikipedia.org/wiki/Open-source_model) - Vulong
