@@ -121,6 +121,10 @@ Document your project as always, with the following additions:
 Reading Assignment:
 
 - Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
+- Watch [1.4: Introduction to Computer Vision – Processing
+	Tutorial](https://www.youtube.com/watch?v=h8tk0hmWB44&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2&t=0s)
+- Watch [11.5: Computer Vision: Color Tracking – Processing
+	Tutorial](https://www.youtube.com/watch?v=nCVZHROb_dE&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2)
 
 Production Assignment:
 

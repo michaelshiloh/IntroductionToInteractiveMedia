@@ -755,7 +755,10 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
 
 #### Administration
 
+- Is my record keeping correct?
 - Record
+- Look at assignments
+- Review last Wednesday - it was a lot of material
 
 #### Working with Images
 
@@ -776,25 +779,27 @@ void setup() {
 } 
 void draw() { 
   image(photo, 10, 10);
+	// How do you suppose you might scale the image?
 }
 
 </pre>
 img.get(x,y) - Gets the color of the pixel at this location
 
 img.get(x,y,w,h) - Gets a portion of the image
-<pre>PImage photo; 
+<pre>
+PImage photo;
 
-void setup() { 
-  photo = loadImage("/home/michael/lidar.jpg");
+void setup() {
+  photo = loadImage("/home/michael/useForCans.jpg");
 
   size(700, 700);
 
   image(photo, 10, 10);
 
-  PImage newPhoto = photo.get(50, 150, 100, 100); 
+  PImage newImage = photo.get(400, 550, 100, 100);
 
-  image (newPhoto, 600, 600);
-} 
+  image (newImage, 50, 50);
+}
 </pre>
 
 Also
@@ -806,6 +811,10 @@ imageMode(CENTER);</pre>
 
 Arrays of images
 
+(File -> Examples -> Add Examples -> Learning Processing)
+
+Where are the examples?
+
 <pre>//Example15-3:Swappingimages
 
 int maxImages = 4; // Total # of images
@@ -814,27 +823,32 @@ int imageIndex = 0; // Initial image to be displayed is the first
 //Declaring an array of images.
 PImage[] images = new PImage[maxImages]; 
 
-void etup) {
-	size(600, 500);
+void setup) {
+  size(600, 500);
 
-	// Loading the images into the array
-	// Don't forget to put the JPG files in the data folder!
-	for (int i = 0; i < images.length; i ++ ) {
-		images[i]=loadImage( "/home/michael/img" + i + ".jpg" );
-	}
+  // Loading the images into the array
+  // Don't forget to put the JPG files in the data folder!
+  for (int i = 0; i < images.length; i ++ ) {
+    images[i]=loadImage( "/home/michael/img" + i + ".jpg" );
+  }
 }
 
 void raw) {
-	// Displaying one image
-	image(images[imageIndex], 0, 0, width/2, height/2);
+  // Displaying one image
+  image(images[imageIndex], 0, 0, width/2, height/2);
 }
 
 void mousePressed) {
-	// A new image is picked randomly when the mouse is clicked
-	// Note the index to the array must be an integer!
-	imageIndex = int(random(images.length));
+  // A new image is picked randomly when the mouse is clicked
+  // Note the index to the array must be an integer!
+  imageIndex = int(random(images.length));
 }
 </pre>
+
+Wait a minute, we never call ````mousePressed()````. What's up with that?
+*Callback functions* are used for what is called event-driven programming.
+
+**Pause** Working in pairs, do something with what we've learned so far
 
 <strong>Pixels</strong>
 
@@ -869,7 +883,9 @@ for (int i = width*5; i < (width + width*5); i++) {
 updatePixels();
 </pre>
 
-You can use all your skills with colors e.g. random() and noise() e.g. make it fade:
+It's important to remember that a pixel is just a color (red, green, blue).
+Anything so you can manipulate pixels mathematically 
+e.g. make it fade:
 
 <pre>int r = 255;
 int change = -1;
@@ -896,28 +912,30 @@ void draw() {
 
 </pre>
 
+The ````pixels```` [data
+type](https://processing.org/reference/color_datatype.html)
+
 What are some of the things you can do with these tools?
 
-Print out the color where the mouse is
-Choose the color where the mouse is and use it for painting
-Write a simple paint program
-Make one horizontal line that follows the mouse
-Overlay a grid on an image
-Take an image and make an artistic collage
-Access the pixels of an image and for a particular color change that pixel with a pixel from another image (green screen effect)
-Draw slices of images somewhere else to "glitch" an image
-randomly
-using the mouse 
-using data from the web
+- Print out the color where the mouse is
+- Choose the color where the mouse is and use it for painting
+- Write a simple paint program
+- Make one horizontal line that follows the mouse
+- Overlay a grid on an image
+- Take an image and make an artistic collage
+- Access the pixels of an image and for a particular color change that pixel with a pixel from another image (green screen effect)
+- Draw slices of images somewhere else to "glitch" an image
+	- randomly
+	- using the mouse 
+	- using data from a dataset you've downloaded from the web
 
 Some other image functions that might be fun:
 
-tint()
-createImage()
-Brightness
-Filter()
-Capture()
+- tint()
+- createImage()
+- Brightness
+- Filter()
 
 **Bonus**
-Distance between images
+Distance between images: Learning Processing example 16.11
 
