@@ -607,7 +607,6 @@ Shiffman's [map example](http://learningprocessing.com/examples/chp13/example-13
 
 Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExample) example
 
-### todays-lecture
 
 ### 3 June 2020
 
@@ -621,7 +620,7 @@ Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExampl
 
 <ul>
  	<li><a title="http://benfry.com/allstreets/" href="http://benfry.com/allstreets/">Ben Fry</a></li>
- 	<li><a href="http://www.aaronkoblin.com/project/flight-patterns/">Aaron Koblin</a>&nbsp;</li>
+ 	<li><a href="http://www.aaronkoblin.com/project/flight-patterns/">Aaron Koblin</a></li>
  	<li>Jer Thorp
 <ul>
  	<li><a href="http://blog.blprnt.com/blog/blprnt/just-landed-processing-twitter-metacarta-hidden-data">just landed</a>
@@ -631,10 +630,10 @@ Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExampl
 </ul>
 </li>
  	<li><a title="http://nytlabs.com/projects/cascade.html" href="http://nytlabs.com/projects/cascade.html">http://nytlabs.com/projects/cascade.html</a></li>
- 	<li>Nytimes top <a href="https://www.flickr.com/photos/blprnt/sets/72157614008027965/with/3288898519/">coverage and connections</a>&nbsp;</li>
+ 	<li>Nytimes top <a href="https://www.flickr.com/photos/blprnt/sets/72157614008027965/with/3288898519/">coverage and connections</a></li>
 </ul>
 </li>
- 	<li><a href="http://feltron.com/FAR14.html">nicholas feltron</a>&nbsp;</li>
+ 	<li><a href="http://feltron.com/FAR14.html">nicholas feltron</a></li>
 </ul>
 <strong>Where to find data</strong>
 <ul>
@@ -642,7 +641,7 @@ Work through [this](https://github.com/michaelshiloh/simpleProcessingClassExampl
 <ul>
  	<li><a href="https://www.springboard.com/blog/free-public-data-sets-data-science-project/">https://www.springboard.com/blog/free-public-data-sets-data-science-project/</a></li>
  	<li>https://www.ndbc.noaa.gov/rt_data_access.shtml</li>
- 	<li><a href="https://www.kaggle.com/datasets">Source</a> of datasets from Alia&nbsp;</li>
+ 	<li><a href="https://www.kaggle.com/datasets">Source</a> of datasets from Alia</li>
 	<li>Also look at examples from last spring. You can see their Github
 	repositories <a href="https://wp.nyu.edu/abudhabi_im_intro/student-github-repositories/">here</a></li>
 </ul>
@@ -749,3 +748,176 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
 * As always, Dan Shiffman has excellent
 [examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
  
+
+### todays-lecture
+
+### 7 June 2020
+
+#### Administration
+
+- Record
+
+#### Working with Images
+
+<strong>PImage</strong>
+<ul>
+ 	<li>Just another class, i.e. it has
+<ul>
+ 	<li>Data (the pixels, width, height, etc.)</li>
+ 	<li>Functionality (image(), get(), etc.)</li>
+</ul>
+</li>
+</ul>
+</div>
+<pre>PImage photo; 
+void setup() { 
+  size(700, 700); 
+  photo = loadImage("/home/michael/useForCans.jpeg");
+} 
+void draw() { 
+  image(photo, 10, 10);
+}
+
+</pre>
+img.get(x,y) - Gets the color of the pixel at this location
+
+img.get(x,y,w,h) - Gets a portion of the image
+<pre>PImage photo; 
+
+void setup() { 
+  photo = loadImage("/home/michael/lidar.jpg");
+
+  size(700, 700);
+
+  image(photo, 10, 10);
+
+  PImage newPhoto = photo.get(50, 150, 100, 100); 
+
+  image (newPhoto, 600, 600);
+} 
+</pre>
+
+Also
+
+<pre>
+image(photo, positionX, positionY, width, height);
+tint(red, green, blue);
+imageMode(CENTER);</pre>
+
+Arrays of images
+
+<pre>//Example15-3:Swappingimages
+
+int maxImages = 4; // Total # of images
+int imageIndex = 0; // Initial image to be displayed is the first
+
+//Declaring an array of images.
+PImage[] images = new PImage[maxImages]; 
+
+void etup) {
+	size(600, 500);
+
+	// Loading the images into the array
+	// Don't forget to put the JPG files in the data folder!
+	for (int i = 0; i < images.length; i ++ ) {
+		images[i]=loadImage( "/home/michael/img" + i + ".jpg" );
+	}
+}
+
+void raw) {
+	// Displaying one image
+	image(images[imageIndex], 0, 0, width/2, height/2);
+}
+
+void mousePressed) {
+	// A new image is picked randomly when the mouse is clicked
+	// Note the index to the array must be an integer!
+	imageIndex = int(random(images.length));
+}
+</pre>
+
+<strong>Pixels</strong>
+
+You can access individual pixels using the special built-in array called ````pixels````. 
+Before using it you must load images from the canvas into the ````pixels```` array ````usingloadPixels()````, 
+and after making any changes you must call ````updatePixels()```` 
+to write from the pixels array back to the canvas:
+
+<pre>color pink = color(255, 102, 204);
+
+loadPixels();
+
+// change the first row to pink
+for (int i = 0; i < width; i++) {
+  pixels[i] = pink; 
+}
+
+updatePixels();
+</pre>
+
+the pixels array is one-dimensional, meaning if you want to go to a different row on the canvas you need to offset by that many widths:
+
+<pre>color pink = color(255, 102, 204);
+
+loadPixels();
+
+// Change the fifth row to pink
+for (int i = width*5; i < (width + width*5); i++) {
+  pixels[i] = pink;
+}
+
+updatePixels();
+</pre>
+
+You can use all your skills with colors e.g. random() and noise() e.g. make it fade:
+
+<pre>int r = 255;
+int change = -1;
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+
+  color myColor = color(r, 102, 204);
+
+  loadPixels();
+  for (int i = 0; i < width * height; i++) {
+    pixels[i] = myColor;
+  }
+  updatePixels();
+
+  r -= change;
+
+  if (r < 0 || r > 255) {
+    change = -change;
+  }
+}
+
+</pre>
+
+What are some of the things you can do with these tools?
+
+Print out the color where the mouse is
+Choose the color where the mouse is and use it for painting
+Write a simple paint program
+Make one horizontal line that follows the mouse
+Overlay a grid on an image
+Take an image and make an artistic collage
+Access the pixels of an image and for a particular color change that pixel with a pixel from another image (green screen effect)
+Draw slices of images somewhere else to "glitch" an image
+randomly
+using the mouse 
+using data from the web
+
+Some other image functions that might be fun:
+
+tint()
+createImage()
+Brightness
+Filter()
+Capture()
+
+**Bonus**
+Distance between images
+

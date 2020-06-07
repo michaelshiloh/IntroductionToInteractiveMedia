@@ -3,6 +3,7 @@ All assignments will be listed here. This includes:
 - Reading assignments
 - Projects
 
+
 #### Assignments Due day 2 June 1
 
 Email Assignment:
@@ -115,9 +116,15 @@ Document your project as always, with the following additions:
 	- The source of your data
 
 
+#### Assignments Due day 6 June 8
 
+Reading Assignment:
 
+- Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
 
+Production Assignment:
 
+- Do something creative with one or more image(s)
 
-
+Document your project as always, but use the following name for your new
+folder: ````June_8_Image_Manipulation````
