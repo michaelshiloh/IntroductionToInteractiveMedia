@@ -747,9 +747,7 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
 
 * As always, Dan Shiffman has excellent
 [examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
- 
 
-### todays-lecture
 
 ### 7 June 2020
 
@@ -936,6 +934,140 @@ Some other image functions that might be fun:
 - Brightness
 - Filter()
 
-**Bonus**
-Distance between images: Learning Processing example 16.11
 
+
+### todays-lecture
+
+### 7 June 2020
+
+#### Administration
+
+- Is my record keeping correct?
+- Record
+- Look at assignments
+
+#### Review
+
+- Questions about ````PImage```` and its methods, ````image()````,
+the ````pixels```` array, 
+and ````loadPixels```` and ````updatePixels````
+
+How do you find the most red pixel in an image?
+
+````
+/*
+ How to find the most red pixel in an image
+
+ 8 June 2020 - MS - written
+
+ Based xample 16-11 from Learning Processing
+ */
+
+// the image
+PImage myPicture;
+
+// The color we are searching for
+float searchColorR = 255;
+float searchColorG = 0;
+float searchColorB = 0;
+
+void setup() {
+  size(500, 500);
+  myPicture = loadImage("/home/michael/useForCans.jpg");
+
+  // If the image failed to load, print a warning and don't go further
+  if (myPicture == null) {
+    println("Image failed to load!");
+
+    // This is what we call and "endless loop". Since true is always true,
+    // the loop never stops, so the program doesn't continue. The loop
+    // itself is empty so it does nothing. This is a common way to prevent
+    // a program from continuing when you know it is impossible to work
+    while (true)
+      ;
+  }
+}
+
+void draw() {
+
+  image(myPicture, 0, 0, width, height);
+
+  loadPixels();
+
+  // Before we begin searching, the "world record" for closest color
+  // is set to a high number that is easy for the first pixel to beat.
+  float worldRecord = 500;
+
+  // XY coordinate of closest color
+  int closestX = 0;
+  int closestY = 0;
+
+  // Begin loop to walk through every pixel
+  for (int x = 0; x < width; x ++ ) {
+    for (int y = 0; y < height; y ++ ) {
+      int loc = x + y*width;
+
+      // Get the color of this individual pixel
+      color currentColor = pixels[loc];
+
+      // extract the r, g, and b components of this pixel
+      float redComponent = red(currentColor);
+      float greenComponent = green(currentColor);
+      float blueComponent = blue(currentColor);
+
+      // Using euclidean distance to compare colors
+      float d = dist(searchColorR, searchColorG, searchColorB, redComponent, greenComponent, blueComponent);
+
+      // If current color is more similar to tracked color than
+      // closest color, save current location and current difference
+      if (d < worldRecord) {
+        worldRecord = d;
+        closestX = x;
+        closestY = y;
+      }
+    }
+  }
+
+  // We only consider the color found if its color distance is less than 10.
+  // This threshold of 10 is arbitrary and you can adjust this number depending on how accurate you require the tracking to be.
+  if (worldRecord < 100) {
+    // Draw a circle at the tracked pixel
+
+    fill(0);
+    strokeWeight(4.0);
+    stroke(0);
+
+    ellipse(closestX, closestY, frameCount%20, frameCount%20);
+  }
+}
+````
+
+#### Sound
+
+Install the Sound library
+
+- Open Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install the Sound library provided by The Processing Foundation
+
+Play with examples
+
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+
+**Notes**
+1. Some soundfiles don't work. I don't know why.
+2. New concept: ````switch()``` statement
+
+
+Examples from Learning Processing chapter 20
+
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+- The first example sound file is one that does not work for me. 
+
+#### Midterm project
+
+See in [assignments](assignments.md)

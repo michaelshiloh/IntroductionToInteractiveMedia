@@ -132,3 +132,22 @@ Production Assignment:
 
 Document your project as always, but use the following name for your new
 folder: ````June_8_Image_Manipulation````
+
+
+#### Assignments Due day 7 June 9
+
+Reading Assignment:
+
+- Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
+
+Midterm Project
+
+- Make a game using everything you have learned so far
+- Due Wednesday June 10
+- The can be one or more players
+- Must include
+	- At least one shape
+	- At least one image
+	- At least one sound
+	- At least one on-screen text
+

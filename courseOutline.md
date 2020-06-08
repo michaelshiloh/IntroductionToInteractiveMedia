@@ -7,20 +7,20 @@ Processing
  	Day 3: Functions, Arrays, and Object Oriented Programming
  	Day 4: Loading Data, Displaying text, Transformations
  	Day 5: Image manipulation
- 	Day 6: Sound
+ 	Day 6: Sound, introduce Midterm Project
 
 Midterm
 
- 	Day 7: Midterm Project
+ 	Day 7: Work on Midterm Project
+ 	Day 8: Work on Midterm Project; Midterm Project Critique
 
 Electronics and Arduino
 
- 	Day 8: Introduction to Electricity
- 	Day 9: Introduction to Arduino: Digital Input/output
- 	Day 10: Analog Input, Mapping
- 	Day 11: Analog output, Sound, Servo motor
-	Day 12: DC motors
- 	Day 13: Construction and Debugging
+ 	Day 9: Introduction to Electricity
+ 	Day 10: Introduction to Arduino: Digital Input/output
+ 	Day 11: Analog Input, Mapping
+ 	Day 12: Analog output, Sound, Servo motor
+	Day 13: DC motors, Construction and Debugging, introduce Final Project
 
 Processing and Arduino
 
