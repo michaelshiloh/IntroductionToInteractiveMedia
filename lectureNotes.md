@@ -1015,8 +1015,12 @@ void draw() {
       float greenComponent = green(currentColor);
       float blueComponent = blue(currentColor);
 
-      // Using euclidean distance to compare colors
-      float d = dist(searchColorR, searchColorG, searchColorB, redComponent, greenComponent, blueComponent);
+      // Using euclidean distance to compare colors.
+			// First the color we are searching for
+			// next the color of our current pixel
+      float d = dist(
+					searchColorR, searchColorG, searchColorB, 
+					redComponent, greenComponent, blueComponent);
 
       // If current color is more similar to tracked color than
       // closest color, save current location and current difference
