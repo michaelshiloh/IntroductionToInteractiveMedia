@@ -942,9 +942,9 @@ Some other image functions that might be fun:
 
 #### Administration
 
-- Is my record keeping correct?
 - Record
-- Look at assignments
+
+#### Look at assignments
 
 #### Review
 
@@ -967,9 +967,9 @@ How do you find the most red pixel in an image?
 PImage myPicture;
 
 // The color we are searching for
-float searchColorR = 255;
-float searchColorG = 0;
-float searchColorB = 0;
+final float searchColorR = 255;
+final float searchColorG = 0;
+final float searchColorB = 0;
 
 void setup() {
   size(500, 500);
@@ -1029,14 +1029,12 @@ void draw() {
   }
 
   // We only consider the color found if its color distance is less than 10.
-  // This threshold of 10 is arbitrary and you can adjust this number depending on how accurate you require the tracking to be.
+  // This threshold of 10 is arbitrary and you can adjust this number 
+	// depending on how accurate you require the tracking to be.
   if (worldRecord < 100) {
+
     // Draw a circle at the tracked pixel
-
-    fill(0);
-    strokeWeight(4.0);
-    stroke(0);
-
+		// make the size of the ellipse change so that we can see it
     ellipse(closestX, closestY, frameCount%20, frameCount%20);
   }
 }
@@ -1060,6 +1058,7 @@ Play with examples
 **Notes**
 1. Some soundfiles don't work. I don't know why.
 2. New concept: ````switch()``` statement
+3. ````keyPressed()```` is another example of a ````callback function ````
 
 
 Examples from Learning Processing chapter 20
