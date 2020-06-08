@@ -140,6 +140,10 @@ Reading Assignment:
 
 - Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
 
+Production Assignment:
+
+- Make some progress on you midterm project
+
 Midterm Project
 
 - Make a game using everything you have learned so far
