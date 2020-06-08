@@ -938,7 +938,7 @@ Some other image functions that might be fun:
 
 ### todays-lecture
 
-### 7 June 2020
+### 8 June 2020
 
 #### Administration
 
