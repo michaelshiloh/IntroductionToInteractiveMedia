@@ -935,9 +935,6 @@ Some other image functions that might be fun:
 - Filter()
 
 
-
-### todays-lecture
-
 ### 8 June 2020
 
 #### Administration
@@ -1074,3 +1071,18 @@ chp_20_sound -> example_20_02_sound_effect
 #### Midterm project
 
 See in [assignments](assignments.md)
+
+
+### todays-lecture
+### 8 June 2020
+
+#### Administration
+
+- Record
+- Plan for today: 1 hr work, discussion, continue to work
+- Plan for tomorrow (Wednesday):
+	- Be read to share your projects at the **beginning** of class. 
+	There will be no work time on Wednesday.
+	- I will monitor email and Discord this afternoon, tonight, and tomorrow
+		morning.
+

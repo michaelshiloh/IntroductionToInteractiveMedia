@@ -26,13 +26,13 @@ Production Assignment:
 	- The portrait does not need to be dynamic (i.e. it does not need to change while we look at it) 
 	- The portrait does not need to be realistic. The purpose is to practice
 	using the simple drawing functions.
-- In your Github repository, create a new folder named `June1`
-	- Upload your program into the new folder, with the extension `.pde`. Your
+- In your Github repository, create a new folder named ````June1````
+	- Upload your program into the new folder, with the extension ````.pde````. Your
 program should be well commented and organized. If you use any variables,
 chose good names.
 	- Upload a screenshot of your portrait into the new folder
-	- Create a `README.md` in the new folder and include your screenshot in 
-	the `README.md`.
+	- Create a ````README.md```` in the new folder and include your screenshot in 
+	the ````README.md`.
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
@@ -45,7 +45,7 @@ Reading Assignment:
 
 Production Assignment:
 
-- Using loops (`for()` or `while()`) in some way, 
+- Using loops (````for()```` or ````while()````) in some way, 
 along with everything that you've learned so far, 
 make a simple work of art. 
 You may want to look at these old computer art magazines for inspiration, 
@@ -155,3 +155,26 @@ Midterm Project
 	- At least one sound
 	- At least one on-screen text
 
+#### Assignments Due day 8 June 10
+
+Reading Assignment:
+
+- Read for tomorrow's [discussion ](studentLeadDiscussionSchedule.md)
+
+Production Assignment:
+
+- Be prepared to share your midterm project at the start of class
+
+- Documentation is also due at the start of class and must include:
+
+	- New folder called ````June_10_Midterm````
+		- The overall concept
+		- Your name and assignment due date
+		- Instructions for usage if it's interactive
+		- Well commented code, especially
+			for any confusing or tricky parts 
+		- References and links to any tutorials, examples or inspiration
+		- Functions as needed to organize your program
+		- Excellent names for variables and functions
+		- Upload code and one or more images
+		- Describe any problems you ran into
