@@ -32,7 +32,7 @@ program should be well commented and organized. If you use any variables,
 chose good names.
 	- Upload a screenshot of your portrait into the new folder
 	- Create a ````README.md```` in the new folder and include your screenshot in 
-	the ````README.md`.
+	the ````README.md````.
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 

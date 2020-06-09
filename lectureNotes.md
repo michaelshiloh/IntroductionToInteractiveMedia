@@ -765,7 +765,7 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
  	<li>Just another class, i.e. it has
 <ul>
  	<li>Data (the pixels, width, height, etc.)</li>
- 	<li>Functionality (image(), get(), etc.)</li>
+ 	<li>Functionality `(image()`, `get()`, etc.)</li>
 </ul>
 </li>
 </ul>
@@ -781,9 +781,9 @@ void draw() {
 }
 
 </pre>
-img.get(x,y) - Gets the color of the pixel at this location
+`img.get(x,y)` - Gets the color of the pixel at this location
 
-img.get(x,y,w,h) - Gets a portion of the image
+`img.get(x,y,w,h)` - Gets a portion of the image
 <pre>
 PImage photo;
 
@@ -929,10 +929,10 @@ What are some of the things you can do with these tools?
 
 Some other image functions that might be fun:
 
-- tint()
-- createImage()
-- Brightness
-- Filter()
+- `tint()`
+- `createImage()`
+- `Brightness`
+- `Filter()`
 
 
 ### 8 June 2020
@@ -1058,7 +1058,7 @@ Play with examples
 
 **Notes**
 1. Some soundfiles don't work. I don't know why.
-2. New concept: ````switch()``` statement
+2. New concept: ````switch()```` statement
 3. ````keyPressed()```` is another example of a ````callback function ````
 
 
