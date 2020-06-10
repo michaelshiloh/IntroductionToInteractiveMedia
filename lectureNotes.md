@@ -1106,8 +1106,9 @@ Dear Summer School Faculty and Support Staff,
 
 As you may be aware, students around the globe are calling for a day of
 reflection in response to the recent incident in Minneapolis and to global
-racism more generally. [Here](https://www.shutdownstem.com/) is a link to one site that provides some context
-for this.
+racism more generally. 
+[Here](https://www.shutdownstem.com/) is a link to one site that provides 
+some context for this.
 
 Although we are not in the US, we are part of an American and global
 institution. NYU Abu Dhabi supports this initiative to stand against violence
@@ -1125,8 +1126,5 @@ I'm in favor of discussing rather than cancelling. I'd much rather use this
 opportunity to learn from each other, me as much as you, and to hear insight
 from different perspectives. What do you think?
 
-
-	https://www.shutdownstem.com/action
-
-
-1 hr work, discussion, continue to work
+From the same website, [here](https://www.shutdownstem.com/action)
+are some specific steps.
