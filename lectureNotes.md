@@ -1073,8 +1073,7 @@ chp_20_sound -> example_20_02_sound_effect
 See in [assignments](assignments.md)
 
 
-### todays-lecture
-### 8 June 2020
+### 9 June 2020
 
 #### Administration
 
@@ -1086,3 +1085,48 @@ See in [assignments](assignments.md)
 	- I will monitor email and Discord this afternoon, tonight, and tomorrow
 		morning.
 
+### todays-lecture
+
+### 10 June 2020
+
+#### Administration
+
+- Do not record
+- Plan for today: 
+	- #shut down academia discussion
+	- midterm projects
+	- discussion
+
+#### shut down academia discussion
+
+A short while ago we received the following email from Chuck:
+
+````
+Dear Summer School Faculty and Support Staff,
+
+As you may be aware, students around the globe are calling for a day of
+reflection in response to the recent incident in Minneapolis and to global
+racism more generally. [Here](https://www.shutdownstem.com/) is a link to one site that provides some context
+for this.
+
+Although we are not in the US, we are part of an American and global
+institution. NYU Abu Dhabi supports this initiative to stand against violence
+and other forms of discrimination against Black people. We encourage you to
+make time for reflection today - to learn, and engage with the issues, with
+antiracism resources, and with each other.
+
+Most of you will have already concluded your classes for the day before seeing
+this message, but for those who haven’t you should feel empowered to repurpose
+today’s class to address this or cancel your class altogether if you feel it
+appropriate.
+````
+
+I'm in favor of discussing rather than cancelling. I'd much rather use this
+opportunity to learn from each other, me as much as you, and to hear insight
+from different perspectives. What do you think?
+
+
+	https://www.shutdownstem.com/action
+
+
+1 hr work, discussion, continue to work

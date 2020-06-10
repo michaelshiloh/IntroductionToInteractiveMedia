@@ -178,3 +178,11 @@ Production Assignment:
 		- Excellent names for variables and functions
 		- Upload code and one or more images
 		- Describe any problems you ran into
+		
+
+
+**Note**If the discussion leader wants to summarize the reading,
+do it very briefly since each each student is responsible for the reading. 
+Save the time for discussion.
+
+
