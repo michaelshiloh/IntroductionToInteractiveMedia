@@ -193,7 +193,7 @@ Reading Assignment:
 - Sparkfun [breadboard
 	tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
 - [Microcontrollers, the basics](href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
-	[Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
+- [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
 
 Production Assignment:
 
