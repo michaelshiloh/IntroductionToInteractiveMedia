@@ -192,7 +192,7 @@ Reading Assignment:
 	Remember that we have two discussions: Loan and Sadeq
 - Sparkfun [breadboard
 	tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
-- [Microcontrollers, the basics[(href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
+- [Microcontrollers, the basics](href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
 	[Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
 
 Production Assignment:
@@ -205,7 +205,3 @@ Production Assignment:
 - Install the Arduino IDE from
 	[here](https://www.arduino.cc/en/Main/Software). If you are on Windows chose
 	the Windows Installer.
-
-
-
-
