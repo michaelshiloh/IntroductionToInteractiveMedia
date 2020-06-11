@@ -186,3 +186,28 @@ do it very briefly since each each student is responsible for the reading.
 Save the time for discussion.
 
 
+#### Assignments Due day 9 June 14
+
+Reading Assignment:
+
+- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+	Remember that we have two discussions: Loan and Sadeq
+- Sparkfun [breadboard
+	tutorial]([SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all))
+- [Microcontrollers, the basics[(href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
+	[Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
+
+Production Assignment:
+
+- Prepare a space for working with electronics
+	- Have your kits ready to use in class
+	- Have some space to work. There are many small components in the kit that
+	will be easily lost, so ideally be seated at a table or desk with clear
+	space around you.
+- Install the Arduino IDE from
+	[here](https://www.arduino.cc/en/Main/Software). If you are on Windows chose
+	the Windows Installer.
+
+
+
+

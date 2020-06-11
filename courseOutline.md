@@ -12,7 +12,7 @@ Processing
 Midterm
 
  	Day 7: Work on Midterm Project
- 	Day 8: Work on Midterm Project; Midterm Project Critique
+ 	Day 8: Midterm Project Critique
 
 Electronics and Arduino
 
