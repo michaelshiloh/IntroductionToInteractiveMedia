@@ -1139,6 +1139,10 @@ are some specific steps.
 - Plan for today: 
 	- Electricity
 	- 2 discussions: Loan and Sadeq
+- If the discussion leader wants to summarize the reading,
+do it very briefly since each each student is responsible for the reading. 
+Save the time for discussion.
+
 
 #### Electricity 
 

@@ -3,6 +3,8 @@ All assignments will be listed here. This includes:
 - Reading assignments
 - Projects
 
+[Today's assignment](#todays-assignment)
+
 
 #### Assignments Due day 2 June 1
 
@@ -181,11 +183,7 @@ Production Assignment:
 		
 
 
-**Note**If the discussion leader wants to summarize the reading,
-do it very briefly since each each student is responsible for the reading. 
-Save the time for discussion.
-
-
+##### todays-assignment
 #### Assignments Due day 9 June 14
 
 Reading Assignment:
@@ -193,7 +191,7 @@ Reading Assignment:
 - Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
 	Remember that we have two discussions: Loan and Sadeq
 - Sparkfun [breadboard
-	tutorial]([SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all))
+	tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
 - [Microcontrollers, the basics[(href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
 	[Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
 
