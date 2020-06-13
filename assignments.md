@@ -205,3 +205,12 @@ Production Assignment:
 - Install the Arduino IDE from
 	[here](https://www.arduino.cc/en/Main/Software). If you are on Windows chose
 	the Windows Installer.
+- In your kit is a bundle of jumper wires with a very tight ziptie 
+	that must be carefully removed. Please do this before class because 
+	it may take you a while to find the right tool. 
+	A sharp pair of scissors should work. A knife might damage the wires 
+	and hurt you.
+
+![](media/jumpersWithCableTieRemoved.jpg)
+
+- **Be careful not to damage the wires or yourselves!**
