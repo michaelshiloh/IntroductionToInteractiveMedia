@@ -1129,7 +1129,6 @@ From the same website, [here](https://www.shutdownstem.com/action)
 are some specific steps.
 
 
-### todays-lecture
 ### 14 June 2020
 
 #### Administration
@@ -1299,12 +1298,82 @@ void loop() {
 }
 ````
 
-Let's add another LED on a different pin
+Other things you can do:
+
+Add another LED on a different pin
 
 ![](media/ArduinoTwoLEDs_schem.png)
 ![](media/ArduinoTwoLEDs_bb.png)
 
-Let's add another switch on a different pin
+Add another switch on a different pin
 
 ![](media/ArduinoTwoSwitches_schem.png)
 ![](media/ArduinoTwoSwitches_bb.png)
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. You can select up to four patterns. How is that possible?
+
+
+### todays-lecture
+### 15 June 2020
+
+#### Administration
+
+- Record
+
+#### Review
+
+- How would you add two switches on two different inputs?
+- How would you select one of four options with only two switches?
+
+#### Analog Input
+
+- Analog Inputs, `analogRead()`, and (some) sensors go together
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- Some actuators, like a solenoid, can be in only one of two states,
+	and so are more suited to a digital output
+
+Analog sensors can be resistive or not. Resistive sensors all use the same
+pattern: a [voltage
+divider](https://learn.sparkfun.com/tutorials/voltage-dividers). Note the
+similarity to the circuit we used for a switch - a switch is also effectively
+a voltage divider.
+
+#### Analog Output
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from Processing that are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in Processing to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.println()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+#### Data Types
+
+Just like in Processing, there are different data types:
+
+````
+int
+float
+char
+boolean
+````
+
