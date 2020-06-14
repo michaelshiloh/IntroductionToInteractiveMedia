@@ -1153,6 +1153,10 @@ The most confusing part of this lecture will be the solderless breadboard:
 Image courtesy of
 [SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
 
+Here is how to build the circuit
+
+![](media/ArduinoPoweringLED_bb.png)
+
 
 **Theory**
 
@@ -1182,12 +1186,19 @@ to some other form of energy (e.g. light, sound, heat, movement)
 
 Schematics
 
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
 - Important part of something, 
 	without getting distracted by details (e.g. subway maps)
 - What's important in an electrical schematic?
 	- Where is the power coming from?
 	- What other components are there in the circuit?
 	- How are they connected?
+
+**Schematics are an important way to show a circuit. You will be required to
+understand and use them**
 
 Switches
 
@@ -1201,6 +1212,9 @@ Switches
 	- The switch can go on either side. How is this possible?
 
 Let's use a real switch
+
+![](media/ArduinoPoweringLEDWithSwitch_schem.png)
+![](media/ArduinoPoweringLEDWithSwitch_bb.png)
 
 - How is this switch different from the earlier switch?
 	- Schematic symbol of momentary switch
@@ -1216,7 +1230,14 @@ Series and Parallel
 - No matter how many components you have in a circuit, and how they are
 	connected, they will obey these principles.
 
-- Schematics
+![](media/ArduinoPoweringLEDWith2SwitchesParallel_schem.png)
+![](media/ArduinoPoweringLEDWith2SwitchesParallel_bb.png)
+
+![](media/ArduinoPowering2LEDSeries_schem.png)
+![](media/ArduinoPowering2LEDSeries_bb.png)
+
+- Any two components can be connected in series or parallel; not just switches
+- More than two components might be in series, or parallel, or neither
 
 Ohm's law
 - I=V/R
@@ -1243,8 +1264,22 @@ What is going on?
 - Circuit
 - I/O pins
 
+Let's extend this circuit to the breadboard:
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
 Let's add a switch
 
-Let's add another LED
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
 
-Let's add another switch
+Let's add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Let's add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
