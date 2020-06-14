@@ -183,7 +183,6 @@ Production Assignment:
 		
 
 
-##### todays-assignment
 #### Assignments Due day 9 June 14
 
 Reading Assignment:
@@ -214,3 +213,15 @@ Production Assignment:
 ![](media/jumpersWithCableTieRemoved.jpg)
 
 - **Be careful not to damage the wires or yourselves!**
+
+
+##### todays-assignment
+#### Assignments Due day 10 June 15
+
+Reading Assignment:
+
+- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+- Read about 
+[analog output](href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
+and 
+[analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
