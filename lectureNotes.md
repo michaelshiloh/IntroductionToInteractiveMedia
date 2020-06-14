@@ -1276,6 +1276,29 @@ Let's add a switch
 ![](media/ArduinoLEDMomentarySwitch_schem.png)
 ![](media/ArduinoLEDMomentarySwitch_bb.png)
 
+````
+// the setup function runs once when you press reset or power the board
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
 Let's add another LED on a different pin
 
 ![](media/ArduinoTwoLEDs_schem.png)
