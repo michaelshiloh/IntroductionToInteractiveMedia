@@ -1135,6 +1135,8 @@ are some specific steps.
 #### Administration
 
 - Record
+- I need to leave exactly at 4pm. If you have questions put them in Discord
+	and I'll answer after my 4pm meeting.
 - Remember that if you drop the class you must return the kit
 - Plan for today: 
 	- Electricity
