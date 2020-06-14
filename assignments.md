@@ -222,6 +222,6 @@ Reading Assignment:
 
 - Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
 - Read about 
-[analog output](href="https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
+[analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
 and 
 [analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
