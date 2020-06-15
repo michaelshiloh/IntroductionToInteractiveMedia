@@ -1347,6 +1347,10 @@ pattern: a voltage divider.
 Note the similarity to the circuit we used for a switch - 
 a switch is also effectively a voltage divider.
 
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
 #### Analog Output
 
 - Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
@@ -1376,6 +1380,12 @@ Serial.print(" Second value = ");
 Serial.print(secondValue);
 Serial.println();
 ````
+
+#### In-class exercise
+
+1. Use one of the analog sensors to select which of two LEDs lights up
+1. Use one of the analog sensor to control how fast two LEDs alternate
+
 
 #### Data Types
 

@@ -258,4 +258,8 @@ Document your work:
 	- Problems, if any, and solutions, if any
 	- Anything else you can think of
 - Upload your program. 
-		Keep the .ino extension so that it is formatted properly.
+	- Excellent names for variables and functions
+	- Well structured
+	- Use <CMD>T or <CNTRL>T to format your code properly
+	- Excellent comments
+	- Keep the .ino extension so that it is formatted properly.
