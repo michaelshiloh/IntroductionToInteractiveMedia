@@ -1323,25 +1323,37 @@ switch is pressed. You can select up to four patterns. How is that possible?
 
 #### Review
 
+- How would you add two LEDs on two different outputs?
 - How would you add two switches on two different inputs?
 - How would you select one of four options with only two switches?
 
 #### Analog Input
 
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
 - Analog Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
 	- Digital sensors, like a switch, have only one of two values 
 	and so are more suited to a digital input
-- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
-	- Some actuators, like a solenoid, can be in only one of two states,
-	and so are more suited to a digital output
+
+Do you see a similarity between this circuit and 
+something we learned yesterday?
 
 Analog sensors can be resistive or not. Resistive sensors all use the same
 pattern: a [voltage
-divider](https://learn.sparkfun.com/tutorials/voltage-dividers). Note the
-similarity to the circuit we used for a switch - a switch is also effectively
-a voltage divider.
+divider](https://learn.sparkfun.com/tutorials/voltage-dividers). 
+Note the similarity to the circuit we used for a switch - 
+a switch is also effectively a voltage divider.
 
 #### Analog Output
+
+- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- This only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- Some actuators, like a solenoid, can be in only one of two states,
+	and so are more suited to a digital output
 
 - Not true analog voltage. PWM = Pulse Width Modulation
 - Works for LEDs and motors
@@ -1377,3 +1389,33 @@ char
 boolean
 ````
 
+#### Conventions: Schematics and Wire Colors
+
+- When drawing schematics
+
+	- All **sensors** on the **left**
+	- All **inputs** on the **left** side of the Arduino 
+	- All **actuators** on the **right**
+	- All **outputs** on the **right** side of the Arduino 
+	- There are exceptions e.g.
+		- If using CAD you can't control where the pins are on Arduino
+		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
+			both inputs and outputs
+
+- When wiring your circuits
+
+	- All **5V** connections should use **red** wire, 
+	and don't use red for anything else
+	- All **GND** connections should use **black** wire,
+	and don't use black for anything else
+		- If you run out of black you may either
+			- Color some white cables black with a Sharpie
+			- Dedicate green as an additional black, and then
+			don't use green for anything else either
+	- All other connections can use any other colors
+
+#### Time Permitting
+
+`tone()`
+
+Servo motor
