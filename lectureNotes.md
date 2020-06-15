@@ -1343,8 +1343,7 @@ Do you see a similarity between this circuit and
 something we learned yesterday?
 
 Analog sensors can be resistive or not. Resistive sensors all use the same
-pattern: a [voltage
-divider](https://learn.sparkfun.com/tutorials/voltage-dividers). 
+pattern: a voltage divider.
 Note the similarity to the circuit we used for a switch - 
 a switch is also effectively a voltage divider.
 

@@ -215,7 +215,6 @@ Production Assignment:
 - **Be careful not to damage the wires or yourselves!**
 
 
-##### todays-assignment
 #### Assignments Due day 10 June 15
 
 Reading Assignment:
@@ -225,3 +224,38 @@ Reading Assignment:
 [analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
 - Read about
 [analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
+
+
+##### todays-assignment
+
+#### Assignments Due day 11 June 16
+
+Reading Assignment:
+
+- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+- Read about the [voltage
+divider](https://learn.sparkfun.com/tutorials/voltage-dividers).
+Don't worry about the theory too much or the section on level shifting. 
+The important thing is to absorb a little of the concept of a voltage divider.
+
+
+Production Assignment:
+
+- Get information from at least one analog sensor 
+and at least one digital sensor (switch), 
+and use this information to control at least two LEDs, 
+one in a digital fashion and the other in an analog fashion, 
+in some creative way.
+Document your work:
+- Create a new folder in your github repository called “June16_Arduino_IO
+- Describe your project in README.md and include:
+	- A description of your concept and how it was achieved
+	- A picture of your circuit schematic.  
+		- Your schematic, whether hand drawn or otherwise, must be clear. 
+		- **Remember what a schematic is and is not.**
+		- **Make sure your schematic is big enough to read without enlarging**
+	- A photograph of your project
+	- Problems, if any, and solutions, if any
+	- Anything else you can think of
+- Upload your program. 
+		Keep the .ino extension so that it is formatted properly.
