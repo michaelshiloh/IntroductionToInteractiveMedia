@@ -1464,7 +1464,7 @@ page](https://www.arduino.cc/en/Reference/Servo)
 
 
 **Notes**
-- Use of the library disables `analogWrite()` (PWM) on pins 9 and 10
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
 - The `Servo.write()` function is *non-blocking*
 
 
