@@ -493,7 +493,7 @@ void draw() {
 * Long lines are difficult to read. Break them up in some clear way.
 * White spaces (space, 'enter', tab) doesn't affect program so use them to
 	make your program easier to read
-* Use <CTRL>t or <Command>t to properly indent your code
+* Use `<CTRL>t` or `<Command>t` to properly indent your code
 
 
 Now, let's create a function that returns something. 
@@ -1314,7 +1314,6 @@ Now write a program that will blink different patterns depending on which
 switch is pressed. You can select up to four patterns. How is that possible?
 
 
-### todays-lecture
 ### 15 June 2020
 
 #### Administration
@@ -1423,8 +1422,82 @@ boolean
 			don't use green for anything else either
 	- All other connections can use any other colors
 
-#### Time Permitting
 
-`tone()`
+### todays-lecture
 
-Servo motor
+### 15 June 2020
+
+#### Administration
+
+- Record
+
+#### Review
+
+**Debugging**
+
+If you want my help solving a problem in your assignment, do the following:
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Discord, describing carefully
+	1. What do you think should be happening
+	1. What instead is happening 
+
+#### Sound
+
+**`tone()`**
+
+[Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+[Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in Processing
+- Arduino has arrays just like in Processing
+
+**Servo motor**
+
+[Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+[Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+
+**Notes**
+- Use of the library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+
+#### Blink Without `delay()`
+
+Why do we need this? 
+
+What problem does delay cause? 
+
+For example, how would you
+- Blink LEDs at different rates
+- Blink an LED while playing a tune
+- Play a tune while moving a servo motor
+
+**Whenever we use `delay()` we can't do other things**
+
+[Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
+
+So much for blinking. What if we want to move a servo motor at the same time?
+
+Adafruit [Multitasking Tutorial Part
+I](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+
+Play a melody and blink an LED 
+without using `delay()`:
+[toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
+
+Flicker (i.e simulate a candle) multiple LEDs 
+without using `delay()`:
+[flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
+
+Related is the concept of a systems *state*, and detecting and controlling the
+transition from one state to another
+
+[State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
+State Change Detection is also called edge detection

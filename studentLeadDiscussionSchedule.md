@@ -38,6 +38,10 @@ Each student is responsible for leading discussion of the weekly readings.
 
 
 
+Instructions to participants:
+
+1. If a male and a female both try to speak, let the female go first
+
 Instructions to leader:
 
 1. You have 15 minutes. Allow 3-5 mintes at the end to wrap up, so divide the

@@ -226,8 +226,6 @@ Reading Assignment:
 [analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
 
 
-##### todays-assignment
-
 #### Assignments Due day 11 June 16
 
 Reading Assignment:
@@ -260,6 +258,27 @@ Document your work:
 - Upload your program. 
 	- Excellent names for variables and functions
 	- Well structured
-	- Use <CMD>T or <CNTRL>T to format your code properly
+	- Use `<Command>t` or `<CNTRL>t` to format your code properly
 	- Excellent comments
 	- Keep the .ino extension so that it is formatted properly.
+
+
+##### todays-assignment
+
+#### Assignments Due day 12 June 17
+
+Reading Assignment:
+
+- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+- It is important that you understand the concepts behind BlinkWithoutDelay.
+	[Here](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
+	are links to various other explanations of the same thing. Browse them, and
+	read one deeply enough that you understand. Come to class with questions if
+	none of these help.
+
+Production Assignment:
+
+- Make a musical instrument
+	- You must use at least one of the analog sensors in some way
+Document your work as described above, in 
+a new folder in your github repository called “June17_MusicalInstrument"
