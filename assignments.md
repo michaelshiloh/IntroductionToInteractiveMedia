@@ -279,6 +279,8 @@ Reading Assignment:
 Production Assignment:
 
 - Make a musical instrument
-	- You must use at least one of the analog sensors in some way
-Document your work as described above, in 
+	- You must use at least one digital sensor (switch)
+	- You must use at least one analog sensor (photoresistor, potentiometer, or
+		distance measuring sensor)
+- Document your work as described above, in 
 a new folder in your github repository called “June17_MusicalInstrument"
