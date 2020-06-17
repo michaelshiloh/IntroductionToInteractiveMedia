@@ -263,7 +263,6 @@ Document your work:
 	- Keep the .ino extension so that it is formatted properly.
 
 
-##### todays-assignment
 
 #### Assignments Due day 12 June 17
 
@@ -284,3 +283,24 @@ Production Assignment:
 		distance measuring sensor)
 - Document your work as described above, in 
 a new folder in your github repository called “June17_MusicalInstrument"
+o
+
+##### todays-assignment
+#### Assignments Due day 13 June 21
+
+Reading Assignment:
+
+- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+
+Production Assignment:
+
+- Make a simple game that involves some kind of communication between Arduino
+	and Processing. Document as before 
+	(README.md, schematics, pictures, video, and
+	both Arduino code and Processing code) 
+	in a new folder called June21_Communication
+
+- Write a preliminary concept for your final project, which must involved 
+both Arduino and Processing.
+	Document this in a new file called June21_PreliminaryConcept.md
+	in a new folder called FinalProject
