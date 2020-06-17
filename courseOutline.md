@@ -19,8 +19,8 @@ Electronics and Arduino
  	Day 9: Introduction to Electricity and Arduino Digital Input and output
  	Day 10: Analog Input and output, Mapping, data types, printing
  	Day 11: Sound, Servo motor
- 	Day 12: DC motors, 
-	Day 13: Construction and Debugging, introduce Final Project
+ 	Day 12: communication, introduce Final Project
+	Day 13: DC motors, Construction and Debugging
 
 Processing and Arduino
 
