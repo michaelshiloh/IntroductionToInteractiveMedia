@@ -1606,6 +1606,8 @@ H-bridge
 
 Circuit Schematic
 
+![](media/arduinoSparkFunMotorDriver_schem.jpg)
+
 Theory
 
 Code
