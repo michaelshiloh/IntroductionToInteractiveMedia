@@ -1491,7 +1491,6 @@ without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
 
-### todays-lecture
 ### 17 June 2020
 
 #### Administration
@@ -1530,9 +1529,6 @@ File -> Examples -> Communications -> SerialCallResponseASCII
 
 Remember the principle of robust coding
 
-
-#### Time Permitting, if relevant
-
 Flicker (i.e simulate a candle) multiple LEDs 
 without using `delay()`:
 [flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
@@ -1544,3 +1540,72 @@ transition from one state to another
 [State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
 State Change Detection is also called edge detection
 
+
+
+### todays-lecture
+### 21 June 2020
+
+#### Administration
+
+- Record
+- Plan for today:
+	- DC Motors
+	- Construction and Debugging Techniques
+	- Final Project Proposal Critique
+	- Time permitting, and if there is interest, review Flicker and State Change
+		above
+- Plan for tomorrow:
+	- Course Evaluations
+	- Work on Final Projects in class
+	- If you do your course evaluations before class, you have the entire class
+		to work on your projects
+
+#### DC Motors
+
+Arduino current limitations
+
+Remember I=V/R. 
+
+In Arduino, V is always 5V
+
+LEDs have relatively <strong>high</strong> "resistance", 
+and so consume <strong>low</strong> current.
+Motors have relatively <strong>low</strong> "resistance", 
+and so consume <strong>high</strong> current
+
+
+**Current flowing through any resistance causes heat (P = I^2/R)**
+
+**Everything has resistance**
+
+Therefore, where electricity is flowing there will be heat
+
+**Heat causes damage**
+
+Arduino can not protect itself from damaged caused by overheating. 
+It does not <strong>limit</strong> current, 
+it is <strong>damaged</strong> by too much current
+
+The amount of heat a component can withstand before it is damaged 
+is governed, to a large extent, by its size
+
+The transistors that make up Arduino are tiny 
+
+![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
+Image courtesy of SparkFun
+
+The reason for using the separate Motor Driver is simple:
+
+**It has much bigger transistors**
+
+(It also makes it easier to control both direction and speed, 
+but you could do that with the Arduino alone, 
+it  would just be a little more complicated)
+
+H-bridge
+
+Circuit Schematic
+
+Theory
+
+Code
