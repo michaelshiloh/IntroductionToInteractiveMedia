@@ -285,7 +285,6 @@ Production Assignment:
 a new folder in your github repository called “June17_MusicalInstrument"
 o
 
-##### todays-assignment
 #### Assignments Due day 13 June 21
 
 Reading Assignment:
@@ -304,3 +303,23 @@ Production Assignment:
 both Arduino and Processing.
 	Document this in a new file called June21_PreliminaryConcept.md
 	in a new folder called FinalProject
+
+##### todays-assignment
+#### Assignments Due day 14 June 22
+
+Reading Assignment:
+
+- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+
+Production Assignment:
+
+- Refine your final project proposal in the same folder, 
+in a new document called "final project proposal". 
+Include the following:
+	- Schematic 
+	- Description (in words) of what your Arduino program 
+	will do with each input and output
+	and what it will send to and/or receive from Processing
+	- Description (in words) of what Processing program will do
+	and what it will send to and/or receive from Arduino
+
