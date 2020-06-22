@@ -1541,8 +1541,6 @@ transition from one state to another
 State Change Detection is also called edge detection
 
 
-
-### todays-lecture
 ### 21 June 2020
 
 #### Administration
@@ -1649,3 +1647,31 @@ void loop() {
 
 ````
 
+### todays-lecture
+### 22 June 2020
+
+#### Administration
+
+- Record
+- Plan for today
+	- Course evaluations
+	- Work on final projects in class
+	- If you did your course evaluations before class, you have the entire class
+		to work on your projects
+	- Individual meetings with each student
+	- Debugging discussion
+
+### 23 June 2020
+
+#### Administration
+
+- Record
+- Plan for today
+	- Work on final projects in class
+	- Individual meetings with each student (review musical instrument, game)
+	
+### 24 June 2020
+	Final project critique
+	Discussion: How was course? What worked? What didn't? What excited you the
+	most? What was the most boring? What taught you the most? What was the most
+	challenging (were these the same?)
