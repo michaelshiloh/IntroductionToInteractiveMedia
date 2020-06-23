@@ -33,7 +33,7 @@ Each student is responsible for leading discussion of the weekly readings.
 - June 21 [Digitize everything](doc/digitizeEverything.pdf) - Yashaswi
 - June 22 [Critical Making by Matt
  Ratto](http://opendesignnow.org/index.html%3Fp=434.html) - Mike
-- June 23 [Graham Pullin, Design Meets Disability](docs/Design_meets_disability.pdf) - Rashid
+- June 23 [Graham Pullin, Design Meets Disability](doc/Design_meets_disability.pdf) - Rashid
 - June 24 [Her Code Got Humans on the Moon](http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/) - 
 
 
