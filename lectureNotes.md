@@ -1562,7 +1562,7 @@ State Change Detection is also called edge detection
 
 Arduino current limitations
 
-Remember I=V/R. 
+Remember I=V/R 
 
 In Arduino, V is always 5V
 
@@ -1600,7 +1600,7 @@ The reason for using the separate Motor Driver is simple:
 but you could do that with the Arduino alone, 
 it  would just be a little more complicated)
 
-H-bridge
+H-bridge (draw this on whiteboard)
 
 Circuit Schematic
 
