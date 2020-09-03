@@ -1,19 +1,17 @@
 # IntroductionToInteractiveMedia
 Introduction to Interactive Media at New York University Abu Dhabi
 
-Welcome to Introduction to Interactive Media. All class materials will be
+Welcome to Introduction to Interactive Media. All class material can be
 found here. 
 
-The current session is Summer 2020. Previous sessions will be listed
+The current session is Fall 2020. Previous sessions are stored
 [here](previousSessions.md).
 
 [Syllabus](syllabus.md)
 
-[Course Outline](courseOutline.md)
-
 [Lecture notes](lectureNotes.md)
 
-[Assignments](assignments.md)
+[Weekly Schedule](weeklySchedule.md)
 
 Student Github [repositories](studentGithubRepositories.md)
 
