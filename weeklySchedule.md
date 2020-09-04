@@ -50,8 +50,9 @@ Production Assignment:
 ````September15````
 	- Upload your program into the new folder, 
 	with the extension ````.pde````. 
-	Your program should be well commented and organized. 
-	If you use any variables, chose good names.
+		- Use **COMMAND T** or **CONTROL T** to indent your code properly
+		- Your program should be well commented and organized. 
+		- If you use any variables, chose good names.
 	- Upload a screenshot of your portrait into the new folder
 	- Create a ````README.md```` in the new folder and include 
 	your screenshot in the ````README.md````.
@@ -182,7 +183,7 @@ Document your project as last week
 
 Week 6 (October 13 and 15)
 
-Sound and Introduction to Midterm Project
+Sound, State, and Introduction to Midterm Project
 
 Midterm Project due on October 27
 
@@ -193,6 +194,10 @@ Make a game using everything you have learned so far
 	- At least one image
 	- At least one sound
 	- At least one on-screen text
+- The game must start with a screen giving instructions, and must wait there 
+until a button or key (your choice) is pressed
+- After the game is won or lost, there must be a way to restart the game
+without closing and restarting the program
 
 #### Assignments Due October 19
 
@@ -226,15 +231,13 @@ Documentation:
 - Program to include
 	- At least everything we have included up to now
 	- Your name and assignment due date
-	- Instructions for usage 
-	- Well commented code, especially
-		for any confusing or tricky parts 
+	- Well commented code, especially for any confusing or tricky parts 
 
 ## Fall Break-ish October 20-22
 
-Week 7 (October 27 and 29)o
+Week 7 (October 27 and 29)
 
-Introduction to Electricity and Arduino Digital Input and Output
+Midterm Critique; Introduction to Electricity and Arduino Digital Input and Output
 
 ### Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
 
@@ -277,31 +280,45 @@ Reading Assignment:
 Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/)
 and be prepared to discuss both
 - Read about 
-[analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
+[analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
 - Read about
-[analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
+[analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
 
 Production Assignment
 
-HERE here
+- Using at least three momentary switches (often called *buttons*), 
+control at least three LEDs in some unexpected way. 
+"Unexpected" means that pressing (closing) each switch 
+does not simply turn on a corresponding LED
+- Document your project as before
+	- Github folder called ````November3````
+		- Schematic 
+			- Cab be either hand or computer drawn
+			- Make sure your picture is large enough to read
+			- Remember what a schematic is and is not
+			- Schematic won't be graded this time but will be after this
+				so use this as an opportunity to learn
+		- Arduino program with the extension ````.ino````
+			- Comments etc. as we did with Processing programs
+			- ````const int```` variables for all pins 
+				with names that clearly describe what is connected to that pin
 
-https://itp.nyu.edu/physcomp/labs/switches/#Get_Creative_With_Switches
+Week 8 (November 3 and 5)
 
+Analog Input and output, Mapping, data types, printing
 
-
-
-
-
-#### Assignments Due day 11 June 16
+#### Assignments Due November 10
 
 Reading Assignment:
 
-- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+- Read and be prepared to discuss both:
+	- [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
+	- [A Response](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
 - Read about the [voltage
 divider](https://learn.sparkfun.com/tutorials/voltage-dividers).
-Don't worry about the theory too much or the section on level shifting. 
+Don't worry about the theory or the section on level shifting. 
 The important thing is to absorb a little of the concept of a voltage divider.
-
+Pay particular attention to Reading Resistive Sensors
 
 Production Assignment:
 
@@ -311,30 +328,30 @@ and use this information to control at least two LEDs,
 one in a digital fashion and the other in an analog fashion, 
 in some creative way.
 Document your work:
-- Create a new folder in your github repository called “June16_Arduino_IO
+- Create a new folder in your github repository called ````November10````
 - Describe your project in README.md and include:
 	- A description of your concept and how it was achieved
-	- A picture of your circuit schematic.  
-		- Your schematic, whether hand drawn or otherwise, must be clear. 
-		- **Remember what a schematic is and is not.**
-		- **Make sure your schematic is big enough to read without enlarging**
+	- A picture of your circuit schematic  
 	- A photograph of your project
 	- Problems, if any, and solutions, if any
 	- Anything else you can think of
-- Upload your program. 
-	- Excellent names for variables and functions
-	- Well structured
-	- Use `<Command>t` or `<CNTRL>t` to format your code properly
-	- Excellent comments
-	- Keep the .ino extension so that it is formatted properly.
+- Upload your program 
 
+Week 9 (November 10 and 12)
 
+Sound and Servo Motor
 
 #### Assignments Due day 12 June 17
 
 Reading Assignment:
 
-- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+- Read and be prepared to discuss both:
+	- Norman,“Emotion & Design: Attractive things work better”
+	- Her Code Got Humans on the Moon
+
+	HERE here
+
+
 - It is important that you understand the concepts behind BlinkWithoutDelay.
 	[Here](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
 	are links to various other explanations of the same thing. Browse them, and
@@ -344,12 +361,11 @@ Reading Assignment:
 Production Assignment:
 
 - Make a musical instrument
-	- You must use at least one digital sensor (switch)
+	- You must use at least one digital sensor 
+		(switch, either momentary or toggle)
 	- You must use at least one analog sensor (photoresistor, potentiometer, or
 		distance measuring sensor)
-- Document your work as described above, in 
-a new folder in your github repository called “June17_MusicalInstrument"
-o
+- Document your work as before
 
 #### Assignments Due day 13 June 21
 
@@ -396,5 +412,3 @@ Include the following:
 
 
 
-- Read [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/), and be prepared
-	to discuss.
