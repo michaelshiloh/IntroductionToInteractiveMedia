@@ -5,7 +5,7 @@ Welcome to Introduction to Interactive Media. All class material can be
 found here. 
 
 The current session is Fall 2020. Previous sessions are stored
-[here](previousSessions.md).
+[here](previousSessions/previousSessions.md).
 
 [Syllabus](syllabus.md)
 
@@ -15,4 +15,3 @@ The current session is Fall 2020. Previous sessions are stored
 
 Student Github [repositories](studentGithubRepositories.md)
 
-Student lead discussion [schedule](studentLeadDiscussionSchedule.md)
