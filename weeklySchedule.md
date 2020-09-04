@@ -349,7 +349,7 @@ Reading Assignment:
 	- Norman,“Emotion & Design: Attractive things work better”
 	- Her Code Got Humans on the Moon
 
-	HERE here
+	updated up to here
 
 
 - It is important that you understand the concepts behind BlinkWithoutDelay.
