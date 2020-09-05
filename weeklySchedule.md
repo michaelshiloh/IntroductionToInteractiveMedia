@@ -1,8 +1,7 @@
-# IntroductionToInteractiveMedia  
-Introduction to Interactive Media at New York University Abu Dhabi  
-<h1>NYU Abu Dhabi</h1>  
-<h1>Interactive Media Program</h1>  
-<h1>Course title: Introduction to Interactive Media</h1>  
+# Introduction to Interactive Media at New York University Abu Dhabi  
+## NYU Abu Dhabi
+## Interactive Media Program
+## Course title: Introduction to Interactive Media
 Course number: IM-UH 1010 002    
 Credit Hours: 4     
 Prerequisites: None     
@@ -12,9 +11,10 @@ Meeting times:
 2:40 PM - 5:20 PM Th    
 Session: Fall 2020    
 Section: 2  
-[Zoom](https://nyu.zoom.us/j/94816402645)  
+[Link](https://nyu.zoom.us/j/94816402645) to class Zoom meetings
 
-<h1>This document: Weekly Schedule</h1>
+### This document: Weekly Schedule
+
 This includes:
 - Weekly topic(s)
 - Production assignments
