@@ -1,8 +1,7 @@
-# IntroductionToInteractiveMedia  
-Introduction to Interactive Media at New York University Abu Dhabi  
-<h1>NYU Abu Dhabi</h1>  
-<h1>Interactive Media Program</h1>  
-<h1>Course title: Introduction to Interactive Media</h1>  
+# Introduction to Interactive Media at New York University Abu Dhabi  
+## NYU Abu Dhabi
+## Interactive Media Program
+## Course title: Introduction to Interactive Media
 Course number: IM-UH 1010 002    
 Credit Hours: 4     
 Prerequisites: None     
