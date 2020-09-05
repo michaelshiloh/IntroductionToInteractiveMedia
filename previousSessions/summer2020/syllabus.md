@@ -36,7 +36,12 @@ Processing and Arduino open source programming languages.</li>
 </ul>
 <strong>Teaching Methodology</strong>
 
-This course is a production based class. You will be doing work in and outside of the class that is ideally experimental, participatory and collaborative. In lab courses we will review topics like programming techniques and circuit design, while non-lab class days will be given over to lecture and discussion based on readings, videos, audio, and interactive works found primarily online.
+This course is a production based class. You will be doing work in and outside
+of the class that is ideally experimental, participatory and collaborative. In
+lab courses we will review topics like programming techniques and circuit
+design, while non-lab class days will be given over to lecture and discussion
+based on readings, videos, audio, and interactive works found primarily
+online.
 
 <strong>Grading</strong>
 
@@ -49,13 +54,23 @@ This course is a production based class. You will be doing work in and outside o
 
 <strong>Assignments</strong>
 
-Every class you will have an assignment. Some of the time it will be reading, some of the time it will be practical.
+Every class you will have an assignment. Some of the time it will be reading,
+some of the time it will be practical.
 
 Assignments are always on the <a href="https://wp.nyu.edu/abudhabi_im_intro/schedule-spring-2020/">schedule</a>
 
-Each lab there’s a “walk-through” element that will be covered in class, which you are expected to do on your own, and an improvisational aspect, where you take the lesson and make something unique and interesting based on the in-class review. We will spend time in each class reviewing your work, and using this as an opportunity to review concepts that are unclear, or investigate solutions to common problems. <strong>Expect to be asked to show your work every time we meet</strong>. Some classes everyone may demonstrate their work, other classes only a few students may, but always be prepared.
+Each lab there’s a “walk-through” element that will be covered in class, which
+you are expected to do on your own, and an improvisational aspect, where you
+take the lesson and make something unique and interesting based on the
+in-class review. We will spend time in each class reviewing your work, and
+using this as an opportunity to review concepts that are unclear, or
+investigate solutions to common problems. <strong>Expect to be asked to show
+your work every time we meet</strong>. Some classes everyone may demonstrate
+their work, other classes only a few students may, but always be prepared.
 
-All of your work must be documented on the class site (see below for details). Assignments are due before class starts on the day they are due. Each day they are late 15% will be subtracted from the grade for that assignment.
+All of your work must be documented on the class site (see below for details).
+Assignments are due before class starts on the day they are due. Each day they
+are late 15% will be subtracted from the grade for that assignment.
 
 <strong>Online Journal</strong>
 

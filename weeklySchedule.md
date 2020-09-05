@@ -1,15 +1,18 @@
-<h1>NYU Abu Dhabi</h1>
-<h1>Interactive Media Program</h1>
-<h1>Course title: Introduction to Interactive Media</h1>
-Course number: IM-UH 1010 002  
-Credit Hours: 4   
-Prerequisites: None   
-Classroom: [https://nyu.zoom.us/j/97616223923](https://nyu.zoom.us/j/97616223923)  
-Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)  
-Meeting times:  
-4:05 PM - 5:20 PM Tu  
-2:40 PM - 5:20 PM Th  
-Session: Fall 2020  
+# IntroductionToInteractiveMedia  
+Introduction to Interactive Media at New York University Abu Dhabi  
+<h1>NYU Abu Dhabi</h1>  
+<h1>Interactive Media Program</h1>  
+<h1>Course title: Introduction to Interactive Media</h1>  
+Course number: IM-UH 1010 002    
+Credit Hours: 4     
+Prerequisites: None     
+Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)    
+Meeting times:    
+4:05 PM - 5:20 PM Tu    
+2:40 PM - 5:20 PM Th    
+Session: Fall 2020    
+Section: 2  
+[Zoom](https://nyu.zoom.us/j/94816402645)  
 
 <h1>This document: Weekly Schedule</h1>
 This includes:
@@ -22,10 +25,11 @@ Shortcut to [Today's assignment](#todays-assignment)
 
 This is all subject to change
 
-Week 1 (Sept. 8 & 10)
+### Week 1 (Sept. 8 & 10)
 
 Primitive shapes, Programming concepts
 
+##### todays-assignment
 #### Assignments Due September 15
 
 Email Assignment:
@@ -59,7 +63,7 @@ Production Assignment:
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
-Week 2 (September 15 and 17)
+### Week 2 (September 15 and 17)
 
 Animation, Conditionals, Loops
 
@@ -99,7 +103,7 @@ Scroll through and look for images:
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
-Week 3 (September 22 and 24)
+### Week 3 (September 22 and 24)
 
 Functions, Arrays, and Object-Oriented Programming
 
@@ -136,7 +140,7 @@ As always, document your project:
 	- Include the image(s) or link(s) to video
 	- Describe any problems you ran into
 
-Week 4 (September 29 and October 1)
+### Week 4 (September 29 and October 1)
 
 Loading Data, Displaying text, Transformations
 
@@ -162,7 +166,7 @@ Document your project as always, with the following additions:
 	- Instructions for usage if it's interactive
 	- The source of your data
 
-Week 5 (October 6 and 8)
+### Week 5 (October 6 and 8)
 
 Image Processing and Tracking
 
@@ -181,7 +185,7 @@ Production Assignment:
 
 Document your project as last week
 
-Week 6 (October 13 and 15)
+### Week 6 (October 13 and 15)
 
 Sound, State, and Introduction to Midterm Project
 
@@ -216,7 +220,7 @@ At the end of each journal entry, describe whether,
 and if so, how, the results of today's work
 has caused you to modify your plan for your midterm project.
 
-Week 6.5 (Oct. 19, Monday, Legislative day – classes meet on Thursday schedule)
+### Week 6.5 (Oct. 19, Monday, Legislative day – classes meet on Thursday schedule)
 
 Midterm project status
 
@@ -235,7 +239,7 @@ Documentation:
 
 ## Fall Break-ish October 20-22
 
-Week 7 (October 27 and 29)
+### Week 7 (October 27 and 29)
 
 Midterm Critique; Introduction to Electricity and Arduino Digital Input and Output
 
@@ -270,7 +274,7 @@ Production Assignment:
 
 - **Be careful not to damage the wires or yourselves!**
 
-Assignments due November 3
+#### Assignments due November 3
 
 Reading Assignment:
 
@@ -286,10 +290,21 @@ and be prepared to discuss both
 
 Production Assignment
 
+- Using at least three momentary switches (often called buttons), and at least
+	three LEDs, create a puzzle that can be solved by pressing the buttons.
+	Each switch must not simply turn on a corresponding LED.
+
+- Using at least three momentary switches (often called buttons), and at least
+	three LEDs, create a puzzle that can be solved by pressing the buttons.
+	Experiment with the buttons controlling the LEDs in unexpected ways.
+	"Unexpected" means that pressing (closing) each switch does not simply turn
+	on a corresponding LED
+
 - Using at least three momentary switches (often called *buttons*), 
 control at least three LEDs in some unexpected way. 
 "Unexpected" means that pressing (closing) each switch 
 does not simply turn on a corresponding LED
+
 - Document your project as before
 	- Github folder called ````November3````
 		- Schematic 
@@ -303,7 +318,7 @@ does not simply turn on a corresponding LED
 			- ````const int```` variables for all pins 
 				with names that clearly describe what is connected to that pin
 
-Week 8 (November 3 and 5)
+### Week 8 (November 3 and 5)
 
 Analog Input and output, Mapping, data types, printing
 
@@ -337,24 +352,20 @@ Document your work:
 	- Anything else you can think of
 - Upload your program 
 
-Week 9 (November 10 and 12)
+### Week 9 (November 10 and 12)
 
 Sound and Servo Motor
 
-#### Assignments Due day 12 June 17
+#### Assignments Due November 17
 
 Reading Assignment:
 
 - Read and be prepared to discuss both:
-	- Norman,“Emotion & Design: Attractive things work better”
-	- Her Code Got Humans on the Moon
-
-	updated up to here
-
-
+	- [Norman,“Emotion & Design: Attractive things work better”]((https://jnd.org/emotion_design_attractive_things_work_better/)
+	- [Her Code Got Humans on the Moon]((http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
 - It is important that you understand the concepts behind BlinkWithoutDelay.
 	[Here](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
-	are links to various other explanations of the same thing. Browse them, and
+	are links to various other explanations of this concept. Browse them, and
 	read one deeply enough that you understand. Come to class with questions if
 	none of these help.
 
@@ -367,48 +378,50 @@ Production Assignment:
 		distance measuring sensor)
 - Document your work as before
 
-#### Assignments Due day 13 June 21
+### Week 9.5 (November 14)
+
+### Week 10 (November 17 and 19) 
+
+Serial Communication, introduce Final Project
+
+#### Assignments Due November 24
 
 Reading Assignment:
-
-- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
 
 Production Assignment:
 
 - Make a simple game that involves some kind of communication between Arduino
-	and Processing. Document as before 
-	(README.md, schematics, pictures, video, and
-	both Arduino code and Processing code) 
-	in a new folder called June21_Communication
+	and Processing. Document as before.
 
 - Write a preliminary concept for your final project, which must involved 
 both Arduino and Processing.
-	Document this in a new file called June21_PreliminaryConcept.md
-	in a new folder called FinalProject
+Document in a new folder called ````finalProject````
+- In that folder create a new file called journal.md.
+Start with a preliminary description of what you intend for your project.
+Include hand sketches as necessary to illustrate your concept.
 
-##### todays-assignment
-#### Assignments Due day 14 June 22
+### Week 11 (November 24 & 26)
 
-Reading Assignment:
+DC motors, Construction and Debugging, Final Project Proposal
 
-- Readings for the class [discussion ](studentLeadDiscussionSchedule.md).
+#### Assignments Due December 8
 
-Production Assignment:
+Production assignment: 
 
-- Refine your final project proposal in the same folder, 
-in a new document called "final project proposal". 
-Include the following:
-	- Schematic 
-	- Description (in words) of what your Arduino program 
-	will do with each input and output
-	and what it will send to and/or receive from Processing
-	- Description (in words) of what Processing program will do
-	and what it will send to and/or receive from Arduino
+Finish your final project.
 
+Continue to document your progress in your journal.
+Each day add the date
+and then describe the work you plan to do or did that day.
+Include you thoughts, decisions, experiments, etc.
+Discuss what worked and what didn't
+At the end of each journal entry, describe whether, 
+and if so, how, the results of today's work
+has caused you to modify your plan for your final project.
 
+December 1 and 3: National Day Holiday (No classes)
 
+### Week 12 (December 8 and 10)
 
-
-
-
+Final Project Due
 
