@@ -98,7 +98,8 @@ investigate solutions to common problems. Expect to be asked to show your work
 every time we meet. Some classes everyone may demonstrate their work, other
 classes only a few students may, but always be prepared.
 
-All of your work must be documented on the class site (see below for details).
+All of your work must be documented on your Github repository. Instructions
+will be given in class.
 
 Project documentation:
 You are expected to document your work on your Github repository.
@@ -237,15 +238,14 @@ connectivity.
 
 In order to receive credit for an excused absence, you must watch the 
 recording and write about it. 
-If you miss a discussion, you to write
-about the subject discussed. 
-If you miss a lecture, you need to write questions on the subject of the
+If you miss a discussion, you must write about the subject discussed. 
+If you miss a lecture, you must write questions on the subject of the
 lecture.
 
 #### Participation
 
 Engaging in the class discussion, and offering advice and input in the class
-is a major part of your grade. participating in class discussions is helpful
+is a major part of your grade. Participating in class discussions is helpful
 for me to get to know you as an individual and keep track of your progress,
 but most importantly, it provides you and your classmates with the opportunity
 to share failures, successes, and insights on the work you are doing.
