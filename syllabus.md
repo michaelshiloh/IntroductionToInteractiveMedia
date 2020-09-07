@@ -11,7 +11,7 @@ Meeting times:
 2:40 PM - 5:20 PM Th    
 Session: Fall 2020    
 Section: 2  
-[Link](https://nyu.zoom.us/j/94816402645) to class Zoom meetings
+[Link](https://nyu.zoom.us/j/97636620851) to class Zoom meetings
 
 ### This document: Syllabus
 
