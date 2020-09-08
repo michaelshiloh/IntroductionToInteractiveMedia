@@ -27,3 +27,4 @@ want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
 [Yusra](https://github.com/yusra-khan/intro-to-im)
+[Kartikey](https://github.com/KartikeySinghal/IntroToIM)
