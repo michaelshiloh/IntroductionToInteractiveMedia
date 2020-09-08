@@ -6,6 +6,7 @@ Course number: IM-UH 1010 002
 Credit Hours: 4     
 Prerequisites: None     
 Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)    
+Instructor: Michael Shiloh mshiloh@nyu.edu
 Meeting times:    
 4:05 PM - 5:20 PM Tu    
 2:40 PM - 5:20 PM Th    
