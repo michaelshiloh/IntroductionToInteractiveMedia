@@ -12,3 +12,6 @@ Meeting times:
 Session: Fall 2020    
 Section: 2  
 [Link](https://nyu.zoom.us/j/94816402645) to class Zoom meetings
+
+This is all subject to change
+
