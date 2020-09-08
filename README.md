@@ -20,7 +20,7 @@ found here.
 
 [Lecture notes](lectureNotes.md)
 
-[Weekly Schedule](weeklySchedule.md)
+[Weekly Schedule](weeklySchedule.md) Includes homework and projects assignments
 
 Student Github [repositories](studentGithubRepositories.md)
 
