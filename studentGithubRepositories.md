@@ -29,3 +29,4 @@ recognize as you.
 [Yusra](https://github.com/yusra-khan/intro-to-im)
 [Kartikey](https://github.com/KartikeySinghal/IntroToIM)
 [Matthew](https://github.com/mjvar/intro-to-interactive-media)
+[Joseph](https://github.com/jhongover9000/intro2im)
