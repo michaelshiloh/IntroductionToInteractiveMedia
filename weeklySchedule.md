@@ -295,17 +295,6 @@ Production Assignment
 	three LEDs, create a puzzle that can be solved by pressing the buttons.
 	Each switch must not simply turn on a corresponding LED.
 
-- Using at least three momentary switches (often called buttons), and at least
-	three LEDs, create a puzzle that can be solved by pressing the buttons.
-	Experiment with the buttons controlling the LEDs in unexpected ways.
-	"Unexpected" means that pressing (closing) each switch does not simply turn
-	on a corresponding LED
-
-- Using at least three momentary switches (often called *buttons*), 
-control at least three LEDs in some unexpected way. 
-"Unexpected" means that pressing (closing) each switch 
-does not simply turn on a corresponding LED
-
 - Document your project as before
 	- Github folder called ````November3````
 		- Schematic 
