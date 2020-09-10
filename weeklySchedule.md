@@ -79,7 +79,7 @@ Shiffman's [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V
 	Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i)
 	tutorials.
 	- Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
-	on chance operations and be prepared to discuss
+	on chance operations and be prepared to discuss (Benjamin to lead)
 
 Production Assignment:
 
@@ -119,7 +119,7 @@ and
 video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a> 
 video tutorial on Perlin noise</li>
-- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), and be prepared to discuss
+- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), and be prepared to discuss (Omar to lead)
 
 
 Production Assignment:
@@ -149,7 +149,7 @@ Loading Data, Displaying text, Transformations
 
 Reading Assignment:
 
-- Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) and be prepared to discuss
+- Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) and be prepared to discuss (Yasmin to lead)
 - Watch [1.4: Introduction to Computer Vision – Processing
 	Tutorial](https://www.youtube.com/watch?v=h8tk0hmWB44&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2&t=0s)
 - Watch [11.5: Computer Vision: Color Tracking – Processing
@@ -178,7 +178,7 @@ Reading Assignment:
 Golan Levin’s [Computer Vision for Artists and Designers: Pedagogic Tools and
 Techniques for Novice
 Programmers](http://www.flong.com/texts/essays/essay_cvad/), 
-and be prepared to discuss
+and be prepared to discuss (Alpha to lead)
 
 Production Assignment:
 
@@ -283,7 +283,7 @@ Reading Assignment:
 	misses](http://www.tigoe.net/blog/category/physicalcomputing/176/) and 
 [Making Interactive Art: Set the Stage, Then Shut Up and
 Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/)
-and be prepared to discuss both
+and be prepared to discuss both (Katie to lead)
 - Read about 
 [analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
 - Read about
@@ -316,7 +316,7 @@ Analog Input and output, Mapping, data types, printing
 
 Reading Assignment:
 
-- Read and be prepared to discuss both:
+- Read and be prepared to discuss both: (Liyan to lead)
 	- [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 	- [A Response](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
 - Read about the [voltage
@@ -350,7 +350,7 @@ Sound and Servo Motor
 
 Reading Assignment:
 
-- Read and be prepared to discuss both:
+- Read and be prepared to discuss both: (Yusra to lead)
 	- [Norman,“Emotion & Design: Attractive things work better”]((https://jnd.org/emotion_design_attractive_things_work_better/)
 	- [Her Code Got Humans on the Moon]((http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
 - It is important that you understand the concepts behind BlinkWithoutDelay.

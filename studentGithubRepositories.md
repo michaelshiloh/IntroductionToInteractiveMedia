@@ -36,3 +36,5 @@ recognize as you.
 [Sashank](https://github.com/sashanksilwal/introduction_to_interactive_media)
 [Katie](https://github.com/katieferreol/introduction-to-interactive-media)
 [Omar](https://github.com/soablackwhite/Intro-to-IM)
+[Yasmin](https://github.com/yasmin-alshurafa/introduction-to-interactive-media)
+[Fatima](https://github.com/FatimaAlmaazmi/introIM)

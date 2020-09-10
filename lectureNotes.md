@@ -18,7 +18,6 @@ This is all subject to change
 
 [Today's lecture](#todays-lecture)
 
-
 ### September 8 2020
 
 #### Administration
@@ -27,7 +26,7 @@ This is all subject to change
 - Introductions
 - Syllabus etc.
 - Student lead discussions (assign dates)
-- Join the Discord server [here](https://discord.gg/xp5Z7K)
+- Join the Discord server 
 
 #### What’s the class about?
 
@@ -116,6 +115,18 @@ Name your repository "Introduction to Interactive Media".
 	- Always remember to commit your changes!
 	- More [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
 
+### todays-lecture
+
+### September 10 2020
+
+#### Administration
+
+- **Record Zoom!**
+- **Connect to Zoom 10 minutes early**
+	- This is to make sure you have time to fix any potential Zoom issues
+	- You may keep your camera and mic turned off until class time
+- Student lead discussions (assign dates)
+
 **Processing**
 
 #### Simple shapes
@@ -149,9 +160,10 @@ Confused?
 - `int myNumber = 45;`
 - `int myRandomNumber = random(255);`
 - `int myRandomNumber = round(random(255));`
+- Other variable types. `int` is by far most common, another common is `float`
 - Built-in variables
 	- `width`, `height`
-- Other variable types. `int` is by far most common, another common is `float`
+	- many others
 
 Here is an example Processing program (also called a 'sketch') 
 
@@ -185,4 +197,204 @@ print(myRandomArcSize + "    " + arcSizeInRadians);
 arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 */
 ````
+
+
+Time permitting, go further
+	
+#### Animation
+- `draw()`
+- `setup()`
+
+````
+int foo = 0;
+
+void setup() {
+  size(300, 300);
+}
+
+void draw() {
+  ellipse(foo, 50, 40, 40);
+  foo = foo + 1;
+}
+````
+
+`background()`
+
+`frameRate()`
+
+Yesterday we were able to draw without using `setup()` and `draw()`. What's
+the difference?
+
+Static vs. active mode
+
+#### Interaction with Processing
+
+- conditionals
+
+````
+void setup() {
+  size(300, 300);
+}
+
+void draw() {
+  if (mousePressed == true) {
+    background(color(0, 0, 255));
+  } else {
+    background(color(200, 0, 0));
+  }
+}
+````
+
+**Important concepts**:
+1. `mousePressed` is another built-in variable. There are many others.
+1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
+	 only one of two values, `true` or `false`
+1. Note that `{` and `}` indicate the blocks
+1. The `else` part of an `if()` statement is optional (what happens if we
+	 remove it?)
+
+- Two more interesting built-in variables: `mouseX`, `mouseY`
+	- Using the cursor to draw
+	- Now use a mouse click to clear the screen
+	- (Time permitting, primitive painting program)
+
+#### Loops
+`while()` is like `if()` but it keeps on doing it as long as condition is true
+
+````
+void setup() {
+  size(300, 300);
+
+  int foo = 50;
+
+  while (foo < width) {
+    ellipse(foo, 50, 40, 40);
+    foo = foo + 50;
+  }
+}
+````
+You should get in the habit of giving meaningful names to your variables. What
+is a better name for the variable foo?
+
+#### Functions
+
+Every time you use one of the built-in 'commands', you are really using (or
+more properly 'executing') a built-in function. Functions are a very important
+building block of programming, and in addition to using built-in functions,
+you can also create your own. In fact, you've already been doing that, when
+you created the `setup()` and `draw()` functions. In the case of
+`setup()` and `draw()`  you have to use those names, but when you create other
+functions you can make up your own names. Just like variables names , good 
+function names make your programs easier to understand.
+
+Why create your own funtions?
+
+- Reuse
+- Clarity (remember the three reasons for clarity: yourself, sharing,
+	grading)
+- Easier to debug (what is debugging?)
+	- **Reproduce bug with simplest possible example**
+
+Let's rewrite the above to use a function
+
+
+#### Variable Scope
+
+````
+int foo;  // this is a global variable, visible in all functions
+void setup() {
+  foo = 7;
+}
+
+void draw() {
+
+  println(foo);
+
+  int bar; // this is a local variable, visible only inside of draw()
+
+  for (int i = 0; i < width/2; i++) { 
+    // i is a local variable visible only inside this for() loop
+    ellipse(i, height/2, 10,15);
+  }
+}
+````
+
+#### Motion
+
+Let's use make a ball bounce on the floor. First, make a circle move:
+
+<pre>void setup() 
+{ 
+  size(500, 500);
+  x = width/2;
+} 
+
+float speed = 5;
+float x;
+float y = 0;
+
+void draw() {
+  background(150);
+
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+}
+</pre>
+
+Now, make it change directions when it hits the floor:
+
+<pre>void setup() 
+{ 
+  size(500, 500);
+  x = width/2;
+} 
+
+float speed = 5;
+float x;
+float y = 0;
+
+void draw() {
+  background(150);
+
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+
+  if (y>=height) {
+    speed = -speed;
+  }
+}
+</pre>
+
+Now, do two thing: 1) use gravity to increase its speed as it falls and 2) reduce its speed on each bounce:
+
+<pre>
+
+float gravity = .1;
+float speed = 0;
+float x = 320;
+float y = 0;
+
+void setup() 
+{ 
+  size(500, 500);
+} 
+
+void draw() {
+  background(150);
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+
+  speed+=gravity;
+
+  if (y>=height) {
+    speed = 0.95 * speed; // this slows the acceleration
+    speed = -speed; // this reverses
+  }
+}
+</pre>
+
+#### `for()` loops 
 
