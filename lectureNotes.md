@@ -111,7 +111,7 @@ Name your repository "Introduction to Interactive Media".
 - Simple Markdown 
 	- **Bold**
 	- Paragraphs must be separated by a blank line
-	- Inserting images: ![](eye-calipers.jpg)
+	- Inserting images: ![](media/eye-calipers.jpg)
 	- Always remember to commit your changes!
 	- More [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
 
