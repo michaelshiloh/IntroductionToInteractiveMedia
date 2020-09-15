@@ -30,7 +30,6 @@ This is all subject to change
 
 Primitive shapes, Programming concepts
 
-##### todays-assignment
 #### Assignments Due September 15
 
 Email Assignment:
@@ -68,6 +67,7 @@ interesting you discovered.
 
 Animation, Conditionals, Loops
 
+##### todays-assignment
 #### Assignments Due September 22
 
 Reading Assignment:
@@ -96,12 +96,13 @@ Scroll through and look for images:
 ````September22````
 	- Upload your program into the new folder, 
 	with the extension ````.pde````. 
-	Your program should be well commented and organized. 
-	If you use any variables, chose good names.
+	- Your program should be well commented and organized. 
+	- Excellent names for variables
+	- Excellent names for functions, if you make any
 	- Upload a screenshot of your artwork into the new folder
 	- Create a ````README.md```` in the new folder and include 
 	your screenshot in the ````README.md````.
-	- Write a very simple description of any difficulties you had or anything
+	- Write a short description of any difficulties you had or anything
 interesting you discovered.
 
 ### Week 3 (September 22 and 24)

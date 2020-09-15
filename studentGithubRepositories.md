@@ -39,3 +39,5 @@ recognize as you.
 [Yasmin](https://github.com/yasmin-alshurafa/introduction-to-interactive-media)
 [Fatima](https://github.com/FatimaAlmaazmi/introIM)
 [Benjamin](http://github.com/molarmanful/IntroductionToInteractiveMedia)
+[Kyrie](https://github.com/Kyrie21323/introduction-to-interactive-media)
+[Marta](https://github.com/martapienkosz/interactivemedia)

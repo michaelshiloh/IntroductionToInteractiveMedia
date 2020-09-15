@@ -115,8 +115,6 @@ Name your repository "Introduction to Interactive Media".
 	- Always remember to commit your changes!
 	- More [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
 
-### todays-lecture
-
 ### September 10 2020
 
 #### Administration
@@ -276,14 +274,52 @@ void setup() {
 You should get in the habit of giving meaningful names to your variables. What
 is a better name for the variable foo?
 
+### todays-lecture
+### September 15 2020
+
+#### Administration
+
+- **Record Zoom!**
+- **Connect to Zoom 10 minutes early**
+	- This is to make sure you have time to fix any potential Zoom issues
+	- Once connected you may keep your camera and mic turned off until class time
+- Student lead discussions (assign dates)
+
+#### Portraits
+
+Look at some portraits. Ask if you want to know how something was
+accomplished.
+
+#### Review
+
+- ````setup()```` and ````draw()````
+- ````background()````
+- Conditional statements using ````if()````
+- Loops using ````while()````
+
+#### ````for()```` loops
+
+````for```` is very similar to ````while()```` but combines three steps in
+one:
+
+````
+void setup() {
+  size(300, 300);
+
+  for (int foo = 50;foo < width; foo = foo + 50) {
+    ellipse(foo, 50, 40, 40);
+  }
+}
+````
+
 #### Functions
 
 Every time you use one of the built-in 'commands', you are really using (or
-more properly 'executing') a built-in function. Functions are a very important
+more properly 'calling') a built-in function. Functions are a very important
 building block of programming, and in addition to using built-in functions,
 you can also create your own. In fact, you've already been doing that, when
 you created the `setup()` and `draw()` functions. In the case of
-`setup()` and `draw()`  you have to use those names, but when you create other
+`setup()` and `draw()` you have to use those names, but when you create other
 functions you can make up your own names. Just like variables names , good 
 function names make your programs easier to understand.
 
@@ -293,10 +329,12 @@ Why create your own funtions?
 - Clarity (remember the three reasons for clarity: yourself, sharing,
 	grading)
 - Easier to debug (what is debugging?)
-	- **Reproduce bug with simplest possible example**
+	- One of the most powerful ways to approach
+	a bug is to reproduce it with simplest possible example. 
+	This is much easier when the thing that's causing
+	the problem is already a function.
 
 Let's rewrite the above to use a function
-
 
 #### Variable Scope
 
