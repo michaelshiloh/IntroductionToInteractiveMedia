@@ -26,7 +26,7 @@ it, and name your repository "Introduction to Interactive Media". If you don't
 want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
-[Aaly Sharaf](https://github.com/AalyaSharaf/intro-to-IM/blob/master/September15/Screenshot.png)
+![Aaly Sharaf](https://github.com/AalyaSharaf/intro-to-IM/blob/master/September15/Screenshot.png)
 
 [Yusra](https://github.com/yusra-khan/intro-to-im)  
 [Kartikey](https://github.com/KartikeySinghal/IntroToIM)  
