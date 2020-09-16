@@ -163,18 +163,27 @@ Instructions to participants:
 * If a male and a female both try to speak, let the female go first
 * Don’t repeat what someone has already said
 * Don’t just say that you liked or disliked the reading. Offer critical insight. Why did you like or dislike it? What does it connect to?
-Did it change your mind about something?
+* Did it change your mind about something?
 
 Instructions to leader:
 
-You have 15 minutes. Allow 3-5 minutes at the end to wrap up, so
-divide the remaining 12-15 minutes into your questions or topics (say
-2-5 minutes each) and move on to the next question or topic even if
-there are still hands raised Make sure you know what you think the key
-points of the reading are, and what is important for everyone to take
-away from the reading.  Ask questions that engage the class fully in
-critical discussion of the readings. Lead people to the main points of
-the reading through questions, but don’t tell people the main points. 
+* Read closely, annotate, underline, take notes, list questions, and points
+* Meet, and discuss and answer each other’s questions
+* Since critical thinking is one of the learning objectives, 
+	question the reading
+	* Does the author support his/her claim, e.g. with references?
+	* What is the author’s context? Does he/she stand to gain financially by convincing you of their point of view?
+	* What about the publisher?
+* You have 15-20 minutes. Allow 3-5 minutes at the end to wrap up, 
+	so divide the remaining time into your questions or topics 
+	(say 2-5 minutes each) and move on to the next question or topic 
+	even if there are still hands raised
+* Make sure you know what you think the key points of the reading are, 
+	and what is important for everyone to take away from the reading.
+Ask questions that engage the class fully 
+	in critical discussion of the readings. 
+	Lead people to the main points of the reading through questions, 
+	but don’t tell people the main points. 
 
 #### Final Project :
 
