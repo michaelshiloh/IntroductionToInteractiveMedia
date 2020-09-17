@@ -308,8 +308,7 @@ void setup() {
 }
 ````
 
-### todays-lecture
-### September 22 2020
+### September 17 2020
 
 #### Administration
 
@@ -346,8 +345,6 @@ Why create your own funtions?
 - Flexibility (with good choice of parameters)
 
 Review basics of functions from last week
-
-Let's rewrite the above to use a function
 
 #### Variable Scope
 
@@ -472,7 +469,3 @@ Discussion:
 - How can we use the ````random()```` function to make things more interesting?
 - What about multiple bouncing balls?
 
-Time permitting
-
-Introduce [Classes and
-Objects](https://github.com/michaelshiloh/simpleProcessingClassExample)
