@@ -386,6 +386,32 @@ Discussion:
 - What other functions might be useful?
 - What other parameters might be useful?
 
+````
+void setup() { 
+  size(500, 500); 
+  background(255);
+} 
+
+void draw() { 
+  vlineMaker(0, 50); 
+  hlineMaker(0, 50);
+} 
+
+void vlineMaker(int x, int xstep) { 
+  while (x<width) { 
+    line(x, 0, x, height); 
+    x = x+xstep;
+  }
+} 
+
+void hlineMaker(int y, int ystep) { 
+  while (y<height) { 
+    line(0, y, width, y); 
+    y = y+ystep;
+  }
+}
+````
+
 #### Motion
 
 Let's use make a ball bounce on the floor. First, make a circle move:
