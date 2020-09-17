@@ -25,7 +25,6 @@ This is all subject to change
 - **Record Zoom!**
 - Introductions
 - Syllabus etc.
-- Student lead discussions (assign dates)
 - Join the Discord server 
 
 #### What’s the class about?
@@ -123,7 +122,6 @@ Name your repository "Introduction to Interactive Media".
 - **Connect to Zoom 10 minutes early**
 	- This is to make sure you have time to fix any potential Zoom issues
 	- You may keep your camera and mic turned off until class time
-- Student lead discussions (assign dates)
 
 **Processing**
 
@@ -274,7 +272,6 @@ void setup() {
 You should get in the habit of giving meaningful names to your variables. What
 is a better name for the variable foo?
 
-### todays-lecture
 ### September 15 2020
 
 #### Administration
@@ -283,7 +280,6 @@ is a better name for the variable foo?
 - **Connect to Zoom 10 minutes early**
 	- This is to make sure you have time to fix any potential Zoom issues
 	- Once connected you may keep your camera and mic turned off until class time
-- Student lead discussions (assign dates)
 
 #### Portraits
 
@@ -312,6 +308,19 @@ void setup() {
 }
 ````
 
+### todays-lecture
+### September 22 2020
+
+#### Administration
+
+- **Connect to Zoom 10 minutes early**
+	- This is to make sure you have time to fix any potential Zoom issues
+	- Once connected you may keep your camera and mic turned off until class time
+- **Record Zoom!**
+- Discussion leading rubric
+	- Review instructions for [student-led
+		discussion](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions)
+
 #### Functions
 
 Every time you use one of the built-in 'commands', you are really using (or
@@ -333,6 +342,10 @@ Why create your own funtions?
 	a bug is to reproduce it with simplest possible example. 
 	This is much easier when the thing that's causing
 	the problem is already a function.
+- Modularity
+- Flexibility (with good choice of parameters)
+
+Review basics of functions from last week
 
 Let's rewrite the above to use a function
 
@@ -356,6 +369,25 @@ void draw() {
   }
 }
 ````
+
+In class exercise:
+
+1. Write a function that will take a single parameter
+and draw a vertical line from the top of the canvas to the bottom
+at the X coordinate incidated by the parameter
+	1. In the ````draw()```` function test this function 
+	at a couple of different locations
+1. Write another function that will draw a **horizontal** line
+at the indicated **Y** coordinate
+	1. Test as before
+1. Using these two functions, write a program in ````draw()````
+that draws a grid of lines at regular intervals on the canvas
+
+Discussion:
+
+- What debugging methods helped you find and fix problems?
+- What other functions might be useful?
+- What other parameters might be useful?
 
 #### Motion
 
@@ -434,5 +466,13 @@ void draw() {
 }
 </pre>
 
-#### `for()` loops 
+Discussion:
 
+- What functions might be useful here?
+- How can we use the ````random()```` function to make things more interesting?
+- What about multiple bouncing balls?
+
+Time permitting
+
+Introduce [Classes and
+Objects](https://github.com/michaelshiloh/simpleProcessingClassExample)
