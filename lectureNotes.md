@@ -497,3 +497,212 @@ Discussion:
 - How can we use the ````random()```` function to make things more interesting?
 - What about multiple bouncing balls?
 
+
+### todays-lecture
+### September 22 2020
+
+#### Administration
+
+- Check in
+- **Record Zoom!**
+
+#### Class Discussion
+
+- Casey Reas (Benjamin and Shaurya to lead)
+
+#### Homework Viewing
+
+#### Time Permitting
+
+- Check-in
+
+
+#### Arrays 
+<pre>
+final int numberOfValues = 10;
+
+int[] values = new int[numberOfValues];
+
+int n = 0;
+while (n < values.length) {
+  values[n] = (n+1)*(n+1);
+  n = n + 1;
+}
+
+for (int i = 0; i < values.length; i++) {
+  println(values[i]);
+}
+</pre>
+
+**Things to notice**
+
+- Just like functions are signified by `()`, arrays are signified by `[]`
+- Arrays can be of any data type, but can't be mixed types
+- `final` keyword
+- `new` keyword
+- Why not just use ten "normal" variables?
+- Arrays and loops (either `for()` or `while()`) almost always show up
+  together. If you use an array, you probably want a loop.
+
+
+A more advanced array example, and introduction to the very useful `map()`
+function:
+
+<pre>
+float[] coswave; 
+
+void setup() {
+  size(900, 300);
+  
+  coswave = new float[width];
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    coswave[xPosition] = cos(radians(xPosition));
+  }
+  background(255);
+  noLoop();
+}
+
+void draw() {
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    float waveHeight = map(coswave[xPosition], -1, 1, 0, height);
+    point(xPosition, waveHeight);
+  }
+}
+</pre>
+
+**Things to notice**
+
+* In the previous example, I created the variable that would store the
+array, and created the ten `int`s, all in one line. This time,
+I created the variable that would store the array globally, 
+and then I created the `float` variables inside of `setup()`.
+Either way works; sometimes you will find you have to do it one
+way or the other, but for the most part it's your choice.
+* I used `noLoop()` because this only needed to run once. In fact
+I didn't even need to use `draw()`, 
+I could have put all the action into `setup()`
+* How did I get the height of the wave to perfectly fit the height?
+Practice using the `map()` function, it is incredibly useful
+and works in Arduino also exactly the same way.
+
+### September 24 2020
+
+#### How to add more examples into Processing
+
+For example, from Dan Shiffman's book *Learning Processing*
+
+1. File -> Examples -> Add Examples
+1. type `learning processing` in the search box
+1. select the one we want
+
+Now you can see all examples from the book 
+
+1. File -> Examples -> Contributed Examples
+
+The examples are also online [here](http://learningprocessing.com/examples)
+
+#### Classes
+
+[this](https://github.com/michaelshiloh/simpleProcessingClassExample)
+
+#### Text
+
+<pre>
+String message= "Important message";
+
+void setup() {
+  size(640, 360);
+
+  // What fonts are available?
+  // String[] fontList = PFont.list();
+  // printArray(fontList);
+
+  PFont f = createFont("monaco", 32);
+  textFont(f, 32);
+  color myFavoriteColor =color(255, 0, 0);
+
+  fill(myFavoriteColor);
+  textAlign(CENTER);
+  text(message, width/2, height/2);
+}
+</pre>
+
+**Things to notice**
+
+* New datatype called `PFont`
+* New datatype called `color`
+* `fill()` and `textAlign()` will apply to any further texts or shapes until
+they are changed
+
+Some advanced examples using text are
+[here](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
+
+
+#### Perlin Noise
+
+````
+void draw() {
+  background(204);
+  float n = random(0, width);
+  line(n, 0, n, height);
+}
+````
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflys, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+````
+float offset = 0.0;
+
+void draw() {
+  background(204);
+  offset = offset + .01;
+  float n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+````
+
+Things to notice:
+
+* Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
+
+#### Events
+
+````
+final int maxColors = 10;
+color[] myColors = new color[maxColors];
+
+int colorChoice = 0;
+
+void setup() {
+  size(600, 500);
+
+  for (int i = 0; i < myColors.length; i ++ ) {
+    myColors[i]=color(random(255), random(255), random(255));
+  }
+}
+
+void draw() {
+}
+
+void mousePressed() {
+  background(myColors[colorChoice]);
+  colorChoice ++;
+}
+````
+
+Things to notice:
+
+* How does the background change if I never call `mousePressed()`
+`mousePressed()` is a *callback function*, meaning we have told
+Processing that we are interested in this event, and if it occurs,
+call this function. There are many different types of events available in
+Processing, and you register an interest in them by creating a callback
+function with the appropriate name. See *mouse* and *keyboard* 
+in the Processing Reference Page.
+
+* What happens if I click the mouse more than 10 times?  
