@@ -498,7 +498,6 @@ Discussion:
 - What about multiple bouncing balls?
 
 
-### todays-lecture
 ### September 22 2020
 
 #### Administration
@@ -585,7 +584,12 @@ I could have put all the action into `setup()`
 Practice using the `map()` function, it is incredibly useful
 and works in Arduino also exactly the same way.
 
+### todays-lecture
 ### September 24 2020
+
+#### Administration
+
+- **Record Zoom!**
 
 #### How to add more examples into Processing
 

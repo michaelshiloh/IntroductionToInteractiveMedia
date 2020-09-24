@@ -67,7 +67,6 @@ interesting you discovered.
 
 Animation, Conditionals, Loops
 
-##### todays-assignment
 #### Assignments Due September 22
 
 Reading Assignment:
@@ -109,6 +108,7 @@ interesting you discovered.
 
 Functions, Arrays, and Object-Oriented Programming
 
+##### todays-assignment
 #### Assignments Due September 29
 
 Reading Assignment:
@@ -140,7 +140,9 @@ As always, document your project:
 	- Create a README.md
 	- Describe the overall concept of your game or artwork
 	- Include the image(s) or link(s) to video
-	- Describe any problems you ran into
+	- Describe any problems you ran into and how you resolved
+	or worked around them
+	- Describe anything interesting or clever about your program
 
 ### Week 4 (September 29 and October 1)
 
