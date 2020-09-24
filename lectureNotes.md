@@ -544,6 +544,29 @@ for (int i = 0; i < values.length; i++) {
   together. If you use an array, you probably want a loop.
 
 
+### todays-lecture
+### September 24 2020
+
+#### Administration
+
+- **Record Zoom!**
+
+#### How to add more examples into Processing
+
+For example, from Dan Shiffman's book *Learning Processing*
+
+1. File -> Examples -> Add Examples
+1. type `learning processing` in the search box
+1. select the one we want
+
+Now you can see all examples from the book 
+
+1. File -> Examples -> Contributed Examples
+
+The examples are also online [here](http://learningprocessing.com/examples)
+
+#### Review arrays
+
 A more advanced array example, and introduction to the very useful `map()`
 function:
 
@@ -569,9 +592,15 @@ void draw() {
 }
 </pre>
 
+**Remember**
+
+- Arrays and loops (either `for()` or `while()`) almost always show up
+  together. If you use an array, you probably want a loop.
+
 **Things to notice**
 
-* In the previous example, I created the variable that would store the
+* In the array example on Tuesday, 
+I created the variable that would store the
 array, and created the ten `int`s, all in one line. This time,
 I created the variable that would store the array globally, 
 and then I created the `float` variables inside of `setup()`.
@@ -583,27 +612,6 @@ I could have put all the action into `setup()`
 * How did I get the height of the wave to perfectly fit the height?
 Practice using the `map()` function, it is incredibly useful
 and works in Arduino also exactly the same way.
-
-### todays-lecture
-### September 24 2020
-
-#### Administration
-
-- **Record Zoom!**
-
-#### How to add more examples into Processing
-
-For example, from Dan Shiffman's book *Learning Processing*
-
-1. File -> Examples -> Add Examples
-1. type `learning processing` in the search box
-1. select the one we want
-
-Now you can see all examples from the book 
-
-1. File -> Examples -> Contributed Examples
-
-The examples are also online [here](http://learningprocessing.com/examples)
 
 #### Classes
 
