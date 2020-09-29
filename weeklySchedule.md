@@ -108,7 +108,6 @@ interesting you discovered.
 
 Functions, Arrays, and Object-Oriented Programming
 
-##### todays-assignment
 #### Assignments Due September 29
 
 Reading Assignment:
@@ -148,6 +147,7 @@ As always, document your project:
 
 Loading Data, Displaying text, Transformations
 
+##### todays-assignment
 #### Assignments Due October 6
 
 Reading Assignment:

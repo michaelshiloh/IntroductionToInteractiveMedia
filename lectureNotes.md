@@ -544,7 +544,6 @@ for (int i = 0; i < values.length; i++) {
   together. If you use an array, you probably want a loop.
 
 
-### todays-lecture
 ### September 24 2020
 
 #### Administration
@@ -681,6 +680,23 @@ Things to notice:
 * Why is the variable `offset` global? (Remember our discussion of variable
 	scope)
 
+### todays-lecture
+### September 22 2020
+
+#### Administration
+
+- Check in
+- **Record Zoom!**
+
+#### Class Discussion
+
+- The Art of Interactive Design, Ch. 1 (Yasmin and Alpha to lead)
+
+#### Homework Viewing
+
+#### Time Permitting
+
+- Check-in
 
 #### Events
 
