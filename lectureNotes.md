@@ -701,7 +701,9 @@ Things to notice:
 ### October 1 2020
 
 #### Administration
+
 - **Record Zoom!**
+- No computer vision :-(
 
 #### Events
 
