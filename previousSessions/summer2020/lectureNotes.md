@@ -676,7 +676,7 @@ is a good introductory video tutorial.
 
 <h3>Generative Text</h3>
 Pull words from a file (CSV or JSON), 
-and by using random() in a clever way,
+and by using `random()` in a clever way,
 write poems or slogans or whatever
 
 #### Text 
