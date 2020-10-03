@@ -697,7 +697,6 @@ Things to notice:
 
 - Check-in
 
-### todays-lecture
 ### October 1 2020
 
 #### Administration
@@ -838,7 +837,15 @@ Same result, but using a transform:
 
 Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial
 
-
 * As always, Dan Shiffman has excellent
 [examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
 
+### todays-lecture
+### October 6 2020
+
+#### Administration
+
+- **Record Zoom!**
+
+
+#### Katie's CSV file

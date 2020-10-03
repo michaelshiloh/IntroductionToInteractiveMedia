@@ -153,10 +153,12 @@ Loading Data, Displaying text, Transformations
 Reading Assignment:
 
 - Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) and be prepared to discuss (Katie and Matthew to lead)
-- Watch [1.4: Introduction to Computer Vision – Processing
-	Tutorial](https://www.youtube.com/watch?v=h8tk0hmWB44&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2&t=0s)
-- Watch [11.5: Computer Vision: Color Tracking – Processing
-	Tutorial](https://www.youtube.com/watch?v=nCVZHROb_dE&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2)
+- Read [this](https://processing.org/tutorials/pixels/) 
+tutorial on working with pixels or watch 
+all of Shiffman's tutorials on working with Images and Pixels
+[here](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9). 
+That's about an hour and a half all together so make sure you give yourself
+time to finish before class
 
 Production Assignment:
 
@@ -178,9 +180,8 @@ Image Processing and Tracking
 
 Reading Assignment:
 
-Golan Levin’s [Computer Vision for Artists and Designers: Pedagogic Tools and
-Techniques for Novice
-Programmers](http://www.flong.com/texts/essays/essay_cvad/), 
+Watch Lauren McCarthy's Eyeo talk
+[You, Me and My Computer](https://vimeo.com/110607681)
 and be prepared to discuss (Liyan and Kartikey to lead)
 
 Production Assignment:
