@@ -860,8 +860,8 @@ received email permission to leave it off
 
 #### Class Discussion
 
-Lauren McCarthy's Eyeo talk *You, Me and My Computer*
- (Liyan and Kartikey to lead)
+Chapter 1 of *The Design of Everyday Things, 
+The Psychopathology of Everyday Things* (Katie and Matthew to lead)
 
 #### Time Permitting
 
