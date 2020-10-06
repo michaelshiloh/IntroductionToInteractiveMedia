@@ -846,6 +846,7 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
 #### Administration
 
 - **Record Zoom!**
+- Introducing Jack
 - Who has not received kits?
 - Please keep you cameras turned on in class 
 unless you have discussed with me and 
