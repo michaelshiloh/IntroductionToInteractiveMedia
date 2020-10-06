@@ -846,6 +846,24 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
 #### Administration
 
 - **Record Zoom!**
+- Who has not received kits?
+- Please keep you cameras turned on in class 
+unless you have discussed with me and 
+received email permission to leave it off
+- Distractions in class: Using your phone during class, or using your computer
+	for things other than class activities, is prohibited. 
+- Be prepared to share your screen
+	- Have your homework ready to share (Processing running, etc.)
+	- Don't have any private information on your screen
 
+#### Homework Viewing
 
-#### Katie's CSV file
+#### Class Discussion
+
+Lauren McCarthy's Eyeo talk *You, Me and My Computer*
+ (Liyan and Kartikey to lead)
+
+#### Time Permitting
+
+Katie's CSV file
+
