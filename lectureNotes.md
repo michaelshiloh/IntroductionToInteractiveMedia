@@ -873,7 +873,6 @@ Katie's CSV file
 #### Administration
 
 - **Record Zoom!**
-- Zheki what should we read for your discussion on October 28?
 
 #### Homework Viewing
 
