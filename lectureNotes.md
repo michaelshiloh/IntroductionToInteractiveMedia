@@ -879,7 +879,6 @@ Katie's CSV file
 
 Katie  
 Omar  
-Kyrie  
 
 
 #### Working with Images
@@ -1039,7 +1038,7 @@ PImage[] tiles;
 int tileSize = 100;
 
 void setup() {
-  fullScreen();
+  size (400,400);
   img = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
   tiles = new PImage[img.height/tileSize];
   for (int i=0; i< tiles.length; i++) {
@@ -1074,7 +1073,7 @@ void keyPressed() {
 }
 ````
 
-[circularImages.pde](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/circularImages/circularImages.pde)
+Here is a more complex version, on which I based the simple version above: [circularImages.pde](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/circularImages/circularImages.pde)
 
 Can we use a sequence of images for animation?
 
