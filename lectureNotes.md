@@ -877,15 +877,14 @@ Katie's CSV file
 
 #### Homework Viewing
 
-Katie
-Omar
-Kyrie
+Katie  
+Omar  
+Kyrie  
 
 
 #### Working with Images
 
-Get images from
-[here](media/imagesForPixelsClass.zip)
+[aiweiwei.jpg](media/aiweiwei.jpeg)
 
 <strong>PImage</strong>
 <ul>
