@@ -1,3 +1,5 @@
+Shortcut to [today's assignment](#todays-assignment)
+
 # Introduction to Interactive Media at New York University Abu Dhabi  
 ## NYU Abu Dhabi
 ## Interactive Media Program
@@ -22,7 +24,6 @@ This includes:
 - Reading assignments
 - Projects
 
-Shortcut to [Today's assignment](#todays-assignment)
 
 This is all subject to change
 
@@ -147,7 +148,6 @@ As always, document your project:
 
 Loading Data, Displaying text, Transformations
 
-##### todays-assignment
 #### Assignments Due October 6
 
 Reading Assignment:
@@ -174,8 +174,9 @@ Document your project as always, with the following additions:
 
 ### Week 5 (October 6 and 8)
 
-Image Processing and Tracking
+Image Processing 
 
+##### todays-assignment
 #### Assignments Due October 13
 
 Reading Assignment:
