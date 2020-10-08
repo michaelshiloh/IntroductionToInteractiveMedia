@@ -187,7 +187,9 @@ and be prepared to discuss (Liyan and Kartikey to lead)
 
 Production Assignment:
 
-- Using image manipulation, can you track a color for something? Can you incorporate special effects and get the rest of us in the class to say “wow”?
+- Using image manipulation, 
+can you incorporate special effects 
+and get the rest of us in the class to say “wow”?
 
 Document your project as last week
 
