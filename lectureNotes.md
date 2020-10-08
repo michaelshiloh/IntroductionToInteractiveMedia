@@ -840,7 +840,6 @@ Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tu
 * As always, Dan Shiffman has excellent
 [examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
 
-### todays-lecture
 ### October 6 2020
 
 #### Administration
@@ -864,7 +863,225 @@ received email permission to leave it off
 Chapter 1 of *The Design of Everyday Things, 
 The Psychopathology of Everyday Things* (Katie and Matthew to lead)
 
-#### Time Permitting
+#### Weird stuff
 
 Katie's CSV file
 
+### todays-lecture
+### October 8 2020
+
+#### Administration
+
+- **Record Zoom!**
+- Zheki what should we read for your discussion on October 28?
+
+#### Homework Viewing
+
+Katie
+Omar
+Kyrie
+
+
+#### Working with Images
+
+Get images from
+[here](media/imagesForPixelsClass.zip)
+
+<strong>PImage</strong>
+<ul>
+ 	<li>Just another class, i.e. it has
+<ul>
+ 	<li>Data (the pixels, width, height, etc.)</li>
+ 	<li>Functionality `(image()`, `get()`, etc.)</li>
+</ul>
+</li>
+</ul>
+
+````
+PImage photo; 
+
+void setup() { 
+  size(700, 700); 
+  photo = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+} 
+
+void draw() { 
+  image(photo, 10, 10);
+	// How do you suppose you might scale the image?
+}
+````
+
+Things to notice
+
+* Get familiar with the error *NullPointerException*
+* If you do not specify a complete path Processing will look 
+in the same folder as the sketch and
+for a folder called *data* in the same folder as the sketch
+(I'm not sure in what order)
+
+
+`img.get(x,y)` - Gets the color of the pixel at this location
+
+`img.get(x,y,w,h)` - Gets a portion of the image
+
+````
+PImage photo;
+
+void setup() {
+  photo = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+
+  size(700, 700);
+
+  image(photo, 10, 10);
+
+  PImage newImage = photo.get(400, 550, 100, 100);
+
+  image (newImage, 50, 50);
+}
+````
+
+Also
+
+````
+image(photo, positionX, positionY, width, height);
+tint(red, green, blue);
+imageMode(CENTER);
+````
+
+Arrays of images
+
+Example15-3: *Swappingimages* from Dan Shiffman's *Learning Processing* 
+
+
+<strong>Pixels</strong>
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called ````pixels````. 
+Before using it you must load images from the canvas into the ````pixels```` array ````usingloadPixels()````, 
+and after making any changes you must call ````updatePixels()```` 
+to write from the pixels array back to the canvas
+if you want to make changes to the canvas
+
+````
+color pink = color(255, 102, 204);
+
+loadPixels();
+
+// change the first row to pink
+for (int i = 0; i < width; i++) {
+  pixels[i] = pink; 
+}
+
+updatePixels();
+````
+
+the pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths:
+
+![](media/pixelarray2d.jpg)
+
+
+````
+color pink = color(255, 102, 204);
+
+loadPixels();
+
+// Change the fifth row to pink
+for (int i = width*5; i < (width + width*5); i++) {
+  pixels[i] = pink;
+}
+
+updatePixels();
+````
+
+It's important to remember that a pixel is just a color (red, green, blue).
+Anything so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+int r = 255;
+int change = -1;
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+
+  color myColor = color(r, 102, 204);
+
+  loadPixels();
+  for (int i = 0; i < width * height; i++) {
+    pixels[i] = myColor;
+  }
+  updatePixels();
+
+  r -= change;
+
+  if (r < 0 || r > 255) {
+    change = -change;
+  }
+}
+
+````
+
+The ````pixels```` [data
+type](https://processing.org/reference/color_datatype.html)
+
+Some fun examples from Professor Sherwood:
+
+![](media/circularImages.png)
+
+````
+PImage img;
+PImage[] tiles;
+
+int tileSize = 100;
+
+void setup() {
+  fullScreen();
+  img = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+  tiles = new PImage[img.height/tileSize];
+  for (int i=0; i< tiles.length; i++) {
+    tiles[i] = img.get(int(random(img.width-tileSize)), int(random(img.height-tileSize)), tileSize, tileSize);
+  }
+  imageMode(CENTER);
+}
+
+void draw() {
+  pushMatrix();
+  translate(width/2, height/2);
+
+  int numSegments = 10;
+  float eachAngle = TWO_PI/numSegments;
+  int whichImage = (int)random(tiles.length);
+  for (int i = 0; i< numSegments; i++) {
+    float x = cos(eachAngle*i)*tileSize+1;
+    float y = sin(eachAngle*i)*tileSize+1;
+    pushMatrix();
+    translate(x, y);
+    rotate(eachAngle*i);
+    image(tiles[whichImage], 0, 0);
+    popMatrix();
+  }
+
+  popMatrix();
+  noLoop();
+}
+
+void keyPressed() {
+  loop();
+}
+````
+
+[circularImages.pde](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/circularImages/circularImages.pde)
+
+Can we use a sequence of images for animation?
+
+![](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/pixels/spritesheet/data/walking.png)
+
+How would we use them?
+
+Aaron's
+[method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
