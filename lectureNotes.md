@@ -867,7 +867,6 @@ The Psychopathology of Everyday Things* (Katie and Matthew to lead)
 
 Katie's CSV file
 
-### todays-lecture
 ### October 8 2020
 
 #### Administration
@@ -1082,3 +1081,19 @@ How would we use them?
 
 Aaron's
 [method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
+
+
+### todays-lecture
+### October 13 2020
+
+#### Administration
+
+- **Record Zoom!**
+
+#### Discussion
+
+- Lauren McCarthy's Eyeo talk (Liyan and Kartikey to lead)
+
+#### Homework Viewing
+
+Image manipulation
