@@ -1,3 +1,5 @@
+[Today's lecture](#todays-lecture)
+
 # Introduction to Interactive Media at New York University Abu Dhabi  
 ## NYU Abu Dhabi
 ## Interactive Media Program
@@ -15,8 +17,6 @@ Section: 2
 [Link](https://nyu.zoom.us/j/97636620851) to class Zoom meetings
 
 This is all subject to change
-
-[Today's lecture](#todays-lecture)
 
 ### September 8 2020
 
