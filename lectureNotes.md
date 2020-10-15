@@ -1083,12 +1083,11 @@ Aaron's
 [method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
 
 
-### todays-lecture
 ### October 13 2020
 
 #### Administration
 
-- **Record Zoom!**
+- Record Zoom
 
 #### Discussion
 
@@ -1097,3 +1096,46 @@ Aaron's
 #### Homework Viewing
 
 Image manipulation
+
+
+### todays-lecture
+### October 15 2020
+
+#### Administration
+
+- Record Zoom
+
+#### Sound
+
+Install the Sound library
+
+- Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install *Sound* written by *The Processing Foundation*
+
+Play with examples
+
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+
+**Notes**
+1. Some soundfiles don't work. I don't know why.
+2. New concept: ````switch()```` statement
+3. ````keyPressed()```` is another example of a ````callback function ````
+
+
+Examples from Learning Processing chapter 20
+
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+- The first example sound file is one that does not work for me. 
+
+Let's step back a minute. What is
+[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
+
+More
+[examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound)
+
+
