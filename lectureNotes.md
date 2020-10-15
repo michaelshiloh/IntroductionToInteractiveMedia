@@ -1107,6 +1107,9 @@ Image manipulation
 
 #### Sound
 
+Sound library [reference
+page](https://processing.org/reference/libraries/sound/index.html)
+
 Install the Sound library
 
 - Sketch -> Import Library -> Add Library (notice many other library
@@ -1138,4 +1141,9 @@ Let's step back a minute. What is
 More
 [examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound)
 
+Blocking vs. non-blocking functions
 
+- Which function is non-blocking?
+- How do you know when a non-blocking function is done?
+- Soudfile [reference
+	page](https://processing.org/reference/libraries/sound/SoundFile.html)
