@@ -192,7 +192,6 @@ and get the rest of us in the class to say “wow”?
 
 Document your project as last week
 
-##### todays-assignment
 ### Week 6 (October 13 and 15)
 
 Sound, State, and Introduction to Midterm Project
@@ -211,6 +210,7 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 without closing and restarting the program
 
+##### todays-assignment
 #### Assignments Due October 19
 
 Production Assignment:
