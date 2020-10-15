@@ -1141,8 +1141,43 @@ chp_20_sound -> example_20_02_sound_effect
 #### If we had multiple sound files, how would we play the next one when we
 click the mouse?
 
-Let's try this together before you look at the 
+Let's try this together before you look at one posible 
 [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
+
+Here is the solution we worked at in class:
+
+````
+import processing.sound.*;
+
+SoundFile[] songs;
+final int numberOfSongs = 5;
+
+SoundFile currentSong;
+
+void setup() {
+  size(400, 500);
+
+  songs = new SoundFile[numberOfSongs]; // makes the array of songs
+
+  // open each file and put it in the songs array
+  for (int i = 0; i< numberOfSongs; i++) {
+    songs[i] = new SoundFile( this, "/tmp/" + (i+1) + ".aif");
+  }
+  currentSong = songs[0];
+}
+
+void draw() {
+}
+
+void mousePressed() {
+
+  if (currentSong.isPlaying() == false ) {
+    int songToPlay = (int) random(numberOfSongs);
+    songs[songToPlay].play();
+    currentSong = songs[songToPlay];
+  }
+}
+````
 
 Blocking vs. non-blocking functions
 

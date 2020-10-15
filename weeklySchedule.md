@@ -176,7 +176,6 @@ Document your project as always, with the following additions:
 
 Image Processing 
 
-##### todays-assignment
 #### Assignments Due October 13
 
 Reading Assignment:
@@ -193,6 +192,7 @@ and get the rest of us in the class to say “wow”?
 
 Document your project as last week
 
+##### todays-assignment
 ### Week 6 (October 13 and 15)
 
 Sound, State, and Introduction to Midterm Project
