@@ -1110,14 +1110,14 @@ Image manipulation
 Sound library [reference
 page](https://processing.org/reference/libraries/sound/index.html)
 
-Install the Sound library
+##### Install the Sound library
 
 - Sketch -> Import Library -> Add Library (notice many other library
 	options)
 - Search for Sound
 - Install *Sound* written by *The Processing Foundation*
 
-Play with examples
+##### Play with examples
 
 - File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
 - File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
@@ -1129,17 +1129,20 @@ Play with examples
 3. ````keyPressed()```` is another example of a ````callback function ````
 
 
-Examples from Learning Processing chapter 20
+##### Examples from Learning Processing chapter 20
 
 - File -> Examples -> Contributed Examples -> Learning Processing ->
 chp_20_sound -> example_20_02_sound_effect
 - The first example sound file is one that does not work for me. 
 
-Let's step back a minute. What is
+##### What is
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
-More
-[examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound)
+#### If we had multiple sound files, how would we play the next one when we
+click the mouse?
+
+Let's try this together before you look at the 
+[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
 
 Blocking vs. non-blocking functions
 
@@ -1147,3 +1150,13 @@ Blocking vs. non-blocking functions
 - How do you know when a non-blocking function is done?
 - Soudfile [reference
 	page](https://processing.org/reference/libraries/sound/SoundFile.html)
+
+What about using the mouse position to select sound tracks?
+
+Let's try this together before you look at the 
+[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
+
+##### Synthesis
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
