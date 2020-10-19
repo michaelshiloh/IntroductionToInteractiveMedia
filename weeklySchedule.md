@@ -210,7 +210,6 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 without closing and restarting the program
 
-##### todays-assignment
 #### Assignments Due October 19
 
 Production Assignment:
@@ -232,6 +231,7 @@ has caused you to modify your plan for your midterm project.
 
 Midterm project status
 
+##### todays-assignment
 Midterm project due on October 27
 
 Documentation:

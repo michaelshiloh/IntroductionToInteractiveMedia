@@ -1098,7 +1098,6 @@ Aaron's
 Image manipulation
 
 
-### todays-lecture
 ### October 15 2020
 
 #### Administration
@@ -1195,3 +1194,13 @@ Let's try this together before you look at the
 
 We can create our own complex sounds starting with basic oscillators and then
 changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+
+
+### todays-lecture
+### October 19 2020
+
+#### Administration
+
+- Record Zoom
+
+#### Individual check-ins
