@@ -231,7 +231,6 @@ has caused you to modify your plan for your midterm project.
 
 Midterm project status
 
-##### todays-assignment
 Midterm project due on October 27
 
 Documentation:
@@ -253,6 +252,7 @@ Midterm Critique; Introduction to Electricity and Arduino Digital Input and Outp
 
 ### Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
 
+##### todays-assignment
 #### Assignments Due October 29
 
 Reading Assignment:
