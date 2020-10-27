@@ -1196,7 +1196,6 @@ We can create our own complex sounds starting with basic oscillators and then
 changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
 
 
-### todays-lecture
 ### October 19 2020
 
 #### Administration
@@ -1204,3 +1203,29 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 - Record Zoom
 
 #### Individual check-ins
+
+### todays-lecture
+### October 27 2020
+
+#### Administration
+
+- Record Zoom
+- Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
+- Remember the homework assignment for Thursday ([reading and
+	production](weeklySchedule.md#todays-assignment)
+- Lynn Hershman Leeson will give a Community Talk on Sunday, November 1st, 7pm:
+
+Join us for a community talk by artist and filmmaker [Lynn Hershman
+Leeson](https://www.lynnhershman.com/)
+about her pioneering contributions to the fields of photography, video, film,
+performance, artificial intelligence, bio art, installation and interactive as
+well as net-based media art over the last fifty years. Lynn Hershman Leeson's
+innovative work investigates issues that are now recognized as key to the
+workings of society: the relationship between humans and technology, identity,
+surveillance, and the use of media as a tool of empowerment against censorship
+and political repression.
+
+Registration to attend this event is required and can be filled out 
+[here](https://forms.gle/GNAtFv6NvZpCtxus8).
+
+#### Midterm projects
