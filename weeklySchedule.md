@@ -252,7 +252,6 @@ Midterm Critique; Introduction to Electricity and Arduino Digital Input and Outp
 
 ### Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
 
-##### todays-assignment
 #### Assignments Due October 29
 
 Reading Assignment:
@@ -282,6 +281,7 @@ Production Assignment:
 
 - **Be careful not to damage the wires or yourselves!**
 
+##### todays-assignment
 #### Assignments due November 3
 
 Reading Assignment:
@@ -305,7 +305,7 @@ Production Assignment
 - Document your project as before
 	- Github folder called ````November3````
 		- Schematic 
-			- Cab be either hand or computer drawn
+			- Can be either hand or computer drawn
 			- Make sure your picture is large enough to read
 			- Remember what a schematic is and is not
 			- Schematic won't be graded this time but will be after this

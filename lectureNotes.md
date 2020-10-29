@@ -1204,15 +1204,21 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 
 #### Individual check-ins
 
-### todays-lecture
 ### October 27 2020
+
+#### Administration
+- Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
+- Remember the homework assignment for Thursday ([reading and
+	production](weeklySchedule.md#todays-assignment)
+
+#### Midterm projects
+
+### todays-lecture
+### October 29 2020
 
 #### Administration
 
 - Record Zoom
-- Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
-- Remember the homework assignment for Thursday ([reading and
-	production](weeklySchedule.md#todays-assignment)
 - Lynn Hershman Leeson will give a Community Talk on Sunday, November 1st, 7pm:
 
 Join us for a community talk by artist and filmmaker [Lynn Hershman
@@ -1228,4 +1234,171 @@ and political repression.
 Registration to attend this event is required and can be filled out 
 [here](https://forms.gle/GNAtFv6NvZpCtxus8).
 
-#### Midterm projects
+#### Electricity 
+
+**Simple circuit using Arduino, LED, and Resistor**
+
+The most confusing part of this lecture will be the solderless breadboard:
+![](media/breadboard.jpg)
+Image courtesy of
+[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+
+Here is how to build the circuit
+
+![](media/ArduinoPoweringLED_bb.png)
+
+
+**Theory**
+
+Electricity is mysterious
+
+- We can predict what it will do quite accurately, but don't really understand
+	it what is it
+- Flow of electrons
+- Electrons want to move from place of higher potential energy to place of lower potential energy
+	- Like a rock or water falling from a height
+	- Unlike a rock or water, electricity can only travel in a conductor
+- AC vs. DC - very briefly, will discuss more as it comes up
+
+What makes a circuit?
+
+- Something to provide that difference in potential 
+that will cause the electrons to want to move. 
+	- Typically a battery, charger, or USB port
+	- The technical term is "power supply"
+	- In our case your laptop via the Arduino
+		- What is the Arduino doing in this case?
+- Conductors to allow the electronics to move
+- Components or other things that usually convert this electrical energy 
+to some other form of energy (e.g. light, sound, heat, movement)
+- Optionally, switches or other sensors to control the flow of energy
+	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
+
+Schematics
+
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
+- Important part of something, 
+	without getting distracted by details (e.g. subway maps)
+- What's important in an electrical schematic?
+	- Where is the power coming from?
+	- What other components are there in the circuit?
+	- How are they connected?
+
+**Schematics are an important way to show a circuit. You will be required to
+understand and use them**
+
+Switches
+
+- What if we want to turn it the LED on and off?
+ 	- Pull out a wire
+ 	- That's a switch, but a pretty inconvenient one
+	- Schematic symbol of switch
+	- How does it work?
+		- Breaks the flow of electrons by breaking the continuous path
+		- Doesn't electricity (the electrons) just flow out the end of the wire?
+	- The switch can go on either side. How is this possible?
+
+Let's use a real switch
+
+![](media/ArduinoPoweringLEDWithSwitch_schem.png)
+![](media/ArduinoPoweringLEDWithSwitch_bb.png)
+
+- How is this switch different from the earlier switch?
+	- Schematic symbol of momentary switch
+	- What was the previous "switch"?
+	- Schematic symbol of toggle switch
+
+Series and Parallel
+
+- What if we put two switches in?
+- Two different ways: series and parallel
+	- Components in series have the same **current** flowing through them
+	- Components in parallel have the same **voltage** across them
+- No matter how many components you have in a circuit, and how they are
+	connected, they will obey these principles.
+
+![](media/ArduinoPoweringLEDWith2SwitchesParallel_schem.png)
+![](media/ArduinoPoweringLEDWith2SwitchesParallel_bb.png)
+
+![](media/ArduinoPowering2LEDSeries_schem.png)
+![](media/ArduinoPowering2LEDSeries_bb.png)
+
+- Any two components can be connected in series or parallel; not just switches
+- More than two components might be in series, or parallel, or neither
+
+Ohm's law
+- I=V/R
+- The math only works for linear components 
+	- But the principle is the same for non-linear components 
+	- **is a very important concept**:
+		- For a given resistance, 
+			the higher the pressure (voltage), 
+				the higher the current
+		- For a given voltage, the higher the "resistance", 
+			the lower the current
+
+#### Arduino finally!
+
+Make sure everything is working
+
+- Upload the Blink example
+- Change the parameter in delay()
+- Upload again and verify that the LED blinks at the new rate
+
+What is going on?
+
+- Code
+- Circuit
+- I/O pins
+
+Let's extend this circuit to the breadboard:
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
+Let's add a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+// the setup function runs once when you press reset or power the board
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. You can select up to four patterns. How is that possible?
+
