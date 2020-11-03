@@ -1213,7 +1213,6 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 
 #### Midterm projects
 
-### todays-lecture
 ### October 29 2020
 
 #### Administration
@@ -1401,4 +1400,25 @@ Add another switch on a different pin
 
 Now write a program that will blink different patterns depending on which
 switch is pressed. You can select up to four patterns. How is that possible?
+
+
+### todays-lecture
+### October 29 2020
+
+#### Administration
+
+- Record Zoom
+- Who read the assignments for last week (*Microcontrollers, the Basics* and
+	*Digital Input and Output*)
+
+#### Discussion
+
+- *Physical Computing’s Greatest hits and misses*
+  and
+  *Making Interactive Art: Set the Stage, Then Shut Up and
+Listen* (Yusra and Joseph to lead)
+
+#### Homework Viewing
+
+- Three switch (minimum) and 3 LED (minimum) puzzle
 
