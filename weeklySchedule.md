@@ -281,7 +281,6 @@ Production Assignment:
 
 - **Be careful not to damage the wires or yourselves!**
 
-##### todays-assignment
 #### Assignments due November 3
 
 Reading Assignment:
@@ -319,6 +318,7 @@ Production Assignment
 
 Analog Input and output, Mapping, data types, printing
 
+##### todays-assignment
 #### Assignments Due November 10
 
 Reading Assignment:
