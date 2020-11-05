@@ -340,6 +340,10 @@ and use this information to control at least two LEDs,
 one in a digital fashion and the other in an analog fashion, 
 in some creative way.
 Document your work:
+- Take a video showing your project working. Be prepared to show this in
+	class:
+	- Close all private programs and screens
+	- Have your browser open to your video
 - Create a new folder in your github repository called ````November10````
 - Describe your project in README.md and include:
 	- A description of your concept and how it was achieved
@@ -347,6 +351,7 @@ Document your work:
 	- A photograph of your project
 	- Problems, if any, and solutions, if any
 	- Anything else you can think of
+	- A link to the video
 - Upload your program 
 
 ### Week 9 (November 10 and 12)

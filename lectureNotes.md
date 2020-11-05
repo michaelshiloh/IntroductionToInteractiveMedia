@@ -1488,6 +1488,90 @@ Serial.println();
 1. Use one of the analog sensors to select which of two LEDs lights up
 1. Use one of the analog sensor to control how fast two LEDs alternate
 
+Code we played with in class:
+A few examples showing how to work with analog inputs and outputs
+
+````
+/* First, using map() and constrain() */
+
+void setup() {
+  Serial.begin(9600);
+}
+
+const int sensorPin = A2;
+const int blueLEDPin = 6;
+
+void loop() {
+
+  int sensorValue = analogRead (sensorPin); // range of 0 - 1023
+
+  int ledBrightness = map(sensorValue, 150, 620, 200, 0);
+
+  ledBrightness = constrain(ledBrightness, 0, 200);
+
+  // The range of my LED wasn't very good so I added this
+  // to see what was going on, then I realized that my range was quite different
+  Serial.print("sensorValue = ");
+  Serial.print(sensorValue);
+  Serial.print(" ledBrightness = ");
+  Serial.print(ledBrightness);
+  Serial.println();
+
+  analogWrite(blueLEDPin, ledBrightness); // can only go 0 - 255
+}
+````
+
+
+
+````
+/* Aalya's solution to the first in-class exercise */
+
+const int redPin = 6;
+const int bluePin = 9;
+
+void setup() {
+
+}
+
+void loop() {
+  int sensorValue = analogRead(A2);
+
+  if (sensorValue > 400) {
+    analogWrite (bluePin, 100);
+    analogWrite (redPin, 0);
+  } else {
+    analogWrite (bluePin, 0);
+    analogWrite (redPin, 100);
+  }
+}
+````
+
+
+````
+/* Liyan's solution to the second exercise */
+int ledPin = 3;
+int ledPin2 = 5;
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A2);
+  // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
+  float voltage = sensorValue * (5.0 / 1023.0);
+  // print out the value you read:
+  Serial.println(voltage);
+  analogWrite(ledPin, HIGH);
+  delay(voltage * 100);
+  analogWrite(ledPin, LOW);
+  analogWrite(ledPin2, HIGH);
+  delay(voltage * 100);
+  analogWrite(ledPin2, LOW);
+}
+````
+
 
 #### Data Types
 
