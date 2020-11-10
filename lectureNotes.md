@@ -1624,6 +1624,41 @@ Record
 
 - Analog and digital sensors and LEDs
 
+#### Circuits
+
+Some theory that might help you think about why circuits are they way they
+are
+- Important concepts:
+	- Voltage 
+		- Voltage is a relative quantity so it's always measured or identified
+			relative to some other point (usually a common reference point such as
+			"ground")
+		- Can be thought of the "pressure" applied to the electrons
+		- Analogous to holding a brick at a certain height above the floor. Relative
+			to the floor, the brick has a certain amount of potential energy
+		- Voltage exists whether or not there is a circuit
+	- Resistance 
+		- The resistance the electrons face as they try to get through
+		components. 
+		- Analogous to a traffic jam on a road
+		- Conductors (wires) have zero resistance (for our purposes)
+		- All components have some sort of "resistance"
+		- Resistance is a property of a component and therefore
+		exists whether or not there is a circuit
+	- Current  
+		- The rate of flow of electrons through a circuit (electrons/second)
+		- Somewhat analogous to litres/hour or cars/hour
+		- **Current only exists when there is a circuit**
+- If you measure the voltage between any two points, the voltage will not
+	change as you move to different places on the **wire**. 
+		However if you cross
+		a component the voltage might be different on the other side of the
+		component
+- If you measure current through a series of components the current will not
+	change. 
+		However if there are any branches some electrons might go on the
+		branches and thus the current will drop.
+
 Thursday:
 
 #### Debugging
