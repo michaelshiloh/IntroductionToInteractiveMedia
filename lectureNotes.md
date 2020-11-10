@@ -1612,11 +1612,13 @@ boolean
 ### November 10 2020
 
 #### Administration
-
-Record
+- Record
+- Be ready to show your work
+	- Video ready to play
+	- Notifications shut off
+	- Nothing private on your desktop
 
 #### Discussion (Omar and Aalya to lead)
-
 - *A Brief Rant on the Future of Interaction Design*
 - *Response*
 
