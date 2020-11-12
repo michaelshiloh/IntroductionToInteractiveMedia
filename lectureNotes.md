@@ -1690,6 +1690,8 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 
 **Notes**
 - "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- That's not very specific. I think they mean "prevents `analogWrite()` on
+		pins 3 and 11"
 - The `tone()` function is *non-blocking*
 - Arduino supports tabs just like in Processing
 - Arduino has arrays just like in Processing
@@ -1705,7 +1707,11 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
 - The `Servo.write()` function is *non-blocking*
 
-#### What do `analogWrite()`, `tone()` and `Servo` have in common?
+#### PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+	- What is sound?
+	- How is the servo motor told where to go?
 
 #### Blink Without `delay()`
 
