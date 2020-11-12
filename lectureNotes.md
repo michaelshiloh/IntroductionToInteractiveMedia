@@ -1608,7 +1608,6 @@ boolean
 			don't use green for anything else either
 	- All other connections can use any other colors
 
-### todays-lecture
 ### November 10 2020
 
 #### Administration
@@ -1661,11 +1660,13 @@ are
 		However if there are any branches some electrons might go on the
 		branches and thus the current will drop.
 
-Thursday:
+### todays-lecture
+### November 12 2020
+
+#### Administration
+- Record
 
 #### Debugging
-
-What techniques have you learned to help you find problems?
 
 If you want my help solving a problem in your assignment, do the following:
 1. Upload your schematic, code, and 
@@ -1673,6 +1674,11 @@ the best picture you can take of your breadboard circuit to Github
 1. Write a message on Discord, describing carefully
 	1. What you think should be happening
 	1. What instead is happening 
+
+What techniques have you learned to help you find problems?
+	- 
+	- 
+	- 
 
 #### Sound
 

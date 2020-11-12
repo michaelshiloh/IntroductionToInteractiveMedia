@@ -318,7 +318,6 @@ Production Assignment
 
 Analog Input and output, Mapping, data types, printing
 
-##### todays-assignment
 #### Assignments Due November 10
 
 Reading Assignment:
@@ -358,6 +357,7 @@ Document your work:
 
 Sound and Servo Motor
 
+##### todays-assignment
 #### Assignments Due November 17
 
 Reading Assignment:
