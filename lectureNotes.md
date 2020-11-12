@@ -1709,9 +1709,12 @@ page](https://www.arduino.cc/en/Reference/Servo)
 
 #### PWM
 - How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
 - What do `analogWrite()`, `tone()` and `Servo` have in common?
-	- What is sound?
-	- How is the servo motor told where to go?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+	
 
 #### Blink Without `delay()`
 
