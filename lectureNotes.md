@@ -1660,7 +1660,6 @@ are
 		However if there are any branches some electrons might go on the
 		branches and thus the current will drop.
 
-### todays-lecture
 ### November 12 2020
 
 #### Administration
@@ -1741,3 +1740,55 @@ without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
 
+### todays-lecture
+### November 14 2020
+
+#### Administration
+- Record
+
+#### Theory (continued)
+
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connected things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the right side of a
+		component!
+
+#### Communication
+
+File -> Examples -> Communications -> Graph
+
+What if we want to send more than one value?
+
+File -> Examples -> Communications -> VirtualColorMixer
+
+Can we send from Processing to Arduino?
+
+File -> Examples -> Communications -> PhysicalPixel
+
+What about both directions?
+
+File -> Examples -> Communications -> SerialCallResponseASCII
+
+**What to do if you see NaN**
+
+Remember the principle of robust coding
+
+
+
+
+
+
+More on avoiding `delay()`
+
+Flicker (i.e simulate a candle) multiple LEDs 
+without using `delay()`:
+[flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
+
+
+Related is the concept of a systems *state*, and detecting and controlling the
+transition from one state to another
+
+[State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
+State Change Detection is also called edge detection
