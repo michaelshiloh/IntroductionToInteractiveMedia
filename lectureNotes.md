@@ -1750,7 +1750,7 @@ without using `delay()`:
 
 - Review
 - Voltage does **not** change in a conductor
-	- That is why we can connected things to the same node in any order
+	- That is why we can connect things to the same node in any order
 - Voltage **does** change when you go across a component
 	- That is why it is **important** to make connections to the right side of a
 		component!
@@ -1780,7 +1780,7 @@ Remember the principle of robust coding
 
 
 
-More on avoiding `delay()`
+#### More on avoiding `delay()`
 
 Flicker (i.e simulate a candle) multiple LEDs 
 without using `delay()`:
