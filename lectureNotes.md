@@ -1740,7 +1740,6 @@ without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
 
-### todays-lecture
 ### November 14 2020
 
 #### Administration
@@ -1763,21 +1762,102 @@ What if we want to send more than one value?
 
 File -> Examples -> Communications -> VirtualColorMixer
 
-Can we send from Processing to Arduino?
 
-File -> Examples -> Communications -> PhysicalPixel
+### todays-lecture
+### November 19 2020
+
+#### Administration
+- Record
+
+#### Communication (continued)
+
+Review
+- **Graph** example sends one value from Arduino to Processing
+- **VirtualColorMixer** sends three values, and uses the `split()` function 
+in processing to split these Comma Separated Values
+- Remember the principle of robust coding: Expect the unexpected 
+	and provide proper handling 
+- In particular, 
+	sometimes The data received is invalid and so we must check for all possible
+	failures e.g.
+	- Empty string
+		- `if (inString != null)`
+	- Unexpected number of values
+		- `if (colors.length >= 3)`
+	- Non-numerical data
+		- NaN error if we try to process mathematically 
+		something that is not a number
+
+How to check that a string contains only numerical digits 
+- First, how is information sent from Arduino to Processing?
+	- If we use `print()` or `println()`, on Arduino
+		- The [ASCII](https://en.wikipedia.org/wiki/ASCII) code 
+		for each character is sent
+		- Any **numbers** are sent as a sequence of **characters**
+			- E.g. the **number** `237` is sent as 
+			the code for the **character** `2`, 
+			then the code for the **character** `3`,
+			then the code for the **character** `7`
+		- This is accomplished automatically by the 
+			`print()` or `println()` commands
+	- In Processing, we must convert the sequence of character
+		back into numbers
+		- .e.g. the **characters** `2`, `3`, and `7` must be combined to form
+		the **number** `237`
+		- This is accomplished by the `float()` conversion function
+- Now we know: To make sure that a string contains only digits,
+we have to check the codes against the ASCII table before we try to 
+convert them
+	- Conveniently, all the digits are sequential, so we can check
+	that the codes lie in the range of the code for the digit `0`
+	and the code for the digit `9`
+	- If we're expecting a CSV, then the comma is also a valid character,
+	so we have to check for and allow that
+		- Note that the ASCII code for a comma comes before the code 
+		for the digit `0`, so:
+			- Anything less than the code for comma is invalid
+			- Anything greater than the code for `9` is invalid
+			- Anything between comma and `0` is invalid
+
+````
+boolean isStringValid(String s) {
+  for (int i = 0; i < s.length(); i++ ) {
+    char c = s.charAt(i);
+
+    if (c < ',' || c > '9' || (c > ',' && c < '0')) {
+      println("found a bad char at position = " + i + " value = " + hex(c));
+
+      myPort.clear(); // discard everything else
+      return false;
+    }
+  }
+  return true;
+}
+````
+
+Insert this just after trimming the string in `serialEvent()`:
+
+````
+if (inString != null) {
+    // trim off any whitespace:
+    inString = trim(inString);
+
+    if (!isStringValid(inString)) {
+      myPort.clear(); // discard everything else
+      return; // don't do the rest of this function
+    }
+````
+
+Can we send from Processing to Arduino?
+- File -> Examples -> Communications -> PhysicalPixel
 
 What about both directions?
+- File -> Examples -> Communications -> SerialCallResponseASCII
 
-File -> Examples -> Communications -> SerialCallResponseASCII
-
-**What to do if you see NaN**
-
-Remember the principle of robust coding
-
-
-
-
+In-class exercise
+- Use the response value from 
+	 File -> Examples -> Communications -> SerialCallResponseASCII
+	 to activate something
 
 
 #### More on avoiding `delay()`
@@ -1792,3 +1872,93 @@ transition from one state to another
 
 [State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
 State Change Detection is also called edge detection
+
+#### DC Motors
+
+Arduino current limitations
+
+Remember I=V/R 
+
+In Arduino, V is always 5V
+
+LEDs have relatively <strong>high</strong> "resistance", 
+and so consume <strong>low</strong> current.
+Motors have relatively <strong>low</strong> "resistance", 
+and so consume <strong>high</strong> current
+
+
+**Current flowing through any resistance causes heat (P = I^2/R)**
+
+**Everything has resistance**
+
+Therefore, where electricity is flowing there will be heat
+
+**Heat causes damage**
+
+Arduino can not protect itself from damaged caused by overheating. 
+It does not <strong>limit</strong> current, 
+it is <strong>damaged</strong> by too much current
+
+The amount of heat a component can withstand before it is damaged 
+is governed, to a large extent, by its size
+
+The transistors that make up Arduino are tiny 
+
+![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
+Image courtesy of SparkFun
+
+The reason for using the separate Motor Driver is simple:
+
+**It has much bigger transistors**
+
+(It also makes it easier to control both direction and speed, 
+but you could do that with the Arduino alone, 
+it  would just be a little more complicated)
+
+H-bridge (draw this on whiteboard)
+
+Circuit Schematic
+
+![](media/arduinoSparkFunMotorDriver_schem.jpg)
+
+Theory
+
+Code
+
+````
+
+const int ain1Pin = 13;
+const int ain2Pin = 12;
+const int pwmAPin = 11;
+
+const int bin1Pin = 8;
+const int bin2Pin = 9;
+const int pwmBPin = 10;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  // turn in one direction, full speed
+  Serial.println("full speed");
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, HIGH);
+  digitalWrite(ain2Pin, LOW);
+  // stay here for a second
+  delay(1000);
+
+  // slow down
+  Serial.println("slowing down");
+  int speed = 255;
+  while (speed--) {
+    analogWrite(pwmAPin, speed);
+    delay(20);
+  }
+}
+
+````
+

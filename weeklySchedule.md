@@ -357,7 +357,6 @@ Document your work:
 
 Sound and Servo Motor
 
-##### todays-assignment
 #### Assignments Due November 17
 
 Reading Assignment:
@@ -382,10 +381,13 @@ Production Assignment:
 
 ### Week 9.5 (November 14)
 
+Communications (Introduction)
+
 ### Week 10 (November 17 and 19) 
 
 Serial Communication, introduce Final Project
 
+##### todays-assignment
 #### Assignments Due November 24
 
 Reading Assignment:
