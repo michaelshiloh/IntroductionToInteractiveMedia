@@ -387,7 +387,6 @@ Communications (Introduction)
 
 Serial Communication, introduce Final Project
 
-##### todays-assignment
 #### Assignments Due November 24
 
 Reading Assignment:
@@ -401,6 +400,8 @@ Production Assignment:
 - Make a simple game that involves some kind of communication between Arduino
 	and Processing. Document as before.
 
+##### todays-assignment
+#### Assignments Due November 26
 - Write a preliminary concept for your final project, which must involved 
 both Arduino and Processing.
 Document in a new folder called ````finalProject````

@@ -1763,7 +1763,6 @@ What if we want to send more than one value?
 File -> Examples -> Communications -> VirtualColorMixer
 
 
-### todays-lecture
 ### November 19 2020
 
 #### Administration
@@ -1860,18 +1859,12 @@ In-class exercise
 	 to activate something
 
 
-#### More on avoiding `delay()`
+### todays-lecture
+### November 24 2020
 
-Flicker (i.e simulate a candle) multiple LEDs 
-without using `delay()`:
-[flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
-
-
-Related is the concept of a systems *state*, and detecting and controlling the
-transition from one state to another
-
-[State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
-State Change Detection is also called edge detection
+#### Administration
+- Record
+- Homework due Thursday
 
 #### DC Motors
 
