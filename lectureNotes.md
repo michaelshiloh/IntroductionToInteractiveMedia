@@ -1859,8 +1859,15 @@ In-class exercise
 	 to activate something
 
 
-### todays-lecture
 ### November 24 2020
+
+#### Administration
+- Record
+- Homework due Thursday
+
+
+### todays-lecture
+### November 26 2020
 
 #### Administration
 - Record
