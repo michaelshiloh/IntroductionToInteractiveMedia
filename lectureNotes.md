@@ -1962,3 +1962,15 @@ void loop() {
 
 ````
 
+**Notes**
+
+I have added some resources for smoothing (filtering) data from noisy sensors
+(all sensors are noisy to some extent) [here](https://github.com/michaelshiloh/resourcesForClasses#smoothing-readings-from-noisy-sensors-using-filters)
+- For beginners, I would recommend a basic average or a running average 
+	- Basic average is faster to respond, but isn't quite as smooth as a running average.
+- In both cases, you will need to experiment with how many samples to take.  
+	- A few samples responds quickly but won't be as smooth 
+	- Many samples smooths well but won't respond quickly.  
+- You will have balance how much delay you can
+tolerate vs. how smooth you need the result. Usually it's best to do this by
+experimentation.
