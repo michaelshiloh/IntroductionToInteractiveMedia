@@ -400,7 +400,6 @@ Production Assignment:
 - Make a simple game that involves some kind of communication between Arduino
 	and Processing. Document as before.
 
-##### todays-assignment
 #### Assignments Due November 26
 - Write a preliminary concept for your final project, which must involved 
 both Arduino and Processing.
@@ -430,7 +429,8 @@ has caused you to modify your plan for your final project.
 
 December 1 and 3: National Day Holiday (No classes)
 
-### Week 12 (December 8 and 10)
+##### todays-assignment
+### Thursday Week 12 (December 10)
 
 Final Project Due
 
