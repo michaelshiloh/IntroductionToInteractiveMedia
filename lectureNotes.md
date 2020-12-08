@@ -1966,3 +1966,17 @@ void loop() {
 
 I have added some resources for smoothing (filtering) data from noisy sensors
 (all sensors are noisy to some extent) [here](https://github.com/michaelshiloh/resourcesForClasses#smoothing-readings-from-noisy-sensors-using-filters)
+
+
+### todays-lecture
+### December 8 2020
+
+#### Evaluations!
+
+- What did we learn in this class?
+
+#### Documentation
+Due 11:59pm Saturday Dec 12
+
+#### Problem solving
+
