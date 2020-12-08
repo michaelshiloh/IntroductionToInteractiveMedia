@@ -1972,6 +1972,12 @@ I have added some resources for smoothing (filtering) data from noisy sensors
 ### December 8 2020
 
 #### Evaluations!
+- Learning outcomes
+	- Think critically about interaction design principles for hardware (physical) and software (screen-based) interfaces
+	- Work with basic electronics, including analog and digital sensors and actuators
+	- Understand and be able to implement basic principles of computer programming, including working with objects and classes
+	- Use a computer as a tool for self-expression
+	- Bring information about the physical world (such as light, pressure, temperature) into the computer and process it in an interesting fashion
 - What did we learn in this class?
 - What made an impression on you?
 - What was the most valuable thing you got out of this class?
