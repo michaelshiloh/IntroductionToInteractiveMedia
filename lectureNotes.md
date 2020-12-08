@@ -1972,8 +1972,10 @@ I have added some resources for smoothing (filtering) data from noisy sensors
 ### December 8 2020
 
 #### Evaluations!
-
 - What did we learn in this class?
+- What made an impression on you?
+- What was the most valuable thing you got out of this class?
+- What was the least valuable thing we spent time on?
 
 #### Documentation
 Due 11:59pm Saturday Dec 12
