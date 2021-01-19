@@ -1,23 +1,18 @@
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
-Class Zoom Join [URL](https://nyu.zoom.us/j/91294673706)  
-
-## New York University Abu Dhabi    
-## Interactive Media Program    
-## Course title: Introduction to Interactive Media  
-Course number: IM-UH 1010   
-Section: 1    
-Credit Hours: 4         
-Prerequisites: None       
-
-Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)      
-Instructor: Michael Shiloh mshiloh@nyu.edu    
-Office hours: By appointment  
-Meeting times:        
-Tuesday 4:05 - 5:20  
-Thursday 2:40 - 5:20  
-Session: Spring 2021       
-
-**This is subject to change**
+# Introduction to Interactive Media at New York University Abu Dhabi  
+## NYU Abu Dhabi
+## Interactive Media Program
+## Course title: Introduction to Interactive Media
+Course number: IM-UH 1010 002    
+Credit Hours: 4     
+Prerequisites: None     
+Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)    
+Instructor: Michael Shiloh mshiloh@nyu.edu
+Meeting times:    
+4:05 PM - 5:20 PM Tu    
+2:40 PM - 5:20 PM Th    
+Session: Fall 2020    
+Section: 2  
+[Link](https://nyu.zoom.us/j/97636620851) to class Zoom meetings
 
 ### This document: Syllabus
 
@@ -69,9 +64,11 @@ Overall Grade:
 
 Weekly Production Assignments:
 
-* A (excellent)
-* B+ (satisfactory)
-* F (unsatisfactory)
+* 30% Technical Operation
+* 30% Creativity
+* 30% Clear Interaction (if applicable)
+* 10% Above & beyond
+* (15% minus each day late)
 
 Student-Led Discussion:
 
@@ -163,13 +160,7 @@ Throughout the semester there will be readings assigned to pairs of students to 
 
 Instructions to participants:
 
-* Be aware if you tend to speak up first and more than others, or if you tend
-	to not speak first or much at all. If you are in the “speak more” category,
-	try to wait before raising your hand to allow quieter people the chance to
-	speak up. If you are in the “speak less” category, consciously make an
-	effort to step out of your comfort zone and speak up. It becomes easier with
-	repetition and time!
-* Be empowered to speak up, your voice is valuable!
+* If a male and a female both try to speak, let the female go first
 * Don’t repeat what someone has already said
 * Don’t just say that you liked or disliked the reading. Offer critical insight. Why did you like or dislike it? What does it connect to?
 * Did it change your mind about something?
@@ -239,21 +230,27 @@ of yours with me!
 
 #### Attendance
 
+Attendance in all classes is mandatory. Be on time and ready to start work at
+the posted start time.  Arriving more than ten minutes late to class will
+count as an unexcused absence.  Unexcused absences or habitual lateness will
+negatively impact your final grade for the class. 
 
-* Attendance in all classes is mandatory. Be on time and ready to start work at the posted start time.
-* Arriving more than ten minutes late to class will count as an unexcused absence. 
-* Unexcused absences or habitual lateness will negatively impact your final grade for the class.
-* More than one unexcused absence will result in a 5-percentage point drop in 
-  your attendance grade per absence. After four unexcused absences, you will fail the class.
-* If you know you are going to be late or absent, please email me in advance.
-	If you have an emergency, let me know as soon as you can. To receive an
-	excused absence, you must ask in advance, and receive permission from me.
-	Excusable absences include family emergencies, job interviews, vastly
-	different time zones, presenting at a conference, and poor internet
-	connectivity. In order to receive credit for an excused absence, you must
-	watch the recording and write about it. If you miss a discussion, you to
-	write about the subject discussed. If you miss a lecture, you need to write
-	questions on the subject of the lecture.
+More than one unexcused absence will result in a 5-percentage point drop in
+your attendance grade per absence. After four unexcused absences, you will
+fail the class.
+
+If you know you are going to be late or absent, please email me in advance. If
+you have an emergency, let me know as soon as you can.  To receive an excused
+absence, you must ask in advance, and receive permission from me.
+Excusable absences include family emergencies, job interviews, vastly
+different time zones, presenting at a conference, and poor internet
+connectivity.
+
+In order to receive credit for an excused absence, you must watch the 
+recording and write about it. 
+If you miss a discussion, you must write about the subject discussed. 
+If you miss a lecture, you must write questions on the subject of the
+lecture.
 
 #### Participation
 

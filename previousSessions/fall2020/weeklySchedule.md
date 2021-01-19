@@ -1,23 +1,20 @@
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
-Class Zoom Join [URL](https://nyu.zoom.us/j/91294673706)  
+Shortcut to [today's assignment](#todays-assignment)
 
-## New York University Abu Dhabi    
-## Interactive Media Program    
-## Course title: Introduction to Interactive Media  
-Course number: IM-UH 1010   
-Section: 1    
-Credit Hours: 4         
-Prerequisites: None       
-
-Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)      
-Instructor: Michael Shiloh mshiloh@nyu.edu    
-Office hours: By appointment  
-Meeting times:        
-Tuesday 4:05 - 5:20  
-Thursday 2:40 - 5:20  
-Session: Spring 2021       
-
-**This is subject to change**
+# Introduction to Interactive Media at New York University Abu Dhabi  
+## NYU Abu Dhabi
+## Interactive Media Program
+## Course title: Introduction to Interactive Media
+Course number: IM-UH 1010 002    
+Credit Hours: 4     
+Prerequisites: None     
+Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)    
+Instructor: Michael Shiloh mshiloh@nyu.edu
+Meeting times:    
+4:05 PM - 5:20 PM Tu    
+2:40 PM - 5:20 PM Th    
+Session: Fall 2020    
+Section: 2  
+[Link](https://nyu.zoom.us/j/97636620851) to class Zoom meetings
 
 ### This document: Weekly Schedule
 
@@ -27,15 +24,18 @@ This includes:
 - Reading assignments
 - Projects
 
-### Week 1 (Jan 19, 21)
+
+This is all subject to change
+
+### Week 1 (Sept. 8 & 10)
 
 Primitive shapes, Programming concepts
 
-#### Assignments Due January 21
+#### Assignments Due September 15
 
 Email Assignment:
 
-- Email me a link to your Github repository
+- Email me a link to your github repository
 
 Reading Assignment:
 
@@ -43,10 +43,6 @@ Reading Assignment:
 	Processing](https://processing.org/tutorials/gettingstarted)
 - Read [Coordinate systems and
 	space](https://processing.org/tutorials/drawing)
-
-#### Assignments Due January 26
-
-Reading Assignment:
 
 Production Assignment:
 
@@ -68,11 +64,11 @@ Production Assignment:
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
-### Week 2 (January 26, 28)
+### Week 2 (September 15 and 17)
 
 Animation, Conditionals, Loops
 
-#### Assignments Due February 2
+#### Assignments Due September 22
 
 Reading Assignment:
 
@@ -82,7 +78,7 @@ Shiffman's [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V
 - Watch at least the first four of Dan shiffman's [Object Oriented
 	Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i)
 	tutorials.
-- Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
+	- Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
 	on chance operations and be prepared to discuss (Benjamin and Shaurya to lead)
 
 Production Assignment:
@@ -109,11 +105,11 @@ Scroll through and look for images:
 	- Write a short description of any difficulties you had or anything
 interesting you discovered.
 
-### Week 3 (February 2, 4)
+### Week 3 (September 22 and 24)
 
 Functions, Arrays, and Object-Oriented Programming
 
-#### Assignments Due February 9
+#### Assignments Due September 29
 
 Reading Assignment:
 
@@ -124,7 +120,7 @@ and
 video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a> 
 video tutorial on Perlin noise</li>
-- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), and be prepared to discuss (?? and ?? to lead)
+- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), and be prepared to discuss (Yasmin and Alpha to lead)
 
 
 Production Assignment:
@@ -148,11 +144,11 @@ As always, document your project:
 	or worked around them
 	- Describe anything interesting or clever about your program
 
-### Week 4 (February 9, 11)
+### Week 4 (September 29 and October 1)
 
 Loading Data, Displaying text, Transformations
 
-#### Assignments Due February 16
+#### Assignments Due October 6
 
 Reading Assignment:
 
@@ -176,15 +172,31 @@ Document your project as always, with the following additions:
 	- Instructions for usage if it's interactive
 	- The source of your data
 
-### Week 5 (February 16, 18)
+### Week 5 (October 6 and 8)
 
-Image Processing, introducing midterm project
+Image Processing 
 
-#### Assignments Due Febrary 18 (YES! Thursday!)
+#### Assignments Due October 13
 
-Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
+Reading Assignment:
 
-Midterm project due on March 4:
+Watch Lauren McCarthy's Eyeo talk
+[You, Me and My Computer](https://vimeo.com/110607681)
+and be prepared to discuss (Liyan and Kartikey to lead)
+
+Production Assignment:
+
+- Using image manipulation, 
+can you incorporate special effects 
+and get the rest of us in the class to say “wow”?
+
+Document your project as last week
+
+### Week 6 (October 13 and 15)
+
+Sound, State, and Introduction to Midterm Project
+
+Midterm Project due on October 27
 
 Make a game using everything you have learned so far
 - The game can be for one or more players
@@ -198,7 +210,7 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 without closing and restarting the program
 
-#### Assignments Due Febrary 23
+#### Assignments Due October 19
 
 Production Assignment:
 
@@ -215,21 +227,11 @@ At the end of each journal entry, describe whether,
 and if so, how, the results of today's work
 has caused you to modify your plan for your midterm project.
 
-Reading Assignment:
+### Week 6.5 (Oct. 19, Monday, Legislative day – classes meet on Thursday schedule)
 
-Watch Lauren McCarthy's Eyeo talk [You, Me, and My
-Computer](https://vimeo.com/110607681) and be prepared to discuss (?? and ??
-to lead)
+Midterm project status
 
-### Week 6 (February 23 and 25)
-
-Sound
-
-#### Assignments Due March 4
-
-Production Assignment :
-
-Finish your midterm project
+Midterm project due on October 27
 
 Documentation:
 - README.md to include 
@@ -242,12 +244,15 @@ Documentation:
 	- Your name and assignment due date
 	- Well commented code, especially for any confusing or tricky parts 
 
+## Fall Break-ish October 20-22
 
-### Week 7 (March 2, 4)
+### Week 7 (October 27 and 29)
 
-Midterm Critique
+Midterm Critique; Introduction to Electricity and Arduino Digital Input and Output
 
-#### Assignments Due March 18
+### Note that although October 29 is the Prophet’s Birthday Holiday classes will meet as scheduled
+
+#### Assignments Due October 29
 
 Reading Assignment:
 
@@ -276,11 +281,7 @@ Production Assignment:
 
 - **Be careful not to damage the wires or yourselves!**
 
-### Week 8 (March 19, 21)
-
-Introduction to Electricity and Arduino Digital Input and Output
-
-#### Assignments due March 23
+#### Assignments due November 3
 
 Reading Assignment:
 
@@ -288,7 +289,7 @@ Reading Assignment:
 	misses](http://www.tigoe.net/blog/category/physicalcomputing/176/) and 
 [Making Interactive Art: Set the Stage, Then Shut Up and
 Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/)
-and be prepared to discuss both (?? and ?? to lead)
+and be prepared to discuss both (Yusra and Joseph to lead)
 - Read about 
 [analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
 - Read about
@@ -313,11 +314,11 @@ Production Assignment
 			- ````const int```` variables for all pins 
 				with names that clearly describe what is connected to that pin
 
-### Week 9 (March 23, 25)
+### Week 8 (November 3 and 5)
 
 Analog Input and output, Mapping, data types, printing
 
-#### Assignments Due March 30
+#### Assignments Due November 10
 
 Reading Assignment:
 
@@ -352,15 +353,15 @@ Document your work:
 	- A link to the video
 - Upload your program 
 
-### Week 10 (March 30, April 1)
+### Week 9 (November 10 and 12)
 
 Sound and Servo Motor
 
-#### Assignments Due April 6
+#### Assignments Due November 17
 
 Reading Assignment:
 
-- Read and be prepared to discuss both: (?? and ?? to lead)
+- Read and be prepared to discuss both: (Sashank and Fatima to lead)
 	- [Norman,“Emotion & Design: Attractive things work better”]((https://jnd.org/emotion_design_attractive_things_work_better/)
 	- [Her Code Got Humans on the Moon]((http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
 - It is important that you understand the concepts behind BlinkWithoutDelay.
@@ -378,24 +379,28 @@ Production Assignment:
 		distance measuring sensor)
 - Document your work as before
 
-### Week 11 (April 6, 8)
+### Week 9.5 (November 14)
+
+Communications (Introduction)
+
+### Week 10 (November 17 and 19) 
 
 Serial Communication, introduce Final Project
 
-#### Assignments Due November April 13
+#### Assignments Due November 24
 
 Reading Assignment:
 
 - [Graham Pullin, Design Meets Disability](doc/Design_meets_disability.pdf)
-	and be prepared to discuss (?? and ?? to lead)
+	and be prepared to discuss (Marta and Kyrie to lead)
+
 
 Production Assignment:
 
 - Make a simple game that involves some kind of communication between Arduino
 	and Processing. Document as before.
 
-Writing Assignment:
-
+#### Assignments Due November 26
 - Write a preliminary concept for your final project, which must involved 
 both Arduino and Processing.
 Document in a new folder called ````finalProject````
@@ -403,26 +408,17 @@ Document in a new folder called ````finalProject````
 Start with a preliminary description of what you intend for your project.
 Include hand sketches as necessary to illustrate your concept.
 
-### Week 12 (April 13, 15)
+### Week 11 (November 24 & 26)
 
 DC motors, Construction and Debugging, Final Project Proposal
 
-#### Assignments Due April 15 (Yes! Thursday!)
+#### Assignments Due December 8
 
-Writing Assignment
+Production assignment: 
 
-Refine your final project proposal, include the following:
-- Finalized concept for the project 
-- Description of what your Arduino program will do with each input and 
-	output and what it will send to and/or receive from Processing
-- Description of what Processing program will do and what it will send to
-	and/or receive from Arduino
+Finish your final project.
 
-#### Assignments Due April 20
-
-Begin working on your final project, try to get the parts you think will be hardest completed. 
-
-Document your progress in your journal.
+Continue to document your progress in your journal.
 Each day add the date
 and then describe the work you plan to do or did that day.
 Include you thoughts, decisions, experiments, etc.
@@ -431,13 +427,11 @@ At the end of each journal entry, describe whether,
 and if so, how, the results of today's work
 has caused you to modify your plan for your final project.
 
-### Week 13 (April 20, 22)
+December 1 and 3: National Day Holiday (No classes)
 
-Work on Final Project
+### Thursday Week 12 (December 10)
 
-### Week 14 (April 27, 29)
-
-Final project due on April 29
+Final Project Due
 
 ##### todays-assignment
 #### Final Project Documentation Due Sunday December 13 10:00 AM
