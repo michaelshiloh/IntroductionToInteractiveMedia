@@ -1,4 +1,4 @@
-Shortcut to [today's assignment](#todays-assignment)
+Shortcut to [today's assignment](#todays-assignment)  
 Class Zoom Join [URL](https://nyu.zoom.us/j/91294673706)  
 
 ## New York University Abu Dhabi    
