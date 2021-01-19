@@ -31,11 +31,8 @@ This includes:
 
 Primitive shapes, Programming concepts
 
+##### todays-assignment
 #### Assignments Due January 21
-
-Email Assignment:
-
-- Email me a link to your Github repository
 
 Reading Assignment:
 
@@ -45,6 +42,10 @@ Reading Assignment:
 	space](https://processing.org/tutorials/drawing)
 
 #### Assignments Due January 26
+
+Email Assignment:
+
+- Email me a link to your Github repository
 
 Reading Assignment:
 
