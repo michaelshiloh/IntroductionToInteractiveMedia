@@ -31,7 +31,6 @@ This includes:
 
 Primitive shapes, Programming concepts
 
-##### todays-assignment
 #### Assignments Due January 21
 
 Reading Assignment:
@@ -41,6 +40,7 @@ Reading Assignment:
 - Read [Coordinate systems and
 	space](https://processing.org/tutorials/drawing)
 
+##### todays-assignment
 #### Assignments Due January 26
 
 Email Assignment:

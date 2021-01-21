@@ -20,6 +20,7 @@ Session: Spring 2021
 This document: Lecture Notes
 
 **This is subject to change**
+
 ### January 19 2021
 
 #### Administration
@@ -88,6 +89,17 @@ harp</a></li>
 </li>
 </ul>
 
+### todays-lecture
+### January 21 2021
+
+#### Administration
+
+- **Record Zoom!**
+- **Turn off all notifications laptop and phone!**
+- **Connect to Zoom 10 minutes early**
+  - This is to make sure you have time to fix any potential Zoom issues
+  - You may keep your camera and mic turned off until class time
+
 #### Let's get started
 
 **Download Processing**
@@ -116,4 +128,153 @@ Name your repository "Introduction to Interactive Media".
 	- Inserting images: ![](media/eye-calipers.jpg)
 	- Always remember to commit your changes!
 	- More [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
+
+**Processing** Finally!
+
+#### Simple shapes
+
+- `ellipse()`
+- `rect()`
+- `size()`
+- `triangle(x1, y1, x2, y2, x3, y3)`
+- `line()`
+- `point()`
+
+What does this all mean?
+- Functions
+- Arguments or parameters
+
+Controlling color, fill, and stroke
+
+- `color()`
+- `stroke()`
+- `noStroke()`
+- `fill()`
+- `arc(100, 100, 100, 100, 0, 180)`
+- `arc(100, 100, 100, 100, 0, PI, CHORD)`
+- `random()`
+
+Confused? 
+- Google
+- Processing reference page
+
+#### Variables
+- `int myNumber = 45;`
+- `int myRandomNumber = random(255);`
+- `int myRandomNumber = round(random(255));`
+- Other variable types. `int` is by far most common, another common is `float`
+- Built-in variables
+	- `width`, `height`
+	- many others
+
+Here is an example Processing program (also called a 'sketch') 
+
+````
+size(400, 400);
+ellipse(width/2, height/2, 50, 50);
+
+/*
+stroke(0,255,0);
+fill(255,0,0);
+//ellipse(100,100, 50, 50);
+
+fill(255,0,0, 30);
+//rect(30, 30, 50, 80);
+
+
+// Now I will try to draw an arc
+//arc(100, 100, 100, 100, 0, radians(180), CHORD);
+
+// pick a random number up to 180
+float myRandomArcSize = random(180);
+int arcSizeAsInt = round (myRandomArcSize);
+println(myRandomArcSize + "   " + arcSizeAsInt);
+
+// convert that number to radians
+float arcSizeInRadians = radians(myRandomArcSize);
+
+print(myRandomArcSize + "    " + arcSizeInRadians);
+
+// draw the arc
+arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
+*/
+````
+
+
+Time permitting, go further
+	
+#### Animation
+- `draw()`
+- `setup()`
+
+````
+int foo = 0;
+
+void setup() {
+  size(300, 300);
+}
+
+void draw() {
+  ellipse(foo, 50, 40, 40);
+  foo = foo + 1;
+}
+````
+
+`background()`
+
+`frameRate()`
+
+Earlier we were able to draw without using `setup()` and `draw()`. What's
+the difference?
+
+Static vs. active mode
+
+#### Interaction with Processing
+
+- conditionals
+
+````
+void setup() {
+  size(300, 300);
+}
+
+void draw() {
+  if (mousePressed == true) {
+    background(color(0, 0, 255));
+  } else {
+    background(color(200, 0, 0));
+  }
+}
+````
+
+**Important concepts**:
+1. `mousePressed` is another built-in variable. There are many others.
+1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
+	 only one of two values, `true` or `false`
+1. Note that `{` and `}` indicate the blocks
+1. The `else` part of an `if()` statement is optional (what happens if we
+	 remove it?)
+
+- Two more interesting built-in variables: `mouseX`, `mouseY`
+	- Using the cursor to draw
+	- Now use a mouse click to clear the screen
+	- (Time permitting, primitive painting program)
+
+#### Loops
+`while()` is like `if()` but it keeps on doing it as long as condition is true
+
+````
+void setup() {
+  size(300, 300);
+
+  int foo = 50;
+
+  while (foo < width) {
+    ellipse(foo, 50, 40, 40);
+    foo = foo + 50;
+  }
+}
+````
+You should get in the habit of giving meaningful names to your variables. What
+is a better name for the variable foo?
 
