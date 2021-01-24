@@ -30,3 +30,6 @@ it, and name your repository "Introduction to Interactive Media". If you don't
 want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
+[Rebecca](https://github.com/rebecca1230/IntrotoIM)  
+[Soojin](https://github.com/Soojin-Lee0819/IntrotoIM)  
+[Maitha](https://github.com/maithaalghfeli/IntroToInteractiveMedia)  
