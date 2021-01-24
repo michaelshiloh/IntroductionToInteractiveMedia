@@ -33,3 +33,4 @@ recognize as you.
 [Rebecca](https://github.com/rebecca1230/IntrotoIM)  
 [Soojin](https://github.com/Soojin-Lee0819/IntrotoIM)  
 [Maitha](https://github.com/maithaalghfeli/IntroToInteractiveMedia)  
+[Rily](https://github.com/RilleyHa/Introduction-to-Interactive-Media)  
