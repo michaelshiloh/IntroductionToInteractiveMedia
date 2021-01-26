@@ -89,7 +89,6 @@ harp</a></li>
 </li>
 </ul>
 
-### todays-lecture
 ### January 21 2021
 
 #### Administration
