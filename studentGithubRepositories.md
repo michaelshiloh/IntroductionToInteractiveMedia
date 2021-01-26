@@ -44,4 +44,4 @@ recognize as you.
 [Chinonyerem](https://github.com/ChinoUkaegbu/IntrotoIM)  
 [Claudia](https://github.com/clauneumannv/introtoim)  
 [Alex](https://github.com/fyk211/Intro-to-IM)  
-
+[Rhea](https://github.com/Rhea-Braithwaite/IntrotoIM.git)  
