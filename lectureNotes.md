@@ -201,7 +201,19 @@ arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 ````
 
 
-Time permitting, go further
+### todays-lecture
+### January 26 2021
+
+#### Administration
+
+- **Record Zoom!**
+- **Turn off all notifications laptop and phone!**
+
+#### Look at homework
+
+#### Clearing up any remaining Github questions
+
+Time permitting, get started on new material
 	
 #### Animation
 - `draw()`
