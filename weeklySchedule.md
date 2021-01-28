@@ -40,7 +40,6 @@ Reading Assignment:
 - Read [Coordinate systems and
 	space](https://processing.org/tutorials/drawing)
 
-##### todays-assignment
 #### Assignments Due January 26
 
 Email Assignment:
@@ -57,7 +56,7 @@ Production Assignment:
 	- The portrait does not need to be realistic. The purpose is to practice
 	using the simple drawing functions.
 - In your Github repository, create a new folder named 
-````September15````
+`January26`
 	- Upload your program into the new folder, 
 	with the extension ````.pde````. 
 		- Use **COMMAND T** or **CONTROL T** to indent your code properly
@@ -73,6 +72,7 @@ interesting you discovered.
 
 Animation, Conditionals, Loops
 
+##### todays-assignment
 #### Assignments Due February 2
 
 Reading Assignment:
@@ -84,7 +84,7 @@ Shiffman's [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V
 	Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i)
 	tutorials.
 - Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
-	on chance operations and be prepared to discuss (Benjamin and Shaurya to lead)
+	on chance operations and be prepared to discuss (Aiya and Alex to lead)
 
 Production Assignment:
 
@@ -98,7 +98,7 @@ Scroll through and look for images:
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
 	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 - In your Github repository, create a new folder named 
-````September22````
+````February2````
 	- Upload your program into the new folder, 
 	with the extension ````.pde````. 
 	- Your program should be well commented and organized. 
@@ -125,7 +125,8 @@ and
 video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a> 
 video tutorial on Perlin noise</li>
-- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), and be prepared to discuss (?? and ?? to lead)
+- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), 
+	and be prepared to discuss (Ariya and Chinonyerem to lead)
 
 
 Production Assignment:
@@ -157,7 +158,9 @@ Loading Data, Displaying text, Transformations
 
 Reading Assignment:
 
-- Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) and be prepared to discuss (Katie and Matthew to lead)
+- Watch Lauren McCarthy's Eyeo talk [You, Me, and My
+Computer](https://vimeo.com/110607681) 
+and be prepared to discuss (Claudia and Deborah to lead)
 - Read [this](https://processing.org/tutorials/pixels/) 
 tutorial on working with pixels or watch 
 all of Shiffman's tutorials on working with Images and Pixels
@@ -218,9 +221,8 @@ has caused you to modify your plan for your midterm project.
 
 Reading Assignment:
 
-Watch Lauren McCarthy's Eyeo talk [You, Me, and My
-Computer](https://vimeo.com/110607681) and be prepared to discuss (?? and ??
-to lead)
+- Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) 
+and be prepared to discuss (Haneen and Maitha to lead)
 
 ### Week 6 (February 23 and 25)
 
@@ -289,7 +291,7 @@ Reading Assignment:
 	misses](http://www.tigoe.net/blog/category/physicalcomputing/176/) and 
 [Making Interactive Art: Set the Stage, Then Shut Up and
 Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/)
-and be prepared to discuss both (?? and ?? to lead)
+and be prepared to discuss both (Nakyeong and Nelda to lead)
 - Read about 
 [analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
 - Read about
@@ -322,7 +324,7 @@ Analog Input and output, Mapping, data types, printing
 
 Reading Assignment:
 
-- Read and be prepared to discuss both: (Omar and Aalya to lead)
+- Read and be prepared to discuss both: (Nouf and Rebecca to lead)
 	- [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 	- [A Response](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
 - Read about the [voltage
@@ -343,7 +345,8 @@ Document your work:
 	class:
 	- Close all private programs and screens
 	- Have your browser open to your video
-- Create a new folder in your github repository called ````November10````
+- Create a new folder in your github repository named the date the assignment
+	is due
 - Describe your project in README.md and include:
 	- A description of your concept and how it was achieved
 	- A picture of your circuit schematic  
@@ -361,7 +364,7 @@ Sound and Servo Motor
 
 Reading Assignment:
 
-- Read and be prepared to discuss both: (?? and ?? to lead)
+- Read and be prepared to discuss both: (Rhea and Soojin to lead)
 	- [Norman,“Emotion & Design: Attractive things work better”]((https://jnd.org/emotion_design_attractive_things_work_better/)
 	- [Her Code Got Humans on the Moon]((http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
 - It is important that you understand the concepts behind BlinkWithoutDelay.
@@ -388,7 +391,7 @@ Serial Communication, introduce Final Project
 Reading Assignment:
 
 - [Graham Pullin, Design Meets Disability](doc/Design_meets_disability.pdf)
-	and be prepared to discuss (?? and ?? to lead)
+	and be prepared to discuss (Thais and Riley to lead)
 
 Production Assignment:
 

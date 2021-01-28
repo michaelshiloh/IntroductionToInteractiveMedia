@@ -200,13 +200,7 @@ arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 ````
 
 
-### todays-lecture
 ### January 26 2021
-
-#### Administration
-
-- **Record Zoom!**
-- **Turn off all notifications laptop and phone!**
 
 #### Look at homework
 
@@ -217,6 +211,21 @@ Time permitting, get started on new material
 #### Animation
 - `draw()`
 - `setup()`
+
+### January 26 2021
+
+### todays-lecture
+#### Administration
+
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+- Research position for [IM](https://nyu.joinhandshake.com/jobs/4358585)
+- Student lead discussion dates
+
+#### Animation
+
+Basic concept:
+- `setup()`, `draw()`
 
 ````
 int foo = 0;
@@ -230,15 +239,26 @@ void draw() {
   foo = foo + 1;
 }
 ````
+**Indentation**
+-	COMMAND T or CONTROL T is your friend!
+
+What is this `int foo` stuff?
+
+#### Variables!
 
 `background()`
 
 `frameRate()`
 
-Earlier we were able to draw without using `setup()` and `draw()`. What's
-the difference?
+What is this `void blahblah()` stuff?
 
-Static vs. active mode
+#### Functions!
+
+- `stroke()`, `fill()`, `ellipse()`, and `rect()` are all built-in functions
+meaning they are defined for you
+- Other  functions you have to define yourself (e.g. `setup()` and `draw()`
+- Later we will talk about what the word `void` means and how to define
+	functions
 
 #### Interaction with Processing
 
@@ -263,16 +283,18 @@ void draw() {
 1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
 	 only one of two values, `true` or `false`
 1. Note that `{` and `}` indicate the blocks
-1. The `else` part of an `if()` statement is optional (what happens if we
-	 remove it?)
+1. **The `else` part of an `if()` statement is optional (what happens if we remove it?)**
 
-- Two more interesting built-in variables: `mouseX`, `mouseY`
+-  Another two interesting built-in variables: `mouseX`, `mouseY`
 	- Using the cursor to draw
+	- Determining where the mouse is
+	- Determining whether the mouse is inside a box or a circle
 	- Now use a mouse click to clear the screen
 	- (Time permitting, primitive painting program)
 
 #### Loops
-`while()` is like `if()` but it keeps on doing it as long as condition is true
+`while()` is like `if()` but it 
+**keeps on doing it as long as condition is true**
 
 ````
 void setup() {
@@ -286,6 +308,10 @@ void setup() {
   }
 }
 ````
-You should get in the habit of giving meaningful names to your variables. What
-is a better name for the variable foo?
+Important things to note:
+
+1. You should get in the habit of giving meaningful names to your variables. 
+What is a better name for the variable foo?
+1. What would happen if you replace the `while()` with `if()`?
+
 
