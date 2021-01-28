@@ -292,6 +292,17 @@ void draw() {
 	- Now use a mouse click to clear the screen
 	- (Time permitting, primitive painting program)
 
+````
+ /*
+  print("the value of the variable mouseX ");
+  print(mouseX);
+  print(" Y ");
+  print (mouseY);
+  println();
+  */
+  println("X= " + mouseX + " Y= " + mouseY + "frameCount = " + frameCount);
+	````
+
 #### Loops
 `while()` is like `if()` but it 
 **keeps on doing it as long as condition is true**
