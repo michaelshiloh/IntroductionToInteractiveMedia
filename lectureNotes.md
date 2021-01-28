@@ -292,6 +292,8 @@ void draw() {
 	- Now use a mouse click to clear the screen
 	- (Time permitting, primitive painting program)
 
+Here are the two examples we developed in class:
+
 ````
  /*
   print("the value of the variable mouseX ");
@@ -301,7 +303,24 @@ void draw() {
   println();
   */
   println("X= " + mouseX + " Y= " + mouseY + "frameCount = " + frameCount);
-	````
+````
+
+````
+void draw() {
+  ellipse(50, 70, 30, 30);
+  
+  /* this only works for a rectangle
+  if ((mouseX > 50) && (mouseX < 75) && mouseY > 70 && mouseY < 105) {
+    print("mouse is in the box! ");
+  }
+  */
+  if (dist(mouseX, mouseY, 50, 70) < 15) {
+    print("mouse is in the circle! ");
+  }
+ 
+  println("X= " + mouseX + " Y= " + mouseY + "frameCount = " + frameCount);
+}
+````
 
 #### Loops
 `while()` is like `if()` but it 
