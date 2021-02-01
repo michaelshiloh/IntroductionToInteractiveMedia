@@ -160,7 +160,7 @@ Reading Assignment:
 
 - Watch Lauren McCarthy's Eyeo talk [You, Me, and My
 Computer](https://vimeo.com/110607681) 
-and be prepared to discuss (Claudia and Deborah to lead)
+and be prepared to discuss (Ayush and Deborah to lead)
 - Read [this](https://processing.org/tutorials/pixels/) 
 tutorial on working with pixels or watch 
 all of Shiffman's tutorials on working with Images and Pixels
