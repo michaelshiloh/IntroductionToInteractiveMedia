@@ -42,7 +42,9 @@ recognize as you.
 [Nakyeong](https://github.com/nakyeongahn/IntrotoIM)  
 [Haneen](https://github.com/haneenfathy/IntroToIM )    
 [Chinonyerem](https://github.com/ChinoUkaegbu/IntrotoIM)  
-[Claudia](https://github.com/clauneumannv/introtoim)  
 [Alex](https://github.com/fyk211/Intro-to-IM)  
 [Rhea](https://github.com/Rhea-Braithwaite/IntrotoIM.git)  
 [Aiya](https://github.com/Sartbayeva/IntrotoIM)  
+[Ayush](https://github.com/discoverayushnp/nyuad-intro-to-im)  
+
+[Claudia](https://github.com/clauneumannv/introtoim)  
