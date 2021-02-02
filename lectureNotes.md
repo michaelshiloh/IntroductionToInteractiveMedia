@@ -337,11 +337,12 @@ Important things to note:
 What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
 
+### February 2 2021
 ### todays-lecture
 #### Administration
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
+- did I talk about `for()` loops last week?
 - Discussion: Casey Reas
 - Look at homework
 - Any remaining Github questions?
-- 
