@@ -201,9 +201,7 @@ arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 
 
 ### January 26 2021
-
 #### Look at homework
-
 #### Clearing up any remaining Github questions
 
 Time permitting, get started on new material
@@ -214,11 +212,6 @@ Time permitting, get started on new material
 
 ### January 26 2021
 
-### todays-lecture
-#### Administration
-
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 - Research position for [IM](https://nyu.joinhandshake.com/jobs/4358585)
 - Student lead discussion dates
 
@@ -344,4 +337,11 @@ Important things to note:
 What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
 
-
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+- Discussion: Casey Reas
+- Look at homework
+- Any remaining Github questions?
+- 

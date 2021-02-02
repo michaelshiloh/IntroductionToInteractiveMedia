@@ -386,7 +386,7 @@ Production Assignment:
 
 Serial Communication, introduce Final Project
 
-#### Assignments Due November April 13
+#### Assignments Due April 13
 
 Reading Assignment:
 
@@ -444,7 +444,7 @@ Work on Final Project
 Final project due on April 29
 
 ##### todays-assignment
-#### Final Project Documentation Due Sunday December 13 10:00 AM
+#### Final Project Documentation Due (TBA)
 
 In your folder called ````finalProject````
 - Journal file journal.md, describing your progress each time you work.
