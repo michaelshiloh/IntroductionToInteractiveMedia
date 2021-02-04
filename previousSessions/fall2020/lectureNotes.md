@@ -371,7 +371,7 @@ In class exercise:
 
 1. Write a function that will take a single parameter
 and draw a vertical line from the top of the canvas to the bottom
-at the X coordinate incidated by the parameter
+at the X coordinate indicated by the parameter
 	1. In the ````draw()```` function test this function 
 	at a couple of different locations
 1. Write another function that will draw a **horizontal** line

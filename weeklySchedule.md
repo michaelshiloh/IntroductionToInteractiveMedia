@@ -136,7 +136,7 @@ Object Oriented Programming.
 You may use arrays if you wish.
 Pay attention to the structure, clarity, and organization of your program. 
 As always, document your project:
-	- New folder named the date the assignment is due
+	- New folder named **the date the assignment is due**
 	- Well commented code, especially
 	for any confusing or tricky parts 
 	- References to any examples or inspiration
