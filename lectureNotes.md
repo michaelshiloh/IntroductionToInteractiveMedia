@@ -578,6 +578,8 @@ Discussion:
 - What functions might be useful here?
 - How can we use the `random()` function to make things more interesting?
 - What about multiple bouncing balls?
+- How could I make the ball move sideways?
+- How could I make it bounce off the walls as well?
 
 #### Arrays 
 
@@ -599,7 +601,8 @@ for (int i = 0; i < values.length; i++) {
 
 **Things to notice**
 
-- Just like functions are signified by `()`, arrays are signified by `[]`
+- Similar to the way functions are signified by `()`, 
+	arrays are signified by `[]`
 - Arrays can be of any data type, but can't be mixed types
 - Two new concepts:
 	- `final` keyword
@@ -656,6 +659,8 @@ void draw() {
 **Remember**
 - Arrays and loops (either `for()` or `while()`) almost always show up
   together. If you use an array, you probably want a loop.
+- Just like single variables and functions, 
+	**choose good names for your arrays!**
 
 **Things to notice**
 * In the first array example, 
