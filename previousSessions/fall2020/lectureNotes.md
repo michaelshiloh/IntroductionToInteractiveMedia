@@ -331,7 +331,7 @@ you created the `setup()` and `draw()` functions. In the case of
 functions you can make up your own names. Just like variables names , good 
 function names make your programs easier to understand.
 
-Why create your own funtions?
+Why create your own functions?
 
 - Reuse
 - Clarity (remember the three reasons for clarity: yourself, sharing,
@@ -416,7 +416,7 @@ void hlineMaker(int y, int ystep) {
 
 #### Motion
 
-Let's use make a ball bounce on the floor. First, make a circle move:
+Let us use make a ball bounce on the floor. First, make a circle move:
 
 <pre>void setup() 
 { 
@@ -494,7 +494,7 @@ void draw() {
 Discussion:
 
 - What functions might be useful here?
-- How can we use the ````random()```` function to make things more interesting?
+- How can we use the `random()` function to make things more interesting?
 - What about multiple bouncing balls?
 
 
@@ -524,7 +524,7 @@ int[] values = new int[numberOfValues];
 
 int n = 0;
 while (n < values.length) {
-  values[n] = (n+1)*(n+1);
+  values[n] = (n+1) * (n+1);
   n = n + 1;
 }
 

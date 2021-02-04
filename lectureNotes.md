@@ -323,26 +323,41 @@ void draw() {
 void setup() {
   size(300, 300);
 
-  int foo = 50;
+  int foo = 50; // Initialization step
 
-  while (foo < width) {
+  while (foo < width) { // while() construct and condition
     ellipse(foo, 50, 40, 40);
-    foo = foo + 50;
+    foo = foo + 50; // Incrementation step
   }
 }
 ````
+
 Important things to note:
 
 1. You should get in the habit of giving meaningful names to your variables. 
 What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
 
+There is another way to make a loop using the keyword `for()`. The `for()`
+loop structure combines the initialization step and the incrementation step
+into the `for()` loop construction:
+
+````
+void setup() {
+  size(300, 300);
+
+  for (int foo = 50; foo < width; foo = foo + 50)  { 
+    ellipse(foo, 50, 40, 40);
+  }
+}
+````
+
 ### February 2 2021
+- Discussion: Casey Reas
+- Look at homework
+- Any remaining Github questions?
 ### todays-lecture
 #### Administration
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
 - did I talk about `for()` loops last week?
-- Discussion: Casey Reas
-- Look at homework
-- Any remaining Github questions?
