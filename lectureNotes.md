@@ -361,10 +361,6 @@ understand best will probably have fewer problems.
 - Discussion: Casey Reas
 - Look at homework
 - Any remaining Github questions?
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Functions
 
@@ -681,4 +677,52 @@ and works in Arduino also exactly the same way.
 #### Classes
 
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
+
+### February 9 2021
+- Discussion: The Art of Interactive Design, Ch. 1 (Ariya and Chinonyerem)
+- Look at homework
+- Any questions about classes and functions?
+
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+##### Time permitting
+
+#### Transformations
+
+<ul>
+ 	<li>Transforms move the canvas so you can draw in different places with the same code</li>
+ 	<li>Available 2D transforms are `translate()`, `rotate()`, and `scale()`. (Why the parenthesis?)</li>
+ 	<li>pushMatrix() and popMatrix() allow you to remember where the canvas was, and then return to it's last position</li>
+</ul>
+Draw a house at a given location, no transform:
+<pre>void house(int x, int y)
+{
+  triangle(x + 15, y, x, y + 15, x + 30, y + 15);
+  rect(x, y + 15, 30, 30);
+  rect(x + 12, y + 30, 10, 15);
+}</pre>
+Same result, but using a transform:
+<pre>void house(int x, int y)
+{
+  pushMatrix();
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+  popMatrix();
+}
+</pre>
+</ul>
+
+##### Rotation and scaling 
+
+Work through 
+<a href="https://processing.org/tutorials/transform2d/">this</a> 
+tutorial
+
+* As always, Dan Shiffman has excellent
+[examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
 
