@@ -683,12 +683,44 @@ and works in Arduino also exactly the same way.
 - Look at homework
 - Any questions about classes and functions?
 
+### February 11 2021
+
 ### todays-lecture
 #### Administration
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
 
-##### Time permitting
+#### Perlin Noise
+
+````
+void draw() {
+  background(204);
+  float n = random(0, width);
+  line(n, 0, n, height);
+}
+````
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflys, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+````
+float offset = 0.0;
+
+void draw() {
+  background(204);
+  offset = offset + .01;
+  float n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+````
+
+Things to notice:
+
+* Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
 
 #### Transformations
 
