@@ -618,7 +618,7 @@ and works in Arduino also exactly the same way.
 
 #### Text
 
-<pre>
+````
 String message= "Important message";
 
 void setup() {
@@ -636,7 +636,7 @@ void setup() {
   textAlign(CENTER);
   text(message, width/2, height/2);
 }
-</pre>
+````
 
 **Things to notice**
 
