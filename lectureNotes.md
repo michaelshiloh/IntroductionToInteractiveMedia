@@ -1003,7 +1003,7 @@ void mouseClicked() {
 ````
 
 and this is an example of the words you can feed it. If you copy the program
-exactly as I have, you should make a folder called `mydatafolder' in the same
+exactly as I have, you should make a folder called `mydatafolder` in the same
 folder as the sketch, and then put these contents into a file called
 `words.csv`:
 
