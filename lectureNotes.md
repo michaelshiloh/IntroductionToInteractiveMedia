@@ -883,24 +883,137 @@ More complex examples are in Aaron Sherwood’s Introduction to Interactive Medi
  	<li>forces: lettersGravityWind.pde</li>
 </ul>
 
-##### JSON: Another data format
+##### JSON and XML: Other file formats
 
-JSON is another format for organizing data in a file. It is more complex than CSV, and again Processing provides functions for parsing JSON
+JSON and XML are other format for organizing data in a file. 
+They are more complex than CSV, and again Processing provides functions.
 
-<a href="https://processing.org/examples/loadsavejson.html">https://processing.org/examples/loadsavejson.html</a>
+For example for 
+parsing [JSON](https://processing.org/examples/loadsavejson.html)
 
 If you want to learn more about JSON and also XML, 
-which yet another data format, 
-<a href="https://www.youtube.com/watch?v=rqROpUNb2aY">here</a> 
+[this](https://www.youtube.com/watch?v=rqROpUNb2aY)
 is a good introductory video tutorial.
 
-<h3>Generative Text</h3>
-Pull words from a file (CSV or JSON), 
+##### Generative Text
+Pull words from a CSV file 
 and by using `random()` in a clever way,
-write poems or slogans or whatever
+write poems or slogans or whatever. 
+
+Here is a terribly lame example:
+
+````
+/*
+Generate poetry from a file of words
+ the file has words in this format:
+ 
+ roses,red,violets,blue,dream,disneyland
+ 
+ we will refer to them as:
+ 
+ item1,color1,item2,color2,verb,location
+ 
+ and construct a poem:
+ 
+ item1 are color1, item2 are color2
+ when I verb I verb to location
+ */
+
+// Let's put the index of the word into numbers:
+final int ITEM1 = 0;
+final int COLOR1 = 1;
+final int ITEM2 = 2;
+final int COLOR2 = 3;
+final int VERB = 4;
+final int LOCATION = 5;
+// final means that I will not change these variables
+// It is conventional to use all caps for variable names that will not change
 
 
-##### Time permitting:
+String strings[];
+
+void setup() {
+
+  // The text from the file is loaded into an array.
+  strings = loadStrings("mydatafolder/words.csv");
+
+  // How many lines did we get?
+ // println("strings array contains this many lines: " + strings.length);
+}
+
+int csvRowNumber = 0;
+
+void draw() {
+  String singleRow[];
+
+  // First line: "item1 are color1, item2 are color2"
+
+  // Pick a random number, round that number DOWN to a whole number,
+  // and split that row into individual words
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get item1
+  print(singleRow[ITEM1]);
+
+  print(" are " );
+
+  // Now keep doing this for each word
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get color1
+  print(singleRow[COLOR1]);
+  
+  // need a space between COLOR1 and ITEM2
+  print(", " );
+
+  // Now the second half of the first line: "violets are blue" 
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[ITEM2]);
+  print(" are " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get color1
+  print(singleRow[COLOR2]);
+
+
+  // that's the end of the first line of the poem so start a new line
+  println();
+
+  // Now the second line: when I verb I verb of location
+
+  print("When I " );  
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[VERB]);
+  print(" I " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[VERB]);
+  print(" to the " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[LOCATION]);
+
+  // that's the end of the second line of the poem so start a new line
+  // and also put an extra blank line
+  println();
+  println();
+
+  noLoop(); // Wait for a mouse click then do it again
+}
+
+// If you click the mouse, allow the draw() function to resume
+void mouseClicked() {
+  loop();
+}
+````
+
+and this is an example of the words you can feed it. If you copy the program
+exactly as I have, you should make a folder called `mydatafolder' in the same
+folder as the sketch, and then put these contents into a file called
+`words.csv`:
+
+````
+roses,red,violets,blue,dream,disneyland
+robots,silver,pencils,grey,run,supermarket
+goldfish,orange,motors,white,turn,workbench
+books,multicolored,lamposts,azure,swim,island
+computers,black,mice,pink,squeak,home
+````
 
 #### Perlin Noise
 
