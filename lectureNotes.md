@@ -684,10 +684,6 @@ and works in Arduino also exactly the same way.
 - Any questions about classes and functions?
 
 ### February 11 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Transformations
 
@@ -1152,3 +1148,39 @@ void draw() {
 }
 ````
 
+### February 16 2021
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+##### Lauren McCarthy (Ayush and Deborah)
+
+````
+
+
+(who asked about blank lines - Chinonyerem?)
+
+
+
+
+````
+
+Artist Talk: Lauren McCarthy - You Can Say, Talk To Me
+When: Sun, January 21st, 7pm - 8pm
+[Zoom](https://nyu.zoom.us/j/97855583067)
+
+Captivated by the ways we are taught to interact with algorithms, and how this
+shapes the way we interact with each other, artist Lauren McCarthy examines
+social relationships in the midst of surveillance, automation, and algorithmic
+living. Through performance, software, electronics, internet, film,
+photography, and installation, her work exists within and beyond the gallery,
+seeking edges of art and media performance. Her work is a critique of the
+simultaneous technological and social systems we are building around ourselves
+and the rules that apply when we introduce glitches.
+
+##### Look at homework due today
+
+##### Look at homework due Thursday (yes, Thursday)
+
+##### Time permitting
