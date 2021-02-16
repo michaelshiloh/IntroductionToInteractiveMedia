@@ -184,10 +184,12 @@ Document your project as always, with the following additions:
 
 Image Processing, introducing midterm project
 
+##### todays-assignment
 #### Assignments Due Febrary 18 (YES! Thursday!)
 
 Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
 
+##### todays-assignment
 Midterm project due on March 4:
 
 Make a game using everything you have learned so far
@@ -443,7 +445,6 @@ Work on Final Project
 
 Final project due on April 29
 
-##### todays-assignment
 #### Final Project Documentation Due (TBA)
 
 In your folder called ````finalProject````
