@@ -1229,9 +1229,12 @@ for a folder called *data* in the same folder as the sketch
 (I'm not sure in what order)
 
 
-`img.get(x,y)` - Gets the color of the pixel at this location
-
-`img.get(x,y,w,h)` - Gets a portion of the image
+- `image(photo, positionX, positionY, width, height)` - display 
+this image at this location and scale to this size
+- `photo.resize(w,h)` - scale to this size. If one of the arguments is zero,
+	then scale to the remaining argument and retain the original aspect ratio.
+- `photo.get(x,y,w,h)` - Gets a portion of the image
+- `photo.get(x,y)` - Gets the color of the pixel at this location
 
 ````
 PImage photo;
@@ -1252,7 +1255,6 @@ void setup() {
 Also
 
 ````
-image(photo, positionX, positionY, width, height);
 tint(red, green, blue);
 imageMode(CENTER);
 ````
