@@ -1022,7 +1022,7 @@ void draw() {
 
 ````
 
-The ````pixels```` [data
+The `pixels` [data
 type](https://processing.org/reference/color_datatype.html)
 
 Some fun examples from Professor Sherwood:

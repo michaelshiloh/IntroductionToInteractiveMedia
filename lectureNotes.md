@@ -1185,6 +1185,12 @@ and the rules that apply when we introduce glitches.
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
 
+#### Midterm projects
+
+I think I mistakenly said it is due after spring break. I was wrong. It is due
+on March 4.
+
+Quickly look at each project
 
 #### Working with Images
 
