@@ -189,7 +189,6 @@ Image Processing, introducing midterm project
 
 Bring an idea (or ideas) to class for your midterm. We will spend part of class next week working on your midterms.
 
-##### todays-assignment
 Midterm project due on March 4:
 
 Make a game using everything you have learned so far
@@ -204,6 +203,7 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 without closing and restarting the program
 
+##### todays-assignment
 #### Assignments Due Febrary 23
 
 Production Assignment:
