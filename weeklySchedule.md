@@ -72,7 +72,6 @@ interesting you discovered.
 
 Animation, Conditionals, Loops
 
-##### todays-assignment
 #### Assignments Due February 2
 
 Reading Assignment:
@@ -184,7 +183,6 @@ Document your project as always, with the following additions:
 
 Image Processing, introducing midterm project
 
-##### todays-assignment
 #### Assignments Due Febrary 18 (YES! Thursday!)
 
 Bring an idea (or ideas) to class for your midterm. We will spend part of class next week working on your midterms.
