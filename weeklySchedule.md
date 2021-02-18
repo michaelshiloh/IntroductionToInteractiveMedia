@@ -187,7 +187,7 @@ Image Processing, introducing midterm project
 ##### todays-assignment
 #### Assignments Due Febrary 18 (YES! Thursday!)
 
-Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
+Bring an idea (or ideas) to class for your midterm. We will spend part of class next week working on your midterms.
 
 ##### todays-assignment
 Midterm project due on March 4:
