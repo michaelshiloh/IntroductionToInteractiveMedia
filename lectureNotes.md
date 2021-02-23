@@ -1180,10 +1180,6 @@ and the rules that apply when we introduce glitches.
 ##### Look at homework due Thursday (yes, Thursday)
 
 ### February 18 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Midterm projects
 
@@ -1396,4 +1392,102 @@ How would we use them?
 
 Aaron's
 [method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
+
+
+### February 23 2021
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+#### Sound
+
+Sound library [reference
+page](https://processing.org/reference/libraries/sound/index.html)
+
+##### Install the Sound library
+
+- Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install *Sound* written by *The Processing Foundation*
+
+##### Play with examples
+
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+
+**Notes**
+1. Some soundfiles don't work. I don't know why.
+2. New concept: ````switch()```` statement
+3. ````keyPressed()```` is another example of a ````callback function ````
+
+
+##### Examples from Learning Processing chapter 20
+
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+- The first example sound file is one that does not work for me. 
+
+##### What is
+[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
+
+#### If we had multiple sound files, how would we play the next one when we
+click the mouse?
+
+Let's try this together before you look at one possible 
+[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
+
+Here is the solution we worked at in class:
+
+````
+import processing.sound.*; //* load the sound library
+
+SoundFile[] songs;
+final int numberOfSongs = 5;
+
+SoundFile currentSong;
+
+void setup() {
+  size(400, 500);
+
+  songs = new SoundFile[numberOfSongs]; // makes the array of songs
+
+  // open each file and put it in the songs array
+  for (int i = 0; i< numberOfSongs; i++) {
+    songs[i] = new SoundFile( this, "/tmp/" + (i+1) + ".aif");
+  }
+  currentSong = songs[0];
+}
+
+void draw() {
+}
+
+void mousePressed() {
+
+  if (currentSong.isPlaying() == false ) {
+    int songToPlay = (int) random(numberOfSongs);
+    songs[songToPlay].play();
+    currentSong = songs[songToPlay];
+  }
+}
+````
+
+Blocking vs. non-blocking functions
+
+- Which function is non-blocking?
+- How do you know when a non-blocking function is done?
+- Soudfile [reference
+	page](https://processing.org/reference/libraries/sound/SoundFile.html)
+
+What about using the mouse position to select sound tracks?
+
+Let's try this together before you look at the 
+[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
+
+##### Synthesis
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
 
