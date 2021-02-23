@@ -201,7 +201,6 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 without closing and restarting the program
 
-##### todays-assignment
 #### Assignments Due Febrary 23
 
 Production Assignment:
@@ -228,6 +227,7 @@ and be prepared to discuss (Haneen and Maitha to lead)
 
 Sound
 
+##### todays-assignment
 #### Assignments Due March 4
 
 Production Assignment :

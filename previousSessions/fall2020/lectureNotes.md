@@ -1140,7 +1140,7 @@ chp_20_sound -> example_20_02_sound_effect
 #### If we had multiple sound files, how would we play the next one when we
 click the mouse?
 
-Let's try this together before you look at one posible 
+Let's try this together before you look at one possible 
 [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
 
 Here is the solution we worked at in class:
