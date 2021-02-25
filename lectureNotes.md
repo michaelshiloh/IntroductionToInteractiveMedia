@@ -1395,10 +1395,6 @@ Aaron's
 
 
 ### February 23 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Sound
 
@@ -1423,6 +1419,11 @@ page](https://processing.org/reference/libraries/sound/index.html)
 2. New concept: ````switch()```` statement
 3. ````keyPressed()```` is another example of a ````callback function ````
 
+### February 25 2021
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
 
 ##### Examples from Learning Processing chapter 20
 
@@ -1436,10 +1437,32 @@ chp_20_sound -> example_20_02_sound_effect
 #### If we had multiple sound files, how would we play the next one when we
 click the mouse?
 
-Let's try this together before you look at one possible 
-[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
+Let's try this together before you look at a couple of ways to solve this
 
-Here is the solution we worked at in class:
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+````
+
+One solution:
 
 ````
 import processing.sound.*; //* load the sound library
@@ -1474,7 +1497,9 @@ void mousePressed() {
 }
 ````
 
-Blocking vs. non-blocking functions
+Another [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
+
+##### Blocking vs. non-blocking functions
 
 - Which function is non-blocking?
 - How do you know when a non-blocking function is done?
