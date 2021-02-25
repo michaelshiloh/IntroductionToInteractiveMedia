@@ -1424,6 +1424,7 @@ page](https://processing.org/reference/libraries/sound/index.html)
 #### Administration
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
+- **Get kits from the bookstore**
 
 ##### Examples from Learning Processing chapter 20
 
