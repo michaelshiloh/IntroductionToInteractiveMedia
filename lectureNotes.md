@@ -1435,8 +1435,7 @@ chp_20_sound -> example_20_02_sound_effect
 ##### What is
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
-#### If we had multiple sound files, how would we play the next one when we
-click the mouse?
+#### If we had multiple sound files, how would we play the next one when we click the mouse?
 
 Let's try this together before you look at a couple of ways to solve this
 
@@ -1517,3 +1516,26 @@ Let's try this together before you look at the
 We can create our own complex sounds starting with basic oscillators and then
 changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
 
+##### Debugging
+
+Here are some ideas we came up with in class. There are many more suggestions!
+Add your own or Google "How to debug" for tons of ideas:
+
+Debugging
+
+- Comment out each line until you find the problem
+- Read the error messages! This only helps for syntax for example
+	- Brackets missing
+	- Incorrect number or types of parameters
+	- Mis-spelled function names
+- Print value of variables or strings
+	- Especially inside of loops
+	- Especially for arrays and classes
+- Use the documentation! 
+	The reference page also says what are the data types for 
+	the return value and each argument
+- If you’re replacing something that works, don’t delete it; comment it out
+- Try things in isolation
+- Paste the error message into Google!
+- Make changes in small pieces and test after each piece
+- Use Discord!
