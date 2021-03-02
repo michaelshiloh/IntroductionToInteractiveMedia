@@ -1420,11 +1420,6 @@ page](https://processing.org/reference/libraries/sound/index.html)
 3. ````keyPressed()```` is another example of a ````callback function ````
 
 ### February 25 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
-- **Get kits from the bookstore**
 
 ##### Examples from Learning Processing chapter 20
 
@@ -1539,3 +1534,12 @@ Debugging
 - Paste the error message into Google!
 - Make changes in small pieces and test after each piece
 - Use Discord!
+
+### March 2 2021
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+- **Get kits from the bookstore**
+- Look at homework for March 18
+

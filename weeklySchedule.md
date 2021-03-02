@@ -232,7 +232,7 @@ Sound
 
 Production Assignment :
 
-Finish your midterm project
+**Finish your midterm project**
 
 Documentation:
 - README.md to include 
