@@ -1544,10 +1544,6 @@ Debugging
 - Remember homework due March 18
 
 ### March 16 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Electricity 
 
@@ -1717,4 +1713,8 @@ Add another switch on a different pin
 Now write a program that will blink different patterns depending on which
 switch is pressed. You can select up to four patterns. How is that possible?
 
-
+### March 18 2021
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
