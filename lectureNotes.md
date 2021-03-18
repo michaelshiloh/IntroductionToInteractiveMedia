@@ -1651,68 +1651,6 @@ Ohm's law
 		- For a given voltage, the higher the "resistance", 
 			the lower the current
 
-#### Arduino finally!
-
-Make sure everything is working
-
-- Upload the Blink example
-- Change the parameter in delay()
-- Upload again and verify that the LED blinks at the new rate
-
-What is going on?
-
-- Code
-- Circuit
-- I/O pins
-
-Let's extend this circuit to the breadboard:
-
-![](media/ArduinoControllingLED_schem.png)
-![](media/ArduinoControllingLED_bb.png)
-
-Let's add a switch
-
-![](media/ArduinoLEDMomentarySwitch_schem.png)
-![](media/ArduinoLEDMomentarySwitch_bb.png)
-
-````
-// the setup function runs once when you press reset or power the board
-void setup() {
-  pinMode(8, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(A2, INPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-
-  int switchPosition = digitalRead(A2);
-
-  if (switchPosition == HIGH) {
-    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
-    digitalWrite(13, LOW);
-  } else  {
-    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
-    digitalWrite(13, HIGH);
-  }
-}
-````
-
-Other things you can do:
-
-Add another LED on a different pin
-
-![](media/ArduinoTwoLEDs_schem.png)
-![](media/ArduinoTwoLEDs_bb.png)
-
-Add another switch on a different pin
-
-![](media/ArduinoTwoSwitches_schem.png)
-![](media/ArduinoTwoSwitches_bb.png)
-
-Now write a program that will blink different patterns depending on which
-switch is pressed. You can select up to four patterns. How is that possible?
-
 ### March 18 2021
 ### todays-lecture
 #### Administration
@@ -1778,8 +1716,23 @@ Add another switch on a different pin
 ![](media/ArduinoTwoSwitches_schem.png)
 ![](media/ArduinoTwoSwitches_bb.png)
 
+#### In-class exercise
+
 Now write a program that will blink different patterns depending on which
-switch is pressed. You can select up to four patterns. How is that possible?
+switch is pressed. 
+Using two switches you can select between four patterns.
+How is that possible?
+
+````
+
+
+
+
+
+
+
+
+````
 
 #### Analog Input
 
