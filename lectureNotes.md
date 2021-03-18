@@ -1718,3 +1718,158 @@ switch is pressed. You can select up to four patterns. How is that possible?
 #### Administration
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
+
+#### Arduino finally!
+
+Make sure everything is working
+
+- Upload the Blink example
+- Change the parameter in delay()
+- Upload again and verify that the LED blinks at the new rate
+
+What is going on?
+
+- Code
+- Circuit
+- I/O pins
+
+Let's extend this circuit to the breadboard:
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
+Let's add a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+// the setup function runs once when you press reset or power the board
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. You can select up to four patterns. How is that possible?
+
+#### Analog Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analog Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+
+Do you see a similarity between this circuit and 
+something we learned yesterday?
+
+Analog sensors can be resistive or not. Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch - 
+a switch is also effectively a voltage divider.
+
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
+#### Analog Output
+
+- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- This only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- Some actuators, like a solenoid, can be in only one of two states,
+	and so are more suited to a digital output
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from Processing that are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in Processing to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.println()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+#### In-class exercise
+
+1. Use one of the analog sensors to select which of two LEDs lights up
+1. Use one of the analog sensor to control how fast two LEDs alternate
+
+Code we played with in class:
+A few examples showing how to work with analog inputs and outputs
+
+````
+/* First, using map() and constrain() */
+
+void setup() {
+  Serial.begin(9600);
+}
+
+const int sensorPin = A2;
+const int blueLEDPin = 6;
+
+void loop() {
+
+  int sensorValue = analogRead (sensorPin); // range of 0 - 1023
+
+  int ledBrightness = map(sensorValue, 150, 620, 200, 0);
+
+  ledBrightness = constrain(ledBrightness, 0, 200);
+
+  // The range of my LED wasn't very good so I added this
+  // to see what was going on, then I realized that my range was quite different
+  Serial.print("sensorValue = ");
+  Serial.print(sensorValue);
+  Serial.print(" ledBrightness = ");
+  Serial.print(ledBrightness);
+  Serial.println();
+
+  analogWrite(blueLEDPin, ledBrightness); // can only go 0 - 255
+}
+````
+

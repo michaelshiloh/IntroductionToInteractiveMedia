@@ -304,7 +304,7 @@ Production Assignment
 	Each switch must not simply turn on a corresponding LED.
 
 - Document your project as before
-	- Github folder called ````November3````
+	- Github folder called ````March23````
 		- Schematic 
 			- Can be either hand or computer drawn
 			- Make sure your picture is large enough to read
