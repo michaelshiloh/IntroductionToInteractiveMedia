@@ -1734,6 +1734,10 @@ How is that possible?
 
 ````
 
+Here is the hand drawn schematic example I drew in class:
+
+![](media/handDrawnSchematicExample.jpg)
+
 #### Analog Input
 
 Build this circuit. Try to follow the schematic and not the breadboard view:
