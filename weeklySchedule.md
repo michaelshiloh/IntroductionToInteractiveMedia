@@ -250,7 +250,7 @@ Documentation:
 
 Midterm Critique
 
-#### Assignments Due March 18
+#### Assignments Due March 16
 
 Reading Assignment:
 
@@ -279,7 +279,7 @@ Production Assignment:
 
 - **Be careful not to damage the wires or yourselves!**
 
-### Week 8 (March 19, 21)
+### Week 8 (March 16, 18)
 
 Introduction to Electricity and Arduino Digital Input and Output
 
@@ -288,9 +288,9 @@ Introduction to Electricity and Arduino Digital Input and Output
 Reading Assignment:
 
 - [Physical Computing’s Greatest hits and
-	misses](http://www.tigoe.net/blog/category/physicalcomputing/176/) and 
+	misses](http://www.tigoe.com/blog/category/physicalcomputing/176/) and 
 [Making Interactive Art: Set the Stage, Then Shut Up and
-Listen](http://www.tigoe.net/blog/category/physicalcomputing/405/)
+Listen](http://www.tigoe.com/blog/category/physicalcomputing/405/)
 and be prepared to discuss both (Nakyeong and Nelda to lead)
 - Read about 
 [analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
