@@ -227,7 +227,6 @@ and be prepared to discuss (Haneen and Maitha to lead)
 
 Sound
 
-##### todays-assignment
 #### Assignments Due March 4
 
 Production Assignment :
@@ -283,6 +282,7 @@ Production Assignment:
 
 Introduction to Electricity and Arduino Digital Input and Output
 
+##### todays-assignment
 #### Assignments due March 23
 
 Reading Assignment:
