@@ -260,6 +260,9 @@ Reading Assignment:
 
 Production Assignment:
 
+- You will need a USB-A port. If you have a modern laptop with only USB-C
+	ports, you will need to borrow (from Academic Tech if you are on campus) or
+	buy (if you are off-campus) a USB-A to USB-C adapter.
 - Prepare a space for working with electronics
 	- Have your kits ready to use in class
 	- Have some space to work. There are many small components in the kit that
