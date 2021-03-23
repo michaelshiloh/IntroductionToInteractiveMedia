@@ -1652,10 +1652,6 @@ Ohm's law
 			the lower the current
 
 ### March 18 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Arduino finally!
 
@@ -1737,6 +1733,15 @@ How is that possible?
 Here is the hand drawn schematic example I drew in class:
 
 ![](media/handDrawnSchematicExample.jpg)
+
+### March 23 2021
+### todays-lecture
+#### Administration
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+- Resources are available to help you with your homework (me, Jack), but only
+	if you start your homework early enough. If you wait until the last minute
+	and then don't have time to get help, that is unexcusable.
 
 #### Analog Input
 

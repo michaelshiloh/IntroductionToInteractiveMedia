@@ -334,7 +334,7 @@ Reading Assignment:
 divider](https://learn.sparkfun.com/tutorials/voltage-dividers).
 Don't worry about the theory or the section on level shifting. 
 The important thing is to absorb a little of the concept of a voltage divider.
-Pay particular attention to Reading Resistive Sensors
+Pay particular attention to *Reading Resistive Sensors*
 
 Production Assignment:
 
