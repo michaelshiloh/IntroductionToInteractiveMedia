@@ -1744,11 +1744,17 @@ Here is the hand drawn schematic example I drew in class:
 #### Administration
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
+
+#### Misc
 - Resources are available to help you with your homework (me, Jack), but only
 	if you start your homework early enough. If you wait until the last minute
 	and then don't have time to get help, that is unexcusable.
 - Hand drawn switches can use the simple symbol
 - Use constants for pin numbers
+- When you lead the class discussion, minimize the time you spend summarizing
+	the reading. 
+- Haneen last picture of March23 pulldown resistors seem to be in wrong row
+- Schematic problems
 
 #### Analog Input
 
@@ -1877,6 +1883,9 @@ boolean
 			- Dedicate green as an additional black, and then
 			don't use green for anything else either
 	- All other connections can use any other colors
+	- If you use the buses
+		- Red bus for 5V
+		- Black or Blue bus for GND
 
 #### Circuits
 
