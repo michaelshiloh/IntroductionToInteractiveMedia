@@ -1735,6 +1735,11 @@ Here is the hand drawn schematic example I drew in class:
 ![](media/handDrawnSchematicExample.jpg)
 
 ### March 23 2021
+
+- Student lead discussion
+- Homework presentations
+
+### March 25 2021
 ### todays-lecture
 #### Administration
 - **Record Zoom**
@@ -1742,6 +1747,8 @@ Here is the hand drawn schematic example I drew in class:
 - Resources are available to help you with your homework (me, Jack), but only
 	if you start your homework early enough. If you wait until the last minute
 	and then don't have time to get help, that is unexcusable.
+- Hand drawn switches can use the simple symbol
+- Use constants for pin numbers
 
 #### Analog Input
 
@@ -1834,4 +1841,91 @@ void loop() {
   analogWrite(blueLEDPin, ledBrightness); // can only go 0 - 255
 }
 ````
+
+#### Data Types
+
+Just like in Processing, there are different data types:
+
+````
+int
+float
+char
+boolean
+````
+
+#### Conventions: Schematics and Wire Colors
+
+- When drawing schematics
+
+	- All **sensors** on the **left**
+	- All **inputs** on the **left** side of the Arduino 
+	- All **actuators** on the **right**
+	- All **outputs** on the **right** side of the Arduino 
+	- There are exceptions e.g.
+		- If using CAD you can't control where the pins are on Arduino
+		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
+			both inputs and outputs
+
+- When wiring your circuits
+
+	- All **5V** connections should use **red** wire, 
+	and don't use red for anything else
+	- All **GND** connections should use **black** wire,
+	and don't use black for anything else
+		- If you run out of black you may either
+			- Color some white cables black with a Sharpie
+			- Dedicate green as an additional black, and then
+			don't use green for anything else either
+	- All other connections can use any other colors
+
+#### Circuits
+
+Some theory that might help you think about why circuits are they way they
+are
+- Important concepts:
+	- Voltage 
+		- Voltage is a relative quantity so it's always measured or identified
+			relative to some other point (usually a common reference point such as
+			"ground")
+		- Can be thought of the "pressure" applied to the electrons
+		- Analogous to holding a brick at a certain height above the floor. Relative
+			to the floor, the brick has a certain amount of potential energy
+		- Voltage exists whether or not there is a circuit
+	- Resistance 
+		- The resistance the electrons face as they try to get through
+		components. 
+		- Analogous to a traffic jam on a road
+		- Conductors (wires) have zero resistance (for our purposes)
+		- All components have some sort of "resistance"
+		- Resistance is a property of a component and therefore
+		exists whether or not there is a circuit
+	- Current  
+		- The rate of flow of electrons through a circuit (electrons/second)
+		- Somewhat analogous to litres/hour or cars/hour
+		- **Current only exists when there is a circuit**
+- If you measure the voltage between any two points, the voltage will not
+	change as you move to different places on the **wire**. 
+		However if you cross
+		a component the voltage might be different on the other side of the
+		component
+- If you measure current through components connected in 
+	series the current will not change. This is because **all** the electrons
+	that go through the first component have to go through the rest. No
+	electrons can leave the path, and no new ones can enter.
+		However if there are any branches some electrons might go on the
+		branches and thus the current will drop.
+
+#### Debugging
+
+If you want my help solving a problem in your assignment, do the following:
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Discord, describing carefully
+	1. What you think should be happening
+	1. What instead is happening 
+
+What techniques have you learned to help you find problems?
+	- 
+	- 
+	- 
 

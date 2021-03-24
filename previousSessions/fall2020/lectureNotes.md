@@ -1655,8 +1655,10 @@ are
 		However if you cross
 		a component the voltage might be different on the other side of the
 		component
-- If you measure current through a series of components the current will not
-	change. 
+- If you measure current through components connected in 
+	series the current will not change. This is because **all** the electrons
+	that go through the first component have to go through the rest. No
+	electrons can leave the path, and no new ones can enter.
 		However if there are any branches some electrons might go on the
 		branches and thus the current will drop.
 
