@@ -1740,10 +1740,6 @@ Here is the hand drawn schematic example I drew in class:
 - Homework presentations
 
 ### March 25 2021
-### todays-lecture
-#### Administration
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Misc
 - Resources are available to help you with your homework (me, Jack), but only
@@ -1938,3 +1934,10 @@ What techniques have you learned to help you find problems?
 	- 
 	- 
 
+### March 31 2021
+### todays-lecture
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+- Discussion: A Brief Rant, A Response (Nouf, Rebecca)
+- View homework
