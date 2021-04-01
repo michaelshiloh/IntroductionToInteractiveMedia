@@ -1934,10 +1934,184 @@ What techniques have you learned to help you find problems?
 	- 
 	- 
 
-### March 31 2021
+### March 30 2021
+
+- Discussion: A Brief Rant, A Response (Nouf, Rebecca)
+- View homework
+
+### April 1 2021
 ### todays-lecture
 - **Record Zoom**
 - **Turn off all notifications laptop and phone**
 
-- Discussion: A Brief Rant, A Response (Nouf, Rebecca)
-- View homework
+Time permitting:
+- Review problems people had
+- Review rest of homework
+
+#### Sound
+
+**`tone()`**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- [Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- That's not very specific. I think they mean "prevents `analogWrite()` on
+		pins 3 and 11"
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in Processing
+- Arduino has arrays just like in Processing
+
+**Servo motor**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+	
+
+#### Blink Without `delay()`
+
+Why do we need this? 
+
+What problem does delay cause? 
+
+For example, how would you
+- Blink LEDs at different rates
+- Blink an LED while playing a tune
+- Play a tune while moving a servo motor
+
+**Whenever we use `delay()` we can't do other things**
+
+[Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
+
+So much for blinking. What if we want to move a servo motor at the same time?
+
+Adafruit [Multitasking Tutorial Part
+I](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+
+Play a melody and blink an LED 
+without using `delay()`:
+[toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
+
+#### Theory (continued)
+
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connect things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the right side of a
+		component!
+
+### April 6 2021
+
+#### Communication
+
+File -> Examples -> Communications -> Graph
+
+What if we want to send more than one value?
+
+File -> Examples -> Communications -> VirtualColorMixer
+
+**Notes**
+- **Graph** example sends one value from Arduino to Processing
+- **VirtualColorMixer** sends three values, and uses the `split()` function 
+in processing to split these Comma Separated Values
+- Remember the principle of robust coding: Expect the unexpected 
+	and provide proper handling 
+- In particular, 
+	sometimes The data received is invalid and so we must check for all possible
+	failures e.g.
+	- Empty string
+		- `if (inString != null)`
+	- Unexpected number of values
+		- `if (colors.length >= 3)`
+	- Non-numerical data
+		- NaN error if we try to process mathematically 
+		something that is not a number
+
+How to check that a string contains only numerical digits 
+- First, how is information sent from Arduino to Processing?
+	- If we use `print()` or `println()`, on Arduino
+		- The [ASCII](https://en.wikipedia.org/wiki/ASCII) code 
+		for each character is sent
+		- Any **numbers** are sent as a sequence of **characters**
+			- E.g. the **number** `237` is sent as 
+			the code for the **character** `2`, 
+			then the code for the **character** `3`,
+			then the code for the **character** `7`
+		- This is accomplished automatically by the 
+			`print()` or `println()` commands
+	- In Processing, we must convert the sequence of character
+		back into numbers
+		- .e.g. the **characters** `2`, `3`, and `7` must be combined to form
+		the **number** `237`
+		- This is accomplished by the `float()` conversion function
+- Now we know: To make sure that a string contains only digits,
+we have to check the codes against the ASCII table before we try to 
+convert them
+	- Conveniently, all the digits are sequential, so we can check
+	that the codes lie in the range of the code for the digit `0`
+	and the code for the digit `9`
+	- If we're expecting a CSV, then the comma is also a valid character,
+	so we have to check for and allow that
+		- Note that the ASCII code for a comma comes before the code 
+		for the digit `0`, so:
+			- Anything less than the code for comma is invalid
+			- Anything greater than the code for `9` is invalid
+			- Anything between comma and `0` is invalid
+
+````
+boolean isStringValid(String s) {
+  for (int i = 0; i < s.length(); i++ ) {
+    char c = s.charAt(i);
+
+    if (c < ',' || c > '9' || (c > ',' && c < '0')) {
+      println("found a bad char at position = " + i + " value = " + hex(c));
+
+      myPort.clear(); // discard everything else
+      return false;
+    }
+  }
+  return true;
+}
+````
+
+Insert this just after trimming the string in `serialEvent()`:
+
+````
+if (inString != null) {
+    // trim off any whitespace:
+    inString = trim(inString);
+
+    if (!isStringValid(inString)) {
+      myPort.clear(); // discard everything else
+      return; // don't do the rest of this function
+    }
+````
+
+Can we send from Processing to Arduino?
+- File -> Examples -> Communications -> PhysicalPixel
+
+What about both directions?
+- File -> Examples -> Communications -> SerialCallResponseASCII
+
+In-class exercise
+- Use the response value from 
+	 File -> Examples -> Communications -> SerialCallResponseASCII
+	 to activate something
+
