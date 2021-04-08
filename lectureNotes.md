@@ -1956,9 +1956,6 @@ What techniques have you learned to help you find problems?
 - View homework
 
 ### April 1 2021
-### todays-lecture
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 Time permitting:
 - Review problems people had
@@ -2038,6 +2035,11 @@ without using `delay()`:
 - Discuss readings: Rhea and Soojin
 - Look at (and listen to) homework
 
+### April 8 2021
+### todays-lecture
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
 #### Serial communication
 
 - Where have we seen serial before?
@@ -2095,7 +2097,7 @@ nothing on Arduino is controlled by Processing
 and make it so every time the ball bounces one led lights up and then turns
 off, and you can control the wind from one analog sensor
 
-##### What's the difference betwee `write()` and `print()`?
+##### What's the difference between `write()` and `print()`?
 
 File -> Examples -> Communication -> Dimmer
 
@@ -2105,3 +2107,5 @@ File -> Examples -> Communication -> Dimmer
 
 **`print()` and `println()` send the ASCII code, while `write` send the raw number**
 - `write()` can only send numbers between 0 and 255
+
+##### Homework: Note there is reading, production, and writing!
