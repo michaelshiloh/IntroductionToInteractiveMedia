@@ -285,7 +285,6 @@ Production Assignment:
 
 Introduction to Electricity and Arduino Digital Input and Output
 
-##### todays-assignment
 #### Assignments due March 23
 
 Reading Assignment:
@@ -389,6 +388,7 @@ Production Assignment:
 
 Serial Communication, introduce Final Project
 
+##### todays-assignment
 #### Assignments Due April 13
 
 Reading Assignment:
