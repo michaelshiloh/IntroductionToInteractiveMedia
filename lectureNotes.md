@@ -1844,6 +1844,22 @@ void loop() {
 }
 ````
 
+**Notes**
+1. You may have noticed that the built-in LED blinks 3 times when you turn on
+	 your Arduino. In fact it does this every time it resets, which also happens
+	 when you upload a new program. Since this LED is connected directly to pin
+	 13, it means that whatever you have attached to pin 13 will be activated 3
+	 times briefly whenver the Arduino resets. So, if you make a big robot, 
+	 you probably should not use pin 13 for the motor
+1. Pins 0 and 1 are used for communication with your laptop, and this has two
+	 effects:
+	1. Connecting anything to pins 0 or 1 might interfere with laptop
+		 communication (which includes uploading!)
+	2. Anything connected to pins 0 or 1 might be activated during
+		 communication!
+1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
+	 pins and need to use them there are ways around this.
+
 #### Data Types
 
 Just like in Processing, there are different data types:
@@ -2022,60 +2038,70 @@ without using `delay()`:
 - Discuss readings: Rhea and Soojin
 - Look at (and listen to) homework
 
-#### Communication
+#### Serial communication
 
-Serial communication
-start by asking, where have we seen serial before?
-serial.println
-Serial ports list
-USB - universal serial bus
-on usb there is a usb to serial convertor
-what is serial communication?
-most ubiquitous way for computers to talk to each other
-computer to arduino drawing
-when communicating serially each device sends messages at a certain rate, and each device has their own clock
-they have to agree on several things to understand each other
-three lines each (most basic agreement, electrically), so must be same voltage
-ard. RX->TX com.
-ard. TX->RX com.
-GND<->GND
-show on arduino
-speed should agree laptop will sample every 9600bps and arduino will pulse every 9600bps baud rate
-logic,
-what does high and low pulses mean
-sending pulses, high/low 01001000 (72 in decimal)
-serial sends very fast
-serial buffer
-handshake
-have them wire it up
-go through code example (buildOffThisOne.ino)
-have them break into groups and, referring to the example in class, do the following, all should use a handshake:
-make something that uses only one sensor on arduino and makes the ellipse in processing move on the horizontal axis, in the middle of the screen, and nothing on arduino is controlled by processing
-make something that controls the LED brightness from processing
-take the gravity wind example (https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde) and make it so every time the ball bounces one led lights up and then turns off, and you can control the wind from one analog sensor
-type in serial monitor:
-difference between serial write and println
-sending raw binary data, for a byte, serial monitor interprets as ascii
-American Standard Code for Information Interchange http://www.asciitable.com/
-newline number
-asciitable.comasciitable.com
-Ascii Table - ASCII character codes and html, octal, hex and decimal chart conversion
-Ascii character table - What is ascii - Complete tables including hex, octal, html, decimal conversions
-processingExamples/gravityExamples/gravityWind/gravityWind.pde
-PVector velocity;
-PVector gravity;
-PVector position;
-PVector acceleration;
-PVector wind;
-Show more
-<https://github.com/aaronsherwood/introduction_interactive_media|aaronsherwood/introduction_interactive_media>aaronsherwood/introduction_interactive_media | Added by GitHub
-3:33
-didn't have time to get to the last part. they're in break out rooms right now working on those exercises. i'll cover the last part on wednesday.
-3:33
-we had our readings discussion today too, so that took up some time.
-3:36
-https://intro.nyuadim.com/2021/04/05/serial-communication/
-3:36
-That last link is what I gave them in class.
+- Where have we seen serial before?
+	- serial.println
+	- Serial ports list
+	- What is serial? As opposed to what?
+		- Decimal information: `48,342`
+		- Each decimal digit can be one of 0, 1, 2, 3, 4, 5, 6, 7 8, 9
+		- Binary information: `0010110111101101`
+		- Each Binary dIgiT can be either 0 or 1
+		- Each Binary dIgiT is called a *bit*
+		- How do you convey a single bit (you've been doing this for the
+			past 3 weeks)?
+			- `digitalWrite(pin, HIGH)` can be thought of as a binary `1`
+			- `digitalWrite(pin, LOW)` can be thought of as a binary `0`
+		- How do you convey more than one bit?
+			- All bits at once, one wire per bit (this is called parallel
+				communication)
+			- One bit at a time, with some kind of timing (serial)
+		- Serial is the most ubiquitous way for computers to talk to each other
+			- But there are many different schemes to specify e.g. the timing
+				- I2C
+				- SPI
+				- RS-232
+				- USB - universal serial bus
 
+- A critical part of serial communication is the speed, or baud rate.
+- But, laptop is much, much faster than Arduino. What happens if you do this:
 
+````
+while (1) {
+	Serial.println("Hello, world");
+}
+````
+- Computers usually have a *buffer* 
+	(memory to store received messages until they are processed) 
+	- Your laptop is (1) very fast and (2) has a big buffer
+	- Your Arduino is (1) much slower and (2) has a very small buffer
+- Handshaking to the rescue!
+
+![](media/serialCommsSchematic.jpg)
+
+[Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
+
+##### In-class exercise! Yay!
+
+Break into groups and, referring to the given code and circuit
+do the following, always using handshaking:
+
+1. Make something that uses only one sensor on Arduino and makes the ellipse in
+processing move on the horizontal axis, in the middle of the screen, and
+nothing on Arduino is controlled by Processing
+1. Make something that controls the LED brightness from Processing
+1. Take Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde)
+and make it so every time the ball bounces one led lights up and then turns
+off, and you can control the wind from one analog sensor
+
+##### What's the difference betwee `write()` and `print()`?
+
+File -> Examples -> Communication -> Dimmer
+
+- Letters all have numeric codes
+
+[ASCII](http://www.asciitable.com/)
+
+**`print()` and `println()` send the ASCII code, while `write` send the raw number**
+- `write()` can only send numbers between 0 and 255
