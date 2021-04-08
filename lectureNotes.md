@@ -2019,99 +2019,63 @@ without using `delay()`:
 
 ### April 6 2021
 
+- Discuss readings: Rhea and Soojin
+- Look at (and listen to) homework
+
 #### Communication
 
-File -> Examples -> Communications -> Graph
+Serial communication
+start by asking, where have we seen serial before?
+serial.println
+Serial ports list
+USB - universal serial bus
+on usb there is a usb to serial convertor
+what is serial communication?
+most ubiquitous way for computers to talk to each other
+computer to arduino drawing
+when communicating serially each device sends messages at a certain rate, and each device has their own clock
+they have to agree on several things to understand each other
+three lines each (most basic agreement, electrically), so must be same voltage
+ard. RX->TX com.
+ard. TX->RX com.
+GND<->GND
+show on arduino
+speed should agree laptop will sample every 9600bps and arduino will pulse every 9600bps baud rate
+logic,
+what does high and low pulses mean
+sending pulses, high/low 01001000 (72 in decimal)
+serial sends very fast
+serial buffer
+handshake
+have them wire it up
+go through code example (buildOffThisOne.ino)
+have them break into groups and, referring to the example in class, do the following, all should use a handshake:
+make something that uses only one sensor on arduino and makes the ellipse in processing move on the horizontal axis, in the middle of the screen, and nothing on arduino is controlled by processing
+make something that controls the LED brightness from processing
+take the gravity wind example (https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde) and make it so every time the ball bounces one led lights up and then turns off, and you can control the wind from one analog sensor
+type in serial monitor:
+difference between serial write and println
+sending raw binary data, for a byte, serial monitor interprets as ascii
+American Standard Code for Information Interchange http://www.asciitable.com/
+newline number
+asciitable.comasciitable.com
+Ascii Table - ASCII character codes and html, octal, hex and decimal chart conversion
+Ascii character table - What is ascii - Complete tables including hex, octal, html, decimal conversions
+processingExamples/gravityExamples/gravityWind/gravityWind.pde
+PVector velocity;
+PVector gravity;
+PVector position;
+PVector acceleration;
+PVector wind;
+Show more
+<https://github.com/aaronsherwood/introduction_interactive_media|aaronsherwood/introduction_interactive_media>aaronsherwood/introduction_interactive_media | Added by GitHub
+3:33
+didn't have time to get to the last part. they're in break out rooms right now working on those exercises. i'll cover the last part on wednesday.
+3:33
+we had our readings discussion today too, so that took up some time.
+3:36
+https://intro.nyuadim.com/2021/04/05/serial-communication/
+3:36
+That last link is what I gave them in class.
 
-What if we want to send more than one value?
-
-File -> Examples -> Communications -> VirtualColorMixer
-
-**Notes**
-- **Graph** example sends one value from Arduino to Processing
-- **VirtualColorMixer** sends three values, and uses the `split()` function 
-in processing to split these Comma Separated Values
-- Remember the principle of robust coding: Expect the unexpected 
-	and provide proper handling 
-- In particular, 
-	sometimes The data received is invalid and so we must check for all possible
-	failures e.g.
-	- Empty string
-		- `if (inString != null)`
-	- Unexpected number of values
-		- `if (colors.length >= 3)`
-	- Non-numerical data
-		- NaN error if we try to process mathematically 
-		something that is not a number
-
-How to check that a string contains only numerical digits 
-- First, how is information sent from Arduino to Processing?
-	- If we use `print()` or `println()`, on Arduino
-		- The [ASCII](https://en.wikipedia.org/wiki/ASCII) code 
-		for each character is sent
-		- Any **numbers** are sent as a sequence of **characters**
-			- E.g. the **number** `237` is sent as 
-			the code for the **character** `2`, 
-			then the code for the **character** `3`,
-			then the code for the **character** `7`
-		- This is accomplished automatically by the 
-			`print()` or `println()` commands
-	- In Processing, we must convert the sequence of character
-		back into numbers
-		- .e.g. the **characters** `2`, `3`, and `7` must be combined to form
-		the **number** `237`
-		- This is accomplished by the `float()` conversion function
-- Now we know: To make sure that a string contains only digits,
-we have to check the codes against the ASCII table before we try to 
-convert them
-	- Conveniently, all the digits are sequential, so we can check
-	that the codes lie in the range of the code for the digit `0`
-	and the code for the digit `9`
-	- If we're expecting a CSV, then the comma is also a valid character,
-	so we have to check for and allow that
-		- Note that the ASCII code for a comma comes before the code 
-		for the digit `0`, so:
-			- Anything less than the code for comma is invalid
-			- Anything greater than the code for `9` is invalid
-			- Anything between comma and `0` is invalid
-
-````
-boolean isStringValid(String s) {
-  for (int i = 0; i < s.length(); i++ ) {
-    char c = s.charAt(i);
-
-    if (c < ',' || c > '9' || (c > ',' && c < '0')) {
-      println("found a bad char at position = " + i + " value = " + hex(c));
-
-      myPort.clear(); // discard everything else
-      return false;
-    }
-  }
-  return true;
-}
-````
-
-Insert this just after trimming the string in `serialEvent()`:
-
-````
-if (inString != null) {
-    // trim off any whitespace:
-    inString = trim(inString);
-
-    if (!isStringValid(inString)) {
-      myPort.clear(); // discard everything else
-      return; // don't do the rest of this function
-    }
-````
-
-Can we send from Processing to Arduino?
-- File -> Examples -> Communications -> PhysicalPixel
-
-What about both directions?
-- File -> Examples -> Communications -> SerialCallResponseASCII
-
-In-class exercise
-- Use the response value from 
-	 File -> Examples -> Communications -> SerialCallResponseASCII
-	 to activate something
 
