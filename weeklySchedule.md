@@ -418,7 +418,11 @@ DC motors, Construction and Debugging, Final Project Proposal
 
 Writing Assignment
 
-Refine your final project proposal
+Refine your final project proposal. 
+In the same journal.md think about and document as appropriate:
+- Any additional details you can think of
+- Think about what happens on Arduino, and what happens on Processing
+- Think about your circuit
 
 #### Assignments Due April 20
 
