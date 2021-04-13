@@ -418,12 +418,7 @@ DC motors, Construction and Debugging, Final Project Proposal
 
 Writing Assignment
 
-Refine your final project proposal, include the following:
-- Finalized concept for the project 
-- Description of what your Arduino program will do with each input and 
-	output and what it will send to and/or receive from Processing
-- Description of what Processing program will do and what it will send to
-	and/or receive from Arduino
+Refine your final project proposal
 
 #### Assignments Due April 20
 

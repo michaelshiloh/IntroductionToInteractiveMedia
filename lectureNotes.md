@@ -2097,31 +2097,29 @@ off, and you can control the wind from one analog sensor
 ##### Homework: Note there is reading, production, and writing!
 
 ### April 13 2021
-### todays-lecture
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 ##### Class
 
 - Discuss readings: Riley
 - Look at homework
 
-##### Time permitting:
-
-What's the difference between `write()` and `print()`?
-
-File -> Examples -> Communication -> Dimmer
-
-- Letters all have numeric codes
-
-[ASCII](http://www.asciitable.com/)
-
-**`print()` and `println()` send the ASCII code, while `write` sends the raw number**
-- `write()` can only send numbers between 0 and 255
 
 ### April 15 2021
+### todays-lecture
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
 
-#### Making things move with electricity
+#### Can't upload sketch to Arduino
+1. Make sure the right port is selected
+1. Make sure you have nothing plugged in to pins 0 or 1
+1. Make sure your Arduino has power (is the power light on?)
+	1. If not, then you probably have a short circuit on your breadboard
+1. Make sure the USB cables are plugged in all the way
+1. Try a different USB port on your laptop (don't forget to select this port in the Arduino IDE)
+1. If you have a Processing sketch communicating with Arduino, 
+	you must stop the Processing sketch before you upload to Arduino
+
+#### Making things move 
 
 An LED can make light, what makes motion?
 
@@ -2228,3 +2226,21 @@ void loop() {
 
 ````
 
+##### Look at final project proposals
+
+##### Time permitting:
+
+1. Quiz
+1. What's the difference between `write()` and `print()`?
+
+File -> Examples -> Communication -> Dimmer
+
+- Letters all have numeric codes
+
+[ASCII](http://www.asciitable.com/)
+
+- which keyboard character has the smallest numerical code? 
+	The largest?
+
+**`print()` and `println()` send the ASCII code, while `write` sends the raw number**
+- `write()` can only send numbers between 0 and 255
