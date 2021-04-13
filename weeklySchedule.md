@@ -388,7 +388,6 @@ Production Assignment:
 
 Serial Communication, introduce Final Project
 
-##### todays-assignment
 #### Assignments Due April 13
 
 Reading Assignment:
@@ -414,6 +413,7 @@ Include hand sketches as necessary to illustrate your concept.
 
 DC motors, Construction and Debugging, Final Project Proposal
 
+##### todays-assignment
 #### Assignments Due April 15 (Yes! Thursday!)
 
 Writing Assignment
