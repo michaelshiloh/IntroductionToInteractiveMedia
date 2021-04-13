@@ -2036,9 +2036,6 @@ without using `delay()`:
 - Look at (and listen to) homework
 
 ### April 8 2021
-### todays-lecture
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Serial communication
 
@@ -2097,7 +2094,21 @@ nothing on Arduino is controlled by Processing
 and make it so every time the ball bounces one led lights up and then turns
 off, and you can control the wind from one analog sensor
 
-##### What's the difference between `write()` and `print()`?
+##### Homework: Note there is reading, production, and writing!
+
+### April 13 2021
+### todays-lecture
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+##### Class
+
+- Discuss readings: Riley
+- Look at homework
+
+##### Time permitting:
+
+What's the difference between `write()` and `print()`?
 
 File -> Examples -> Communication -> Dimmer
 
@@ -2105,7 +2116,115 @@ File -> Examples -> Communication -> Dimmer
 
 [ASCII](http://www.asciitable.com/)
 
-**`print()` and `println()` send the ASCII code, while `write` send the raw number**
+**`print()` and `println()` send the ASCII code, while `write` sends the raw number**
 - `write()` can only send numbers between 0 and 255
 
-##### Homework: Note there is reading, production, and writing!
+### April 15 2021
+
+#### Making things move with electricity
+
+An LED can make light, what makes motion?
+
+	=> **Electromagnetism**
+
+Electrical devices that rely on the principle of electromagnetism:
+
+- Electromagnets
+- Loudspeakers and headphones
+- Solenoid
+- Relays
+- All kind of motors
+	- AC motors
+	- DC motors
+	- Brushless DC motors
+	- Stepper motors
+
+#### DC Motors
+
+Arduino current limitations
+
+Remember I=V/R 
+
+In Arduino, V is always 5V
+
+LEDs have relatively <strong>high</strong> "resistance", 
+and so consume <strong>low</strong> current.
+Motors have relatively <strong>low</strong> "resistance", 
+and so consume <strong>high</strong> current
+
+
+**Current flowing through any resistance causes heat (P = I^2/R)**
+
+**Everything has resistance**
+
+Therefore, where electricity is flowing there will be heat
+
+**Heat causes damage**
+
+Arduino can not protect itself from damaged caused by overheating. 
+It does not <strong>limit</strong> current, 
+it is <strong>damaged</strong> by too much current
+
+The amount of heat a component can withstand before it is damaged 
+is governed, to a large extent, by its size
+
+The transistors that make up Arduino are tiny 
+
+![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
+Image courtesy of SparkFun
+
+The reason for using the separate Motor Driver is simple:
+
+**It has much bigger transistors**
+
+(It also makes it easier to control both direction and speed, 
+but you could do that with the Arduino alone, 
+it  would just be a little more complicated)
+
+H-bridge (draw this on whiteboard)
+
+Circuit Schematic
+
+![](media/arduinoSparkFunMotorDriver_schem.jpg)
+
+Theory
+
+Code
+
+````
+
+const int ain1Pin = 13;
+const int ain2Pin = 12;
+const int pwmAPin = 11;
+
+const int bin1Pin = 8;
+const int bin2Pin = 9;
+const int pwmBPin = 10;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  // turn in one direction, full speed
+  Serial.println("full speed");
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, HIGH);
+  digitalWrite(ain2Pin, LOW);
+  // stay here for a second
+  delay(1000);
+
+  // slow down
+  Serial.println("slowing down");
+  int speed = 255;
+  while (speed--) {
+    analogWrite(pwmAPin, speed);
+    delay(20);
+  }
+}
+
+````
+
