@@ -413,7 +413,6 @@ Include hand sketches as necessary to illustrate your concept.
 
 DC motors, Construction and Debugging, Final Project Proposal
 
-##### todays-assignment
 #### Assignments Due April 15 (Yes! Thursday!)
 
 Writing Assignment
@@ -424,18 +423,21 @@ In the same journal.md think about and document as appropriate:
 - Think about what happens on Arduino, and what happens on Processing
 - Think about your circuit
 
+##### todays-assignment
 #### Assignments Due April 20
 
-Begin working on your final project, try to get the parts you think will be hardest completed. 
+Make lots of progress on your final project. 
+Start with the parts you think are most complicated or risky.
 
-Document your progress in your journal.
-Each day add the date
-and then describe the work you plan to do or did that day.
-Include you thoughts, decisions, experiments, etc.
-Discuss what worked and what didn't
-At the end of each journal entry, describe whether, 
-and if so, how, the results of today's work
-has caused you to modify your plan for your final project.
+Document your progress in your journal:
+- Each day add the date
+- Describe the work you plan to do or did that day.
+- Include you thoughts, decisions, experiments, etc.
+- Discuss what worked and what didn't
+- At the end of each journal entry, describe 
+	- Whether, and if so, how, the results of today's work
+	has caused you to modify your plan for your final project.
+	- What your plans are for the next step
 
 ### Week 13 (April 20, 22)
 
