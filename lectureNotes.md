@@ -2105,9 +2105,6 @@ off, and you can control the wind from one analog sensor
 
 
 ### April 15 2021
-### todays-lecture
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 #### Can't upload sketch to Arduino
 1. Make sure the right port is selected
@@ -2244,3 +2241,40 @@ File -> Examples -> Communication -> Dimmer
 
 **`print()` and `println()` send the ASCII code, while `write` sends the raw number**
 - `write()` can only send numbers between 0 and 255
+
+
+### April 20 2021
+### todays-lecture
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+##### Quiz
+- Analog vs. digital
+- How many numbers can you count with one digit? two digits? three digits?
+	- What's the relationship between digits and the amount of numbers?
+	- What about binary digits (bits)?
+- Series vs. parallel
+	- Series components have one end of one component connected to one end of
+		another component and nothing else connected to that point. What happens
+		at the other ends of the components doesn't matter.
+	- Parallel components have one end of both components connected together,
+		and the other end of both components connected together. Other things may
+		or may not be connected anywhere.
+- Why some sensors never result in the full range of 0-5V (or to the numbers 0-1023 from `analogRead()`)
+- Short circuit
+- What to check with Digital Multimeter (DMM)?
+	- Supply voltage
+	- Continuity of each connection
+		- What is continuity?
+		- Must be measured with **unpowered** circuit
+- Pulldown resistor 
+	- "The resistor makes sure that the voltage becomes zero 
+when the switch is opened."
+- Full range does not depend on Arduino or ADC resolution. 
+	- It depends on the
+	sensor. In order to get full range, a sensor would have to go from zero ohms
+	to infinite ohms
+- Blink without delay
+	- `if (millis() % interval)`
+
+##### Final project status
