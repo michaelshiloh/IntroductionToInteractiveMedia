@@ -2276,5 +2276,6 @@ when the switch is opened."
 	to infinite ohms
 - Blink without delay
 	- `if (millis() % interval)`
+- How do you determine the range of values from any given sensor?
 
 ##### Final project status
