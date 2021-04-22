@@ -2244,9 +2244,6 @@ File -> Examples -> Communication -> Dimmer
 
 
 ### April 20 2021
-### todays-lecture
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 ##### Quiz
 - Analog vs. digital
@@ -2279,3 +2276,16 @@ when the switch is opened."
 - How do you determine the range of values from any given sensor?
 
 ##### Final project status
+
+### April 22 2021
+### todays-lecture
+- **Record Zoom**
+- **Turn off all notifications laptop and phone**
+
+##### Course Evaluations
+
+##### Final project status
+
+- What is the most difficult or frightening (least confident) part that remains to be done?
+- What is the easiest part that remains to be done?
+
