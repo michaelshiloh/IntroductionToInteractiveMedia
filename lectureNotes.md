@@ -2278,9 +2278,6 @@ when the switch is opened."
 ##### Final project status
 
 ### April 22 2021
-### todays-lecture
-- **Record Zoom**
-- **Turn off all notifications laptop and phone**
 
 ##### Course Evaluations
 
@@ -2288,4 +2285,16 @@ when the switch is opened."
 
 - What is the most difficult or frightening (least confident) part that remains to be done?
 - What is the easiest part that remains to be done?
+
+### April 27 2021
+### todays-lecture
+- **Record Zoom**
+
+##### Course Evaluations
+
+If you did not finish your course evaluation last week, do it now.
+
+##### Final project 
+- Present your project on Thursday. You may show photographs and videos in
+	addition to the finished item
 

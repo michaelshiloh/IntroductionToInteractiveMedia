@@ -445,9 +445,9 @@ Work on Final Project
 
 ### Week 14 (April 27, 29)
 
-Final project due on April 29
+Final project due on April 29. You will present your project in class.
 
-#### Final Project Documentation Due (TBA)
+#### Final Project Documentation Due May 4 at 10am
 
 In your folder called ````finalProject````
 - Journal file journal.md, describing your progress each time you work.
