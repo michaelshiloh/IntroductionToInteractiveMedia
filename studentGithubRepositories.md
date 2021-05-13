@@ -38,7 +38,6 @@ recognize as you.
 [Nouf](https://github.com/NoufAlnuaimi/IntrotoIM)  
 [Deborah](https://github.com/deborah-74/IntrotoIM)  
 [Ariya](https://github.com/ariyachlt/Intro_IM)   
-[Thais]( https://github.com/ThaisAlvarenga/IntroToIM)  
 [Nakyeong](https://github.com/nakyeongahn/IntrotoIM)  
 [Haneen](https://github.com/haneenfathy/IntroToIM )    
 [Chinonyerem](https://github.com/ChinoUkaegbu/IntrotoIM)  
@@ -47,4 +46,6 @@ recognize as you.
 [Aiya](https://github.com/Sartbayeva/IntrotoIM)  
 [Ayush](https://github.com/discoverayushnp/nyuad-intro-to-im)  
 
+Dropped or transferred out:
 [Claudia](https://github.com/clauneumannv/introtoim)  
+[Thais]( https://github.com/ThaisAlvarenga/IntroToIM)  

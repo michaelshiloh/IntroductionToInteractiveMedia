@@ -2182,19 +2182,34 @@ Circuit Schematic
 
 ![](media/arduinoSparkFunMotorDriver_schem.jpg)
 
+How did I choose which pins to use?
+- Never use pins 0 and 1 (dedicated for USB communication)
+- Avoid pin 13 if possible (it flashes 3 times on reset)
+- Directional control pins (ain1, ain2, bin1, bin2) only require
+	digital signals so avoid pins with extra functionality 
+	(analog input, SPI, PWM)
+- Inclusion of the servo library 
+	disables `analogWrite()` on pins 9 and 10
+	(I'm not using the servo library now but perhaps I'll add it later)
+- Use of the `tone()` function 
+	disables `analogWrite()` on pins 3 and 11
+	(I'm not using the `tone()` function now but perhaps I'll add it later)
+- This leaves PWM pins 5 and 6 for the speed controls (pwma and pwmb)
+- Might as well choose nearby digital pins
+
 Theory
 
 Code
 
 ````
 
-const int ain1Pin = 13;
-const int ain2Pin = 12;
-const int pwmAPin = 11;
+const int ain1Pin = 3;
+const int ain2Pin = 4;
+const int pwmAPin = 5;
 
 const int bin1Pin = 8;
-const int bin2Pin = 9;
-const int pwmBPin = 10;
+const int bin2Pin = 7;
+const int pwmBPin = 6;
 
 
 void setup() {
