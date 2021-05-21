@@ -15,7 +15,7 @@ Office hours: By appointment
 Meeting times:        
 Tuesday 4:05 - 5:20  
 Thursday 2:40 - 5:20  
-Session: Spring 2021       
+Session: Summer 2021       
 
 Welcome to Introduction to Interactive Media. All class material can be
 found here. 
@@ -28,5 +28,5 @@ found here.
 
 Student Github [repositories](studentGithubRepositories.md)
 
-The current session is spring 2021. 
+The current session is Summer 2021. 
 Previous sessions can be explored [here](previousSessions/previousSessions.md).

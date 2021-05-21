@@ -13,9 +13,8 @@ Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
 Meeting times:        
-Tuesday 4:05 - 5:20  
-Thursday 2:40 - 5:20  
-Session: Spring 2021       
+11:00 AM - 12:15 PM M Tu W Th
+Session: Summer 2021       
 
 **This is subject to change**
 
@@ -37,14 +36,14 @@ emphasis on human-based factors, we can explore new paradigms of interaction
 with machines and each other. Using open source software environments and open
 hardware platforms, we will look at way of making these tools work for us. No
 background in programming or electronics is expected. A sense of play, desire
-to experiment, and a DIY attitude is strongly encouraged.
+to experiment, and a do-it-yourself (DIY) attitude is strongly encouraged.
 
 #### Learning outcomes:
 Students who successfully complete this course will be able to :
 
 * Think critically about interaction design principles for hardware (physical) and software (screen-based) interfaces
 * Work with basic electronics, 
-including analog and digital sensors and actuators 
+including analogue and digital sensors and actuators 
 * Understand and be able to implement basic principles of computer programming, including working with objects and classes
 * Use a computer as a tool for self-expression
 * Bring information about the physical world (such as light, pressure, temperature) into the computer and process it in an interesting fashion
@@ -53,7 +52,7 @@ including analog and digital sensors and actuators
 This course is a production-based class. You will be doing work in and outside
 of the class that is ideally experimental, participatory, and collaborative.
 In lab classes, we will review topics like programming techniques and circuit
-design, while non-lab class days ￼will be given over to lecture and discussion
+design, while non-lab class days will be given over to lecture and discussion
 based on readings, videos, audio, and interactive works found primarily
 online.
 
