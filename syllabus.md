@@ -13,7 +13,7 @@ Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
 Meeting times:        
-11:00 AM - 12:15 PM M Tu W Th
+11:00 AM - 12:15 PM     M Tu W Th  
 Session: Summer 2021       
 
 **This is subject to change**

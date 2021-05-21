@@ -12,9 +12,7 @@ Prerequisites: None
 Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
-Meeting times:        
-Tuesday 4:05 - 5:20  
-Thursday 2:40 - 5:20  
+Meeting times: 11:00 AM - 12:15 PM    M Tu W Th  
 Session: Summer 2021       
 
 Welcome to Introduction to Interactive Media. All class material can be
