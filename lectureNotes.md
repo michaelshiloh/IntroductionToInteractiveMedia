@@ -20,6 +20,7 @@ This document: Lecture Notes
 
 **This is subject to change**
 
+### todays-lecture
 ### May 24 2021
 
 #### Administration
@@ -2301,7 +2302,6 @@ when the switch is opened."
 - What is the easiest part that remains to be done?
 
 ### April 27 2021
-### todays-lecture
 - **Record Zoom**
 
 ##### Course Evaluations
