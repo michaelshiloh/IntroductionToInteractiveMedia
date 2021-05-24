@@ -1,5 +1,6 @@
 Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
-Class Zoom Join [URL](https://nyu.zoom.us/j/91294673706)  
+Class Zoom Join [URL](https://nyu.zoom.us/j/94814003038)
+
 
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
