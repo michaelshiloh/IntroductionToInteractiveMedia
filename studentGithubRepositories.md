@@ -31,3 +31,6 @@ want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
 [Saf](https://github.com/safimasafi/introtoim.git)
+[Salama](https://github.com/SalamaAlmheiri/introToIM)
+[Shyngyn](https://github.com/karishev/introtoim)
+

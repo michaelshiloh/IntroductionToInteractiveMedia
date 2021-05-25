@@ -32,7 +32,7 @@ This includes:
 Primitive shapes, Programming concepts, Animation, Conditionals, Loops
 
 ##### todays-assignment
-#### Assignments Due May 25
+#### Assignments Due May 26
 
 Reading Assignment:
 
@@ -53,11 +53,9 @@ Production Assignment:
 	- The portrait does not need to be realistic. The purpose is to practice
 	using the simple drawing functions.
 - In your Github repository, create a new folder named 
-`May25`
+`May26`
 	- Upload your program into the new folder, 
 	with the extension ````.pde````. 
-		- Use **COMMAND T** or **CONTROL T** to indent your code properly
-		- Your program should be well commented and organized. 
 		- If you use any variables, chose good names.
 	- Upload a screenshot of your portrait into the new folder
 	- Create a ````README.md```` in the new folder and include 
@@ -93,12 +91,13 @@ Scroll through and look for images:
 ````February2````
 	- Upload your program into the new folder, 
 	with the extension ````.pde````. 
+	- Use **COMMAND T** or **CONTROL T** to indent your code properly
 	- Your program should be well commented and organized. 
 	- Excellent names for variables
 	- Excellent names for functions, if you make any
 	- Upload a screenshot of your artwork into the new folder
-	- Create a ````README.md```` in the new folder and include 
-	your screenshot in the ````README.md````.
+	- Create a `README.md` in the new folder and include 
+	your screenshot in the `README.md`.
 	- Write a short description of any difficulties you had or anything
 interesting you discovered.
 
