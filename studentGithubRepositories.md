@@ -37,4 +37,7 @@ recognize as you.
 [Hanaan](https://github.com/hanaanr/intro_to_im)
 [Abdul](https://github.com/asgomda/intro_to_im)
 [Ehtisham](https://github.com/ehtishamoas/introToIM)
+[Minseok](https://github.com/MinseokKim0813/IntroToIM)
+[Maram](https://github.com/maramalashqar/intro_to_im)
+
 
