@@ -30,4 +30,4 @@ it, and name your repository "Introduction to Interactive Media". If you don't
 want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
-[name](URL)
+[Saf](https://github.com/safimasafi/introtoim.git)
