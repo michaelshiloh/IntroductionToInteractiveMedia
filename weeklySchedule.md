@@ -63,7 +63,7 @@ Production Assignment:
 interesting you discovered.
 
 ##### todays-assignment
-#### Assignments Due May 27 (TBA)
+#### Assignments Due May 27 
 
 Reading Assignment:
 
@@ -73,12 +73,10 @@ Shiffman's [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V
 - Watch at least the first four of Dan shiffman's [Object Oriented
 	Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i)
 	tutorials.
-- Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
-	on chance operations and be prepared to discuss (Aiya and Alex to lead)
 
 Production Assignment:
 
-- Using loops (````for()```` or ````while()````) in some way, 
+- Using loops (`for()` or `while()`) in some way, 
 along with everything that you've learned so far, 
 make a simple work of art. 
 You may want to look at these old computer art magazines for inspiration, 
@@ -99,7 +97,14 @@ Scroll through and look for images:
 	- Create a `README.md` in the new folder and include 
 	your screenshot in the `README.md`.
 	- Write a short description of any difficulties you had or anything
-interesting you discovered.
+		interesting you discovered.
+
+#### Assignments Due May 31
+
+Reading Assignment:
+
+- Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
+	on chance operations and be prepared to discuss (Aiya and Alex to lead)
 
 ### Week 2 (May 31 - June 3)
 

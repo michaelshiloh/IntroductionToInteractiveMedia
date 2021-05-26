@@ -178,7 +178,6 @@ print(random(100));
 ````
 
 ### todays-lecture
-
 ### May 26 2021
 #### Look at homework
 #### Clearing up any remaining Github questions
@@ -261,9 +260,8 @@ What is this `int foo` stuff?
 
 #### Variables!
 
+#### More functions:
 `background()`
-
-`frameRate()`
 
 What is this `void blahblah()` stuff?
 
@@ -275,10 +273,110 @@ meaning they are defined for you
 - Later we will talk about what the word `void` means and how to define
 	functions
 
+#### conditionals
+
+#### Loops
+
+`while()` is like `if()` but it 
+**keeps on doing it as long as condition is true**
+
+````
+void setup() {
+  size(300, 300);
+
+  int foo = 50; // Initialization step
+
+  while (foo < width) { // while() construct and condition
+    ellipse(foo, 50, 40, 40);
+    foo = foo + 50; // Incrementation step
+  }
+}
+````
+
+Important things to think about (or try)
+
+1. You should get in the habit of giving meaningful names to your variables. 
+What is a better name for the variable foo?
+1. What would happen if you replace the `while()` with `if()`?
+
+There is another way to make a loop using the keyword `for()`. The `for()`
+loop structure combines the initialization step and the incrementation step
+into the `for()` loop construction:
+
+````
+void setup() {
+  size(300, 300);
+
+	// initialization, condition, and incrementation all in one line
+  for (int foo = 50; foo < width; foo = foo + 50)  { 
+    ellipse(foo, 50, 40, 40);
+  }
+}
+````
+
+Which should you use? Whichever is easier for you to understand. Remember that
+most of the time spent programming is fixing problems, and whatever you
+understand best will probably have fewer problems.
+
+Here is the code we developed in class:
+
+````
+/*
+name
+ assignment
+ date
+
+ versions
+ */
+
+
+// Here I am changing the size of my canvas
+
+int x = 9;  // ASSIGN the value of 9 to the variable x
+float myFloat;
+
+void setup() {
+
+  // set canvas size
+  size(350, 450);
+
+  fill(10, 23, 219);
+  // initialize myFloat
+  myFloat = 5.6;
+
+  // Print out the numbers 1 through 10
+  int i = 1;
+  while (i <= 10) {
+    println(i);
+    i = i + 1;
+  }
+
+  for (int j = 30; j <= 40; j = j + 1) {
+    println(j);
+  }
+}
+
+void draw() {
+  background(255);
+  circle(x, height/2, 30);
+  x = x + 1;
+
+  if (x == width) { // TEST whether the variable width is equal to the variable x
+    //println("condition is true");
+    x = 0;
+  } else {
+    //println("condition is false");
+  }
+
+  //println("loop is done");
+}
+````
+
+### todays-lecture
+### May 27 2021
+#### Look at homework
+
 #### Interaction with Processing
-
-- conditionals
-
 ````
 void setup() {
   size(300, 300);
@@ -306,6 +404,9 @@ void draw() {
 	- Determining whether the mouse is inside a box or a circle
 	- Now use a mouse click to clear the screen
 	- (Time permitting, primitive painting program)
+
+#### More functions:
+`frameRate()`
 
 Here are the two examples we developed in class:
 
@@ -337,52 +438,9 @@ void draw() {
 }
 ````
 
-#### Loops
-`while()` is like `if()` but it 
-**keeps on doing it as long as condition is true**
-
-````
-void setup() {
-  size(300, 300);
-
-  int foo = 50; // Initialization step
-
-  while (foo < width) { // while() construct and condition
-    ellipse(foo, 50, 40, 40);
-    foo = foo + 50; // Incrementation step
-  }
-}
-````
-
-Important things to note:
-
-1. You should get in the habit of giving meaningful names to your variables. 
-What is a better name for the variable foo?
-1. What would happen if you replace the `while()` with `if()`?
-
-There is another way to make a loop using the keyword `for()`. The `for()`
-loop structure combines the initialization step and the incrementation step
-into the `for()` loop construction:
-
-````
-void setup() {
-  size(300, 300);
-
-	// initialization, condition, and incrementation all in one line
-  for (int foo = 50; foo < width; foo = foo + 50)  { 
-    ellipse(foo, 50, 40, 40);
-  }
-}
-````
-
-Which should you use? Whichever is easier for you to understand. Remember that
-most of the time spent programming is fixing problems, and whatever you
-understand best will probably have fewer problems.
-
-### May 28 2021
+### May 31 2021
 - Discussion: Casey Reas
 - Look at homework
-- Any remaining Github questions?
 
 #### Functions
 
