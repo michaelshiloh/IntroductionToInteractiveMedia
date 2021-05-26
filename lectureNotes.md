@@ -20,7 +20,6 @@ This document: Lecture Notes
 
 **This is subject to change**
 
-### todays-lecture
 ### May 24 2021
 
 #### Administration
@@ -178,7 +177,14 @@ arc(100, 100, 100, 100, 0, radians(180));
 print(random(100));
 ````
 
-Time permitting:
+### todays-lecture
+
+### May 26 2021
+#### Look at homework
+#### Clearing up any remaining Github questions
+- Local images
+- Links
+- Code
 
 #### Variables
 - `int myNumber = 45;`
@@ -190,6 +196,7 @@ Time permitting:
 	- many others
 
 Here is an example Processing program (also called a 'sketch') 
+which includes comments
 
 ````
 size(400, 400);
@@ -221,21 +228,13 @@ print(myRandomArcSize + "    " + arcSizeInRadians);
 arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 */
 ````
-
-
-### May 26 2021
-#### Look at homework
-#### Clearing up any remaining Github questions
-
-Time permitting, get started on new material
 	
 #### Animation
 - `draw()`
 - `setup()`
-
+- **COMMAND T** or **CONTROL T**
 ### May 27 2021
 
-- Research position for [IM](https://nyu.joinhandshake.com/jobs/4358585)
 - Student lead discussion dates
 
 #### Animation
@@ -380,7 +379,7 @@ Which should you use? Whichever is easier for you to understand. Remember that
 most of the time spent programming is fixing problems, and whatever you
 understand best will probably have fewer problems.
 
-### February 2 2021
+### May 28 2021
 - Discussion: Casey Reas
 - Look at homework
 - Any remaining Github questions?

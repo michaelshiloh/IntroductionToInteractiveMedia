@@ -31,7 +31,6 @@ This includes:
 
 Primitive shapes, Programming concepts, Animation, Conditionals, Loops
 
-##### todays-assignment
 #### Assignments Due May 26
 
 Reading Assignment:
@@ -63,7 +62,8 @@ Production Assignment:
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
-#### Assignments Due May 27
+##### todays-assignment
+#### Assignments Due May 27 (TBA)
 
 Reading Assignment:
 
@@ -88,9 +88,9 @@ Scroll through and look for images:
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
 	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 - In your Github repository, create a new folder named 
-````February2````
+`May27`
 	- Upload your program into the new folder, 
-	with the extension ````.pde````. 
+	with the extension `.pde`. 
 	- Use **COMMAND T** or **CONTROL T** to indent your code properly
 	- Your program should be well commented and organized. 
 	- Excellent names for variables
