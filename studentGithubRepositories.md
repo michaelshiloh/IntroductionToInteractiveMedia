@@ -30,14 +30,17 @@ it, and name your repository "Introduction to Interactive Media". If you don't
 want to use your name for privacy reasons, please choose an alias that I can
 recognize as you.
 
-[Saf](https://github.com/safimasafi/introtoim.git)
-[Salama](https://github.com/SalamaAlmheiri/introToIM)
-[Shyngyn](https://github.com/karishev/introtoim)
-[Ronit](https://github.com/ronit-singh/Intro_to_IM)
-[Hanaan](https://github.com/hanaanr/intro_to_im)
-[Abdul](https://github.com/asgomda/intro_to_im)
-[Ehtisham](https://github.com/ehtishamoas/introToIM)
-[Minseok](https://github.com/MinseokKim0813/IntroToIM)
-[Maram](https://github.com/maramalashqar/intro_to_im)
-
+[Saf](https://github.com/safimasafi/introtoim.git)  
+[Salama](https://github.com/SalamaAlmheiri/introToIM)  
+[Shyngyn](https://github.com/karishev/introtoim)  
+[Ronit](https://github.com/ronit-singh/Intro_to_IM)  
+[Hanaan](https://github.com/hanaanr/intro_to_im)  
+[Abdul](https://github.com/asgomda/intro_to_im)  
+[Ehtisham](https://github.com/ehtishamoas/introToIM)  
+[Minseok](https://github.com/MinseokKim0813/IntroToIM)  
+[Maram](https://github.com/maramalashqar/intro_to_im)  
+[Genie](https://github.com/FairyyGenie/introToIM)  
+[Andres](https://github.com/andresugartechea/introToIM)  
+[Navid]( https://github.com/navid233/IntroToIM)  
+[Ilya](https://github.com/ilya-aki/introToIM)  
 
