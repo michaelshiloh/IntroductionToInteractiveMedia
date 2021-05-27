@@ -62,7 +62,6 @@ Production Assignment:
 	- Write a very simple description of any difficulties you had or anything
 interesting you discovered.
 
-##### todays-assignment
 #### Assignments Due May 27 
 
 Reading Assignment:
@@ -99,17 +98,18 @@ Scroll through and look for images:
 	- Write a short description of any difficulties you had or anything
 		interesting you discovered.
 
+##### todays-assignment
 #### Assignments Due May 31
 
 Reading Assignment:
 
 - Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
-	on chance operations and be prepared to discuss (Aiya and Alex to lead)
+	on chance operations and be prepared to discuss (Abdul and Ehtisham to lead)
 
 ### Week 2 (May 31 - June 3)
 
 Functions, Arrays, and Object-Oriented Programming,
-Loading Data, Displaying text, Transformations
+Loading Data, Displaying text, Transformations (Whew!)
 
 #### Assignments Due June 1
 

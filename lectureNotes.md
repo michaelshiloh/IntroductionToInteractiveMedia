@@ -374,7 +374,7 @@ void draw() {
 
 ### todays-lecture
 ### May 27 2021
-#### Look at homework
+#### Record, turn off distractions, post homework on Discord
 
 #### Interaction with Processing
 ````
@@ -437,10 +437,6 @@ void draw() {
   println("X= " + mouseX + " Y= " + mouseY + "frameCount = " + frameCount);
 }
 ````
-
-### May 31 2021
-- Discussion: Casey Reas
-- Look at homework
 
 #### Functions
 
@@ -509,6 +505,7 @@ void drawOneHouseAt(int x) {
 1. I've said this before and I'll keep saying: 
 	**Choose descriptive names for your variables and functions!** 
 	`foo` is a bad name, `x` is a good name,
+	`xLoc` or `xVal` might be a better name,
 	 `drawOneHouseAt` is a good name.
 1. The value of `foo` (50, 100, 150 ...) is the information passed to the
 	 function so that the function can do it's work. The proper name for this
@@ -656,6 +653,10 @@ Discussion:
 - What about multiple bouncing balls?
 - How could I make the ball move sideways?
 - How could I make it bounce off the walls as well?
+
+### May 31 2021
+#### Discuss readings
+Casey Reas and chance operations
 
 #### Arrays 
 
