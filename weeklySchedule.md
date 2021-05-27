@@ -106,6 +106,26 @@ Reading Assignment:
 - Watch Casey Reas’ [Eyeo talk](https://vimeo.com/45851523) 
 	on chance operations and be prepared to discuss (Abdul and Ehtisham to lead)
 
+Production Assignment:
+
+- Create either an artwork or a game using functions.
+Pay attention to the structure, clarity, and organization of your program. 
+As always, document your project:
+	- New Github folder named **the date the assignment is due**
+	- Well commented code, especially
+	for any confusing or tricky parts 
+	- References to any examples or inspiration
+	- Functions as needed to organize your program
+	- Excellent names for variables and functions
+	- Upload code and one or more images
+	- Create a README.md
+	- Describe the overall concept of your game or artwork
+	- Include the image(s) or link(s) to video
+	- Describe any problems you ran into and how you resolved
+	or worked around them
+	- Describe anything interesting or clever about your program
+- Put a screenshot of your project on Discord
+
 ### Week 2 (May 31 - June 3)
 
 Functions, Arrays, and Object-Oriented Programming,
