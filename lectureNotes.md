@@ -177,7 +177,6 @@ arc(100, 100, 100, 100, 0, radians(180));
 print(random(100));
 ````
 
-### todays-lecture
 ### May 26 2021
 #### Look at homework
 #### Clearing up any remaining Github questions
@@ -232,9 +231,6 @@ arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 - `draw()`
 - `setup()`
 - **COMMAND T** or **CONTROL T**
-### May 27 2021
-
-- Student lead discussion dates
 
 #### Animation
 
@@ -321,7 +317,7 @@ understand best will probably have fewer problems.
 Here is the code we developed in class:
 
 ````
-/*
+/* block style of comments
 name
  assignment
  date
@@ -330,7 +326,7 @@ name
  */
 
 
-// Here I am changing the size of my canvas
+// until end of line style of comments
 
 int x = 9;  // ASSIGN the value of 9 to the variable x
 float myFloat;
@@ -375,6 +371,8 @@ void draw() {
 ### todays-lecture
 ### May 27 2021
 #### Record, turn off distractions, post homework on Discord
+
+#### Any questions about the homework or what we covered yesterday?
 
 #### Interaction with Processing
 ````
