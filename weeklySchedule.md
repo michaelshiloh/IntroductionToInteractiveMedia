@@ -143,7 +143,7 @@ video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a> 
 video tutorial on Perlin noise</li>
 - [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), 
-	and be prepared to discuss (Ariya and Chinonyerem to lead)
+	and be prepared to discuss (Andres and Genie to lead)
 
 Production Assignment:
 
@@ -173,7 +173,7 @@ Reading Assignment:
 
 - Watch Lauren McCarthy's Eyeo talk [You, Me, and My
 Computer](https://vimeo.com/110607681) 
-and be prepared to discuss (Ayush and Deborah to lead)
+and be prepared to discuss (Hanaan and Ilya to lead)
 - Read [this](https://processing.org/tutorials/pixels/) 
 tutorial on working with pixels or watch 
 all of Shiffman's tutorials on working with Images and Pixels
@@ -236,7 +236,7 @@ has caused you to modify your plan for your midterm project.
 Reading Assignment:
 
 - Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) 
-and be prepared to discuss (Haneen and Maitha to lead)
+and be prepared to discuss (Minsoek and Navid to lead)
 
 
 #### Assignments Due June 10
@@ -301,7 +301,7 @@ Reading Assignment:
 	misses](http://www.tigoe.com/blog/category/physicalcomputing/176/) and 
 [Making Interactive Art: Set the Stage, Then Shut Up and
 Listen](http://www.tigoe.com/blog/category/physicalcomputing/405/)
-and be prepared to discuss both (Nakyeong and Nelda to lead)
+and be prepared to discuss both (Ronit and Saf to lead)
 - Read about 
 [analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
 - Read about
@@ -335,7 +335,7 @@ Sound and Servo Motor
 
 Reading Assignment:
 
-- Read and be prepared to discuss both: (Nouf and Rebecca to lead)
+- Read and be prepared to discuss both: (Safal and Salama to lead)
 	- [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 	- [A Response](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
 - Read about the [voltage
@@ -371,7 +371,7 @@ Document your work:
 
 Reading Assignment:
 
-- Read and be prepared to discuss both: (Rhea and Soojin to lead)
+- Read and be prepared to discuss both: (Shyngys and Vimal to lead)
 	- [Norman,“Emotion & Design: Attractive things work better”]((https://jnd.org/emotion_design_attractive_things_work_better/)
 	- [Her Code Got Humans on the Moon]((http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
 - It is important that you understand the concepts behind BlinkWithoutDelay.
@@ -399,7 +399,7 @@ DC motors, Construction and Debugging, Final Project Proposal
 Reading Assignment:
 
 - [Graham Pullin, Design Meets Disability](doc/Design_meets_disability.pdf)
-	and be prepared to discuss (Thais and Riley to lead)
+	and be prepared to discuss (??? and ??? to lead)
 
 Production Assignment:
 

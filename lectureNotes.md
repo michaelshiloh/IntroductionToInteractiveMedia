@@ -368,7 +368,6 @@ void draw() {
 }
 ````
 
-### todays-lecture
 ### May 27 2021
 #### Record, turn off distractions, post homework on Discord
 
@@ -652,9 +651,47 @@ Discussion:
 - How could I make the ball move sideways?
 - How could I make it bounce off the walls as well?
 
+### todays-lecture
 ### May 31 2021
+- Record
+- Turn off distractions
+
+#### Homework feedback
+- Problems? Observations? 
+- What was the most difficult thing in the first assignment? Can you think of
+	anything you've learned since that might have helped?
+- float f = random(100); What's the difference if you put this in `setup()`,
+	`draw()`, or make it global?
+- How could you make this global but still have it change?
+- Meaningful comments! 
+- Fix indentation! (What to do if you forget?)
+- [`pmouseX`](https://github.com/safal312/introToIM/blob/main/May27/generativeArt.pde)
+
+Nexted loops
+
+````
+void setup()
+{
+  int divisions = 20;
+  size(500, 500);
+  int xSteps = width/divisions;
+  int ySteps = height/divisions;
+
+  for (int x = 0; x < width; x += xSteps) {
+    for (int y = 0; y < height; y += ySteps) {
+
+      // horizontal lines go from x=0 to x=width but at different y locations
+      line(0, y, width, y);
+
+      // Vertical lines go from y=0 to y=height but at different x locations
+      line(x, 0, x, height);
+    }
+  }
+}
+````
+
 #### Discuss readings
-Casey Reas and chance operations
+Casey Reas and chance operations (Abdul and Ehtisham to lead)
 
 #### Arrays 
 
@@ -698,7 +735,7 @@ For example, from Dan Shiffman's book *Learning Processing*
 1. type `learning processing` in the search box
 1. select the one we want
 
-Now you can see all examples from the book 
+Now you can see all examples from Dan's excellent book 
 
 1. File -> Examples -> Contributed Examples
 
@@ -748,7 +785,8 @@ Either way works; sometimes you will find you have to do it one
 way or the other, but for the most part it's your choice.
 * I used `noLoop()` because this only needed to run once. In fact
 I didn't even need to use `draw()`, 
-I could have put all the action into `setup()`
+I could have put all the action into `setup()`. I did it this way so that I
+could introduce you to the `noLoop()` function
 * How did I get the height of the wave to perfectly fit the height?
 Practice using the `map()` function, it is incredibly useful
 and works in Arduino also exactly the same way.
@@ -757,12 +795,10 @@ and works in Arduino also exactly the same way.
 
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
-### February 9 2021
-- Discussion: The Art of Interactive Design, Ch. 1 (Ariya and Chinonyerem)
+### June 1
+- Discussion: The Art of Interactive Design, Ch. 1 (Andres and Genie)
 - Look at homework
 - Any questions about classes and functions?
-
-### February 11 2021
 
 #### Transformations
 
