@@ -150,6 +150,12 @@ Production Assignment:
 - Create either an artwork or a game using 
 Object Oriented Programming. 
 You may use arrays if you wish.
+You may modify the last homework assignment, or you may make 
+a new artwork/game. 
+Since you only have one day, very simple assignments are acceptable.
+If your last assignment already used Object Oriented Programming
+you don't need to submit a new assignment, but do make a folder
+and describe in the README.md how you used Classes.
 Pay attention to the structure, clarity, and organization of your program. 
 As always, document your project:
 	- New Github folder named **the date the assignment is due**
@@ -157,10 +163,11 @@ As always, document your project:
 	for any confusing or tricky parts 
 	- References to any examples or inspiration
 	- Functions as needed to organize your program
-	- Excellent names for variables and functions
+	- Excellent names for classes, objects, variables, and functions
 	- Upload code and one or more images
 	- Create a README.md
 	- Describe the overall concept of your game or artwork
+	- Describe how you used classes
 	- Include the image(s) or link(s) to video
 	- Describe any problems you ran into and how you resolved
 	or worked around them
