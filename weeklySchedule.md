@@ -98,7 +98,6 @@ Scroll through and look for images:
 	- Write a short description of any difficulties you had or anything
 		interesting you discovered.
 
-##### todays-assignment
 #### Assignments Due May 31
 
 Reading Assignment:
@@ -131,6 +130,7 @@ As always, document your project:
 Functions, Arrays, and Object-Oriented Programming,
 Loading Data, Displaying text, Transformations (Whew!)
 
+##### todays-assignment
 #### Assignments Due June 1
 
 Reading Assignment:
