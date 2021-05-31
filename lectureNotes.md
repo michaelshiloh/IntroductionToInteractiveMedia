@@ -656,6 +656,16 @@ Discussion:
 - Record
 - Turn off distractions
 
+#### Announcements
+Good news everyone! Your work can be in the 
+[gallery](https://www.nyuadim.com/gallery/) on the IM website, 
+to serve as inspiration for other students, 
+to be an example of what we do in IM, and so that you can be famous!
+The process is simple. Fill out 
+[this](https://forms.gle/7S7xUrErhP37vpVy7) 
+easy application form for your work to be considered.
+You can submit as many pieces as you like.
+
 #### Homework feedback
 - Problems? Observations? 
 - What was the most difficult thing in the first assignment? Can you think of
