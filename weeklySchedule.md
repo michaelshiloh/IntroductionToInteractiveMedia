@@ -143,7 +143,7 @@ video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a> 
 video tutorial on Perlin noise</li>
 - [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf), 
-	and be prepared to discuss (Andres and Genie to lead)
+	and be prepared to discuss (Andres and Saf to lead)
 
 Production Assignment:
 
@@ -308,7 +308,7 @@ Reading Assignment:
 	misses](http://www.tigoe.com/blog/category/physicalcomputing/176/) and 
 [Making Interactive Art: Set the Stage, Then Shut Up and
 Listen](http://www.tigoe.com/blog/category/physicalcomputing/405/)
-and be prepared to discuss both (Ronit and Saf to lead)
+and be prepared to discuss both (Ronit and Genie to lead)
 - Read about 
 [analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
 - Read about
