@@ -653,16 +653,6 @@ Discussion:
 
 ### May 31 2021
 
-#### Announcements
-Good news everyone! Your work can be in the 
-[gallery](https://www.nyuadim.com/gallery/) on the IM website, 
-to serve as inspiration for other students, 
-to be an example of what we do in IM, and so that you can be famous!
-The process is simple. Fill out 
-[this](https://forms.gle/7S7xUrErhP37vpVy7) 
-easy application form for your work to be considered.
-You can submit as many pieces as you like.
-
 #### Homework feedback
 - Problems? Observations? 
 - What was the most difficult thing in the first assignment? Can you think of
@@ -803,14 +793,25 @@ and works in Arduino also exactly the same way.
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
 ### June 1: Transformations, Text, CSV files, Events, Perlin noise
+
 ### todays-lecture
 - Record
 - Turn off distractions
-- Discussion: The Art of Interactive Design, Ch. 1 (Andres and Saf)
 - Any questions about classes and functions?
 
-#### Transformations
+#### Announcements
+Good news everyone! Your work can be in the 
+[gallery](https://www.nyuadim.com/gallery/) on the IM website, 
+to serve as inspiration for other students, 
+to be an example of what we do in IM, and so that you can be famous!
+The process is simple. Fill out 
+[this](https://forms.gle/7S7xUrErhP37vpVy7) 
+easy application form for your work to be considered.
+You can submit as many pieces as you like.
 
+#### Discussion: The Art of Interactive Design, Ch. 1 (Andres and Saf)
+
+#### Transformations
 Transformationss move the canvas 
 so you can draw in different places with the same code
 - Available 2D transforms are 
