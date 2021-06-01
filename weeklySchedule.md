@@ -179,14 +179,12 @@ As always, document your project:
 Reading Assignment:
 
 - Watch Lauren McCarthy's Eyeo talk [You, Me, and My
-Computer](https://vimeo.com/110607681) 
+Computer](https://vimeo.com/110607681)  (45 minutes)
 and be prepared to discuss (Hanaan and Ilya to lead)
 - Read [this](https://processing.org/tutorials/pixels/) 
 tutorial on working with pixels or watch 
-all of Shiffman's tutorials on working with Images and Pixels
-[here](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9). 
-That's about an hour and a half all together so make sure you give yourself
-time to finish before class
+all 7 of Shiffman's tutorials on working with Images and Pixels
+[here](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9). (About an hour and a half)
 
 #### Assignments Due June 3
 
