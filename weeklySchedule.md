@@ -130,7 +130,6 @@ As always, document your project:
 Functions, Arrays, and Object-Oriented Programming,
 Loading Data, Displaying text, Transformations (Whew!)
 
-##### todays-assignment
 #### Assignments Due June 1
 
 Reading Assignment:
@@ -174,6 +173,7 @@ As always, document your project:
 	- Describe anything interesting or clever about your program
 
 
+##### todays-assignment
 #### Assignments Due June 3
 
 Reading Assignment:
@@ -190,15 +190,13 @@ time to finish before class
 
 Production Assignment:
 
-- Create either a data visualization or a generative text. 
+- Create a work of art using transformations and classes in some way
 
 Document your project as always, with the following additions:
-
 - At the beginning of your program in a comment block include:
-	- The overall concept
 	- Your name and assignment due date
-	- Instructions for usage if it's interactive
-	- The source of your data
+	- The overall concept
+	- Instructions for usage if it's interactive (it doesn't have to be)
 
 ### Week 3 (June 7 - 10)
 
