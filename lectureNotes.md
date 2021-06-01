@@ -651,10 +651,7 @@ Discussion:
 - How could I make the ball move sideways?
 - How could I make it bounce off the walls as well?
 
-### todays-lecture
 ### May 31 2021
-- Record
-- Turn off distractions
 
 #### Announcements
 Good news everyone! Your work can be in the 
@@ -805,14 +802,16 @@ and works in Arduino also exactly the same way.
 
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
-### June 1
-- Discussion: The Art of Interactive Design, Ch. 1 (Andres and Genie)
-- Look at homework
+### June 1: Transformations, Text, CSV files, Events, Perlin noise
+### todays-lecture
+- Record
+- Turn off distractions
+- Discussion: The Art of Interactive Design, Ch. 1 (Andres and Saf)
 - Any questions about classes and functions?
 
 #### Transformations
 
-Transforms move the canvas 
+Transformationss move the canvas 
 so you can draw in different places with the same code
 - Available 2D transforms are 
 	- `translate()`
