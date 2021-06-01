@@ -174,7 +174,7 @@ As always, document your project:
 
 
 ##### todays-assignment
-#### Assignments Due June 3
+#### Assignments Due June 2
 
 Reading Assignment:
 
@@ -187,6 +187,8 @@ all of Shiffman's tutorials on working with Images and Pixels
 [here](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9). 
 That's about an hour and a half all together so make sure you give yourself
 time to finish before class
+
+#### Assignments Due June 3
 
 Production Assignment:
 
