@@ -794,11 +794,6 @@ and works in Arduino also exactly the same way.
 
 ### June 1: Transformations, Text, CSV files, Events, Perlin noise
 
-### todays-lecture
-- Record
-- Turn off distractions
-- Any questions about classes and functions?
-
 #### Announcements
 Good news everyone! Your work can be in the 
 [gallery](https://www.nyuadim.com/gallery/) on the IM website, 
@@ -1275,43 +1270,17 @@ void draw() {
 
 ### February 16 2021
 
-##### Lauren McCarthy (Ayush and Deborah)
+### todays-lecture
+- Record
+- Turn off distractions
 
-````
-
-
-(who asked about blank lines - Chinonyerem?)
-
-
-
-
-````
-
-Artist Talk: Lauren McCarthy - You Can Say, Talk To Me
-When: Sun, January 21st, 7pm - 8pm
-[Zoom](https://nyu.zoom.us/j/97855583067)
-
-Captivated by the ways we are taught to interact with algorithms, and how this
-shapes the way we interact with each other, artist Lauren McCarthy examines
-social relationships in the midst of surveillance, automation, and algorithmic
-living. Through performance, software, electronics, internet, film,
-photography, and installation, her work exists within and beyond the gallery,
-seeking edges of art and media performance. Her work is a critique of the
-simultaneous technological and social systems we are building around ourselves
-and the rules that apply when we introduce glitches.
-
-##### Look at homework due today
-
-##### Look at homework due Thursday (yes, Thursday)
-
-### February 18 2021
+##### Lauren McCarthy (Hanaan and Ilya)
 
 #### Midterm projects
 
-I think I mistakenly said it is due after spring break. I was wrong. It is due
-on March 4.
-
-Quickly look at each project
+Midterm projects will be due on Monday June 14 
+but we will start working on Arduino sometime next week
+after we cover images, sound, and the items we skipped
 
 #### Working with Images
 
