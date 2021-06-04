@@ -173,7 +173,6 @@ As always, document your project:
 	- Describe anything interesting or clever about your program
 
 
-##### todays-assignment
 #### Assignments Due June 2
 
 Reading Assignment:
@@ -202,15 +201,32 @@ Document your project as always, with the following additions:
 
 Image Processing, introducing midterm project, Sound
 
-#### Assignments Due June 8
+##### todays-assignment
+#### Assignments Due June 7
 
-Bring an idea (or ideas) to class for your midterm. 
-We will spend part of class this week working on your midterms.
+Reading Assignment:
 
-Midterm project due on June 10:
+- Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) 
+and be prepared to discuss (Minsoek and Navid to lead)
+
+Production Assignment:
+
+- Make a *simple* work of art using some form of image manipulation
+	- Read an image from a file using `loadImage()`
+	- Optionally, also draw on the canvas
+	- Load the canvas into the `pixels` array using `loadPixels()`
+	- Manipulate the pixels array in some intentional way 
+		(intentional so that you will know if it's working the way you want it to)
+	- Display the `pixels` array on your canvas using `updatePixels()`
+- Bring an idea (or ideas) to class for your midterm, described below. You may
+	change your idea as you work on it, but I want you to have some idea to
+	start with on Monday.
+
+Midterm project due on June 14:
 
 Make a game using everything you have learned so far
 - The game can be for one or more players
+- The game must not be a shooting game (down with violence!)
 - The game must include
 	- At least one shape
 	- At least one image
@@ -219,9 +235,9 @@ Make a game using everything you have learned so far
 - The game must start with a screen giving instructions, and must wait there 
 until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
-without closing and restarting the program
+**without closing and restarting the program**
 
-#### Assignments Due June 9:
+#### Assignments Due June ?:
 
 Production Assignment:
 
@@ -239,9 +255,6 @@ and if so, how, the results of today's work
 has caused you to modify your plan for your midterm project.
 
 Reading Assignment:
-
-- Read [Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) 
-and be prepared to discuss (Minsoek and Navid to lead)
 
 
 #### Assignments Due June 10

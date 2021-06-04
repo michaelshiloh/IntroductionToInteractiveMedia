@@ -1198,81 +1198,7 @@ function with the appropriate name. See *mouse* and *keyboard*
 in the Processing Reference Page.
 
 * What happens if I click the mouse more than 10 times?  
-
-##### Array Lists
-
-Arrays are great, but they are of fixed size. There is an extension of the
-array concept called an ArrayList which allows the size to be manipulated
-dynamically.
-
-Here is a short example showing how to work with ArrayLists:
-
-````
-class Thing {
-  int i;
-  float f;
-  
-  Thing(int _i, float _f) {
-    i = _i;
-    f = _f;
-  }
-  
-  int getInt() {
-    return i;
-  }
-  
-  float getFloat() {
-    return f;
-  }
-}
-
-ArrayList<Thing> myThings = new ArrayList<Thing>();
-
-void setup() {
-
-  // The ArrayList should be empty
-  println(myThings.size());
-
-  for (int i = 0; i < 10; i++) {
-    myThings.add(new Thing(i, float(i)));
-    println(myThings.size()); // not that size() is a function!
-  }
-
-  // The value at index 5 should be 5
-  // Just like arrays, the index starts at zero
-  // so index 5 is the sixth item
-  println("at index 5, x = " + myThings.get(5).getInt());
-}
-
-void mouseClicked() {
-  myThings.add(new Thing(mouseX, mouseY));
-  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
-}
-
-void keyPressed() {
-  if (key == 'd') {
-    myThings.remove(0); // remove the first vector
-    println("removed the first Thing, size is now " + myThings.size());
-  }
-
-  if (key == 'p') {
-    for (int i = 0; i < myThings.size(); i++) {
-      Thing t = myThings.get(i);
-      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
-    }
-  }
-}
-
-// Need to have a draw() function so that callbacks occur
-void draw() {
-}
-````
-
 ### June 2 2021
-
-### todays-lecture
-- Record
-- Turn off distractions
 
 ##### Lauren McCarthy (Hanaan and Ilya)
 
@@ -1488,7 +1414,88 @@ Aaron's
 [method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
 
 
-### February 23 2021
+### June 7
+
+### todays-lecture: Arrays, ArrayLists, Sound
+- Record
+- Turn off distractions
+
+- Discussion: Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things (Minsoek and Navid)
+
+
+##### Array out-of-bounds
+In the last example that I showed last week (talking about events), why did my
+program crash after I clicked the mouse 10 times?
+
+What could I do to prevent this?
+
+##### ArrayLists
+Arrays are great, but they are of fixed size. There is an extension of the
+array concept called an ArrayList which allows the size to be manipulated
+dynamically.
+
+Here is a short example showing how to work with ArrayLists:
+
+````
+class Thing {
+  int i;
+  float f;
+  
+  Thing(int _i, float _f) {
+    i = _i;
+    f = _f;
+  }
+  
+  int getInt() {
+    return i;
+  }
+  
+  float getFloat() {
+    return f;
+  }
+}
+
+ArrayList<Thing> myThings = new ArrayList<Thing>();
+
+void setup() {
+
+  // The ArrayList should be empty
+  println(myThings.size());
+
+  for (int i = 0; i < 10; i++) {
+    myThings.add(new Thing(i, float(i)));
+    println(myThings.size()); // not that size() is a function!
+  }
+
+  // The value at index 5 should be 5
+  // Just like arrays, the index starts at zero
+  // so index 5 is the sixth item
+  println("at index 5, x = " + myThings.get(5).getInt());
+}
+
+void mouseClicked() {
+  myThings.add(new Thing(mouseX, mouseY));
+  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
+}
+
+void keyPressed() {
+  if (key == 'd') {
+    myThings.remove(0); // remove the first vector
+    println("removed the first Thing, size is now " + myThings.size());
+  }
+
+  if (key == 'p') {
+    for (int i = 0; i < myThings.size(); i++) {
+      Thing t = myThings.get(i);
+      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
+    }
+  }
+}
+
+// Need to have a draw() function so that callbacks occur
+void draw() {
+}
+````
 
 #### Sound
 
