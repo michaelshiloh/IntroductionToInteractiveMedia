@@ -218,6 +218,8 @@ Production Assignment:
 	- Manipulate the pixels array in some intentional way 
 		(intentional so that you will know if it's working the way you want it to)
 	- Display the `pixels` array on your canvas using `updatePixels()`
+	- Document your project properly as in the previous assignment
+	- Upload a screenshot of your work of art to our Discord channel
 - Bring an idea (or ideas) to class for your midterm, described below. You may
 	change your idea as you work on it, but I want you to have some idea to
 	start with on Monday.

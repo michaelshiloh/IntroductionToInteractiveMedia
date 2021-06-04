@@ -1520,8 +1520,6 @@ page](https://processing.org/reference/libraries/sound/index.html)
 2. New concept: ````switch()```` statement
 3. ````keyPressed()```` is another example of a ````callback function ````
 
-### February 25 2021
-
 ##### Examples from Learning Processing chapter 20
 
 - File -> Examples -> Contributed Examples -> Learning Processing ->
