@@ -1422,12 +1422,12 @@ Aaron's
 
 - Discussion: Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things (Minsoek and Navid)
 
-
-##### Array out-of-bounds
-In the last example that I showed last week (talking about events), why did my
-program crash after I clicked the mouse 10 times?
-
-What could I do to prevent this?
+##### Homework feedback
+- Descriptions:
+	- address the specifics of the homework assignment (class, transformation)
+- Functions that do something only for a class should be inside the class
+- Questions to Discord
+- create new objects when something happens (mouse, bounce)
 
 ##### ArrayLists
 Arrays are great, but they are of fixed size. There is an extension of the
@@ -1633,6 +1633,12 @@ Debugging
 - Paste the error message into Google!
 - Make changes in small pieces and test after each piece
 - Use Discord!
+
+##### Array out-of-bounds
+In the last example that I showed last week (talking about events), why did my
+program crash after I clicked the mouse 10 times?
+
+What could I do to prevent this?
 
 ### March 2 2021
 - **Get kits from the bookstore**
