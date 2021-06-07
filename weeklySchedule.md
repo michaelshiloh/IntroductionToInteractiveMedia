@@ -262,8 +262,6 @@ Reading Assignment:
 
 - Sparkfun [breadboard
 	tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
-- [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers-the-basics/)
-- [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/digital-input-output/)
 
 Production Assignment:
 
@@ -291,9 +289,14 @@ that might be tied with a very tight ziptie
 
 #### Assignments Due June 9
 
+Reading Assignment:
+
+- [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers-the-basics/)
+- [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/digital-input-output/)
+
 Production Assignment :
 
-Make substantial progress on your midterm project
+Make some progress on your midterm project
 - Update your journal with your progress
 - Be prepared to discuss any problems or questions that may have arisen
 
