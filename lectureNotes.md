@@ -1593,6 +1593,8 @@ void mousePressed() {
 
 Another [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
 
+##### Midterm project ideas
+
 ##### Blocking vs. non-blocking functions
 
 - Which function is non-blocking?

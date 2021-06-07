@@ -201,7 +201,6 @@ Document your project as always, with the following additions:
 
 Image Processing, introducing midterm project, Sound
 
-##### todays-assignment
 #### Assignments Due June 7
 
 Reading Assignment:
@@ -239,12 +238,13 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 **without closing and restarting the program**
 
-#### Assignments Due June ?:
+##### todays-assignment
+#### Assignments Due June 8:
 
 Production Assignment:
 
-- Make some progress on you midterm project
-Document in a new folder called ````midtermProject````
+- Prepare to document progress on your midterm project:
+Create a new folder called ````midtermProject````
 - In that folder create a new file called journal.md.
 Start with a preliminary description of what
 you intend for your project, followed by
@@ -255,29 +255,8 @@ Discuss what worked and what didn't
 At the end of each journal entry, describe whether, 
 and if so, how, the results of today's work
 has caused you to modify your plan for your midterm project.
-
-Reading Assignment:
-
-
-#### Assignments Due June 10
-
-Production Assignment :
-
-**Finish your midterm project**
-
-Documentation:
-- README.md to include 
-	- At least everything we have included up to now
-	- Clear instructions for playing the game
-	- Screen shots of different game stages
-	- Description of major problems and modifications you made to overcome them
-- Program to include
-	- At least everything we have included up to now
-	- Your name and assignment due date
-	- Well commented code, especially for any confusing or tricky parts 
-
-
-#### Assignments Due June 14
+As always, pictures, hand drawn sketches, pieces of code, etc. 
+can all be used to make your journal interesting and informative.
 
 Reading Assignment:
 
@@ -299,7 +278,8 @@ Production Assignment:
 - Install the Arduino IDE from
 	[here](https://www.arduino.cc/en/Main/Software). If you are on Windows chose
 	the Windows Installer.
-- In your kit is a bundle of jumper wires with a very tight ziptie 
+- In your kit is a bundle of jumper wires 
+that might be tied with a very tight ziptie 
 	that must be carefully removed. Please do this before class because 
 	it may take you a while to find the right tool. 
 	A sharp pair of scissors should work. A knife might damage the wires 
@@ -308,6 +288,30 @@ Production Assignment:
 ![](media/jumpersWithCableTieRemoved.jpg)
 
 - **Be careful not to damage the wires or yourselves!**
+
+#### Assignments Due June 9
+
+Production Assignment :
+
+Make substantial progress on your midterm project
+- Update your journal with your progress
+- Be prepared to discuss any problems or questions that may have arisen
+
+#### Assignments Due June 10
+
+Start writing the documentation for your midterm project
+- The standard of documentation is higher than the homework 
+assignments. Check your grades and if you didn't get 10 points
+you can make an appointment to discuss with me how you can improve
+- README.md to include 
+	- At least everything we have included up to now
+	- Clear instructions for playing the game
+	- Screen shots of different game stages
+	- Description of major problems and modifications you made to overcome them
+- Program to include
+	- At least everything we have included up to now
+	- Very commented code, especially for any confusing or tricky parts 
+
 
 ### Week 4 (June 14 - 17) 
 
