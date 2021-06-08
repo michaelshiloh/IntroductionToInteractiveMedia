@@ -1416,18 +1416,9 @@ Aaron's
 
 ### June 7
 
-### todays-lecture: Arrays, ArrayLists, Sound
-- Record
-- Turn off distractions
+### Arrays, ArrayLists, Sound
 
 - Discussion: Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things (Minsoek and Navid)
-
-##### Homework feedback
-- Descriptions:
-	- address the specifics of the homework assignment (class, transformation)
-- Functions that do something only for a class should be inside the class
-- Questions to Discord
-- create new objects when something happens (mouse, bounce)
 
 ##### ArrayLists
 Arrays are great, but they are of fixed size. There is an extension of the
@@ -1497,6 +1488,11 @@ void draw() {
 }
 ````
 
+### June 8
+### todays-lecture
+- Record
+- Turn off distractions
+
 #### Sound
 
 Sound library [reference
@@ -1520,6 +1516,11 @@ page](https://processing.org/reference/libraries/sound/index.html)
 2. New concept: ````switch()```` statement
 3. ````keyPressed()```` is another example of a ````callback function ````
 
+##### Synthesis
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+
 ##### Examples from Learning Processing chapter 20
 
 - File -> Examples -> Contributed Examples -> Learning Processing ->
@@ -1530,31 +1531,6 @@ chp_20_sound -> example_20_02_sound_effect
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
 #### If we had multiple sound files, how would we play the next one when we click the mouse?
-
-Let's try this together before you look at a couple of ways to solve this
-
-````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-````
 
 One solution:
 
@@ -1579,6 +1555,7 @@ void setup() {
 }
 
 void draw() {
+// Nothing to do in draw(), but it is necessary in order to catch events
 }
 
 void mousePressed() {
@@ -1593,8 +1570,6 @@ void mousePressed() {
 
 Another [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
 
-##### Midterm project ideas
-
 ##### Blocking vs. non-blocking functions
 
 - Which function is non-blocking?
@@ -1607,10 +1582,7 @@ What about using the mouse position to select sound tracks?
 Let's try this together before you look at the 
 [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
 
-##### Synthesis
-
-We can create our own complex sounds starting with basic oscillators and then
-changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+##### Midterm project ideas
 
 ##### Debugging
 
@@ -1635,6 +1607,7 @@ Debugging
 - Paste the error message into Google!
 - Make changes in small pieces and test after each piece
 - Use Discord!
+- **Use Github to backup your work frequently!**
 
 ##### Array out-of-bounds
 In the last example that I showed last week (talking about events), why did my
@@ -1642,15 +1615,16 @@ program crash after I clicked the mouse 10 times?
 
 What could I do to prevent this?
 
-### March 2 2021
-- **Get kits from the bookstore**
-- Look at homework for March 18
+##### Homework feedback
+- Descriptions:
+	- address the specifics of the homework assignment (class, transformation)
+- Functions that do something only for a class should be inside the class
+- Questions to Discord
+- create new objects when something happens (mouse, bounce)
 
-### March 4 2021
-- **Use Github to backup your work frequently!**
-- Remember homework due March 18
+##### Make up lesson for yesterday
 
-### March 16 2021
+### June 9
 
 #### Electricity 
 
