@@ -1574,7 +1574,7 @@ Another [solution](https://github.com/aaronsherwood/introduction_interactive_med
 
 - Which function is non-blocking?
 - How do you know when a non-blocking function is done?
-- Soudfile [reference
+- Soundfile [reference
 	page](https://processing.org/reference/libraries/sound/SoundFile.html)
 
 What about using the mouse position to select sound tracks?
