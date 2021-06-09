@@ -302,6 +302,8 @@ Make some progress on your midterm project
 
 #### Assignments Due June 10
 
+Production Assignment :
+
 Start writing the documentation for your midterm project
 - The standard of documentation is higher than the homework 
 assignments. Check your grades and if you didn't get 10 points
@@ -314,6 +316,13 @@ you can make an appointment to discuss with me how you can improve
 - Program to include
 	- At least everything we have included up to now
 	- Very commented code, especially for any confusing or tricky parts 
+
+Reading Assignment:
+
+- Read about 
+[analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
+- Read about
+[analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
 
 
 ### Week 4 (June 14 - 17) 
@@ -329,10 +338,6 @@ Reading Assignment:
 [Making Interactive Art: Set the Stage, Then Shut Up and
 Listen](http://www.tigoe.com/blog/category/physicalcomputing/405/)
 and be prepared to discuss both (Ronit and Genie to lead)
-- Read about 
-[analog output](https://itp.nyu.edu/physcomp/lessons/analog-output)
-- Read about
-[analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
 
 Production Assignment
 
