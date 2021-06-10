@@ -238,7 +238,6 @@ until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 **without closing and restarting the program**
 
-##### todays-assignment
 #### Assignments Due June 8:
 
 Production Assignment:
@@ -329,6 +328,7 @@ Reading Assignment:
 
 Introduction to Electricity and Arduino Digital Input and Output
 
+##### todays-assignment
 #### Assignments due June 14
 
 Reading Assignment:
