@@ -1733,6 +1733,7 @@ Ohm's law
 
 ### June 10 2021
 
+record
 Read the midterm project assignment!!!!
 
 ### todays-lecture
