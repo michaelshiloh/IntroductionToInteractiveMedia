@@ -1733,6 +1733,8 @@ Ohm's law
 
 ### June 10 2021
 
+Read the midterm project assignment!!!!
+
 ### todays-lecture
 #### Arduino finally!
 
@@ -1822,7 +1824,7 @@ Here is a hand drawn schematic example:
 - Haneen last picture of March23 pulldown resistors seem to be in wrong row
 - Schematic problems
 
-#### Analog Input
+#### Analogue Input
 
 Build this circuit. Try to follow the schematic and not the breadboard view:
 
