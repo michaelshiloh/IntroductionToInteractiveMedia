@@ -1489,7 +1489,6 @@ void draw() {
 ````
 
 ### June 8
-### todays-lecture
 - Record
 - Turn off distractions
 
@@ -1732,8 +1731,9 @@ Ohm's law
 		- For a given voltage, the higher the "resistance", 
 			the lower the current
 
-### March 18 2021
+### June 10 2021
 
+### todays-lecture
 #### Arduino finally!
 
 Make sure everything is working
@@ -1800,18 +1800,7 @@ switch is pressed.
 Using two switches you can select between four patterns.
 How is that possible?
 
-````
-
-
-
-
-
-
-
-
-````
-
-Here is the hand drawn schematic example I drew in class:
+Here is a hand drawn schematic example:
 
 ![](media/handDrawnSchematicExample.jpg)
 

@@ -329,7 +329,7 @@ Reading Assignment:
 
 Introduction to Electricity and Arduino Digital Input and Output
 
-#### Assignments due June 15
+#### Assignments due June 14
 
 Reading Assignment:
 
@@ -340,6 +340,8 @@ Listen](http://www.tigoe.com/blog/category/physicalcomputing/405/)
 and be prepared to discuss both (Ronit and Genie to lead)
 
 Production Assignment
+
+- Midterm projects due
 
 - Using at least three momentary switches (often called buttons), and at least
 	three LEDs, create a puzzle that can be solved by pressing the buttons.
