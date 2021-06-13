@@ -357,15 +357,15 @@ Production Assignment
 				so use this as an opportunity to learn
 		- Arduino program with the extension ````.ino````
 			- Comments etc. as we did with Processing programs
-			- ````const int```` variables for all pins 
+			- `const int` variables for all pins 
 				with names that clearly describe what is connected to that pin
 
 ### Week 5 (June 21 - 24)
 
-Analog Input and output, Mapping, Data types, Printing, 
+Analogue Input and output, Mapping, Data types, Printing, Blink without Delay,
 Sound and Servo Motor
 
-#### Assignments Due June 22
+#### Assignments Due June 16
 
 Reading Assignment:
 
@@ -386,10 +386,6 @@ and use this information to control at least two LEDs,
 one in a digital fashion and the other in an analog fashion, 
 in some creative way.
 Document your work:
-- Take a video showing your project working. Be prepared to show this in
-	class:
-	- Close all private programs and screens
-	- Have your browser open to your video
 - New folder named **the date the assignment is due**
 - Describe your project in README.md and include:
 	- A description of your concept and how it was achieved
@@ -397,11 +393,11 @@ Document your work:
 	- A photograph of your project
 	- Problems, if any, and solutions, if any
 	- Anything else you can think of
-	- A link to the video
+	- A link to a video of your project working
 - Upload your program 
 
 
-#### Assignments Due June 24
+#### Assignments Due June 17
 
 Reading Assignment:
 

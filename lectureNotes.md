@@ -1736,7 +1736,6 @@ Ohm's law
 record
 Read the midterm project assignment!!!!
 
-### todays-lecture
 #### Arduino finally!
 
 Make sure everything is working
@@ -1807,10 +1806,11 @@ Here is a hand drawn schematic example:
 
 ![](media/handDrawnSchematicExample.jpg)
 
-### March 23 2021
+### todays-lecture
+### June 14 2021
 
 - Student lead discussion
-- Homework presentations
+- Midterm presentations
 
 ### March 25 2021
 
@@ -1822,8 +1822,6 @@ Here is a hand drawn schematic example:
 - Use constants for pin numbers
 - When you lead the class discussion, minimize the time you spend summarizing
 	the reading. 
-- Haneen last picture of March23 pulldown resistors seem to be in wrong row
-- Schematic problems
 
 #### Analogue Input
 
