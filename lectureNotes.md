@@ -1809,8 +1809,8 @@ Here is a hand drawn schematic example:
 ### todays-lecture
 ### June 14 2021
 
-- Student lead discussion
 - Midterm presentations
+- Student lead discussion ((Ronit and Genie to lead)
 
 ### March 25 2021
 
