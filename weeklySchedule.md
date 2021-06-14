@@ -328,7 +328,6 @@ Reading Assignment:
 
 Introduction to Electricity and Arduino Digital Input and Output
 
-##### todays-assignment
 #### Assignments due June 14
 
 Reading Assignment:
@@ -365,6 +364,15 @@ Production Assignment
 Analogue Input and output, Mapping, Data types, Printing, Blink without Delay,
 Sound and Servo Motor
 
+##### todays-assignment
+#### Assignments Due June 15
+
+- Read about the [voltage
+divider](https://learn.sparkfun.com/tutorials/voltage-dividers).
+Don't worry about the theory or the section on level shifting. 
+The important thing is to absorb a little of the concept of a voltage divider.
+Pay particular attention to *Reading Resistive Sensors*
+
 #### Assignments Due June 16
 
 Reading Assignment:
@@ -372,11 +380,6 @@ Reading Assignment:
 - Read and be prepared to discuss both: (Safal and Salama to lead)
 	- [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 	- [A Response](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
-- Read about the [voltage
-divider](https://learn.sparkfun.com/tutorials/voltage-dividers).
-Don't worry about the theory or the section on level shifting. 
-The important thing is to absorb a little of the concept of a voltage divider.
-Pay particular attention to *Reading Resistive Sensors*
 
 Production Assignment:
 
