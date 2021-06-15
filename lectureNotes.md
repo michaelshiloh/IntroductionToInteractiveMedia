@@ -1806,13 +1806,15 @@ Here is a hand drawn schematic example:
 
 ![](media/handDrawnSchematicExample.jpg)
 
-### todays-lecture
 ### June 14 2021
 
 - Midterm presentations
 - Student lead discussion ((Ronit and Genie to lead)
 
-### March 25 2021
+### todays-lecture
+### June 15 2021
+- Record
+- Turn off distractions
 
 #### Misc
 - Resources are available to help you with your homework (me, Jack), but only
@@ -1836,7 +1838,7 @@ Build this circuit. Try to follow the schematic and not the breadboard view:
 	and so are more suited to a digital input
 
 Do you see a similarity between this circuit and 
-something we learned yesterday?
+something we learned earlier?
 
 Analog sensors can be resistive or not. Resistive sensors all use the same
 pattern: a voltage divider.
@@ -2020,17 +2022,6 @@ What techniques have you learned to help you find problems?
 	- 
 	- 
 	- 
-
-### March 30 2021
-
-- Discussion: A Brief Rant, A Response (Nouf, Rebecca)
-- View homework
-
-### April 1 2021
-
-Time permitting:
-- Review problems people had
-- Review rest of homework
 
 #### Sound
 
