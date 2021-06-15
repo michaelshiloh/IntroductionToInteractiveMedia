@@ -364,7 +364,6 @@ Production Assignment
 Analogue Input and output, Mapping, Data types, Printing, Blink without Delay,
 Sound and Servo Motor
 
-##### todays-assignment
 #### Assignments Due June 15
 
 - Read about the [voltage
@@ -373,6 +372,7 @@ Don't worry about the theory or the section on level shifting.
 The important thing is to absorb a little of the concept of a voltage divider.
 Pay particular attention to *Reading Resistive Sensors*
 
+##### todays-assignment
 #### Assignments Due June 16
 
 Reading Assignment:
@@ -380,6 +380,14 @@ Reading Assignment:
 - Read and be prepared to discuss both: (Safal and Salama to lead)
 	- [A Brief Rant on the Future of Interaction Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 	- [A Response](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
+
+Production Assignment:
+
+While not required, I recommend that you try the in-class exercises that we
+skipped over and be prepared to ask in class any problems or questions that
+came up.
+
+#### Assignments Due June 17
 
 Production Assignment:
 
@@ -399,8 +407,7 @@ Document your work:
 	- A link to a video of your project working
 - Upload your program 
 
-
-#### Assignments Due June 17
+#### Assignments Due June 21
 
 Reading Assignment:
 
@@ -422,7 +429,9 @@ Production Assignment:
 		distance measuring sensor)
 - Document your work as before
 
-### Week 6 (June 28 - July 1)
+### Week 6 (June 21 - June 4)
+
+### Week 7 (June 28 - July 1)
 
 Serial Communication, introduce Final Project,
 DC motors, Construction and Debugging, Final Project Proposal
