@@ -1811,10 +1811,7 @@ Here is a hand drawn schematic example:
 - Midterm presentations
 - Student lead discussion ((Ronit and Genie to lead)
 
-### todays-lecture
 ### June 15 2021
-- Record
-- Turn off distractions
 
 #### Misc
 - Resources are available to help you with your homework (me, Jack), but only
@@ -1943,6 +1940,14 @@ float
 char
 boolean
 ````
+### June 16 2021
+### todays-lecture
+- Record
+- Turn off distractions
+- Questions about `analogRead()` and `analogWrite()`?
+- Questions about building circuits in general?
+
+#### Discussion: Safal and Salama to lead
 
 #### Conventions: Schematics and Wire Colors
 
@@ -2092,12 +2097,7 @@ without using `delay()`:
 	- That is why it is **important** to make connections to the right side of a
 		component!
 
-### April 6 2021
-
-- Discuss readings: Rhea and Soojin
-- Look at (and listen to) homework
-
-### April 8 2021
+### June 17
 
 #### Serial communication
 
