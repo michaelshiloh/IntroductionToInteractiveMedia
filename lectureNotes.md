@@ -1941,9 +1941,6 @@ char
 boolean
 ````
 ### June 16 2021
-### todays-lecture
-- Record
-- Turn off distractions
 - Questions about `analogRead()` and `analogWrite()`?
 - Questions about building circuits in general?
 
@@ -2028,6 +2025,11 @@ What techniques have you learned to help you find problems?
 	- 
 	- 
 
+### June 17
+### todays-lecture
+- Record
+- Turn off distractions
+
 #### Sound
 
 **`tone()`**
@@ -2044,7 +2046,7 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 - Arduino supports tabs just like in Processing
 - Arduino has arrays just like in Processing
 
-**Servo motor**
+#### Servo motor
 
 - [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
 - [Reference
@@ -2055,7 +2057,7 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
 - The `Servo.write()` function is *non-blocking*
 
-#### PWM
+#### More about PWM
 - How do you suppose `analogWrite()` makes an LED dimmer?
 - [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
 - What do `analogWrite()`, `tone()` and `Servo` have in common?
@@ -2097,7 +2099,6 @@ without using `delay()`:
 	- That is why it is **important** to make connections to the right side of a
 		component!
 
-### June 17
 
 #### Serial communication
 
@@ -2156,17 +2157,11 @@ nothing on Arduino is controlled by Processing
 and make it so every time the ball bounces one led lights up and then turns
 off, and you can control the wind from one analog sensor
 
-##### Homework: Note there is reading, production, and writing!
+##### Other serial ports
 
-### April 13 2021
-
-##### Class
-
-- Discuss readings: Riley
-- Look at homework
-
-
-### April 15 2021
+It turns out that Arduino has other ways to communicate. These are more
+advanced, but you can learn more
+[here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
 
 #### Can't upload sketch to Arduino
 1. Make sure the right port is selected
