@@ -372,7 +372,6 @@ Don't worry about the theory or the section on level shifting.
 The important thing is to absorb a little of the concept of a voltage divider.
 Pay particular attention to *Reading Resistive Sensors*
 
-##### todays-assignment
 #### Assignments Due June 16
 
 Reading Assignment:
@@ -407,6 +406,7 @@ Document your work:
 	- A link to a video of your project working
 - Upload your program 
 
+##### todays-assignment
 #### Assignments Due June 21
 
 Reading Assignment:
@@ -427,6 +427,11 @@ Production Assignment:
 		(switch, either momentary or toggle)
 	- You must use at least one analog sensor (photoresistor, potentiometer, or
 		distance measuring sensor)
+		- We did not cover the ultrasonic distance measuring in class, but if you
+			want to use it there are plenty of tutorials available on the internet
+			such as 
+			[this one](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-3b-distance-sensor) from the guide book for our kit.
+
 - Document your work as before
 
 ### Week 6 (June 21 - June 4)
