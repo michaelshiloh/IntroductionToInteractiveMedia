@@ -2078,6 +2078,8 @@ page](https://www.arduino.cc/en/Reference/Servo)
 
 #### Discussion (Shyngys and Vimal)
 
+#### Musical Instruments
+
 #### Blink Without `delay()`
 
 Why do we need this? 
