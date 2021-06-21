@@ -436,10 +436,10 @@ Production Assignment:
 
 ### Week 6 (June 21 - June 4)
 
-### Week 7 (June 28 - July 1)
-
 Serial Communication, introduce Final Project,
 DC motors, Construction and Debugging, Final Project Proposal
+
+### Week 7 (June 28 - July 1)
 
 #### Assignments Due June 29
 

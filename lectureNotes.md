@@ -2026,9 +2026,6 @@ What techniques have you learned to help you find problems?
 	- 
 
 ### June 17
-### todays-lecture
-- Record
-- Turn off distractions
 
 #### Sound
 
@@ -2064,7 +2061,22 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - What is sound?
 - How does a servo motor
 	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+
+#### Theory (continued)
+
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connect things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the right side of a
+		component!
 	
+### June 21
+### todays-lecture
+- Record
+- Turn off distractions
+
+#### Discussion (Shyngys and Vimal)
 
 #### Blink Without `delay()`
 
@@ -2089,16 +2101,6 @@ I](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
 Play a melody and blink an LED 
 without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
-
-#### Theory (continued)
-
-- Review
-- Voltage does **not** change in a conductor
-	- That is why we can connect things to the same node in any order
-- Voltage **does** change when you go across a component
-	- That is why it is **important** to make connections to the right side of a
-		component!
-
 
 #### Serial communication
 
