@@ -2076,9 +2076,9 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Record
 - Turn off distractions
 
-#### Discussion (Shyngys and Vimal)
-
-#### Musical Instruments
+#### Participation
+- Musical Instruments
+- Discussion (Shyngys and Vimal)
 
 #### Blink Without `delay()`
 
