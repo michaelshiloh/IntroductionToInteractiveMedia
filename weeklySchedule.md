@@ -406,7 +406,6 @@ Document your work:
 	- A link to a video of your project working
 - Upload your program 
 
-##### todays-assignment
 #### Assignments Due June 21
 
 Reading Assignment:
@@ -439,14 +438,16 @@ Production Assignment:
 Serial Communication, introduce Final Project,
 DC motors, Construction and Debugging, Final Project Proposal
 
-### Week 7 (June 28 - July 1)
 
-#### Assignments Due June 29
+##### todays-assignment
+#### Assignments Due June 24
 
 Reading Assignment:
 
 - [Graham Pullin, Design Meets Disability](doc/Design_meets_disability.pdf)
-	and be prepared to discuss (??? and ??? to lead)
+	and be prepared to discuss 
+
+#### Assignments Due June 25
 
 Production Assignment:
 
@@ -462,6 +463,7 @@ Document in a new folder called ````finalProject````
 Start with a preliminary description of what you intend for your project.
 Include hand sketches as necessary to illustrate your concept.
 
+### Week 7 (June 28 - July 1)
 #### Assignments Due July 1
 
 Writing Assignment
