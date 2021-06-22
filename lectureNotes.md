@@ -2129,10 +2129,10 @@ without using `delay()`:
 			- One bit at a time, with some kind of timing (serial)
 		- Serial is the most ubiquitous way for computers to talk to each other
 			- But there are many different schemes to specify e.g. the timing
+				- UART
+				- USB - universal serial bus
 				- I2C
 				- SPI
-				- RS-232
-				- USB - universal serial bus
 
 - A critical part of serial communication is the speed, or baud rate.
 - But, laptop is much, much faster than Arduino. What happens if you do this:
