@@ -2082,6 +2082,8 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Record
 - Turn off distractions
 
+##### What do you think were the three most difficult things we've learned so far?
+
 #### Blink Without `delay()`
 
 Why do we need this? 
