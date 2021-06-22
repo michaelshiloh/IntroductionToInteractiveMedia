@@ -2072,13 +2072,15 @@ page](https://www.arduino.cc/en/Reference/Servo)
 		component!
 	
 ### June 21
-### todays-lecture
-- Record
-- Turn off distractions
 
 #### Participation
 - Musical Instruments
 - Discussion (Shyngys and Vimal)
+
+### June 22
+### todays-lecture
+- Record
+- Turn off distractions
 
 #### Blink Without `delay()`
 
@@ -2175,7 +2177,7 @@ advanced, but you can learn more
 1. Make sure the USB cables are plugged in all the way
 1. Try a different USB port on your laptop (don't forget to select this port in the Arduino IDE)
 1. If you have a Processing sketch communicating with Arduino, 
-	you must stop the Processing sketch before you upload to Arduino
+	**you must stop the Processing sketch before you upload to Arduino**
 
 #### Making things move 
 
