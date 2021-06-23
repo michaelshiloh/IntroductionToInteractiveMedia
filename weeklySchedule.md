@@ -435,8 +435,7 @@ Production Assignment:
 
 ### Week 6 (June 21 - June 4)
 
-Serial Communication, introduce Final Project,
-DC motors, Construction and Debugging, Final Project Proposal
+Getting rid of delay, Serial Communication, 
 
 
 ##### todays-assignment
@@ -449,10 +448,20 @@ Reading Assignment:
 
 #### Assignments Due June 25
 
+
+#### Assignments Due June 28
+
 Production Assignment:
 
 - Make a simple game that involves some kind of communication between Arduino
-	and Processing. Document as before.
+	and Processing. 
+	- Document as before.
+	- Post a screenshot and short description to Discord
+
+### Week 7 (June 28 - July 1)
+DC motors, LCD, Construction and Debugging, Final Project Proposal
+
+#### Assignments Due (TBA)
 
 Writing Assignment:
 
@@ -462,9 +471,6 @@ Document in a new folder called ````finalProject````
 - In that folder create a new file called journal.md.
 Start with a preliminary description of what you intend for your project.
 Include hand sketches as necessary to illustrate your concept.
-
-### Week 7 (June 28 - July 1)
-#### Assignments Due July 1
 
 Writing Assignment
 

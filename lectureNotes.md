@@ -2146,9 +2146,6 @@ while (1) {
 - Handshaking to the rescue!
 
 ### June 23
-### todays-lecture
-- Record
-- Turn off distractions
 
 #### Serial communication (continued)
 
@@ -2161,24 +2158,31 @@ Now build this circuit:
 
 [Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
 
-##### In-class exercise! Yay!
+### June 24
+### todays-lecture
+- Record
+- Turn off distractions
 
-Break into groups and, referring to the given code and circuit
+- Discuss Deisgn Meets Disability
+- In class exercise
+
+##### In-class exercise! 
+
+Break into groups and, referring to the code and circuit
+we used yesterday,
 do the following, always using handshaking:
 
-1. Make something that uses only one sensor on Arduino and makes the ellipse in
+1. Starting from scratch, make 
+something that uses only one sensor on Arduino and makes the ellipse in
 processing move on the horizontal axis, in the middle of the screen, and
 nothing on Arduino is controlled by Processing
-1. Make something that controls the LED brightness from Processing
-1. Take Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde)
-and make it so every time the ball bounces one led lights up and then turns
-off, and you can control the wind from one analog sensor
-
-##### Other serial ports
-
-It turns out that Arduino has other ways to communicate. These are more
-advanced, but you can learn more
-[here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
+1. Starting from scratch, make 
+something that controls the LED brightness from Processing
+1. Starting from
+Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde),
+modify it so that every time the ball bounces an led lights for 100
+milliseconds,
+and you can control the wind from the potentiometer.
 
 #### Can't upload sketch to Arduino
 1. Make sure the right port is selected
@@ -2190,6 +2194,13 @@ advanced, but you can learn more
 1. If you have a Processing sketch communicating with Arduino, 
 	**you must stop the Processing sketch before you upload to Arduino**
 
+##### Other serial ports
+
+It turns out that Arduino has other ways to communicate. These are more
+advanced, but you can learn more
+[here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
+
+### June 28
 #### Making things move 
 
 An LED can make light, what makes motion?
