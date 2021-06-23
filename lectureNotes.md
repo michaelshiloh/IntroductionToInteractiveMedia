@@ -2078,9 +2078,6 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Discussion (Shyngys and Vimal)
 
 ### June 22
-### todays-lecture
-- Record
-- Turn off distractions
 
 ##### What do you think were the three most difficult things we've learned so far?
 
@@ -2134,7 +2131,7 @@ without using `delay()`:
 				- I2C
 				- SPI
 
-- A critical part of serial communication is the speed, or baud rate.
+- A critical part of UART serial communication is the speed, or baud rate.
 - But, laptop is much, much faster than Arduino. What happens if you do this:
 
 ````
@@ -2147,6 +2144,18 @@ while (1) {
 	- Your laptop is (1) very fast and (2) has a big buffer
 	- Your Arduino is (1) much slower and (2) has a very small buffer
 - Handshaking to the rescue!
+
+### June 23
+### todays-lecture
+- Record
+- Turn off distractions
+
+#### Serial communication (continued)
+
+Start with this (no circuit needed):
+- File -> Examples -> Communication -> Graph
+
+Now build this circuit:
 
 ![](media/serialCommsSchematic.jpg)
 
