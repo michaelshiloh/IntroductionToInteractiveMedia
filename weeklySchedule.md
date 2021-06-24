@@ -438,7 +438,6 @@ Production Assignment:
 Getting rid of delay, Serial Communication, 
 
 
-##### todays-assignment
 #### Assignments Due June 24
 
 Reading Assignment:
@@ -446,9 +445,8 @@ Reading Assignment:
 - [Graham Pullin, Design Meets Disability](doc/Design_meets_disability.pdf)
 	and be prepared to discuss 
 
-#### Assignments Due June 25
 
-
+##### todays-assignment
 #### Assignments Due June 28
 
 Production Assignment:
