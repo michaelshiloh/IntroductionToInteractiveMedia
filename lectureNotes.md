@@ -2175,14 +2175,20 @@ do the following, always using handshaking:
 1. Starting from scratch, make 
 something that uses only one sensor on Arduino and makes the ellipse in
 processing move on the horizontal axis, in the middle of the screen, and
-nothing on Arduino is controlled by Processing
+nothing on Arduino is controlled by Processing. 
+One possible solution is
+[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicArduinoToProcessing/basicArduinoToProcessing.ino)
 1. Starting from scratch, make 
 something that controls the LED brightness from Processing
+One possible solution is
+[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicProcessingToArduino/basicProcessingToArduino.ino)
 1. Starting from
 Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde),
 modify it so that every time the ball bounces an led lights for 100
 milliseconds,
-and you can control the wind from the potentiometer.
+and you can control the wind from a potentiometer.
+One possible solution is
+[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
 
 #### Can't upload sketch to Arduino
 1. Make sure the right port is selected
