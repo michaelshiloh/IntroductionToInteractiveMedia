@@ -453,6 +453,7 @@ Production Assignment:
 
 - Make a simple game that involves some kind of communication between Arduino
 	and Processing. 
+	- Always use handshaking
 	- Document as before.
 	- Post a screenshot and short description to Discord
 
