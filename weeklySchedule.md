@@ -460,16 +460,41 @@ Production Assignment:
 ### Week 7 (June 28 - July 1)
 DC motors, LCD, Construction and Debugging, Final Project Proposal
 
-#### Assignments Due (TBA)
+#### Assignments Due June 30
 
-Writing Assignment:
+Writing Assignment: First Draft Final Project Proposal
 
-- Write a preliminary concept for your final project, which must involved 
-both Arduino and Processing.
-Document in a new folder called ````finalProject````
-- In that folder create a new file called journal.md.
-Start with a preliminary description of what you intend for your project.
-Include hand sketches as necessary to illustrate your concept.
+- In Arduino, we learned about (or we will this week):
+	- Analog Input
+	- Analog Output
+	- Digital Input
+	- Digital Output
+	- Servo motor
+	- Tone
+	- DC motor
+	- LCD
+	- Ultrasonic distance measuring sensor
+- In Processing, we learned about (or we will this week):
+	- Drawing with primitives
+	- Transformations
+	- Images
+	- Animation
+	- Sprites
+	- Sound
+	- Text
+	- Files
+- (If I forgot any please let me know)
+- Write a preliminary concept for your final project. Your final project must
+	incorporate at least 4 of the above items from Arduino and 
+	at least 4 of the above items from Processing, and some form of
+	communication between the two.
+- Create a document in a new folder called ````finalProject````
+	- In that folder create a new file called journal.md.
+	Start with a preliminary description of what you intend for your project.
+	Include hand sketches as necessary to illustrate your concept.
+- If your project is a game, it must not be a shooting game 
+
+#### Assignments Due July 1 (TBA)
 
 Writing Assignment
 

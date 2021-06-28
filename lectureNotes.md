@@ -2159,9 +2159,6 @@ Now build this circuit:
 [Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
 
 ### June 24
-### todays-lecture
-- Record
-- Turn off distractions
 
 - Discuss Deisgn Meets Disability
 - In class exercise
@@ -2328,6 +2325,13 @@ void loop() {
 }
 
 ````
+
+### June 29
+### todays-lecture
+- Record
+- Turn off distractions
+
+LCD tutorial[(
 
 ##### Look at final project proposals
 
