@@ -2334,6 +2334,7 @@ void loop() {
 LCD
 [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
 ![](media/arduinoLCDSchematic.jpg)
+<img src="media/arduinoLCDSchematic.jpg" width="300">
 
 ##### Look at final project proposals
 
