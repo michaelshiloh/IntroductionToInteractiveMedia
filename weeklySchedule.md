@@ -446,7 +446,6 @@ Reading Assignment:
 	and be prepared to discuss 
 
 
-##### todays-assignment
 #### Assignments Due June 28
 
 Production Assignment:
@@ -460,6 +459,7 @@ Production Assignment:
 ### Week 7 (June 28 - July 1)
 DC motors, LCD, Construction and Debugging, Final Project Proposal
 
+##### todays-assignment
 #### Assignments Due June 30
 
 Writing Assignment: First Draft Final Project Proposal
