@@ -2336,6 +2336,12 @@ LCD
 [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
 <img src="media/arduinoLCDSchematic.jpg" width="600">
 
+Bonus: How to tell if you touch a wall of a photograph
+- [RGB color space](https://en.wikipedia.org/wiki/RGB_color_space)
+- [Euclidian distance](https://en.wikipedia.org/wiki/Euclidean_distance)
+- The Processing [`dist()`](https://processing.org/reference/dist_.html)
+	function
+
 ##### Look at final project proposals
 
 ##### Time permitting:
