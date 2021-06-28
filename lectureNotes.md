@@ -2331,7 +2331,9 @@ void loop() {
 - Record
 - Turn off distractions
 
-LCD tutorial[(
+LCD
+[tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
+![](media/arduinoLCDSchematic.jpg)
 
 ##### Look at final project proposals
 
