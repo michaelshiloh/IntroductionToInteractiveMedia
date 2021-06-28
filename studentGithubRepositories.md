@@ -43,4 +43,4 @@ recognize as you.
 [Saf](https://github.com/safimasafi/introtoim.git)  
 [Safal](https://github.com/safal312/introToIM)  
 [Salama](https://github.com/SalamaAlmheiri/introToIM)  
-[Shyngyn](https://github.com/karishev/introtoim)  
+[Shyngys](https://github.com/karishev/introtoim)  
