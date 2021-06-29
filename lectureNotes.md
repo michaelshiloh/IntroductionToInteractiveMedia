@@ -2328,9 +2328,6 @@ void loop() {
 ````
 
 ### June 29
-### todays-lecture
-- Record
-- Turn off distractions
 
 LCD
 [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
@@ -2341,8 +2338,59 @@ Bonus: How to tell if you touch a wall of a photograph
 - [Euclidian distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 - The Processing [`dist()`](https://processing.org/reference/dist_.html)
 	function
+- To extract the color of a pixel at a particular location:
+	- Load the pixels array
+	- Get the color value of the pixel at the location desired
+		(`pixels[y*width+x]`)
+	- Extract each color value using the
+		[`red()`](https://processing.org/reference/red_.html), `green()`, and `blue()` functions
+
+### June 30
+### todays-lecture
+- Record
+- Turn off distractions
 
 ##### Look at final project proposals
+
+
+##### Ultrasonic distance measuring sensor
+- [Tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-3b-distance-sensor)  
+- Circuit: 
+	- const int trigPin = 11;           
+	- const int echoPin = 12;
+
+##### Reading files
+[Reading Comma Separated Value (CSV) 
+files](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/lectureNotes.md/#how-to-process-csv-files)
+- If you want to dig deeper, try
+	[this](https://processing.org/tutorials/data/)
+
+##### Writing files
+- [`saveStrings()`](https://processing.org/reference/saveStrings_.html)
+- `PrintWrite` class
+
+````
+PrintWriter output;
+
+void setup() {
+  // Create a new file in the sketch directory
+  output = createWriter("positions.txt");
+}
+
+void draw() {
+}
+
+void mouseReleased() {
+  point(mouseX, mouseY);
+  output.println("Mouse X=" + mouseX + " mouse Y=" + mouseY);  // Write the coordinate to the file
+}
+
+void keyPressed() {
+  output.flush();  // Writes the remaining data to the file
+  output.close();  // Finishes the file
+  exit();  // Stops the program
+}
+````
 
 ##### Time permitting:
 
@@ -2394,10 +2442,6 @@ when the switch is opened."
 	- `if (millis() % interval)`
 - How do you determine the range of values from any given sensor?
 
-##### Final project status
-
-### April 22 2021
-
 ##### Course Evaluations
 
 ##### Final project status
@@ -2405,8 +2449,6 @@ when the switch is opened."
 - What is the most difficult or frightening (least confident) part that remains to be done?
 - What is the easiest part that remains to be done?
 
-### April 27 2021
-- **Record Zoom**
 
 ##### Course Evaluations
 
