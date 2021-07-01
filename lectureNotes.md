@@ -2394,6 +2394,11 @@ void keyPressed() {
 - Record
 - Turn off distractions
 
+##### Smoothing Noisy Filters
+
+I have some useful links
+[here](https://github.com/michaelshiloh/resourcesForClasses#smoothing-readings-from-noisy-sensors-using-filters)
+
 ##### ASCII codes
 
 - What's the difference between
