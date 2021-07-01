@@ -459,7 +459,6 @@ Production Assignment:
 ### Week 7 (June 28 - July 1)
 DC motors, LCD, Construction and Debugging, Final Project Proposal
 
-##### todays-assignment
 #### Assignments Due June 30
 
 Writing Assignment: First Draft Final Project Proposal
@@ -494,27 +493,27 @@ Writing Assignment: First Draft Final Project Proposal
 	Include hand sketches as necessary to illustrate your concept.
 - If your project is a game, it must not be a shooting game 
 
-#### Assignments Due July 1 (TBA)
+##### todays-assignment
+#### Assignments Due July 5
 
-Writing Assignment
-
-Refine your final project proposal. 
-In the same journal.md think about and document as appropriate:
-- Any additional details you can think of
-- Think about what happens on Arduino, and what happens on Processing
-- Think about your circuit
+Production Assignment
 
 Make lots of progress on your final project. 
 Start with the parts you think are most complicated or risky.
+
+Writing Assignment
 
 Document your progress in your journal:
 - Each day add the date
 - Describe the work you plan to do or did that day.
 - Include you thoughts, decisions, experiments, etc.
 - Discuss what worked and what didn't
+- What is the most difficult or frightening part (the part you have the least
+	confidence in) that remains to be done?
+- What is the easiest part that remains to be done?
 - At the end of each journal entry, describe 
 	- Whether, and if so, how, the results of today's work
-	has caused you to modify your plan for your final project.
+	have caused you to modify your plan for your final project.
 	- What your plans are for the next step
 
 ### Week 7 (July 5 - 8)

@@ -2346,9 +2346,6 @@ Bonus: How to tell if you touch a wall of a photograph
 		[`red()`](https://processing.org/reference/red_.html), `green()`, and `blue()` functions
 
 ### June 30
-### todays-lecture
-- Record
-- Turn off distractions
 
 ##### Look at final project proposals
 
@@ -2392,42 +2389,43 @@ void keyPressed() {
 }
 ````
 
-##### Time permitting:
+### July 1
+### todays-lecture
+- Record
+- Turn off distractions
 
-1. Quiz
-1. What's the difference between `write()` and `print()`?
+##### ASCII codes
 
-File -> Examples -> Communication -> Dimmer
-
-- Letters all have numeric codes
-
-[ASCII](http://www.asciitable.com/)
-
-- which keyboard character has the smallest numerical code? 
+- What's the difference between
+	 [`write()`](https://www.arduino.cc/reference/en/language/functions/communication/serial/write/) and [`print()`](https://www.arduino.cc/reference/en/language/functions/communication/serial/print/)?
+- [ASCII](http://www.asciitable.com/)
+is just a table of numeric codes for basic numerals, letters, and
+punctuation marks
+- But what does this mean to us?
+	- File -> Examples -> Communication -> Dimmer
+	- Why can't you make the LED brighter by typing '255'?
+	- which keyboard character has the smallest numerical code? 
 	The largest?
-
-**`print()` and `println()` send the ASCII code, while `write` sends the raw number**
+- **`print()` and `println()` send the ASCII code, while `write` sends the raw number**
 - `write()` can only send numbers between 0 and 255
 
+##### RGB LED
 
-### April 20 2021
+- Back to the Ultrasonic Distance Measuring [Tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-3b-distance-sensor)  
+- Common Anode Vs. Common Cathode
 
 ##### Quiz
 - Analog vs. digital
-- How many numbers can you count with one digit? two digits? three digits?
-	- What's the relationship between digits and the amount of numbers?
+- How many numbers can you count with one decimal digit? two digits? three digits?
+	- What's the relationship between the number of digits 
+	and the numbers they can represent?
 	- What about binary digits (bits)?
-- Series vs. parallel
-	- Series components have one end of one component connected to one end of
-		another component and nothing else connected to that point. What happens
-		at the other ends of the components doesn't matter.
-	- Parallel components have one end of both components connected together,
-		and the other end of both components connected together. Other things may
-		or may not be connected anywhere.
 - Why some sensors never result in the full range of 0-5V (or to the numbers 0-1023 from `analogRead()`)
 - Short circuit
 - What to check with Digital Multimeter (DMM)?
 	- Supply voltage
+	- Other voltages (e.g. output pins using `digitalWrite()`. Why won't
+	can't you use a DMM with `analogWrite()`?
 	- Continuity of each connection
 		- What is continuity?
 		- Must be measured with **unpowered** circuit
@@ -2438,16 +2436,8 @@ when the switch is opened."
 	- It depends on the
 	sensor. In order to get full range, a sensor would have to go from zero ohms
 	to infinite ohms
-- Blink without delay
-	- `if (millis() % interval)`
 - How do you determine the range of values from any given sensor?
 
-##### Course Evaluations
-
-##### Final project status
-
-- What is the most difficult or frightening (least confident) part that remains to be done?
-- What is the easiest part that remains to be done?
 
 
 ##### Course Evaluations
