@@ -2390,9 +2390,6 @@ void keyPressed() {
 ````
 
 ### July 1
-### todays-lecture
-- Record
-- Turn off distractions
 
 ##### Smoothing Noisy Filters
 
@@ -2419,6 +2416,17 @@ punctuation marks
 - Back to the Ultrasonic Distance Measuring [Tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-3b-distance-sensor)  
 - Common Anode Vs. Common Cathode
 
+### July 5
+### todays-lecture
+- Record
+- Turn off distractions
+
+##### Course Evaluations
+
+##### State machines
+
+[Example](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/noDelay/melodyBlinkStateMachine)
+
 ##### Quiz
 - Analog vs. digital
 - How many numbers can you count with one decimal digit? two digits? three digits?
@@ -2444,10 +2452,6 @@ when the switch is opened."
 - How do you determine the range of values from any given sensor?
 
 
-
-##### Course Evaluations
-
-If you did not finish your course evaluation last week, do it now.
 
 ##### Final project 
 - Present your project on Thursday. You may show photographs and videos in
