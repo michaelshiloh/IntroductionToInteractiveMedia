@@ -2417,13 +2417,19 @@ punctuation marks
 - Common Anode Vs. Common Cathode
 
 ### July 5
+
+##### Course Evaluations
+
+### July 6
 ### todays-lecture
 - Record
 - Turn off distractions
 
-##### Course Evaluations
-
 ##### State machines
+
+1. Instruction screen (buttons are used to scroll)
+2. Play game (buttons are used to play game)
+3. Set high score initials (buttons are used to select initials)
 
 [Example](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/noDelay/melodyBlinkStateMachine)
 
