@@ -2431,7 +2431,14 @@ punctuation marks
 2. Play game (buttons are used to play game)
 3. Set high score initials (buttons are used to select initials)
 
+Simple
+[example](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/stateMachines/simpleArduinoStateMachine)
+which does nothing but shows how to implement a state machine
+either with a bunch of `if()` statements or with a `switch()` statement
+
 [Example](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/noDelay/melodyBlinkStateMachine)
+of a state machine which blinks LEDs and plays a melody
+all without using the `delay()` function!
 
 ##### Quiz
 - Analog vs. digital
