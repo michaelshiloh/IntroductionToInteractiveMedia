@@ -493,7 +493,6 @@ Writing Assignment: First Draft Final Project Proposal
 	Include hand sketches as necessary to illustrate your concept.
 - If your project is a game, it must not be a shooting game 
 
-##### todays-assignment
 #### Assignments Due July 5
 
 Production Assignment
@@ -522,7 +521,8 @@ Final Project
 
 Final project due on July 8. You will present your project in class.
 
-#### Final Project Documentation Due July 10 at 10 AM
+### todays-assignment
+#### Final Project Documentation Due SUnday July 11 at noon
 
 In your folder called `finalProject`
 - Journal file journal.md, describing your progress each time you work.
