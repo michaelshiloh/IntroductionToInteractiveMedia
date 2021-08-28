@@ -1,5 +1,5 @@
 Shortcut to [today's assignment](#todays-assignment)  
-Class Zoom Join [URL](https://nyu.zoom.us/j/94814003038)
+Class Zoom [URL](https://nyu.zoom.us/j/93719271713)
 
 
 ## New York University Abu Dhabi    
