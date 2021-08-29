@@ -22,7 +22,7 @@ This is all subject to change
 - Introductions
 - Syllabus etc.
 - Student lead discussions (assign dates)
-- Join the Discord server [here](https://discord.gg/NASyNHw)
+- Join the Discord server 
 
 #### What’s the class about?
 
