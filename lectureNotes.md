@@ -149,6 +149,36 @@ Confused?
 - Google
 - Processing reference page
 
+Here is the program we developed in class:
+
+````
+size( 400, 1000);
+
+//rect(60,60, 100, 150);
+//circle(50, 50, 60);
+//ellipse( 100, 120, 100, 35);
+
+line(200, 300, 200, 400);
+line(230, 300, 230, 400);
+
+point(50, 50);
+
+// this will draw the body (I think)
+fill(200, 100, 30);
+circle(215, 270, 80);
+
+noStroke();
+
+// this muse be the head
+ fill(0, 10, 255);
+ circle(215, 200, 40);
+ 
+ stroke(0, 100, 20);
+ line(200, 200, 250, 200);
+ 
+ arc(100, 100, 100, 100, 0, radians(130));
+````
+
 #### Variables
 - `int myNumber = 45;`
 - `int myRandomNumber = random(255);`
