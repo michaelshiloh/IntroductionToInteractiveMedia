@@ -44,7 +44,7 @@ Assignments:
                 The portrait does not need to be dynamic (i.e. it does not need to change while we look at it)
                 The portrait does not need to be realistic. The purpose is to practice using the simple drawing functions.
          Reading:
-            Due Sept. 9th:
+            Due Sept. 2nd:
                 Getting Started with Processing
                 Coordinate systems and space
 
