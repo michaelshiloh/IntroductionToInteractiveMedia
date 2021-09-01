@@ -38,15 +38,20 @@ Install Processing on your computer: https://processing.org/download/
 
 Assignments:
 
-        Production:
-            Due Sept. 7th (post documentation on blog): Make a self-portrait using Processing.
-                The portrait must be entirely created by your code i.e. you must not interact with your computer while the portrait is being made (e.g. no drawing using the mouse)
-                The portrait does not need to be dynamic (i.e. it does not need to change while we look at it)
-                The portrait does not need to be realistic. The purpose is to practice using the simple drawing functions.
-         Reading:
-            Due Sept. 9th:
-                Getting Started with Processing
-                Coordinate systems and space
+Production:
+
+Due Sept. 7th (post documentation on Github): Make a self-portrait using Processing.
+- The portrait must be entirely created by your code i.e. you must not interact with your computer while the portrait is being made (e.g. no drawing using the mouse)
+- The portrait does not need to be dynamic (i.e. it does not need to change while we look at it)
+- The portrait does not need to be realistic. The purpose is to practice using the simple drawing functions.
+
+Reading:
+
+Due Sept. 9th:
+- Read [Getting Started with
+  Processing](https://processing.org/tutorials/gettingstarted)
+- Read [Coordinate systems and
+  space](https://processing.org/tutorials/drawing)
 
 Week 2 (Sept. 7 & 9)
 
