@@ -42,6 +42,17 @@ Due Sept. 7th (post documentation on Github): Make a self-portrait using Process
 - The portrait must be entirely created by your code i.e. you must not interact with your computer while the portrait is being made (e.g. no drawing using the mouse)
 - The portrait does not need to be dynamic (i.e. it does not need to change while we look at it)
 - The portrait does not need to be realistic. The purpose is to practice using the simple drawing functions.
+- In your Github repository, create a new folder named
+`Sept7`
+  - Upload your program into the new folder,
+  with the extension `.pde`.
+    - If you use any variables, chose good names.
+  - Upload a screenshot of your portrait into the new folder
+  - Create a `README.md` in the new folder and include
+  your screenshot in the `README.md`.
+  - Also in the `README.md`, describe any difficulties you had or anything
+interesting you discovered.
+- Post your self portrait to our Discord channel
 
 #### Reading:
 
@@ -57,16 +68,36 @@ Animation, Conditionals, Loops
 
 Assignments:
 
-        Production:
-            Due Sept. 13th (post documentation on blog): Using loops (for() or while()) in some way, along with everything that you’ve learned so far, make a simple work of art. You may want to look at these old computer art magazines for inspiration, but you don’t need to make your so elaborate. Scroll through and look for images:
-                COMPUTER_GRAPHICS_AND_ART_Aug1977
-                ProgrammInformation21_PI21
-                COMPUTER_GRAPHICS_AND_ART_May1976
-        Reading:
-            Due Sept. 15th: Watch Casey Reas’ Eyeo talk on chance operations, be prepared to discuss
-                Guidance on this discussion format can be found here
-            If you are new to functions or want to review, watch Dan Shiffman’s functions tutorials. There are four videos, each less than 10 minutes.
-            Watch at least the first four of Dan Shiffman’s Object Oriented Programming tutorials.
+#### Production:
+
+Due Sept. 13th: 
+
+- Using loops (for() or while()) in some way, along with everything that you’ve learned so far, make a simple work of art. You may want to look at these old computer art magazines for inspiration, but you don’t need to make your so elaborate. Scroll through and look for images:
+	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
+	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
+	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
+- In your Github repository, create a new folder named 
+`May27`
+	- Upload your program into the new folder, 
+	with the extension `.pde`. 
+	- Use **COMMAND T** or **CONTROL T** to indent your code properly
+	- Your program should be well commented and organized. 
+	- Excellent names for variables
+	- Excellent names for functions, if you make any
+	- Upload a screenshot of your artwork into the new folder
+	- Create a `README.md` in the new folder and include 
+	your screenshot in the `README.md`.
+	- Write a short description of any difficulties you had or anything
+		interesting you discovered.
+- Put a screenshot of your project on our Discord channel
+
+#### Reading:
+
+Due Sept. 15th: 
+
+Watch Casey Reas’ Eyeo talk on chance operations, be prepared to discuss
+Guidance on this discussion format can be found 
+[here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions)
 
 Week 3 ( Sept. 14 & 16)
 
