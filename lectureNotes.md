@@ -19,7 +19,6 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 
 **This is subject to change**
 
-### todays-lecture
 ### August 31 2021
 
 #### Administration
@@ -143,11 +142,6 @@ Controlling color, fill, and stroke
 - `fill()`
 - `arc(100, 100, 100, 100, 0, 180)`
 - `arc(100, 100, 100, 100, 0, PI, CHORD)`
-- `random()`
-
-Confused? 
-- Google
-- Processing reference page
 
 Here is the program we developed in class:
 
@@ -179,47 +173,31 @@ noStroke();
  arc(100, 100, 100, 100, 0, radians(130));
 ````
 
+### todays-lecture
+### September 2 2021
+
+#### Administration
+
+- **Record Zoom!**
+- Questions from Tuesday?
+- Where to get help
+	- Google
+	- Processing reference page
+	- Discord
+
 #### Variables
+
 - `int myNumber = 45;`
 - `int myRandomNumber = random(255);`
 - `int myRandomNumber = round(random(255));`
-- Other variable types. `int` is by far most common, another common is `float`
+How do we know what a variable's value is?
+`print()` and `println()`
+
+- There are many other variable types. 
+`int` is by far most common, `float` being a close second
 - Built-in variables
-	- `width`, `height`
-	- many others
-
-Here is an example Processing program (also called a 'sketch') 
-
-````
-size(400, 400);
-ellipse(width/2, height/2, 50, 50);
-
-/*
-stroke(0,255,0);
-fill(255,0,0);
-//ellipse(100,100, 50, 50);
-
-fill(255,0,0, 30);
-//rect(30, 30, 50, 80);
-
-
-// Now I will try to draw an arc
-//arc(100, 100, 100, 100, 0, radians(180), CHORD);
-
-// pick a random number up to 180
-float myRandomArcSize = random(180);
-int arcSizeAsInt = round (myRandomArcSize);
-println(myRandomArcSize + "   " + arcSizeAsInt);
-
-// convert that number to radians
-float arcSizeInRadians = radians(myRandomArcSize);
-
-print(myRandomArcSize + "    " + arcSizeInRadians);
-
-// draw the arc
-arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
-*/
-````
+	- `width`, `height`, `mouseX`, `mouseY`
+	- many others; we will discover more as we go along
 
 #### Animation
 - `draw()`
@@ -296,3 +274,4 @@ void setup() {
 You should get in the habit of giving meaningful names to your variables. What
 is a better name for the variable foo?
 
+`for()` loops combine in one like most of the things you often do in a loop
