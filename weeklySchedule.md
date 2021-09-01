@@ -1,5 +1,4 @@
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
-
+Shortcut to [today's assignment](#todays-assignment)
 
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
@@ -34,6 +33,7 @@ Primitive shapes, Programming concepts
 
 Install Processing on your computer: https://processing.org/download/
 
+### todays-assignment
 Assignments:
 
 #### Production:
