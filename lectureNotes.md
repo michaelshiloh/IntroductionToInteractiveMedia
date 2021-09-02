@@ -218,12 +218,121 @@ void draw() {
 
 `background()`
 
+Here are the two programs I developed in class:
+
+````
+// This program is in Static mode
+
+size(100, 700);
+
+// use the built-in variables width and height to calculate the circle center
+circle(width/2, height/3, 100);
+
+
+//int triangleTopLeftX;
+//triangleTopLeftX = 50;
+
+int triangleTopLeftX = 250;
+int redValue;
+redValue = round( random(256) ); // returns a random number up to but not including 256
+fill(redValue, 10, 30);
+triangle(triangleTopLeftX, 20,  // top left corner
+         triangleTopLeftX+100, 30, // top right corner
+         triangleTopLeftX+50, 200); // bottom corner
+
+// use mouseX and mouseY to draw a small circle
+circle (mouseX, mouseY, 30);
+````
+
+(In class I said this was Dynamic mode but I was wrong; it's called *active
+mode*:)
+
+````
+// Active mode
+void setup() {
+  size(500, 500);
+}
+
+int triangleTopLeftX = 0;
+int redValue = 255;
+void draw() {
+  // erase the trail of circle
+  background(10, 255, 255);
+
+  circle(mouseX, mouseY, 30);
+  println("mouse coordinates = " + mouseX + ", " + mouseY);
+
+  if (triangleTopLeftX >= width)
+  {
+    triangleTopLeftX = 0;
+  }
+  triangleTopLeftX += 1;
+
+  if (redValue == 155)
+    redValue = 255;
+  redValue -= 1;
+  fill(redValue, redValue-100, redValue-100);
+  triangle(triangleTopLeftX, 20, // top left corner
+    triangleTopLeftX+100, 30, // top right corner
+    triangleTopLeftX+50, 200); // bottom corner
+}
+````
+
+Here is the program that one of the students (I didn't catch who this was)
+developed to change the color smoothly as the triangle moved 
+across the canvas. I will discuss this next week:
+````
+// Dynamic mode
+
+void setup() {
+  size (500, 500);
+}
+
+int triangleTopLeftX = 0;
+
+void draw() {
+
+  background(10, 255, 255);
+
+  // use mouseX and mouseY to draw a small circle
+  fill(0);
+  circle (mouseX, mouseY, 30);
+  println("mouse coordinates = " + mouseX +"," + mouseY);
+
+  {
+
+    triangleTopLeftX = triangleTopLeftX + 1; // trying to get it to move
+    if (triangleTopLeftX >= width) {
+      triangleTopLeftX = 0;
+    }
+
+    int redValue;
+    redValue = round( random(256) ); // returns a random number up to but not including 256
+    fill(redValue, 10, 30);
+    triangle(triangleTopLeftX, 20, // top left corner
+      triangleTopLeftX+100, 30, // top right corner
+      triangleTopLeftX+50, 200); // bottom corner
+  }
+}
+````
+
+### todays-lecture
+### September 7 2021
+
+#### Administration
+
+- **Record Zoom!**
+- Questions from Thursday?
+
+#### Review: 
+
+- Static vs. active mode
+- Variables
+- Built-in variables
+- Variables declared outside of `draw()` or `setup()` can be changed later
+- `println()`
+
 `frameRate()`
-
-Yesterday we were able to draw without using `setup()` and `draw()`. What's
-the difference?
-
-Static vs. active mode
 
 #### Interaction with Processing
 
