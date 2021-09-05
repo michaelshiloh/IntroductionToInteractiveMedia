@@ -52,6 +52,7 @@ Due Sept. 7th (post documentation on Github): Make a self-portrait using Process
   your screenshot in the `README.md`.
   - Also in the `README.md`, describe any difficulties you had or anything
 interesting you discovered.
+- Email me a link to your repository (to the repository, not to this assignment)
 - Post your self portrait to our Discord channel
 
 #### Reading:
@@ -59,8 +60,9 @@ interesting you discovered.
 Due Sept. 7th:
 - Read [Getting Started with
   Processing](https://processing.org/tutorials/gettingstarted)
-- Read [Coordinate systems and
-  space](https://processing.org/tutorials/drawing)
+- Read [Coordinate Systems and
+  Shapes](https://py.processing.org/tutorials/drawing/) (this is for Python but
+	is identical for Processing)
 
 ### Week 2 (Sept. 7 & 9)
 
