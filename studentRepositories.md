@@ -17,3 +17,4 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 ## This page: Student Repositories
 
 - [Jeongin](https://github.com/jjeongin/intro-to-IM)
+- [Afra](https://github.com/afralmaz/intro-to-im)
