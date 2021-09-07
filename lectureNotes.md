@@ -331,7 +331,40 @@ void draw() {
 - Variables declared outside of `draw()` or `setup()` can be changed later
 - `println()`
 
+````
+// Example usage of a global variable
+
+int count; // this is now a global variable
+
+void setup() {
+  circle(50, 50, 30);
+  count = 7; // the variable is initialized here
+}
+
+void draw() {
+  count = count + 1; // not algebra!
+  // The result of the right hand side calculation
+  // replaces whatever value was stored in the variable
+  // on the left side of the '=' sign
+  // end result: the variable "count" is incremented by 1
+
+  println (count);
+}
+````
+
 `frameRate()`
+
+````
+void setup() {
+  println(frameRate);  // frameRate is a built-in variable
+  frameRate(10);       // frameRate() is a function
+  println(frameRate); // it takes awhile for the frame rate to change
+}
+
+void draw() {
+  println(frameRate);
+}
+````
 
 #### Interaction with Processing
 
@@ -348,6 +381,37 @@ void draw() {
   } else {
     background(color(200, 0, 0));
   }
+}
+````
+
+You can also use the `mousePressed()` function. Note that there is a huge
+difference between the `mousePressed` variable and the `mousePressed()` 
+function: the variable `mousePressed` is true as long as any mouse button 
+is pressed, while the function `mousePressed()` is called only once whenever 
+a mouse button is pressed, no matter how long it's pressed for:
+
+````
+int pressCount = 0;
+int mouseClickCount = 0;
+boolean mouseWasPressed = false;
+
+void setup() {
+  frameRate(2.5); // slow down so can see blue background
+}
+
+void draw(){
+  if (mouseWasPressed) {
+    background(color(0, 0, 255));
+    mouseWasPressed = false;
+  } else {
+    background(color(200, 0, 5));
+  }
+  println(mouseClickCount);
+}
+
+void mousePressed() {
+    mouseWasPressed = true;
+    mouseClickCount = mouseClickCount + 1;
 }
 ````
 
@@ -404,6 +468,32 @@ void setup() {
 Which should you use? Whichever is easier for you to understand. Remember that
 **most of the time spent programming is fixing problems**, and **whatever you
 understand best will probably have fewer problems**.
+
+Here is the debugging we did at the end of class. As I explained, the
+`print()` and `println()` functions are great ways to find out what your
+program is doing. Sometimes figuring out what to print, and the best way
+to print it to see the problem, is a bit of an artform that improves with
+time:
+
+````
+//How to use the '+' sign to create a string suitable for printing from a variety
+//of string literals and variables
+
+void setup() {
+  size(700, 700);
+  int yPos = 0;
+  int xPos = 0;
+  for (yPos = 30; yPos < height-30; yPos=yPos + 40) {
+    for (xPos = 20; xPos<width-60; xPos=xPos + 40) {
+
+      line(xPos, yPos, yPos, yPos); // this draws horizontal lines, many on top of each other
+      // line(xPos, yPos, xPos, xPos); // this draws horizontal lines, many on top of each other
+      println("line from (" + xPos + "," + yPos + ") to ("  + yPos + "," + yPos + ")");
+      // rect(xPos, yPos, 40, 40); // This effectively draws the grid
+    }
+  }
+}
+````
 
 #### Functions
 
