@@ -104,8 +104,10 @@ Scroll through and look for images:
 
 Due Sept. 14th: 
 
-- Watch Casey Reas’ Eyeo talk on chance operations, be prepared to discuss.
-Instructions for leaders and others on this discussion format can be found 
+- Watch [Casey Reas’ Eyeo talk on chance
+	operations](https://vimeo.com/45851523), be prepared to discuss.
+Instructions for discussion
+leaders and followers on this discussion format can be found 
 [here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions).
 - If you are new to functions or want to review, watch Dan Shiffman’s 
 [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V7Uu6ajGB2OI3hl5DZsD1Fw1WzR)
