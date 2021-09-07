@@ -503,7 +503,7 @@ void setup() {
 - **Record Zoom!**
 - Questions from Tuesday?
 - Look at homework for next week
-- Assign discussion leaders
+- Look at discussion leaders
 
 #### Functions
 
