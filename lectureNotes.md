@@ -486,7 +486,7 @@ void setup() {
     for (xPos = 20; xPos<width-60; xPos=xPos + 40) {
 
       line(xPos, yPos, yPos, yPos); // this draws horizontal lines, many on top of each other
-      // line(xPos, yPos, xPos, xPos); // this draws horizontal lines, many on top of each other
+      // line(xPos, yPos, xPos, xPos); // this draws vertical lines, many on top of each other
       println("line from (" + xPos + "," + yPos + ") to ("  + yPos + "," + yPos + ")");
       // rect(xPos, yPos, 40, 40); // This effectively draws the grid
     }
