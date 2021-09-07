@@ -173,7 +173,6 @@ noStroke();
  arc(100, 100, 100, 100, 0, radians(130));
 ````
 
-### todays-lecture
 ### September 2 2021
 
 #### Administration
