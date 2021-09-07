@@ -16,14 +16,19 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 
 ## This page: Student Repositories
 
-- [Jeongin](https://github.com/jjeongin/intro-to-IM)
 - [Afra](https://github.com/afralmaz/intro-to-im)
-- [Fiona](https://github.com/fionajlin/IntrotoIM)
-- [Xiaoli](https://github.com/XiaoliHan19/IntroToIM)
-- [Sonny](https://github.com/leregdos/IntroductionToInteractiveMedia)
-- [Anushka](https://github.com/anushka-upadhyay/IntroductionToInteractiveMedia)
-- [Erica](https://github.com/ericawu1788/introToIM)
 - [Xander](https://github.com/xandernyuad/IntrotoIM)
+- [Tanisha]
+- [Xiaoli](https://github.com/XiaoliHan19/IntroToIM)
+- [Ansh]
+- [Injoo]
+- [Jeongin](https://github.com/jjeongin/intro-to-IM)
+- [Fiona](https://github.com/fionajlin/IntrotoIM)
 - [Boby](https://github.com/Biubers/Intro-to-IM.git)
+- [Anushka](https://github.com/anushka-upadhyay/IntroductionToInteractiveMedia)
+- [Sonny](https://github.com/leregdos/IntroductionToInteractiveMedia)
+- [Noah]
+- [Shumin]
 - [Aadhar](https://github.com/aa-wa/Intro-to-IM)
+- [Erica](https://github.com/ericawu1788/introToIM)
 - [Angelica](https://github.com/angelicaraagas/IntroToIM/blob/54da6a107f804d08f0fb0a062aa737edafa70811/README.md)

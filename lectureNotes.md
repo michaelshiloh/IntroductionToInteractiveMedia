@@ -315,7 +315,6 @@ void draw() {
 }
 ````
 
-### todays-lecture
 ### September 7 2021
 
 #### Administration
@@ -494,6 +493,17 @@ void setup() {
   }
 }
 ````
+
+
+### todays-lecture
+### September 9 2021
+
+#### Administration
+
+- **Record Zoom!**
+- Questions from Tuesday?
+- Look at homework for next week
+- Assign discussion leaders
 
 #### Functions
 

@@ -72,30 +72,32 @@ Assignments:
 
 #### Production:
 
-Due Sept. 13th: 
+Due Sept. 14th: 
 
 - Using loops (for() or while()) in some way, along with everything that you’ve learned so far, make a simple work of art. You may want to look at these old computer art magazines for inspiration, but you don’t need to make your so elaborate. Scroll through and look for images:
 	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
 	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 - In your Github repository, create a new folder named 
-`May27`
+`Sept13`
+	- Use **COMMAND T** or **CONTROL T** to indent your code properly
 	- Upload your program into the new folder, 
 	with the extension `.pde`. 
-	- Use **COMMAND T** or **CONTROL T** to indent your code properly
 	- Your program should be well commented and organized. 
 	- Excellent names for variables
 	- Excellent names for functions, if you make any
 	- Upload a screenshot of your artwork into the new folder
 	- Create a `README.md` in the new folder and include 
 	your screenshot in the `README.md`.
-	- Write a short description of any difficulties you had or anything
-		interesting you discovered.
+	- Write a short description of :
+		- Your process
+		- Any problems and, if any, solutions or workarounds
+		- Anything interesting you discovered or learned
 - Put a screenshot of your project on our Discord channel
 
 #### Reading:
 
-Due Sept. 15th: 
+Due Sept. 14th: 
 
 Watch Casey Reas’ Eyeo talk on chance operations, be prepared to discuss
 Guidance on this discussion format can be found 
