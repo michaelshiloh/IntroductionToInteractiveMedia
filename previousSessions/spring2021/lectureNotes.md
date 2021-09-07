@@ -335,7 +335,7 @@ void setup() {
 Important things to note:
 
 1. You should get in the habit of giving meaningful names to your variables. 
-What is a better name for the variable foo?
+1.1. What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
 
 There is another way to make a loop using the keyword `for()`. The `for()`
@@ -373,7 +373,7 @@ you created the `setup()` and `draw()` functions. In the case of
 functions you can make up your own names. Just like variables names, good 
 function names make your programs easier to understand.
 
-Why create your own funtions?
+Why create your own functions?
 
 - Reuse (if it's something you might do again)
 - Clarity (remember your three important audiences: yourself, others learning

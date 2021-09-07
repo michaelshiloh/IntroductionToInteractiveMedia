@@ -362,7 +362,8 @@ void draw() {
 
 - Two more interesting built-in variables: `mouseX`, `mouseY`
 	- Using the cursor to draw
-	- Now use a mouse click to clear the screen
+	- Now use a mouse press to clear the screen
+	- Note the difference between a press, click, and release
 	- (Time permitting, primitive painting program)
 
 #### Loops
@@ -372,15 +373,252 @@ void draw() {
 void setup() {
   size(300, 300);
 
-  int foo = 50;
+  int foo = 50; // create and initialize a variable
 
-  while (foo < width) {
+  while (foo < width) { // keep going as long as the condition is true
     ellipse(foo, 50, 40, 40);
-    foo = foo + 50;
+		// modify the variable so something different happens next time
+    foo = foo + 50; 
   }
 }
 ````
-You should get in the habit of giving meaningful names to your variables. What
-is a better name for the variable foo?
 
-`for()` loops combine in one like most of the things you often do in a loop
+. You should get in the habit of giving meaningful names to your variables.
+1.1. What is a better name for the variable foo?
+1. What would happen if you replace the `while()` with `if()`?
+
+There is another way to make a loop using the keyword `for()`. The `for()`
+loop structure combines the initialization step and the incrementation step
+into the `for()` loop construction:
+
+````
+void setup() {
+  size(300, 300);
+
+  // initialization, condition, and incrementation all in one line
+  for (int foo = 50; foo < width; foo = foo + 50)  {
+    ellipse(foo, 50, 40, 40);
+  }
+}
+````
+
+Which should you use? Whichever is easier for you to understand. Remember that
+**most of the time spent programming is fixing problems**, and **whatever you
+understand best will probably have fewer problems**.
+
+#### Functions
+
+Every time you use one of the built-in 'commands', you are really using (or
+more properly 'calling') a built-in function. Functions are a very important
+building block of programming, and in addition to using built-in functions,
+you can also create your own. In fact, you've already been doing that, when
+you created the `setup()` and `draw()` functions. In the case of
+`setup()` and `draw()` you have to use those names, but when you create other
+functions you can make up your own names. Just like variables names, good 
+function names make your programs easier to understand.
+
+Why create your own functions?
+
+- Reuse (if it's something you might do again)
+- Clarity (remember your three important audiences: yourself, others learning
+	from you, me when I grade your work)
+- Easier to debug (what is debugging?)
+	- One of the most powerful ways to approach
+	a bug is to reproduce it with simplest possible example. 
+	This is much easier when the thing that's causing
+	the problem is already a function.
+- Modularity
+- Flexibility (with good choice of parameters)
+
+Let's modify the example from last week to use a function. First let's draw a
+house instead of a circle to make it a little more interesting:
+
+````
+void setup() {
+  size(300, 300);
+
+  // initialization, condition, and incrementation all in one line
+  for (int foo = 50; foo < width; foo = foo + 50)  {
+    rect(foo, 50, 40, 40);
+    line(foo, 50, foo+20, 30);
+    line(foo+20, 30, foo+40, 50);
+  }
+}
+````
+
+Now let's make a function called `drawOneHouse()`. If we want to
+draw a house at different locations, we need a way to tell
+the function `drawOneHouse()` where to put the house. Functions accommodate
+this by allowing us to pass information into the function by putting 
+that information in the parenthesis. In the function, we store this
+information in temporary variables that we can use in the function:
+
+````
+void setup() {
+  size(300, 300);
+
+  for (int foo = 50; foo < width; foo = foo + 50) {
+    drawOneHouseAt(foo);
+  }
+}
+
+void drawOneHouseAt(int x) {
+  rect(x, 50, 40, 40);
+  line(x, 50, x+20, 30);
+  line(x+20, 30, x+40, 50);
+}
+````
+
+**Things to notice**
+1. I've said this before and I'll keep saying: 
+	**Choose descriptive names for your variables and functions!** 
+	`foo` is a bad name, `x` is a good name,
+	 `drawOneHouseAt` is a good name.
+1. The value of `foo` (50, 100, 150 ...) is the information passed to the
+	 function so that the function can do it's work. The proper name for this
+	 information is an **argument**
+1. The variable `x` is a temporary variable that only exists in the function.
+	 This variable is used to store the argument that was passed into the
+	 function so that the function can do its work. Once the function is
+	 finished, this variable is no longer needed and is destroyed. 
+	 A variable used in this way is called a **parameter**
+1. Functions may take zero, one, or multiple arguments. When you write 
+	a function, you decide how many arguments you need. For example, we might
+	have included the house size or roof height or house y location. (Of course
+	when you use functions that someone else wrote 
+	you must use the proper number of parameters.)
+1. Functions can return information as well, for example the `random()`
+	 function. Functions can either return one piece of information, or none.
+	We will see later how to do this. If your function returns no information,
+	use the word `void` in front of the function name to indicate this.
+1. Finally we understand why `setup()` and `draw()` have the world `void` in
+	 front of them! They are functions that return no information, just like
+	 our function `drawOneHouseAt()`
+
+#### Variable Scope
+
+````
+int foo;  // this is a global variable, visible in all functions
+
+void setup() {
+  foo = 7;
+}
+
+void draw() {
+
+  println(foo);
+
+  int bar; // this is a local variable, visible only inside of draw()
+
+  for (int i = 0; i < width/2; i++) { 
+    // i is a local variable visible only inside this for() loop
+    ellipse(i, height/2, 10,15);
+  }
+}
+````
+
+In class exercise:
+
+1. Write a function that will take a single parameter
+and draw a vertical line from the top of the canvas to the bottom
+at the X coordinate indicated by the parameter
+	1. In the `draw()``` function test this function 
+	at a couple of different locations
+1. Write another function that will draw a **horizontal** line
+at the indicated **Y** coordinate
+	1. Test as before
+1. Using these two functions, write a program in `draw()`
+that draws a grid of lines at regular intervals on the canvas
+
+Discussion:
+
+- What debugging methods helped you find and fix problems?
+- What other functions might be useful?
+- What other parameters might be useful?
+
+#### Motion
+
+Let us use make a ball bounce on the floor. First, make a circle move:
+
+<pre>void setup() 
+{ 
+  size(500, 500);
+  x = width/2;
+} 
+
+float speed = 5;
+float x;
+float y = 0;
+
+void draw() {
+  background(150);
+
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+}
+</pre>
+
+Now, make it change directions when it hits the floor:
+
+<pre>void setup() 
+{ 
+  size(500, 500);
+  x = width/2;
+} 
+
+float speed = 5;
+float x;
+float y = 0;
+
+void draw() {
+  background(150);
+
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+
+  if (y>=height) {
+    speed = -speed;
+  }
+}
+</pre>
+
+Now, do two thing: 1) use gravity to increase its speed as it falls and 2) reduce its speed on each bounce:
+
+<pre>
+
+float gravity = .1;
+float speed = 0;
+float x = 320;
+float y = 0;
+
+void setup() 
+{ 
+  size(500, 500);
+} 
+
+void draw() {
+  background(150);
+  ellipse(x, y, 20, 20);
+
+  y+=speed;
+
+  speed+=gravity;
+
+  if (y>=height) {
+    speed = 0.95 * speed; // this slows the acceleration
+    speed = -speed; // this reverses
+  }
+}
+</pre>
+
+Discussion:
+
+- What functions might be useful here?
+- How can we use the `random()` function to make things more interesting?
+- What about multiple bouncing balls?
+- How could I make the ball move sideways?
+- How could I make it bounce off the walls as well?
+
+
