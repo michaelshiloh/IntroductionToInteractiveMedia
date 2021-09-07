@@ -33,7 +33,6 @@ Primitive shapes, Programming concepts
 
 Install Processing on your computer: https://processing.org/download/
 
-### todays-assignment
 Assignments:
 
 #### Production:
@@ -68,6 +67,7 @@ Due Sept. 7th:
 
 Animation, Conditionals, Loops
 
+### todays-assignment
 Assignments:
 
 #### Production:
