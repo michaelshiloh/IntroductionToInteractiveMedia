@@ -27,7 +27,7 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 - [Boby](https://github.com/Biubers/Intro-to-IM.git)
 - [Anushka](https://github.com/anushka-upadhyay/IntroductionToInteractiveMedia)
 - [Sonny](https://github.com/leregdos/IntroductionToInteractiveMedia)
-- [Noah]
+- [Noah](https://github.com/npietrafesa)
 - [Shumin]
 - [Aadhar](https://github.com/aa-wa/Intro-to-IM)
 - [Erica](https://github.com/ericawu1788/introToIM)
