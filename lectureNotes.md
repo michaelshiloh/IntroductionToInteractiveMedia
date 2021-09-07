@@ -446,7 +446,7 @@ void setup() {
 ````
 
 1. You should get in the habit of giving meaningful names to your variables.
-1.1. What is a better name for the variable foo?
+	1. What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
 
 There is another way to make a loop using the keyword `for()`. The `for()`
