@@ -74,7 +74,12 @@ Assignments:
 
 Due Sept. 14th: 
 
-- Using loops (for() or while()) in some way, along with everything that you’ve learned so far, make a simple work of art. You may want to look at these old computer art magazines for inspiration, but you don’t need to make your so elaborate. Scroll through and look for images:
+- Using loops (`for()` or `while()`) in some way, 
+along with everything that you’ve learned so far, 
+make a simple work of art. 
+You may want to look at these old computer art magazines for inspiration, 
+but you don’t need to make your so elaborate. 
+Scroll through and look for images:
 	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
 	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
@@ -99,9 +104,13 @@ Due Sept. 14th:
 
 Due Sept. 14th: 
 
-Watch Casey Reas’ Eyeo talk on chance operations, be prepared to discuss
-Guidance on this discussion format can be found 
-[here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions)
+- Watch Casey Reas’ Eyeo talk on chance operations, be prepared to discuss.
+Instructions for leaders and others on this discussion format can be found 
+[here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions).
+- If you are new to functions or want to review, watch Dan Shiffman’s 
+[functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V7Uu6ajGB2OI3hl5DZsD1Fw1WzR)
+tutorials. There are four videos, each less than 10 minutes.
+- Watch at least the first four of Dan Shiffman’s [Object Oriented Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i) tutorials.
 
 Week 3 ( Sept. 14 & 16)
 
