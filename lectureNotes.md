@@ -502,6 +502,7 @@ void setup() {
 
 - **Record Zoom!**
 - Questions from Tuesday?
+- Look at Github links
 - Look at homework for next week
 - Look at discussion leaders
 
@@ -529,7 +530,7 @@ Why create your own functions?
 - Modularity
 - Flexibility (with good choice of parameters)
 
-Let's modify the example from last week to use a function. First let's draw a
+Let's modify the example from last class to use a function. First let's draw a
 house instead of a circle to make it a little more interesting:
 
 ````
@@ -571,12 +572,12 @@ void drawOneHouseAt(int x) {
 **Things to notice**
 1. I've said this before and I'll keep saying: 
 	**Choose descriptive names for your variables and functions!** 
-	`foo` is a bad name, `x` is a good name,
-	 `drawOneHouseAt` is a good name.
+	`foo` is a bad name, `xPos` is a good name,
+	 `houseXPos` is a better name.
 1. The value of `foo` (50, 100, 150 ...) is the information passed to the
 	 function so that the function can do it's work. The proper name for this
 	 information is an **argument**
-1. The variable `x` is a temporary variable that only exists in the function.
+1. The variable `x` is a temporary variable that **only exists in the function**.
 	 This variable is used to store the argument that was passed into the
 	 function so that the function can do its work. Once the function is
 	 finished, this variable is no longer needed and is destroyed. 

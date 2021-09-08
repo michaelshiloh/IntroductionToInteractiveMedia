@@ -18,10 +18,10 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 
 - [Afra](https://github.com/afralmaz/intro-to-im)
 - [Xander](https://github.com/xandernyuad/IntrotoIM)
-- [Tanisha]
+- [Tanisha](https://github.com/tanishadeshpande/IntroToIM)
 - [Xiaoli](https://github.com/XiaoliHan19/IntroToIM)
 - [Ansh]
-- [Injoo]
+- [Injoo](https://github.com/injoo626/IntroToIM.git)
 - [Jeongin](https://github.com/jjeongin/intro-to-IM)
 - [Fiona](https://github.com/fionajlin/IntrotoIM)
 - [Boby](https://github.com/Biubers/Intro-to-IM.git)
