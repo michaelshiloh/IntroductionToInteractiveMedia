@@ -16,20 +16,19 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 
 ## This page: Student Discussion Leaders
 
-- Erica September 14 
-- Sonny September 21
-- Shumin September 28 
-- Boby October 5
-- Xander October 12
-- Injoo  October 19
-- Fiona  October 26
-- Angelica November 2
-- Xiaoli November 9
-- Tanisha November 16
-- Jeongi November 23
-- Aadha November 30
-- Anushka December 7
-- Afra  December 14
-- Noah December 21
-- Ansh  December 28 (we'll have to double up a couple)
+- Erica & Sonny September 14 
+- Shumin & Boby September 21
+- Xander Injoo  September 28 
+- Fiona & Angelica October 5
+- Tanisha & Xiaoli October 12
+- Aadha & Jeongi October 19
+- Afra & Anushka October 26
+- Ansh & Noah November 2
+- November 9 (reserved for flexibility)
+- November 16 (reserved for flexibility) 
+- November 23 (reserved for flexibility)
+- November 30 (reserved for flexibility)
+- December 7 (reserved for flexibility)
+- December 14 (reserved for flexibility)
+- December 21 (reserved for flexibility)
 
