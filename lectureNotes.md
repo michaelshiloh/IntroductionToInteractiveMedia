@@ -494,8 +494,6 @@ void setup() {
 }
 ````
 
-
-### todays-lecture
 ### September 9 2021
 
 #### Administration
@@ -617,17 +615,26 @@ void draw() {
 }
 ````
 
+### todays-lecture
+### September 14 2021
+
+#### Administration
+
+- **Record Zoom!**
+- Questions from last week?
+- Review: The `draw()` function
+
 In class exercise:
 
 1. Write a function that will take a single parameter
 and draw a vertical line from the top of the canvas to the bottom
 at the X coordinate indicated by the parameter
-	1. In the `draw()``` function test this function 
+	1. In the `setup()` function test your function 
 	at a couple of different locations
 1. Write another function that will draw a **horizontal** line
 at the indicated **Y** coordinate
 	1. Test as before
-1. Using these two functions, write a program in `draw()`
+1. Using these two functions, write a program in `setup()`
 that draws a grid of lines at regular intervals on the canvas
 
 Discussion:
@@ -721,4 +728,105 @@ Discussion:
 - How could I make the ball move sideways?
 - How could I make it bounce off the walls as well?
 
+#### Arrays 
+
+````
+final int numberOfValues = 10;
+
+int[] values = new int[numberOfValues];
+
+int n = 0;
+while (n < values.length) {
+  values[n] = (n+1) * (n+1);
+  n = n + 1;
+}
+
+for (int i = 0; i < values.length; i++) {
+  println(values[i]);
+}
+````
+
+**Things to notice**
+
+- Similar to the way functions are signified by `()`, 
+	arrays are signified by `[]`
+- Arrays can be of any data type, but can't be mixed types
+- Two new concepts:
+	- `final` keyword
+	- `new` keyword
+- Why not just use ten "normal" variables?
+- Arrays and loops (either `for()` or `while()`) almost always show up
+  together. If you have an array, you almost always want a loop.
+- Note that the `while()` loop used to put the numbers into the array
+	is exactly the same as the `for()` loop used to print the array. I could
+	have used either in both places. I did this to show you that they are
+	interchangeable.
+
+#### How to add more examples into Processing
+
+For example, from Dan Shiffman's book *Learning Processing*
+
+1. File -> Examples -> Add Examples
+1. type `learning processing` in the search box
+1. select the one we want
+
+Now you can see all examples from Dan's excellent book 
+
+1. File -> Examples -> Contributed Examples
+
+The examples are also online [here](http://learningprocessing.com/examples)
+
+You will find many interesting examples in there, including many on arrays.
+
+A more advanced array example, and introduction to the very useful `map()`
+function:
+
+````
+float[] coswave; 
+
+void setup() {
+  size(900, 300);
+  
+  coswave = new float[width];
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    coswave[xPosition] = cos(radians(xPosition));
+  }
+  background(255);
+  noLoop();
+}
+
+void draw() {
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    float waveHeight = map(coswave[xPosition], -1, 1, 0, height);
+    point(xPosition, waveHeight);
+  }
+}
+````
+
+**Remember**
+- Arrays and loops (either `for()` or `while()`) almost always show up
+  together. If you use an array, you probably want a loop.
+- Just like single variables and functions, 
+	**choose good names for your arrays!**
+
+**Things to notice**
+* In the first array example, 
+I created the variable that would store the
+array, and created the ten `int`s, all in one line. 
+In this cosine example,
+I created the variable that would store the array globally, 
+and then I created the `float` variables inside of `setup()`.
+Either way works; sometimes you will find you have to do it one
+way or the other, but for the most part it's your choice.
+* I used `noLoop()` because this only needed to run once. In fact
+I didn't even need to use `draw()`, 
+I could have put all the action into `setup()`. I did it this way so that I
+could introduce you to the `noLoop()` function
+* How did I get the height of the wave to perfectly fit the height?
+Practice using the `map()` function, it is incredibly useful
+and works in Arduino also exactly the same way.
+
+#### Classes
+
+[this](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
