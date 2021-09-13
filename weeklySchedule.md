@@ -114,26 +114,34 @@ leaders and followers on this discussion format can be found
 tutorials. There are four videos, each less than 10 minutes.
 - Watch at least the first four of Dan Shiffman’s [Object Oriented Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i) tutorials.
 
-Week 3 ( Sept. 14 & 16)
+### Week 3 ( Sept. 14 & 16)
 
 Functions, Arrays, and Object-Oriented Programming
 
-Assignments:
+#### Assignments:
 
-    Production:
-        Due Sept. 20th (post documentation on blog): Create a generative artwork using Object-Oriented Programming. You may use arrays if you wish. Pay attention to the structure, clarity, and organization of your program. As always, document your project:
-            Well commented code, especially for any confusing or tricky parts
-            References to any examples or inspiration
-            Functions as needed to organize your program
-            Excellent names for variables and functions
-            Post code and one or more images
-            Describe the overall concept of your artwork
-            Include the image(s) or link(s) to video
-            Describe any problems you ran into
-    Reading:
-        Due Sept. 22nd: read The Art of Interactive Design, Ch. 1, be prepared to discuss
-        Watch this two part (part 1 and part 2) video tutorial on transformations
-        Watch this video tutorial on Perlin noise
+##### Production:
+
+Due Sept. 20th 
+
+- Create a generative artwork using Object-Oriented Programming. 
+- You may use arrays if you wish. 
+- Pay attention to the structure, clarity, and organization of your program. 
+- Document your project at least as well as last week
+
+##### Reading:
+
+Due Sept. 22nd: 
+
+- Watch this two part
+<a href="https://www.youtube.com/watch?v=o9sgjuh-CBM">(part 1</a>
+and
+<a href="https://www.youtube.com/watch?v=pkHZTWOoTLM">part 2</a>)
+video tutorial on transformations
+- Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a>
+video tutorial on Perlin noise</li>
+- [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf),
+  and be prepared to discuss (Andres and Saf to lead)
 
 Week 4 (Sept. 21 &  23)
 
