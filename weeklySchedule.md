@@ -67,7 +67,6 @@ Due Sept. 7th:
 
 Animation, Conditionals, Loops
 
-### todays-assignment
 Assignments:
 
 #### Production:
@@ -118,6 +117,7 @@ tutorials. There are four videos, each less than 10 minutes.
 
 Functions, Arrays, and Object-Oriented Programming
 
+### todays-assignment
 #### Assignments:
 
 ##### Production:
