@@ -615,7 +615,6 @@ void draw() {
 }
 ````
 
-### todays-lecture
 ### September 14 2021
 
 #### Administration
@@ -830,3 +829,20 @@ and works in Arduino also exactly the same way.
 
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
+
+### todays-lecture
+### September 16 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+#### Class discussion
+
+Chance Operations
+
+#### Review
+
+- Arrays
+- Functions
+- Classes

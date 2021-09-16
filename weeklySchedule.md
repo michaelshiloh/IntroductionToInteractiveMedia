@@ -103,8 +103,7 @@ Scroll through and look for images:
 
 Due Sept. 14th: 
 
-- Watch [Casey Reas’ Eyeo talk on chance
-	operations](https://vimeo.com/45851523), be prepared to discuss.
+- Watch [Casey Reas’ Eyeo talk on chance operations](https://vimeo.com/45851523), be prepared to discuss.
 Instructions for discussion
 leaders and followers on this discussion format can be found 
 [here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions).
