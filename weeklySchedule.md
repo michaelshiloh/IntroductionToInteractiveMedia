@@ -140,7 +140,7 @@ video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a>
 video tutorial on Perlin noise</li>
 - [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf),
-  and be prepared to discuss (Andres and Saf to lead)
+  and be prepared to discuss (Shumin and Boby to lead)
 
 Week 4 (Sept. 21 &  23)
 
