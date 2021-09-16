@@ -848,3 +848,48 @@ and works in Arduino also exactly the same way.
 - Arrays
 - Functions
 - Classes
+
+Here is the code we developed in class:
+
+````
+class Boxes {
+
+  float xPos, yPos, xSize, ySize;
+  color myColor;
+
+  Boxes( float _xSize, float _ySize) {
+    xSize = _xSize;
+    ySize = _ySize;
+    xPos = random (0, width);
+    yPos = random (0, height);
+
+    myColor = color(random(0, 256),
+      random(0, 255),
+      random(0, 255));
+  }
+
+  void drawBox() {
+    fill(myColor);
+    rect(xPos, yPos, xSize, ySize);
+  }
+}
+
+// Boxes mybox;
+Boxes[] myBoxArray = new Boxes[40];
+
+void setup() {
+  size(500, 500);
+  
+  //mybox = new Boxes(30, 40);
+  for (int i=0; i < myBoxArray.length; i++) {
+    myBoxArray[i] = new Boxes(
+          i*2, random(5,50));
+  }
+  
+  //mybox.drawBox();
+  for (int i=0; i < myBoxArray.length; i++) {
+    myBoxArray[i].drawBox();
+  }
+}
+
+````

@@ -121,7 +121,7 @@ Functions, Arrays, and Object-Oriented Programming
 
 ##### Production:
 
-Due Sept. 20th 
+Due Sept. 22th 
 
 - Create a generative artwork using Object-Oriented Programming. 
 - You may use arrays if you wish. 
@@ -130,7 +130,7 @@ Due Sept. 20th
 
 ##### Reading:
 
-Due Sept. 22nd: 
+Due Sept. 20nd: 
 
 - Watch this two part
 <a href="https://www.youtube.com/watch?v=o9sgjuh-CBM">(part 1</a>
@@ -139,6 +139,9 @@ and
 video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a>
 video tutorial on Perlin noise</li>
+
+Due Sept. 22nd: 
+
 - [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf),
   and be prepared to discuss (Shumin and Boby to lead)
 
