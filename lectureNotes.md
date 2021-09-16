@@ -841,6 +841,7 @@ and works in Arduino also exactly the same way.
 
 - Chance Operations
 - What is generative artwork?
+- Look at homework
 
 #### Review
 
