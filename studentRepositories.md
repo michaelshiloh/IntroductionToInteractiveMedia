@@ -20,7 +20,7 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 - [Xander](https://github.com/xandernyuad/IntrotoIM)
 - [Tanisha](https://github.com/tanishadeshpande/IntroToIM)
 - [Xiaoli](https://github.com/XiaoliHan19/IntroToIM)
-- [Ansh]
+- [Ansh](https://github.com/AnshPKachalia/IntroToIM)
 - [Injoo](https://github.com/injoo626/IntroToIM)
 - [Jeongin](https://github.com/jjeongin/intro-to-IM)
 - [Fiona](https://github.com/fionajlin/IntrotoIM)
