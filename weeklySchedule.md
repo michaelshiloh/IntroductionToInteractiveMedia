@@ -116,7 +116,6 @@ tutorials. There are four videos, each less than 10 minutes.
 
 Functions, Arrays, and Object-Oriented Programming
 
-### todays-assignment
 #### Assignments:
 
 ##### Production:
@@ -145,28 +144,47 @@ Due Sept. 22nd:
 - [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf),
   and be prepared to discuss (Shumin and Boby to lead)
 
-Week 4 (Sept. 21 &  23)
+### Week 4 (Sept. 21 &  23)
 
-Loading Data, Displaying text  (for class)
+Loading Data, Displaying text 
 
-Assignments:
+### todays-assignment
+#### Assignments:
 
-    Production:
-        Due Sept. 27th (post documentation on blog): Either make some sort of data visualization, or create a generative text output.
-    Reading:
-        Due Sept. 29th: 
-        Watch Lauren McCarthy’s Eyeo talk You, Me and My Computer, be prepared to discuss
-        Read https://processing.org/tutorials/pixels/ or watch Shiffman’s videos: https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9&ab_channel=TheCodingTrain
+##### Production:
 
-Week 5 (Sept. 28 & 30)
+Due Sept. 27th: 
+
+- Either make some sort of data visualization, or create a generative text output.
+- Document at least as well as our previous assignments
+
+##### Reading:
+Due Sept. 29th: 
+
+-Watch Lauren McCarthy’s Eyeo talk [You, Me and My Computer](https://vimeo.com/110607681)  
+(45 minutes), be prepared to discuss (Injoo to lead)
+- Read [about pixels](https://processing.org/tutorials/pixels/)
+	or watch 
+	[Shiffman’s videos](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9&ab_channel=TheCodingTrain)
+
+### Week 5 (Sept. 28 & 30)
 
 Image Processing, introduce Midterm Project (download for class)
 
-Assignments:
+#### Assignments:
 
-    Production:
-        Due this Wed. Sept. 29th (no blog post needed): Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
-        Due Oct. 4th (post documentation on blog): Make some progress on your midterm project:
+##### Production:
+
+Due this Wed. Sept. 29th:
+
+- Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
+
+Due Oct. 4th 
+
+- Make some progress on your midterm project:
+- Describe in your Github repository
+
+
             Midterm Project:
                 Make a game using everything you have learned so far
                 Due Oct. 13th
@@ -182,17 +200,23 @@ Assignments:
         Due Oct. 6th (be prepared to discuss):
             Read Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things
 
-Week 6 (Oct. 5 & 7)
+### Week 6 (Oct. 5 & 7)
 
 Sound (download files for use in class)
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
     Production:
                 Complete Midterm
 
-Week 7 (Oct. 12 & 14)
+### Week 7 (Oct. 12 & 14)
 Midterm due – Oct. 13th
+#### Assignments:
+
+##### Production:
 
 Assignments (do this before Oct. 25th):
 
@@ -210,9 +234,12 @@ Assignments (do this before Oct. 25th):
         Be careful not to damage the wires or yourselves!
 
 FALL BREAK
-Week 8 (Oct. 26 & 28)
+### Week 8 (Oct. 26 & 28)
 
 Introduction to Electricity
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
@@ -226,9 +253,12 @@ Assignments:
         Read about analog output
         Read about analog Input
 
-Week 9 (Nov. 2 & 4)
+### Week 9 (Nov. 2 & 4)
 
 Arduino: digital input & output, analog input & output, printing
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
@@ -240,9 +270,12 @@ Assignments:
             A follow-up article
         Read about the voltage divider. Don’t worry about the theory too much or the section on level shifting. The important thing is to absorb a little of the concept of a voltage divider.
 
-Week 10 (Nov. 9 & 11)
+### Week 10 (Nov. 9 & 11)
 
 Sound, Servo motor, Mapping
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
@@ -256,9 +289,12 @@ Assignments:
             Her Code Got Humans on the Moon
         It is important that you understand the concepts behind BlinkWithoutDelay. Here are links to various other explanations of the same thing. Browse them, and read one deeply enough that you understand. Come to class with questions if none of these help.
 
-Week 11 (Nov. 16 & 18)
+### Week 11 (Nov. 16 & 18)
 
 Serial Communication, introduce Final Project
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
@@ -275,9 +311,12 @@ Assignments:
     Reading
         Due Nov. 24th (be prepared to discuss): Design Meets Disability
 
-Week 12 (Nov. 23 & 25)
+### Week 12 (Nov. 23 & 25)
 
 DC motors, Construction and Debugging, Final Project Proposal
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
@@ -299,13 +338,16 @@ Assignments:
             Get your project 90% complete
             Conduct user testing (record video)
 
-Week 13 (Dec. 7 & 9)
+### Week 13 (Dec. 7 & 9)
 
 Complete Final Project
+#### Assignments:
+
+##### Production:
 
 Assignments:
 
     Final Project and final project documentation due at the beginning of class, Dec. 14th
 
-Week 14 (Dec. 14)
+### Week 14 (Dec. 14)
 Final Project Due Dec 14th

@@ -830,7 +830,6 @@ and works in Arduino also exactly the same way.
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
 
 
-### todays-lecture
 ### September 16 2021
 
 #### Administration
@@ -893,3 +892,427 @@ void setup() {
 }
 
 ````
+
+### todays-lecture
+### September 21 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+#### Transformations
+Transformationss move the canvas relative to the coordinate sysem
+so you can draw in different places with the same code
+- Available 2D transforms are 
+	- `translate()`
+	- `rotate()`
+	- `scale()`
+- pushMatrix() and popMatrix() allow you to remember where the canvas was, 
+and then return to it's last position
+
+Example: Draw a house at a given location, no transform:
+
+````
+void house(int x, int y)
+{
+  triangle(x + 15, y, x, y + 15, x + 30, y + 15);
+  rect(x, y + 15, 30, 30);
+  rect(x + 12, y + 30, 10, 15);
+}
+````
+
+Same result, but using a transform:
+
+````
+void house(int x, int y)
+{
+  pushMatrix();
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+  popMatrix();
+}
+````
+
+##### Rotation and scaling 
+
+Work through 
+<a href="https://processing.org/tutorials/transform2d/">this</a> 
+tutorial
+
+* As always, Dan Shiffman has excellent
+[examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation).
+
+#### Text
+
+````
+String message= "Important message";
+
+void setup() {
+  size(640, 360);
+
+  // What fonts are available?
+  // String[] fontList = PFont.list();
+  // printArray(fontList);
+
+  PFont f = createFont("monaco", 32);
+  textFont(f, 32);
+
+	color myFavoriteColor =color(255, 0, 0);
+  fill(myFavoriteColor);
+
+  textAlign(CENTER);
+  text(message, width/2, height/2);
+}
+````
+
+**Things to notice**
+
+* New datatype called `PFont`
+* New datatype called `color`
+* `fill()` and `textAlign()` will apply to any further texts or shapes until
+they are changed
+
+Some advanced examples using text are
+[here](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
+
+##### Data Visualization
+
+What is data visualization? Here are some examples
+
+<ul>
+ 	<li><a title="http://benfry.com/allstreets/" href="http://benfry.com/allstreets/">Ben Fry</a></li>
+ 	<li><a href="http://www.aaronkoblin.com/project/flight-patterns/">Aaron Koblin</a></li>
+ 	<li>Jer Thorp
+<ul>
+ 	<li><a href="http://blog.blprnt.com/blog/blprnt/just-landed-processing-twitter-metacarta-hidden-data">just landed</a>
+<ul>
+ 	<li>just landed location</li>
+ 	<li>plus twitter home location</li>
+</ul>
+</li>
+ 	<li><a title="http://nytlabs.com/projects/cascade.html" href="http://nytlabs.com/projects/cascade.html">http://nytlabs.com/projects/cascade.html</a></li>
+ 	<li>Nytimes top <a href="https://www.flickr.com/photos/blprnt/sets/72157614008027965/with/3288898519/">coverage and connections</a></li>
+</ul>
+</li>
+ 	<li><a href="http://feltron.com/FAR14.html">nicholas feltron</a></li>
+</ul>
+<strong>Where to find data</strong>
+<ul>
+ 	<li>Sources
+<ul>
+ 	<li><a href="https://www.springboard.com/blog/free-public-data-sets-data-science-project/">https://www.springboard.com/blog/free-public-data-sets-data-science-project/</a></li>
+ 	<li>https://www.ndbc.noaa.gov/rt_data_access.shtml</li>
+ 	<li><a href="https://www.kaggle.com/datasets">Source</a> of datasets from Alia</li>
+	<li>Also look at examples from last spring. You can see their Github
+	repositories <a href="https://wp.nyu.edu/abudhabi_im_intro/student-github-repositories/">here</a></li>
+</ul>
+</li>
+ 	<li>Format
+<ul>
+ 	<li>CSV</li>
+ 	<li>Can use a spreadsheet program to open data from many formats and then save as CSV</li>
+</ul>
+</li>
+</ul>
+
+##### How to process CSV files
+
+````
+String strings[];
+
+void setup() {
+  size(480, 270);
+
+  // The text from the file is loaded into an array.
+  strings = loadStrings("data.csv");
+
+  // How many lines did we get?
+  println("strings array contains this many lines: " + strings.length);
+
+  noStroke(); // bargraph looks nicer with no outline
+}
+
+int csvRowNumber = 0;
+
+void draw() {
+  int data[];
+
+  background(255);
+
+  // use split() to split on commas (hence the ',')
+  // split() will split each string into an array of strings
+  // which we immediately convert into an array of ints using the int() function
+  data = int( split(strings[csvRowNumber], ',' ) );
+
+  // print out the array of data for this row from the original CSV file
+  println("data for row # " + csvRowNumber);
+  printArray(data);
+
+  // Now draw a bar graph of this data
+
+  // calculate how wide each line should be to fit the width of the canvas
+  float w = width/data.length;
+
+  for (int j = 0; j < data.length; j ++ ) {
+    // The array of ints is used to set the color and height of each rectangle.
+    fill(data[j], 0, 0); // change the amount of red according to the value
+    rect(j*w, height-data[j], w, data[j]); // the height also depends on the value
+  }
+
+  // Do we have another row to display?
+  if (csvRowNumber < strings.length-1) {
+    csvRowNumber++;
+  } else {
+    println("This is the last row");
+  }
+
+  noLoop(); // stops the draw() function from continuing
+}
+
+// If you click the mouse, allow the draw() function to resume
+void mouseClicked() {
+  loop();
+}
+````
+
+Things to notice:
+1. The `split()` function does half the magic
+1. The `int()` function does the other half
+1. `loop()` and `noLoop()` can be used anytime you want to start or stop the
+	 `draw()` function from repeating
+1. We will talk later about events (`mouseClicked()`)
+
+
+
+More complex examples are in Aaron Sherwood’s Introduction to Interactive Media <a href="https://github.com/aaronsherwood/introduction_interactive_media">Github repository</a>
+<ul>
+ 	<li>load/split strings: splitCommas.pde</li>
+ 	<li>load save table: tableSaveLoad.pde</li>
+ 	<li>forces: lettersGravityWind.pde</li>
+</ul>
+
+##### JSON and XML: Other file formats
+
+JSON and XML are other format for organizing data in a file. 
+They are more complex than CSV, and again Processing provides functions.
+
+For example for 
+parsing [JSON](https://processing.org/examples/loadsavejson.html)
+
+If you want to learn more about JSON and also XML, 
+[this](https://www.youtube.com/watch?v=rqROpUNb2aY)
+is a good introductory video tutorial.
+
+##### Generative Text
+Pull words from a CSV file 
+and by using `random()` in a clever way,
+write poems or slogans or whatever. 
+
+Here is a terribly lame example:
+
+````
+/*
+Generate poetry from a file of words
+ the file has words in this format:
+ 
+ roses,red,violets,blue,dream,disneyland
+ 
+ we will refer to them as:
+ 
+ item1,color1,item2,color2,verb,location
+ 
+ and construct a poem:
+ 
+ item1 are color1, item2 are color2
+ when I verb I verb to location
+ */
+
+// Let's put the index of the word into numbers:
+final int ITEM1 = 0;
+final int COLOR1 = 1;
+final int ITEM2 = 2;
+final int COLOR2 = 3;
+final int VERB = 4;
+final int LOCATION = 5;
+// final means that I will not change these variables
+// It is conventional to use all caps for variable names that will not change
+
+
+String strings[];
+
+void setup() {
+
+  // The text from the file is loaded into an array.
+  strings = loadStrings("mydatafolder/words.csv");
+
+  // How many lines did we get?
+ // println("strings array contains this many lines: " + strings.length);
+}
+
+int csvRowNumber = 0;
+
+void draw() {
+  String singleRow[];
+
+  // First line: "item1 are color1, item2 are color2"
+
+  // Pick a random number, round that number DOWN to a whole number,
+  // and split that row into individual words
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get item1
+  print(singleRow[ITEM1]);
+
+  print(" are " );
+
+  // Now keep doing this for each word
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get color1
+  print(singleRow[COLOR1]);
+  
+  // need a space between COLOR1 and ITEM2
+  print(", " );
+
+  // Now the second half of the first line: "violets are blue" 
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[ITEM2]);
+  print(" are " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get color1
+  print(singleRow[COLOR2]);
+
+
+  // that's the end of the first line of the poem so start a new line
+  println();
+
+  // Now the second line: when I verb I verb of location
+
+  print("When I " );  
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[VERB]);
+  print(" I " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[VERB]);
+  print(" to the " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  print(singleRow[LOCATION]);
+
+  // that's the end of the second line of the poem so start a new line
+  // and also put an extra blank line
+  println();
+  println();
+
+  noLoop(); // Wait for a mouse click then do it again
+}
+
+// If you click the mouse, allow the draw() function to resume
+void mouseClicked() {
+  loop();
+}
+````
+
+and this is an example of the words you can feed it. If you copy the program
+exactly as I have, you should make a folder called `mydatafolder` in the same
+folder as the sketch, and then put these contents into a file called
+`words.csv`:
+
+````
+roses,red,violets,blue,dream,disneyland
+robots,silver,pencils,grey,run,supermarket
+goldfish,orange,motors,white,turn,workbench
+books,multicolored,lamposts,azure,swim,island
+computers,black,mice,pink,squeak,home
+````
+
+#### Perlin Noise
+
+````
+void draw() {
+  background(204);
+  float n = random(0, width);
+  line(n, 0, n, height);
+}
+````
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflys, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+````
+float offset = 0.0;
+
+void draw() {
+  background(204);
+  offset = offset + .01;
+  float n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+````
+
+Things to notice:
+
+* Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
+#### Events
+
+````
+final int maxColors = 10;
+color[] myColors = new color[maxColors];
+
+int colorChoice = 0;
+
+void setup() {
+  size(600, 500);
+
+  for (int i = 0; i < myColors.length; i ++ ) {
+    myColors[i]=color(random(255), random(255), random(255));
+  }
+}
+
+void draw() {
+}
+
+void mousePressed() {
+  background(myColors[colorChoice]);
+  colorChoice ++;
+}
+````
+
+Things to notice:
+
+* How does the background change if I never call `mousePressed()`?
+`mousePressed()` is a *callback function*, meaning we have told
+Processing that we are interested in this event, and if it occurs,
+call this function. There are many different types of events available in
+Processing, and you register an interest in them by creating a callback
+function with the appropriate name. See *mouse* and *keyboard* 
+in the Processing Reference Page.
+
+* What happens if I click the mouse more than 10 times?  
+
+(Time permitting)
+#### More Data Visualization and generative text:
+
+- Examples
+	- feltron: http://feltron.com/FAR14.html
+	- jer thorp: https://www.jerthorp.com/portfolio
+	- https://www.syedrezaali.com/generative-typography-experiments/
+
+show text on screen
+have students make a scroller in pairs
+show how to get by char
+make scroller again by char
+add randomness/perlin noise
+have them look at circle letters, come up with questions and explanations in
+pairs
+have students work through example on their own and use data
+show split lines and table
+then have them work with cupcake data https://trends.google.com/
+show generative basic example
+have them work in pairs to make something
+share what they made
+show generative word from circles sketch
+

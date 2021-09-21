@@ -18,7 +18,7 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 
 - Erica & Sonny September 14 
 - Shumin & Boby September 21
-- Xander Injoo  September 28 
+- Injoo  September 28 
 - Fiona & Angelica October 5
 - Tanisha & Xiaoli October 12
 - Aadha & Jeongi October 19
