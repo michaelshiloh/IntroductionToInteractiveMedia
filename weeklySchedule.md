@@ -129,7 +129,7 @@ Due Sept. 22th
 
 ##### Reading:
 
-Due Sept. 20nd: 
+Due Sept. 21nd: 
 
 - Watch this two part
 <a href="https://www.youtube.com/watch?v=o9sgjuh-CBM">(part 1</a>
@@ -139,7 +139,7 @@ video tutorial on transformations
 - Watch <a href="https://www.youtube.com/watch?v=8ZEMLCnn8v0">this</a>
 video tutorial on Perlin noise</li>
 
-Due Sept. 22nd: 
+Due Sept. 23nd: 
 
 - [The Art of Interactive Design, Ch. 1](doc/theArtOfInteractiveDesign.pdf),
   and be prepared to discuss (Shumin and Boby to lead)
