@@ -893,7 +893,6 @@ void setup() {
 
 ````
 
-### todays-lecture
 ### September 21 2021
 
 #### Administration
@@ -1002,6 +1001,14 @@ Format
 	(Excel, OpenOffice Calc, Google Sheets) to export any table in CSV format
 - Other formats are JSON and XML. We won't spend much time on them, but there
 	are Processing libraries available for parsing them
+
+### todays-lecture
+### September 23 2021
+
+#### Administration
+
+- **Record Zoom!**
+- Discussion: The Art of Interactive Design (Shumin and Boby) (20 minutes max)
 
 ##### Worked example: Getting and working with a CSV file
 
