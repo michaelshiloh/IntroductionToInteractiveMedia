@@ -120,7 +120,7 @@ Functions, Arrays, and Object-Oriented Programming
 
 ##### Production:
 
-Due Sept. 22th 
+Due Sept. 23th 
 
 - Create a generative artwork using Object-Oriented Programming. 
 - You may use arrays if you wish. 
