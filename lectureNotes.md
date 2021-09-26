@@ -1421,10 +1421,11 @@ Example15-3: *Swappingimages* from Dan Shiffman's *Learning Processing*
 
 You can access individual pixels 
 from the canvas (and whatever is on the canvas)
-using the special built-in array called ````pixels````. 
-Before using it you must load images from the canvas into the ````pixels```` array ````usingloadPixels()````, 
-and after making any changes you must call ````updatePixels()```` 
-to write from the pixels array back to the canvas
+using the special built-in array called `pixels`. 
+Before using this array you must load images from the canvas 
+into the `pixels` array using the `loadPixels()` function, 
+and after making any changes you must call `updatePixels()` 
+to write from the `pixels` array back to the canvas
 if you want to make changes to the canvas
 
 ````
