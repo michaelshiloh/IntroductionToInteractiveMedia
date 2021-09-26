@@ -1002,7 +1002,6 @@ Format
 - Other formats are JSON and XML. We won't spend much time on them, but there
 	are Processing libraries available for parsing them
 
-### todays-lecture
 ### September 23 2021
 
 #### Administration
@@ -1179,6 +1178,33 @@ books,multicolored,lamposts,azure,swim,island
 computers,black,mice,pink,squeak,home
 ````
 
+(Time permitting)
+#### More Data Visualization and generative text:
+
+
+show text on screen
+have students make a scroller in pairs
+show how to get by char
+make scroller again by char
+add randomness/perlin noise
+have them look at circle letters, come up with questions and explanations in
+pairs
+have students work through example on their own and use data
+show split lines and table
+then have them work with cupcake data https://trends.google.com/
+show generative basic example
+have them work in pairs to make something
+share what they made
+show generative word from circles sketch
+
+
+### todays-lecture
+### September 28 2021
+
+#### Administration
+
+- **Record Zoom!**
+
 #### Perlin Noise
 
 ````
@@ -1247,22 +1273,277 @@ in the Processing Reference Page.
 
 * What happens if I click the mouse more than 10 times?  
 
-(Time permitting)
-#### More Data Visualization and generative text:
+##### Array Lists
+
+Arrays are great, but they are of fixed size. There is an extension of the
+array concept called an ArrayList which allows the size to be manipulated
+dynamically.
+
+Here is a short example showing how to work with ArrayLists:
+
+````
+class Thing {
+  int i;
+  float f;
+  
+  Thing(int _i, float _f) {
+    i = _i;
+    f = _f;
+  }
+  
+  int getInt() {
+    return i;
+  }
+  
+  float getFloat() {
+    return f;
+  }
+}
+
+ArrayList<Thing> myThings = new ArrayList<Thing>();
+
+void setup() {
+
+  // The ArrayList should be empty
+  println(myThings.size());
+
+  for (int i = 0; i < 10; i++) {
+    myThings.add(new Thing(i, float(i)));
+    println(myThings.size()); // not that size() is a function!
+  }
+
+  // The value at index 5 should be 5
+  // Just like arrays, the index starts at zero
+  // so index 5 is the sixth item
+  println("at index 5, x = " + myThings.get(5).getInt());
+}
+
+void mouseClicked() {
+  myThings.add(new Thing(mouseX, mouseY));
+  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
+}
+
+void keyPressed() {
+  if (key == 'd') {
+    myThings.remove(0); // remove the first vector
+    println("removed the first Thing, size is now " + myThings.size());
+  }
+
+  if (key == 'p') {
+    for (int i = 0; i < myThings.size(); i++) {
+      Thing t = myThings.get(i);
+      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
+    }
+  }
+}
+
+// Need to have a draw() function so that callbacks occur
+void draw() {
+}
+````
+
+#### Working with Images
+
+[aiweiwei.jpg](media/aiweiwei.jpeg)
+
+<strong>PImage</strong>
+<ul>
+ 	<li>Just another class, i.e. it has
+<ul>
+ 	<li>Data (the pixels, width, height, etc.)</li>
+ 	<li>Functionality `(image()`, `get()`, etc.)</li>
+</ul>
+</li>
+</ul>
+
+````
+PImage photo; 
+
+void setup() { 
+  size(700, 700); 
+  photo = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+} 
+
+void draw() { 
+  image(photo, 10, 10);
+	// How do you suppose you might scale the image?
+}
+````
+
+Things to notice
+
+* Get familiar with the error *NullPointerException*
+* If you do not specify a complete path Processing will look 
+in the same folder as the sketch and
+for a folder called *data* in the same folder as the sketch
+(I'm not sure in what order)
 
 
-show text on screen
-have students make a scroller in pairs
-show how to get by char
-make scroller again by char
-add randomness/perlin noise
-have them look at circle letters, come up with questions and explanations in
-pairs
-have students work through example on their own and use data
-show split lines and table
-then have them work with cupcake data https://trends.google.com/
-show generative basic example
-have them work in pairs to make something
-share what they made
-show generative word from circles sketch
+- `image(photo, positionX, positionY, width, height)` - display 
+this image at this location and scale to this size
+- `photo.resize(w,h)` - scale to this size. If one of the arguments is zero,
+	then scale to the remaining argument and retain the original aspect ratio.
+- `photo.get(x,y,w,h)` - Gets a portion of the image
+- `photo.get(x,y)` - Gets the color of the pixel at this location
+
+````
+PImage photo;
+
+void setup() {
+  photo = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+
+  size(700, 700);
+
+  image(photo, 10, 10);
+
+  PImage newImage = photo.get(400, 550, 100, 100);
+
+  image (newImage, 50, 50);
+}
+````
+
+Also
+
+````
+tint(red, green, blue);
+imageMode(CENTER);
+````
+
+Arrays of images
+
+Example15-3: *Swappingimages* from Dan Shiffman's *Learning Processing* 
+
+
+<strong>Pixels</strong>
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called ````pixels````. 
+Before using it you must load images from the canvas into the ````pixels```` array ````usingloadPixels()````, 
+and after making any changes you must call ````updatePixels()```` 
+to write from the pixels array back to the canvas
+if you want to make changes to the canvas
+
+````
+color pink = color(255, 102, 204);
+
+loadPixels();
+
+// change the first row to pink
+for (int i = 0; i < width; i++) {
+  pixels[i] = pink; 
+}
+
+updatePixels();
+````
+
+the pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths:
+
+![](media/pixelarray2d.jpg)
+
+
+````
+color pink = color(255, 102, 204);
+
+loadPixels();
+
+// Change the fifth row to pink
+for (int i = width*5; i < (width + width*5); i++) {
+  pixels[i] = pink;
+}
+
+updatePixels();
+````
+
+It's important to remember that a pixel is just a color (red, green, blue).
+Anything so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+int r = 255;
+int change = -1;
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+
+  color myColor = color(r, 102, 204);
+
+  loadPixels();
+  for (int i = 0; i < width * height; i++) {
+    pixels[i] = myColor;
+  }
+  updatePixels();
+
+  r -= change;
+
+  if (r < 0 || r > 255) {
+    change = -change;
+  }
+}
+
+````
+
+The `pixels` [data
+type](https://processing.org/reference/color_datatype.html)
+
+Some fun examples from Professor Sherwood:
+
+![](media/circularImages.png)
+
+````
+PImage img;
+PImage[] tiles;
+
+int tileSize = 100;
+
+void setup() {
+  size (400,400);
+  img = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+  tiles = new PImage[img.height/tileSize];
+  for (int i=0; i< tiles.length; i++) {
+    tiles[i] = img.get(int(random(img.width-tileSize)), int(random(img.height-tileSize)), tileSize, tileSize);
+  }
+  imageMode(CENTER);
+}
+
+void draw() {
+  pushMatrix();
+  translate(width/2, height/2);
+
+  int numSegments = 10;
+  float eachAngle = TWO_PI/numSegments;
+  int whichImage = (int)random(tiles.length);
+  for (int i = 0; i< numSegments; i++) {
+    float x = cos(eachAngle*i)*tileSize+1;
+    float y = sin(eachAngle*i)*tileSize+1;
+    pushMatrix();
+    translate(x, y);
+    rotate(eachAngle*i);
+    image(tiles[whichImage], 0, 0);
+    popMatrix();
+  }
+
+  popMatrix();
+  noLoop();
+}
+
+void keyPressed() {
+  loop();
+}
+````
+
+Here is a more complex version, on which I based the simple version above: [circularImages.pde](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/circularImages/circularImages.pde)
+
+Can we use a sequence of images for animation?
+
+![](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/pixels/spritesheet/data/walking.png)
+
+How would we use them?
+
+Aaron's
+[method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
 
