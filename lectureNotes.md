@@ -1344,7 +1344,10 @@ void draw() {
 
 #### Working with Images
 
-[aiweiwei.jpg](media/aiweiwei.jpeg)
+To work along with me, either prepare an image file that you can work with or
+download
+[this](media/aiweiwei.jpeg)
+image
 
 <strong>PImage</strong>
 <ul>
