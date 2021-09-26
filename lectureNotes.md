@@ -1025,8 +1025,9 @@ format".
 	- Some of the fields are text (e.g. t_state, t_county)
 	- Some of the fields are missing (e.g. faa_ors, faa_asn)
 - Now you can load this file into an array of `Strings` and then process each
-	line one at a time, pulling out individual fields. See 
-	[here](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/processingSketches/visualizeWindTurbineData)
+	line one at a time, pulling out individual fields. All this is done in the  
+	[example](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/processingSketches/visualizeWindTurbineData)
+	we looked at in class
 
 
 Things to notice:
