@@ -1205,143 +1205,6 @@ show generative word from circles sketch
 
 - **Record Zoom!**
 
-#### Perlin Noise
-
-````
-void draw() {
-  background(204);
-  float n = random(0, width);
-  line(n, 0, n, height);
-}
-````
-
-What if we wanted the line to move in a more organic, lifelike
-fashion? Organic things (e.g. butterflys, leaves blowing in the wind, clouds) 
-don't jump instantly from one place to another,
-they tend to move close to where they were last time
-
-````
-float offset = 0.0;
-
-void draw() {
-  background(204);
-  offset = offset + .01;
-  float n = noise(offset) * width;
-  line(n, 0, n, height);
-}
-````
-
-Things to notice:
-
-* Why is the variable `offset` global? (Remember our discussion of variable
-	scope)
-
-#### Events
-
-````
-final int maxColors = 10;
-color[] myColors = new color[maxColors];
-
-int colorChoice = 0;
-
-void setup() {
-  size(600, 500);
-
-  for (int i = 0; i < myColors.length; i ++ ) {
-    myColors[i]=color(random(255), random(255), random(255));
-  }
-}
-
-void draw() {
-}
-
-void mousePressed() {
-  background(myColors[colorChoice]);
-  colorChoice ++;
-}
-````
-
-Things to notice:
-
-* How does the background change if I never call `mousePressed()`?
-`mousePressed()` is a *callback function*, meaning we have told
-Processing that we are interested in this event, and if it occurs,
-call this function. There are many different types of events available in
-Processing, and you register an interest in them by creating a callback
-function with the appropriate name. See *mouse* and *keyboard* 
-in the Processing Reference Page.
-
-* What happens if I click the mouse more than 10 times?  
-
-##### Array Lists
-
-Arrays are great, but they are of fixed size. There is an extension of the
-array concept called an ArrayList which allows the size to be manipulated
-dynamically.
-
-Here is a short example showing how to work with ArrayLists:
-
-````
-class Thing {
-  int i;
-  float f;
-  
-  Thing(int _i, float _f) {
-    i = _i;
-    f = _f;
-  }
-  
-  int getInt() {
-    return i;
-  }
-  
-  float getFloat() {
-    return f;
-  }
-}
-
-ArrayList<Thing> myThings = new ArrayList<Thing>();
-
-void setup() {
-
-  // The ArrayList should be empty
-  println(myThings.size());
-
-  for (int i = 0; i < 10; i++) {
-    myThings.add(new Thing(i, float(i)));
-    println(myThings.size()); // not that size() is a function!
-  }
-
-  // The value at index 5 should be 5
-  // Just like arrays, the index starts at zero
-  // so index 5 is the sixth item
-  println("at index 5, x = " + myThings.get(5).getInt());
-}
-
-void mouseClicked() {
-  myThings.add(new Thing(mouseX, mouseY));
-  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
-}
-
-void keyPressed() {
-  if (key == 'd') {
-    myThings.remove(0); // remove the first vector
-    println("removed the first Thing, size is now " + myThings.size());
-  }
-
-  if (key == 'p') {
-    for (int i = 0; i < myThings.size(); i++) {
-      Thing t = myThings.get(i);
-      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
-    }
-  }
-}
-
-// Need to have a draw() function so that callbacks occur
-void draw() {
-}
-````
-
 #### Working with Images
 
 To work along with me, either prepare an image file that you can work with or
@@ -1375,8 +1238,9 @@ void draw() {
 
 Things to notice
 
-* Get familiar with the error *NullPointerException*
-* If you do not specify a complete path Processing will look 
+- Get familiar with the error *NullPointerException*
+	- What can you do to write robust code?
+- If you do not specify a complete path Processing will look 
 in the same folder as the sketch and
 for a folder called *data* in the same folder as the sketch
 (I'm not sure in what order)
@@ -1560,3 +1424,140 @@ Aaron's
 
 Try
 [this](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/processingSketches/computerVision/frameDifferencing/frameDifferencing.pde) example
+
+#### Perlin Noise
+
+````
+void draw() {
+  background(204);
+  float n = random(0, width);
+  line(n, 0, n, height);
+}
+````
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflies, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+````
+float offset = 0.0;
+
+void draw() {
+  background(204);
+  offset = offset + .01;
+  float n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+````
+
+Things to notice:
+
+* Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
+#### Events
+
+````
+final int maxColors = 10;
+color[] myColors = new color[maxColors];
+
+int colorChoice = 0;
+
+void setup() {
+  size(600, 500);
+
+  for (int i = 0; i < myColors.length; i ++ ) {
+    myColors[i]=color(random(255), random(255), random(255));
+  }
+}
+
+void draw() {
+}
+
+void mousePressed() {
+  background(myColors[colorChoice]);
+  colorChoice ++;
+}
+````
+
+Things to notice:
+
+* How does the background change if I never call `mousePressed()`?
+`mousePressed()` is a *callback function*, meaning we have told
+Processing that we are interested in this event, and if it occurs,
+call this function. There are many different types of events available in
+Processing, and you register an interest in them by creating a callback
+function with the appropriate name. See *mouse* and *keyboard* 
+in the Processing Reference Page.
+
+* What happens if I click the mouse more than 10 times?  
+
+##### Array Lists
+
+Arrays are great, but they are of fixed size. There is an extension of the
+array concept called an ArrayList which allows the size to be manipulated
+dynamically.
+
+Here is a short example showing how to work with ArrayLists:
+
+````
+class Thing {
+  int i;
+  float f;
+  
+  Thing(int _i, float _f) {
+    i = _i;
+    f = _f;
+  }
+  
+  int getInt() {
+    return i;
+  }
+  
+  float getFloat() {
+    return f;
+  }
+}
+
+ArrayList<Thing> myThings = new ArrayList<Thing>();
+
+void setup() {
+
+  // The ArrayList should be empty
+  println(myThings.size());
+
+  for (int i = 0; i < 10; i++) {
+    myThings.add(new Thing(i, float(i)));
+    println(myThings.size()); // not that size() is a function!
+  }
+
+  // The value at index 5 should be 5
+  // Just like arrays, the index starts at zero
+  // so index 5 is the sixth item
+  println("at index 5, x = " + myThings.get(5).getInt());
+}
+
+void mouseClicked() {
+  myThings.add(new Thing(mouseX, mouseY));
+  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
+}
+
+void keyPressed() {
+  if (key == 'd') {
+    myThings.remove(0); // remove the first vector
+    println("removed the first Thing, array size is now " + myThings.size());
+  }
+
+  if (key == 'p') {
+    for (int i = 0; i < myThings.size(); i++) {
+      Thing t = myThings.get(i);
+      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
+    }
+  }
+}
+
+// Need to have a draw() function so that callbacks occur
+void draw() {
+}
+````
