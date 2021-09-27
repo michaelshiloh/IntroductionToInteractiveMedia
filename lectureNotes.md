@@ -1551,3 +1551,12 @@ How would we use them?
 Aaron's
 [method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
 
+#### Working with a camera: Computer Vision!
+
+- Add the video library
+	- Sketch -> Import Library -> Add Library
+	- Filter by video
+	- Install the *Video | GStreamer-based video library for Processing*
+
+Try
+[this](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/processingSketches/computerVision/frameDifferencing/frameDifferencing.pde) example
