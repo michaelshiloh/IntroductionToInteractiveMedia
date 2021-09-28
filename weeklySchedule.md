@@ -190,6 +190,7 @@ Due Oct. 13th
 
 - Make a game using everything you have learned so far
 - Can be one or more players
+- The game must not be violent (e.g. no shooting characters)
 - Must include
 	- At least one shape
 	- At least one image
