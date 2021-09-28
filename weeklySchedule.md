@@ -148,7 +148,6 @@ Due Sept. 23nd:
 
 Loading Data, Displaying text 
 
-### todays-assignment
 #### Assignments:
 
 ##### Production:
@@ -171,38 +170,50 @@ Due Sept. 29th:
 
 Image Processing, introduce Midterm Project (download for class)
 
+### todays-assignment
 #### Assignments:
 
 ##### Production:
 
-Due this Wed. Sept. 29th:
+Due this Wed. Sept. 30th:
 
 - Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
 
 Due Oct. 4th 
 
 - Make some progress on your midterm project:
-- Describe in your Github repository
+- Describe in your Github repository in a new folder called *midterm*
 
+##### Midterm Project 
 
-            Midterm Project:
-                Make a game using everything you have learned so far
-                Due Oct. 13th
-                Can be one or more players
-                Must include
-                    At least one shape
-                    At least one image
-                    At least one sound
-                    At least one on-screen text
-                The game must start with a screen giving instructions, and must wait there until a button or key (your choice) is pressed
-                After the game is won or lost, there must be a way to restart the game without closing and restarting the program
-    Reading:
-        Due Oct. 6th (be prepared to discuss):
-            Read Chapter 1 of The Design of Everyday Things, The Psychopathology of Everyday Things
+Due Oct. 13th
+
+- Make a game using everything you have learned so far
+- Can be one or more players
+- Must include
+	- At least one shape
+	- At least one image
+	- At least one sound
+	- At least one on-screen text
+- The game must:
+	- Start with a screen giving instructions
+	- Wait at the start screen until a button or key (your choice) is pressed.
+	- After the game is won or lost, 
+		there must be a way to restart the game 
+		**without closing and restarting the program**
+
+##### Reading
+
+Due Oct. 6th 
+
+Read Chapter 1 of 
+[The Design of Everyday Things, The Psychopathology of Everyday
+Things](http://pages.ucsd.edu/%7Emboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf)
 
 ### Week 6 (Oct. 5 & 7)
 
 Sound (download files for use in class)
+
 #### Assignments:
 
 ##### Production:
