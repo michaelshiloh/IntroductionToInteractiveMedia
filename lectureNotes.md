@@ -1204,6 +1204,8 @@ show generative word from circles sketch
 #### Administration
 
 - **Record Zoom!**
+- Ume and Jack at 12:55
+- Look at homework
 
 #### Working with Images
 
