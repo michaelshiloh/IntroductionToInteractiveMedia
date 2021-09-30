@@ -215,7 +215,7 @@ Things](http://pages.ucsd.edu/%7Emboyle/COGS1/readings/Norman-COGS1-The%20Psycho
 
 ### Week 6 (Oct. 5 & 7)
 
-Sound (download files for use in class)
+Sound 
 
 #### Assignments:
 
