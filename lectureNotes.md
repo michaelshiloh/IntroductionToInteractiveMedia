@@ -1563,3 +1563,21 @@ void keyPressed() {
 void draw() {
 }
 ````
+
+### todays-lecture
+### September 30 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+#### Class
+
+Discussion: Lauren McCarthy’s Eyeo talk You, Me and My Computer (Injoo)
+
+Share midterm project ideas
+
+Time permitting, working in groups:
+
+- Look at homework (data visualizations or generative text output) and look at
+	each other's code

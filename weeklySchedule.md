@@ -152,13 +152,14 @@ Loading Data, Displaying text
 
 ##### Production:
 
-Due Sept. 27th: 
+Due Sept. 30th: 
 
-- Either make some sort of data visualization, or create a generative text output.
+- Either make some sort of data visualization, 
+or create a generative text output.
 - Document at least as well as our previous assignments
 
 ##### Reading:
-Due Sept. 29th: 
+Due Sept. 30th: 
 
 -Watch Lauren McCarthy’s Eyeo talk [You, Me and My Computer](https://vimeo.com/110607681)  
 (45 minutes), be prepared to discuss (Injoo to lead)
@@ -177,7 +178,8 @@ Image Processing, introduce Midterm Project (download for class)
 
 Due this Wed. Sept. 30th:
 
-- Bring an idea (or ideas) to class for your midterm. We will spend part of class on Wednesday working on your midterms.
+- Bring an idea (or ideas) to class for your midterm. 
+We will spend part of class next week working on your midterms.
 
 Due Oct. 4th 
 
