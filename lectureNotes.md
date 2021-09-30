@@ -1571,6 +1571,29 @@ void draw() {
 
 - **Record Zoom!**
 
+#### Announcements
+
+Endless Studios Informational Kickoff
+
+- When: October 6th, 6-7pm (bus will depart NYUAD at 5pm)
+- Where: Group42 Headquarters, Captial Gate building, Abu Dhabi
+
+The Interactive Media program has partnered with 
+[Group42[(https://g42.ai/] and 
+[Endless Studios](https://endless-studios.itch.io/)
+(an apprentice-based youth game studio) in a program where students, in groups
+of 5, create a video game together under the guidance of an Endless Studios
+mentor. At the end of the mentorship period you will have the opportunity to
+continue with your game in an incubator or be paired with industry internships
+in Abu Dhabi. We're planning an informational kickoff event at Group42's
+headquarters in Abu Dhabi on October 6th. Space is limited, only 14 spots, so
+sign up quickly! If there is enough interest we may open up a second date.
+
+Sign up
+[here](https://docs.google.com/forms/d/e/1FAIpQLSdtVJym8KaydEgvXOJ79eQq0wVBmiHBT1Vf6Ei7EJNqC-YB2w/viewform)
+
+This event is open to NYUAD students only.
+
 #### Class
 
 Discussion: Lauren McCarthy’s Eyeo talk You, Me and My Computer (Injoo)
