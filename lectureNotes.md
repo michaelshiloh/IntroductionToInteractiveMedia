@@ -1564,8 +1564,25 @@ void draw() {
 }
 ````
 
-### todays-lecture
 ### September 30 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+#### Class
+
+Discussion: Lauren McCarthy’s Eyeo talk You, Me and My Computer (Injoo)
+
+Share midterm project ideas
+
+Time permitting, working in groups:
+
+- Look at homework (data visualizations or generative text output) and look at
+	each other's code
+
+### todays-lecture
+### October 5 2021
 
 #### Administration
 
@@ -1594,13 +1611,929 @@ Sign up
 
 This event is open to NYUAD students only.
 
-#### Class
+#### Documentation
 
-Discussion: Lauren McCarthy’s Eyeo talk You, Me and My Computer (Injoo)
+- Midterm documentation must be excellent
+	- Include photos, sketches, GIFS as appropriate
+- Include block at the beginning of the code
+- ^T
+- Unused variables or functions
+- Commented out code
 
-Share midterm project ideas
+#### Sound
 
-Time permitting, working in groups:
+Sound library [reference
+page](https://processing.org/reference/libraries/sound/index.html)
 
-- Look at homework (data visualizations or generative text output) and look at
-	each other's code
+##### Install the Sound library
+
+- Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install *Sound* written by *The Processing Foundation*
+
+##### Play with examples
+
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+
+**Notes**
+1. Some soundfiles don't work. I don't know why.
+2. New concept: ````switch()```` statement
+3. ````keyPressed()```` is another example of a ````callback function ````
+
+### February 25 2021
+
+##### Examples from Learning Processing chapter 20
+
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+- The first example sound file is one that does not work for me. 
+
+##### What is
+[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
+
+#### If we had multiple sound files, how would we play the next one when we click the mouse?
+
+Let's try this together before you look at a couple of ways to solve this
+
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+````
+
+One solution:
+
+````
+import processing.sound.*; //* load the sound library
+
+SoundFile[] songs;
+final int numberOfSongs = 5;
+
+SoundFile currentSong;
+
+void setup() {
+  size(400, 500);
+
+  songs = new SoundFile[numberOfSongs]; // makes the array of songs
+
+  // open each file and put it in the songs array
+  for (int i = 0; i< numberOfSongs; i++) {
+    songs[i] = new SoundFile( this, "/tmp/" + (i+1) + ".aif");
+  }
+  currentSong = songs[0];
+}
+
+void draw() {
+}
+
+void mousePressed() {
+
+  if (currentSong.isPlaying() == false ) {
+    int songToPlay = (int) random(numberOfSongs);
+    songs[songToPlay].play();
+    currentSong = songs[songToPlay];
+  }
+}
+````
+
+Another [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
+
+##### Blocking vs. non-blocking functions
+
+- Which function is non-blocking?
+- How do you know when a non-blocking function is done?
+- Soudfile [reference
+	page](https://processing.org/reference/libraries/sound/SoundFile.html)
+
+What about using the mouse position to select sound tracks?
+
+Let's try this together before you look at the 
+[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
+
+##### Synthesis
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+
+##### Debugging
+
+Here are some ideas we came up with in class. There are many more suggestions!
+Add your own or Google "How to debug" for tons of ideas:
+
+Debugging
+
+- Comment out each line until you find the problem
+- Read the error messages! This only helps for syntax for example
+	- Brackets missing
+	- Incorrect number or types of parameters
+	- Mis-spelled function names
+- Print value of variables or strings
+	- Especially inside of loops
+	- Especially for arrays and classes
+- Use the documentation! 
+	The reference page also says what are the data types for 
+	the return value and each argument
+- If you’re replacing something that works, don’t delete it; comment it out
+- Try things in isolation
+- Paste the error message into Google!
+- Make changes in small pieces and test after each piece
+- Use Discord!
+
+### March 2 2021
+- **Get kits from the bookstore**
+- Look at homework for March 18
+
+### March 4 2021
+- **Use Github to backup your work frequently!**
+- Remember homework due March 18
+
+### March 16 2021
+
+#### Electricity 
+
+**Simple circuit using Arduino, LED, and Resistor**
+
+The most confusing part of this lecture will be the solderless breadboard:
+![](media/breadboard.jpg)
+Image courtesy of
+[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+
+Here is how to build the circuit
+
+![](media/ArduinoPoweringLED_bb.png)
+
+
+**Theory**
+
+Electricity is mysterious
+
+- We can predict what it will do quite accurately, but don't really understand
+	it what is it
+- Flow of electrons
+- Electrons want to move from place of higher potential energy to place of lower potential energy
+	- Like a rock or water falling from a height
+	- Unlike a rock or water, electricity can only travel in a conductor
+- AC vs. DC - very briefly, will discuss more as it comes up
+
+What makes a circuit?
+
+- Something to provide that difference in potential 
+that will cause the electrons to want to move. 
+	- Typically a battery, charger, or USB port
+	- The technical term is "power supply"
+	- In our case your laptop via the Arduino
+		- What is the Arduino doing in this case?
+- Conductors to allow the electronics to move
+- Components or other things that usually convert this electrical energy 
+to some other form of energy (e.g. light, sound, heat, movement)
+- Optionally, switches or other sensors to control the flow of energy
+	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
+
+Schematics
+
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
+- Important part of something, 
+	without getting distracted by details (e.g. subway maps)
+- What's important in an electrical schematic?
+	- Where is the power coming from?
+	- What other components are there in the circuit?
+	- How are they connected?
+
+**Schematics are an important way to show a circuit. You will be required to
+understand and use them**
+
+Switches
+
+- What if we want to turn it the LED on and off?
+ 	- Pull out a wire
+ 	- That's a switch, but a pretty inconvenient one
+	- Schematic symbol of switch
+	- How does it work?
+		- Breaks the flow of electrons by breaking the continuous path
+		- Doesn't electricity (the electrons) just flow out the end of the wire?
+	- The switch can go on either side. How is this possible?
+
+Let's use a real switch
+
+![](media/ArduinoPoweringLEDWithSwitch_schem.png)
+![](media/ArduinoPoweringLEDWithSwitch_bb.png)
+
+- How is this switch different from the earlier switch?
+	- Schematic symbol of momentary switch
+	- What was the previous "switch"?
+	- Schematic symbol of toggle switch
+
+Series and Parallel
+
+- What if we put two switches in?
+- Two different ways: series and parallel
+	- Components in series have the same **current** flowing through them
+	- Components in parallel have the same **voltage** across them
+- No matter how many components you have in a circuit, and how they are
+	connected, they will obey these principles.
+
+![](media/ArduinoPoweringLEDWith2SwitchesParallel_schem.png)
+![](media/ArduinoPoweringLEDWith2SwitchesParallel_bb.png)
+
+![](media/ArduinoPowering2LEDSeries_schem.png)
+![](media/ArduinoPowering2LEDSeries_bb.png)
+
+- Any two components can be connected in series or parallel; not just switches
+- More than two components might be in series, or parallel, or neither
+
+Ohm's law
+- I=V/R
+- The math only works for linear components 
+	- But the principle is the same for non-linear components 
+	- **is a very important concept**:
+		- For a given resistance, 
+			the higher the pressure (voltage), 
+				the higher the current
+		- For a given voltage, the higher the "resistance", 
+			the lower the current
+
+### March 18 2021
+
+#### Arduino finally!
+
+Make sure everything is working
+
+- Upload the Blink example
+- Change the parameter in delay()
+- Upload again and verify that the LED blinks at the new rate
+
+What is going on?
+
+- Code
+- Circuit
+- I/O pins
+
+Let's extend this circuit to the breadboard:
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
+Let's add a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+// the setup function runs once when you press reset or power the board
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+#### In-class exercise
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. 
+Using two switches you can select between four patterns.
+How is that possible?
+
+````
+
+
+
+
+
+
+
+
+````
+
+Here is the hand drawn schematic example I drew in class:
+
+![](media/handDrawnSchematicExample.jpg)
+
+### March 23 2021
+
+- Student lead discussion
+- Homework presentations
+
+### March 25 2021
+
+#### Misc
+- Resources are available to help you with your homework (me, Jack), but only
+	if you start your homework early enough. If you wait until the last minute
+	and then don't have time to get help, that is unexcusable.
+- Hand drawn switches can use the simple symbol
+- Use constants for pin numbers
+- When you lead the class discussion, minimize the time you spend summarizing
+	the reading. 
+- Haneen last picture of March23 pulldown resistors seem to be in wrong row
+- Schematic problems
+
+#### Analog Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analog Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+
+Do you see a similarity between this circuit and 
+something we learned yesterday?
+
+Analog sensors can be resistive or not. Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch - 
+a switch is also effectively a voltage divider.
+
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
+#### Analog Output
+
+- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- This only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- Some actuators, like a solenoid, can be in only one of two states,
+	and so are more suited to a digital output
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from Processing that are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in Processing to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.println()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+#### In-class exercise
+
+1. Use one of the analog sensors to select which of two LEDs lights up
+1. Use one of the analog sensor to control how fast two LEDs alternate
+
+Code we played with in class:
+A few examples showing how to work with analog inputs and outputs
+
+````
+/* First, using map() and constrain() */
+
+void setup() {
+  Serial.begin(9600);
+}
+
+const int sensorPin = A2;
+const int blueLEDPin = 6;
+
+void loop() {
+
+  int sensorValue = analogRead (sensorPin); // range of 0 - 1023
+
+  int ledBrightness = map(sensorValue, 150, 620, 200, 0);
+
+  ledBrightness = constrain(ledBrightness, 0, 200);
+
+  // The range of my LED wasn't very good so I added this
+  // to see what was going on, then I realized that my range was quite different
+  Serial.print("sensorValue = ");
+  Serial.print(sensorValue);
+  Serial.print(" ledBrightness = ");
+  Serial.print(ledBrightness);
+  Serial.println();
+
+  analogWrite(blueLEDPin, ledBrightness); // can only go 0 - 255
+}
+````
+
+**Notes**
+1. You may have noticed that the built-in LED blinks 3 times when you turn on
+	 your Arduino. In fact it does this every time it resets, which also happens
+	 when you upload a new program. Since this LED is connected directly to pin
+	 13, it means that whatever you have attached to pin 13 will be activated 3
+	 times briefly whenver the Arduino resets. So, if you make a big robot, 
+	 you probably should not use pin 13 for the motor
+1. Pins 0 and 1 are used for communication with your laptop, and this has two
+	 effects:
+	1. Connecting anything to pins 0 or 1 might interfere with laptop
+		 communication (which includes uploading!)
+	2. Anything connected to pins 0 or 1 might be activated during
+		 communication!
+1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
+	 pins and need to use them there are ways around this.
+
+#### Data Types
+
+Just like in Processing, there are different data types:
+
+````
+int
+float
+char
+boolean
+````
+
+#### Conventions: Schematics and Wire Colors
+
+- When drawing schematics
+
+	- All **sensors** on the **left**
+	- All **inputs** on the **left** side of the Arduino 
+	- All **actuators** on the **right**
+	- All **outputs** on the **right** side of the Arduino 
+	- There are exceptions e.g.
+		- If using CAD you can't control where the pins are on Arduino
+		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
+			both inputs and outputs
+
+- When wiring your circuits
+
+	- All **5V** connections should use **red** wire, 
+	and don't use red for anything else
+	- All **GND** connections should use **black** wire,
+	and don't use black for anything else
+		- If you run out of black you may either
+			- Color some white cables black with a Sharpie
+			- Dedicate green as an additional black, and then
+			don't use green for anything else either
+	- All other connections can use any other colors
+	- If you use the buses
+		- Red bus for 5V
+		- Black or Blue bus for GND
+
+#### Circuits
+
+Some theory that might help you think about why circuits are they way they
+are
+- Important concepts:
+	- Voltage 
+		- Voltage is a relative quantity so it's always measured or identified
+			relative to some other point (usually a common reference point such as
+			"ground")
+		- Can be thought of the "pressure" applied to the electrons
+		- Analogous to holding a brick at a certain height above the floor. Relative
+			to the floor, the brick has a certain amount of potential energy
+		- Voltage exists whether or not there is a circuit
+	- Resistance 
+		- The resistance the electrons face as they try to get through
+		components. 
+		- Analogous to a traffic jam on a road
+		- Conductors (wires) have zero resistance (for our purposes)
+		- All components have some sort of "resistance"
+		- Resistance is a property of a component and therefore
+		exists whether or not there is a circuit
+	- Current  
+		- The rate of flow of electrons through a circuit (electrons/second)
+		- Somewhat analogous to litres/hour or cars/hour
+		- **Current only exists when there is a circuit**
+- If you measure the voltage between any two points, the voltage will not
+	change as you move to different places on the **wire**. 
+		However if you cross
+		a component the voltage might be different on the other side of the
+		component
+- If you measure current through components connected in 
+	series the current will not change. This is because **all** the electrons
+	that go through the first component have to go through the rest. No
+	electrons can leave the path, and no new ones can enter.
+		However if there are any branches some electrons might go on the
+		branches and thus the current will drop.
+
+#### Debugging
+
+If you want my help solving a problem in your assignment, do the following:
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Discord, describing carefully
+	1. What you think should be happening
+	1. What instead is happening 
+
+What techniques have you learned to help you find problems?
+	- 
+	- 
+	- 
+
+### March 30 2021
+
+- Discussion: A Brief Rant, A Response (Nouf, Rebecca)
+- View homework
+
+### April 1 2021
+
+Time permitting:
+- Review problems people had
+- Review rest of homework
+
+#### Sound
+
+**`tone()`**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- [Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- That's not very specific. I think they mean "prevents `analogWrite()` on
+		pins 3 and 11"
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in Processing
+- Arduino has arrays just like in Processing
+
+**Servo motor**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+	
+
+#### Blink Without `delay()`
+
+Why do we need this? 
+
+What problem does delay cause? 
+
+For example, how would you
+- Blink LEDs at different rates
+- Blink an LED while playing a tune
+- Play a tune while moving a servo motor
+
+**Whenever we use `delay()` we can't do other things**
+
+[Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
+
+So much for blinking. What if we want to move a servo motor at the same time?
+
+Adafruit [Multitasking Tutorial Part
+I](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+
+Play a melody and blink an LED 
+without using `delay()`:
+[toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
+
+#### Theory (continued)
+
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connect things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the right side of a
+		component!
+
+### April 6 2021
+
+- Discuss readings: Rhea and Soojin
+- Look at (and listen to) homework
+
+### April 8 2021
+
+#### Serial communication
+
+- Where have we seen serial before?
+	- serial.println
+	- Serial ports list
+	- What is serial? As opposed to what?
+		- Decimal information: `48,342`
+		- Each decimal digit can be one of 0, 1, 2, 3, 4, 5, 6, 7 8, 9
+		- Binary information: `0010110111101101`
+		- Each Binary dIgiT can be either 0 or 1
+		- Each Binary dIgiT is called a *bit*
+		- How do you convey a single bit (you've been doing this for the
+			past 3 weeks)?
+			- `digitalWrite(pin, HIGH)` can be thought of as a binary `1`
+			- `digitalWrite(pin, LOW)` can be thought of as a binary `0`
+		- How do you convey more than one bit?
+			- All bits at once, one wire per bit (this is called parallel
+				communication)
+			- One bit at a time, with some kind of timing (serial)
+		- Serial is the most ubiquitous way for computers to talk to each other
+			- But there are many different schemes to specify e.g. the timing
+				- I2C
+				- SPI
+				- RS-232
+				- USB - universal serial bus
+
+- A critical part of serial communication is the speed, or baud rate.
+- But, laptop is much, much faster than Arduino. What happens if you do this:
+
+````
+while (1) {
+	Serial.println("Hello, world");
+}
+````
+- Computers usually have a *buffer* 
+	(memory to store received messages until they are processed) 
+	- Your laptop is (1) very fast and (2) has a big buffer
+	- Your Arduino is (1) much slower and (2) has a very small buffer
+- Handshaking to the rescue!
+
+![](media/serialCommsSchematic.jpg)
+
+[Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
+
+##### In-class exercise! Yay!
+
+Break into groups and, referring to the given code and circuit
+do the following, always using handshaking:
+
+1. Make something that uses only one sensor on Arduino and makes the ellipse in
+processing move on the horizontal axis, in the middle of the screen, and
+nothing on Arduino is controlled by Processing
+1. Make something that controls the LED brightness from Processing
+1. Take Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde)
+and make it so every time the ball bounces one led lights up and then turns
+off, and you can control the wind from one analog sensor
+
+##### Homework: Note there is reading, production, and writing!
+
+### April 13 2021
+
+##### Class
+
+- Discuss readings: Riley
+- Look at homework
+
+
+### April 15 2021
+
+#### Can't upload sketch to Arduino
+1. Make sure the right port is selected
+1. Make sure you have nothing plugged in to pins 0 or 1
+1. Make sure your Arduino has power (is the power light on?)
+	1. If not, then you probably have a short circuit on your breadboard
+1. Make sure the USB cables are plugged in all the way
+1. Try a different USB port on your laptop (don't forget to select this port in the Arduino IDE)
+1. If you have a Processing sketch communicating with Arduino, 
+	you must stop the Processing sketch before you upload to Arduino
+
+#### Making things move 
+
+An LED can make light, what makes motion?
+
+	=> **Electromagnetism**
+
+Electrical devices that rely on the principle of electromagnetism:
+
+- Electromagnets
+- Loudspeakers and headphones
+- Solenoid
+- Relays
+- All kind of motors
+	- AC motors
+	- DC motors
+	- Brushless DC motors
+	- Stepper motors
+
+#### DC Motors
+
+Arduino current limitations
+
+Remember I=V/R 
+
+In Arduino, V is always 5V
+
+LEDs have relatively <strong>high</strong> "resistance", 
+and so consume <strong>low</strong> current.
+Motors have relatively <strong>low</strong> "resistance", 
+and so consume <strong>high</strong> current
+
+
+**Current flowing through any resistance causes heat (P = I^2/R)**
+
+**Everything has resistance**
+
+Therefore, where electricity is flowing there will be heat
+
+**Heat causes damage**
+
+Arduino can not protect itself from damaged caused by overheating. 
+It does not <strong>limit</strong> current, 
+it is <strong>damaged</strong> by too much current
+
+The amount of heat a component can withstand before it is damaged 
+is governed, to a large extent, by its size
+
+The transistors that make up Arduino are tiny 
+
+![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
+Image courtesy of SparkFun
+
+The reason for using the separate Motor Driver is simple:
+
+**It has much bigger transistors**
+
+(It also makes it easier to control both direction and speed, 
+but you could do that with the Arduino alone, 
+it  would just be a little more complicated)
+
+H-bridge (draw this on whiteboard)
+
+Circuit Schematic
+
+![](media/arduinoSparkFunMotorDriver_schem.jpg)
+
+How did I choose which pins to use?
+- Never use pins 0 and 1 (dedicated for USB communication)
+- Avoid pin 13 if possible (it flashes 3 times on reset)
+- Directional control pins (ain1, ain2, bin1, bin2) only require
+	digital signals so avoid pins with extra functionality 
+	(analog input, SPI, PWM)
+- Inclusion of the servo library 
+	disables `analogWrite()` on pins 9 and 10
+	(I'm not using the servo library now but perhaps I'll add it later)
+- Use of the `tone()` function 
+	disables `analogWrite()` on pins 3 and 11
+	(I'm not using the `tone()` function now but perhaps I'll add it later)
+- This leaves PWM pins 5 and 6 for the speed controls (pwma and pwmb)
+- Might as well choose nearby digital pins
+
+Theory
+
+Code
+
+````
+
+const int ain1Pin = 3;
+const int ain2Pin = 4;
+const int pwmAPin = 5;
+
+const int bin1Pin = 8;
+const int bin2Pin = 7;
+const int pwmBPin = 6;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  // turn in one direction, full speed
+  Serial.println("full speed");
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, HIGH);
+  digitalWrite(ain2Pin, LOW);
+  // stay here for a second
+  delay(1000);
+
+  // slow down
+  Serial.println("slowing down");
+  int speed = 255;
+  while (speed--) {
+    analogWrite(pwmAPin, speed);
+    delay(20);
+  }
+}
+
+````
+
+##### Look at final project proposals
+
+##### Time permitting:
+
+1. Quiz
+1. What's the difference between `write()` and `print()`?
+
+File -> Examples -> Communication -> Dimmer
+
+- Letters all have numeric codes
+
+[ASCII](http://www.asciitable.com/)
+
+- which keyboard character has the smallest numerical code? 
+	The largest?
+
+**`print()` and `println()` send the ASCII code, while `write` sends the raw number**
+- `write()` can only send numbers between 0 and 255
+
+
+### April 20 2021
+
+##### Quiz
+- Analog vs. digital
+- How many numbers can you count with one digit? two digits? three digits?
+	- What's the relationship between digits and the amount of numbers?
+	- What about binary digits (bits)?
+- Series vs. parallel
+	- Series components have one end of one component connected to one end of
+		another component and nothing else connected to that point. What happens
+		at the other ends of the components doesn't matter.
+	- Parallel components have one end of both components connected together,
+		and the other end of both components connected together. Other things may
+		or may not be connected anywhere.
+- Why some sensors never result in the full range of 0-5V (or to the numbers 0-1023 from `analogRead()`)
+- Short circuit
+- What to check with Digital Multimeter (DMM)?
+	- Supply voltage
+	- Continuity of each connection
+		- What is continuity?
+		- Must be measured with **unpowered** circuit
+- Pulldown resistor 
+	- "The resistor makes sure that the voltage becomes zero 
+when the switch is opened."
+- Full range does not depend on Arduino or ADC resolution. 
+	- It depends on the
+	sensor. In order to get full range, a sensor would have to go from zero ohms
+	to infinite ohms
+- Blink without delay
+	- `if (millis() % interval)`
+- How do you determine the range of values from any given sensor?
+
+##### Final project status
+
+### April 22 2021
+
+##### Course Evaluations
+
+##### Final project status
+
+- What is the most difficult or frightening (least confident) part that remains to be done?
+- What is the easiest part that remains to be done?
+
+### April 27 2021
+### todays-lecture
+- **Record Zoom**
+
+##### Course Evaluations
+
+If you did not finish your course evaluation last week, do it now.
+
+##### Final project 
+- Present your project on Thursday. You may show photographs and videos in
+	addition to the finished item
+
