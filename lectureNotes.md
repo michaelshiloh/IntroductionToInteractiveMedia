@@ -1632,31 +1632,18 @@ page](https://processing.org/reference/libraries/sound/index.html)
 - Search for Sound
 - Install *Sound* written by *The Processing Foundation*
 
-##### Play with examples
+##### Playing with examples
 
-- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
-- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
 - File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
-
-**Notes**
-1. Some soundfiles don't work. I don't know why.
-2. New concept: ````switch()```` statement
-3. ````keyPressed()```` is another example of a ````callback function ````
-
-### February 25 2021
-
-##### Examples from Learning Processing chapter 20
-
 - File -> Examples -> Contributed Examples -> Learning Processing ->
 chp_20_sound -> example_20_02_sound_effect
-- The first example sound file is one that does not work for me. 
+	- The sound file *beat.mp3* has never worked for me
 
-##### What is
-[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
-#### If we had multiple sound files, how would we play the next one when we click the mouse?
+##### Working in groups: 
+If we had multiple sound files, how would we play the
+next one when we click the mouse?
 
-Let's try this together before you look at a couple of ways to solve this
 
 ````
 
@@ -1725,15 +1712,23 @@ Another [solution](https://github.com/aaronsherwood/introduction_interactive_med
 - Soudfile [reference
 	page](https://processing.org/reference/libraries/sound/SoundFile.html)
 
-What about using the mouse position to select sound tracks?
+##### Working in groups: 
+Use the mouse position to select sound tracks
 
-Let's try this together before you look at the 
+Try to work it out on your own before looking at the 
 [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
 
 ##### Synthesis
 
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+
 We can create our own complex sounds starting with basic oscillators and then
 changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
 
+##### What is
+[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
+
 ##### Debugging
 
+What methods do you use for debugging?
