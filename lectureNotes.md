@@ -1729,6 +1729,16 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 ##### What is
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
+### todays-lecture
+### October 7 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+##### Discussion: The Design of Everyday Things, The Psychopathology of Everyday
+Things (Fiona and Angelica)
+
 ##### Debugging
 
 What methods do you use for debugging?

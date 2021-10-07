@@ -207,7 +207,7 @@ Due Oct. 13th
 
 ##### Reading
 
-Due Oct. 6th 
+Due Oct. 7th 
 
 Read Chapter 1 of 
 [The Design of Everyday Things, The Psychopathology of Everyday
@@ -219,33 +219,27 @@ Sound
 
 #### Assignments:
 
-##### Production:
-
-Assignments:
-
-    Production:
-                Complete Midterm
+Complete Midterm
 
 ### Week 7 (Oct. 12 & 14)
-Midterm due – Oct. 13th
-#### Assignments:
+
+Midterm due – Oct. 14th
+
+#### Assignments Due October 26
 
 ##### Production:
+- Get your kit from the bookstore
+- Install the Arduino IDE from here. If you are on Windows chose the Windows Installer.
+-  Prepare a space for working with electronics
+	- Have your kits ready to use in class
+	- Have some space to work. There are many small components in the kit that will be easily lost, so ideally be seated at a table or desk with clear space around you.
+	- In your kit is a bundle of jumper wires with a very tight ziptie that must be carefully removed. Please do this before class because it may take you a while to find the right tool. A sharp pair of scissors should work. A knife might damage the wires and hurt you.
+		- Be careful not to damage the wires or yourselves!
 
-Assignments (do this before Oct. 25th):
-
-        Reading:
-            Sparkfun breadboard tutorial
-            Microcontrollers, the basics
-            Digital Input & Output
-
-        Prepare a space for working with electronics
-            Have your kits ready to use in class
-            Have some space to work. There are many small components in the kit that will be easily lost, so ideally be seated at a table or desk with clear space around you.
-        Install the Arduino IDE from here. If you are on Windows chose the Windows Installer.
-        In your kit is a bundle of jumper wires with a very tight ziptie that must be carefully removed. Please do this before class because it may take you a while to find the right tool. A sharp pair of scissors should work. A knife might damage the wires and hurt you.
-
-        Be careful not to damage the wires or yourselves!
+##### Reading
+- Sparkfun breadboard tutorial
+- Microcontrollers, the basics
+- Digital Input & Output
 
 FALL BREAK
 ### Week 8 (Oct. 26 & 28)
