@@ -1644,6 +1644,16 @@ chp_20_sound -> example_20_02_sound_effect
 If we had multiple sound files, how would we play the
 next one when we click the mouse?
 
+### todays-lecture
+### October 7 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+##### Discussion: The Design of Everyday Things, The Psychopathology of Everyday
+Things (Fiona and Angelica)
+
 
 ````
 
@@ -1728,16 +1738,6 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 
 ##### What is
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
-
-### todays-lecture
-### October 7 2021
-
-#### Administration
-
-- **Record Zoom!**
-
-##### Discussion: The Design of Everyday Things, The Psychopathology of Everyday
-Things (Fiona and Angelica)
 
 ##### Debugging
 
