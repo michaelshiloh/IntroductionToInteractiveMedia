@@ -171,7 +171,6 @@ Due Sept. 30th:
 
 Image Processing, introduce Midterm Project (download for class)
 
-### todays-assignment
 #### Assignments:
 
 ##### Production:
@@ -207,7 +206,6 @@ Due Oct. 13th
 
 ##### Reading
 
-Due Oct. 7th 
 
 Read Chapter 1 of 
 [The Design of Everyday Things, The Psychopathology of Everyday
@@ -217,9 +215,13 @@ Things](http://pages.ucsd.edu/%7Emboyle/COGS1/readings/Norman-COGS1-The%20Psycho
 
 Sound 
 
-#### Assignments:
-
-Complete Midterm
+### todays-assignment
+#### Reading assignment (Due Oct. 7th)
+- Read Chapter 1 of 
+[The Design of Everyday Things, The Psychopathology of Everyday
+Things](http://pages.ucsd.edu/%7Emboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf)
+#### Production assignment (Due Oct. 13th
+- Complete Midterm
 
 ### Week 7 (Oct. 12 & 14)
 
