@@ -19,12 +19,11 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 - Erica & Sonny September 14 
 - Shumin & Boby September 23
 - Injoo  September 30
-- Fiona & Angelica October 7
-- Tanisha & Xiaoli October 14
-- Aadha & Jeongi October 21
-- Afra & Anushka October 28
-- Ansh & Noah November 4
-- November 9 (reserved for flexibility)
+- Fiona & Angelica October 12
+- Tanisha & Xiaoli October 21
+- Aadha & Jeongi October 28
+- Afra & Anushka October 4
+- Ansh & Noah November 9
 - November 16 (reserved for flexibility) 
 - November 23 (reserved for flexibility)
 - November 30 (reserved for flexibility)

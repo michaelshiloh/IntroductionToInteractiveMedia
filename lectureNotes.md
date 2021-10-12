@@ -1651,34 +1651,7 @@ next one when we click the mouse?
 
 - **Record Zoom!**
 
-##### Discussion: The Design of Everyday Things, The Psychopathology of Everyday
-Things (Fiona and Angelica)
-
-
-````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-````
-
-One solution:
+Example solution to in-class exercise from last meeting
 
 ````
 import processing.sound.*; //* load the sound library
@@ -1739,6 +1712,21 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 ##### What is
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
-##### Debugging
+### todays-lecture
+### October 12 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+#### Discussion
+
+- The Design of Everyday Things, The Psychopathology of Everyday
+Things (Fiona and Angelica)
+
+#### Debugging
 
 What methods do you use for debugging?
+
+#### Problem solving
+
