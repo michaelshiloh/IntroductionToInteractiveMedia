@@ -240,8 +240,11 @@ Midterm due – Oct. 14th
 	will be easily lost, so ideally be seated at a table or desk with clear
 	space around you.
 - Install the Arduino IDE from
-	[here](https://www.arduino.cc/en/Main/Software). If you are on Windows chose
-	the Windows Installer.
+	[here](https://www.arduino.cc/en/Main/Software). 
+	If you are on Windows chose either the 
+	Windows Installer ("Windows Win 7 and newer")
+	or install from 
+	the Microsoft App Store ("Windows app Win 8.1 or 10")
 - In your kit is a bundle of jumper wires 
 that might be tied with a very tight ziptie 
 	that must be carefully removed. Please do this before class because 
