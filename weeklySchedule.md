@@ -231,17 +231,34 @@ Midterm due – Oct. 14th
 
 ##### Production:
 - Get your kit from the bookstore
-- Install the Arduino IDE from here. If you are on Windows chose the Windows Installer.
--  Prepare a space for working with electronics
+- You will need a USB-A port. If you have a modern laptop with only USB-C
+	ports, you will need to borrow (from Academic Tech if you are on campus) or
+	buy (if you are off-campus) a USB-A to USB-C adapter.
+- Prepare a space for working with electronics
 	- Have your kits ready to use in class
-	- Have some space to work. There are many small components in the kit that will be easily lost, so ideally be seated at a table or desk with clear space around you.
-	- In your kit is a bundle of jumper wires with a very tight ziptie that must be carefully removed. Please do this before class because it may take you a while to find the right tool. A sharp pair of scissors should work. A knife might damage the wires and hurt you.
-		- Be careful not to damage the wires or yourselves!
+	- Have some space to work. There are many small components in the kit that
+	will be easily lost, so ideally be seated at a table or desk with clear
+	space around you.
+- Install the Arduino IDE from
+	[here](https://www.arduino.cc/en/Main/Software). If you are on Windows chose
+	the Windows Installer.
+- In your kit is a bundle of jumper wires 
+that might be tied with a very tight ziptie 
+	that must be carefully removed. Please do this before class because 
+	it may take you a while to find the right tool. 
+	A sharp pair of scissors should work. A knife might damage the wires 
+	and hurt you.
+
+![](media/jumpersWithCableTieRemoved.jpg)
+
+- **Be careful not to damage the wires or yourselves!**
 
 ##### Reading
-- Sparkfun breadboard tutorial
-- Microcontrollers, the basics
-- Digital Input & Output
+- Sparkfun [breadboard
+  tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+- [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers-the-basics/)
+- [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/digital-input-output/)
+
 
 FALL BREAK
 ### Week 8 (Oct. 26 & 28)
