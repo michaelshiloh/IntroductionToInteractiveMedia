@@ -1814,15 +1814,20 @@ Let's use a real switch
 
 Series and Parallel
 
-- What if we put two LEDs in?
-- Two different ways: series and parallel
+- What if we put two LEDs or switches in?
+- Two different ways: 
 
+Series: All the current (electrons) must go through both components, one after
+the other. 
 ![](media/ArduinoPowering2LEDSeries_schem.png)
 ![](media/ArduinoPowering2LEDSeries_bb.png)
-![](ArduinoPowering2LEDparallel_schem.png)
-![](ArduinoPowering2LEDparallel_bb.png)
 
-- Any components can be connected in series or parallel; not just LEDs
+Parallel: Both components experience the same voltage difference
+![](media/ArduinoPowering2LEDparallel_schem.png)
+![](media/ArduinoPowering2LEDparallel_bb.png)
+
+- Any components can be connected in series or parallel; not just LEDs or
+	switches
 - Components might be in series, or parallel, or neither
 - Components in series have the same **current** flowing through them
 - Components in parallel have the same **voltage** across them
