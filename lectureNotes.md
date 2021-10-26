@@ -1816,18 +1816,18 @@ Series and Parallel
 
 - What if we put two LEDs in?
 - Two different ways: series and parallel
-	- Components in series have the same **current** flowing through them
-	- Components in parallel have the same **voltage** across them
-- No matter how many components you have in a circuit, and how they are
-	connected, they will obey these principles.
-
-* In some cases, components may be neither series or parallel
 
 ![](media/ArduinoPowering2LEDSeries_schem.png)
 ![](media/ArduinoPowering2LEDSeries_bb.png)
+![](ArduinoPowering2LEDparallel_schem.png)
+![](ArduinoPowering2LEDparallel_bb.png)
 
 - Any components can be connected in series or parallel; not just LEDs
-- More than two components might be in series, or parallel, or neither
+- Components might be in series, or parallel, or neither
+- Components in series have the same **current** flowing through them
+- Components in parallel have the same **voltage** across them
+- No matter how many components you have in a circuit, and how they are
+	connected, they will obey these principles.
 
 Ohm's law
 - I=V/R
