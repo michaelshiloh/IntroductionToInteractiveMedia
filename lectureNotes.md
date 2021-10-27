@@ -1729,7 +1729,6 @@ What methods do you use for debugging?
 
 #### Problem solving
 
-### todays-lecture
 ### October 26 2021
 
 #### Administration
@@ -1866,20 +1865,27 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
 
-Let's add a switch
+
+### todays-lecture
+### October 28 2021
+
+#### Administration
+- **Record Zoom!**
+- End of Semester show will be Tuesday December 14th 6-9pm
+
+#### Review
+Adding a switch
 
 ![](media/ArduinoLEDMomentarySwitch_schem.png)
 ![](media/ArduinoLEDMomentarySwitch_bb.png)
 
 ````
-// the setup function runs once when you press reset or power the board
 void setup() {
   pinMode(8, OUTPUT);
   pinMode(13, OUTPUT);
   pinMode(A2, INPUT);
 }
 
-// the loop function runs over and over again forever
 void loop() {
 
   int switchPosition = digitalRead(A2);
@@ -1892,6 +1898,11 @@ void loop() {
     digitalWrite(13, HIGH);
   }
 }
+````
+
+Here is the code we developed in class on Tuesday:
+
+````
 ````
 
 Other things you can do:

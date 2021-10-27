@@ -267,21 +267,28 @@ FALL BREAK
 ### Week 8 (Oct. 26 & 28)
 
 Introduction to Electricity
+
 #### Assignments:
 
-##### Production:
+##### Production due November 4:
 
-Assignments:
+Create an unusual switch that doesn’t require the use of your hands. 
+Use Arduino digital input and output for the interaction.
+- Examples: [Get creative with switches](https://itp.nyu.edu/physcomp/labs/switches/#Get_Creative_With_Switches)
+- Document with all the requirements of previous assignments (see above), 
+in a new folder called *nov4*
 
-    Production:
-        Due Nov. 1st (post documentation on blog): Using at least three momentary switches (often called buttons), and at least three LEDs, create a puzzle that can be solved by pressing the buttons. Each switch must not simply turn on a corresponding LED.
-     Reading:
-        Due Nov. 3rd (be prepared to discuss both):
-            Physical Computing’s Greatest hits and misses
-            Making Interactive Art: Set the Stage, Then Shut Up and Listen
-        Read about digital input & output
-        Read about analog output
-        Read about analog Input
+##### Reading due November 2:
+- Read about [analog
+output](https://itp.nyu.edu/physcomp/lessons/analog-output/)
+- Read about [analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
+
+##### Reading due November 4:
+- [Physical Computing’s Greatest hits and
+	misses](https://www.tigoe.com/blog/category/physicalcomputing/176/)
+- [Making Interactive Art: Set the Stage, Then Shut Up and
+	Listen](https://www.tigoe.com/blog/category/physicalcomputing/405/)
+
 
 ### Week 9 (Nov. 2 & 4)
 
