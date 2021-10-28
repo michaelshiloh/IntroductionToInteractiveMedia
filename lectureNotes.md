@@ -1904,36 +1904,37 @@ void loop() {
 Here is the code we developed in class on Tuesday:
 
 ````
+
+const int pushButton = A2;
+const int redLEDPin = A0;
+const int greenLEDPin = 8;
+
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(7, OUTPUT);
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(greenLEDPin, OUTPUT);
 }
-int pushButton = A2;
 
 void loop() {
 
   int buttonState = digitalRead(pushButton);
 
   if (buttonState == HIGH) {
-    digitalWrite(13, HIGH);
-    digitalWrite(7, HIGH);
+    digitalWrite(redLEDPin, HIGH);
+    digitalWrite(greenLEDPin, HIGH);
     delay(500);
-    digitalWrite(7, LOW);
+    digitalWrite(greenLEDPin, LOW);
     delay(300);
-    digitalWrite(13, LOW);
-    digitalWrite(7, HIGH);
+    digitalWrite(redLEDPin, LOW);
+    digitalWrite(greenLEDPin, HIGH);
     delay(700);
-    //  digitalWrite(13, LOW);
-    //  digitalWrite(7, LOW);
   }
   allOff();
   delay(1000);
 }
 
 void allOff() {
-  digitalWrite(13, LOW);
-  digitalWrite(7, LOW);
+  digitalWrite(redLEDPin, LOW);
+  digitalWrite(greenLEDPin, LOW);
 }
 ````
 
