@@ -1872,6 +1872,7 @@ Let's extend this circuit to the breadboard:
 #### Administration
 - **Record Zoom!**
 - End of Semester show will be Tuesday December 14th 6-9pm
+- Look at homework
 
 #### Review
 Adding a switch
@@ -1903,6 +1904,37 @@ void loop() {
 Here is the code we developed in class on Tuesday:
 
 ````
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(7, OUTPUT);
+}
+int pushButton = A2;
+
+void loop() {
+
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == HIGH) {
+    digitalWrite(13, HIGH);
+    digitalWrite(7, HIGH);
+    delay(500);
+    digitalWrite(7, LOW);
+    delay(300);
+    digitalWrite(13, LOW);
+    digitalWrite(7, HIGH);
+    delay(700);
+    //  digitalWrite(13, LOW);
+    //  digitalWrite(7, LOW);
+  }
+  allOff();
+  delay(1000);
+}
+
+void allOff() {
+  digitalWrite(13, LOW);
+  digitalWrite(7, LOW);
+}
 ````
 
 Other things you can do:
