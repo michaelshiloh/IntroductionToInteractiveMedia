@@ -1963,6 +1963,9 @@ How is that possible?
 - **Record Zoom!**
 - End of Semester may be rescheduled to Wednesday December 15th 3-6pm
 - Look at some homework
+- I may not be able to be in class on November 16, so I plan to record the
+	lesson, and I will make myself available for questions or review on another
+	day
 
 #### Misc
 - Hand drawn schematics in your homework are fine!
