@@ -1866,7 +1866,6 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_bb.png)
 
 
-### todays-lecture
 ### October 28 2021
 
 #### Administration
@@ -1957,7 +1956,193 @@ switch is pressed.
 Using two switches you can select between four patterns.
 How is that possible?
 
-Here is a hand drawn schematic example:
+### todays-lecture
+### November 2 2021
+
+#### Administration
+- **Record Zoom!**
+- End of Semester may be rescheduled to Wednesday December 15th 3-6pm
+- Look at some homework
+
+#### Misc
+- Hand drawn schematics in your homework are fine!
+Here is an example:
 
 ![](media/handDrawnSchematicExample.jpg)
+
+- Hand drawn switches can use the simple symbol
+- Resources are available to help you with your homework (me, Jack), but only
+	if you start your homework early enough. If you wait until the last minute
+	and then don't have time to get help, that is unexcusable.
+- Use constants for pin numbers
+
+#### Analogue Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analogue Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analogue input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+- Remember that the so-called Analogue Input pins can do digital input and
+	output as well
+
+Do you see a similarity between this circuit and 
+something we learned earlier?
+
+Some analogue sensors are resistive, some are not. 
+Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch - 
+the switch circuit is also effectively a voltage divider, one that has only
+two values instead of an infinite range of values
+
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
+#### Analogue Output
+
+- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- This only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- Some actuators, like a solenoid, can be in only one of two states,
+	and so are more suited to a digital output
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from Processing that are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in Processing to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.println()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+#### In-class exercise
+
+1. Use one of the analogue sensors to select which of two LEDs lights up
+1. Use one of the analogue sensor to control how fast two LEDs alternate
+
+
+**Notes**
+1. You may have noticed that the built-in LED blinks 3 times when you turn on
+	 your Arduino. In fact it does this every time it resets, which also happens
+	 when you upload a new program. Since this LED is connected directly to pin
+	 13, it means that whatever you have attached to pin 13 will be activated 3
+	 times briefly whenver the Arduino resets. So, if you make a big robot, 
+	 you probably should not use pin 13 for the motor
+1. Pins 0 and 1 are used for communication with your laptop, and this has two
+	 effects:
+	1. Connecting anything to pins 0 or 1 might interfere with laptop
+		 communication (which includes uploading!)
+	2. Anything connected to pins 0 or 1 might be activated during
+		 communication!
+1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
+	 pins and need to use them there are ways around this.
+
+#### Data Types
+
+Just like in Processing, there are different data types:
+
+````
+int
+float
+char
+boolean
+````
+
+#### Conventions: Schematics and Wire Colours
+
+- When drawing schematics
+
+	- All **sensors** on the **left**
+	- All **inputs** on the **left** side of the Arduino 
+	- All **actuators** on the **right**
+	- All **outputs** on the **right** side of the Arduino 
+	- There are exceptions e.g.
+		- If using CAD you can't control where the pins are on Arduino
+		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
+			both inputs and outputs
+
+- When wiring your circuits
+
+	- All **5V** connections should use **red** wire, 
+	and don't use red for anything else
+	- All **GND** connections should use **black** wire,
+	and don't use black for anything else
+		- If you run out of black you may either
+			- Color some white cables black with a Sharpie
+			- Dedicate green as an additional black, and then
+			don't use green for anything else either
+	- All other connections can use any other colors
+	- If you use the buses
+		- Red bus for 5V
+		- Black or Blue bus for GND
+
+#### Circuits
+
+Some theory that might help you think about why circuits are they way they
+are
+- Important concepts:
+	- Voltage 
+		- Voltage is a relative quantity so it's always measured or identified
+			relative to some other point (usually a common reference point such as
+			"ground")
+		- Can be thought of the "pressure" applied to the electrons
+		- Analogous to holding a brick at a certain height above the floor. Relative
+			to the floor, the brick has a certain amount of potential energy
+		- Voltage exists whether or not there is a circuit
+	- Resistance 
+		- The resistance the electrons face as they try to get through
+		components. 
+		- Analogous to a traffic jam on a road
+		- Conductors (wires) have zero resistance (for our purposes)
+		- All components have some sort of "resistance"
+		- Resistance is a property of a component and therefore
+		exists whether or not there is a circuit
+	- Current  
+		- The rate of flow of electrons through a circuit (electrons/second)
+		- Somewhat analogous to litres/hour or cars/hour
+		- **Current only exists when there is a circuit**
+- If you measure the voltage between any two points, the voltage will not
+	change as you move to different places on the **wire**. 
+		However if you cross
+		a component the voltage might be different on the other side of the
+		component
+- If you measure current through components connected in 
+	series the current will not change. This is because **all** the electrons
+	that go through the first component have to go through the rest. No
+	electrons can leave the path, and no new ones can enter.
+		However if there are any branches some electrons might go on the
+		branches and thus the current will drop.
+
+#### Debugging
+
+If you want my help solving a problem in your assignment, do the following:
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Discord, describing carefully
+	1. What you think should be happening
+	1. What instead is happening 
+
+What techniques have you learned to help you find problems?
+	- 
+	- 
+	- 
 
