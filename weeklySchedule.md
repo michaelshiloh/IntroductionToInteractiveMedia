@@ -292,34 +292,55 @@ output](https://itp.nyu.edu/physcomp/lessons/analog-output/)
 
 ### Week 9 (Nov. 2 & 4)
 
-Arduino: digital input & output, analog input & output, printing
+Arduino: analogue input & output
 #### Assignments:
 
-##### Production:
+##### Production due November 11:
 
-Assignments:
+Get information from at least one analog sensor and at least one digital
+sensor (switch), and use this information to control at least two LEDs, one in
+a digital fashion and the other in an analog fashion, in some creative way.
+- In your Github repository, create a new folder named 
+`Nov11`
+	- Upload your Arduino program into the new folder, 
+	with the extension `.ino`. 
+		- Use **COMMAND T** or **CONTROL T** to indent your code properly
+		- Your program should be well commented and organized. 
+		- Excellent names for variables
+		- Excellent names for constants such as pin numbers
+		- Excellent names for functions, if you make any
+	- Upload a photograph of your project to our Discord channel
+	- Create a `README.md` in the new folder and include :
+		- The photograph 
+		- A link to a short video
+		- A schematic of your circuit (hand-drawn is fine)
+		- Describe:
+			- Your concept
+			- Your process
+			- Any problems and, if any, solutions or workarounds
+			- Anything interesting you discovered or learned
 
-    Production:
-        Due Nov. 8th (post documentation on blog): Get information from at least one analog sensor and at least one digital sensor (switch), and use this information to control at least two LEDs, one in a digital fashion and the other in an analog fashion, in some creative way.
-    Reading:
-        Due Nov. 10th (be prepared to discuss both):
-            A Brief Rant on the Future of Interaction Design
-            A follow-up article
-        Read about the voltage divider. Don’t worry about the theory too much or the section on level shifting. The important thing is to absorb a little of the concept of a voltage divider.
+##### Reading due November 11:
+- [A Brief Rant on the Future of Interaction
+Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
+- [A follow-up
+	article](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
+- Read about the [voltage divider](https://learn.sparkfun.com/tutorials/voltage-dividers). Don’t worry about the theory too much or the
+	section on level shifting. The important thing is to absorb a little of the
+	concept of a voltage divider.
 
 ### Week 10 (Nov. 9 & 11)
 
 Sound, Servo motor, Mapping
+
 #### Assignments:
 
 ##### Production:
 
-Assignments:
-
-    Production:
-        Due Nov. 15th (post documentation on blog):  Make a musical instrument
-            You must use at least one digital sensor (switch)
-            You must use at least one analog sensor (photoresistor, potentiometer, or distance measuring sensor)
+Due Nov. 18th 
+Make a musical instrument
+- You must use at least one digital sensor (switch)
+- You must use at least one analog sensor (photoresistor, potentiometer, or distance measuring sensor)
     Reading:
         Due Nov. 17th (be prepared to discuss both):
             Norman,“Emotion & Design: Attractive things work better”
