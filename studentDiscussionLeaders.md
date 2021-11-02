@@ -20,8 +20,8 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 - Shumin & Boby September 23
 - Injoo  September 30
 - Fiona & Angelica October 12
-- Tanisha & Xiaoli October 21
-- Aadha & Jeongi November 4
-- Afra & Anushka November 11
-- Ansh & Noah November 18
+- Tanisha & Xiaoli November 4
+- Aadha & Jeongi November 11
+- Afra & Anushka November 18
+- Ansh & Noah November 25
 
