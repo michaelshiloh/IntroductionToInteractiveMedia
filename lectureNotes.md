@@ -1956,7 +1956,6 @@ switch is pressed.
 Using two switches you can select between four patterns.
 How is that possible?
 
-### todays-lecture
 ### November 2 2021
 
 #### Administration
@@ -2134,6 +2133,13 @@ are
 	electrons can leave the path, and no new ones can enter.
 		However if there are any branches some electrons might go on the
 		branches and thus the current will drop.
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connect things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the correct side of a
+		component!
+	
 
 #### Debugging
 
@@ -2149,3 +2155,56 @@ What techniques have you learned to help you find problems?
 	- 
 	- 
 
+
+#### Sound
+
+**`tone()`**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- [Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- That's not very specific. I think they mean "prevents `analogWrite()` on
+		pins 3 and 11"
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in Processing
+- Arduino has arrays just like in Processing
+
+#### Servo motor
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### More about PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+
+
+### todays-lecture
+### November 4 2021
+
+#### Administration
+- **Record Zoom!**
+- End of Semester may be rescheduled to Wednesday December 15th 3-6pm
+- I may not be able to be in class on November 16, so I plan to record the
+	lesson, and I will make myself available for questions or review on another
+	day
+
+#### Discussion
+Greatest Hits and Misses; Set the Stage (Tanisha & Xiaoli)
+
+#### Time Permitting
+- Review of analog/digital  input/output
+- 'tone()'
