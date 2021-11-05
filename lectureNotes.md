@@ -2042,6 +2042,120 @@ Serial.println();
 1. Use one of the analogue sensor to control how fast two LEDs alternate
 
 
+### todays-lecture
+### November 4 2021
+
+#### Administration
+- **Record Zoom!**
+- End of Semester may be rescheduled to Wednesday December 15th 3-6pm
+- I may not be able to be in class on November 16, so I plan to record the
+	lesson, and I will make myself available for questions or review on another
+	day
+
+#### Discussion
+Greatest Hits and Misses; Set the Stage (Tanisha & Xiaoli)
+
+Here are two possible solutions to Tuesday's in-class exercise:
+
+````
+
+// Based on Afra's code
+
+const int ledPin = 3;
+const int ldrPin = A2;
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // only needed when you do a digitalWrite
+  // digitalRead by default pins is an input
+  // analogRead will automatically set pin as input
+  // analogWrite will automatically set pin as output
+}
+
+void loop() {
+
+  int ldrValue = analogRead(ldrPin); // max value could be 1023
+
+  ldrValue = constrain(ldrValue, 200, 800); // values of light that I can expect (I measured)
+  ldrValue = map(ldrValue, 200, 800, 35, 3000); // 35 is the shortest blink I can perceive
+                                                // 3000 is the longest blink that I have patience for
+
+ // now I know that the value is between 35 and 3000
+
+ analogWrite(ledPin, 198); // HIGH == 1
+ delay(ldrValue);
+ analogWrite(ledPin, LOW); // LOW == 0
+ delay(ldrValue);
+}
+````
+and:
+````
+// Based on Injoo's code
+
+const int ledRed = 3;
+const int ledGreen = 13;
+const int ldrPin = A2;
+
+void setup() {
+}
+
+void loop() {
+  int ldrValue = analogRead(ldrPin); //max value could be 1023
+  // ldrValue = constrain(ldrValue, 400, 800);
+  analogWrite(ledRed, 255);
+  delay(ldrValue);
+  analogWrite(ledRed, 0);
+  analogWrite(ledGreen, 255);
+  delay(ldrValue);
+  analogWrite(ledGreen, 0);
+}
+````
+
+I tested both and they work as intended. 
+If you had trouble with this exercise, or if you
+aren't sure you understand the code, 
+I encourage you to experiment with these on your own
+and ask questions on Discord
+
+
+### November 9 2021
+
+#### Sound
+
+**`tone()`**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- [Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- That's not very specific. I think they mean "prevents `analogWrite()` on
+		pins 3 and 11"
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in Processing
+- Arduino has arrays just like in Processing
+
+#### Servo motor
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### More about PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+
+
+
 **Notes**
 1. You may have noticed that the built-in LED blinks 3 times when you turn on
 	 your Arduino. In fact it does this every time it resets, which also happens
@@ -2155,56 +2269,3 @@ What techniques have you learned to help you find problems?
 	- 
 	- 
 
-
-#### Sound
-
-**`tone()`**
-
-- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
-- [Reference
-page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
-
-**Notes**
-- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
-	- That's not very specific. I think they mean "prevents `analogWrite()` on
-		pins 3 and 11"
-- The `tone()` function is *non-blocking*
-- Arduino supports tabs just like in Processing
-- Arduino has arrays just like in Processing
-
-#### Servo motor
-
-- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
-- [Reference
-page](https://www.arduino.cc/en/Reference/Servo)
-
-
-**Notes**
-- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
-- The `Servo.write()` function is *non-blocking*
-
-#### More about PWM
-- How do you suppose `analogWrite()` makes an LED dimmer?
-- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
-- What do `analogWrite()`, `tone()` and `Servo` have in common?
-- What is sound?
-- How does a servo motor
-	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
-
-
-### todays-lecture
-### November 4 2021
-
-#### Administration
-- **Record Zoom!**
-- End of Semester may be rescheduled to Wednesday December 15th 3-6pm
-- I may not be able to be in class on November 16, so I plan to record the
-	lesson, and I will make myself available for questions or review on another
-	day
-
-#### Discussion
-Greatest Hits and Misses; Set the Stage (Tanisha & Xiaoli)
-
-#### Time Permitting
-- Review of analog/digital  input/output
-- 'tone()'
