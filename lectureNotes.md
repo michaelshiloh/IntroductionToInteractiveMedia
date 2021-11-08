@@ -2042,7 +2042,6 @@ Serial.println();
 1. Use one of the analogue sensor to control how fast two LEDs alternate
 
 
-### todays-lecture
 ### November 4 2021
 
 #### Administration
@@ -2117,20 +2116,27 @@ I encourage you to experiment with these on your own
 and ask questions on Discord
 
 
+### todays-lecture
 ### November 9 2021
+- **Record Zoom!**
 
 #### Sound
 
 **`tone()`**
 
 - [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- Before you try that code, just try 
+`tone(spkrPin, 440);`
+and
+`tone(spkrPin, 440, 1000);`
 - [Reference
 page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 
 **Notes**
 - "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
-	- That's not very specific. I think they mean "prevents `analogWrite()` on
-		pins 3 and 11"
+	- The word "intefere" is rather vague. 
+	I think they mean that it 
+	prevents `analogWrite()` from working on pins 3 and 11
 - The `tone()` function is *non-blocking*
 - Arduino supports tabs just like in Processing
 - Arduino has arrays just like in Processing
@@ -2153,8 +2159,6 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - What is sound?
 - How does a servo motor
 	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
-
-
 
 **Notes**
 1. You may have noticed that the built-in LED blinks 3 times when you turn on
@@ -2207,9 +2211,9 @@ boolean
 			- Dedicate green as an additional black, and then
 			don't use green for anything else either
 	- All other connections can use any other colors
-	- If you use the buses
-		- Red bus for 5V
-		- Black or Blue bus for GND
+	- If you use the buses on the sides of the breadboard
+		- Red bus for 5V only
+		- Black or Blue bus for GND only
 
 #### Circuits
 
@@ -2254,15 +2258,15 @@ are
 	- That is why it is **important** to make connections to the correct side of a
 		component!
 	
-
 #### Debugging
 
 If you want my help solving a problem in your assignment, do the following:
+1. Figure out the simplest circuit and program that demonstrates your problem
 1. Upload your schematic, code, and 
 the best picture you can take of your breadboard circuit to Github 
 1. Write a message on Discord, describing carefully
-	1. What you think should be happening
-	1. What instead is happening 
+	1. What you think should happen
+	1. What you observe happens
 
 What techniques have you learned to help you find problems?
 	- 
