@@ -2116,7 +2116,6 @@ I encourage you to experiment with these on your own
 and ask questions on Discord
 
 
-### todays-lecture
 ### November 9 2021
 - **Record Zoom!**
 
@@ -2399,6 +2398,7 @@ void loop() {
 }
 ````
 
+### todays-lecture
 ### November 11 2021
 
 #### Administration
