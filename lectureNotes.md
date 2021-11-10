@@ -2398,3 +2398,18 @@ void loop() {
   delay(1);        // delay in between reads for stability
 }
 ````
+
+### November 11 2021
+
+#### Administration
+- **Record Zoom!**
+- End of Semester may be rescheduled to Wednesday December 15th 3-6pm
+- I will not be able to be in class on November 16, so I plan to record the
+	lesson, and I will make myself available for questions or review on another
+	day
+
+#### Discussion
+- A Brief Rant on the Future of Interaction Design
+- A Followup Article
+
+Time permitting, blinkWithoutDelay

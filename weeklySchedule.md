@@ -256,6 +256,10 @@ that might be tied with a very tight ziptie
 
 - **Be careful not to damage the wires or yourselves!**
 
+- (If you are curious, you may read all about the kit
+	[here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41))
+
+
 ##### Reading
 - Sparkfun [breadboard
   tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
@@ -335,17 +339,20 @@ Sound, Servo motor, Mapping
 
 #### Assignments:
 
-##### Production:
-
-Due Nov. 18th 
+##### Production Due Nov. 18th 
 Make a musical instrument
 - You must use at least one digital sensor (switch)
-- You must use at least one analog sensor (photoresistor, potentiometer, or distance measuring sensor)
-    Reading:
-        Due Nov. 17th (be prepared to discuss both):
-            Norman,“Emotion & Design: Attractive things work better”
-            Her Code Got Humans on the Moon
-        It is important that you understand the concepts behind BlinkWithoutDelay. Here are links to various other explanations of the same thing. Browse them, and read one deeply enough that you understand. Come to class with questions if none of these help.
+- You must use at least one analog sensor (photoresistor, potentiometer)
+- You may use the distance measuring sensor if you wish although we have not
+	covered it you may read about it
+	[here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41)
+
+##### Reading due November 18:
+- [Norman,“Emotion & Design: Attractive things work better”](https://jnd.org/emotion_design_attractive_things_work_better/)
+- [Her Code Got Humans on the Moon](http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
+- It is important that you understand the concepts behind BlinkWithoutDelay. 
+[Here](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
+are links to various other explanations of the same thing. Browse them, and read one deeply enough that you understand. Come to class with questions if none of these help.
 
 ### Week 11 (Nov. 16 & 18)
 
