@@ -215,7 +215,6 @@ Things](http://pages.ucsd.edu/%7Emboyle/COGS1/readings/Norman-COGS1-The%20Psycho
 
 Sound 
 
-### todays-assignment
 #### Reading assignment (Due Oct. 12th)
 - Read Chapter 1 of 
 [The Design of Everyday Things, The Psychopathology of Everyday
@@ -337,6 +336,7 @@ Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 
 Sound, Servo motor, Mapping
 
+### todays-assignment
 #### Assignments:
 
 ##### Production Due Nov. 18th 
@@ -346,6 +346,7 @@ Make a musical instrument
 - You may use the distance measuring sensor if you wish although we have not
 	covered it you may read about it
 	[here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41)
+- Document as usual in a folder named "November18"
 
 ##### Reading due November 18:
 - [Norman,“Emotion & Design: Attractive things work better”](https://jnd.org/emotion_design_attractive_things_work_better/)
