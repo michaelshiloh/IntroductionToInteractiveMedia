@@ -2558,11 +2558,10 @@ Arduino code has the corresponding Processing code included as a comment
 
 Can you do both at the same time? Yes, using that handshake to carry
 information in the other direction.
-
-Build a circuit with one sensor and one LEDs
-
-[Here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
-is the corresponding code
+- Build a circuit with one sensor and one LEDs
+- [Here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
+is the corresponding code. Change `LEDPIN` and `AINPIN` as needed to
+correspond to your circuit.
 
 ##### Other serial ports
 
