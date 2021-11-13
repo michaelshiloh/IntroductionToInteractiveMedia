@@ -2468,12 +2468,15 @@ without using `delay()`:
 - Where have we seen serial before?
 	- serial.println
 
-Simple example: File->Examples->Basics->AnalogReadSerial
+Simple example: 
+File->Examples->Basics->AnalogReadSerial
 - Sends numbers from Arduino to the laptop via the serial port
 - If we're sending messages to the laptop, can we receive those 
 messages in Processing?
 
-Build a circuit with any analogue
+Build a circuit with any analogue sensor. Upload
+File->Examples->Basics->AnalogReadSerial to your Arduino and
+run the Processing code below:
 
 ````
 
@@ -2525,6 +2528,11 @@ void serialEvent (Serial myPort) {
 }
 ````
 
+**Important!** Only one program at a time can use the serial port on 
+your laptop. This when you upload Arduino code you must stop your
+Processing program, and similarly, when you want to run your
+Processing program you can not have the serial monitor running.
+
 - A critical part of UART serial communication is the speed, or baud rate.
 - But, laptop is much, much faster than Arduino. What happens if you do this:
 
@@ -2540,29 +2548,18 @@ while (1) {
 	- Your Arduino is (1) much slower and (2) has a very small buffer
 
 ##### Handshaking to the rescue!
-
-[This](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicArduinoToProcessing/basicArduinoToProcessing.ino)
+- [This](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicArduinoToProcessing/basicArduinoToProcessing.ino)
 Arduino code has the corresponding Processing code included as a comment
 
 If you can send messages from Arduino to Processing, does
 it work the other way around, i.e. from Processing to Arduino?
-
-[This](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicProcessingToArduino/basicProcessingToArduino.ino)
+- [This](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicProcessingToArduino/basicProcessingToArduino.ino)
 Arduino code has the corresponding Processing code included as a comment
 
 Can you do both at the same time? Yes, using that handshake to carry
 information in the other direction.
 
-Can you send more than one piece of information? Sure!~
-
-Build a circuit with two sensors and two LEDs, such as this:
-
-![](media/serialCommsSchematic.jpg)
-
-##### In-class exercises
-
-Try these exercises to strengthen your understanding of how to communicate
-between Arduino and Processing
+Build a circuit with one sensor and one LEDs
 
 [Here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
 is the corresponding code
@@ -2589,3 +2586,4 @@ We won't learn these in this class, but if you are curious
 you can learn more
 [here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
 You might see these referred to in some books or websites.
+![](media/serialCommsSchematic.jpg)
