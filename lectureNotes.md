@@ -2412,7 +2412,7 @@ void loop() {
 - A Brief Rant on the Future of Interaction Design
 - A Followup Article
 
-Time permitting, blinkWithoutDelay
+Time permitting, introduce blinkWithoutDelay
 
 
 ### todays-lecture
@@ -2488,9 +2488,6 @@ while (1) {
 	- Your Arduino is (1) much slower and (2) has a very small buffer
 - Handshaking to the rescue!
 
-### June 23
-
-#### Serial communication (continued)
 
 Start with this (no circuit needed):
 - File -> Examples -> Communication -> Graph
@@ -2501,16 +2498,10 @@ Now build this circuit:
 
 [Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
 
-### June 24
+##### In-class exercises
 
-- Discuss Deisgn Meets Disability
-- In class exercise
-
-##### In-class exercise! 
-
-Break into groups and, referring to the code and circuit
-we used yesterday,
-do the following, always using handshaking:
+Try these exercises to strengthen your understanding of how to communicate
+between Arduino and Processing
 
 1. Starting from scratch, make 
 something that uses only one sensor on Arduino and makes the ellipse in
@@ -2530,19 +2521,25 @@ and you can control the wind from a potentiometer.
 One possible solution is
 [here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
 
-#### Can't upload sketch to Arduino
-1. Make sure the right port is selected
-1. Make sure you have nothing plugged in to pins 0 or 1
-1. Make sure your Arduino has power (is the power light on?)
-	1. If not, then you probably have a short circuit on your breadboard
-1. Make sure the USB cables are plugged in all the way
-1. Try a different USB port on your laptop (don't forget to select this port in the Arduino IDE)
-1. If you have a Processing sketch communicating with Arduino, 
-	**you must stop the Processing sketch before you upload to Arduino**
-
 ##### Other serial ports
 
-It turns out that Arduino has other ways to communicate. These are more
-advanced, but you can learn more
-[here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
+The concept of serial communication is to send the bits that make up the
+message one at a time. However there are endless variations on this, usually
+around the matter of timing: How do you indicate that now is a new bit? While
+the details of how this is done 
+isn't necessary for us now, you should know
+that there are many different methods, or *protocols*.
 
+The serial protocol we have used up to now is the most common and 
+in fact is so common that I've never heard anyone refer to it by its full
+name: 
+*UART*, or *universal asynchronous receiver-transmitter protocol*. 
+It is usually referred to simply as *serial*.
+
+Arduino supports two other common serial protocols: *I2C*, or
+*Inter-Integrated Circuit* protocol and *SPI*, or the *Serial-Peripheral
+Interface*.
+We won't learn these in this class, but if you are curious
+you can learn more
+[here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
+You might see these referred to in some books or websites.
