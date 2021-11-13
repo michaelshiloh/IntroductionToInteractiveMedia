@@ -2585,4 +2585,3 @@ We won't learn these in this class, but if you are curious
 you can learn more
 [here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
 You might see these referred to in some books or websites.
-![](media/serialCommsSchematic.jpg)
