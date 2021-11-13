@@ -2413,3 +2413,136 @@ void loop() {
 - A Followup Article
 
 Time permitting, blinkWithoutDelay
+
+
+### todays-lecture
+### November 15 2021
+
+Here are the notes to accompany today's recorded lecture:
+
+#### Blink Without `delay()`
+
+Why do we need this? 
+- To get rid of `delay()`
+
+What problem does `delay()` cause? 
+- **`delay()` is a blocking function. 
+Whenever your program encounters `delay()`, 
+your program stops until the delay is finished**
+
+For example, how would you
+- Blink LEDs at different rates
+- Blink an LED while playing a tune
+- Play a tune while moving a servo motor
+- Do anything while responding to sensors immediately
+
+
+[Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
+
+So much for blinking. What if we want to move a servo motor at the same time?
+
+Adafruit [Multitasking Tutorial Part
+I](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+
+Play a melody and blink an LED 
+without using `delay()`:
+[toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
+
+#### Serial communication
+
+- Where have we seen serial before?
+	- serial.println
+	- Serial ports list
+	- What is serial? As opposed to what?
+		- Decimal information: `48,342`
+		- Each decimal digit can be one of 0, 1, 2, 3, 4, 5, 6, 7 8, 9
+		- Binary information: `0010110111101101`
+		- Each Binary dIgiT can be either 0 or 1
+		- Each Binary dIgiT is called a *bit*
+		- How do you convey a single bit (you've been doing this for the
+			past 3 weeks)?
+			- `digitalWrite(pin, HIGH)` can be thought of as a binary `1`
+			- `digitalWrite(pin, LOW)` can be thought of as a binary `0`
+		- How do you convey more than one bit?
+			- All bits at once, one wire per bit (this is called parallel
+				communication)
+			- One bit at a time, with some kind of timing (serial)
+		- Serial is the most ubiquitous way for computers to talk to each other
+			- But there are many different schemes to specify e.g. the timing
+				- UART
+				- USB - universal serial bus
+				- I2C
+				- SPI
+
+- A critical part of UART serial communication is the speed, or baud rate.
+- But, laptop is much, much faster than Arduino. What happens if you do this:
+
+````
+while (1) {
+	Serial.println("Hello, world");
+}
+````
+- Computers usually have a *buffer* 
+	(memory to store received messages until they are processed) 
+	- Your laptop is (1) very fast and (2) has a big buffer
+	- Your Arduino is (1) much slower and (2) has a very small buffer
+- Handshaking to the rescue!
+
+### June 23
+
+#### Serial communication (continued)
+
+Start with this (no circuit needed):
+- File -> Examples -> Communication -> Graph
+
+Now build this circuit:
+
+![](media/serialCommsSchematic.jpg)
+
+[Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
+
+### June 24
+
+- Discuss Deisgn Meets Disability
+- In class exercise
+
+##### In-class exercise! 
+
+Break into groups and, referring to the code and circuit
+we used yesterday,
+do the following, always using handshaking:
+
+1. Starting from scratch, make 
+something that uses only one sensor on Arduino and makes the ellipse in
+processing move on the horizontal axis, in the middle of the screen, and
+nothing on Arduino is controlled by Processing. 
+One possible solution is
+[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicArduinoToProcessing/basicArduinoToProcessing.ino)
+1. Starting from scratch, make 
+something that controls the LED brightness from Processing
+One possible solution is
+[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicProcessingToArduino/basicProcessingToArduino.ino)
+1. Starting from
+Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde),
+modify it so that every time the ball bounces an led lights for 100
+milliseconds,
+and you can control the wind from a potentiometer.
+One possible solution is
+[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
+
+#### Can't upload sketch to Arduino
+1. Make sure the right port is selected
+1. Make sure you have nothing plugged in to pins 0 or 1
+1. Make sure your Arduino has power (is the power light on?)
+	1. If not, then you probably have a short circuit on your breadboard
+1. Make sure the USB cables are plugged in all the way
+1. Try a different USB port on your laptop (don't forget to select this port in the Arduino IDE)
+1. If you have a Processing sketch communicating with Arduino, 
+	**you must stop the Processing sketch before you upload to Arduino**
+
+##### Other serial ports
+
+It turns out that Arduino has other ways to communicate. These are more
+advanced, but you can learn more
+[here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
+
