@@ -2450,29 +2450,80 @@ without using `delay()`:
 
 #### Serial communication
 
+- What is serial? As opposed to what?
+	- Decimal information: `48,342`
+	- Each decimal digit can be one of 0, 1, 2, 3, 4, 5, 6, 7 8, 9
+	- Binary information: `0010110111101101`
+	- Each Binary dIgiT can be either 0 or 1
+	- Each Binary dIgiT is called a *bit*
+	- How do you convey a single bit (you've been doing this for the
+		past 3 weeks)?
+		- `digitalWrite(pin, HIGH)` can be thought of as a binary `1`
+		- `digitalWrite(pin, LOW)` can be thought of as a binary `0`
+	- How do you convey more than one bit?
+		- All bits at once, one wire per bit (this is called parallel
+			communication)
+		- One bit at a time, with some kind of timing (serial)
+
 - Where have we seen serial before?
 	- serial.println
-	- Serial ports list
-	- What is serial? As opposed to what?
-		- Decimal information: `48,342`
-		- Each decimal digit can be one of 0, 1, 2, 3, 4, 5, 6, 7 8, 9
-		- Binary information: `0010110111101101`
-		- Each Binary dIgiT can be either 0 or 1
-		- Each Binary dIgiT is called a *bit*
-		- How do you convey a single bit (you've been doing this for the
-			past 3 weeks)?
-			- `digitalWrite(pin, HIGH)` can be thought of as a binary `1`
-			- `digitalWrite(pin, LOW)` can be thought of as a binary `0`
-		- How do you convey more than one bit?
-			- All bits at once, one wire per bit (this is called parallel
-				communication)
-			- One bit at a time, with some kind of timing (serial)
-		- Serial is the most ubiquitous way for computers to talk to each other
-			- But there are many different schemes to specify e.g. the timing
-				- UART
-				- USB - universal serial bus
-				- I2C
-				- SPI
+
+Simple example: File->Examples->Basics->AnalogReadSerial
+- Sends numbers from Arduino to the laptop via the serial port
+- If we're sending messages to the laptop, can we receive those 
+messages in Processing?
+
+Build a circuit with any analogue
+
+````
+
+// Simple movement of ellipse based on values from Arduino
+// Based on Graphing example by Tom Igoe
+
+import processing.serial.*;
+
+Serial myPort;        // The serial port
+float inByte = 0;
+
+void setup () {
+  size(400, 300);
+
+  // List all the available serial ports
+  printArray(Serial.list());
+
+  // I know that the first port in the serial list on my Linux
+  // computer is always my Arduino, so I open Serial.list()[0].
+  // You may have to change the index to correspond to the port
+  // that you're using.
+  myPort = new Serial(this, Serial.list()[0], 9600);
+
+  // don't generate a serialEvent() unless you get a newline character:
+  myPort.bufferUntil('\n');
+}
+
+void draw () {
+  background(200);
+
+  circle(inByte, height / 2, 30);
+}
+
+void serialEvent (Serial myPort) {
+  // get the ASCII string:
+  String inString = myPort.readStringUntil('\n');
+
+  // Always check to make sure the string isn't empty
+  if (inString != null) {
+    // trim off any whitespace:
+    inString = trim(inString);
+    // convert to a float
+    inByte = float(inString);
+    // map to the width of the screen
+    inByte = map(inByte, 0, 1023, 0, width);
+    println(inByte);
+
+  }
+}
+````
 
 - A critical part of UART serial communication is the speed, or baud rate.
 - But, laptop is much, much faster than Arduino. What happens if you do this:
@@ -2482,44 +2533,39 @@ while (1) {
 	Serial.println("Hello, world");
 }
 ````
+
 - Computers usually have a *buffer* 
 	(memory to store received messages until they are processed) 
 	- Your laptop is (1) very fast and (2) has a big buffer
 	- Your Arduino is (1) much slower and (2) has a very small buffer
-- Handshaking to the rescue!
 
+##### Handshaking to the rescue!
 
-Start with this (no circuit needed):
-- File -> Examples -> Communication -> Graph
+[This](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicArduinoToProcessing/basicArduinoToProcessing.ino)
+Arduino code has the corresponding Processing code included as a comment
 
-Now build this circuit:
+If you can send messages from Arduino to Processing, does
+it work the other way around, i.e. from Processing to Arduino?
+
+[This](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicProcessingToArduino/basicProcessingToArduino.ino)
+Arduino code has the corresponding Processing code included as a comment
+
+Can you do both at the same time? Yes, using that handshake to carry
+information in the other direction.
+
+Can you send more than one piece of information? Sure!~
+
+Build a circuit with two sensors and two LEDs, such as this:
 
 ![](media/serialCommsSchematic.jpg)
-
-[Code](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/arduinoExamples/serialExamples/buildOffThisOne/buildOffThisOne.ino)
 
 ##### In-class exercises
 
 Try these exercises to strengthen your understanding of how to communicate
 between Arduino and Processing
 
-1. Starting from scratch, make 
-something that uses only one sensor on Arduino and makes the ellipse in
-processing move on the horizontal axis, in the middle of the screen, and
-nothing on Arduino is controlled by Processing. 
-One possible solution is
-[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicArduinoToProcessing/basicArduinoToProcessing.ino)
-1. Starting from scratch, make 
-something that controls the LED brightness from Processing
-One possible solution is
-[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/basicProcessingToArduino/basicProcessingToArduino.ino)
-1. Starting from
-Aaron's [gravity wind example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde),
-modify it so that every time the ball bounces an led lights for 100
-milliseconds,
-and you can control the wind from a potentiometer.
-One possible solution is
-[here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
+[Here](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/serialExamples/bouncingBallFlashingLED/bouncingBallFlashingLED.ino)
+is the corresponding code
 
 ##### Other serial ports
 
