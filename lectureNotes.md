@@ -1198,7 +1198,6 @@ share what they made
 show generative word from circles sketch
 
 
-### todays-lecture
 ### September 28 2021
 
 #### Administration
@@ -1581,7 +1580,6 @@ Time permitting, working in groups:
 - Look at homework (data visualizations or generative text output) and look at
 	each other's code
 
-### todays-lecture
 ### October 5 2021
 
 #### Administration
@@ -1644,7 +1642,6 @@ chp_20_sound -> example_20_02_sound_effect
 If we had multiple sound files, how would we play the
 next one when we click the mouse?
 
-### todays-lecture
 ### October 7 2021
 
 #### Administration

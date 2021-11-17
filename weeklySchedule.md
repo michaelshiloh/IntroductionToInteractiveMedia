@@ -336,7 +336,6 @@ Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
 
 Sound, Servo motor, Mapping
 
-### todays-assignment
 #### Assignments:
 
 ##### Production Due Nov. 18th 
@@ -359,6 +358,7 @@ are links to various other explanations of the same thing. Browse them, and read
 
 Serial Communication, introduce Final Project
 
+### todays-assignment
 ##### Production Assignments Due November 22
 
 1. Make something that uses only one sensor  on Arduino and 
