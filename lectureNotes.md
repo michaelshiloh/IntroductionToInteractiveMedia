@@ -2398,7 +2398,6 @@ void loop() {
 }
 ````
 
-### todays-lecture
 ### November 11 2021
 
 #### Administration
@@ -2412,10 +2411,7 @@ void loop() {
 - A Brief Rant on the Future of Interaction Design
 - A Followup Article
 
-Time permitting, introduce blinkWithoutDelay
 
-
-### todays-lecture
 ### November 15 2021
 
 Here are the notes to accompany today's recorded lecture:
@@ -2585,3 +2581,20 @@ We won't learn these in this class, but if you are curious
 you can learn more
 [here](https://www.deviceplus.com/arduino/arduino-communication-protocols-tutorial/)
 You might see these referred to in some books or websites.
+
+
+### todays-lecture
+### November 18 2021
+
+#### Administration
+- **Record Zoom!**
+- Legislative day November 29 to make up for December 2
+
+#### Discussion (Afra and Anushka)
+- Attractive Things Work Better
+- Her Code Got us to the Moon
+
+#### Sharing
+- Musical instruments
+
+Time permitting, review communication

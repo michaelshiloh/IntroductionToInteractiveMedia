@@ -358,24 +358,38 @@ are links to various other explanations of the same thing. Browse them, and read
 ### Week 11 (Nov. 16 & 18)
 
 Serial Communication, introduce Final Project
-#### Assignments:
 
-##### Production:
+##### Production Assignments Due November 22
 
-Assignments:
+1. Make something that uses only one sensor  on Arduino and 
+makes the ellipse in Processing move on the horizontal axis, 
+in the middle of the screen, and nothing on Arduino is controlled by Processing
+1. Make something that controls the LED brightness from Processing
+1. Take the gravity wind example (https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde) and make it so every time the ball bounces one led lights up and then turns off, and you can control the wind from one analog sensor
+1. EXTRA CREDIT Due Nov. 24th 
+- Make a simple game that involves some
+kind of communication between Arduino and Processing
 
-    Production:
-        Due Nov. 22nd (each person, not just one for a group, should post code for each exercise, and video of just the LED lighting up with the ball bouncing) Work in the groups from class to finish the three in-class examples exercises:
-            make something that uses only one sensor  on arduino and makes the ellipse in processing move on the horizontal axis, in the middle of the screen, and nothing on arduino is controlled by processing
-            make something that controls the LED brightness from processing
-            take the gravity wind example (https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/gravityExamples/gravityWind/gravityWind.pde) and make it so every time the ball bounces one led lights up and then turns off, and you can control the wind from one analog sensor
-        Due Nov. 24th (post documentation on blog): Write a preliminary concept for your final project, which must incorporate both Arduino and Processing.
-            Final project prompt (examples are listed on syllabus page)
-                Create a physically interactive system of your choice that relies on a multimedia computer for some sort of processing or data analysis. The Final should use BOTH Processing AND Arduino.Your focus should be on careful and timely sensing of the relevant actions of the person or people that you’re designing this for, and on clear, prompt, and effective responses. Any interactive system is going to involve systems of listening, thinking, and speaking from both parties. Whether it involves one cycle or many, the exchange should be engaging.You may work alone or in groups.
-        EXTRA CREDIT Due Nov. 24th (post documentation on blog): Make a simple game that involves some kind of communication between Arduino and Processing
+Document everything as usual in your Github repository
 
-    Reading
-        Due Nov. 24th (be prepared to discuss): Design Meets Disability
+##### Writing Assignments Due November 24
+
+Write a preliminary concept for your final project, which must incorporate both Arduino and Processing.
+
+Final project prompt (examples are listed on syllabus page)
+
+Create a physically interactive system of your choice that relies on a
+multimedia computer for some sort of processing or data analysis. The final
+project
+should use BOTH Processing AND Arduino.Your focus should be on careful and
+timely sensing of the relevant actions of the person or people that you’re
+designing this for, and on clear, prompt, and effective responses. Any
+interactive system is going to involve systems of listening, thinking, and
+speaking from both parties. Whether it involves one cycle or many, the
+exchange should be engaging.You may work alone or in groups.  
+
+##### Reading Assignments Due November 24
+[Design Meets Disability](doc/Design_meets_disability.pdf)
 
 ### Week 12 (Nov. 23 & 25)
 
