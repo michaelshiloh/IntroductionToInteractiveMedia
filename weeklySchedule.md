@@ -359,7 +359,7 @@ are links to various other explanations of the same thing. Browse them, and read
 Serial Communication, introduce Final Project
 
 ### todays-assignment
-##### Production Assignments Due November 22
+##### Production Assignments Due Tuesday November 23
 
 1. Make something that uses only one sensor  on Arduino and 
 makes the ellipse in Processing move on the horizontal axis, 
@@ -372,7 +372,7 @@ kind of communication between Arduino and Processing
 
 Document everything as usual in your Github repository
 
-##### Writing Assignments Due November 24
+##### Writing Assignments Due Thursday November 25
 
 Write a preliminary concept for your final project, which must incorporate both Arduino and Processing.
 
@@ -388,7 +388,7 @@ interactive system is going to involve systems of listening, thinking, and
 speaking from both parties. Whether it involves one cycle or many, the
 exchange should be engaging.You may work alone or in groups.  
 
-##### Reading Assignments Due November 24
+##### Reading Assignments Due Thursday November 25
 [Design Meets Disability](doc/Design_meets_disability.pdf)
 
 ### Week 12 (Nov. 23 & 25)
