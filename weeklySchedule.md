@@ -359,7 +359,7 @@ are links to various other explanations of the same thing. Browse them, and read
 Serial Communication, introduce Final Project
 
 ### todays-assignment
-##### Production Assignments Due Tuesday November 23
+##### Production Assignments Due Thursday November 25
 
 1. Make something that uses only one sensor  on Arduino and 
 makes the ellipse in Processing move on the horizontal axis, 
