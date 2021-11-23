@@ -2596,6 +2596,7 @@ You might see these referred to in some books or websites.
 Time permitting, review communication
 
 ### todays-lecture
+### November 23 2021
 
 #### Administration
 - **Record Zoom!**
@@ -2637,7 +2638,7 @@ buzzer?
 - What is current? It is the rate of flow of electrons through a conductor.
 	- You don't get to control the current. 
 	- The voltage depends on the current and the resistance (Ohm's law: I=V/R)
-	- You can provide a voltage (In Arduino, the voltage is always 5V)
+	- You can provide a voltage (with Arduino, the voltage is always 5V)
 	- Each device has it's own "resistance"
 
 LEDs have relatively <strong>high</strong> "resistance", 
@@ -2665,7 +2666,8 @@ is governed, to a large extent, by its size
 The transistors that make up Arduino are tiny 
 
 ![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
-Image courtesy of SparkFun
+
+(Image courtesy of SparkFun)
 
 The reason for using the separate Motor Driver is simple:
 
