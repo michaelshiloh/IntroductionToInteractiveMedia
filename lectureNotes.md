@@ -2738,6 +2738,42 @@ void loop() {
 
 ````
 
+Here is the code that Noah developed to control the motor speed and
+direction using a potentiometer:
+
+````
+const int ain1Pin = 3;
+const int ain2Pin = 4;
+const int pwmAPin = 5;
+
+const int bin1Pin = 8;
+const int bin2Pin = 7;
+const int pwmBPin = 6;
+
+const int potPin = A5;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  int potVal = analogRead(potPin);
+  delay(20);
+  if (potVal > 1023 / 2) { //counterclockwise
+    digitalWrite(ain1Pin, HIGH);
+    digitalWrite(ain2Pin, LOW);
+    analogWrite(pwmAPin, potVal / 4);
+  } else { //clockwise
+    digitalWrite(ain1Pin, LOW);
+    digitalWrite(ain2Pin, HIGH);
+    analogWrite(pwmAPin, 255 - potVal / 4);
+  }
+}
+````
+
 Time permitting
 
 ##### LCD
