@@ -2699,8 +2699,6 @@ How did I choose which pins to use?
 - This leaves PWM pins 5 and 6 for the speed controls (pwma and pwmb)
 - Might as well choose nearby digital pins
 
-Theory
-
 Code
 
 ````
@@ -2740,13 +2738,14 @@ void loop() {
 
 ````
 
-### June 29
+Time permitting
 
-LCD
+##### LCD
 [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
 <img src="media/arduinoLCDSchematic.jpg" width="600">
 
-Bonus: How to tell if you touch a wall of a photograph
+##### Processing: How to tell if you touch something in a photograph of a
+specific color (a color that is different from the rest of the photograph)
 - [RGB color space](https://en.wikipedia.org/wiki/RGB_color_space)
 - [Euclidian distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 - The Processing [`dist()`](https://processing.org/reference/dist_.html)
@@ -2758,10 +2757,8 @@ Bonus: How to tell if you touch a wall of a photograph
 	- Extract each color value using the
 		[`red()`](https://processing.org/reference/red_.html), `green()`, and `blue()` functions
 
-### June 30
-
+### November 23 2021
 ##### Look at final project proposals
-
 
 ##### Ultrasonic distance measuring sensor
 - [Tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-3b-distance-sensor)  
@@ -2770,7 +2767,3 @@ Bonus: How to tell if you touch a wall of a photograph
 	- const int echoPin = 12;
 
 
-
-
-
-, Construction and Debugging, Final Project Proposal
