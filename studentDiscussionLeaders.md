@@ -22,6 +22,6 @@ Class location: [Zoom](https://nyu.zoom.us/j/93719271713)
 - Fiona & Angelica October 12
 - Tanisha & Xiaoli November 4
 - Aadha & Jeongin November 11
-- Afra & Anushka November 18
+- Afra & Anushka November 23
 - Ansh & Noah November 25
 
