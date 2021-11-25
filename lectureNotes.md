@@ -2595,7 +2595,6 @@ You might see these referred to in some books or websites.
 
 Time permitting, review communication
 
-### todays-lecture
 ### November 23 2021
 
 #### Administration
@@ -2774,7 +2773,19 @@ void loop() {
 }
 ````
 
-Time permitting
+
+### todays-lecture
+### November 23 2021
+
+#### Administration
+- **Record Zoom!**
+- Legislative day November 29 (Monday) meet with Thursday schedule
+- No class Tuesday - Thursday
+
+##### Discussion
+Ansh and Noah
+
+##### Look at final project proposals
 
 ##### LCD
 [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
@@ -2792,9 +2803,6 @@ specific color (a color that is different from the rest of the photograph)
 		(`pixels[y*width+x]`)
 	- Extract each color value using the
 		[`red()`](https://processing.org/reference/red_.html), `green()`, and `blue()` functions
-
-### November 23 2021
-##### Look at final project proposals
 
 ##### Ultrasonic distance measuring sensor
 - [Tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-3b-distance-sensor)  
