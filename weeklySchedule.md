@@ -358,7 +358,6 @@ are links to various other explanations of the same thing. Browse them, and read
 
 Serial Communication, introduce Final Project
 
-### todays-assignment
 ##### Production Assignments Due Thursday November 25
 
 1. Make something that uses only one sensor  on Arduino and 
@@ -394,40 +393,26 @@ exchange should be engaging.You may work alone or in groups.
 ### Week 12 (Nov. 23 & 25)
 
 DC motors, Construction and Debugging, Final Project Proposal
-#### Assignments:
 
-##### Production:
+### todays-assignment
+##### Assignments Due Monday November 29
 
-Assignments:
+##### Writing Assignments 
+Refine your final project proposal 
+- Create a new folder in your Github repository called "finalProject"
+- Create a file called "journal.md" and in it describe:
+	- Finalized concept for the project
+	- Description of what your Arduino program will do with each input and output and what it will send to and/or receive from Processing
+	- Description of what Processing program will do and what it will send to and/or receive from Arduino
+	- Identify the riskiest, most complicated, or most unknown part of your project
 
-    Production:
-        Due Nov. 24th – this Wednesday (post documentation on blog): Refine your final project proposal, include the following:
-            Finalized concept for the project
-            Description of what your Arduino program will do with each input and output and what it will send to and/or receive from Processing
-            Description of what Processing program will do and what it will send to and/or receive from Arduino
-        Due Nov. 28th (post documentation on blog): begin working on your final project, try to get the parts you think will be hardest completed.
+##### Production Assignments 
+Begin working on your final project, 
+-	Try to reduce the risk by first addressing
+	- the riskiest, most complicated, or most unknown part of your project
 
-LEGISLATIVE DAY  Nov. 28 – SUNDAY – meets on Wed. schedule 2:40-5:20pm. No class Mon. Nov. 29 & Wed. Dec. 1
+##### LEGISLATIVE DAY  
+- Legislative day November 29 (Monday) meet with Thursday schedule
+- No class Tuesday - Thursday
 
-Work on Final Project
 
-Assignments:
-
-    Production:
-        Due Dec. 6th (post documentation on blog):
-            Get your project 90% complete
-            Conduct user testing (record video)
-
-### Week 13 (Dec. 7 & 9)
-
-Complete Final Project
-#### Assignments:
-
-##### Production:
-
-Assignments:
-
-    Final Project and final project documentation due at the beginning of class, Dec. 14th
-
-### Week 14 (Dec. 14)
-Final Project Due Dec 14th
