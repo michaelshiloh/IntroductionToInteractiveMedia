@@ -394,7 +394,6 @@ exchange should be engaging.You may work alone or in groups.
 
 DC motors, Construction and Debugging, Final Project Proposal
 
-### todays-assignment
 ##### Assignments Due Monday November 29
 
 ##### Writing Assignments 
@@ -416,3 +415,9 @@ Begin working on your final project,
 - No class Tuesday - Thursday
 
 
+### todays-assignment
+##### Assignments Due Tuesday December 7
+
+Get your project 90% complete
+- Document your progress in your journal.md
+- Conduct user testing. Record a video and put a link in your journal.md

@@ -2787,6 +2787,15 @@ Ansh and Noah
 
 ##### Look at final project proposals
 
+### todays-lecture
+### November 29 2021
+
+#### Administration
+- **Record Zoom!**
+- No class Tuesday - Thursday
+
+##### Final project: Work on your own and problem solving
+
 ##### LCD
 [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all#circuit-4a-lcd-hello-world)
 <img src="media/arduinoLCDSchematic.jpg" width="600">
@@ -2809,5 +2818,4 @@ specific color (a color that is different from the rest of the photograph)
 - Circuit: 
 	- const int trigPin = 11;           
 	- const int echoPin = 12;
-
 
