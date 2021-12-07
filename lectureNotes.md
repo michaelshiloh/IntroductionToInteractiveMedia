@@ -2819,3 +2819,22 @@ specific color (a color that is different from the rest of the photograph)
 	- const int trigPin = 11;           
 	- const int echoPin = 12;
 
+
+### todays-lecture
+### December 7
+
+#### Administration
+- **Record Zoom!**
+
+#### Final Project 
+- Final project due at the beginning of class, December. 14th
+	- Projects must be installed in the showcase location. Precise location and
+		when you can start setting up to be announced.
+- Final project documentation due Friday December 17th at 3pm. 
+
+#### Showcase
+- All IM students need to attend and show a project
+- Final setup 11am-1pm Dec 15 
+- IM Show - Wednesday Dec 15 - 3-6pm in Arts Center lobby
+- See great projects from your fellow students 3-5pm
+- Performances from Circuit Breakers, Performing Robots, and Live Coding 5-6pm
