@@ -438,12 +438,12 @@ Get your project 90% complete
 	- Those of you who have requested special placements (Afra, Sonny,
 	and Shumin) can set up temporarily on a table and we'll all decide the
 	optimum placement as the space starts filling up.
-##### Final project documentation due Friday December 17th at 3pm.
+##### Final project documentation due Friday December 17th at 3pm
 In your folder called ````finalProject````
 - Journal file journal.md, describing your progress each time you work.
-	Include you thoughts, decisions, experiments, etc.
-	Discuss what worked and what didn't
-	At the end of each journal entry, describe whether, 
+	- Include you thoughts, decisions, experiments, etc.
+	- Discuss what worked and what didn't.
+	- At the end of each journal entry, describe whether, 
 	and if so, how, the results of today's work
 	has caused you to modify your plan for your final project.
 	It's OK and quite normal to change your plan as you work.
