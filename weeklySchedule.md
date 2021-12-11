@@ -440,6 +440,8 @@ Get your project 90% complete
 	optimum placement as the space starts filling up.
 ##### Final project documentation due Friday December 17th at 3pm
 In your folder called ````finalProject````
+- Do not upload Zip files
+- Do not upload PDF or Word documents (all text should be in Markdown .md files)
 - Journal file journal.md, describing your progress each time you work.
 	- Include you thoughts, decisions, experiments, etc.
 	- Discuss what worked and what didn't.
@@ -458,6 +460,3 @@ In your folder called ````finalProject````
 - Your programs (Arduino and Processing), carefully documented
 	- All other necessary files (images, sound, etc.)
 		- Individual files in the correct folders
-		- Do not upload Zip files
-		- Do not upload PDF or Word documents 
-		(all text should be in Markdown .md files)
