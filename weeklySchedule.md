@@ -415,9 +415,49 @@ Begin working on your final project,
 - No class Tuesday - Thursday
 
 
-### todays-assignment
 ##### Assignments Due Tuesday December 7
 
 Get your project 90% complete
 - Document your progress in your journal.md
 - Conduct user testing. Record a video and put a link in your journal.md
+
+### todays-assignment
+##### Assignments Due Tuesday December 14
+- Complete the course evaluation 
+	**before class starts** at 10:25am on Tuesday
+	so that we can use our time together to focus on your wonderful projects
+- Our final class will be held in the lobby of the Art Centre, in the location
+	of the showcase. 
+	- Please have your projects set up and ready to demonstrate
+	**before class starts** at 10:25am on Tuesday. 
+	- I will put labels on the tables that are allocated to my class. 
+	- You can start setting up Saturday at 5pm. 
+	- If your project is incomplete, you may continue working in the Art Center.
+	- Each table should have a maximum of 4
+	projects. 
+	- Those of you who have requested special placements (Afra, Sonny,
+	and Shumin) can set up temporarily on a table and we'll all decide the
+	optimum placement as the space starts filling up.
+##### Final project documentation due Friday December 17th at 3pm.
+In your folder called ````finalProject````
+- Journal file journal.md, describing your progress each time you work.
+	Include you thoughts, decisions, experiments, etc.
+	Discuss what worked and what didn't
+	At the end of each journal entry, describe whether, 
+	and if so, how, the results of today's work
+	has caused you to modify your plan for your final project.
+	It's OK and quite normal to change your plan as you work.
+- A video showing your project working
+- Describe your project in README.md and include:
+	- A description of your concept and how it was achieved
+	- A picture of your circuit schematic  
+	- One or more photographs of your project
+	- Major problems, if any, and solutions, if any
+	- Clever or difficult things about your project
+	- A link to the video
+- Your programs (Arduino and Processing), carefully documented
+	- All other necessary files (images, sound, etc.)
+		- Individual files in the correct folders
+		- Do not upload Zip files
+		- Do not upload PDF or Word documents 
+		(all text should be in Markdown .md files)
