@@ -211,7 +211,8 @@ How can we find out what a variable's value is?
 Use the `draw()` function to draw something different in each frame. This can
 be the location of a shape but you can manipulate anything such as color also:
 
-- `draw()`
+The  `draw()` function is called once per frame. Think of it as drawing a new
+page on a ["flip book"](https://en.wikipedia.org/wiki/Flip_book)
 
 ````
 let foo = 0;
@@ -226,7 +227,8 @@ function draw() {
 }
 ````
 
-`background()`
+By default, the previous frame is not erased. Sometimes this is useful.
+Use the `background()` function to "paint" over any previous drawings. 
 
 ````
 function setup() {
@@ -272,3 +274,4 @@ function draw() {
 }
 
 ````
+
