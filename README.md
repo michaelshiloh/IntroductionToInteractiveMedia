@@ -1,4 +1,7 @@
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
+
+- Class [Zoom](https://nyu.zoom.us/j/98127583237)
+- Shortcut to [today's assignment](weeklySchedule.md/#todays-assignment)    
+- Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
 
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
@@ -18,7 +21,7 @@ Session: Spring 2022
 Class location: [Zoom](https://nyu.zoom.us/j/93849380150)  
 [Discord](https://discord.com/channels/714727038078025851/716332110268465172)   
 
-Welcome to Introduction to Interactive Media. All class material can be
+ elcome to Introduction to Interactive Media. All class material can be
 found here. 
 
 [Syllabus](syllabus.md)

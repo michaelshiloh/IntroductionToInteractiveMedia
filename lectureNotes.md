@@ -1,6 +1,7 @@
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
-### todays-lecture
 
+- Class [Zoom](https://nyu.zoom.us/j/98127583237)
+- Shortcut to [today's assignment](weeklySchedule.md/#todays-assignment)    
+- Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
 
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
@@ -91,6 +92,24 @@ harp</a></li>
 </ul>
 </li>
 </ul>
+
+##### todays-lecture
+### January 27
+#### Administration
+
+- **Record Zoom!**
+- **Turn off notifications!**
+
+#### Announcements
+
+- I made a mistake and had to change the Zoom meeting URL. I have updated all
+	the pages on Github with the new Zoom URL which is
+	[this](https://nyu.zoom.us/j/98127583237)
+- Since the first meeting was with the old link, you won't be able to
+	find that meeting recording in Brightspace. However you can access
+	the first meeting recording
+	[here](https://nyu.zoom.us/rec/share/39WzmzYv5s5_mVmNTASLwR676e1uvgySeVXj1UkNXA6UjVoFgr2z5pMAN1ETIsqh.zbuDSymgupqIzpzF)
+
 
 #### Let's get started
 
