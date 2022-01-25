@@ -304,7 +304,6 @@ Sparkfun Inventors Kit
 you)
 
 #### Required Software
-Processing http://processing.org  
 Arduino http://arduino.cc
 
 #### Recommended books
