@@ -36,7 +36,10 @@ This includes:
 
 Primitive shapes, Programming concepts
 
-Install Processing on your computer: https://processing.org/download/
+##### todays-assignment
+#### Assignments due January 27
+1. Install Processing on your computer: https://processing.org/download/
+1. Join Discord
 
 #### Assignments due February 1
 
