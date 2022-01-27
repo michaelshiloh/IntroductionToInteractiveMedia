@@ -93,16 +93,7 @@ harp</a></li>
 </li>
 </ul>
 
-##### todays-lecture
 ### January 27
-#### Administration
-
-- **Record Zoom!**
-- Attention
-	- Cameras on
-	- Notifications off
-	- Pay attention to whoever is talking
-	- Failure to do this will be marked as an unexcused absence
 
 #### Announcements
 
@@ -168,24 +159,49 @@ Here is the program we developed in class:
 
 ````
 function setup() {
-  createCanvas( 400, 1000);
-
-  line(200, 300, 200, 400);
-  line(230, 300, 230, 400);
-
-  // body
-  fill(200, 100, 30);
-  circle(215, 270, 80);
-
-  noStroke();
-  // this muse be the head
-  fill(0, 10, 255);
-  circle(215, 200, 40);
-
-  stroke(0, 100, 20);
-  line(200, 200, 250, 200);
+  createCanvas(600,600); 
+  background(25, 130, 80); 
+  
+  // draw a circle and a rectangle with the default colors
+  circle (width/2, height/2, 50);
+  rect(10, 10, 80, 20);
+  
+  // change the stroke and fill
+  fill(180,0,0);
+  stroke(0,0,180);
+  // circle(80, 80, 80); this circle is commented out so it won't be drawn
+  ellipse(200, 280, 50, 80);
+  
+  // change the stroke color but keep the same fill
+  stroke(180,0,0);
+  line( 0,0, 300, 100);
+  
+  let foo = radians(90);
+  print(foo);                  //!!!!!!!!!!!!!!!!!!!!!!!! THIS IS VERY USEFUL!!!!!!!
+  
+  arc(50, 55, // center of the ellipse
+      50, 50, // width and height
+      0, radians(180)); // start and stop angle
+  
+  triangle( 100, 100, 10, 200, 100, 300);
+  point(width/2, height/2);
 }
+
+let x = 0;
+function draw() {
+	// Where am I pointing?
+  print(mouseX, mouseY);
+  
+	// I can do animation!
+  circle(x, 500, 40);
+  x=x+1;
+}
+
 ````
+**Notes**
+- Built-in variables
+	- `width`, `height`, `mouseX`, `mouseY`
+	- many others; we will discover more as we go along
 
 **Notice that when working in the web editor your sketches are not
 saved!**
@@ -210,6 +226,16 @@ but all class assignments must be handed in on Github.
 - Optionally change the commit comment
 - Click on "Commit new file"
 
+##### todays-lecture
+### February 1
+#### Administration
+
+- **Record Zoom!**
+- Attention
+	- Cameras on
+	- Notifications off
+	- Pay attention to whoever is talking
+	- Failure to do this will be marked as an unexcused absence
 
 ##### Variables
 
@@ -222,10 +248,6 @@ but all class assignments must be handed in on Github.
 - `let myRandomNumber = round(random(255));`
 How can we find out what a variable's value is?
 `print()` 
-
-- Built-in variables
-	- `width`, `height`, `mouseX`, `mouseY`
-	- many others; we will discover more as we go along
 
 ##### Animation
 
