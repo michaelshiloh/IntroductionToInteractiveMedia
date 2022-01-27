@@ -36,14 +36,22 @@ This includes:
 
 Primitive shapes, Programming concepts
 
-##### todays-assignment
 #### Assignments due January 27
-1. Install Processing on your computer: https://processing.org/download/
 1. Join Discord
 
+##### todays-assignment
 #### Assignments due February 1
 
+##### Email:
+
+Email me a link to your Github repository
+
 ##### Production:
+
+Resources you might find useful:
+1. Dan Shiffman's amazing [video
+	 tutorials](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
+1. Learning section of [p5js.org](https://p5js.org/learn/)
 
 Make a self-portrait using p5.js.
 - The portrait must be entirely created by your code i.e. you must not

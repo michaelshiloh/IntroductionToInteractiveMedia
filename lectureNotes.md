@@ -98,7 +98,11 @@ harp</a></li>
 #### Administration
 
 - **Record Zoom!**
-- **Turn off notifications!**
+- Attention
+	- Cameras on
+	- Notifications off
+	- Pay attention to whoever is talking
+	- Failure to do this will be marked as an unexcused absence
 
 #### Announcements
 
@@ -137,11 +141,9 @@ Name your repository "Introduction to Interactive Media".
 	- More [here](https://github.com/michaelshiloh/resourcesForClasses#github-resources).
 
 
-##### p5.js
+##### Simple shapes in p5.js
 
 Open [p5.js editor](editor.p5.js/)
-
-**Simple shapes**
 
 - `ellipse()`
 - `rect()`
