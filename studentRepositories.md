@@ -24,3 +24,6 @@ Class location: [Zoom](https://nyu.zoom.us/j/93849380150)
 
 ## This page: Student Repositories
 
+- [Aisha](https://github.com/aisahodzic/IntroToIM)
+- [Daniel](https://github.com/danielnivia/IntrotoIM)
+- [Avinash](https://github.com/Tauke190/Intro-to-Interactive-Media)
