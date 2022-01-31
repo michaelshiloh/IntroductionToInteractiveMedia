@@ -234,8 +234,14 @@ but all class assignments must be handed in on Github.
 - Attention
 	- Cameras on
 	- Notifications off
-	- Pay attention to whoever is talking
+	- Pay attention to whomever is talking
 	- Failure to do this will be marked as an unexcused absence
+
+#### Homework
+Look at self portraits
+
+#### Questions
+Did any questions come up since we last met?
 
 ##### Variables
 
