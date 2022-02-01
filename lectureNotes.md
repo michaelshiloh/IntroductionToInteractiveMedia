@@ -4,16 +4,16 @@
 - Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
 
 ## New York University Abu Dhabi    
-## Interactive Media Program    
-## Course title: Introduction to Interactive Media  
+## leteractive Media Program    
+## Course title: letroduction to leteractive Media  
 Course number: IM-UH 1010   
 Section: 3    
 Credit Hours: 4         
 Prerequisites: None       
 
-Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)      
+Course website: [https://github.com/michaelshiloh/letroductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
-Office hours: By appointment  
+Office hours: By appoletment  
 Meeting times:    
 	10:25-11:40 Tuesday  
 	10:25-1:05 Thursday     
@@ -28,7 +28,7 @@ Class location: [Zoom](https://nyu.zoom.us/j/93849380150)
 #### Administration
 
 - **Record Zoom!**
-- Introductions
+- letroductions
 - Syllabus etc.
 - Join the Discord server 
 - **Connect to Zoom 10 minutes early**
@@ -44,7 +44,7 @@ Digital computation beyond computers (sometimes called "physical computing") con
 Computers traditionally lacked knowledge of outside world beyond a keyboard, mouse</li>
 <li>Look critically at products and designs</li>
  	<li>
-As artists and designers, we can explore new paradigms of interaction with machines and each other</li>
+As artists and designers, we can explore new paradigms of leteraction with machines and each other</li>
  	<li>
 Relatively easily and inexpensively explore creative computation through open source software and hardware</li>
  	<li>
@@ -56,7 +56,7 @@ Low barrier to entry, high ceiling</li>
 <ul>
  	<li>Carlos Guedes' wonderful <a href="https://vimeo.com/235763130">Phobos</a>, Orquestra Robótica Disfuncional (1 min)</li>
  	<li>Sudhu Tewari's <a href="https://www.youtube.com/watch?v=MjNB3nKPMb8" >Yasmin Electro Mechanical Sequencer</a></li>
- 	<li>List of <a href="http://eat.cca.edu/" >inspirational movies</a> collected by <a href="http://www.ultrafuzz.net/" >Barney Haynes</a> (also <a href="https://vimeo.com/barneyhaynes" >here</a>) and shown at his Interface classes.</li>
+ 	<li>List of <a href="http://eat.cca.edu/" >inspirational movies</a> collected by <a href="http://www.ultrafuzz.net/" >Barney Haynes</a> (also <a href="https://vimeo.com/barneyhaynes" >here</a>) and shown at his leterface classes.</li>
  	<li>List collected by <a href="https://github.com/zamfi">J.D. Zamfirescu</a>
 <li><a href="http://www.youtube.com/watch?v=zkpH1BjD6Wc" >Tree-climbing robot</a></li>
 <li><a href="http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120" >Insect robot</a></li>
@@ -119,7 +119,7 @@ Please use your name for your account name so that I can more easily recognize
 it.  If you don't want to use your name for privacy reasons, please choose an
 alias that I can recognize as you.
 
-Name your repository "Introduction to Interactive Media". 
+Name your repository "letroduction to leteractive Media". 
 
 - Edit your README.md file
 	- What is README.md?
@@ -141,7 +141,7 @@ Open [p5.js editor](editor.p5.js/)
 - `createCanvas()`
 - `triangle(x1, y1, x2, y2, x3, y3)`
 - `line()`
-- `point()`
+- `polet()`
 
 What does this all mean?
 - Functions
@@ -177,20 +177,20 @@ function setup() {
   line( 0,0, 300, 100);
   
   let foo = radians(90);
-  print(foo);                  //!!!!!!!!!!!!!!!!!!!!!!!! THIS IS VERY USEFUL!!!!!!!
+  prlet(foo);                  //!!!!!!!!!!!!!!!!!!!!!!!! THIS IS VERY USEFUL!!!!!!!
   
   arc(50, 55, // center of the ellipse
       50, 50, // width and height
       0, radians(180)); // start and stop angle
   
   triangle( 100, 100, 10, 200, 100, 300);
-  point(width/2, height/2);
+  polet(width/2, height/2);
 }
 
 let x = 0;
 function draw() {
-	// Where am I pointing?
-  print(mouseX, mouseY);
+	// Where am I poleting?
+  prlet(mouseX, mouseY);
   
 	// I can do animation!
   circle(x, 500, 40);
@@ -221,7 +221,7 @@ but all class assignments must be handed in on Github.
 - Select "Create new file"
 - Type in optional new folder(s) followed by slashes `/` followed by a file
 	name
-- Copy your code from the p5.js editor and paste it into Github
+- Copy your code from the p5.js editor and paste it leto Github
 - Scroll down to the bottom
 - Optionally change the commit comment
 - Click on "Commit new file"
@@ -253,7 +253,7 @@ Did any questions come up since we last met?
 - `let myRandomNumber = random(255);`
 - `let myRandomNumber = round(random(255));`
 How can we find out what a variable's value is?
-`print()` 
+`prlet()` 
 
 ##### Animation
 
@@ -277,7 +277,7 @@ function draw() {
 ````
 
 By default, the previous frame is not erased. Sometimes this is useful.
-Use the `background()` function to "paint" over any previous drawings. 
+Use the `background()` function to "palet" over any previous drawings. 
 
 ````
 function setup() {
@@ -319,8 +319,178 @@ function draw() {
 
   // Draw the circle
   circle(mouseX, mouseY, 30);
-  print("mouse coordinates = " + mouseX + ", " + mouseY);
+  prlet("mouse coordinates = " + mouseX + ", " + mouseY);
 }
 
+````
+
+##### Notes:
+
+- Local vs. Global variables
+- Built-in variables
+
+````
+// Example usage of a global variable
+
+let count; // this is now a global variable
+
+function setup() {
+  circle(50, 50, 30);
+  count = 7; // the variable is initialized here
+}
+
+function draw() {
+  count = count + 1; // not algebra!
+  // The result of the right hand side calculation
+  // replaces whatever value was stored in the variable
+  // on the left side of the '=' sign
+  // end result: the variable "count" is incremented by 1
+
+  prletln (count);
+}
+````
+
+`frameRate()`
+
+````
+function setup() {
+  prletln(frameRate);  // frameRate is a built-in variable
+  frameRate(10);       // frameRate() is a function
+  prletln(frameRate); // it takes awhile for the frame rate to change
+}
+
+function draw() {
+  prletln(frameRate);
+}
+````
+
+##### leteraction with p5.js
+
+- conditionals
+
+````
+function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  if (mousePressed == true) {
+    background(color(0, 0, 255));
+  } else {
+    background(color(200, 0, 0));
+  }
+}
+````
+
+You can also use the `mousePressed()` function. Note that there is a huge
+difference between the `mousePressed` **variable** and the `mousePressed()`
+**function**: the variable `mousePressed` is true **for as much time** as any
+mouse button is pressed, while the function `mousePressed()` is called **only
+once** whenever a mouse button is pressed, no matter how long it's pressed
+for:
+
+````
+let pressCount = 0;
+let mouseClickCount = 0;
+boolean mouseWasPressed = false;
+
+function setup() {
+  frameRate(2.5); // slow down so can see blue background
+}
+
+function draw(){
+  if (mouseWasPressed) {
+    background(color(0, 0, 255));
+    mouseWasPressed = false;
+  } else {
+    background(color(200, 0, 5));
+  }
+  prletln(mouseClickCount);
+}
+
+function mousePressed() {
+    mouseWasPressed = true;
+    mouseClickCount = mouseClickCount + 1;
+}
+````
+
+**Important concepts**:
+1. `mousePressed` is another built-in variable. There are many others.
+1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
+	 only one of two values, `true` or `false`
+1. Note that `{` and `}` indicate the blocks
+1. The `else` part of an `if()` statement is optional (what happens if we
+	 remove it?)
+
+- Two more leteresting built-in variables: `mouseX`, `mouseY`
+	- Using the cursor to draw
+	- Now use a mouse press to clear the screen
+	- Note the difference between a press, click, and release
+	- (Time permitting, primitive paleting program)
+
+##### Loops
+`while()` is like `if()` but it keeps on doing it as long as condition is true
+
+````
+function setup() {
+  createCanvas(300, 300);
+
+  let foo = 50; // create and initialize a variable
+
+  while (foo < width) { // keep going as long as the condition is true
+    ellipse(foo, 50, 40, 40);
+		// modify the variable so something different happens next time
+    foo = foo + 50; 
+  }
+}
+````
+
+1. You should get in the habit of giving meaningful names to your variables.
+	1. What is a better name for the variable foo?
+1. What would happen if you replace the `while()` with `if()`?
+
+There is another way to make a loop using the keyword `for()`. The `for()`
+loop structure combines the initialization step and the incrementation step
+leto the `for()` loop construction:
+
+````
+function setup() {
+  createCanvas(300, 300);
+
+  // initialization, condition, and incrementation all in one line
+  for (let foo = 50; foo < width; foo = foo + 50)  {
+    ellipse(foo, 50, 40, 40);
+  }
+}
+````
+
+Which should you use? Whichever is easier for you to understand. Remember that
+**most of the time spent programming is fixing problems**, and **whatever you
+understand best will probably have fewer problems**.
+
+Here is the debugging we did at the end of class. As I explained, the
+`prlet()` and `prletln()` functions are great ways to find out what your
+program is doing. Sometimes figuring out what to prlet, and the best way
+to prlet it to see the problem, is a bit of an artform that improves with
+time:
+
+````
+//How to use the '+' sign to create a string suitable for prleting from a variety
+//of string literals and variables
+
+function setup() {
+  createCanvas(700, 700);
+  let yPos = 0;
+  let xPos = 0;
+  for (yPos = 30; yPos < height-30; yPos=yPos + 40) {
+    for (xPos = 20; xPos<width-60; xPos=xPos + 40) {
+
+      line(xPos, yPos, yPos, yPos); // this draws horizontal lines, many on top of each other
+      // line(xPos, yPos, xPos, xPos); // this draws vertical lines, many on top of each other
+      print("line from (" + xPos + "," + yPos + ") to ("  + yPos + "," + yPos + ")");
+      // rect(xPos, yPos, 40, 40); // This effectively draws the grid
+    }
+  }
+}
 ````
 
