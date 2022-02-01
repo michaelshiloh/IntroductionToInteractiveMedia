@@ -291,7 +291,7 @@ function draw() {
   }
 
   // Change the value of red
-  redValue -= 1;
+  redValue = redValue - 1;
 
 	//If red reaches a certian level, reset it
   if (redValue === 55) {
