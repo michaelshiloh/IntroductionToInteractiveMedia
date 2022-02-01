@@ -365,6 +365,7 @@ function draw() {
 #### Administration
 
 - **Record Zoom!**
+- Please say something if I forget the end of class
 - Attention
 	- Cameras on
 	- Notifications off
