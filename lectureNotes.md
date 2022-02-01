@@ -253,7 +253,7 @@ Did any questions come up since we last met?
 - `let myRandomNumber = random(255);`
 - `let myRandomNumber = round(random(255));`
 How can we find out what a variable's value is?
-`prlet()` 
+`print()` 
 
 ##### Animation
 
@@ -319,7 +319,7 @@ function draw() {
 
   // Draw the circle
   circle(mouseX, mouseY, 30);
-  prlet("mouse coordinates = " + mouseX + ", " + mouseY);
+  print("mouse coordinates = " + mouseX + ", " + mouseY);
 }
 
 ````
@@ -346,21 +346,20 @@ function draw() {
   // on the left side of the '=' sign
   // end result: the variable "count" is incremented by 1
 
-  prletln (count);
+  print (count);
 }
 ````
 
-`frameRate()`
+##### What is `frameRate()`?
 
 ````
 function setup() {
-  prletln(frameRate);  // frameRate is a built-in variable
   frameRate(10);       // frameRate() is a function
-  prletln(frameRate); // it takes awhile for the frame rate to change
+  print(frameRate()); // it takes awhile for the frame rate to change
 }
 
 function draw() {
-  prletln(frameRate);
+  print(frameRate());
 }
 ````
 
@@ -374,43 +373,11 @@ function setup() {
 }
 
 function draw() {
-  if (mousePressed == true) {
+  if (mouseIsPressed == true) {
     background(color(0, 0, 255));
   } else {
     background(color(200, 0, 0));
   }
-}
-````
-
-You can also use the `mousePressed()` function. Note that there is a huge
-difference between the `mousePressed` **variable** and the `mousePressed()`
-**function**: the variable `mousePressed` is true **for as much time** as any
-mouse button is pressed, while the function `mousePressed()` is called **only
-once** whenever a mouse button is pressed, no matter how long it's pressed
-for:
-
-````
-let pressCount = 0;
-let mouseClickCount = 0;
-boolean mouseWasPressed = false;
-
-function setup() {
-  frameRate(2.5); // slow down so can see blue background
-}
-
-function draw(){
-  if (mouseWasPressed) {
-    background(color(0, 0, 255));
-    mouseWasPressed = false;
-  } else {
-    background(color(200, 0, 5));
-  }
-  prletln(mouseClickCount);
-}
-
-function mousePressed() {
-    mouseWasPressed = true;
-    mouseClickCount = mouseClickCount + 1;
 }
 ````
 
@@ -422,11 +389,11 @@ function mousePressed() {
 1. The `else` part of an `if()` statement is optional (what happens if we
 	 remove it?)
 
-- Two more leteresting built-in variables: `mouseX`, `mouseY`
+- Two more interesting built-in variables: `mouseX`, `mouseY`
 	- Using the cursor to draw
 	- Now use a mouse press to clear the screen
 	- Note the difference between a press, click, and release
-	- (Time permitting, primitive paleting program)
+	- (Time permitting, primitive painting program)
 
 ##### Loops
 `while()` is like `if()` but it keeps on doing it as long as condition is true
