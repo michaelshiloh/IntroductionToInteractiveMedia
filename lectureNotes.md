@@ -226,16 +226,7 @@ but all class assignments must be handed in on Github.
 - Optionally change the commit comment
 - Click on "Commit new file"
 
-##### todays-lecture
 ### February 1
-#### Administration
-
-- **Record Zoom!**
-- Attention
-	- Cameras on
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
 
 #### Homework
 Look at self portraits
@@ -369,7 +360,18 @@ function draw() {
 }
 ````
 
-##### leteraction with p5.js
+##### todays-lecture
+### February 3
+#### Administration
+
+- **Record Zoom!**
+- Attention
+	- Cameras on
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+##### interaction with p5.js
 
 - conditionals
 
@@ -388,8 +390,9 @@ function draw() {
 ````
 
 **Important concepts**:
-1. `mousePressed` is another built-in variable. There are many others.
-1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
+1. `mouseIsPressed` is another built-in variable. There are many others.
+1. `mouseIsPressed` is a new type of data, namely a `boolean`, 
+	which means it has
 	 only one of two values, `true` or `false`
 1. Note that `{` and `}` indicate the blocks
 1. The `else` part of an `if()` statement is optional (what happens if we
@@ -448,8 +451,8 @@ to prlet it to see the problem, is a bit of an artform that improves with
 time:
 
 ````
-//How to use the '+' sign to create a string suitable for prleting from a variety
-//of string literals and variables
+//How to use the '+' sign to create a string suitable for printing 
+// from a variety of string literals and variables
 
 function setup() {
   createCanvas(700, 700);
@@ -458,9 +461,14 @@ function setup() {
   for (yPos = 30; yPos < height-30; yPos=yPos + 40) {
     for (xPos = 20; xPos<width-60; xPos=xPos + 40) {
 
-      line(xPos, yPos, yPos, yPos); // this draws horizontal lines, many on top of each other
-      // line(xPos, yPos, xPos, xPos); // this draws vertical lines, many on top of each other
-      print("line from (" + xPos + "," + yPos + ") to ("  + yPos + "," + yPos + ")");
+			// this draws horizontal lines, many on top of each other
+      line(xPos, yPos, yPos, yPos); 
+
+      // line(xPos, yPos, xPos, xPos); 
+			// this draws vertical lines, many on top of each other
+      print("line from (" + xPos + "," + yPos + ") 
+				to ("  + yPos + "," + yPos + ")");
+
       // rect(xPos, yPos, 40, 40); // This effectively draws the grid
     }
   }
