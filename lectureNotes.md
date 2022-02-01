@@ -277,7 +277,7 @@ function draw() {
 ````
 
 By default, the previous frame is not erased. Sometimes this is useful.
-Use the `background()` function to "palet" over any previous drawings. 
+Use the `background()` function to "paint" over any previous drawings. 
 
 ````
 function setup() {
@@ -292,14 +292,20 @@ function draw() {
   background(10, 255, 255);
 
   // Move the triangle
+  triangleTopLeftX = triangleTopLeftX + 1;
+
+	// If the triangle reaches the right edge, move to the left edge
   if (triangleTopLeftX >= width) {
     triangleTopLeftX = 0;
   }
-  triangleTopLeftX += 1;
 
   // Change the value of red
-  if (redValue == 155) redValue = 255;
   redValue -= 1;
+
+	//If red reaches a certian level, reset it
+  if (redValue === 55) {
+		redValue = 255;
+	}
 
   // Select the fill for the triangle
   fill(redValue, redValue - 100, redValue - 100);
@@ -373,7 +379,7 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed == true) {
+  if (mouseIsPressed === true) {
     background(color(0, 0, 255));
   } else {
     background(color(200, 0, 0));
