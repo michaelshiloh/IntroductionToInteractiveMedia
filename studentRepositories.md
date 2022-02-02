@@ -33,7 +33,7 @@ Class location: [Zoom](https://nyu.zoom.us/j/93849380150)
 - [Liam](https://github.com/l-mccarthy/IntroToIM)
 - [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia)
 - [Basil](https://github.com/basil-ahmed/IntroductionToInteractiveMedia)
-- [ُEmaan إيمان](https://github.com/Emaan-Ali/IntroductionToInteractiveMedia)
+- [Emaan إيمان](https://github.com/Emaan-Ali/IntroductionToInteractiveMedia)
 - [Mariam](https://github.com/mariamabdelrazekk/IntroToIM)
 - [Mishel]( https://github.com/MishelRashid/IntrotoIM22)
 - [Faizan](https://github.com/faizanraza09/introToIM)
@@ -41,3 +41,6 @@ Class location: [Zoom](https://nyu.zoom.us/j/93849380150)
 - [Noora](https://github.com/noorajabir/IntroToIM)
 - [Dhabia](https://github.com/dhabialhosani/IntroductionToIM)
 - [Pranav](https://github.com/sripranav9/IntroductionToInteractiveMedia)
+
+
+
