@@ -372,9 +372,9 @@ function draw() {
 	- Pay attention to whomever is talking
 	- Failure to do this will be marked as an unexcused absence
 
-##### interaction with p5.js
+##### Review
 
-- conditionals (continued)
+- conditionals 
 
 ````
 function setup() {
@@ -390,7 +390,7 @@ function draw() {
 }
 ````
 
-**Important concepts**:
+**Notes**:
 1. `mouseIsPressed` is another built-in variable. There are many others.
 1. `mouseIsPressed` is a new type of data, namely a `boolean`, 
 	which means it has
@@ -399,10 +399,11 @@ function draw() {
 1. The `else` part of an `if()` statement is optional (what happens if we
 	 remove it?)
 
-- Two more interesting built-in variables: `mouseX`, `mouseY`
-	- Using the cursor to draw
-	- Now use a mouse press to clear the screen
-	- (Time permitting, primitive painting program)
+In class exercise:
+- Using the cursor to draw
+- Now use a mouse press to clear the screen
+- Clear the screen if the mouse is pressed inside a certain circle
+- Combine these to create a primitive painting program
 
 ##### Loops
 `while()` is like `if()` but it keeps on doing it as long as condition is true
@@ -451,27 +452,19 @@ loop:
 
 function setup() {
   createCanvas(700, 700);
+  background(230);
+  fill(0);
+
   let yPos = 0;
   let xPos = 0;
-  for (yPos = 30; yPos < height-30; yPos=yPos + 40) {
-    for (xPos = 20; xPos<width-60; xPos=xPos + 40) {
 
-			// this draws horizontal lines, many on top of each other
-      line(xPos, yPos, yPos, yPos); 
-
-			// this draws vertical lines, many on top of each other
-      print("line from (" + 
-				xPos + 
-				"," 
-				+ yPos 
-				+ ") to ("  
-				+ yPos + "," 
-				+ yPos 
-				+ ")");
-
+  for (yPos = 30; yPos < height; yPos=yPos + 40) {
+    for (xPos = 20; xPos<width; xPos=xPos + 40) {
+      circle(xPos,yPos, 5);
     }
   }
 }
+
 ````
 
 #### Functions
@@ -502,7 +495,7 @@ Let's modify the example from last class to use a function. First let's draw a
 house instead of a circle to make it a little more interesting:
 
 ````
-void setup() {
+function setup() {
   createCanvas(300, 300);
 
   // initialization, condition, and incrementation all in one line
@@ -522,22 +515,22 @@ that information in the parenthesis. In the function, we store this
 information in temporary variables that we can use in the function:
 
 ````
-void setup() {
-  size(300, 300);
+function setup() {
+  createCanvas(300, 300);
 
   for (let foo = 50; foo < width; foo = foo + 50) {
     drawOneHouseAt(foo);
   }
 }
 
-void drawOneHouseAt(int x) {
+function drawOneHouseAt( x) {
   rect(x, 50, 40, 40);
   line(x, 50, x+20, 30);
   line(x+20, 30, x+40, 50);
 }
 ````
 
-**Things to notice**
+**Notes**
 1. I've said this before and I'll keep saying: 
 	**Choose descriptive names for your variables and functions!** 
 	`foo` is a bad name, `xPos` is a good name,
@@ -557,22 +550,18 @@ void drawOneHouseAt(int x) {
 	you must use the proper number of parameters.)
 1. Functions can return information as well, for example the `random()`
 	 function. Functions can either return one piece of information, or none.
-	We will see later how to do this. If your function returns no information,
-	use the word `void` in front of the function name to indicate this.
-1. Finally we understand why `setup()` and `draw()` have the world `void` in
-	 front of them! They are functions that return no information, just like
-	 our function `drawOneHouseAt()`
+	We will see later how to do this. 
 
-#### Variable Scope
+#### Variable Scope (again)
 
 ````
 let foo;  // this is a global variable, visible in all functions
 
-void setup() {
+function setup() {
   foo = 7;
 }
 
-void draw() {
+function draw() {
 
   print(foo);
 
