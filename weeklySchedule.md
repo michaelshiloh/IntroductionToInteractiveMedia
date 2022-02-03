@@ -39,7 +39,6 @@ Primitive shapes, Programming concepts
 #### Assignments due January 27
 1. Join Discord
 
-##### todays-assignment
 #### Assignments due February 1
 
 ##### Email:
@@ -80,6 +79,48 @@ Make a self-portrait using p5.js.
 	System](https://p5js.org/learn/coordinate-system-and-shapes.html)
 
 ### Week 2 (February 1, 3)
+
+##### todays-assignment
+#### Assignments due February 8
+
+Production Assignment
+
+- Using loops (`for()` or `while()`) in some way, 
+along with everything that you’ve learned so far, 
+make a simple work of art. 
+You may want to look at these old computer art magazines for inspiration, 
+but you don’t need to make yours so elaborate. 
+Scroll through and look for images:
+	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
+	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
+	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
+- In your Github repository, create a new folder named 
+`Sept13`
+	- Use **CONTROL SHIFT F** or **COMMAND SHIFT F** to indent your code properly
+	- Upload your program into the new folder, 
+	with the extension `.js`. 
+	- Your program should be well commented and organized. 
+	- Excellent names for variables
+	- Excellent names for functions, if you make any
+	- Upload a screenshot of your artwork into the new folder
+	- Create a `README.md` in the new folder and include 
+	your screenshot in the `README.md`.
+	- Write a short description of :
+		- Your process
+		- Any problems and, if any, solutions or workarounds
+		- Anything interesting you discovered or learned
+- Put a screenshot of your project on our Discord channel
+
+Reading Assignment
+
+- Watch [Casey Reas’ Eyeo talk on chance operations](https://vimeo.com/45851523), be prepared to discuss.
+Instructions for discussion
+leaders and followers on this discussion format can be found 
+[here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions).
+- If you are new to functions or want to review, watch Dan Shiffman’s 
+[functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V7Uu6ajGB2OI3hl5DZsD1Fw1WzR)
+tutorials. There are four videos, each less than 10 minutes.
+- Watch at least the first four of Dan Shiffman’s [Object Oriented Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i) tutorials.
 
 ### Week 3 (February 8, 10)
 
