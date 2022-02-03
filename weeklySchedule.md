@@ -95,7 +95,7 @@ Scroll through and look for images:
 	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
 	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
 - In your Github repository, create a new folder named 
-`Sept13`
+`Feb8`
 	- Use **CONTROL SHIFT F** or **COMMAND SHIFT F** to indent your code properly
 	- Upload your program into the new folder, 
 	with the extension `.js`. 
@@ -115,12 +115,15 @@ Reading Assignment
 
 - Watch [Casey Reas’ Eyeo talk on chance operations](https://vimeo.com/45851523), be prepared to discuss.
 Instructions for discussion
-leaders and followers on this discussion format can be found 
+leaders and participants on this discussion format can be found 
 [here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions).
+	- **Emaan and Daniel will lead our discussion**
 - If you are new to functions or want to review, watch Dan Shiffman’s 
-[functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V7Uu6ajGB2OI3hl5DZsD1Fw1WzR)
-tutorials. There are four videos, each less than 10 minutes.
-- Watch at least the first four of Dan Shiffman’s [Object Oriented Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i) tutorials.
+tutorials on functions, videos 5.1, 5.2, and 5.3
+[here](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
+- Watch Dan Shiffman’s 
+tutorials on Object Oriented Programming, videos 6.1, 6.2, and 6.3
+[here](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
 
 ### Week 3 (February 8, 10)
 
@@ -156,4 +159,5 @@ tutorials. There are four videos, each less than 10 minutes.
 ### Week 14 (May 10, 12)
 
 **Last day of class May 13** (End of Semester show?)
+
 
