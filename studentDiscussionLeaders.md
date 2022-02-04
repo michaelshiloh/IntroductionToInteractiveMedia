@@ -18,7 +18,6 @@ Meeting times:
 	10:25-11:40 Tuesday  
 	10:25-1:05 Thursday     
 Session: Spring 2022       
-Class location: [Zoom](https://nyu.zoom.us/j/93849380150)  
 [Discord](https://discord.com/channels/714727038078025851/716332110268465172)   
 
 

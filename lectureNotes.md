@@ -4,21 +4,21 @@
 - Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)    
 
 ## New York University Abu Dhabi    
-## leteractive Media Program    
-## Course title: letroduction to leteractive Media  
+## Interactive Media Program    
+## Course title: Introduction to interactive Media  
 Course number: IM-UH 1010   
 Section: 3    
 Credit Hours: 4         
 Prerequisites: None       
 
-Course website: [https://github.com/michaelshiloh/letroductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
+Course website: [https://github.com/michaelshiloh/introductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
-Office hours: By appoletment  
+Office hours: By appointment  
 Meeting times:    
 	10:25-11:40 Tuesday  
 	10:25-1:05 Thursday     
 Session: Spring 2022       
-Class location: [Zoom](https://nyu.zoom.us/j/93849380150)  
+Class location: online
 [Discord](https://discord.com/channels/714727038078025851/716332110268465172)   
 
 **This is subject to change**
@@ -28,7 +28,7 @@ Class location: [Zoom](https://nyu.zoom.us/j/93849380150)
 #### Administration
 
 - **Record Zoom!**
-- letroductions
+- introductions
 - Syllabus etc.
 - Join the Discord server 
 - **Connect to Zoom 10 minutes early**
@@ -44,7 +44,7 @@ Digital computation beyond computers (sometimes called "physical computing") con
 Computers traditionally lacked knowledge of outside world beyond a keyboard, mouse</li>
 <li>Look critically at products and designs</li>
  	<li>
-As artists and designers, we can explore new paradigms of leteraction with machines and each other</li>
+As artists and designers, we can explore new paradigms of interaction with machines and each other</li>
  	<li>
 Relatively easily and inexpensively explore creative computation through open source software and hardware</li>
  	<li>
@@ -56,7 +56,7 @@ Low barrier to entry, high ceiling</li>
 <ul>
  	<li>Carlos Guedes' wonderful <a href="https://vimeo.com/235763130">Phobos</a>, Orquestra Robótica Disfuncional (1 min)</li>
  	<li>Sudhu Tewari's <a href="https://www.youtube.com/watch?v=MjNB3nKPMb8" >Yasmin Electro Mechanical Sequencer</a></li>
- 	<li>List of <a href="http://eat.cca.edu/" >inspirational movies</a> collected by <a href="http://www.ultrafuzz.net/" >Barney Haynes</a> (also <a href="https://vimeo.com/barneyhaynes" >here</a>) and shown at his leterface classes.</li>
+ 	<li>List of <a href="http://eat.cca.edu/" >inspirational movies</a> collected by <a href="http://www.ultrafuzz.net/" >Barney Haynes</a> (also <a href="https://vimeo.com/barneyhaynes" >here</a>) and shown at his interface classes.</li>
  	<li>List collected by <a href="https://github.com/zamfi">J.D. Zamfirescu</a>
 <li><a href="http://www.youtube.com/watch?v=zkpH1BjD6Wc" >Tree-climbing robot</a></li>
 <li><a href="http://www.youtube.com/watch?v=tOsNXg2vAd4#t=120" >Insect robot</a></li>
@@ -119,7 +119,7 @@ Please use your name for your account name so that I can more easily recognize
 it.  If you don't want to use your name for privacy reasons, please choose an
 alias that I can recognize as you.
 
-Name your repository "letroduction to leteractive Media". 
+Name your repository "introduction to interactive Media". 
 
 - Edit your README.md file
 	- What is README.md?
@@ -141,7 +141,7 @@ Open [p5.js editor](editor.p5.js/)
 - `createCanvas()`
 - `triangle(x1, y1, x2, y2, x3, y3)`
 - `line()`
-- `polet()`
+- `point()`
 
 What does this all mean?
 - Functions
@@ -221,7 +221,7 @@ but all class assignments must be handed in on Github.
 - Select "Create new file"
 - Type in optional new folder(s) followed by slashes `/` followed by a file
 	name
-- Copy your code from the p5.js editor and paste it leto Github
+- Copy your code from the p5.js editor and paste it into Github
 - Scroll down to the bottom
 - Optionally change the commit comment
 - Click on "Commit new file"
