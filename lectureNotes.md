@@ -360,7 +360,6 @@ function draw() {
 }
 ````
 
-##### todays-lecture
 ### February 3
 #### Administration
 
@@ -574,6 +573,32 @@ function draw() {
 }
 ````
 
+
+##### todays-lecture
+### February 8
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+- Attention
+	- Cameras on
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+##### Discuss reading
+
+##### Functions
+
+Any questions about what we've covered already?
+
+Functions that return a value: See the [reference page for
+`return`](https://p5js.org/reference/#/p5/return)
+
+**Notes**
+- Functions can take any number of arguments (or none), but can return at most
+one
+
 In class exercise:
 
 1. Write a function that will take a single parameter
@@ -589,3 +614,99 @@ that draws a grid of lines at regular intervals on the canvas
 
 
 #### Callback Functions
+
+`MouseClicked()` [example](https://p5js.org/reference/#/p5/mouseClicked) in
+the reference section
+
+**Notes**
+- You never have to call **callback functions**. The p5.js system calls them
+	for you when that event happens
+
+
+````
+const redLocationX = 40;
+const redLocationY = 40;
+
+const blueLocationX = 80;
+const blueLocationY = 40;
+
+const menuSizeX = 120
+const menuSizeY = 80;
+
+const circleDiameter = 40;
+const backgroundColor = 240;
+
+function setup() {
+  createCanvas(400,400);
+
+  //prepare background
+  background(backgroundColor);
+
+  // Put a box around the menu. We won't be allowed to draw here
+  rect(0,0, menuSizeX, menuSizeY);
+
+  // draw red circle
+  fill (255,0,0);
+  circle(redLocationX, redLocationY, circleDiameter);
+
+  // now blue
+  fill (0, 0, 255);
+  circle(blueLocationX, blueLocationY, circleDiameter);
+
+  // initialize fill to green
+  fill (0, 255, 0);
+
+  // turn off stroke
+  noStroke();
+
+  // faster refresh rate makes line more solid
+  frameRate(200);
+}
+
+function draw() {
+
+  if (mouseIsPressed &&
+      !mouseIsWithinRect(0, 0, menuSizeX, menuSizeY)) {
+    circle(mouseX, mouseY, 15);
+  }
+}
+
+function mouseClicked() {
+
+   // Have we chosen red?
+  if (mouseIsWithinCircle(redLocationX, redLocationY, circleDiameter/2)) {
+    console.log("you chose red!");
+    fill (255,0,0);
+  }
+
+  // Have we chosen blue?
+  if (mouseIsWithinCircle(blueLocationX, blueLocationY, circleDiameter/2)) {
+    console.log("you chose blue!");
+    fill (0, 0, 255);
+  }
+
+}
+
+function mouseIsWithinCircle( x, y, radius) {
+  if (dist(mouseX, mouseY, x, y) < radius) {
+    return true;
+  }
+  return false;
+}
+
+function mouseIsWithinRect( x, y, sizeX, sizeY) {
+  if (mouseX > x &&
+      mouseX < x + sizeX &&
+      mouseY > y &&
+      mouseY < y + sizeY) {
+    return true;
+  }
+  return false;
+}
+
+````
+
+**Notes**
+- Operator precedence is [very
+	complicated](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence). It is best to put parenthesis to
+	force the order you want.
