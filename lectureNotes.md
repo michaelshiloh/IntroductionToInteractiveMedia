@@ -612,7 +612,6 @@ at the indicated **Y** coordinate
 1. Using these two functions, write a program in `setup()`
 that draws a grid of lines at regular intervals on the canvas
 
-
 #### Callback Functions
 
 `MouseClicked()` [example](https://p5js.org/reference/#/p5/mouseClicked) in
