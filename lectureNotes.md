@@ -709,3 +709,11 @@ function mouseIsWithinRect( x, y, sizeX, sizeY) {
 - Operator precedence is [very
 	complicated](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence). It is best to put parenthesis to
 	force the order you want.
+
+#### Transformations
+
+Walk through
+[this](https://creative-coding.decontextualize.com/transformations-and-functions/)
+tutorial. You might also find
+[this](https://genekogan.com/code/p5js-transformations/) useful for a
+slightly different perspective.

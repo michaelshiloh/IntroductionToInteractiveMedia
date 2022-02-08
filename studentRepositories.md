@@ -28,7 +28,7 @@ Class location: Online
 - [Daniel](https://github.com/danielnivia/IntrotoIM)
 - [Avinash](https://github.com/Tauke190/Intro-to-Interactive-Media)
 - [Kevin](https://github.com/kevinchu-mexiporc/Intro-to-IM)
-- [Shaikha](https://github.com/ShaikhaAlN)
+- [Shaikha](https://github.com/ShaikhaAlN/IntroToIM)
 - [Ayesha](https://github.com/ayeshaahmed13)
 - [Liam](https://github.com/l-mccarthy/IntroToIM)
 - [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia)
