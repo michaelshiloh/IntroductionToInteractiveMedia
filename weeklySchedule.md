@@ -80,7 +80,8 @@ Make a self-portrait using p5.js.
 
 ### Week 2 (February 1, 3)
 
-##### todays-assignment
+Conditionals, Loops, Functions
+
 #### Assignments due February 8
 
 Production Assignment
@@ -126,6 +127,37 @@ tutorials on Object Oriented Programming, videos 6.1, 6.2, and 6.3
 [here](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
 
 ### Week 3 (February 8, 10)
+
+Arrays, Object Oriented Programming, and Transformations
+
+##### todays-assignment
+#### Assignments due February 15
+
+Production Assignment
+
+Create a generative artwork using Object-Oriented Programming. You may use arrays if you wish. Pay attention to the structure, clarity, and organization of your program. As always, document your project:
+- New folder in your repository named `February15`
+- Your code, which must be:
+	- Well commented, especially for any confusing or tricky parts
+	- Functions as needed to organize your program
+	- Excellent variable, function, object, and class names
+	- Properly formatted
+- README.md file with:
+	- Describe the overall concept of your artwork
+	- Include the image(s) and link(s) to video, if any
+	- Describe any problems you ran into, whether you solved them or not
+		- If you solved them, how
+		- If you didn't solve them, how did you work around them
+	- References to any examples or inspiration
+
+Reading Assignment
+
+- [The Art of Interactive Design](https://intro.nyuadim.com/wp-content/uploads/2020/08/theArtOfInteractiveDesign.pdf), Ch. 1, be prepared to discuss: Yesenia and Zaeem to lead
+- Watch this two part ([part 1](https://www.youtube.com/watch?v=o9sgjuh-CBM) 
+and [part 2](https://www.youtube.com/watch?v=pkHZTWOoTLM) 
+video tutorial on transformations
+- Watch [this](https://www.youtube.com/watch?v=Qf4dIN99e2w) 
+video tutorial on Perlin noise
 
 ### Week 4 (February 15, 17)
 

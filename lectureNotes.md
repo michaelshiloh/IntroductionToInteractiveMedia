@@ -574,17 +574,7 @@ function draw() {
 ````
 
 
-##### todays-lecture
 ### February 8
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-- Attention
-	- Cameras on
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
 
 ##### Discuss reading
 
@@ -709,6 +699,68 @@ function mouseIsWithinRect( x, y, sizeX, sizeY) {
 - Operator precedence is [very
 	complicated](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence). It is best to put parenthesis to
 	force the order you want.
+
+##### todays-lecture
+### February 10
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+- Attention
+	- Cameras on
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Topics today
+- Finish walking through the "paint" program from Thursday
+- Arrays
+- Object Oriented Programming 
+- Transformations
+
+#### Arrays
+
+Very simply, arrays let you store multiple things under one variable name, and
+let you identify which thing you want by using an `index`
+
+
+````
+function setup() {
+  const numberOfValues = 10;
+
+  let values = []
+
+  let n = 0;
+  while (n < numberOfValues ) {
+    values.push( n * n );
+    n = n + 1;
+  }
+
+  for (let i = 0; i < values.length; i++) {
+    print(values[i]);
+  }
+}
+````
+
+**Things to notice**
+
+- Similar to the way functions are signified by `()`, 
+	arrays are signified by `[]`
+- Arrays can be of any data type, but can't be mixed types
+- New keyword: `const` 
+- Why not just use ten "normal" variables?
+- Arrays and loops (either `for()` or `while()`) almost always show up
+  together. If you have an array, you almost always want a loop.
+- Note that the `while()` loop used to put the numbers into the array
+	is exactly the same as the `for()` loop used to print the array. I could
+	have used either in both places. I did this to show you that they are
+	interchangeable.
+
+#### Object Oriented Programming (OOP)
+
+Walk through
+[this](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/p5jsSketches/simpleP5jsClassExample)
+
 
 #### Transformations
 
