@@ -761,8 +761,9 @@ function setup() {
 Walk through
 [this](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/p5jsSketches/simpleP5jsClassExample)
 
-A [fun OOP example by Prof.
-Aaron](https://editor.p5js.org/aaronsherwood/sketches/JO7e1p6aDr)
+A fun [OOP example] 
+(https://editor.p5js.org/aaronsherwood/sketches/JO7e1p6aDr)
+by Prof. Aaron
 
 
 #### Transformations

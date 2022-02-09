@@ -148,11 +148,14 @@ Create a generative artwork using Object-Oriented Programming. You may use array
 	- Describe any problems you ran into, whether you solved them or not
 		- If you solved them, how
 		- If you didn't solve them, how did you work around them
-	- References to any examples or inspiration
+	- References to any tutorials,examples, inspiration, books, etc. that you used
 
 Reading Assignment
 
-- [The Art of Interactive Design](https://intro.nyuadim.com/wp-content/uploads/2020/08/theArtOfInteractiveDesign.pdf), Ch. 1, be prepared to discuss: Yesenia and Zaeem to lead
+- [The Art of Interactive Design](https://intro.nyuadim.com/wp-content/uploads/2020/08/theArtOfInteractiveDesign.pdf), Ch. 1, and be prepared to discuss: 
+	- Ayesha and Pranav will lead our discussion. **Pay attention to the
+		instructions in the syllabus**
+		[ here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions)
 - Watch this two part ([part 1](https://www.youtube.com/watch?v=o9sgjuh-CBM) 
 and [part 2](https://www.youtube.com/watch?v=pkHZTWOoTLM) 
 video tutorial on transformations

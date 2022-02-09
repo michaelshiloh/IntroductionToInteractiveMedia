@@ -181,6 +181,8 @@ Instructions to participants:
 
 Instructions to leader:
 
+* **Do not summarize the reading**. Your job is to
+get the class to engage critically with the material.
 * Read closely, annotate, underline, take notes, list questions, and points
 * Meet, and discuss and answer each other’s questions
 * Since critical thinking is one of the learning objectives, 
