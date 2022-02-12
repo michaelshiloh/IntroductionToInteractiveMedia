@@ -27,7 +27,7 @@ Class location: Online
 - [Abdullah](https://github.com/aa7831/introToIM)
 - [Aisha](https://github.com/aisahodzic/IntroToIM)
 - [Avinash](https://github.com/Tauke190/Intro-to-Interactive-Media)
-- [Ayesha](https://github.com/ayeshaahmed13)
+- [Ayesha](https://github.com/ayeshaahmed13//IntroToIM)
 - [Basil](https://github.com/basil-ahmed/IntroductionToInteractiveMedia)
 - [Daniel](https://github.com/danielnivia/IntrotoIM)
 - [Dhabia](https://github.com/dhabialhosani/IntroductionToIM)
