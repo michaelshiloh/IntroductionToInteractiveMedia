@@ -24,23 +24,20 @@ Class location: Online
 
 ## This page: Student Repositories
 
-- [Aisha](https://github.com/aisahodzic/IntroToIM)
-- [Daniel](https://github.com/danielnivia/IntrotoIM)
-- [Avinash](https://github.com/Tauke190/Intro-to-Interactive-Media)
-- [Kevin](https://github.com/kevinchu-mexiporc/Intro-to-IM)
-- [Shaikha](https://github.com/ShaikhaAlN/IntroToIM)
-- [Ayesha](https://github.com/ayeshaahmed13)
-- [Liam](https://github.com/l-mccarthy/IntroToIM)
-- [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia)
-- [Basil](https://github.com/basil-ahmed/IntroductionToInteractiveMedia)
-- [Emaan إيمان](https://github.com/Emaan-Ali/IntroductionToInteractiveMedia)
-- [Mariam](https://github.com/mariamabdelrazekk/IntroToIM)
-- [Mishel]( https://github.com/MishelRashid/IntrotoIM22)
-- [Faizan](https://github.com/faizanraza09/introToIM)
 - [Abdullah](https://github.com/aa7831/introToIM)
-- [Noora](https://github.com/noorajabir/IntroToIM)
+- [Aisha](https://github.com/aisahodzic/IntroToIM)
+- [Avinash](https://github.com/Tauke190/Intro-to-Interactive-Media)
+- [Ayesha](https://github.com/ayeshaahmed13)
+- [Basil](https://github.com/basil-ahmed/IntroductionToInteractiveMedia)
+- [Daniel](https://github.com/danielnivia/IntrotoIM)
 - [Dhabia](https://github.com/dhabialhosani/IntroductionToIM)
+- [Emaan إيمان](https://github.com/Emaan-Ali/IntroductionToInteractiveMedia)
+- [Faizan](https://github.com/faizanraza09/introToIM)
+- [Kevin](https://github.com/kevinchu-mexiporc/Intro-to-IM)
+- [Liam](https://github.com/l-mccarthy/IntroToIM)
+- [Malika](https://github.com/malikaaasingh/IntroToIM)
+- [Mishel]( https://github.com/MishelRashid/IntrotoIM22)
+- [Noora](https://github.com/noorajabir/IntroToIM)
+- [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia)
+- [Shaikha](https://github.com/ShaikhaAlN/IntroToIM)
 - [Pranav](https://github.com/sripranav9/IntroductionToInteractiveMedia)
-
-
-
