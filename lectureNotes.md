@@ -763,8 +763,8 @@ tutorial. You might also find
 [this](https://genekogan.com/code/p5js-transformations/) useful for a
 slightly different perspective.
 
-##### todays-lecture
 ### February 15
+##### todays-lecture
 #### Administration
 
 - **Record Zoom!**
@@ -776,6 +776,15 @@ slightly different perspective.
 	- Notifications off
 	- Pay attention to whomever is talking
 	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today
+
+- Discuss reading
+- Look at some homework
+- How put text on the canvas
+- Introducing Data Visualization (time permitting)
+
+##### Discuss reading
 
 ##### Discuss reading
 
