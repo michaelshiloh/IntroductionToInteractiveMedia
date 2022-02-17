@@ -774,7 +774,7 @@ slightly different perspective.
 
 ##### Look at some homework
 
-### February 15
+### February 17
 ##### todays-lecture
 #### Administration
 
