@@ -1063,31 +1063,31 @@ Generate poetry from a file of words
  */
 
 // Let's put the index of the word into numbers:
-final int ITEM1 = 0;
-final int COLOR1 = 1;
-final int ITEM2 = 2;
-final int COLOR2 = 3;
-final int VERB = 4;
-final int LOCATION = 5;
+const ITEM1 = 0;
+const COLOR1 = 1;
+const ITEM2 = 2;
+const COLOR2 = 3;
+const VERB = 4;
+const LOCATION = 5;
 // final means that I will not change these variables
 // It is conventional to use all caps for variable names that will not change
 
 
-String strings[];
+let strings = [];
 
-void setup() {
+function setup() {
 
   // The text from the file is loaded into an array.
-  strings = loadStrings("mydatafolder/words.csv");
+  strings = loadStrings("words.csv");
 
   // How many lines did we get?
  // println("strings array contains this many lines: " + strings.length);
 }
 
-int csvRowNumber = 0;
+let csvRowNumber = 0;
 
-void draw() {
-  String singleRow[];
+function draw() {
+  let singleRow = [];
 
   // First line: "item1 are color1, item2 are color2"
 
@@ -1117,7 +1117,7 @@ void draw() {
 
 
   // that's the end of the first line of the poem so start a new line
-  println();
+  print('\n');
 
   // Now the second line: when I verb I verb of location
 
@@ -1133,22 +1133,20 @@ void draw() {
 
   // that's the end of the second line of the poem so start a new line
   // and also put an extra blank line
-  println();
-  println();
+  print('\n');
+  print('\n');
 
   noLoop(); // Wait for a mouse click then do it again
 }
 
 // If you click the mouse, allow the draw() function to resume
-void mouseClicked() {
+function mouseClicked() {
   loop();
 }
 ````
 
-and this is an example of the words you can feed it. If you copy the program
-exactly as I have, you should make a folder called `mydatafolder` in the same
-folder as the sketch, and then put these contents into a file called
-`words.csv`:
+and this is an example of the words you can feed it. 
+put these contents into a file called `words.csv`:
 
 ````
 roses,red,violets,blue,dream,disneyland
