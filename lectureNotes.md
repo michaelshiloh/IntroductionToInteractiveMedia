@@ -764,6 +764,17 @@ tutorial. You might also find
 slightly different perspective.
 
 ### February 15
+
+#### Plan for today
+
+- Discuss reading
+- Look at some homework
+
+##### Discuss reading
+
+##### Look at some homework
+
+### February 15
 ##### todays-lecture
 #### Administration
 
@@ -777,20 +788,15 @@ slightly different perspective.
 	- Pay attention to whomever is talking
 	- Failure to do this will be marked as an unexcused absence
 
-#### Plan for today
+#### Plan for today: Working with text
 
-- Discuss reading
-- Look at some homework
 - How put text on the canvas
-- Introducing Data Visualization (time permitting)
+- Data Visualization 
+- Generative Text
 
-##### Discuss reading
+##### Text on the canvas
 
-##### Discuss reading
-
-##### Text
-
-###### The most basic useage
+###### The most basic usage
 
 ````
 function setup() {
@@ -800,21 +806,31 @@ function setup() {
 }
 ````
 
-There are of course many other things you can do with text e.g. Reference ->
-Typography
+###### Different Fonts
 
-###### Loading Fonts
+Help->Reference->LoadFont
 
-[These](https://p5js.org/reference/#/p5/loadFont) example
+Fonts that seem to be available are 'Courier New' (monospace),
+and 'Helvetica' (non-monospace)
 
-**Important**: Note that p5.js is asynchronous and hence we have `preLoad()`
-and optional callback functions in the call to `loadFont()`
+**Important**: Note that p5.js is asynchronous, 
+meaning that `setup()` will continue even if the `loadFont()` hasn't finished.
+There are two ways to force your program to wait for the font to load:
+
+1. Use `preLoad()`
+1. Specify an optional callback function in `loadFont()`
 
 ###### Selecting one of many fonts
 
 Note that loading a font takes time, so if you expect to use multiple
 fonts it's best to preload all of them, and then switch between
 them using [`textFont()`](https://p5js.org/reference/#/p5/textFont)
+
+###### Other things to do with text
+
+There are of course many other things you can do with text. You can look at 
+Help->Reference->Typography and File->Examples->Typography for ideas and
+examples.
 
 ##### Data Visualization
 
@@ -836,10 +852,12 @@ Sources
  	
 Format
 
-- The most common format is CSV, especially as you can use any spreadsheet
-	(Excel, OpenOffice Calc, Google Sheets) to export any table in CSV format
-- Other formats are JSON and XML. We won't spend much time on them, but there
-	are Processing libraries available for parsing them
+- The most common format is CSV. You can create your own CSV file from a 
+	spreadsheet because most programs
+	(Excel, OpenOffice Calc, Google Sheets) can export any table in CSV format
+- Other formats are JSON and XML. We won't spend any time on them, but there
+	are Processing and probably p5.js libraries for parsing these.
+	are p5.js libraries for these.
 
 ##### Worked example: Getting and working with a CSV file
 
@@ -856,9 +874,142 @@ format".
 	- Some of the fields are text (e.g. t_state, t_county)
 	- Some of the fields are missing (e.g. faa_ors, faa_asn)
 - Now you can load this file into an array of `Strings` and then process each
-	line one at a time, pulling out individual fields. All this is done in the  
-[example](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/processingSketches/visualizeWindTurbineData)
-we looked at in class
+	line one at a time, pulling out individual fields:
+
+````
+/*
+ * example to process a CSV file containing data
+ * about wind turbines in the USA
+ * Source: https://eerscmap.usgs.gov/uswtdb/
+ */
+
+// An array of strings to hold the entire file
+let strings = [];
+
+// For scaling, we want to know the minimum and maximum latitude and longitude
+let minLat;
+let maxLat;
+let minLong;
+let maxLong;
+
+function preload() {
+  // The text from the file is loaded into an array.
+  strings = loadStrings("uswtdb_v4_3_20220114.csv");
+}
+
+function setup() {
+  createCanvas(500, 400);
+  background(235);
+
+  // Did we succeed to load anything?
+  if (strings == null) {
+    print("failed to load the file, stopping here");
+
+    // this is an endless loop; it's a common way
+    // to prevent a program from continuing when
+    // something is so wrong that there is no sense
+    // in continuing
+    while (true) {}
+  }
+
+  print(
+    "strings loaded from file successfully, read " + strings.length + " lines"
+  );
+
+  // Find the minimum and maximum latitude
+  // and longitude
+  findMinMaxLatLong();
+}
+
+function findMinMaxLatLong() {
+  let singleRow = [];
+
+  // loop over each row in the file
+  for (let csvRowNumber = 1; csvRowNumber < strings.length; csvRowNumber++) {
+    // get a single row and split that row
+    // into individual words
+    singleRow = split(strings[csvRowNumber], ",");
+
+    // We know that the last two fields are the
+    // latitude and longitude and so they are
+    // numerical:
+    let longitude = float(singleRow[25]);
+    let latitude = float(singleRow[26]);
+
+    // The file may be missing a field, in which case
+    // the converstion to a float might have failed
+    if (isNaN(longitude) || isNaN(latitude)) {
+      print("conversion to float failed; skipping row " + csvRowNumber);
+    } else {
+      if (csvRowNumber == 1) {
+        minLat = latitude - 10;
+        maxLat = latitude + 10;
+        minLong = longitude - 10;
+        maxLong = longitude + 10;
+      }
+
+      if (latitude < minLat) minLat = latitude;
+      if (latitude > maxLat) maxLat = latitude;
+      if (longitude < minLong) minLong = longitude;
+      if (longitude > maxLong) maxLong = longitude;
+    }
+  } // end of for() loop
+
+  print("Latitude (min, max) = (" + minLat + "," + maxLat + ") ");
+  print("Longitude (min, max) = (" + minLong + "," + maxLong + ")");
+} // end of findMinMaxLatLong
+
+let csvRowNumber = 1;
+// Skip the first line, since we know it's a header
+
+function draw() {
+  let singleRow = [];
+
+  // get a single row and split that row into
+  // individual words
+  singleRow = split(strings[csvRowNumber], ",");
+
+  // This really slows things
+  // down so use only when debugging
+  //println("Row " +
+  // csvRowNumber +
+  //   " contains " +
+  //   singleRow.length +
+  //   " fields" );
+
+  // We know that the last two fields are the
+  // latitude and longitude and so they are
+  // numerical:
+  let longitude = float(singleRow[25]);
+  let latitude = float(singleRow[26]);
+
+  // use only when debugging
+  // println("Latitude " +
+  // latitude +
+  //   " longitude " +
+  //   longitude );
+
+  // Check for non-numerical strings.
+  if (isNaN(longitude) || isNaN(latitude)) {
+    print("conversion to float failed; skipping row " + csvRowNumber);
+  } else {
+    // scale that to fit on our canvas
+    //println(csvRowNumber);
+    let ypos = map(latitude, minLat, maxLat, 0, height);
+    let xpos = map(longitude, minLong, maxLong, 0, width);
+
+    // Put a mark there
+    point(xpos, ypos);
+  } // end of valid data
+
+  csvRowNumber++;
+  if (csvRowNumber >= strings.length) {
+    println("finished");
+    noLoop();
+  }
+}
+
+````
 
 
 Things to notice:
@@ -870,25 +1021,10 @@ Things to notice:
 	 `draw()` function from repeating
 
 
-
-More complex examples are in Aaron Sherwood’s Introduction to Interactive Media <a href="https://github.com/aaronsherwood/introduction_interactive_media">Github repository</a>
-<ul>
- 	<li>load/split strings: splitCommas.pde</li>
- 	<li>load save table: tableSaveLoad.pde</li>
- 	<li>forces: lettersGravityWind.pde</li>
-</ul>
-
 ##### JSON and XML: Other file formats
 
 JSON and XML are other format for organizing data in a file. 
 They are more complex than CSV, and again Processing provides functions.
-
-For example for 
-parsing [JSON](https://processing.org/examples/loadsavejson.html)
-
-If you want to learn more about JSON and also XML, 
-[this](https://www.youtube.com/watch?v=rqROpUNb2aY)
-is a good introductory video tutorial.
 
 ##### Generative Text
 Pull words from a CSV file 
