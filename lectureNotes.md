@@ -813,14 +813,17 @@ function setup() {
   createCanvas(400, 400);
 	textFont("Courier New", 25);
 
-  text("My Important Message", width / 2, height / 2);
+	text("My Important Message", width / 2, height / 2);
 }
 ````
 
-Help->Reference->LoadFont
-
 Fonts that seem to be available are 'Courier New' (monospace),
 and 'Helvetica' (non-monospace)
+
+You can also load your own fonts but that requires uploading them to the p5.js
+server
+
+Help->Reference->LoadFont
 
 **Important**: Note that p5.js is asynchronous, 
 meaning that `setup()` will continue even if the `loadFont()` hasn't finished.
