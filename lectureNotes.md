@@ -808,6 +808,15 @@ function setup() {
 
 ###### Different Fonts
 
+````
+function setup() {
+  createCanvas(400, 400);
+	textFont("Courier New", 25);
+
+  text("My Important Message", width / 2, height / 2);
+}
+````
+
 Help->Reference->LoadFont
 
 Fonts that seem to be available are 'Courier New' (monospace),
