@@ -130,9 +130,7 @@ tutorials on Object Oriented Programming, videos 6.1, 6.2, and 6.3
 
 Arrays, Object Oriented Programming, and Transformations
 
-##### todays-assignment
 #### Assignments due February 15
-
 Production Assignment
 
 Create a generative artwork using Object-Oriented Programming. You may use arrays if you wish. Pay attention to the structure, clarity, and organization of your program. As always, document your project:
@@ -163,6 +161,25 @@ video tutorial on transformations
 video tutorial on Perlin noise
 
 ### Week 4 (February 15, 17)
+
+#### Assignments due February 22
+##### todays-assignment
+
+Production Assignment
+
+- Either make some sort of data visualization,
+or create a generative text output.
+- Document at least as well as our previous assignments
+
+Reading Assignment
+
+- Read [The Design of Everyday Things, The Psychopathology of Everyday
+	Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf)
+	and be prepared to discuss
+- Read [about pixels](https://processing.org/tutorials/pixels/)
+  or watch
+  [Shiffman’s videos](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9&ab_channel=TheCodingTrain)
+
 
 ### Week 5 (February 22, 24)
 

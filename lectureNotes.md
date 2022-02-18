@@ -1049,15 +1049,15 @@ Here is a terribly lame example:
 /*
 Generate poetry from a file of words
  the file has words in this format:
- 
+
  roses,red,violets,blue,dream,disneyland
- 
+
  we will refer to them as:
- 
+
  item1,color1,item2,color2,verb,location
- 
+
  and construct a poem:
- 
+
  item1 are color1, item2 are color2
  when I verb I verb to location
  */
@@ -1095,41 +1095,34 @@ function draw() {
   // and split that row into individual words
   singleRow = split(strings[int (random(strings.length))], ',');
   // get item1
-  print(singleRow[ITEM1]);
-
-  print(" are " );
+  let item1 = singleRow[ITEM1] + " are " ;
 
   // Now keep doing this for each word
   singleRow = split(strings[int (random(strings.length))], ',');
   // get color1
-  print(singleRow[COLOR1]);
-  
-  // need a space between COLOR1 and ITEM2
-  print(", " );
+  let color1 = singleRow[COLOR1] + ", " ;
 
-  // Now the second half of the first line: "violets are blue" 
+  // Now the second half of the first line: "violets are blue"
   singleRow = split(strings[int (random(strings.length))], ',');
-  print(singleRow[ITEM2]);
-  print(" are " );
+  let item2 = singleRow[ITEM2] + " are " ;
   singleRow = split(strings[int (random(strings.length))], ',');
-  // get color1
-  print(singleRow[COLOR2]);
+  // get color2
+  let color2 =  singleRow[COLOR2];
 
-
-  // that's the end of the first line of the poem so start a new line
-  print('\n');
+  // that's the end of the first line of the poem
+  print(item1 + " are " + color1 ", " + item2 + " are " + color2);
 
   // Now the second line: when I verb I verb of location
 
-  print("When I " );  
+  message = "When I " ;
   singleRow = split(strings[int (random(strings.length))], ',');
-  print(singleRow[VERB]);
+  message = message + singleRow[VERB]);
   print(" I " );
   singleRow = split(strings[int (random(strings.length))], ',');
-  print(singleRow[VERB]);
+  message = message + singleRow[VERB]);
   print(" to the " );
   singleRow = split(strings[int (random(strings.length))], ',');
-  print(singleRow[LOCATION]);
+  message = message + singleRow[LOCATION]);
 
   // that's the end of the second line of the poem so start a new line
   // and also put an extra blank line
