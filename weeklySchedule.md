@@ -176,9 +176,7 @@ Reading Assignment
 - Read [The Design of Everyday Things, The Psychopathology of Everyday
 	Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf)
 	and be prepared to discuss
-- Read [about pixels](https://processing.org/tutorials/pixels/)
-  or watch
-  [Shiffman’s videos](https://www.youtube.com/watch?v=-f0WEitGmiw&list=PLRqwX-V7Uu6YB9x6f23CBftiyx0u_5sO9&ab_channel=TheCodingTrain)
+- Watch [this video](https://www.youtube.com/watch?v=nMUMZ5YRxHI) on the pixels array
 
 
 ### Week 5 (February 22, 24)
