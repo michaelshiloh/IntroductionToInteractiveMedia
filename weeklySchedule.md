@@ -151,8 +151,8 @@ Create a generative artwork using Object-Oriented Programming. You may use array
 Reading Assignment
 
 - [The Art of Interactive Design](https://intro.nyuadim.com/wp-content/uploads/2020/08/theArtOfInteractiveDesign.pdf), Ch. 1, and be prepared to discuss: 
-	- Ayesha and Pranav will lead our discussion. **Pay attention to the
-		instructions in the syllabus**
+	- Ayesha and Pranav will lead our discussion. 
+	**Pay attention to the instructions in the syllabus**
 		[ here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions)
 - Watch this two part ([part 1](https://www.youtube.com/watch?v=o9sgjuh-CBM) 
 and [part 2](https://www.youtube.com/watch?v=pkHZTWOoTLM) 
@@ -176,6 +176,9 @@ Reading Assignment
 - Read [The Design of Everyday Things, The Psychopathology of Everyday
 	Things](http://pages.ucsd.edu/~mboyle/COGS1/readings/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf)
 	and be prepared to discuss
+	- Dhabia and Faizan will lead our discussion. 
+	**Pay attention to the instructions in the syllabus**
+		[ here](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/syllabus.md#student-led-discussions)
 - Watch [this video](https://www.youtube.com/watch?v=nMUMZ5YRxHI) on the pixels array
 
 
