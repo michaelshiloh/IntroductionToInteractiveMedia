@@ -775,19 +775,6 @@ slightly different perspective.
 ##### Look at some homework
 
 ### February 17
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: Working with text
 
 - How put text on the canvas
@@ -1167,3 +1154,69 @@ show generative basic example
 have them work in pairs to make something
 share what they made
 show generative word from circles sketch
+
+
+### February 22
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- Homework feedback to all:
+	- Better comments. I should be able to read your code and comments and
+		completely understand your program.
+		- Your code should explain what is really happening. 
+			`things = 2; // increase the number of things` is wrong. It is setting
+			the number of things to 2, not increasing the number of things.
+	- Better formatting:
+		- Remove unnecessary spaces
+		- Break long lines (both code and comments) into short lines. A line
+			should fit in the p5.js editor window.
+	- Remove unnecessary functions, or explain why they are there
+	- Remove unnecessary variables, or explain why they are there
+	- Instead of naming functions thing1, thing2, thing3, give them
+		meaningful names like happyFace, sadFace, and surprisedFace
+	- Any time you have more than 2 or 3 objects they should probably be in an
+		array. If there is a reason not to have them in an array you need to
+		explain why in the comments.
+	- Read the assignment carefully and make sure you provide everything that 
+	is requested
+	- If `draw()` is empty explain why
+	- Don't include your entire program in the README.md. You may include short
+		pieces to augment your description.
+	- Explain the arguments to functions, or better yet, use names that are so 
+		clear that no comments are needed. `constructor(wid,hgt,rnd,clr)` I could
+		guess that `wid` is width and `hgt` is height, but why not use the full
+		word? You are all fast typists. Better yet, if you are drawing e.g. a
+		car, name the variables `carWidth` and `carHeight`. `clr` and `rnd` I
+		could not figure out except by seeing how they were used, but I shouldn't
+		have to do that.
+	- A function that only calls another function e.g.
+	````
+	foo() {
+	  this.bar()
+	}
+	````
+		is almost certainly pointless.
+		if there is a reason, it should be explained.
+	- If code is commented out, explain why
+	- If the video clip is in your Github repo, embed it in the README.md
+		- If the video clip is on Vimeo or YouTube, put a link in your README.md
+	- Tidy your code before putting it on Github
+	- Use the correct suffix for your variables, classes, and functions. If a
+		class defines a single car, don't call it `cars`. If individual cars are
+		then gathered in an array of multiple cars, don't call it `arrayCar`.
+	- Try to avoid hardcoded or magic numbers. 
+		Use built-in variables (`width/2` instead
+		of `const CENTER = 200`) whenever possible. If you must use numbers
+		explain why.
