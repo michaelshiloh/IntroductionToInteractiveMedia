@@ -1202,13 +1202,13 @@ show generative word from circles sketch
 		could not figure out except by seeing how they were used, but I shouldn't
 		have to do that.
 	- A function that only calls another function e.g.
+		is almost certainly pointless.
+		if there is a reason, it should be explained.
 	````
 	foo() {
 	  this.bar()
 	}
 	````
-		is almost certainly pointless.
-		if there is a reason, it should be explained.
 	- If code is commented out, explain why
 	- If the video clip is in your Github repo, embed it in the README.md
 		- If the video clip is on Vimeo or YouTube, put a link in your README.md
