@@ -1172,51 +1172,505 @@ show generative word from circles sketch
 
 #### Plan for today: 
 
-- Homework feedback to all:
-	- Better comments. I should be able to read your code and comments and
-		completely understand your program.
-		- Your code should explain what is really happening. 
-			`things = 2; // increase the number of things` is wrong. It is setting
-			the number of things to 2, not increasing the number of things.
-	- Better formatting:
-		- Remove unnecessary spaces
-		- Break long lines (both code and comments) into short lines. A line
-			should fit in the p5.js editor window.
-	- Remove unnecessary functions, or explain why they are there
-	- Remove unnecessary variables, or explain why they are there
-	- Instead of naming functions thing1, thing2, thing3, give them
-		meaningful names like happyFace, sadFace, and surprisedFace
-	- Any time you have more than 2 or 3 objects they should probably be in an
-		array. If there is a reason not to have them in an array you need to
-		explain why in the comments.
-	- Read the assignment carefully and make sure you provide everything that 
-	is requested
-	- If `draw()` is empty explain why
-	- Don't include your entire program in the README.md. You may include short
-		pieces to augment your description.
-	- Explain the arguments to functions, or better yet, use names that are so 
-		clear that no comments are needed. `constructor(wid,hgt,rnd,clr)` I could
-		guess that `wid` is width and `hgt` is height, but why not use the full
-		word? You are all fast typists. Better yet, if you are drawing e.g. a
-		car, name the variables `carWidth` and `carHeight`. `clr` and `rnd` I
-		could not figure out except by seeing how they were used, but I shouldn't
-		have to do that.
-	- A function that only calls another function e.g.
-		is almost certainly pointless.
-		if there is a reason, it should be explained.
-	````
-	foo() {
-	  this.bar()
-	}
-	````
-	- If code is commented out, explain why
-	- If the video clip is in your Github repo, embed it in the README.md
-		- If the video clip is on Vimeo or YouTube, put a link in your README.md
-	- Tidy your code before putting it on Github
-	- Use the correct suffix for your variables, classes, and functions. If a
-		class defines a single car, don't call it `cars`. If individual cars are
-		then gathered in an array of multiple cars, don't call it `arrayCar`.
-	- Try to avoid hardcoded or magic numbers. 
-		Use built-in variables (`width/2` instead
-		of `const CENTER = 200`) whenever possible. If you must use numbers
-		explain why.
+- Homework feedback to all
+- Look at some homework
+- Working with images!
+- The `pixels` array (time permitting)
+- Sound (time permitting)
+- Introducing midterm (time permitting)
+
+#### Homework feedback to all:
+
+- Better comments. I should be able to read your code and comments and
+	completely understand your program.
+	- Your code should explain what is really happening. 
+		`things = 2; // increase the number of things` is wrong. It is setting
+		the number of things to 2, not increasing the number of things.
+- Better formatting:
+	- Remove unnecessary spaces
+	- Break long lines (both code and comments) into short lines. A line
+		should fit in the p5.js editor window.
+- Remove unnecessary functions, or explain why they are there
+- Remove unnecessary variables, or explain why they are there
+- Instead of naming functions thing1, thing2, thing3, give them
+	meaningful names like happyFace, sadFace, and surprisedFace
+- Any time you have more than 2 or 3 objects they should probably be in an
+	array. If there is a reason not to have them in an array you need to
+	explain why in the comments.
+- Read the assignment carefully and make sure you provide everything that 
+is requested
+- If `draw()` is empty explain why
+- Don't include your entire program in the README.md. You may include short
+	pieces to augment your description.
+- Explain the arguments to functions, or better yet, use names that are so 
+	clear that no comments are needed. `constructor(wid,hgt,rnd,clr)` I could
+	guess that `wid` is width and `hgt` is height, but why not use the full
+	word? You are all fast typists. Better yet, if you are drawing e.g. a
+	car, name the variables `carWidth` and `carHeight`. `clr` and `rnd` I
+	could not figure out except by seeing how they were used, but I shouldn't
+	have to do that.
+- A function that only calls another function e.g.
+	is almost certainly pointless.
+	if there is a reason, it should be explained.
+````
+foo() {
+	this.bar()
+}
+````
+- If code is commented out, explain why
+- If the video clip is in your Github repo, embed it in the README.md
+	- If the video clip is on Vimeo or YouTube, put a link in your README.md
+- Tidy your code before putting it on Github
+- Use the correct suffix for your variables, classes, and functions. If a
+	class defines a single car, don't call it `cars`. If individual cars are
+	then gathered in an array of multiple cars, don't call it `arrayCar`.
+- Try to avoid hardcoded or magic numbers. 
+	Use built-in variables (`width/2` instead
+	of `const CENTER = 200`) whenever possible. If you must use numbers
+	explain why.
+- Start your homework early so that there is time to meet with me if you
+	need help. I'm willing to meet on the weekend but not late Monday night.
+
+#### Working with images!
+
+The `p5.Image` class
+- Just another class, i.e. it has
+	- Data (the pixels, width, height, etc.)
+	- Functionality `(image()`, `get()`, etc.)
+
+````
+let catImg;
+function preload() {
+  photo = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(photo, 0, 0); // this actually displays the image
+}
+````
+
+- `image(photo, positionX, positionY, width, height)` - display 
+this image at this location and scale to this size
+- `photo.resize(w,h)` - scale to this size. If one of the arguments is zero,
+	then scale to the remaining argument and retain the original aspect ratio.
+- `photo.get(x,y,w,h)` - Returns a new p5.Image containing a portion of the image
+- `photo.get(x,y)` - Returns the color of the pixel at this location
+
+````
+let catImg;
+function preload() {
+  catImg = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(catImg, 0, 0);
+
+  let newImg = catImg.get( 50,60, 100,50);
+  image (newImg, 250, 200);
+}
+````
+
+For more information and ideas
+- Reference page for p5.Image for other methods
+- Examples -> image
+
+
+#### The `pixels` array: Treating the canvas as an image
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called `pixels`. 
+Before using this array you must load everything from the canvas 
+into the `pixels` array using the `loadPixels()` function, 
+and after making any changes you must call `updatePixels()` 
+to write from the `pixels` array back to the canvas
+if you want to make the changes visible
+
+````
+function setup() {
+  let pink = color(255, 102, 204);
+  loadPixels();
+  let d = pixelDensity();
+  let halfImage = 4 * (width * d) * ((height / 2) * d);
+  for (let i = 0; i < halfImage; i += 4) {
+    pixels[i] = red(pink);
+    pixels[i + 1] = green(pink);
+    pixels[i + 2] = blue(pink);
+    pixels[i + 3] = alpha(pink);
+  }
+  updatePixels();
+}
+````
+
+- The pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths
+- Each pixel occupies 4 positions in the array
+- Thus the equation for accessing a given pixel is
+   (x + y * width) * 4
+- Remember to set `pixelDensity(1);` in case you have a high 
+resolution display
+
+
+````
+function setup() {
+  pixelDensity(1);
+  background(0, 102, 204);
+
+  loadPixels();
+
+  // Change most of the fiftieth row to pink
+  // (x + y*width) * 4
+  // x = 10, then x = 90
+  for (let i = (10 + 50 * width) * 4;
+       i < (90 + 50 * width) * 4;
+       i += 4) {
+    pixels[i] = 255;
+    pixels[i + 1] = 102;
+    pixels[i + 2] = 204;
+    pixels[i + 3] = 100;
+  }
+
+  updatePixels();
+}
+````
+
+It's important to remember that a pixel is just four numbers
+so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+function setup() {
+  pixelDensity(1);
+  background(0, 102, 204);
+}
+
+let redValue = 0; 
+
+function draw() {
+
+  loadPixels();
+  
+  for (let i = 0; i < width * height * 4 ; i+=4) {
+    pixels[i] = redValue;
+  } 
+  updatePixels();
+
+  redValue = (redValue + 1 ) %255
+  print(redValue);
+  
+  updatePixels();
+
+}
+````
+
+Look at the reference page for the pixels array
+
+next:
+
+Some fun examples from Professor Sherwood:
+
+![](media/circularImages.png)
+
+````
+PImage img;
+PImage[] tiles;
+
+int tileSize = 100;
+
+void setup() {
+  size (400,400);
+  img = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
+  tiles = new PImage[img.height/tileSize];
+  for (int i=0; i< tiles.length; i++) {
+    tiles[i] = img.get(int(random(img.width-tileSize)), int(random(img.height-tileSize)), tileSize, tileSize);
+  }
+  imageMode(CENTER);
+}
+
+void draw() {
+  pushMatrix();
+  translate(width/2, height/2);
+
+  int numSegments = 10;
+  float eachAngle = TWO_PI/numSegments;
+  int whichImage = (int)random(tiles.length);
+  for (int i = 0; i< numSegments; i++) {
+    float x = cos(eachAngle*i)*tileSize+1;
+    float y = sin(eachAngle*i)*tileSize+1;
+    pushMatrix();
+    translate(x, y);
+    rotate(eachAngle*i);
+    image(tiles[whichImage], 0, 0);
+    popMatrix();
+  }
+
+  popMatrix();
+  noLoop();
+}
+
+void keyPressed() {
+  loop();
+}
+````
+
+Here is a more complex version, on which I based the simple version above: [circularImages.pde](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/circularImages/circularImages.pde)
+
+Can we use a sequence of images for animation?
+
+![](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/pixels/spritesheet/data/walking.png)
+
+How would we use them?
+
+Aaron's
+[method](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/spritesheet/spritesheet.pde)
+
+#### Working with a camera: Computer Vision!
+
+- Add the video library
+	- Sketch -> Import Library -> Add Library
+	- Filter by video
+	- Install the *Video | GStreamer-based video library for Processing*
+
+Try
+[this](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/processingSketches/computerVision/frameDifferencing/frameDifferencing.pde) example
+
+#### Perlin Noise
+
+````
+void draw() {
+  background(204);
+  float n = random(0, width);
+  line(n, 0, n, height);
+}
+````
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflies, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+````
+float offset = 0.0;
+
+void draw() {
+  background(204);
+  offset = offset + .01;
+  float n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+````
+
+Things to notice:
+
+* Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
+#### Events
+
+````
+final int maxColors = 10;
+color[] myColors = new color[maxColors];
+
+int colorChoice = 0;
+
+void setup() {
+  size(600, 500);
+
+  for (int i = 0; i < myColors.length; i ++ ) {
+    myColors[i]=color(random(255), random(255), random(255));
+  }
+}
+
+void draw() {
+}
+
+void mousePressed() {
+  background(myColors[colorChoice]);
+  colorChoice ++;
+}
+````
+
+Things to notice:
+
+* How does the background change if I never call `mousePressed()`?
+`mousePressed()` is a *callback function*, meaning we have told
+Processing that we are interested in this event, and if it occurs,
+call this function. There are many different types of events available in
+Processing, and you register an interest in them by creating a callback
+function with the appropriate name. See *mouse* and *keyboard* 
+in the Processing Reference Page.
+
+* What happens if I click the mouse more than 10 times?  
+
+##### Array Lists
+
+Arrays are great, but they are of fixed size. There is an extension of the
+array concept called an ArrayList which allows the size to be manipulated
+dynamically.
+
+Here is a short example showing how to work with ArrayLists:
+
+````
+class Thing {
+  int i;
+  float f;
+  
+  Thing(int _i, float _f) {
+    i = _i;
+    f = _f;
+  }
+  
+  int getInt() {
+    return i;
+  }
+  
+  float getFloat() {
+    return f;
+  }
+}
+
+ArrayList<Thing> myThings = new ArrayList<Thing>();
+
+void setup() {
+
+  // The ArrayList should be empty
+  println(myThings.size());
+
+  for (int i = 0; i < 10; i++) {
+    myThings.add(new Thing(i, float(i)));
+    println(myThings.size()); // not that size() is a function!
+  }
+
+  // The value at index 5 should be 5
+  // Just like arrays, the index starts at zero
+  // so index 5 is the sixth item
+  println("at index 5, x = " + myThings.get(5).getInt());
+}
+
+void mouseClicked() {
+  myThings.add(new Thing(mouseX, mouseY));
+  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
+}
+
+void keyPressed() {
+  if (key == 'd') {
+    myThings.remove(0); // remove the first vector
+    println("removed the first Thing, array size is now " + myThings.size());
+  }
+
+  if (key == 'p') {
+    for (int i = 0; i < myThings.size(); i++) {
+      Thing t = myThings.get(i);
+      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
+    }
+  }
+}
+
+// Need to have a draw() function so that callbacks occur
+void draw() {
+}
+````
+
+#### Documentation
+
+- Midterm documentation must be excellent
+	- Include photos, sketches, GIFS as appropriate
+- Include block at the beginning of the code
+- ^T
+- Unused variables or functions
+- Commented out code
+
+#### Sound
+
+Sound library [reference
+page](https://processing.org/reference/libraries/sound/index.html)
+
+##### Install the Sound library
+
+- Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install *Sound* written by *The Processing Foundation*
+
+##### Playing with examples
+
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+	- The sound file *beat.mp3* has never worked for me
+
+
+##### Working in groups: 
+If we had multiple sound files, how would we play the
+next one when we click the mouse?
+
+### October 7 2021
+
+#### Administration
+
+- **Record Zoom!**
+
+Example solution to in-class exercise from last meeting
+
+````
+import processing.sound.*; //* load the sound library
+
+SoundFile[] songs;
+final int numberOfSongs = 5;
+
+SoundFile currentSong;
+
+void setup() {
+  size(400, 500);
+
+  songs = new SoundFile[numberOfSongs]; // makes the array of songs
+
+  // open each file and put it in the songs array
+  for (int i = 0; i< numberOfSongs; i++) {
+    songs[i] = new SoundFile( this, "/tmp/" + (i+1) + ".aif");
+  }
+  currentSong = songs[0];
+}
+
+void draw() {
+}
+
+void mousePressed() {
+
+  if (currentSong.isPlaying() == false ) {
+    int songToPlay = (int) random(numberOfSongs);
+    songs[songToPlay].play();
+    currentSong = songs[songToPlay];
+  }
+}
+````
+
+Another [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
+
+##### Blocking vs. non-blocking functions
+
+- Which function is non-blocking?
+- How do you know when a non-blocking function is done?
+- Soudfile [reference
+	page](https://processing.org/reference/libraries/sound/SoundFile.html)
+
+##### Working in groups: 
+Use the mouse position to select sound tracks
+
+Try to work it out on your own before looking at the 
+[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
+
+##### Synthesis
+
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+
+##### What is
+[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
+
