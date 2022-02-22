@@ -1172,6 +1172,7 @@ show generative word from circles sketch
 
 #### Plan for today: 
 
+- Discussion
 - Homework feedback to all
 - Look at some homework
 - Working with images!
