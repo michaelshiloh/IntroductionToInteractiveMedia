@@ -1366,6 +1366,38 @@ function draw() {
 }
 ````
 
+Just for fun, here is the last example from the video where Dan
+created a random (only in the green channel) background:
+
+````
+function setup() {
+  createCanvas(256,256);
+  pixelDensity(1);
+}
+
+function draw() {
+  loadPixels();
+  for (var y = 0; y < height; y++) {
+    for (var x = 0; x < width; x++) {
+      var index = (x + y * width) * 4;
+
+      pixels[index + 0] = x;
+      // red value changes horizontally
+
+      pixels[index + 1] = random(255);
+      // green value random
+
+      pixels[index + 2] = y;
+      // blue value changes vertically
+
+      pixels[index + 3] = 255;
+      // no transparency
+    }
+  }
+  updatePixels();
+}
+````
+
 Look at the reference page for the pixels array
 
 next:
