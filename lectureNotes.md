@@ -1477,7 +1477,7 @@ function keyPressed() {
 
 Can we use a sequence of images for animation?
 
-![](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/pixels/spritesheet/data/walking.png)
+![](media/walking.png)
 
 How would we use them?
 
@@ -1561,6 +1561,10 @@ function keyPressed() {
 
 ````
 
+#### Sound!
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/walking.png
 
 #### Working with a camera: Computer Vision!
 
