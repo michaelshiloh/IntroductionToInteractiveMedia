@@ -163,7 +163,6 @@ video tutorial on Perlin noise
 ### Week 4 (February 15, 17)
 
 #### Assignments due February 22
-##### todays-assignment
 
 Production Assignment
 
@@ -182,7 +181,51 @@ Reading Assignment
 - Watch [this video](https://www.youtube.com/watch?v=nMUMZ5YRxHI) on the pixels array
 
 
-### Week 5 (February 22, 24)
+### Week 5 (February 22, 24) Image Processing, Sound, Introduce Midterm
+Project
+
+#### Assignments due February 29 (ONLY PARTIAL!)
+##### todays-assignment
+
+Reading Assignment
+
+- Read [Computer Vision for Artists and
+	Designers](http://www.flong.com/archive/texts/essays/essay_cvad/index.html)
+	and be prepared to discuss
+
+Production Assignment
+
+Start working on your midterm project
+- Create a new folder in your Github repository called "midtermProject"
+- Create a file called "journal.md" and in it describe:
+	- Initial concept for the project
+	- Identify 
+		the riskiest, most complicated, 
+		or most unknown part of your project
+- Write a test program to implement
+			the riskiest, most complicated, 
+		  or most unknown part of your project
+- Describe in your journal how you were able to solve
+	the riskiest, most complicated, 
+	or most unknown part of your project. 
+	- If you were not able to solve it, describe you plan to solve or work
+	around this problem
+
+Midterm project
+
+Make a game using everything you have learned so far
+- Due Mar. 8th
+- Can be one or more players
+- Must include
+	- At least one shape
+	- At least one image
+	- At least one sound
+	- At least one on-screen text
+	- Object Oriented Programming
+- The game must start with a screen giving instructions, and must wait there
+	until a button or key (your choice) is pressed
+- After the game is won or lost, there must be a way to restart the game
+	without closing and restarting the program
 
 ### Week 6 (March 1, 3)
 

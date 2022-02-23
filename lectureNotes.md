@@ -1157,19 +1157,6 @@ show generative word from circles sketch
 
 
 ### February 22
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 
 - Discussion
@@ -1277,6 +1264,25 @@ For more information and ideas
 - Reference page for p5.Image for other methods
 - Examples -> image
 
+### February 24
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- Pixels array
+- Sprite sheets
+- Sound
 
 #### The `pixels` array: Treating the canvas as an image
 
@@ -1322,18 +1328,26 @@ function setup() {
 
   loadPixels();
 
-  // Change most of the fiftieth row to pink
+	// Here is the equation for the start (red value) 
+	// of a pixel 
+	// at a particular coordinate (x,y)
   // (x + y*width) * 4
-  // x = 10, then x = 90
+
+  // Change most of the fiftieth row to pink
+  // instead of the whole line, 
+	// only do from x = 10 to x = 90
   for (let i = (10 + 50 * width) * 4;
        i < (90 + 50 * width) * 4;
        i += 4) {
-    pixels[i] = 255;
+
+		// pink
+    pixels[i + 0] = 255;
     pixels[i + 1] = 102;
     pixels[i + 2] = 204;
     pixels[i + 3] = 100;
   }
 
+	// this puts the array back on the screen
   updatePixels();
 }
 ````
@@ -1399,9 +1413,9 @@ function draw() {
 }
 ````
 
-Look at the reference page for the pixels array
+HERE
 
-next:
+Look at the reference page for the pixels array
 
 Some fun examples from Professor Sherwood:
 
