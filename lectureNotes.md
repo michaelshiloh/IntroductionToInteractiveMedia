@@ -1324,11 +1324,15 @@ resolution display
 ````
 function setup() {
   pixelDensity(1);
+
+	// blue background 
+	// makes it easier to see the pink
   background(0, 102, 204);
 
   loadPixels();
 
-	// Here is the equation for the start (red value) 
+	// Here is the equation 
+	// for the start (red value) 
 	// of a pixel 
 	// at a particular coordinate (x,y)
   // (x + y*width) * 4
@@ -1422,48 +1426,50 @@ Some fun examples from Professor Sherwood:
 ![](media/circularImages.png)
 
 ````
-PImage img;
-PImage[] tiles;
+function preload() {
+  img = loadImage("aiweiwei.jpeg");
+}
 
-int tileSize = 100;
-
-void setup() {
-  size (400,400);
-  img = loadImage("/home/michael/tmp/intro/aiweiwei.jpeg");
-  tiles = new PImage[img.height/tileSize];
-  for (int i=0; i< tiles.length; i++) {
-    tiles[i] = img.get(int(random(img.width-tileSize)), int(random(img.height-tileSize)), tileSize, tileSize);
+function setup() {
+  createCanvas (400,400);
+  let numTiles = img.height/tileSize
+  while (numTiles > 0) {
+    tiles.push( img.get(
+    int(random(img.width-tileSize)),
+    int(random(img.height-tileSize)),
+    tileSize,
+    tileSize));
+    numTiles--;
   }
   imageMode(CENTER);
 }
 
-void draw() {
-  pushMatrix();
+function draw() {
+  push();
   translate(width/2, height/2);
 
-  int numSegments = 10;
-  float eachAngle = TWO_PI/numSegments;
-  int whichImage = (int)random(tiles.length);
-  for (int i = 0; i< numSegments; i++) {
-    float x = cos(eachAngle*i)*tileSize+1;
-    float y = sin(eachAngle*i)*tileSize+1;
-    pushMatrix();
+  let numSegments = 10;
+  let eachAngle = TWO_PI/numSegments;
+  let whichImage = int(random(tiles.length));
+
+  for (let i = 0; i< numSegments; i++) {
+    let x = cos(eachAngle*i)*tileSize+1;
+    let y = sin(eachAngle*i)*tileSize+1;
+    push();
     translate(x, y);
     rotate(eachAngle*i);
     image(tiles[whichImage], 0, 0);
-    popMatrix();
+    pop();
   }
 
-  popMatrix();
+  pop();
   noLoop();
 }
 
-void keyPressed() {
+function keyPressed() {
   loop();
 }
 ````
-
-Here is a more complex version, on which I based the simple version above: [circularImages.pde](https://raw.githubusercontent.com/aaronsherwood/introduction_interactive_media/master/processingExamples/pixels/circularImages/circularImages.pde)
 
 Can we use a sequence of images for animation?
 
