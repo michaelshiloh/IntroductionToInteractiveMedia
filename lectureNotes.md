@@ -1565,10 +1565,36 @@ function keyPressed() {
 
 ````
 
+HERE
+
 #### Sound!
 
 Download this to your laptop: 
-https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/walking.png
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/doorbell.png
+
+Sound reference page
+Sound exmample
+
+Note that you must include the Sound library
+
+- Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install *Sound* written by *The Processing Foundation*
+
+##### Playing with examples
+
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+	- The sound file *beat.mp3* has never worked for me
+
+
+##### Working in groups: 
+If we had multiple sound files, how would we play the
+next one when we click the mouse?
+
+
 
 #### Working with a camera: Computer Vision!
 
@@ -1726,35 +1752,6 @@ void draw() {
 - Unused variables or functions
 - Commented out code
 
-#### Sound
-
-Sound library [reference
-page](https://processing.org/reference/libraries/sound/index.html)
-
-##### Install the Sound library
-
-- Sketch -> Import Library -> Add Library (notice many other library
-	options)
-- Search for Sound
-- Install *Sound* written by *The Processing Foundation*
-
-##### Playing with examples
-
-- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
-- File -> Examples -> Contributed Examples -> Learning Processing ->
-chp_20_sound -> example_20_02_sound_effect
-	- The sound file *beat.mp3* has never worked for me
-
-
-##### Working in groups: 
-If we had multiple sound files, how would we play the
-next one when we click the mouse?
-
-### October 7 2021
-
-#### Administration
-
-- **Record Zoom!**
 
 Example solution to in-class exercise from last meeting
 
