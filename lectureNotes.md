@@ -1479,6 +1479,10 @@ Can we use a sequence of images for animation?
 
 ![](media/walking.png)
 
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/walking.png
+
 How would we use them?
 
 ````
