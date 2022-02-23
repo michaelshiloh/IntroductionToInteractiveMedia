@@ -1421,24 +1421,30 @@ HERE
 
 Look at the reference page for the pixels array
 
-Some fun examples from Professor Sherwood:
+A fun examples from Professor Sherwood:
 
 ![](media/circularImages.png)
 
 ````
+let tiles = [];
+let tileSize = 100;
+
 function preload() {
   img = loadImage("aiweiwei.jpeg");
 }
 
 function setup() {
-  createCanvas (400,400);
-  let numTiles = img.height/tileSize
+  createCanvas(400, 400);
+  let numTiles = img.height / tileSize;
   while (numTiles > 0) {
-    tiles.push( img.get(
-    int(random(img.width-tileSize)),
-    int(random(img.height-tileSize)),
-    tileSize,
-    tileSize));
+    tiles.push(
+      img.get(
+        int(random(img.width - tileSize)),
+        int(random(img.height - tileSize)),
+        tileSize,
+        tileSize
+      )
+    );
     numTiles--;
   }
   imageMode(CENTER);
@@ -1446,18 +1452,18 @@ function setup() {
 
 function draw() {
   push();
-  translate(width/2, height/2);
+  translate(width / 2, height / 2);
 
   let numSegments = 10;
-  let eachAngle = TWO_PI/numSegments;
+  let eachAngle = TWO_PI / numSegments;
   let whichImage = int(random(tiles.length));
 
-  for (let i = 0; i< numSegments; i++) {
-    let x = cos(eachAngle*i)*tileSize+1;
-    let y = sin(eachAngle*i)*tileSize+1;
+  for (let i = 0; i < numSegments; i++) {
+    let x = cos(eachAngle * i) * tileSize + 1;
+    let y = sin(eachAngle * i) * tileSize + 1;
     push();
     translate(x, y);
-    rotate(eachAngle*i);
+    rotate(eachAngle * i);
     image(tiles[whichImage], 0, 0);
     pop();
   }
