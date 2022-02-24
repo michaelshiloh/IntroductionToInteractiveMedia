@@ -1283,6 +1283,7 @@ For more information and ideas
 - Pixels array
 - Sprite sheets
 - Sound
+- Introduce midterm project
 
 #### The `pixels` array: Treating the canvas as an image
 
@@ -1565,29 +1566,62 @@ function keyPressed() {
 
 ````
 
-HERE
+You can probably find many sprite sheets by googling "sprite sheet" +
+whatever you want.
+
 
 #### Sound!
 
 Download this to your laptop: 
 https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/doorbell.png
 
-Sound reference page
-Sound exmample
+File -> Examples -> Sound
 
-Note that you must include the Sound library
+Preload Soundfile
 
-- Sketch -> Import Library -> Add Library (notice many other library
-	options)
-- Search for Sound
-- Install *Sound* written by *The Processing Foundation*
+Very basic example:
 
-##### Playing with examples
+````
+/*
+Must upload doorbell.mp3
+Must include sound library in index.html
+*/
 
-- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
-- File -> Examples -> Contributed Examples -> Learning Processing ->
-chp_20_sound -> example_20_02_sound_effect
-	- The sound file *beat.mp3* has never worked for me
+function preload() {
+  song = loadSound('doorbell.mp3');
+}
+
+function setup() {
+  background(234);
+  song.play();
+}
+
+function draw() {
+  if (song.isPlaying()) {
+    print("song is playing")
+  } else {
+    print("song is not playing")
+    noLoop
+  }
+}
+
+function mouseClicked() {
+  if (song.isPlaying()) {
+    song.stop();
+  } else {
+    song.play();
+  }
+}
+````
+
+- Sound examples
+	- File -> Examples -> Sound
+		- Record Save
+		- Live Input
+		- Oscillator Waveform
+
+- Sound reference page
+	- Note it's a separate library
 
 
 ##### Working in groups: 

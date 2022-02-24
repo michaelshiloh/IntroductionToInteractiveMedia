@@ -216,6 +216,7 @@ Midterm project
 Make a game using everything you have learned so far
 - Due Mar. 8th
 - Can be one or more players
+- The game must not be violent (no shooting or fighting)
 - Must include
 	- At least one shape
 	- At least one image
@@ -226,6 +227,8 @@ Make a game using everything you have learned so far
 	until a button or key (your choice) is pressed
 - After the game is won or lost, there must be a way to restart the game
 	without closing and restarting the program
+- A sense of humor and whimsy is encouraged. Think outside the box, don't be
+	traditional
 
 ### Week 6 (March 1, 3)
 
