@@ -184,7 +184,7 @@ Reading Assignment
 ### Week 5 (February 22, 24) Image Processing, Sound, Introduce Midterm
 Project
 
-#### Assignments due February 29 (ONLY PARTIAL!)
+#### Assignments due February 29 
 ##### todays-assignment
 
 Reading Assignment
@@ -192,6 +192,7 @@ Reading Assignment
 - Read [Computer Vision for Artists and
 	Designers](http://www.flong.com/archive/texts/essays/essay_cvad/index.html)
 	and be prepared to discuss
+	- Liam and Mishel to lead
 
 Production Assignment
 
