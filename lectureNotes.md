@@ -1265,18 +1265,6 @@ For more information and ideas
 - Examples -> image
 
 ### February 24
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
 
 #### Plan for today: 
 
@@ -1614,20 +1602,83 @@ function mouseClicked() {
 }
 ````
 
+As always, it's useful to explore the examples and the reference page
+
 - Sound examples
 	- File -> Examples -> Sound
 		- Record Save
 		- Live Input
+
+**Remember**
+Sound requires a separate library which must be included
+
+##### Sound Synthesis
+
+The other way to make sounds is to create them mathematically
+
+- Sound examples
+	- File -> Examples -> Sound
 		- Oscillator Waveform
+		- Filters
 
-- Sound reference page
-	- Note it's a separate library
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
 
-
-##### Working in groups: 
+##### Working in groups (time permitting):
 If we had multiple sound files, how would we play the
 next one when we click the mouse?
 
+### February 29
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- Homework feedback
+- Computer Vision
+	- Frame Differencing
+	- Video Mirror (flipping the x)
+	- In class exercise: Trigger Sounds in Space 
+		- Combine frame differencing with
+			[this](https://editor.p5js.org/aaronsherwood/sketches/-3KLG9EiT)
+- Perlin Noise
+- Array Lists
+
+#### Homework feedback
+
+- I love the diversity in data sets that you found! So much more creative than
+	the example I showed in class.
+- In general, your descriptions and comments are weak. Most of you need
+	better descriptions and almost all of you need better comments.
+	- `k = 0; x = 0; y = 0;` What is `k`? I assume `x` and `y` are coordinates,
+		but of what? Why are they set to zero? Is that important? If not, why is
+		it there?
+	- Your comments must explain what your code does: A comment that says "loop
+		over all elements in the array" is accurate but doesn't give the reader
+		any new information. You must explain why you are looping over all
+		elements. Put a comment (preferably more than one line) at the beginning
+		of every function, loop, or distinct block of code explaining a) what it
+		does and b) how it does it
+	- Make sure your comments agree with the code! A comments that says "the
+		last two fields" but then refers to fields 1 and 2 (when I can see that
+		there are at least 5 is clearly wrong. Did you just copy that blindly from
+		my example?
+- Shoutouts 
+	- [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia/blob/main/Feb22/playlist.js) for excellent comments
+		- Also
+			[Pranav](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/February22/dataVisualization.js)
+	- [Dhabia](https://github.com/noorajabir/IntroToIM/tree/main/Feb%2022) for excellent presentation
+	- [Shaikha](https://github.com/ShaikhaAlN/IntroToIM/tree/main/Feb22) for whimsical project
 
 
 #### Working with a camera: Computer Vision!
@@ -1639,6 +1690,11 @@ next one when we click the mouse?
 
 Try
 [this](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/processingSketches/computerVision/frameDifferencing/frameDifferencing.pde) example
+
+Other examples you might find fun and/or useful:
+
+- https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT
+- https://editor.p5js.org/itp42/sketches/dBeLZC8mm
 
 #### Perlin Noise
 
@@ -1697,14 +1753,6 @@ void mousePressed() {
 ````
 
 Things to notice:
-
-* How does the background change if I never call `mousePressed()`?
-`mousePressed()` is a *callback function*, meaning we have told
-Processing that we are interested in this event, and if it occurs,
-call this function. There are many different types of events available in
-Processing, and you register an interest in them by creating a callback
-function with the appropriate name. See *mouse* and *keyboard* 
-in the Processing Reference Page.
 
 * What happens if I click the mouse more than 10 times?  
 
@@ -1777,16 +1825,6 @@ void draw() {
 }
 ````
 
-#### Documentation
-
-- Midterm documentation must be excellent
-	- Include photos, sketches, GIFS as appropriate
-- Include block at the beginning of the code
-- ^T
-- Unused variables or functions
-- Commented out code
-
-
 Example solution to in-class exercise from last meeting
 
 ````
@@ -1837,14 +1875,16 @@ Use the mouse position to select sound tracks
 Try to work it out on your own before looking at the 
 [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
 
-##### Synthesis
-
-- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
-- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
-
-We can create our own complex sounds starting with basic oscillators and then
-changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
-
 ##### What is
 [sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
+
+
+##### Other resources
+
+[Creative Coding lecture notes](https://creative-coding.decontextualize.com/)
+
+[Coding Train[(https://thecodingtrain.com/Tutorials/) tutorials (by Dan Shiffman)
+
+A nice set of p5.js tutorials by [Happy
+Coding](https://happycoding.io/tutorials/p5js/)
 

@@ -35,7 +35,6 @@ Class location: Online
 - [Faizan](https://github.com/faizanraza09/introToIM)
 - [Kevin](https://github.com/kevinchu-mexiporc/Intro-to-IM)
 - [Liam](https://github.com/l-mccarthy/IntroToIM)
-- [Malika](https://github.com/malikaaasingh/IntroToIM)
 - [Mishel]( https://github.com/MishelRashid/IntrotoIM22)
 - [Noora](https://github.com/noorajabir/IntroToIM)
 - [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia)
