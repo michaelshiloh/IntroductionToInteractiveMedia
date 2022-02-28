@@ -1644,6 +1644,7 @@ next one when we click the mouse?
 
 #### Plan for today: 
 
+- Discussion of reading (Liam and Mishel)
 - Homework feedback
 - Computer Vision
 	- Frame Differencing
@@ -1683,15 +1684,33 @@ next one when we click the mouse?
 
 #### Working with a camera: Computer Vision!
 
-- Add the video library
-	- Sketch -> Import Library -> Add Library
-	- Filter by video
-	- Install the *Video | GStreamer-based video library for Processing*
+Basic sketch showing how to get input from camera:
 
-Try
-[this](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/processingSketches/computerVision/frameDifferencing/frameDifferencing.pde) example
+````
+let capture;
 
-Other examples you might find fun and/or useful:
+function setup() {
+  createCanvas(200, 200);
+  capture = createCapture(VIDEO);
+  capture.hide();
+}
+
+function draw() {
+  image(capture, // what image to display
+        0, 0,    // where to place the image on the canvas
+        width,   // width to display
+
+        // the height is more complicated:
+        // we want the capture height to be
+        // the width multiplied by the aspect ratio
+        width * capture.height / capture.width);
+}
+````
+
+- Reference page for
+- [createCapture](https://p5js.org/reference/#/p5/createCapture)
+	Video Capture [example](https://p5js.org/examples/dom-video-capture.html)
+
 
 - https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT
 - https://editor.p5js.org/itp42/sketches/dBeLZC8mm
@@ -1765,102 +1784,61 @@ dynamically.
 Here is a short example showing how to work with ArrayLists:
 
 ````
-class Thing {
-  int i;
-  float f;
-  
-  Thing(int _i, float _f) {
-    i = _i;
-    f = _f;
-  }
-  
-  int getInt() {
-    return i;
-  }
-  
-  float getFloat() {
-    return f;
-  }
-}
-
-ArrayList<Thing> myThings = new ArrayList<Thing>();
+// ArrayLists have a special syntax:
+ArrayList<PVector> myVectors = new ArrayList<PVector>();
 
 void setup() {
 
   // The ArrayList should be empty
-  println(myThings.size());
+  println(myVectors.size());
 
   for (int i = 0; i < 10; i++) {
-    myThings.add(new Thing(i, float(i)));
-    println(myThings.size()); // not that size() is a function!
+    myVectors.add(new PVector(i, 0));
+    println(myVectors.size()); // not that size() is a function!
   }
 
   // The value at index 5 should be 5
   // Just like arrays, the index starts at zero
   // so index 5 is the sixth item
-  println("at index 5, x = " + myThings.get(5).getInt());
+  // Note that this get() function is part of the ArrayList
+  // and not the PVector get()
+  println("at index 5, x = " + myVectors.get(5).x);
 }
 
 void mouseClicked() {
-  myThings.add(new Thing(mouseX, mouseY));
-  println("added a new Thing at mouse location x = " + mouseX + " y = " + mouseY);
+  myVectors.add(new PVector(mouseX, mouseY));
+  println("added a new PVector at this mouse location");
 }
 
 void keyPressed() {
   if (key == 'd') {
-    myThings.remove(0); // remove the first vector
-    println("removed the first Thing, array size is now " + myThings.size());
+    myVectors.remove(0); // remove the first vector
+    println("removed the first PVector, size is now " + myVectors.size());
   }
 
   if (key == 'p') {
-    for (int i = 0; i < myThings.size(); i++) {
-      Thing t = myThings.get(i);
-      println("index = " + i + " int = " + t.getInt() + " y = " + t.getFloat());
+    for (int i = 0; i < myVectors.size(); i++) {
+      // Note that this get() function is part of the ArrayList
+      // and not the PVector get()
+      PVector v = myVectors.get(i);
+      println("index = " + i + " x = " + v.x + " y = " + v.y);
+    }
+  }
+
+  // Another way to loop through an ArrayList:
+  if (key == 'P') {
+    for (PVector v : myVectors) {
+      println("For this PVector x = " + v.x + " y = " + v.y);
     }
   }
 }
 
 // Need to have a draw() function so that callbacks occur
+// even though it is empty
 void draw() {
 }
 ````
 
-Example solution to in-class exercise from last meeting
-
-````
-import processing.sound.*; //* load the sound library
-
-SoundFile[] songs;
-final int numberOfSongs = 5;
-
-SoundFile currentSong;
-
-void setup() {
-  size(400, 500);
-
-  songs = new SoundFile[numberOfSongs]; // makes the array of songs
-
-  // open each file and put it in the songs array
-  for (int i = 0; i< numberOfSongs; i++) {
-    songs[i] = new SoundFile( this, "/tmp/" + (i+1) + ".aif");
-  }
-  currentSong = songs[0];
-}
-
-void draw() {
-}
-
-void mousePressed() {
-
-  if (currentSong.isPlaying() == false ) {
-    int songToPlay = (int) random(numberOfSongs);
-    songs[songToPlay].play();
-    currentSong = songs[songToPlay];
-  }
-}
-````
-
-Another [solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/shortFile/shortFile.pde)
 
 ##### Blocking vs. non-blocking functions
 

@@ -230,6 +230,23 @@ Make a game using everything you have learned so far
 	without closing and restarting the program
 - A sense of humor and whimsy is encouraged. Think outside the box, don't be
 	traditional
+- Documentation must be excellent
+	- Include photos, sketches, GIFS as appropriate
+- Code must be extremely well organized and commented
+	- Include block at the beginning of the code
+		with your name, name of the project, class, and date
+	- Explain each function except for setup() and draw()
+		- What does it do
+		- What the arguments are
+		- How it works
+	- Tidy the code
+		- Unfortunately this also join all the arguments in a function 
+			so if broke any long lines to make them fit in the window
+			you will have to do it again
+	- Excellent comments, especially for any confusing or tricky parts
+	- Use functions as needed to organize your program
+	- Use excellent variable, function, object, and class names
+
 
 ### Week 6 (March 1, 3)
 
