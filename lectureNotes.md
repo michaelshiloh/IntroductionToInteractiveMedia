@@ -1628,32 +1628,13 @@ changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_
 If we had multiple sound files, how would we play the
 next one when we click the mouse?
 
-### February 29
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
+### March 1
 #### Plan for today: 
 
 - Discussion of reading (Liam and Mishel)
 - Homework feedback
 - Computer Vision
 	- Frame Differencing
-	- Video Mirror (flipping the x)
-	- In class exercise: Trigger Sounds in Space 
-		- Combine frame differencing with
-			[this](https://editor.p5js.org/aaronsherwood/sketches/-3KLG9EiT)
-- Perlin Noise
-- Array Lists
 
 #### Homework feedback
 
@@ -1707,20 +1688,65 @@ function draw() {
 }
 ````
 
-- Reference page for
-- [createCapture](https://p5js.org/reference/#/p5/createCapture)
-	Video Capture [example](https://p5js.org/examples/dom-video-capture.html)
+Reference page for
+[createCapture](https://p5js.org/reference/#/p5/createCapture)
 
+Some video examples:
+- [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
+- A more complex
+	[example](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT) by Prof.
+	Aaron that uses frame differencing to detect which vertical slice of the
+	camera image has the most motion, and trigger a corresponding sound clip
 
-- https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT
-- https://editor.p5js.org/itp42/sketches/dBeLZC8mm
+### March 3
+##### todays-lecture
+#### Administration
 
-#### Perlin Noise
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- Attendance
+- Review frame differencing
+- Random items
+
+#### Attendance
+- Please don't join class from a noisy location as it makes it hard to hear
+	you
+- Remember that cameras are required for the entire duration of the class. I
+	often see cameras turned off during class. This is not permissible unless you
+	receive explicit permission from me.
+
+#### Review frame differencing
+- If you wanted to display white (instead of the color of the difference)
+	wherever motion above a certain threshold is detected, how would you do this?
+- Video Mirror (flipping the x)
+	- https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a
+- In class exercise: Trigger Sounds in Space 
+- Can you trigger sounds according to where there is motion?
+	- Borrow ideas from [here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
+
+#### Random items
+- Perlin Noise
+- Array Lists
+- Other examples that might be useful
+- An [example](https://editor.p5js.org/itp42/sketches/dBeLZC8mm) by Prof.
+	Mathura showing how to create and move in a grid
+
+##### Perlin Noise
 
 ````
-void draw() {
+function draw() {
   background(204);
-  float n = random(0, width);
+  let n = random(0, width);
   line(n, 0, n, height);
 }
 ````
@@ -1731,113 +1757,26 @@ don't jump instantly from one place to another,
 they tend to move close to where they were last time
 
 ````
-float offset = 0.0;
+let offset = 0.0;
 
-void draw() {
+function draw() {
   background(204);
   offset = offset + .01;
-  float n = noise(offset) * width;
+  let n = noise(offset) * width;
   line(n, 0, n, height);
 }
 ````
 
 Things to notice:
 
-* Why is the variable `offset` global? (Remember our discussion of variable
+- Why is the variable `offset` global? (Remember our discussion of variable
 	scope)
 
-#### Events
+##### Removing items from an array
 
-````
-final int maxColors = 10;
-color[] myColors = new color[maxColors];
-
-int colorChoice = 0;
-
-void setup() {
-  size(600, 500);
-
-  for (int i = 0; i < myColors.length; i ++ ) {
-    myColors[i]=color(random(255), random(255), random(255));
-  }
-}
-
-void draw() {
-}
-
-void mousePressed() {
-  background(myColors[colorChoice]);
-  colorChoice ++;
-}
-````
-
-Things to notice:
-
-* What happens if I click the mouse more than 10 times?  
-
-##### Array Lists
-
-Arrays are great, but they are of fixed size. There is an extension of the
-array concept called an ArrayList which allows the size to be manipulated
-dynamically.
-
-Here is a short example showing how to work with ArrayLists:
-
-````
-// ArrayLists have a special syntax:
-ArrayList<PVector> myVectors = new ArrayList<PVector>();
-
-void setup() {
-
-  // The ArrayList should be empty
-  println(myVectors.size());
-
-  for (int i = 0; i < 10; i++) {
-    myVectors.add(new PVector(i, 0));
-    println(myVectors.size()); // not that size() is a function!
-  }
-
-  // The value at index 5 should be 5
-  // Just like arrays, the index starts at zero
-  // so index 5 is the sixth item
-  // Note that this get() function is part of the ArrayList
-  // and not the PVector get()
-  println("at index 5, x = " + myVectors.get(5).x);
-}
-
-void mouseClicked() {
-  myVectors.add(new PVector(mouseX, mouseY));
-  println("added a new PVector at this mouse location");
-}
-
-void keyPressed() {
-  if (key == 'd') {
-    myVectors.remove(0); // remove the first vector
-    println("removed the first PVector, size is now " + myVectors.size());
-  }
-
-  if (key == 'p') {
-    for (int i = 0; i < myVectors.size(); i++) {
-      // Note that this get() function is part of the ArrayList
-      // and not the PVector get()
-      PVector v = myVectors.get(i);
-      println("index = " + i + " x = " + v.x + " y = " + v.y);
-    }
-  }
-
-  // Another way to loop through an ArrayList:
-  if (key == 'P') {
-    for (PVector v : myVectors) {
-      println("For this PVector x = " + v.x + " y = " + v.y);
-    }
-  }
-}
-
-// Need to have a draw() function so that callbacks occur
-// even though it is empty
-void draw() {
-}
-````
+Look at other array functions in the reference page:
+- `append`
+- `pop` 
 
 
 ##### Blocking vs. non-blocking functions
@@ -1849,12 +1788,6 @@ void draw() {
 
 ##### Working in groups: 
 Use the mouse position to select sound tracks
-
-Try to work it out on your own before looking at the 
-[solution](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples/sound/loopingFiles/loopingFiles.pde)
-
-##### What is
-[sound](https://intro.nyuadim.com/2020/10/13/week-6-sound/)?
 
 
 ##### Other resources
