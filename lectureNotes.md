@@ -1735,9 +1735,8 @@ Some video examples:
 	- Borrow ideas from [here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
 
 #### Random items
-- Perlin Noise
-- Array Lists
-- Other examples that might be useful
+
+##### Grids
 - An [example](https://editor.p5js.org/itp42/sketches/dBeLZC8mm) by Prof.
 	Mathura showing how to create and move in a grid
 
@@ -1772,7 +1771,7 @@ Things to notice:
 - Why is the variable `offset` global? (Remember our discussion of variable
 	scope)
 
-##### Removing items from an array
+##### Other things you can do with arrays
 
 Look at other array functions in the reference page:
 - `append`
