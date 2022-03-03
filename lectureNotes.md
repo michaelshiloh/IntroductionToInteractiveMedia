@@ -1773,17 +1773,16 @@ Things to notice:
 
 ##### Other things you can do with arrays
 
-Look at other array functions in the reference page:
+Look at other array methods in the reference page:
 - `append`
 - `pop` 
 
 
 ##### Blocking vs. non-blocking functions
 
-- Which function is non-blocking?
+- What are blocking and non-blocking functions?
 - How do you know when a non-blocking function is done?
-- Soudfile [reference
-	page](https://processing.org/reference/libraries/sound/SoundFile.html)
+- Soundfile reference page
 
 ##### Working in groups: 
 Use the mouse position to select sound tracks
