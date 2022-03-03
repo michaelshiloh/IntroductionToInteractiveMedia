@@ -215,7 +215,7 @@ Start working on your midterm project
 Midterm project
 
 Make a game using everything you have learned so far
-- Due Mar. 8th
+- Due Thursday March 10th
 - Can be one or more players
 - The game must not be violent (no shooting or fighting)
 - Must include
@@ -248,9 +248,9 @@ Make a game using everything you have learned so far
 	- Use excellent variable, function, object, and class names
 
 
-### Week 6 (March 1, 3)
+### Week 6 (March 1, 3) Computer vision
 
-### Week 7 (March 8, 10)
+### Week 7 (March 8, 10) Midterm
 
 **No classes, final exams for 7-week courses March 13-15**
 **Spring Break March 16-22**
