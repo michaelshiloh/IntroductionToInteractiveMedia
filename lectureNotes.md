@@ -1730,9 +1730,9 @@ Some video examples:
 	wherever motion above a certain threshold is detected, how would you do this?
 - Video Mirror (flipping the x)
 	- https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a
-- In class exercise: Trigger Sounds in Space 
-- Can you trigger sounds according to where there is motion?
-	- Borrow ideas from [here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
+- In class exercise: Can you trigger sounds according to where there is
+	motion?  You might want to borrow ideas from
+	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
 
 #### Random items
 
