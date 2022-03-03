@@ -185,7 +185,6 @@ Reading Assignment
 Project
 
 #### Assignments due February 29 
-##### todays-assignment
 
 Reading Assignment
 
@@ -212,10 +211,14 @@ Start working on your midterm project
 	- If you were not able to solve it, describe you plan to solve or work
 	around this problem
 
+##### todays-assignment
+#### Production Assignment Due Tuesday March 8
+
+Finish the midterm
+
 Midterm project
 
 Make a game using everything you have learned so far
-- Due Thursday March 10th
 - Can be one or more players
 - The game must not be violent (no shooting or fighting)
 - Must include
@@ -247,6 +250,11 @@ Make a game using everything you have learned so far
 	- Use functions as needed to organize your program
 	- Use excellent variable, function, object, and class names
 
+#### Production Assignment Due Thursday March 10
+
+- Perform user testing on your game
+- Solicit feedback
+- Implement suggestions that you feel are relevant 
 
 ### Week 6 (March 1, 3) Computer vision
 
