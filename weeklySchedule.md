@@ -225,6 +225,9 @@ without any additional instructions from you; the game should be self
 explanatory. Observe them playing, take notes, and request feedback, and see
 how you can improve.
 
+On Tuesday we will do a quick status check in class, and I 
+I expect each of you to have your project complete or very nearly complete. 
+
 #### Production Assignment Due Thursday March 10
 Finish the midterm
 
