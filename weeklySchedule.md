@@ -212,8 +212,20 @@ Start working on your midterm project
 	around this problem
 
 ##### todays-assignment
-#### Production Assignment Due Tuesday March 8
+#### Production Assignment progress Tuesday March 8
 
+As you finish your project, Keep in mind the design considerations that we
+learned about earlier in the semester: affordances, signifiers, etc. 
+For instance, think about where you place buttons and other controls, and how
+you signify their functions.
+
+I suggest that you aim to finish your project by Tuesday or Wednesday, leaving
+you a couple of days for user testing. See if your users can play the game
+without any additional instructions from you; the game should be self
+explanatory. Observe them playing, take notes, and request feedback, and see
+how you can improve.
+
+#### Production Assignment Due Thursday March 10
 Finish the midterm
 
 Midterm project
@@ -233,6 +245,7 @@ Make a game using everything you have learned so far
 	without closing and restarting the program
 - A sense of humor and whimsy is encouraged. Think outside the box, don't be
 	traditional
+- Keep in mind the design considerations that we learned about earlier in the semester: affordances, signifiers, etc
 - Documentation must be excellent
 	- Include photos, sketches, GIFS as appropriate
 - Code must be extremely well organized and commented
