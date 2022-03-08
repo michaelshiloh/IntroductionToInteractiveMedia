@@ -1699,19 +1699,6 @@ Some video examples:
 	camera image has the most motion, and trigger a corresponding sound clip
 
 ### March 3
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 
 - Attendance
@@ -1797,3 +1784,21 @@ Use the mouse position to select sound tracks
 A nice set of p5.js tutorials by [Happy
 Coding](https://happycoding.io/tutorials/p5js/)
 
+### March 3
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- Project status
+- Debugging
