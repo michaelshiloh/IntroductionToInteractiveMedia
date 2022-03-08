@@ -1779,7 +1779,7 @@ Use the mouse position to select sound tracks
 
 [Creative Coding lecture notes](https://creative-coding.decontextualize.com/)
 
-[Coding Train[(https://thecodingtrain.com/Tutorials/) tutorials (by Dan Shiffman)
+[Coding Train](https://thecodingtrain.com/Tutorials/) tutorials (by Dan Shiffman)
 
 A nice set of p5.js tutorials by [Happy
 Coding](https://happycoding.io/tutorials/p5js/)
