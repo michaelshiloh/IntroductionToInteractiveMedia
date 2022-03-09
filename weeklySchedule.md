@@ -211,6 +211,10 @@ Start working on your midterm project
 	- If you were not able to solve it, describe you plan to solve or work
 	around this problem
 
+### Week 6 (March 1, 3) Computer vision
+
+### Week 7 (March 8, 10) Midterm
+
 #### Production Assignment progress Tuesday March 8
 
 As you finish your project, Keep in mind the design considerations that we
@@ -272,10 +276,6 @@ Make a game using everything you have learned so far
 - Perform user testing on your game
 - Solicit feedback
 - Implement suggestions that you feel are relevant 
-
-### Week 6 (March 1, 3) Computer vision
-
-### Week 7 (March 8, 10) Midterm
 
 #### Production Assignment Due Thursday March 24
 
