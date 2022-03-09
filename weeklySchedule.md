@@ -211,7 +211,6 @@ Start working on your midterm project
 	- If you were not able to solve it, describe you plan to solve or work
 	around this problem
 
-##### todays-assignment
 #### Production Assignment progress Tuesday March 8
 
 As you finish your project, Keep in mind the design considerations that we
@@ -229,6 +228,7 @@ On Tuesday we will do a quick status check in class, and I
 I expect each of you to demonstrate your project complete 
 or very nearly complete. 
 
+##### todays-assignment
 #### Production Assignment Due Thursday March 10
 Finish the midterm
 
