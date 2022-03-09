@@ -277,6 +277,46 @@ Make a game using everything you have learned so far
 
 ### Week 7 (March 8, 10) Midterm
 
+#### Production Assignment Due Thursday March 24
+
+- Get your kit from the bookstore
+- You will need a USB-A port. If you have a modern laptop with only USB-C
+	ports, you will need to borrow (from Academic Tech if you are on campus) or
+	buy (if you are off-campus) a USB-A to USB-C adapter.
+- Prepare a space for working with electronics
+	- Have your kits ready to use in class
+	- Have some space to work. There are many small components in the kit that
+	will be easily lost, so ideally be seated at a table or desk with clear
+	space around you.
+- Install the Arduino IDE from
+	[here](https://www.arduino.cc/en/Main/Software). 
+	If you are on Windows chose either the 
+	Windows Installer ("Windows Win 7 and newer")
+	or install from 
+	the Microsoft App Store ("Windows app Win 8.1 or 10")
+- In your kit is a bundle of jumper wires 
+	that might be tied with a very tight ziptie 
+	that must be carefully removed. Please do this before class because 
+	it may take you a while to find the right tool. 
+	A sharp pair of scissors should work. A knife might damage the wires 
+	and hurt you.
+
+![](media/jumpersWithCableTieRemoved.jpg)
+
+- **Be careful not to damage the wires or yourselves!**
+
+- (If you are curious, you may read all about the kit
+	[here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41))
+
+
+#### Reading Assignment Due Thursday March 24
+
+- Sparkfun [breadboard
+  tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+- [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers-the-basics/)
+- [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/digital-input-output/)
+
+
 **No classes, final exams for 7-week courses March 13-15**
 **Spring Break March 16-22**
 
