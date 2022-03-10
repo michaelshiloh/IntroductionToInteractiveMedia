@@ -1785,6 +1785,12 @@ A nice set of p5.js tutorials by [Happy
 Coding](https://happycoding.io/tutorials/p5js/)
 
 ### March 3
+#### Plan for today: 
+
+- Project status
+- Debugging
+
+### March 10
 ##### todays-lecture
 #### Administration
 
@@ -1800,5 +1806,20 @@ Coding](https://happycoding.io/tutorials/p5js/)
 
 #### Plan for today: 
 
-- Project status
-- Debugging
+- Midterm projects: Share in a group
+- Mid-semester feedback
+- Homework due after break
+- Introduction to Arduino
+
+#####  Mid-semester feedback
+
+- What was the more surprising thing you learned so far in this class?
+- What was the more important thing you learned so far in this class?
+- What would you like more of?
+- What would you like less of?
+- What do you wish we'd talk about, or learn, that we haven't?
+
+##### Introduction to Arduino
+
+- IDE
+- blink
