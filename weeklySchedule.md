@@ -232,8 +232,8 @@ On Tuesday we will do a quick status check in class, and I
 I expect each of you to demonstrate your project complete 
 or very nearly complete. 
 
-##### todays-assignment
 #### Production Assignment Due Thursday March 10
+
 Finish the midterm
 
 Midterm project
@@ -323,6 +323,29 @@ Make a game using everything you have learned so far
 ### Extra Thursday (March 24)
 
 ### Week 8 (March 29, 31)
+
+##### todays-assignment
+
+#### Reading Assignment Due Thursday March 31
+
+- [Analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
+- [Analog Input](https://itp.nyu.edu/physcomp/lessons/analog-output/)
+- Discussion Leaders to be announced on Monday for the following two readings:
+	- [Norman,“Emotion & Design: Attractive things work
+		better”](https://jnd.org/emotion_design_attractive_things_work_better/)
+	- [Her Code Got Humans on the
+		Moon](http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
+
+#### Production Assignment Due Thursday March 31
+
+-  Create an unusual switch that doesn’t require the use of your hands. 
+	- Use your Arduino for power as we did in class on Thursday. 
+	- You are not required to use Arduino inputs or outputs, 
+	but you may do so if you wish.
+	- You might want to visit the IM lab for supplies such as copper tape,
+		aluminium foil, or longer wires, but you are encouraged to be creative and
+		use unusual items. One year a student used a trash can!
+	- [Examples](https://itp.nyu.edu/physcomp/labs/switches/#Get_Creative_With_Switches)
 
 ### Week 9 (April 5, 7)
 
