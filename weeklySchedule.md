@@ -346,6 +346,9 @@ Make a game using everything you have learned so far
 		aluminium foil, or longer wires, but you are encouraged to be creative and
 		use unusual items. One year a student used a trash can!
 	- [Examples](https://itp.nyu.edu/physcomp/labs/switches/#Get_Creative_With_Switches)
+	- Document your switch 
+	(description, process, pictures, video, problems, and discoveries) 
+	in README.md in a new folder named march31
 
 ### Week 9 (April 5, 7)
 
