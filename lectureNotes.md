@@ -1812,19 +1812,6 @@ Coding](https://happycoding.io/tutorials/p5js/)
 - blink
 
 ### March 24
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 
 - Electricity
@@ -1953,14 +1940,164 @@ Make sure everything is working
 - Change the parameter in delay()
 - Upload again and verify that the LED blinks at the new rate
 
+### March 29
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- Review basic Arduino and Digital Output
+- Digital Input
+- Analog Input (time permitting)
+
+#### Review basic Arduino and Digital Output
+
+Upload File -> Examples -> Basic -> Blink example
+
 What is going on?
 
 - Code
 - Circuit
 - I/O pins
+	- 20 pins
+	- Arduino provides LED on pin 13
+	- LED_BUILTIN = 13 
 
 Let's extend this circuit to the breadboard:
 
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
 
+#### Digital Input
+
+Adding a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+Here is the code we developed in class on Tuesday:
+
+````
+
+const int pushButton = A2;
+const int redLEDPin = A0;
+const int greenLEDPin = 8;
+
+void setup() {
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(greenLEDPin, OUTPUT);
+}
+
+void loop() {
+
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == HIGH) {
+    digitalWrite(redLEDPin, HIGH);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(500);
+    digitalWrite(greenLEDPin, LOW);
+    delay(300);
+    digitalWrite(redLEDPin, LOW);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(700);
+  }
+  allOff();
+  delay(1000);
+}
+
+void allOff() {
+  digitalWrite(redLEDPin, LOW);
+  digitalWrite(greenLEDPin, LOW);
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+#### In-class exercise
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. 
+Using two switches you can select between four patterns.
+How is that possible?
+
+#### Analogue Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analogue Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analogue input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+- Remember that the so-called Analogue Input pins can do digital input and
+	output as well
+
+Do you see a similarity between this circuit and 
+something we learned earlier?
+
+Some analogue sensors are resistive, some are not. 
+Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch - 
+the switch circuit is also effectively a voltage divider, one that has only
+two values instead of an infinite range of values
+
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
+#### Misc
+- Hand drawn schematics in your homework are fine!
+Here is an example:
+
+![](media/handDrawnSchematicExample.jpg)
+
+- Hand drawn switches can use the simple symbol
+- Resources are available to help you with your homework (me, Jack), but only
+	if you start your homework early enough. If you wait until the last minute
+	and then don't have time to get help, that is unexcusable.
+- Use constants for pin numbers
