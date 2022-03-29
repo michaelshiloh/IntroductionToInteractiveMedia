@@ -330,7 +330,7 @@ Make a game using everything you have learned so far
 
 - [Analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
 - [Analog Input](https://itp.nyu.edu/physcomp/lessons/analog-output/)
-- Discussion Leaders to be announced on Monday for the following two readings:
+- Discussion Leaders: Kevin and Noora
 	- [Norman,“Emotion & Design: Attractive things work
 		better”](https://jnd.org/emotion_design_attractive_things_work_better/)
 	- [Her Code Got Humans on the
