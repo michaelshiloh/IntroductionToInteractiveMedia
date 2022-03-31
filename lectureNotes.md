@@ -1941,19 +1941,6 @@ Make sure everything is working
 - Upload again and verify that the LED blinks at the new rate
 
 ### March 29
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 
 - Review basic Arduino and Digital Output
@@ -2006,7 +1993,7 @@ void loop() {
 }
 ````
 
-Here is the code we developed in class on Tuesday:
+An example:
 
 ````
 
@@ -2061,6 +2048,25 @@ Now write a program that will blink different patterns depending on which
 switch is pressed. 
 Using two switches you can select between four patterns.
 How is that possible?
+
+### March 31
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+- Discuss reading
+- Analogue Input
+- Analogue Output
 
 #### Analogue Input
 
