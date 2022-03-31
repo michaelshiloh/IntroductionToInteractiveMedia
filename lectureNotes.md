@@ -2149,6 +2149,29 @@ Serial.print(secondValue);
 Serial.println();
 ````
 
+Here is the program we developed at the end of class:
+
+````
+const int LED_PIN = 3;           // the PWM pin the LED is attached to
+const int POT_PIN = A2;
+int brightness = 0;    // how bright the LED is
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 9 to be an output:
+  pinMode(LED_PIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  int pot_value = analogRead(POT_PIN); // 0-1023
+  brightness = map(pot_value, 0, 1023, 255, 0);
+  Serial.println(brightness);
+  analogWrite(LED_PIN, brightness); // 0-255
+}
+````
+
 #### In-class exercise
 
 1. Use one of the analogue sensors to select which of two LEDs lights up
