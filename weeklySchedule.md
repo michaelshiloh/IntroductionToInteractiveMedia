@@ -324,8 +324,6 @@ Make a game using everything you have learned so far
 
 ### Week 8 (March 29, 31)
 
-##### todays-assignment
-
 #### Reading Assignment Due Thursday March 31
 
 - [Analog Input](https://itp.nyu.edu/physcomp/lessons/analog-input/)
@@ -351,6 +349,10 @@ Make a game using everything you have learned so far
 	in README.md in a new folder named march31
 
 ### Week 9 (April 5, 7)
+
+##### todays-assignment
+
+Get information from at least one analog sensor and at least one digital sensor (switch), and use this information to control at least two LEDs, one in a digital fashion and the other in an analog fashion, in some creative way.
 
 ### Week 10 (April 12, 14)
 
