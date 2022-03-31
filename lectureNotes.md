@@ -2070,11 +2070,14 @@ Build this circuit. Try to follow the schematic and not the breadboard view:
 ![](media/ArduinoPhotoresistor_bb.png)
 
 - Analogue Inputs, `analogRead()`, and (some) sensors go together
-	- This only works on the six analogue input pins (A0-A5)
+	- This only works on the six analog input pins (A0-A5)
 	- Digital sensors, like a switch, have only one of two values 
 	and so are more suited to a digital input
-- Remember that the so-called Analogue Input pins can do digital input and
+- Remember that the so-called analog input pins can do digital input and
 	output as well
+- Since you have so few analog input pins, when you decide which pins to use
+	for which device, reserve the analog input pins for analog input devices
+	as much as possible
 
 Do you see a similarity between this circuit and 
 something we learned earlier?
@@ -2090,6 +2093,10 @@ What other sensors do we have in the kit?
 
 Which ones are resistive?
 
+#### Potentiometer
+
+[Here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-1b-potentiometer)
+
 #### Misc
 - Hand drawn schematics in your homework are fine!
 Here is an example:
@@ -2097,7 +2104,51 @@ Here is an example:
 ![](media/handDrawnSchematicExample.jpg)
 
 - Hand drawn switches can use the simple symbol
-- Resources are available to help you with your homework (me, Jack), but only
+- Resources are available to help you with homework (me, Jack), but only
 	if you start your homework early enough. If you wait until the last minute
 	and then don't have time to get help, that is unexcusable.
 - Use constants for pin numbers
+
+#### Analogue Output
+
+- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- `analogWrite()` only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- LEDs, motors, and some other actuators respond properly to PWM
+	- Other actuators, like a solenoid, do not respond well to PWM and really
+		should be considered digital actuators
+	- Since you have so few analog outputs, when you decide which pins to use
+		for which device, reserve the analog output pins for analog output devices
+		as much as possible
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from p5.js which are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in p5.js to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.print()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+#### In-class exercise
+
+1. Use one of the analogue sensors to select which of two LEDs lights up
+1. Use one of the analogue sensor to control how fast two LEDs alternate
+1. Use a momentary switch (often called a *pushbutton* or a *button* in the
+	 Arduino literature) to select a different range for mapping an analog
+	 sensor to an analog output device
+1. Use a potentiometer to select from 4 different behaviors of a circuit
+
