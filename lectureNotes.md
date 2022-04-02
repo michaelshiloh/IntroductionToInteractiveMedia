@@ -2219,3 +2219,5 @@ End-Of-Semester show this semester.
 Tom Igoe's blog post on Physical Computing and Interactive Art
 
 #### Look at homework
+
+#### Time permitting: sound, servo motor
