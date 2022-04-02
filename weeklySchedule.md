@@ -320,9 +320,7 @@ Make a game using everything you have learned so far
 **No classes, final exams for 7-week courses March 13-15**
 **Spring Break March 16-22**
 
-### Extra Thursday (March 24)
-
-### Week 8 (March 29, 31)
+### Extra Thursday (March 24): Arduino Digital Output
 
 #### Reading Assignment Due Thursday March 31
 
@@ -348,7 +346,7 @@ Make a game using everything you have learned so far
 	(description, process, pictures, video, problems, and discoveries) 
 	in README.md in a new folder named march31
 
-### Week 9 (April 5, 7)
+### Week 8 (March 29, 31) Arduino Digital Input, Analog Input and Output
 
 ##### todays-assignment
 #### Production Assignment Due Tuesday April 5
@@ -370,7 +368,8 @@ in README.md in a new folder april5. Include:
 	- Description
 	- Your development process
 	- Picture(s) 
-	- Video
+	- Video (embed your video in your README.md. An example is in Ayesha's
+		[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md) of her midterm project)
 	- Problem(s), if any
 	- Discoverie(s), if any
 	- Schematic, which may be hand drawn or computer created
@@ -391,20 +390,120 @@ This reading is not for discussion:
 	about the theory too much or the section on level shifting. The important
 	thing is to absorb a little of the concept of a voltage divider.
 
-### Week 10 (April 12, 14)
+### Week 9 (April 5, 7): Sound, Servo Motor, Mapping
 
-### Week 11 (April 19, 21)
+#### Production Assignment Due Tuesday April 12
 
-### Week 12 (April 26, 28)
+Working in groups of two, make a musical instrument using at least one digital
+sensor and one analog sensor. 
+- You may (but you are not required to) use sensors and other components that
+	we have not learned about, either ones from your kit or from the IM lab.
+- Group assignments:
+	- Ryan and Noora
+	- Mishel and Kevin
+	- Liam and Shaikha
+	- Faizan and Aisha
+	- Dhabia and Abdullah
+	- Avinash and Ayesha
+	- Basil, Pranav, and Daniel 
+
+Document your project
+in README.md in a new folder april12. Include:
+- Description
+- Your development process
+- Picture(s) 
+- Video (embed your video in your README.md. An example is in Ayesha's
+	[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md) of her midterm project)
+- Problem(s), if any
+- Discoverie(s), if any
+- Schematic, which may be hand drawn or computer created
+- Upload your Arduino code into the same folder with the proper extension
+(.ino)
+
+#### Reading Assignment Due Tuesday April 12
+
+The first two readings are for discussion (Avinash and Basil to lead)
+- [A Brief Rant on the Future of Interaction
+	Design](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/)
+- [A follow-up
+	article](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/responses.html)
+It is important that you understand the concepts behind BlinkWithoutDelay.
+[Here](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
+are links to various other explanations of the same thing. Browse them, and
+read one deeply enough that you understand. Come to class with questions if
+none of these help.
+
+### Week 10 (April 12, 14) Serial Communication, Introduce Final Project
+
+#### Production Assignment Due Tuesday April 19
+
+Work in the groups from class to finish the three in-class examples exercises: 
+- make something that uses only one sensor  on arduino and makes the ellipse
+	in p5 move on the horizontal axis, in the middle of the screen, and nothing
+	on arduino is controlled by p5 
+- make something that controls the LED brightness from p5 
+- take the [gravity wind example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make it so
+	every time the ball bounces one led lights up and then turns off, and you
+	can control the wind from one analog sensor 
+- Each person, not just one for a group, should document your rowk
+	- In a new folder called april19
+		- Code for each exercise
+		- README.md with a video of the LED lighting up with the ball bouncing
+
+In a new folder called `finalProject`, in a file called `journal.md`, Write a
+preliminary concept for your final project, which must incorporate both
+Arduino and P5.  
+- Create a physically interactive system of your choice that relies on a
+	multimedia computer for some sort of processing or data analysis.
+	Your focus should be on careful and timely
+	sensing of the relevant actions of the person or people that you’re
+	designing this for, and on clear, prompt, and effective responses. Any
+	interactive system is going to involve systems of listening, thinking, and
+	speaking from both parties. Whether it involves one cycle or many, the
+	exchange should be engaging.
+- You may work alone or in groups
+- Examples are in the syllabus and in our first lesson plan
+
+#### Reading Assignment Due Tuesday April 19
+
+[Design Meets
+Disability](https://intro.nyuadim.com/wp-content/uploads/2020/08/Design_meets_disability.pdf) (Abdullah and Aisha to lead)
+
+#### Production Assignment Due Thursday April 21
+
+Finalize your final project proposal. Document in your `journal.md`:
+- Finalized concept for the project
+- Description of what your Arduino program will do with each input and output
+	and what it will send to and/or receive from P5
+- Description of what P5 program will do and what it will send to and/or
+	receive from Arduino
+- Whether you’re doing it as solo or group, and if in a group who is your
+	partner. Only one of you needs to write this documentation, but your partner
+	should link to it from his/her `journal.md`
+
+### Week 11 (April 19, 21) DC motors, Construction and Debugging, Final
+Project Proposals
+
+#### Production Assignment Due Tuesday April 26
+
+Get your project 90% complete
+
+
+### Week 12 (April 26, 28) Work on Final Project
+
+#### Production Assignment Due Friday May 6
+
+Conduct user testing
+- Record video and post in your `journal.md`
+- Discribe what you learned from the user testing 
+- Describel what changes you intend to make as a result of the user testing
 
 **Eid May 2-4**
 
 ### Week 13 
-- (Friday April 6 meet on a Tuesday schedule)
-- Thursday from March 24
+- (Friday May 6 legislative day: Classes meet on a Tuesday schedule)
 
 ### Week 14 (May 10, 12)
 
-**Last day of class May 13** (End of Semester show?)
-
+Final Project and final project documentation due at the beginning of class on Thursday, May 12
 
