@@ -386,10 +386,10 @@ The first two readings are for discussion (Ryan and Shaikha to lead)
 - [Making Interactive Art: Set the Stage, Then Shut Up and
 	Listen](https://www.tigoe.com/blog/category/physicalcomputing/405/)
 
-Ryan and Shaikha will post the questions on Discord by Monday at 6pm, allowing
-everyone time to think and come up with answers. In class we will discuss in
-breakout rooms, and then we will come back together and Ryan and Shaikha will
-lead us in a discussion.
+Ryan and Shaikha will post the questions on Discord on Monday evening, allowing
+everyone time to think and come up with answers. In class we will discuss
+first in breakout rooms, and then we will come back together and Ryan and
+Shaikha will lead us in a group discussion.
 
 This reading is not for discussion:
 - Read about the [voltage
