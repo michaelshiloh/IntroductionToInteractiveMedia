@@ -2181,3 +2181,9 @@ void loop() {
 	 sensor to an analog output device
 1. Use a potentiometer to select from 4 different behaviors of a circuit
 
+
+With deep regrets, the faculty and staff of the Interactive Media program have
+decided that we do not have the bandwidth to mount both an End-Of-Semester
+show and a capstone show. Since this is the first year that the Interactive
+Media program is mounting a Capstone Show, we have decided not to have an
+End-Of-Semester show this semester.

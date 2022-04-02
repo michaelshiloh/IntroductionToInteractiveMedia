@@ -385,8 +385,8 @@ The first two readings are for discussion (Ryan and Shaikha to lead)
 	Listen](https://www.tigoe.com/blog/category/physicalcomputing/405/)
 
 This reading is not for discussion:
-- Read about the (voltage
-	divider)[https://learn.sparkfun.com/tutorials/voltage-dividers). Don’t worry
+- Read about the [voltage
+	divider](https://learn.sparkfun.com/tutorials/voltage-dividers). Don’t worry
 	about the theory too much or the section on level shifting. The important
 	thing is to absorb a little of the concept of a voltage divider.
 
