@@ -369,7 +369,9 @@ in README.md in a new folder april5. Include:
 	- Your development process
 	- Picture(s) 
 	- Video (embed your video in your README.md. An example is in Ayesha's
-		[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md) of her midterm project)
+		[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md)
+		of her midterm project). If the video is too large you may put it on
+		Youtube or Vimeo and put a link in your documentation.
 	- Problem(s), if any
 	- Discoverie(s), if any
 	- Schematic, which may be hand drawn or computer created
@@ -398,6 +400,9 @@ Working in groups of two, make a musical instrument using at least one digital
 sensor and one analog sensor. 
 - You may (but you are not required to) use sensors and other components that
 	we have not learned about, either ones from your kit or from the IM lab.
+- You may use other any other materials you wish. The IM lab is a good
+	resource with things such as wood, plastic, and the junk bins (ask a lab
+	assistant where these are)
 - Group assignments:
 	- Ryan and Noora
 	- Mishel and Kevin
@@ -407,18 +412,20 @@ sensor and one analog sensor.
 	- Avinash and Ayesha
 	- Basil, Pranav, and Daniel 
 
-Document your project
-in README.md in a new folder april12. Include:
-- Description
-- Your development process
-- Picture(s) 
-- Video (embed your video in your README.md. An example is in Ayesha's
-	[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md) of her midterm project)
-- Problem(s), if any
-- Discoverie(s), if any
-- Schematic, which may be hand drawn or computer created
+- Document your project
+in README.md in a new folder april5. Include:
+	- Description
+	- Your development process
+	- Picture(s) 
+	- Video (embed your video in your README.md. An example is in Ayesha's
+		[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md)
+		of her midterm project). If the video is too large you may put it on
+		Youtube or Vimeo and put a link in your documentation.
+	- Problem(s), if any
+	- Discoverie(s), if any
+	- Schematic, which may be hand drawn or computer created
 - Upload your Arduino code into the same folder with the proper extension
-(.ino)
+	(.ino)
 
 #### Reading Assignment Due Tuesday April 12
 
@@ -488,6 +495,14 @@ Project Proposals
 
 Get your project 90% complete
 
+Describe your progress in your `journal.md`. Include
+- What you accomplished each work session
+- What worked and what didn't work
+- What changes you made to your design as a result of things that didn't work
+- What you think is the next most riskiest, complicated, 
+		or unknown part of your project and your plan to solve that
+- In addition to Arduino and p5.js issues, include mechanical, fabrication,
+	and construction issues
 
 ### Week 12 (April 26, 28) Work on Final Project
 
@@ -495,8 +510,8 @@ Get your project 90% complete
 
 Conduct user testing
 - Record video and post in your `journal.md`
-- Discribe what you learned from the user testing 
-- Describel what changes you intend to make as a result of the user testing
+- Describe what you learned from the user testing 
+- Describe what changes you intend to make as a result of the user testing
 
 **Eid May 2-4**
 
@@ -507,3 +522,19 @@ Conduct user testing
 
 Final Project and final project documentation due at the beginning of class on Thursday, May 12
 
+Final project documentation requirements:
+- Your `journal.md` must be a record of your progress as described above
+- Your `README.md` must include:
+	- Description of your project
+	- Overview of your programs (Arduino and P5.js) and your circuitry
+	- Overview of the user testing and changes made
+	- Picture(s) 
+	- Video (embed your video in your README.md. An example is in Ayesha's
+		[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md)
+		of her midterm project). If the video is too large you may put it on
+		Youtube or Vimeo and put a link in your documentation.
+	- Major problem(s), if any
+	- Discoverie(s), if any
+	- Schematic, which may be hand drawn or computer created
+- Upload your Arduino and p5.js code into the same folder with the proper
+	extension (.ino and .js respectively)
