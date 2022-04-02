@@ -457,9 +457,10 @@ Work in the groups from class to finish the three in-class examples exercises:
 - take the [gravity wind example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make it so
 	every time the ball bounces one led lights up and then turns off, and you
 	can control the wind from one analog sensor 
-- Each person, not just one for a group, should document your rowk
+- Each person, not just one for a group, should document your work
 	- In a new folder called april19
-		- Code for each exercise
+		- Arduino code for each exercise
+		- Link to your sketch on p5js.org
 		- README.md with a video of the LED lighting up with the ball bouncing
 
 In a new folder called `finalProject`, in a file called `journal.md`, Write a
@@ -545,6 +546,7 @@ Final project documentation requirements:
 	- Major problem(s), if any
 	- Discoverie(s), if any
 	- Schematic, which may be hand drawn or computer created
-- Upload your Arduino and p5.js code into the same folder with the proper
-	extension (.ino and .js respectively)
+- Upload your Arduino code into the same folder with the proper
+	extension (.ino)
+- Provide a link to your p5.js sketch on p5js.org
 - Upload any image, video, or audio files that are needed by your program

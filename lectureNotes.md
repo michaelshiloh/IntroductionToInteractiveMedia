@@ -2184,18 +2184,22 @@ void loop() {
 
 #### Plan for today: 
 
-- End of Semester Showcase
+- Announcements
 - Documentation
 - Discussion
 - Look at homework
 
-#### End of Semester Showcase
+#### Announcements
 
-With deep regrets, the faculty and staff of the Interactive Media program have
-decided that we do not have the bandwidth to mount both an End-Of-Semester
-show and a capstone show. Since this is the first year that the Interactive
-Media program is mounting a Capstone Show, we have decided not to have an
-End-Of-Semester show this semester.
+- Unfortunately, the faculty and staff of the Interactive Media program have
+	decided that we do not have the bandwidth to mount both an End-Of-Semester
+	showcase and a capstone show. Since this is the first year that the
+	Interactive Media program is mounting a Capstone Show, we have decided not
+	to have an End-Of-Semester showcase this semester. I am exploring ways to
+	make our final project presentations in-person and a bit more exciting
+- Instead of copying p5.js from p5js.org to Github, it is now sufficient to
+	provide a link to the sketch on p5js.org. Some of you have been doing this
+	and I realized that it makes much more sense.
 
 #### Documentation
 - Almost all of you are missing points simply for leaving out parts of the
