@@ -1631,7 +1631,7 @@ next one when we click the mouse?
 ### March 1
 #### Plan for today: 
 
-- Discussion of reading (Liam and Mishel)
+- Discussion of reading 
 - Homework feedback
 - Computer Vision
 	- Frame Differencing
@@ -2050,19 +2050,6 @@ Using two switches you can select between four patterns.
 How is that possible?
 
 ### March 31
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 - Discuss reading
 - Analogue Input
@@ -2181,9 +2168,54 @@ void loop() {
 	 sensor to an analog output device
 1. Use a potentiometer to select from 4 different behaviors of a circuit
 
+### April 5
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+
+- End of Semester Showcase
+- Documentation
+- Discussion
+- Look at homework
+
+#### End of Semester Showcase
 
 With deep regrets, the faculty and staff of the Interactive Media program have
 decided that we do not have the bandwidth to mount both an End-Of-Semester
 show and a capstone show. Since this is the first year that the Interactive
 Media program is mounting a Capstone Show, we have decided not to have an
 End-Of-Semester show this semester.
+
+#### Documentation
+- Almost all of you are missing points simply for leaving out parts of the
+	documentation. Paying attention to each requred step is a simple way to get
+	more points
+- Many of you have been sloppy with your `journals` and `READMEs`
+	- What is the purpose of these two documents?
+- Movies
+	- Is there a reason you're not embedding the movies in the page, like
+		Ayesha's?
+	- Is there a reason some of you putting the movie on Google Drive?
+	- Test the movie! Many of your simply don't work
+		- e.g.
+			[this](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/march31/README.md)
+- Don't upload binary files like zip files or pdfs.  Everything must be
+	viewable and readable. If you find an exception to this please check with me
+	first.
+
+#### Discussion
+
+Tom Igoe's blog post on Physical Computing and Interactive Art
+
+#### Look at homework

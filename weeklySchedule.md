@@ -386,6 +386,11 @@ The first two readings are for discussion (Ryan and Shaikha to lead)
 - [Making Interactive Art: Set the Stage, Then Shut Up and
 	Listen](https://www.tigoe.com/blog/category/physicalcomputing/405/)
 
+Ryan and Shaikha will post the questions on Discord by Monday at 6pm, allowing
+everyone time to think and come up with answers. In class we will discuss in
+breakout rooms, and then we will come back together and Ryan and Shaikha will
+lead us in a discussion.
+
 This reading is not for discussion:
 - Read about the [voltage
 	divider](https://learn.sparkfun.com/tutorials/voltage-dividers). Don’t worry
@@ -524,7 +529,10 @@ Final Project and final project documentation due at the beginning of class on T
 
 Final project documentation requirements:
 - Your `journal.md` must be a record of your progress as described above
-	- For an excellent example see Aisha's [journal](https://github.com/aisahodzic/IntroToIM/blob/main/midtermProject/journal.md) for her midterm project
+	- Some excellent examples of midterm project journals:
+		- [Aisha](https://github.com/aisahodzic/IntroToIM/blob/main/midtermProject/journal.md) 
+		- [Dhabia](https://github.com/dhabialhosani/IntroductionToIM/blob/main/midtermProject/journal.md)
+		- [Liam](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/journal.md)
 - Your `README.md` must include:
 	- Description of your project
 	- Overview of your programs (Arduino and P5.js) and your circuitry
@@ -539,3 +547,4 @@ Final project documentation requirements:
 	- Schematic, which may be hand drawn or computer created
 - Upload your Arduino and p5.js code into the same folder with the proper
 	extension (.ino and .js respectively)
+- Upload any image, video, or audio files that are needed by your program
