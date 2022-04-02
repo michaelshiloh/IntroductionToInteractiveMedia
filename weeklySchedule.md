@@ -524,6 +524,7 @@ Final Project and final project documentation due at the beginning of class on T
 
 Final project documentation requirements:
 - Your `journal.md` must be a record of your progress as described above
+	- For an excellent example see Aisha's [journal](https://github.com/aisahodzic/IntroToIM/blob/main/midtermProject/journal.md) for her midterm project
 - Your `README.md` must include:
 	- Description of your project
 	- Overview of your programs (Arduino and P5.js) and your circuitry
