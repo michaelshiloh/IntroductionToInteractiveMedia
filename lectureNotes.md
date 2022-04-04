@@ -2205,8 +2205,14 @@ void loop() {
 - Almost all of you are missing points simply for leaving out parts of the
 	documentation. Paying attention to each requred step is a simple way to get
 	more points
-- Many of you have been sloppy with your `journals` and `READMEs`
-	- What is the purpose of these two documents?
+- Apparently there was confusion regarding `journals` and `READMEs`. I will
+	restore points for the midterm but for the final I want you to do both
+	- `journal.md` is for the early proposal of your project, rough sketches,
+		notes, and a record of what you do each time you make progress. It is
+		meant to be rough and busy.
+	- `README.md` is the final document describing your finished project. It
+		should be well organized, well written, and clear. Of course it must
+		include all the required parts.
 - Movies
 	- Is there a reason you're not embedding the movies in the page, like
 		Ayesha's?
@@ -2221,7 +2227,16 @@ void loop() {
 #### Discussion
 
 Tom Igoe's blog post on Physical Computing and Interactive Art
+- Breakout rooms
+- All together
 
 #### Look at homework
+- Creative projects using simple digital and analog inputs and outputs
 
 #### Time permitting: sound, servo motor
+
+
+
+
+soldering
+in-person help
