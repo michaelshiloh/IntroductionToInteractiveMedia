@@ -204,8 +204,8 @@ Ask questions that engage the class fully
 #### Final Project :
 
 Create a physically interactive system of your choice that relies on a
-multimedia computer for some sort of processing or data analysis. The Final
-should use BOTH Processing AND Arduino.
+multimedia computer for some sort of p5.js or data analysis. The Final
+should use BOTH p5.js AND Arduino.
 
 Your focus should be on careful and timely sensing of the relevant actions of
 the person or people that you’re designing this for, and on clear, prompt, and
@@ -314,18 +314,6 @@ Author: Massimo Banzi and Michael Shiloh
 ISBN: 978-1449363338
 Publisher: Make Community, LLC
 Publication Date: January 6, 2015 Edition: 3rd
-
-Title: Getting Started with Processing
-Author: Casey Reas and Ben Fry
-ISBN: 144937980X
-Publisher: Make
-Publication Date: July 2, 2010 Edition: 1st
-
-Title: Learning Processing: A Beginner’s Guide to Programming Images, Animation, and Interaction
-Author: Daniel Shiffman
-ISBN: 0123736021
-Publisher: Morgan Kaufmann
-Publication Date: September 2, 2008 Edition: 1st
 
 Title: Arduino Cookbook
 Author: Michael Margolis

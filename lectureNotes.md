@@ -855,7 +855,6 @@ Format
 	spreadsheet because most programs
 	(Excel, OpenOffice Calc, Google Sheets) can export any table in CSV format
 - Other formats are JSON and XML. We won't spend any time on them, but there
-	are Processing and probably p5.js libraries for parsing these.
 	are p5.js libraries for these.
 
 ##### Worked example: Getting and working with a CSV file
@@ -1023,7 +1022,7 @@ Things to notice:
 ##### JSON and XML: Other file formats
 
 JSON and XML are other format for organizing data in a file. 
-They are more complex than CSV, and again Processing provides functions.
+They are more complex than CSV, and again p5.js provides functions.
 
 ##### Generative Text
 Pull words from a CSV file 
@@ -2169,19 +2168,6 @@ void loop() {
 1. Use a potentiometer to select from 4 different behaviors of a circuit
 
 ### April 5
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 
 - Announcements
@@ -2233,9 +2219,309 @@ Tom Igoe's blog post on Physical Computing and Interactive Art
 #### Look at homework
 - Creative projects using simple digital and analog inputs and outputs
 
-#### Time permitting: sound, servo motor
+### April 7
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+- Sound
+- Servo motor
+- PWM
+- Data Types
+- Schematic conventions
+- Circuit theory
+- Debugging
+- Examples
+
+#### Sound
+
+**`tone()`**
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- Before you try that code, just try 
+`tone(spkrPin, 440);`
+and
+`tone(spkrPin, 440, 1000);`
+- [Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- The word "intefere" is rather vague. 
+	I think they mean that it 
+	prevents `analogWrite()` from working on pins 3 and 11
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in p5.js
+- Arduino has arrays just like in p5.js
+
+#### Servo motor
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
+page](https://www.arduino.cc/en/Reference/Servo)
 
 
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### More about PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+
+**Notes**
+1. You may have noticed that the built-in LED blinks 3 times when you turn on
+	 your Arduino. In fact it does this every time it resets, which also happens
+	 when you upload a new program. Since this LED is connected directly to pin
+	 13, it means that whatever you have attached to pin 13 will be activated 3
+	 times briefly whenver the Arduino resets. So, if you make a big robot, 
+	 you probably should not use pin 13 for the motor
+1. Pins 0 and 1 are used for communication with your laptop, and this has two
+	 effects:
+	1. Connecting anything to pins 0 or 1 might interfere with laptop
+		 communication (which includes uploading!)
+	2. Anything connected to pins 0 or 1 might be activated during
+		 communication!
+1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
+	 pins and need to use them there are ways around this.
+
+#### Data Types
+
+Unlike in p5.js, you must declare what type of data you want to store in a
+variable:
+
+- `int` - whole numbers only
+- `float` - a number with a fractional part ('floating point number')
+- `char` - a character
+- `boolean` - only either `true` or `false`
+
+#### Conventions: Schematics and Wire Colours
+
+- When drawing schematics
+
+	- All **sensors** on the **left**
+	- All **inputs** on the **left** side of the Arduino 
+	- All **actuators** on the **right**
+	- All **outputs** on the **right** side of the Arduino 
+	- There are exceptions e.g.
+		- If using CAD you can't control where the pins are on Arduino
+		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
+			both inputs and outputs
+
+- When wiring your circuits
+
+	- All **5V** connections should use **red** wire, 
+	and don't use red for anything else
+	- All **GND** connections should use **black** wire,
+	and don't use black for anything else
+		- If you run out of black you may either
+			- Color some white cables black with a Sharpie
+			- Dedicate green as an additional black, and then
+			don't use green for anything else either
+	- All other connections can use any other colors
+	- If you use the buses on the sides of the breadboard
+		- Red bus for 5V only
+		- Black or Blue bus for GND only
+
+#### Circuits
+
+Some theory that might help you think about why circuits are they way they
+are
+- Important concepts:
+	- Voltage 
+		- Voltage is a relative quantity so it's always measured or identified
+			relative to some other point (usually a common reference point such as
+			"ground")
+		- Can be thought of the "pressure" applied to the electrons
+		- Analogous to holding a brick at a certain height above the floor. Relative
+			to the floor, the brick has a certain amount of potential energy
+		- Voltage exists whether or not there is a circuit
+	- Resistance 
+		- The resistance the electrons face as they try to get through
+		components. 
+		- Analogous to a traffic jam on a road
+		- Conductors (wires) have zero resistance (for our purposes)
+		- All components have some sort of "resistance"
+		- Resistance is a property of a component and therefore
+		exists whether or not there is a circuit
+	- Current  
+		- The rate of flow of electrons through a circuit (electrons/second)
+		- Somewhat analogous to litres/hour or cars/hour
+		- **Current only exists when there is a circuit**
+- If you measure the voltage between any two points, the voltage will not
+	change as you move to different places on the **wire**. 
+		However if you cross
+		a component the voltage might be different on the other side of the
+		component
+- If you measure current through components connected in 
+	series the current will not change. This is because **all** the electrons
+	that go through the first component have to go through the rest. No
+	electrons can leave the path, and no new ones can enter.
+		However if there are any branches some electrons might go on the
+		branches and thus the current will drop.
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connect things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the correct side of a
+		component!
+	
+#### Debugging
+
+If you want my help solving a problem in your assignment, do the following:
+1. Figure out the simplest circuit and program that demonstrates your problem
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Discord, describing carefully
+	1. What you think should happen
+	1. What you observe happens
+
+What techniques have you learned to help you find problems?
+
+#### Examples
+
+Some examples using the piezo speaker, servo motor, and a potentiometer:
+
+````
+// Moving the servo motor first to one position and then to another,
+// and then stopping:
+
+const int servoPin = 7;
+
+#include <Servo.h>
+Servo myservo;
+
+void setup() {
+  myservo.attach(servoPin);
+  myservo.write(10);
+  delay(1000);
+  myservo.write(130);
+}
+
+void loop() { 
+}
+````
+
+````
+// Moving the servo motor first to one position and then to another,
+// continuously:
+
+const int servoPin = 7;
+
+#include <Servo.h>
+Servo myservo;
+
+void setup() {
+  myservo.attach(servoPin);
+}
+
+void loop() {
+  myservo.write(10);
+  delay(1000);
+  myservo.write(130);
+  delay(1000);
+}
+````
+
+````
+// Minimal example of the tone() function
+// Make a tone, never stop
+
+const int spkrPin = 7;
+
+void setup() {
+  tone(spkrPin, 440); // starts a tone on pin 7 at frequency 440
+}
+
+void loop() {
+ // Arduino always needs a loop, even if it's empty
+}
+````
+
+Is the `tone()` function blocking? 
+
+````
+// If tone() is a blocking function, the LED will be off while the tone sounds
+// If the LED comes on as soon as the tone starts, tone() is non-blocking
+const int spkrPin = 7;
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  digitalWrite(LED_BUILTIN, LOW);
+  tone(spkrPin, 440, 1500); // starts a tone and then automatically stops it after 1500 milliseconds
+  digitalWrite(LED_BUILTIN, HIGH);
+}
+
+void loop() {
+}
+````
+
+````
+// Using a potentiometer to control the position of a servo motor
+
+#include <Servo.h>
+
+Servo myservo;  // create servo object to control a servo
+
+int potpin = A0;  // analog pin used to connect the potentiometer
+
+void setup() {
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+}
+
+void loop() {
+  int val = analogRead(potpin); // reads the value of the potentiometer (value between 0 and 1023)
+  val = map(val, 0, 1023, 0, 180); // scale it for use with the servo (value between 0 and 180)
+  myservo.write(val);   // sets the servo position according to the scaled value
+  delay(15);            // waits for the servo to get there
+}
+````
+
+````
+// Use a potentiometer to control the position of a servo motor
+// and the pitch of a tone
+
+#include <Servo.h>
+Servo myservo;
+
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+  myservo.attach(7);
+}
+
+void loop() {
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A2);
+  // print out the value you read:
+  Serial.println(sensorValue);
+
+  // servo motor stuff
+  int servoPosition = map(sensorValue, 0, 1023, 0, 180);
+  myservo.write(servoPosition);
+
+  // piezo buzzer stuff
+  int pitch = map(sensorValue, 0, 1023, 200, 4000);
+  tone(8, pitch);
+
+  delay(1);        // delay in between reads for stability
+}
+````
 
 
 soldering
