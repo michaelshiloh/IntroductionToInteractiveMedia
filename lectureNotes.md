@@ -2397,6 +2397,26 @@ the best picture you can take of your breadboard circuit to Github
 
 What techniques have you learned to help you find problems?
 
+#### In-class exercises
+
+
+1. Build a circuit with a switch (pushbutton) and a servo motor, and when you
+	 press the switch go to one position, when you don't press the switch go to
+	 another
+
+2. Add a piezo buzzer so that when the switch is pressed it plays a tone for
+	 half a second, then a tone for another half a second as long as the switch
+	 is pressed
+
+3. Modify the code so that it plays the two tones only once when the switch is
+	 pressed
+
+4. Add an LED and make the LED change brightness according to which tone is
+	 playing
+
+5. Add a potentiometer which controls how fast the servo motor moves from one
+	 position to the next
+
 #### Examples
 
 	Some examples using the piezo speaker, servo motor, and a potentiometer:
