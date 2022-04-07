@@ -2263,6 +2263,11 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 - The `tone()` function is *non-blocking*
 - Arduino supports tabs just like in p5.js
 - Arduino has arrays just like in p5.js
+- What is resistor for? 
+	- LED needs a resistor to limit current so it doesn't burn out
+	- LDR needs a resistor to form a voltage divider
+	- Piezo buzzer neither burns out nor needs a voltage divider
+	- So why a resistor?
 
 #### Servo motor
 
@@ -2394,128 +2399,128 @@ What techniques have you learned to help you find problems?
 
 #### Examples
 
-Some examples using the piezo speaker, servo motor, and a potentiometer:
+	Some examples using the piezo speaker, servo motor, and a potentiometer:
 
-````
-// Moving the servo motor first to one position and then to another,
-// and then stopping:
+	````
+	// Moving the servo motor first to one position and then to another,
+	// and then stopping:
 
-const int servoPin = 7;
+	const int servoPin = 7;
 
-#include <Servo.h>
-Servo myservo;
+	#include <Servo.h>
+	Servo myservo;
 
-void setup() {
-  myservo.attach(servoPin);
-  myservo.write(10);
-  delay(1000);
-  myservo.write(130);
-}
+	void setup() {
+		myservo.attach(servoPin);
+		myservo.write(10);
+		delay(1000);
+		myservo.write(130);
+	}
 
-void loop() { 
-}
-````
+	void loop() { 
+	}
+	````
 
-````
-// Moving the servo motor first to one position and then to another,
-// continuously:
+	````
+	// Moving the servo motor first to one position and then to another,
+	// continuously:
 
-const int servoPin = 7;
+	const int servoPin = 7;
 
-#include <Servo.h>
-Servo myservo;
+	#include <Servo.h>
+	Servo myservo;
 
-void setup() {
-  myservo.attach(servoPin);
-}
+	void setup() {
+		myservo.attach(servoPin);
+	}
 
-void loop() {
-  myservo.write(10);
-  delay(1000);
-  myservo.write(130);
-  delay(1000);
-}
-````
+	void loop() {
+		myservo.write(10);
+		delay(1000);
+		myservo.write(130);
+		delay(1000);
+	}
+	````
 
-````
-// Minimal example of the tone() function
-// Make a tone, never stop
+	````
+	// Minimal example of the tone() function
+	// Make a tone, never stop
 
-const int spkrPin = 7;
+	const int spkrPin = 7;
 
-void setup() {
-  tone(spkrPin, 440); // starts a tone on pin 7 at frequency 440
-}
+	void setup() {
+		tone(spkrPin, 440); // starts a tone on pin 7 at frequency 440
+	}
 
-void loop() {
- // Arduino always needs a loop, even if it's empty
-}
-````
+	void loop() {
+	 // Arduino always needs a loop, even if it's empty
+	}
+	````
 
-Is the `tone()` function blocking? 
+	Is the `tone()` function blocking? 
 
-````
-// If tone() is a blocking function, the LED will be off while the tone sounds
-// If the LED comes on as soon as the tone starts, tone() is non-blocking
-const int spkrPin = 7;
+	````
+	// If tone() is a blocking function, the LED will be off while the tone sounds
+	// If the LED comes on as soon as the tone starts, tone() is non-blocking
+	const int spkrPin = 7;
 
-void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+	void setup() {
+		pinMode(LED_BUILTIN, OUTPUT);
 
-  digitalWrite(LED_BUILTIN, LOW);
-  tone(spkrPin, 440, 1500); // starts a tone and then automatically stops it after 1500 milliseconds
-  digitalWrite(LED_BUILTIN, HIGH);
-}
+		digitalWrite(LED_BUILTIN, LOW);
+		tone(spkrPin, 440, 1500); // starts a tone and then automatically stops it after 1500 milliseconds
+		digitalWrite(LED_BUILTIN, HIGH);
+	}
 
-void loop() {
-}
-````
+	void loop() {
+	}
+	````
 
-````
-// Using a potentiometer to control the position of a servo motor
+	````
+	// Using a potentiometer to control the position of a servo motor
 
-#include <Servo.h>
+	#include <Servo.h>
 
-Servo myservo;  // create servo object to control a servo
+	Servo myservo;  // create servo object to control a servo
 
-int potpin = A0;  // analog pin used to connect the potentiometer
+	int potpin = A0;  // analog pin used to connect the potentiometer
 
-void setup() {
-  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
-}
+	void setup() {
+		myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+	}
 
-void loop() {
-  int val = analogRead(potpin); // reads the value of the potentiometer (value between 0 and 1023)
-  val = map(val, 0, 1023, 0, 180); // scale it for use with the servo (value between 0 and 180)
-  myservo.write(val);   // sets the servo position according to the scaled value
-  delay(15);            // waits for the servo to get there
-}
-````
+	void loop() {
+		int val = analogRead(potpin); // reads the value of the potentiometer (value between 0 and 1023)
+		val = map(val, 0, 1023, 0, 180); // scale it for use with the servo (value between 0 and 180)
+		myservo.write(val);   // sets the servo position according to the scaled value
+		delay(15);            // waits for the servo to get there
+	}
+	````
 
-````
-// Use a potentiometer to control the position of a servo motor
-// and the pitch of a tone
+	````
+	// Use a potentiometer to control the position of a servo motor
+	// and the pitch of a tone
 
-#include <Servo.h>
-Servo myservo;
+	#include <Servo.h>
+	Servo myservo;
 
-void setup() {
-  // initialize serial communication at 9600 bits per second:
-  Serial.begin(9600);
-  myservo.attach(7);
-}
+	void setup() {
+		// initialize serial communication at 9600 bits per second:
+		Serial.begin(9600);
+		myservo.attach(7);
+	}
 
-void loop() {
-  // read the input on analog pin 0:
-  int sensorValue = analogRead(A2);
-  // print out the value you read:
-  Serial.println(sensorValue);
+	void loop() {
+		// read the input on analog pin 0:
+		int sensorValue = analogRead(A2);
+		// print out the value you read:
+		Serial.println(sensorValue);
 
-  // servo motor stuff
-  int servoPosition = map(sensorValue, 0, 1023, 0, 180);
-  myservo.write(servoPosition);
+		// servo motor stuff
+		int servoPosition = map(sensorValue, 0, 1023, 0, 180);
+		myservo.write(servoPosition);
 
-  // piezo buzzer stuff
+		// piezo buzzer stuff
   int pitch = map(sensorValue, 0, 1023, 200, 4000);
   tone(8, pitch);
 
