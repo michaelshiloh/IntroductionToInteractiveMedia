@@ -348,7 +348,6 @@ Make a game using everything you have learned so far
 
 ### Week 8 (March 29, 31) Arduino Digital Input, Analog Input and Output
 
-##### todays-assignment
 #### Production Assignment Due Tuesday April 5
 
 Get information from at least one analog sensor and at least one digital
@@ -397,6 +396,7 @@ This reading is not for discussion:
 	about the theory too much or the section on level shifting. The important
 	thing is to absorb a little of the concept of a voltage divider.
 
+##### todays-assignment
 ### Week 9 (April 5, 7): Sound, Servo Motor, Mapping
 
 #### Production Assignment Due Tuesday April 12
@@ -410,10 +410,10 @@ sensor and one analog sensor.
 	assistant where these are)
 - Group assignments:
 	- Ryan and Noora
-	- Mishel and Kevin
+	- Mishel and Abdullah
+	- Dhabia and Kevin 
 	- Liam and Shaikha
 	- Faizan and Aisha
-	- Dhabia and Abdullah
 	- Avinash and Ayesha
 	- Basil, Pranav, and Daniel 
 
