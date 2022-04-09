@@ -420,7 +420,10 @@ sensor and one analog sensor.
 - Document your project
 in README.md in a new folder april5. Include:
 	- Description
-	- Your development process
+	- Overview of your development process
+	- Description of anything that stood out to you, accompanied by code segment
+		or schematic or drawing as appropriate. Code should always be properly
+		formatted text and never an image.
 	- Picture(s) 
 	- Video (embed your video in your README.md. An example is in Ayesha's
 		[documentation](https://github.com/ayeshaahmed13/IntroToIM/tree/main/midtermProject/README.md)
@@ -429,6 +432,8 @@ in README.md in a new folder april5. Include:
 	- Problem(s), if any
 	- Discoverie(s), if any
 	- Schematic, which may be hand drawn or computer created
+	- References to any tutorials,examples, inspiration, books, etc. that you
+		used
 - Upload your Arduino code into the same folder with the proper extension
 	(.ino)
 
@@ -546,6 +551,7 @@ Final project documentation requirements:
 	- Major problem(s), if any
 	- Discoverie(s), if any
 	- Schematic, which may be hand drawn or computer created
+	- References to any tutorials,examples, inspiration, books, etc. that you used
 - Upload your Arduino code into the same folder with the proper
 	extension (.ino)
 - Provide a link to your p5.js sketch on p5js.org
