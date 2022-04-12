@@ -2542,6 +2542,7 @@ are
 - Time permitting
 	
 #### Announcement
+- Thursday April 14 class in-person
 - Thursday April 14 4pm soldering?
 
 #### Discussion (Avinash and Basil)
