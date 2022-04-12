@@ -2220,19 +2220,6 @@ Tom Igoe's blog post on Physical Computing and Interactive Art
 - Creative projects using simple digital and analog inputs and outputs
 
 ### April 7
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 - Sound
 - Servo motor
@@ -2240,7 +2227,6 @@ Tom Igoe's blog post on Physical Computing and Interactive Art
 - Data Types
 - Schematic conventions
 - Circuit theory
-- Debugging
 - Examples
 
 #### Sound
@@ -2384,18 +2370,6 @@ are
 - Voltage **does** change when you go across a component
 	- That is why it is **important** to make connections to the correct side of a
 		component!
-	
-#### Debugging
-
-If you want my help solving a problem in your assignment, do the following:
-1. Figure out the simplest circuit and program that demonstrates your problem
-1. Upload your schematic, code, and 
-the best picture you can take of your breadboard circuit to Github 
-1. Write a message on Discord, describing carefully
-	1. What you think should happen
-	1. What you observe happens
-
-What techniques have you learned to help you find problems?
 
 #### In-class exercises
 
@@ -2547,7 +2521,90 @@ What techniques have you learned to help you find problems?
   delay(1);        // delay in between reads for stability
 }
 ````
+### April 14
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+- Announcement
+- Discussion
+- Look at homework (musical instruments)
+- Time permitting
+	
+#### Announcement
+- Thursday April 14 4pm soldering?
+
+#### Discussion (Avinash and Basil)
+- What did the writer mean by Vision?
+- Do you agree with the writer when he says future tech neglects the
+	importance of hands?
+- What are your views on if future technology should actually make use of
+	hands, for the feel of it, for the sense of touch?
+- What are some examples of how fingers manipulate things?
+- Do you agree with the writer about how we will actually be going back and
+	not modernizing or not?
+- What do you think is a good way of designing the interaction for the future
+	rather than extrapolating yesterday's technology?
+- Is intuitive interface deeply rooted with our physiology of doing things or
+	does it evolve with practice?
+- Does experiential perspective helps in creating visionary designs or does it
+	fades your vision?
+
+#### Time permitting
+
+##### Debugging
+
+If you want my help solving a problem in your assignment, do the following:
+1. Figure out the simplest circuit and program that demonstrates your problem
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Discord, describing carefully
+	1. What you think should happen
+	1. What you observe happens
+
+What techniques have you learned to help you find problems?
+
+##### Homework feedback
+
+- The first thing in your README.md should be a description!
+
+Correct these schematics
+- Aisha
+- Avinash
+- Basil
+- Dhabia
+- Ryan
+- Pranav
+
+Good ones
+- Liam
+- Kevin
+- Shaikha
 
 
-soldering
-in-person help
+#### Serial Communication
+
+On MacOS or Windows
+
+1. Download  [P5 Serial App](https://github.com/p5-serial/p5.serialcontrol/releases)
+1. Unzip
+1. Invoke the program 
+
+
+On linux
+
+1. Install and invoke a serial server
+	1. sudo npm install -g p5.serialserver --unsafe-perm --build-from-source
+	1. p5serial
+1. https://editor.p5js.org/aaronsherwood/sketches/v8OM9VbGe
+
