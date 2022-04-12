@@ -2543,7 +2543,8 @@ void loop() {
 - Time permitting
 	
 #### Announcement
-- Thursday April 14 class in-person
+- Thursday April 14 we will meet in-person in the IM lab, C3-029. Please allow
+	extra time to find the lab if it's your first time
 - Thursday April 14 4pm soldering?
 
 #### Discussion (Avinash and Basil)
