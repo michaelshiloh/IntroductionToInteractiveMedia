@@ -2603,6 +2603,7 @@ Good ones
 MacOS or Windows
 - Follow Jack's excellent tutorial
 [here](https://docs.google.com/document/d/1l7pgSkb9SqoOFyo6xVZTlW-ORQJ_iHNUrOBGdARW4j4/edit)
+	- When you download `p5.serialcontrol`, download Beta 1.1
 
 On linux
 1. Install a serial server 

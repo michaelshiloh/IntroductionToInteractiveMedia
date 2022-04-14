@@ -472,7 +472,7 @@ In a new folder called `finalProject`, in a file called `journal.md`, Write a
 preliminary concept for your final project, which must incorporate both
 Arduino and P5.  
 - Create a physically interactive system of your choice that relies on a
-	multimedia computer for some sort of processing or data analysis.
+	computer for some sort of processing or data analysis.
 	Your focus should be on careful and timely
 	sensing of the relevant actions of the person or people that you’re
 	designing this for, and on clear, prompt, and effective responses. Any
@@ -480,6 +480,8 @@ Arduino and P5.
 	speaking from both parties. Whether it involves one cycle or many, the
 	exchange should be engaging.
 - You may work alone or in groups
+	- Groups may consist of up to 3 people but for 3 people you'll have to meet
+		me to convince me that your project really needs three people.
 - Examples are in the syllabus and in our first lesson plan
 
 #### Reading Assignment Due Tuesday April 19
@@ -487,7 +489,7 @@ Arduino and P5.
 [Design Meets
 Disability](https://intro.nyuadim.com/wp-content/uploads/2020/08/Design_meets_disability.pdf) (Abdullah and Aisha to lead)
 
-#### Production Assignment Due Thursday April 21
+#### Production Assignment Due Saturday April 22
 
 Finalize your final project proposal. Document in your `journal.md`:
 - Finalized concept for the project
