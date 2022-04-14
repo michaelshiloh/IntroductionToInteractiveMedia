@@ -2605,10 +2605,26 @@ MacOS or Windows
 [here](https://docs.google.com/document/d/1l7pgSkb9SqoOFyo6xVZTlW-ORQJ_iHNUrOBGdARW4j4/edit)
 
 On linux
-1. Install and invoke a serial server
+1. Install a serial server 
 	1. sudo npm install -g p5.serialserver --unsafe-perm --build-from-source
+1. Invoke it
 	1. p5serial
-1. https://editor.p5js.org/aaronsherwood/sketches/v8OM9VbGe
 
-[Here](https://editor.p5js.org/michaelshiloh/sketches/h2RQaOmYP) 
-is a minimal example to help you understand the underlying principle
+Examples
+- A minimal [example](https://editor.p5js.org/michaelshiloh/sketches/h2RQaOmYP) 
+	- Clicking the mouse turns on an LED
+	- Closing a switch on Arduino sends a signal to p5.js
+- Aaron's [example](https://editor.p5js.org/aaronsherwood/sketches/v8OM9VbGe)
+	- Two sensors on Arduino control the position of a circle on p5.js
+	- Clicking the mouse on different parts of the canvas controls two LEDs
+		on Arduino
+
+In-class exercise (break class into groups of 2-3 students)
+
+- make something that uses only one sensor  on arduino and makes the ellipse
+	in p5 move on the horizontal axis, in the middle of the screen, and nothing
+	on arduino is controlled by p5 
+- make something that controls the LED brightness from p5 
+- take the [gravity wind example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make it so
+	every time the ball bounces one led lights up and then turns off, and you
+	can control the wind from one analog sensor 
