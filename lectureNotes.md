@@ -2522,20 +2522,7 @@ void loop() {
 }
 ````
 
-### April 14
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
+### April 12
 #### Plan for today: 
 - Announcement
 - Discussion
@@ -2594,20 +2581,34 @@ Good ones
 - Kevin
 - Shaikha
 
+### April 14
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+- Serial Communication
 
 #### Serial Communication
 
-On MacOS or Windows
-
-1. Download  [P5 Serial App](https://github.com/p5-serial/p5.serialcontrol/releases)
-1. Unzip
-1. Invoke the program 
-
+MacOS or Windows
+- Follow Jack's excellent tutorial
+[here](https://docs.google.com/document/d/1l7pgSkb9SqoOFyo6xVZTlW-ORQJ_iHNUrOBGdARW4j4/edit)
 
 On linux
-
 1. Install and invoke a serial server
 	1. sudo npm install -g p5.serialserver --unsafe-perm --build-from-source
 	1. p5serial
 1. https://editor.p5js.org/aaronsherwood/sketches/v8OM9VbGe
 
+[Here](https://editor.p5js.org/michaelshiloh/sketches/h2RQaOmYP) 
+is a minimal example to help you understand the underlying principle
