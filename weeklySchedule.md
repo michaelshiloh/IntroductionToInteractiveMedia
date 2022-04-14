@@ -396,7 +396,6 @@ This reading is not for discussion:
 	about the theory too much or the section on level shifting. The important
 	thing is to absorb a little of the concept of a voltage divider.
 
-##### todays-assignment
 ### Week 9 (April 5, 7): Sound, Servo Motor, Mapping
 
 #### Production Assignment Due Tuesday April 12
@@ -452,6 +451,7 @@ none of these help.
 
 ### Week 10 (April 12, 14) Serial Communication, Introduce Final Project
 
+##### todays-assignment
 #### Production Assignment Due Tuesday April 19
 
 Work in the groups from class to finish the three in-class examples exercises: 
