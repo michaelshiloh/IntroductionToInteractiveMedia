@@ -2582,19 +2582,6 @@ Good ones
 - Shaikha
 
 ### April 14
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 - Serial Communication
 
@@ -2629,3 +2616,36 @@ In-class exercise (break class into groups of 2-3 students)
 - take the [gravity wind example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make it so
 	every time the ball bounces one led lights up and then turns off, and you
 	can control the wind from one analog sensor 
+
+### April 19
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+- Discussion
+- Problems with homework
+- Look at final proposals
+
+Discussion of *Design Meets Disability* (Aisha and Abdullah)
+
+1. Considering only modern day technology like your phones, can you identify
+	 any "features" that are implemented to help people with certain
+	 disabilities
+1. Why did glasses become a matter of fashion and prostatic limbs are still
+	 conservative in design, when both of them are disability aids?
+1. How can we make sure that this narrative navigates towards more inclusive
+	 and keep the 'design in design' for disabilities?
+1. How can the language we use to address disability-wear affect our approach
+	 towards such designs? E.g. eyewear vs hearing aids?
+1. In the case of glasses, the author mentions “what others see is more
+	 important than what you see yourself” - do you guys agree?
