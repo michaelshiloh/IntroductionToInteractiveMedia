@@ -2656,7 +2656,7 @@ Discussion of *Design Meets Disability* (Aisha and Abdullah)
 #### Plan for today: 
 - Motors
 - Soldering
-- Construction techniques
+- Fabrication and Construction Techniques
 - Time permitting
 
 #### Motors
@@ -2829,6 +2829,11 @@ void loop() {
 }
 ````
 
+#### Fabrication and Construction Techniques
+
+- Panel mount vs. PCB mount
+- Stranded vs. solid core wire
+- Strain relief
 
 #### Time permitting
 
