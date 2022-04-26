@@ -2822,7 +2822,7 @@ void loop() {
 - Stranded vs. solid core wire
 - Strain relief
 
-### April 27
+### April 26
 #### Plan for today: 
 - Shall we meet in person on Thursday?
 - Does anyone need anything from me? (radios e.g.)
@@ -2863,7 +2863,7 @@ Play a melody and blink an LED
 without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
-### April 29
+### April 28
 ##### todays-lecture
 #### Administration
 
@@ -2879,4 +2879,4 @@ without using `delay()`:
 
 #### Plan for today: 
 
-WE WILL MEET IN PERSON! C3-029
+**We will meet in person on Thursday April 28 in the IM lab, C3-029**
