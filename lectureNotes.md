@@ -2640,19 +2640,6 @@ Discussion of *Design Meets Disability* (Aisha and Abdullah)
 	 important than what you see yourself” - do you guys agree?
 	
 ### April 21
-##### todays-lecture
-#### Administration
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 - Motors
 - Soldering
@@ -2835,7 +2822,31 @@ void loop() {
 - Stranded vs. solid core wire
 - Strain relief
 
-#### Time permitting
+### April 27
+##### todays-lecture
+#### Administration
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+- Attention
+	- Unless you have permission, cameras must be on or you are marked absent
+	- Notifications off
+	- Pay attention to whomever is talking
+	- Failure to do this will be marked as an unexcused absence
+
+#### Plan for today: 
+- Shall we meet in person on Thursday?
+- Does anyone need anything from me? (radios e.g.)
+- Any other problems?
+- New improved serial communication
+- Blink without `delay()`
+
+##### New improved serial communication
+
+Use [this](https://editor.p5js.org/aaronsherwood/sketches/q2Pl77SWl)
+Note that the Arduino code is at the bottom of sketch.js
 
 ##### Blink Without `delay()`
 
