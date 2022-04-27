@@ -2867,6 +2867,8 @@ without using `delay()`:
 ##### todays-lecture
 #### Administration
 
+**We will meet in person on Thursday April 28 in the IM lab, C3-029**
+
 - **Record Zoom!**
 - Please say something if I forget the end of class
 	- 10:25-11:40 Tuesday  
@@ -2878,5 +2880,23 @@ without using `delay()`:
 	- Failure to do this will be marked as an unexcused absence
 
 #### Plan for today: 
+- **We will meet in person on Thursday April 28 in the IM lab, C3-029**
+- [Soldering
+	resources](https://github.com/michaelshiloh/resourcesForClasses#soldering)
+- How to use a Digital Multimeter (DMM) 
+- Work on projects
 
-**We will meet in person on Thursday April 28 in the IM lab, C3-029**
+#### How to use a Digital Multimeter (DMM) 
+
+- The three most useful measurements
+	- Continuity
+		- Checking connections
+		- Checking switches
+	- Voltage
+		- Checking sensor circuits
+		- Checking Arduino digital outputs
+	- Resistance
+		- Checking resistive sensors
+		- Checking motorso
+- How to connect to Arduino pins or the solderless breadboard
+
