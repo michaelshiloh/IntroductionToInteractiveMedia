@@ -2917,3 +2917,15 @@ without using `delay()`:
 		the other controls the text transparency
 	- p5 sends two values back to Arduino indicating if the mouse was clicked,
 		and if so, which half of the screen it was in.
+
+- Once it's working, duplicate the code and then start adapting it to your
+	needs:
+	- Duplicate Aaron's project so that you get the other files as well
+	- Increase or decrease the amount of data that is exchanged. You may need
+		more, or you may need less. 
+	- Modify the data that is exchanged. You may need a digital sensor on the
+		Arduino instead of an analog sensor. Similarly, on the p5 side, you may
+		need something different from a mouse click or changing the text color and
+		transparency.
+	- Once you are reliable sending information back and forth you can start
+		adding the rest of your program
