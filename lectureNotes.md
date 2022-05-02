@@ -2864,21 +2864,6 @@ without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
 ### April 28
-##### todays-lecture
-#### Administration
-
-**We will meet in person on Thursday April 28 in the IM lab, C3-029**
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-- Attention
-	- Unless you have permission, cameras must be on or you are marked absent
-	- Notifications off
-	- Pay attention to whomever is talking
-	- Failure to do this will be marked as an unexcused absence
-
 #### Plan for today: 
 - **We will meet in person on Thursday April 28 in the IM lab, C3-029**
 - [Soldering
@@ -2900,3 +2885,35 @@ without using `delay()`:
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
 
+### May 6
+##### todays-lecture
+#### Administration
+
+**Remember that we meet on Friday May 6 at 9:20am**
+**We will meet in person in the IM lab, C3-029**
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+
+#### Plan for today: 
+- Better communication example
+- Project help
+
+
+#### Better communication example
+-	[This code](https://editor.p5js.org/aaronsherwood/sketches/q2Pl77SWl)
+	does not require an external program. It's all contained in the p5 sketch.
+- Before you incorporate this in your project, first test this as it is and
+	make sure you understand it
+- Briefly, what this code does:
+	- Arduino waits for a message from p5.  
+	- Arduino expects two values separated by a comma. It uses these two values
+		to control two LEDs.  
+	- Arduino then reads two sensors and sends the values back to p5, separated
+		by a comma.
+	- p5 reads these two values from Arduino. One value controls the text color,
+		the other controls the text transparency
+	- p5 sends two values back to Arduino indicating if the mouse was clicked,
+		and if so, which half of the screen it was in.
