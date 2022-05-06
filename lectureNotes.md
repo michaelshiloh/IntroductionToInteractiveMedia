@@ -2898,6 +2898,7 @@ without using `delay()`:
 	- 10:25-1:05 Thursday     
 
 #### Plan for today: 
+- Course Evaluation
 - Better communication example
 - Project help
 
