@@ -451,7 +451,6 @@ none of these help.
 
 ### Week 10 (April 12, 14) Serial Communication, Introduce Final Project
 
-##### todays-assignment
 #### Production Assignment Due Tuesday April 19
 
 Work in the groups from class to finish the three in-class examples exercises: 
@@ -531,9 +530,14 @@ Conduct user testing
 ### Week 13 
 - (Friday May 6 legislative day: Classes meet on a Tuesday schedule)
 
-### Week 14 (May 10, 12)
+##### todays-assignment
+#### Production Assignment Due Tuesday May 10
 
-Final Project and final project documentation due at the beginning of class on Thursday, May 12
+- If you have not done so, complete the course evaluation
+
+#### Production Assignment Due Thursday May 12
+Final Project and final project documentation 
+due at the beginning of class on Thursday, May 12.
 
 Final project documentation requirements:
 - Your `journal.md` must be a record of your progress as described above
@@ -558,3 +562,9 @@ Final project documentation requirements:
 	extension (.ino)
 - Provide a link to your p5.js sketch on p5js.org
 - Upload any image, video, or audio files that are needed by your program
+
+
+### Week 14 (May 10, 12)
+
+Final Project and final project documentation 
+due at the beginning of class on Thursday, May 12
