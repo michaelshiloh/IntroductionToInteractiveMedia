@@ -2886,17 +2886,6 @@ without using `delay()`:
 - How to connect to Arduino pins or the solderless breadboard
 
 ### May 6
-##### todays-lecture
-#### Administration
-
-**Remember that we meet on Friday May 6 at 9:20am**
-**We will meet in person in the IM lab, C3-029**
-
-- **Record Zoom!**
-- Please say something if I forget the end of class
-	- 10:25-11:40 Tuesday  
-	- 10:25-1:05 Thursday     
-
 #### Plan for today: 
 - Course Evaluation
 - Better communication example
@@ -2930,3 +2919,18 @@ without using `delay()`:
 		transparency.
 	- Once you are reliable sending information back and forth you can start
 		adding the rest of your program
+
+### May 10
+##### todays-lecture
+#### Administration
+
+**We will meet in person in the IM lab, C3-029**
+
+- **Record Zoom!**
+- Please say something if I forget the end of class
+	- 10:25-11:40 Tuesday  
+	- 10:25-1:05 Thursday     
+
+#### Plan for today: 
+- Course Evaluation
+- Final adjustments to projects
