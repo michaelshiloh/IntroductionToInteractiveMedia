@@ -2933,4 +2933,14 @@ without using `delay()`:
 
 #### Plan for today: 
 - Course Evaluation
+- Announcements
 - Final adjustments to projects
+
+#### Announcements
+
+Clean up after yourselves in the lab!  Students have started leaving trash on
+the tables as well as their personal belongings over a long period of time
+unattended. 
+
+If the mess continues swipe access to the lab will be disabled at 9pm as a
+courtesy to the lab staff. 
