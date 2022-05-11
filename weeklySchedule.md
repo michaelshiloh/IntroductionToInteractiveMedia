@@ -569,7 +569,7 @@ Final Project and final project documentation
 due at the beginning of class on Thursday, May 12
 
 ##### todays-assignment
-###May 12 10:25am
+### May 12 10:25am
 Set up your projects on the tables in the classroom area or the lab area of
 the IM lab, C3-029. 
 - Your project should be set up before class starts, ready
