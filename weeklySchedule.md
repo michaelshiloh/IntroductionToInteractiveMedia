@@ -530,7 +530,6 @@ Conduct user testing
 ### Week 13 
 - (Friday May 6 legislative day: Classes meet on a Tuesday schedule)
 
-##### todays-assignment
 #### Production Assignment Due Tuesday May 10
 
 - If you have not done so, complete the course evaluation
@@ -569,6 +568,7 @@ Final project documentation requirements:
 Final Project and final project documentation 
 due at the beginning of class on Thursday, May 12
 
+##### todays-assignment
 ###May 12 10:25am
 Set up your projects on the tables in the classroom area or the lab area of
 the IM lab, C3-029. 
