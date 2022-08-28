@@ -17,7 +17,7 @@ Meeting times:
 	2:10-3:25 Thursday     
 Session: Fall 2022       
 Class location: online
-[Discord](https://discord.com/channels/714727038078025851/716332110268465172)   
+[Discord](https://discord.gg/mFJ5fqKk)
 
 **This is subject to change**
 

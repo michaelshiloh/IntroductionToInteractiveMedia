@@ -15,7 +15,7 @@ Meeting times:
 	12:45-3:25 Tuesday  
 	2:10-3:25 Thursday     
 Session: Fall 2022       
-[Discord](https://discord.com/channels/714727038078025851/716332110268465172)   
+[Discord](https://discord.gg/mFJ5fqKk)
 
 Welcome to Introduction to Interactive Media! 
 - Lecture notes can be found [here](lectureNotes.md)
