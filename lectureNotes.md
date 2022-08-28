@@ -26,6 +26,8 @@ Class location: online
 #### Administration
 
 - **Record Zoom!**
+- Reminder that masks are required at all times indoors except when actively
+  eating
 
 #### Introduction to class
 * Join Discord
