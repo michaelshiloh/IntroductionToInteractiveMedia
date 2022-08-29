@@ -13,7 +13,7 @@ Meeting times:
 	12:45-3:25 Tuesday  
 	2:10-3:25 Thursday     
 Session: Fall 2022       
-Class location: online
+Class location: C3-029 (IM Lab)  
 [Discord](https://discord.gg/mFJ5fqKk)  
 [Zoom](https://nyu.zoom.us/j/97909657731)
 
