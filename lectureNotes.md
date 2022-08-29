@@ -1,6 +1,3 @@
-
-- Class [Zoom](https://nyu.zoom.us/j/98127583237)
-
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
 ## Course title: Introduction to interactive Media  
@@ -17,7 +14,8 @@ Meeting times:
 	2:10-3:25 Thursday     
 Session: Fall 2022       
 Class location: online
-[Discord](https://discord.gg/mFJ5fqKk)
+[Discord](https://discord.gg/mFJ5fqKk)  
+[Zoom](https://nyu.zoom.us/j/97909657731)
 
 **This is subject to change**
 
