@@ -35,7 +35,7 @@ Class location: C3-029 (IM Lab)
 * What is IM?
 	- Discussion
 	- Read *What I hope for you* from
-		[Red Burns’ (founder of NYU's ITP) Opening Remarks to New Students](https://www.wired.com/2013/09/focus-on-people-not-tech-and-other-impt-lessons-for-interaction-design-and-life/)
+		Red Burns’ (founder of NYU's ITP) [Opening Remarks to New Students](https://www.wired.com/2013/09/focus-on-people-not-tech-and-other-impt-lessons-for-interaction-design-and-life/)
 * Homework, projects, and grading
 	- Most of you come into this class with different 
 		backgrounds, skills, and knowledge, so 
