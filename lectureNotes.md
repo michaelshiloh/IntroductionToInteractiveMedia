@@ -145,6 +145,7 @@ is the mouse location helper program I showed you at the end of class.
 #### Administration
 - **Record Zoom!**
 - Create an account on p5js.org
+- [Syllabus](https://intro.nyuadim.com/syllabus/)
 - Change your password on the Wordpress site
 	- Tag all of your posts with "Fall 2022 – Shiloh"
 
