@@ -20,10 +20,6 @@ Class location: C3-029 (IM Lab)
 **This is subject to change**
 
 ### Tuesday August 30, 2022
-
-#### Administration
-
-- **Record Zoom!**
 - Reminder that masks are required at all times indoors except when actively
   eating
 
@@ -144,18 +140,20 @@ Controlling color, fill, and stroke
 [Here](https://editor.p5js.org/michaelshiloh/sketches/HYnL3E91x)
 is the mouse location helper program I showed you at the end of class.
 
-### Thursday August 30, 2022
+### Thursday September 1, 2022
 
-````
-**Notes**
+#### Administration
+- **Record Zoom!**
+- Create an account on p5js.org
+- Change your password on the Wordpress site
+	- Tag all of your posts with "Fall 2022 – Shiloh"
+
+##### More about programming
+
 - Built-in variables
 	- `mouseX`, `mouseY`
 	- `width`, `height`
 	- many others; we will discover more as we go along
-
-**Notice that when working in the web editor your sketches are not
-saved!**
-- You must create an account on p5.js 
 
 ##### Variables
 
