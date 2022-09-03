@@ -21,6 +21,8 @@ My example sketches are[here](https://editor.p5js.org/michaelshiloh/sketches)
 
 **This is subject to change**
 
+This document: Lecture notes
+
 ### Tuesday August 30, 2022
 - Reminder that masks are required at all times indoors except when actively
   eating
