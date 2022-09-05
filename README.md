@@ -16,6 +16,7 @@ Session: Fall 2022
 Class location: C3-029 (IM Lab)  
 [Discord](https://discord.gg/mFJ5fqKk)   
 [Zoom](https://nyu.zoom.us/j/97909657731)  
+[Weekly Schedule](https://intro.nyuadim.com/Weekly%20Schedule)  
 [Syllabus](https://intro.nyuadim.com/syllabus/)  
 My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 
