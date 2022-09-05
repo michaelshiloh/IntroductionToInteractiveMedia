@@ -16,8 +16,8 @@ Session: Fall 2022
 Class location: C3-029 (IM Lab)  
 [Discord](https://discord.gg/mFJ5fqKk)   
 [Zoom](https://nyu.zoom.us/j/97909657731)  
-[Syllabus](https://intro.nyuadim.com/syllabus/)
-My example sketches are[here](https://editor.p5js.org/michaelshiloh/sketches)
+[Syllabus](https://intro.nyuadim.com/syllabus/)  
+My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 
 Welcome to Introduction to Interactive Media! 
 - Lecture notes can be found [here](lectureNotes.md)
