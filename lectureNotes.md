@@ -270,7 +270,7 @@ function draw() {
   print (count);
 }
 ````
-### Thursday September 1, 2022
+### Tuesday September 6, 2022
 
 #### Administration
 - **Record Zoom!**
