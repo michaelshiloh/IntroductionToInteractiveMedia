@@ -151,13 +151,6 @@ is the mouse location helper program I showed you at the end of class.
 
 ### Thursday September 1, 2022
 
-#### Administration
-- **Record Zoom!**
-- Create an account on p5js.org
-- [Syllabus](https://intro.nyuadim.com/syllabus/)
-- Change your password on the Wordpress site
-	- Tag all of your posts with "Fall 2022 – Shiloh"
-
 ##### More about programming
 
 - Built-in variables
@@ -277,6 +270,13 @@ function draw() {
   print (count);
 }
 ````
+### Thursday September 1, 2022
+
+#### Administration
+- **Record Zoom!**
+- Assign reading partners and dates
+
+##### Any questions? Review last week if necessary
 
 ##### What is `frameRate()`?
 
