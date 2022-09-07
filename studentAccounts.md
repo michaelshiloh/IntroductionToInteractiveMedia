@@ -7,6 +7,8 @@ Section: 1
 Credit Hours: 4         
 Prerequisites: None       
 
+Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)
+
 Course website: [https://github.com/michaelshiloh/introductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
@@ -26,8 +28,19 @@ My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 This document: Student Accounts
 
 P5js.org accounts
-- [Mohamed Alhosani](https://editor.p5js.org/Mohamed_Khalifa/sketches)
+- [Hamad Al Shamsi]()
+- [Hessa AlAbbas]()
 - [Nouf Abduljalil Abbasi](https://editor.p5js.org/Nouf-Alabbasi/sketches)
+- [Mohamed Alhosani](https://editor.p5js.org/Mohamed_Khalifa/sketches)
+- [Aisha Alketbi]()
+- [Ahmed Bilal]()
+- [Ahmad Fraij]()
+- [Clara Juong]()
 - [Maryam Khalili](https://editor.p5js.org/maryami/sketches)
+- [Zhaniya Korpebayeva]()
+- [Seo Yoon Lee (Ian)]()
 - [Abigail Mata-Hernandez](https://editor.p5js.org/abigailmh/sketches)
+- [Vivianna Mo]()
+- [Aaryan Sharma]()
+- [Marija Tomevska]()
 - [Joonha Yu](https://editor.p5js.org/ob2sd/sketches)

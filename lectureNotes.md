@@ -6,6 +6,8 @@ Section: 1
 Credit Hours: 4         
 Prerequisites: None       
 
+Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)
+
 Course website: [https://github.com/michaelshiloh/introductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
@@ -272,10 +274,6 @@ function draw() {
 ````
 ### Tuesday September 6, 2022
 
-#### Administration
-- **Record Zoom!**
-- Assign reading partners and dates
-
 ##### Any questions? Review last week if necessary
 
 ##### What is `frameRate()`?
@@ -321,6 +319,11 @@ In class exercise:
 - Now use a mouse press to clear the screen
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
+
+#todays-lecture
+### Thursday September 8, 2022
+#### Administration
+- **Record Zoom!**
 
 ##### Loops
 `while()` is like `if()` but it keeps on doing it as long as condition is true
@@ -407,9 +410,6 @@ Why create your own functions?
 	the problem is already a function.
 - Modularity
 - Flexibility (with good choice of parameters)
-
-Let's modify the example from last class to use a function. First let's draw a
-house instead of a circle to make it a little more interesting:
 
 ````
 function setup() {
