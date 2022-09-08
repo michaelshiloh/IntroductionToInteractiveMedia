@@ -40,7 +40,7 @@ P5js.org accounts
 - [Zhaniya Korpebayeva]()
 - [Seo Yoon Lee (Ian)]()
 - [Abigail Mata-Hernandez](https://editor.p5js.org/abigailmh/sketches)
-- [Vivianna Mo]()
+- [Vivianna Mo](https://editor.p5js.org/vivimo/sketches)
 - [Aaryan Sharma]()
 - [Marija Tomevska]()
 - [Joonha Yu](https://editor.p5js.org/ob2sd/sketches)

@@ -323,10 +323,16 @@ In class exercise:
 #todays-lecture
 ### Thursday September 8, 2022
 #### Administration
-- **Record Zoom!**
+- **Zoom!**
+- Discussion leader assignments
 
 ##### Loops
-`while()` is like `if()` but it keeps on doing it as long as condition is true
+- `while()` is like `if()` but it keeps on doing it as long as condition is true
+	- Whereas `if()` does it only once
+	- The assumption is that something changes while you're doing the loop which
+		might eventually make the condition false, otherwise you'd be stuck there
+		forever
+- `for()` is a variation in structure but basically does the same
 
 ````
 function setup() {
@@ -386,6 +392,8 @@ function setup() {
 }
 
 ````
+
+Note that I've done all the above examples in `setup()` and not in `draw()`
 
 #### Functions
 
