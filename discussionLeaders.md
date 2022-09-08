@@ -26,15 +26,10 @@ My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 This document: Student Discussion Leaders
 
 - Casey Reas: Mohamed Alhosani and Aaryan will lead the discussion
-- The Art of Interactive Design: Vivianna and Maryam
+- The Art of Interactive Design: Ahmad Fraij and Hamad 
 - The Design of Everyday Things: Hessa and Marija 
-- Computer Vision for Artists: Ian and Clara
+- Computer Vision for Artists: Ian and Joonha 
 - Emotions and Design; Her Code Got Humans on the Moon: Ahmed Bilal and Abigail 
-- Physical computings Greatest Hits and Misses; Making Interactive Art: Nouf and Joonha 
-- A Brief Rant on the Future of Interaction Design; A Follow-up Article: Hamad and Aisha 
-- Design Meets Disability: Ahmad Fraij and Zhaniya 
-
-
-
-
-
+- Physical computings Greatest Hits and Misses; Making Interactive Art: Nouf and Clara
+- A Brief Rant on the Future of Interaction Design; A Follow-up Article: Zhaniya and Aisha 
+- Design Meets Disability: Vivianna and Maryam
