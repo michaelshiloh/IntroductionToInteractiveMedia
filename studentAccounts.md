@@ -35,7 +35,7 @@ P5js.org accounts
 - [Aisha Alketbi]()
 - [Ahmed Bilal]()
 - [Ahmad Fraij](https://editor.p5js.org/AhmadFraij/sketches)
-- [Clara Juong]()
+- [Clara Juong](https://editor.p5js.org/Clara0424/sketches)
 - [Maryam Khalili](https://editor.p5js.org/maryami/sketches)
 - [Zhaniya Korpebayeva]()
 - [Seo Yoon Lee (Ian)]()
