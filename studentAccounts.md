@@ -42,5 +42,5 @@ P5js.org accounts
 - [Abigail Mata-Hernandez](https://editor.p5js.org/abigailmh/sketches)
 - [Vivianna Mo](https://editor.p5js.org/vivimo/sketches)
 - [Aaryan Sharma]()
-- [Marija Tomevska]()
+- [Marija Tomevska](https://editor.p5js.org/marijaaa/sketches)
 - [Joonha Yu](https://editor.p5js.org/ob2sd/sketches)
