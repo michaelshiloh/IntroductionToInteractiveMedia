@@ -37,7 +37,7 @@ P5js.org accounts
 - [Ahmad Fraij](https://editor.p5js.org/AhmadFraij/sketches)
 - [Clara Juong](https://editor.p5js.org/Clara0424/sketches)
 - [Maryam Khalili](https://editor.p5js.org/maryami/sketches)
-- [Zhaniya Korpebayeva]()
+- [Zhaniya Korpebayeva](https://editor.p5js.org/Zhaniya/sketches)
 - [Seo Yoon Lee (Ian)]()
 - [Abigail Mata-Hernandez](https://editor.p5js.org/abigailmh/sketches)
 - [Vivianna Mo](https://editor.p5js.org/vivimo/sketches)

@@ -320,11 +320,7 @@ In class exercise:
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
 
-#todays-lecture
 ### Thursday September 8, 2022
-#### Administration
-- **Zoom!**
-- Discussion leader assignments
 
 ##### Loops
 - `while()` is like `if()` but it keeps on doing it as long as condition is true
@@ -499,4 +495,33 @@ function draw() {
 }
 ````
 
+#todays-lecture
+### Tuesday September 13, 2022
+#### Administration
+- Is **Zoom!** still necessary?
+- Ask questions on Discord!
 
+#### Review variables, variable scope, functions
+
+#### Object oriented programming
+
+Go over [this](https://p5js.org/examples/objects-objects.html) example
+
+Now let's create one from scratch. 
+1. First, let's make a ball bounce off all 4 walls of the canvas
+2. Identify carefully and isolate what's in `setup()`, 
+	what does the moving, and what does the drawing
+3. Now carefully write the class:
+	1. The code in `setup()` is most likely the *constructor*
+	1. The moving code and the drawing code are most likely 
+		the two member functions you'll need
+1. Look at the example we did and see how to create the object from the class,
+	 and how to call the member functions at the right times
+
+Let's modify the functions (both constructor and member functions) to take
+arguments
+
+##### In class exercise
+Write your own class to do something, perhaps inspired by the computer
+graphics homework you just did. Start with something very simple, and slowly
+add features.
