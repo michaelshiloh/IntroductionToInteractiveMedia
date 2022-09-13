@@ -605,4 +605,9 @@ function draw() {
 ##### In class exercise
 Write your own class to do something, perhaps inspired by the computer
 graphics homework you just did. Start with something very simple, and slowly
-add features.
+add features. Or, do this:
+
+Make a class that draws a square in the middle of the screen, and have it
+slowly give the effect of breathing: slowly change size a little bigger and a
+little smaller, and slowly change color slightly, at about the same rate of
+breathing
