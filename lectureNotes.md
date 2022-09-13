@@ -521,6 +521,85 @@ Now let's create one from scratch.
 Let's modify the functions (both constructor and member functions) to take
 arguments
 
+````
+// let xPos, yPos, xSpeed, ySpeed;
+
+// function setup() {
+//   createCanvas(400, 400);
+//   xPos = width / 2;
+//   yPos = random(100, 300);
+//   xSpeed = 4;
+//   ySpeed = 7;
+// }
+
+// function draw() {
+//   background(220);
+
+//   // move the ball
+//   xPos += xSpeed;
+//   yPos += ySpeed;
+
+//   // check for collisions
+//   // check first for left and right wall
+//   if (xPos <= 15 || xPos >= (width-15)) {
+//     xSpeed = -xSpeed;
+//   }
+
+//   // do the same for the ceiling and the floor
+//   if (yPos <= 15 || yPos >= (height-15)) {
+//     ySpeed = -ySpeed;
+//   }
+
+//   circle(xPos, yPos, 30);
+// }
+
+class BouncingBall {
+  constructor() {
+    this.xPos = width / 2;
+    this.yPos = random(100, 300);
+    this.xSpeed = 4;
+    this.ySpeed = 7;
+  }
+
+  move() {
+    // move the ball
+    this.xPos += this.xSpeed;
+    this.yPos += this.ySpeed;
+  }
+
+  checkForCollisions() {
+    // check first for left and right wall
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+      this.xSpeed = -this.xSpeed;
+    }
+
+    // do the same for the ceiling and the floor
+    if (this.yPos <= 15 || this.yPos >= height - 15) {
+      this.ySpeed = -this.ySpeed;
+    }
+  }
+
+  draw() {
+    circle(this.xPos, this.yPos, 30);
+  }
+}
+
+let myBouncingBall;
+
+function setup() {
+  createCanvas(400, 400);
+  myBouncingBall = new BouncingBall();
+}
+
+function draw() {
+  background(240);
+  myBouncingBall.move();
+  myBouncingBall.checkForCollisions();
+  myBouncingBall.draw();
+}
+
+````
+
 [Here](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) is one solution
 
 ##### In class exercise

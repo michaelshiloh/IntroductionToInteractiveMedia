@@ -25,7 +25,7 @@ My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 
 This document: Student Discussion Leaders
 
-- Casey Reas: Mohamed Alhosani and Aaryan will lead the discussion
+- Casey Reas: Mohamed Alhosani will lead the discussion
 - The Art of Interactive Design: Ahmad Fraij and Hamad 
 - The Design of Everyday Things: Hessa and Marija 
 - Computer Vision for Artists: Ian and Joonha 
