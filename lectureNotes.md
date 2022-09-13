@@ -522,6 +522,7 @@ Let's modify the functions (both constructor and member functions) to take
 arguments
 
 ````
+// Commented out is the way this would work without classes
 // let xPos, yPos, xSpeed, ySpeed;
 
 // function setup() {
@@ -650,7 +651,8 @@ little complex. The important things to notice are:
     }
 ```
 Since we have put 10 values into the array, the array has 10 elements in it
-3. Similarly, to access any element in the array you index into the array:
+
+Similarly, to access any element in the array you index into the array:
 ```
 // Refer to the third element in the array (remember the index starts at 0):
 ball[2];
