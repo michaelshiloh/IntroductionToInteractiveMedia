@@ -521,6 +521,8 @@ Now let's create one from scratch.
 Let's modify the functions (both constructor and member functions) to take
 arguments
 
+[Here](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) is one solution
+
 ##### In class exercise
 Write your own class to do something, perhaps inspired by the computer
 graphics homework you just did. Start with something very simple, and slowly
