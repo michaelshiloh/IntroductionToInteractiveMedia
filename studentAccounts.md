@@ -28,7 +28,7 @@ My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 This document: Student Accounts
 
 P5js.org accounts
-- [Hamad Al Shamsi]()
+- [Hamad Al Shamsi](https://editor.p5js.org/hmd-shamsi/sketches)
 - [Hessa AlAbbas]()
 - [Nouf Abduljalil Abbasi](https://editor.p5js.org/Nouf-Alabbasi/sketches)
 - [Mohamed Alhosani](https://editor.p5js.org/Mohamed_Khalifa/sketches)

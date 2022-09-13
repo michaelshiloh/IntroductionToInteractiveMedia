@@ -611,3 +611,29 @@ Make a class that draws a square in the middle of the screen, and have it
 slowly give the effect of breathing: slowly change size a little bigger and a
 little smaller, and slowly change color slightly, at about the same rate of
 breathing
+
+How to use the modulo function to make something happen less often than every
+frame: 
+
+```
+let shade = 0;
+let amount = 5;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(shade);
+
+  // change the shade only on every other frame
+  if (frameCount % 2 == 0) {
+    shade += amount;
+
+    // make sure the shade stays between 0 and 255
+    if (shade <= 0 || shade >= 255) {
+      amount = -amount;
+    }
+  }
+}
+```
