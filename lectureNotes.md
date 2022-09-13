@@ -495,7 +495,7 @@ function draw() {
 }
 ````
 
-#todays-lecture
+# todays-lecture
 ### Tuesday September 13, 2022
 #### Administration
 - Is **Zoom!** still necessary?
