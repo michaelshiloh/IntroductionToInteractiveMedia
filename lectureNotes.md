@@ -637,3 +637,102 @@ function draw() {
   }
 }
 ```
+let shade = 0;
+let amount = 5;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(shade);
+
+  // change the shade only on every other frame
+  if (frameCount % 2 == 0) {
+    shade += amount;
+
+    // make sure the shade stays between 0 and 255
+    if (shade <= 0 || shade >= 255) {
+      amount = -amount;
+    }
+  }
+}
+```
+
+Now we learn about arrays. There is an example
+[here](https://p5js.org/examples/arrays-array.html) but unfortunately it is a
+little complex. The important things to notice are:
+1. Creating the array `let ball = [];` the `[]` is what tells p5 that you're
+	 making an array
+2. Filling the array is what determines the size:
+```
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+			ball[i] = new BouncingBall(i + 1, 2);
+    }
+```
+Since we have put 10 values into the array, the array has 10 elements in it
+3. Similarly, to access any element in the array you index into the array:
+```
+// Refer to the third element in the array (remember the index starts at 0):
+ball[2];
+```
+
+Here then is the bouncing ball example, this time creating 10 
+balls, and storing them in an array:
+
+```
+class BouncingBall {
+  constructor(xSpeed0, ySpeed0) {
+    this.xPos = width / 2;
+    this.yPos = random(100, 300);
+    this.xSpeed = xSpeed0;
+    this.ySpeed = ySpeed0;
+  }
+
+  move() {
+    // move the ball
+    this.xPos += this.xSpeed;
+    this.yPos += this.ySpeed;
+  }
+
+  checkForCollisions() {
+    // check first for left and right wall
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+      this.xSpeed = -this.xSpeed;
+    }
+
+    // do the same for the ceiling and the floor
+    if (this.yPos <= 15 || this.yPos >= height - 15) {
+      this.ySpeed = -this.ySpeed;
+    }
+  }
+
+  draw() {
+    circle(this.xPos, this.yPos, 30);
+  }
+}
+
+let ball = [];
+
+function setup() {
+  
+  createCanvas(400, 400);
+  
+  for (let i = 0; i < 10; i++) {
+    // each ball will have a slightly different
+    // initial speed in the X axis, but all balls
+    // will have the same speed in the Y axis
+    ball[i] = new BouncingBall(i + 1, 2);
+  }
+}
+
+function draw() {
+  background(240);
+
+  for (let i = 0; i < 10; i++) {
+    ball[i].move();
+    ball[i].checkForCollisions();
+    ball[i].draw();
+  }
+}
+```
