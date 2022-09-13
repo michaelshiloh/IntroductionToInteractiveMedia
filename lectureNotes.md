@@ -637,27 +637,6 @@ function draw() {
   }
 }
 ```
-let shade = 0;
-let amount = 5;
-
-function setup() {
-  createCanvas(400, 400);
-}
-
-function draw() {
-  background(shade);
-
-  // change the shade only on every other frame
-  if (frameCount % 2 == 0) {
-    shade += amount;
-
-    // make sure the shade stays between 0 and 255
-    if (shade <= 0 || shade >= 255) {
-      amount = -amount;
-    }
-  }
-}
-```
 
 Now we learn about arrays. There is an example
 [here](https://p5js.org/examples/arrays-array.html) but unfortunately it is a
@@ -736,3 +715,6 @@ function draw() {
   }
 }
 ```
+
+[Here](https://p5js.org/examples/arrays-array-objects.html)
+is another example showing how to make an array of objects
