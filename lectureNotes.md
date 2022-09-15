@@ -495,11 +495,7 @@ function draw() {
 }
 ````
 
-# todays-lecture
 ### Tuesday September 13, 2022
-#### Administration
-- Is **Zoom!** still necessary?
-- Ask questions on Discord!
 
 #### Review variables, variable scope, functions
 
@@ -720,3 +716,42 @@ function draw() {
 
 [Here](https://p5js.org/examples/arrays-array-objects.html)
 is another example showing how to make an array of objects
+
+# todays-lecture
+### Tuesday September 13, 2022
+#### Administration
+- Did you all submit the lab access form?
+- Any other announcements or general question?
+
+#### Review Object oriented programming and arrays
+- Classes are like cookie cutters; objects are like cookies
+	- Naming conventions
+- Classes contain both properties (size, color, speed, position, etc.) and
+	behaviours (move, draw, bounce, etc.)
+
+- Solutions to Tuesday's in-class exercise
+	- How to make the box "pause" when it's off
+	- How to center the box
+- Aaron's [car](https://editor.p5js.org/aaronsherwood/sketches/eYFQE9EZa) 
+	example
+	- How to make the car "bump" a little
+
+Maybe now we are prepared to analyze 
+[this](https://p5js.org/examples/arrays-array-objects.html)
+example. Sometimes it's good to go back to something that looked 
+impossible earlier, to see whether it makes sense now (and to see how much
+you've already learned!)
+
+#### Look at next week's homework assignment
+- Push your boundries! Try to do something you don't quite understand, bring
+	it to class, and let's see if we can figure out how to do it
+- Remember to save your code! 
+- If you try different approaches, save them all, and describe them
+	all in your blog post. Include those that work (if there are any)
+	and those that don't work (if there are any).
+	(You could name them September20_1, September20_2, or even
+	September20_arraysBroken, September20_classesWorks)
+
+#### Look at some more computer graphic assignments
+- In particular, those that didn't quite do what you wanted
+
