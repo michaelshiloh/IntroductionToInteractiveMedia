@@ -718,7 +718,7 @@ function draw() {
 is another example showing how to make an array of objects
 
 # todays-lecture
-### Tuesday September 13, 2022
+### Tuesday September 15, 2022
 #### Administration
 - Did you all submit the lab access form?
 - Any other announcements or general question?
