@@ -757,6 +757,8 @@ you've already learned!)
 # todays-lecture
 ### Tuesday September 20, 2022
 #### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731)  
+- Reminder to stay in your room if you're not feeling well
 - Sign up for tool training by submitting [this](https://docs.google.com/forms/d/e/1FAIpQLSezv8BSCV20Kc86EoYSJsctA6kMdRsWRvSrg6Y8jyyJl8gmDA/viewform) form
 
 #### Make up discussion from last week
