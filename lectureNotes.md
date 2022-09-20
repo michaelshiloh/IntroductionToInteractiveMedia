@@ -763,13 +763,13 @@ you've already learned!)
 - Casey Reas: Mohamed Alhosani will lead the discussion
 
 #### Transformations
-Transformations move the canvas relative to the coordinate system
+Transformations move the coordinate system
 so you can draw in different places with the same code
 - Available 2D transforms are 
 	- `translate()`
 	- `rotate()`
 	- `scale()`
-- pushMatrix() and popMatrix() allow you to remember where the canvas was, 
+- 'push()' and 'pop()' allow you to remember where the canvas was, 
 and then return to it's last position
 
 Example: Draw a house at a given location, no transform:
