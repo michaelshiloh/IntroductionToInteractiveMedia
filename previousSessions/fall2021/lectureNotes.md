@@ -900,7 +900,7 @@ void setup() {
 - **Record Zoom!**
 
 #### Transformations
-Transformationss move the canvas relative to the coordinate sysem
+Transformations move the canvas relative to the coordinate system
 so you can draw in different places with the same code
 - Available 2D transforms are 
 	- `translate()`
