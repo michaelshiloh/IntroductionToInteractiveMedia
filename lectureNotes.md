@@ -769,7 +769,7 @@ so you can draw in different places with the same code
 	- `translate()`
 	- `rotate()`
 	- `scale()`
-- 'push()' and 'pop()' allow you to remember where the canvas was, 
+- `push()` and `pop()` allow you to remember where the canvas was, 
 and then return to it's last position
 
 Example: Draw a house at a given location, no transform:
