@@ -925,6 +925,7 @@ format".
 	- Some of the fields are numerical (e.g. case_id)
 	- Some of the fields are text (e.g. t_state, t_county)
 	- Some of the fields are missing (e.g. faa_ors, faa_asn)
+- Upload the file into your sketch (Sketch Files -> Upload Files)
 - Now you can load this file into an array of `Strings` and then process each
 	line one at a time, pulling out individual fields:
 
@@ -1023,7 +1024,7 @@ function draw() {
 
   // This really slows things
   // down so use only when debugging
-  //println("Row " +
+  //print("Row " +
   // csvRowNumber +
   //   " contains " +
   //   singleRow.length +
@@ -1036,7 +1037,7 @@ function draw() {
   let latitude = float(singleRow[26]);
 
   // use only when debugging
-  // println("Latitude " +
+  // print("Latitude " +
   // latitude +
   //   " longitude " +
   //   longitude );
@@ -1046,7 +1047,7 @@ function draw() {
     print("conversion to float failed; skipping row " + csvRowNumber);
   } else {
     // scale that to fit on our canvas
-    //println(csvRowNumber);
+    //print(csvRowNumber);
     let ypos = map(latitude, minLat, maxLat, 0, height);
     let xpos = map(longitude, minLong, maxLong, 0, width);
 
@@ -1056,7 +1057,7 @@ function draw() {
 
   csvRowNumber++;
   if (csvRowNumber >= strings.length) {
-    println("finished");
+    print("finished");
     noLoop();
   }
 }
@@ -1067,7 +1068,7 @@ function draw() {
 Things to notice:
 1. The `split()` function does half the magic
 1. The `int()` or `float()` function does much of the rest
-1. data files might have errors in them and you need to defend your program
+1. Data files might have errors in them and you need to defend your program
 	 against them
 1. `loop()` and `noLoop()` can be used anytime you want to start or stop the
 	 `draw()` function from repeating
@@ -1121,7 +1122,7 @@ function setup() {
   strings = loadStrings("words.csv");
 
   // How many lines did we get?
- // println("strings array contains this many lines: " + strings.length);
+ // print("strings array contains this many lines: " + strings.length);
 }
 
 let csvRowNumber = 0;
