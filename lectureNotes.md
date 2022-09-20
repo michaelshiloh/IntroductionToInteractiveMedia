@@ -800,21 +800,21 @@ Why do this?
 - Easier to code complex motions relative to other motions
 
 **Notes**
-- Just like with 'fill()' and 'rectMode()', once you've moved the origin it
+- Just like with `fill()` and `rectMode()`, once you've moved the origin it
 	stays there unless you return it to its starting position. E.g. try putting
-	a circle in the center of the canvas 'ellipse (width/2, height/2, 20);'
+	a circle in the center of the canvas `ellipse (width/2, height/2, 20);`
 - Whenever you do a transformation, it's good practice to **always** return
-	the origin to where it was before using 'push()' and 'pop()':
+	the origin to where it was before using `push()` and `pop()`:
 
 ````
 function house(x, y)
 {
-	push();
+  push();
   translate(x, y);
   triangle(15, 0, 0, 15, 30, 15);
   rect(0, 15, 30, 30);
   rect(12, 30, 10, 15);
-	pop();
+  pop();
 }
 ````
 
@@ -827,7 +827,7 @@ on transformations.
 
 ##### Rotation and scaling 
 
-'''
+```
 function setup() {
   createCanvas(400,400);
   background(240);
@@ -849,7 +849,7 @@ function setup() {
   rect(200, 200, 100, 100);
   line(0, 0, 200, 200);
 }
-'''
+```
 
 Work through 
 [this](https://genekogan.com/code/p5js-transformations/) resource
@@ -871,9 +871,9 @@ Picking fonts:
 ```
 function setup() {
   createCanvas(400, 400);
-	textFont("Courier New", 25);
+  textFont("Courier New", 25);
 
-	text("My Important Message", width / 2, height / 2);
+  text("My Important Message", width / 2, height / 2);
 }
 ```
 
@@ -900,7 +900,7 @@ Sources
 - https://www.springboard.com/blog/free-public-data-sets-data-science-project/
 - https://www.ndbc.noaa.gov/rt_data_access.shtml
 - https://www.kaggle.com/datasets
-- Professor' Mathura's 
+- Professor Mathura's 
 	[list of data sources](https://github.com/MathuraMG/ConnectionsLabSpring22/blob/master/Week_3_JSON_Fetch/README.md#list-of-data-sources)
  	
 Format
