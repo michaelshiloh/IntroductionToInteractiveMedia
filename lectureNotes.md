@@ -754,12 +754,7 @@ you've already learned!)
 #### Look at some more computer graphic assignments
 - In particular, those that didn't quite do what you wanted
 
-# todays-lecture
 ### Tuesday September 20, 2022
-#### Administration
-- Turn on and record [Zoom](https://nyu.zoom.us/j/97909657731)  
-- Reminder to stay in your room if you're not feeling well
-- Sign up for tool training by submitting [this](https://docs.google.com/forms/d/e/1FAIpQLSezv8BSCV20Kc86EoYSJsctA6kMdRsWRvSrg6Y8jyyJl8gmDA/viewform) form
 
 #### Make up discussion from last week
 - Casey Reas: Mohamed Alhosani will lead the discussion
@@ -1081,6 +1076,16 @@ Things to notice:
 JSON and XML are other format for organizing data in a file.
 They are more complex than CSV, and again p5.js provides functions.
 
+### Thursday September 22, 2022
+# todays-lecture
+#### Administration
+- Turn on and record [Zoom](https://nyu.zoom.us/j/97909657731)  
+- Reminder to stay in your room if you're not feeling well
+- Who has not yet signed upfor  tool training by submitting [this](https://docs.google.com/forms/d/e/1FAIpQLSezv8BSCV20Kc86EoYSJsctA6kMdRsWRvSrg6Y8jyyJl8gmDA/viewform) form?
+
+#### Discussion 
+The Art of Interactive Design: Ahmad Fraij and Hamad
+
 ##### Generative Text
 Pull words from a CSV file
 and by using `random()` in a clever way,
@@ -1192,14 +1197,12 @@ books,multicolored,lamposts,azure,swim,island
 computers,black,mice,pink,squeak,home
 ````
 
-(Time permitting)
-#### More Data Visualization and generative text:
-
+#### More Data Visualization and generative text (Time permitting):
 
 - have students make a scroller in pairs
 - add randomness/perlin noise
-- have them look at circle letters, come up with questions and explanations in
-pairs
+- have them look at circle letters, 
+	come up with questions and explanations in pairs
 - have students work through example on their own and use data
 - show generative word from circles sketch
 

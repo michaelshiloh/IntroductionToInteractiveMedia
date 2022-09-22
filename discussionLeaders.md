@@ -30,6 +30,6 @@ This document: Student Discussion Leaders
 - The Design of Everyday Things: Hessa and Marija 
 - Computer Vision for Artists: Ian and Joonha 
 - Emotions and Design; Her Code Got Humans on the Moon: Ahmed Bilal and Abigail 
-- Physical computings Greatest Hits and Misses; Making Interactive Art: Nouf and Clara
+- Physical computing's Greatest Hits and Misses; Making Interactive Art: Nouf and Clara
 - A Brief Rant on the Future of Interaction Design; A Follow-up Article: Zhaniya and Aisha 
 - Design Meets Disability: Vivianna and Maryam
