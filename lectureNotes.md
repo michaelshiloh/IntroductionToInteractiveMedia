@@ -1218,7 +1218,7 @@ The `p5.Image` class
 	- Functionality `(image()`, `get()`, etc.)
 
 ````
-let catImg;
+let photo;
 function preload() {
   photo = loadImage("https://placekitten.com/400/400");
 }
@@ -1236,28 +1236,22 @@ this image at this location and scale to this size
 - `photo.get(x,y,w,h)` - Returns a new p5.Image containing a portion of the image
 - `photo.get(x,y)` - Returns the color of the pixel at this location
 
-````
-let catImg;
-function preload() {
-  catImg = loadImage("https://placekitten.com/400/400");
-}
+```
 function setup() {
   createCanvas(400, 400);
   background(255);
   image(catImg, 0, 0);
 
-  let newImg = catImg.get( 50,60, 100,50);
-  image (newImg, 250, 200);
+  let newImg = catImg.get( 50,60, 100,100);
+  image (newImg, 20, 80);
 }
-````
+```
 
 For more information and ideas
 - Reference page for p5.Image for other methods
 - Examples -> image
 
-### February 24
-
-#### Plan for today: 
+#### More fun with images and introduction to sound
 
 - Pixels array
 - Sprite sheets
@@ -1275,7 +1269,7 @@ and after making any changes you must call `updatePixels()`
 to write from the `pixels` array back to the canvas
 if you want to make the changes visible
 
-````
+```
 function setup() {
   let pink = color(255, 102, 204);
   loadPixels();
@@ -1289,7 +1283,7 @@ function setup() {
   }
   updatePixels();
 }
-````
+```
 
 - The pixels array is one-dimensional, 
 meaning if you want to go to a different row on the canvas 
@@ -1403,7 +1397,9 @@ A fun examples from Professor Sherwood:
 
 ![](media/circularImages.png)
 
-````
+Get the original image [here](media/aiweiwei.jpeg)
+
+```
 let tiles = [];
 let tileSize = 100;
 
@@ -1453,7 +1449,7 @@ function draw() {
 function keyPressed() {
   loop();
 }
-````
+```
 
 Can we use a sequence of images for animation?
 
