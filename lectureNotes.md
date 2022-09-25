@@ -1077,11 +1077,6 @@ JSON and XML are other format for organizing data in a file.
 They are more complex than CSV, and again p5.js provides functions.
 
 ### Thursday September 22, 2022
-# todays-lecture
-#### Administration
-- Turn on and record [Zoom](https://nyu.zoom.us/j/97909657731)  
-- Reminder to stay in your room if you're not feeling well
-- Who has not yet signed upfor  tool training by submitting [this](https://docs.google.com/forms/d/e/1FAIpQLSezv8BSCV20Kc86EoYSJsctA6kMdRsWRvSrg6Y8jyyJl8gmDA/viewform) form?
 
 #### Discussion 
 The Art of Interactive Design: Ahmad Fraij and Hamad
@@ -1189,13 +1184,13 @@ function mouseClicked() {
 and this is an example of the words you can feed it.
 put these contents into a file called `words.csv`:
 
-````
+```
 roses,red,violets,blue,dream,disneyland
 robots,silver,pencils,grey,run,supermarket
 goldfish,orange,motors,white,turn,workbench
 books,multicolored,lamposts,azure,swim,island
 computers,black,mice,pink,squeak,home
-````
+```
 
 #### More Data Visualization and generative text (Time permitting):
 
@@ -1206,3 +1201,349 @@ computers,black,mice,pink,squeak,home
 - have students work through example on their own and use data
 - show generative word from circles sketch
 
+### Tuesday September 27, 2022
+# todays-lecture
+#### Administration
+- Turn on and record [Zoom](https://nyu.zoom.us/j/97909657731)  
+- Reminder to stay in your room if you're not feeling well
+
+#### Finish Data Visualization
+#### Finish Generative Text
+
+#### Working with images!
+
+The `p5.Image` class
+- Just another class, i.e. it has
+	- Data (the pixels, width, height, etc.)
+	- Functionality `(image()`, `get()`, etc.)
+
+````
+let catImg;
+function preload() {
+  photo = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(photo, 0, 0); // this actually displays the image
+}
+````
+
+- `image(photo, positionX, positionY, width, height)` - display 
+this image at this location and scale to this size
+- `photo.resize(w,h)` - scale to this size. If one of the arguments is zero,
+	then scale to the remaining argument and retain the original aspect ratio.
+- `photo.get(x,y,w,h)` - Returns a new p5.Image containing a portion of the image
+- `photo.get(x,y)` - Returns the color of the pixel at this location
+
+````
+let catImg;
+function preload() {
+  catImg = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(catImg, 0, 0);
+
+  let newImg = catImg.get( 50,60, 100,50);
+  image (newImg, 250, 200);
+}
+````
+
+For more information and ideas
+- Reference page for p5.Image for other methods
+- Examples -> image
+
+### February 24
+
+#### Plan for today: 
+
+- Pixels array
+- Sprite sheets
+- Sound
+- Introduce midterm project
+
+#### The `pixels` array: Treating the canvas as an image
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called `pixels`. 
+Before using this array you must load everything from the canvas 
+into the `pixels` array using the `loadPixels()` function, 
+and after making any changes you must call `updatePixels()` 
+to write from the `pixels` array back to the canvas
+if you want to make the changes visible
+
+````
+function setup() {
+  let pink = color(255, 102, 204);
+  loadPixels();
+  let d = pixelDensity();
+  let halfImage = 4 * (width * d) * ((height / 2) * d);
+  for (let i = 0; i < halfImage; i += 4) {
+    pixels[i] = red(pink);
+    pixels[i + 1] = green(pink);
+    pixels[i + 2] = blue(pink);
+    pixels[i + 3] = alpha(pink);
+  }
+  updatePixels();
+}
+````
+
+- The pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths
+- Each pixel occupies 4 positions in the array
+- Thus the equation for accessing a given pixel is
+   (x + y * width) * 4
+- Remember to set `pixelDensity(1);` in case you have a high 
+resolution display
+
+
+````
+function setup() {
+  pixelDensity(1);
+
+	// blue background 
+	// makes it easier to see the pink
+  background(0, 102, 204);
+
+  loadPixels();
+
+	// Here is the equation 
+	// for the start (red value) 
+	// of a pixel 
+	// at a particular coordinate (x,y)
+  // (x + y*width) * 4
+
+  // Change most of the fiftieth row to pink
+  // instead of the whole line, 
+	// only do from x = 10 to x = 90
+  for (let i = (10 + 50 * width) * 4;
+       i < (90 + 50 * width) * 4;
+       i += 4) {
+
+		// pink
+    pixels[i + 0] = 255;
+    pixels[i + 1] = 102;
+    pixels[i + 2] = 204;
+    pixels[i + 3] = 100;
+  }
+
+	// this puts the array back on the screen
+  updatePixels();
+}
+````
+
+It's important to remember that a pixel is just four numbers
+so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+function setup() {
+  pixelDensity(1);
+  background(0, 102, 204);
+}
+
+let redValue = 0; 
+
+function draw() {
+
+  loadPixels();
+  
+  for (let i = 0; i < width * height * 4 ; i+=4) {
+    pixels[i] = redValue;
+  } 
+  updatePixels();
+
+  redValue = (redValue + 1 ) %255
+  print(redValue);
+  
+  updatePixels();
+
+}
+````
+
+Just for fun, here is the last example from the video where Dan
+created a random (only in the green channel) background:
+
+````
+function setup() {
+  createCanvas(256,256);
+  pixelDensity(1);
+}
+
+function draw() {
+  loadPixels();
+  for (var y = 0; y < height; y++) {
+    for (var x = 0; x < width; x++) {
+      var index = (x + y * width) * 4;
+
+      pixels[index + 0] = x;
+      // red value changes horizontally
+
+      pixels[index + 1] = random(255);
+      // green value random
+
+      pixels[index + 2] = y;
+      // blue value changes vertically
+
+      pixels[index + 3] = 255;
+      // no transparency
+    }
+  }
+  updatePixels();
+}
+````
+
+Look at the reference page for the pixels array
+
+A fun examples from Professor Sherwood:
+
+![](media/circularImages.png)
+
+````
+let tiles = [];
+let tileSize = 100;
+
+function preload() {
+  img = loadImage("aiweiwei.jpeg");
+}
+
+function setup() {
+  createCanvas(400, 400);
+  let numTiles = img.height / tileSize;
+  while (numTiles > 0) {
+    tiles.push(
+      img.get(
+        int(random(img.width - tileSize)),
+        int(random(img.height - tileSize)),
+        tileSize,
+        tileSize
+      )
+    );
+    numTiles--;
+  }
+  imageMode(CENTER);
+}
+
+function draw() {
+  push();
+  translate(width / 2, height / 2);
+
+  let numSegments = 10;
+  let eachAngle = TWO_PI / numSegments;
+  let whichImage = int(random(tiles.length));
+
+  for (let i = 0; i < numSegments; i++) {
+    let x = cos(eachAngle * i) * tileSize + 1;
+    let y = sin(eachAngle * i) * tileSize + 1;
+    push();
+    translate(x, y);
+    rotate(eachAngle * i);
+    image(tiles[whichImage], 0, 0);
+    pop();
+  }
+
+  pop();
+  noLoop();
+}
+
+function keyPressed() {
+  loop();
+}
+````
+
+Can we use a sequence of images for animation?
+
+![](media/walking.png)
+
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/walking.png
+
+How would we use them?
+
+````
+let spritesheet;
+let sprites = [];
+let direction = 1; // 0 up
+let step = 0;
+let x;
+let y;
+let speed = 3;
+
+function preload() {
+  spritesheet = loadImage("walking.png");
+}
+
+function setup() {
+  // fullscreen(true);
+  createCanvas(500, 450);
+
+  // 12 images across, 4 down, in the spritesheet
+
+  let w = int(spritesheet.width / 12);
+  let h = int(spritesheet.height / 4);
+
+  for (let y = 0; y < 4; y++) {
+    sprites[y] = [];
+    for (let x = 0; x < 12; x++) {
+      sprites[y][x] =
+        spritesheet.get(x * w, y * h, w, h);
+    } // iterate over rows
+  } // iterate over columns
+
+  x = width / 2;
+  y = height / 2;
+
+  imageMode(CENTER);
+
+	// Display first sprite
+  image(sprites[direction][step], x, y);
+}
+
+// nothing to do here because all the action
+// happens in the keyPressed() callback
+function draw() {}
+
+function keyPressed() {
+  // look at sprite sheet to determine 
+  // which direction is which row
+
+  if (keyCode === DOWN_ARROW) {
+    direction = 0;
+    y += speed;
+  }
+
+  if (keyCode === LEFT_ARROW) {
+    direction = 1;
+    x -= speed;
+  }
+
+  if (keyCode === RIGHT_ARROW) {
+    direction = 2;
+    x += speed;
+  }
+
+  if (keyCode === UP_ARROW) {
+    direction = 3;
+    y -= speed;
+  }
+
+	// Every so often 
+	// advance to the next sprite
+  if (frameCount % speed == 0) {
+    step = (step + 1) % 12;
+  }
+
+	// Finally draw paint the sprite
+  background(255);
+  image(sprites[direction][step], x, y);
+}
+
+````
+
+You can probably find many sprite sheets by googling "sprite sheet" +
+whatever you want.
