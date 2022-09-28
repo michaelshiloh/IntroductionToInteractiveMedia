@@ -1202,10 +1202,6 @@ computers,black,mice,pink,squeak,home
 - show generative word from circles sketch
 
 ### Tuesday September 27, 2022
-# todays-lecture
-#### Administration
-- Turn on and record [Zoom](https://nyu.zoom.us/j/97909657731)  
-- Reminder to stay in your room if you're not feeling well
 
 #### Finish Data Visualization
 #### Finish Generative Text
@@ -1295,40 +1291,44 @@ you need to offset by that many widths
 resolution display
 
 
-````
+```
 function setup() {
   pixelDensity(1);
 
-	// blue background 
-	// makes it easier to see the pink
+  // blue background 
+  // makes it easier to see the pink
   background(0, 102, 204);
 
   loadPixels();
 
-	// Here is the equation 
-	// for the start (red value) 
-	// of a pixel 
-	// at a particular coordinate (x,y)
+  // Here is the equation 
+  // for the start (red value) 
+  // of a pixel 
+  // at a particular coordinate (x,y)
   // (x + y*width) * 4
 
   // Change most of the fiftieth row to pink
   // instead of the whole line, 
-	// only do from x = 10 to x = 90
-  for (let i = (10 + 50 * width) * 4;
-       i < (90 + 50 * width) * 4;
+  // only do from x = 10 to x = 90
+  let startX = 10;
+  let endX = 90;
+  let row = 50;
+
+  for (let i = (startX + 50 * width) * 4;
+       i < (endX + 50 * width) * 4;
        i += 4) {
 
-		// pink
+    // pink
     pixels[i + 0] = 255;
     pixels[i + 1] = 102;
     pixels[i + 2] = 204;
     pixels[i + 3] = 100;
   }
 
-	// this puts the array back on the screen
+  // this puts the array back on the screen
   updatePixels();
 }
-````
+```
 
 It's important to remember that a pixel is just four numbers
 so you can manipulate pixels mathematically 
@@ -1543,3 +1543,58 @@ function keyPressed() {
 
 You can probably find many sprite sheets by googling "sprite sheet" +
 whatever you want.
+
+(One possible solution to in-class exercise:)
+
+```
+let tiles = [];
+let tileSize = 200;
+
+function preload() {
+  img = loadImage("aiweiwei.jpeg");
+}
+
+function setup() {
+  createCanvas(400, 400);
+  let numTiles = 10;
+  while (numTiles > 0) {
+    tiles.push(
+      img.get(
+        int(random(img.width - tileSize)),
+        int(random(img.height - tileSize)),
+        tileSize,
+        tileSize
+      )
+    );
+    numTiles--;
+  }
+  imageMode(CENTER);
+}
+
+function draw() { }
+
+function keyPressed() {
+  image(tiles[int(random(10))], 0, 0);
+}
+```
+
+### Thursday September 29, 2022
+# todays-lecture
+#### Administration
+- I am at a conference and Professor Mang will fill in for me. 
+- Class is held on [Zoom](https://nyu.zoom.us/j/97909657731) today
+- Reminder to stay at home if you're not feeling well
+- The data visualization or generative text output homework will be due on
+	October 6
+
+#### Discussion 
+- The Design of Everyday Things, The Psychopathology of Everyday Things
+- Hessa and Marija will lead the discussion
+
+#### Questions
+- Are there any questions about what we covered on Tuesday about data
+	visualization, generative texts, or working with images?
+	- I encourage you to take advantage of the opportunity to have it explained
+		by a different teacher
+
+#### Discussion of your midterm project ideas
