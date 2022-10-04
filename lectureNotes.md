@@ -1608,7 +1608,7 @@ Record [Zoom](https://nyu.zoom.us/j/97909657731)
 #### Sound!
 
 Download this to your laptop: 
-https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/doorbell.png
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/doorbell.mp3
 
 File -> Examples -> Sound
 
