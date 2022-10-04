@@ -1684,6 +1684,7 @@ As always, it's useful to explore the examples and the reference page
 
 **Remember**
 Sound requires a separate library which must be included
+in `index.html`
 
 ##### Sound Synthesis
 
@@ -1695,52 +1696,17 @@ The other way to make sounds is to create them mathematically
 		- Filters
 
 We can create our own complex sounds starting with basic oscillators and then
-changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+changing the envelopes. 
 
 ##### Working in groups (time permitting):
 If we had multiple sound files, how would we play the
 next one when we click the mouse?
 
-### March 1
-#### Plan for today: 
-
-- Discussion of reading 
-- Homework feedback
-- Computer Vision
-	- Frame Differencing
-
-#### Homework feedback
-
-- I love the diversity in data sets that you found! So much more creative than
-	the example I showed in class.
-- In general, your descriptions and comments are weak. Most of you need
-	better descriptions and almost all of you need better comments.
-	- `k = 0; x = 0; y = 0;` What is `k`? I assume `x` and `y` are coordinates,
-		but of what? Why are they set to zero? Is that important? If not, why is
-		it there?
-	- Your comments must explain what your code does: A comment that says "loop
-		over all elements in the array" is accurate but doesn't give the reader
-		any new information. You must explain why you are looping over all
-		elements. Put a comment (preferably more than one line) at the beginning
-		of every function, loop, or distinct block of code explaining a) what it
-		does and b) how it does it
-	- Make sure your comments agree with the code! A comments that says "the
-		last two fields" but then refers to fields 1 and 2 (when I can see that
-		there are at least 5 is clearly wrong. Did you just copy that blindly from
-		my example?
-- Shoutouts 
-	- [Ryan](https://github.com/ryanrichardsmith/IntroductionToInteractiveMedia/blob/main/Feb22/playlist.js) for excellent comments
-		- Also
-			[Pranav](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/February22/dataVisualization.js)
-	- [Dhabia](https://github.com/noorajabir/IntroToIM/tree/main/Feb%2022) for excellent presentation
-	- [Shaikha](https://github.com/ShaikhaAlN/IntroToIM/tree/main/Feb22) for whimsical project
-
-
 #### Working with a camera: Computer Vision!
 
 Basic sketch showing how to get input from camera:
 
-````
+```
 let capture;
 
 function setup() {
@@ -1759,38 +1725,27 @@ function draw() {
         // the width multiplied by the aspect ratio
         width * capture.height / capture.width);
 }
-````
+```
 
 Reference page for
 [createCapture](https://p5js.org/reference/#/p5/createCapture)
 
-Some video examples:
+Frame Diferencing
+
 - [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
 - A more complex
 	[example](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT) by Prof.
 	Aaron that uses frame differencing to detect which vertical slice of the
 	camera image has the most motion, and trigger a corresponding sound clip
 
-### March 3
-#### Plan for today: 
+Other video tricks
 
-- Attendance
-- Review frame differencing
-- Random items
+Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
 
-#### Attendance
-- Please don't join class from a noisy location as it makes it hard to hear
-	you
-- Remember that cameras are required for the entire duration of the class. I
-	often see cameras turned off during class. This is not permissible unless you
-	receive explicit permission from me.
-
-#### Review frame differencing
+#### In class exercises
 - If you wanted to display white (instead of the color of the difference)
 	wherever motion above a certain threshold is detected, how would you do this?
-- Video Mirror (flipping the x)
-	- https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a
-- In class exercise: Can you trigger sounds according to where there is
-	motion?  You might want to borrow ideas from
+- Can you trigger sounds according to where there is
+	motion? You may start with Aaron's complex example and simplify
 	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
 
