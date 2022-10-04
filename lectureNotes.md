@@ -1740,7 +1740,7 @@ Frame Diferencing
 
 Other video tricks
 
-Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
+- Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
 
 #### In class exercises
 - If you wanted to display white (instead of the color of the difference)
