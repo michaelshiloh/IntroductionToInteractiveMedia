@@ -1742,6 +1742,8 @@ Other video tricks
 
 - Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
 
+- Color tracking
+
 #### In class exercises
 - If you wanted to display white (instead of the color of the difference)
 	wherever motion above a certain threshold is detected, how would you do this?
