@@ -1616,6 +1616,32 @@ Preload Soundfile
 
 Very basic example:
 
+```
+/*
+Must upload doorbell.mp3
+Must include sound library in index.html
+*/
+
+function preload() {
+  song = loadSound('doorbell.mp3');
+}
+
+function setup() {
+  background(234);
+}
+
+function draw() {
+}
+
+function mouseClicked() {
+  song.play();
+}
+
+```
+
+How to prevent sound clip from restarting if it's already playing
+
+
 ````
 /*
 Must upload doorbell.mp3
