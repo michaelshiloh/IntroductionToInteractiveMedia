@@ -1599,9 +1599,6 @@ function keyPressed() {
 #### Discussion of your midterm project ideas
 
 ### Tuesday October 4, 2022
-# todays-lecture
-#### Administration
-Record [Zoom](https://nyu.zoom.us/j/97909657731)  
 
 #### Discussion of your midterm project ideas
 
@@ -1751,3 +1748,16 @@ Other video tricks
 	motion? You may start with Aaron's complex example and simplify
 	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
 
+### Thursday October 6, 2022
+# todays-lecture
+#### Administration
+Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
+
+- Mang added some useful game techniques [here](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#game-techniques)
+- We lost a reading somehow. It's a brief [introduction to computer
+	vision](http://www.yorku.ca/caitlin/futurecinemas/resources/coursepack/readings/computervision).
+	My sketch on frame differencing is based on this. The code in the article
+	uses Processing but the code is pretty similar and the principle is exactly
+	the same. I want you to read this over the weekend.
+
+#### Work on projects
