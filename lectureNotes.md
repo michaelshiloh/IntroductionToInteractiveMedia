@@ -1749,15 +1749,163 @@ Other video tricks
 	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
 
 ### Thursday October 6, 2022
-# todays-lecture
-#### Administration
-Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
 
 - Mang added some useful game techniques [here](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#game-techniques)
-- We lost a reading somehow. It's a brief [introduction to computer
-	vision](http://www.yorku.ca/caitlin/futurecinemas/resources/coursepack/readings/computervision).
-	My sketch on frame differencing is based on this. The code in the article
-	uses Processing but the code is pretty similar and the principle is exactly
-	the same. I want you to read this over the weekend.
+- In the reading [introduction to computer
+	vision](http://www.yorku.ca/caitlin/futurecinemas/resources/coursepack/readings/computervision),
+	the code examples use a language called *Processing* which is 
+	very similar to *p5.js*. My example for frame differencing is based on this
+	article.
+- [P5.js version](https://editor.p5js.org/mimi/sketches/E9f0eRBgH) 
+	of the color tracking example from Dan Shiffman's book 
+	[Learning Processing](http://www.learningprocessing.com)
 
 #### Work on projects
+
+### Thursday October 6, 2022
+# todays-lecture
+#### Administration
+- Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
+- Note in the weekly schedule
+	- Midterm due
+	- Midterm documentation
+	- Reading and preparation for after the break
+	- **You must provide your own USB-C adapter if you require one**
+
+##### Other resources
+- [Creative Coding lecture notes](https://creative-coding.decontextualize.com/)
+- [Coding Train](https://thecodingtrain.com/Tutorials/) tutorials (by Dan Shiffman)
+- A nice set of p5.js tutorials by [Happy
+Coding](https://happycoding.io/tutorials/p5js/)
+
+#### Demonstrate color tracking from last week
+
+#### Work on projects
+
+#### Intro to Arduino (Time permitting)
+
+##### Introduction to Arduino
+
+- IDE
+- `blink`
+- What role does Arduino play?
+- Switches and other sensors
+- LEDs and other actuators
+- Inputs and outputs
+- Electricity
+- Circuits
+- Schematics
+- Series and Parallel
+
+#### Electricity 
+
+**Simple circuit using Arduino, LED, and Resistor**
+
+The most confusing part of this lecture will be the solderless breadboard:
+![](media/breadboard.jpg)
+Image courtesy of
+[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+
+Here is how to build the circuit
+
+![](media/ArduinoPoweringLED_bb.png)
+
+
+**Theory**
+
+Electricity is mysterious
+
+- We can predict what it will do quite accurately, but don't really understand
+	it what is it
+- Flow of electrons
+- Electrons want to move from place of higher potential energy to place of lower potential energy
+	- Like a rock or water falling from a height
+	- Unlike a rock or water, electricity can only travel in a conductor
+- AC vs. DC - very briefly, will discuss more as it comes up
+
+What makes a circuit?
+
+- Something to provide that difference in potential 
+that will cause the electrons to want to move. 
+	- Typically a battery, charger, or USB port
+	- The technical term is "power supply"
+	- In our case your laptop via the Arduino
+		- What is the Arduino doing in this case?
+- Conductors to allow the electronics to move
+- Components or other things that usually convert this electrical energy 
+to some other form of energy (e.g. light, sound, heat, movement)
+- Optionally, switches or other sensors to control the flow of energy
+	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
+
+#### Schematics
+
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
+- Important part of something, 
+	without getting distracted by details (e.g. subway maps)
+- What's important in an electrical schematic?
+	- Where is the power coming from?
+	- What other components are there in the circuit?
+	- How are they connected?
+
+**Schematics are an important way to show a circuit. You will be required to
+understand and use them**
+
+#### Switches
+
+- What if we want to turn it the LED on and off?
+ 	- Pull out a wire
+ 	- That's a switch, but a pretty inconvenient one
+	- Schematic symbol of switch
+	- How does it work?
+		- Breaks the flow of electrons by breaking the continuous path
+		- Doesn't electricity (the electrons) just flow out the end of the wire?
+	- The switch can go on either side. How is this possible?
+
+Let's use a real switch
+
+![](media/ArduinoPoweringLEDWithSwitch_schem.png)
+![](media/ArduinoPoweringLEDWithSwitch_bb.png)
+
+- How is this switch different from the earlier switch?
+	- Schematic symbol of momentary switch
+	- What was the previous "switch"?
+	- Schematic symbol of toggle switch
+
+#### Series and Parallel
+
+- What if we put two LEDs or switches in?
+- Two different ways: 
+
+Series: All the current (electrons) must go through both components, one after
+the other. 
+![](media/ArduinoPowering2LEDSeries_schem.png)
+![](media/ArduinoPowering2LEDSeries_bb.png)
+
+Parallel: Both components experience the same voltage difference
+![](media/ArduinoPowering2LEDparallel_schem.png)
+![](media/ArduinoPowering2LEDparallel_bb.png)
+
+- Any components can be connected in series or parallel; not just LEDs or
+	switches
+- Components might be in series, or parallel, or neither
+- Components in series have the same **current** flowing through them
+- Components in parallel have the same **voltage** across them
+- No matter how many components you have in a circuit, and how they are
+	connected, they will obey these principles.
+
+#### Ohm's law
+- I=V/R
+- The math only works for linear components 
+	- But the principle is the same for non-linear components 
+	- **is a very important concept**:
+		- For a given resistance, 
+			the higher the pressure (voltage), 
+				the higher the current
+		- For a given voltage, the higher the "resistance", 
+			the lower the current
+
+![](media/electricityExplained.jpg)
+
