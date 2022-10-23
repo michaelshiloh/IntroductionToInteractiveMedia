@@ -29,7 +29,7 @@ This document: Student Accounts
 
 P5js.org accounts
 - [Hamad Al Shamsi](https://editor.p5js.org/hmd-shamsi/sketches)
-- [Hessa AlAbbas]()
+- [Hessa AlAbbas](https://editor.p5js.org/hessaala)
 - [Nouf Abduljalil Abbasi](https://editor.p5js.org/Nouf-Alabbasi/sketches)
 - [Mohamed Alhosani](https://editor.p5js.org/Mohamed_Khalifa/sketches)
 - [Aisha Alketbi](https://editor.p5js.org/aishaalketbi_/sketches)
