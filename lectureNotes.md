@@ -1763,9 +1763,6 @@ Other video tricks
 #### Work on projects
 
 ### Thursday October 6, 2022
-# todays-lecture
-#### Administration
-- Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
 - Note in the weekly schedule
 	- Midterm due
 	- Midterm documentation
@@ -1782,7 +1779,10 @@ Coding](https://happycoding.io/tutorials/p5js/)
 
 #### Work on projects
 
-#### Intro to Arduino (Time permitting)
+### Tuesday October 25, 2022
+# todays-lecture
+#### Administration
+- Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
 
 ##### Introduction to Arduino
 
@@ -1908,4 +1908,227 @@ Parallel: Both components experience the same voltage difference
 			the lower the current
 
 ![](media/electricityExplained.jpg)
+
+#### Arduino finally!
+
+Make sure everything is working
+
+- Upload the Blink example
+- Change the parameter in delay()
+- Upload again and verify that the LED blinks at the new rate
+
+#### Basic Arduino and Digital Output
+
+Upload File -> Examples -> Basic -> Blink example
+
+What is going on?
+
+- Code
+- Circuit
+- I/O pins
+	- 20 pins
+	- Arduino provides LED on pin 13
+	- LED_BUILTIN = 13 
+
+Let's extend this circuit to the breadboard:
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
+#### Digital Input
+
+Adding a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+An example:
+
+````
+
+const int pushButton = A2;
+const int redLEDPin = A0;
+const int greenLEDPin = 8;
+
+void setup() {
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(greenLEDPin, OUTPUT);
+}
+
+void loop() {
+
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == HIGH) {
+    digitalWrite(redLEDPin, HIGH);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(500);
+    digitalWrite(greenLEDPin, LOW);
+    delay(300);
+    digitalWrite(redLEDPin, LOW);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(700);
+  }
+  allOff();
+  delay(1000);
+}
+
+void allOff() {
+  digitalWrite(redLEDPin, LOW);
+  digitalWrite(greenLEDPin, LOW);
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+#### In-class exercise
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. 
+Using two switches you can select between four patterns.
+How is that possible?
+
+#### Analogue Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analogue Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+- Remember that the so-called analog input pins can do digital input and
+	output as well
+- Since you have so few analog input pins, when you decide which pins to use
+	for which device, reserve the analog input pins for analog input devices
+	as much as possible
+
+Do you see a similarity between this circuit and 
+something we learned earlier?
+
+Some analogue sensors are resistive, some are not. 
+Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch - 
+the switch circuit is also effectively a voltage divider, one that has only
+two values instead of an infinite range of values
+
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
+#### Potentiometer
+
+[Here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-1b-potentiometer)
+
+#### Misc
+- Hand drawn schematics in your homework are fine!
+Here is an example:
+
+![](media/handDrawnSchematicExample.jpg)
+
+- Hand drawn switches can use the simple symbol
+- Resources are available to help you with homework (me, Jack), but only
+	if you start your homework early enough. If you wait until the last minute
+	and then don't have time to get help, that is unexcusable.
+- Use constants for pin numbers
+
+#### Analogue Output
+
+- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- `analogWrite()` only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- LEDs, motors, and some other actuators respond properly to PWM
+	- Other actuators, like a solenoid, do not respond well to PWM and really
+		should be considered digital actuators
+	- Since you have so few analog outputs, when you decide which pins to use
+		for which device, reserve the analog output pins for analog output devices
+		as much as possible
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from p5.js which are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in p5.js to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.print()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+Here is the program we developed at the end of class:
+
+````
+const int LED_PIN = 3;           // the PWM pin the LED is attached to
+const int POT_PIN = A2;
+int brightness = 0;    // how bright the LED is
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 9 to be an output:
+  pinMode(LED_PIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  int pot_value = analogRead(POT_PIN); // 0-1023
+  brightness = map(pot_value, 0, 1023, 255, 0);
+  Serial.println(brightness);
+  analogWrite(LED_PIN, brightness); // 0-255
+}
+````
+
+#### In-class exercise
+
+1. Use one of the analogue sensors to select which of two LEDs lights up
+1. Use one of the analogue sensor to control how fast two LEDs alternate
+1. Use a momentary switch (often called a *pushbutton* or a *button* in the
+	 Arduino literature) to select a different range for mapping an analog
+	 sensor to an analog output device
+1. Use a potentiometer to select from 4 different behaviors of a circuit
 
