@@ -1780,9 +1780,6 @@ Coding](https://happycoding.io/tutorials/p5js/)
 #### Work on projects
 
 ### Tuesday October 25, 2022
-# todays-lecture
-#### Administration
-- Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
 
 ##### Introduction to Arduino
 
@@ -1921,19 +1918,27 @@ Make sure everything is working
 
 Upload File -> Examples -> Basic -> Blink example
 
-What is going on?
-
-- Code
-- Circuit
-- I/O pins
-	- 20 pins
-	- Arduino provides LED on pin 13
-	- LED_BUILTIN = 13 
-
 Let's extend this circuit to the breadboard:
 
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
+
+### Thursday October 27, 2022
+# todays-lecture
+#### Administration
+- Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
+
+Review
+
+- Code
+- Circuit
+- Input and Output (I/O) pins
+	- 20 IO pins
+	- All 20 pins can do digital input and digital output
+	- Many of the pins have additional special functionality
+- Built-in LED
+	- On the Arduino Uno this LED is on pin 13
+	- On the Arduino Uno LED_BUILTIN = 13 
 
 #### Digital Input
 
