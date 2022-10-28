@@ -30,7 +30,7 @@ This document: Student Accounts
 P5js.org accounts
 - [Abigail Mata-Hernandez](https://editor.p5js.org/abigailmh/sketches)
 - [Ahmad Fraij](https://editor.p5js.org/AhmadFraij/sketches)
-- [Ahmed Bilal]()
+- [Ahmed Bilal](https://editor.p5js.org/Ahmed_Bilal/sketches)
 - [Aisha Alketbi](https://editor.p5js.org/aishaalketbi_/sketches)
 - [Clara Juong](https://editor.p5js.org/Clara0424/sketches)
 - [Hamad Al Shamsi](https://editor.p5js.org/hmd-shamsi/sketches)
