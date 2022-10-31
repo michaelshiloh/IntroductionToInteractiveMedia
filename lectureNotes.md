@@ -1924,9 +1924,6 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_bb.png)
 
 ### Thursday October 27, 2022
-# todays-lecture
-#### Administration
-- Record [Zoom](https://nyu.zoom.us/j/97909657731) and don't forget to unmute!
 
 Review
 
@@ -2023,6 +2020,18 @@ Now write a program that will blink different patterns depending on which
 switch is pressed. 
 Using two switches you can select between four patterns.
 How is that possible?
+
+### Tuesday November 1, 2022
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Feedback
+- Don't include the full code of your assignment in your blog posts
+- Better comments
+- Better names for variables, functions, classes, and objects
 
 #### Analogue Input
 
@@ -2136,4 +2145,6 @@ void loop() {
 	 Arduino literature) to select a different range for mapping an analog
 	 sensor to an analog output device
 1. Use a potentiometer to select from 4 different behaviors of a circuit
-
+1. Use a momentary switch to enter a mode where the minimum and maximum values
+	from the LDR are stored. When the switch is released, use those values to
+	map the range of values from the LDR to the full range of the LED brightness
