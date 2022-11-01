@@ -2091,6 +2091,8 @@ Here is an example:
 		for which device, reserve the analog output pins for analog output devices
 		as much as possible
 
+#### Discussion: How is this class going for you?
+
 - Not true analog voltage. PWM = Pulse Width Modulation
 - Works for LEDs and motors
 
