@@ -2158,6 +2158,7 @@ Thursday I'm at a conference so our class will be held online via Zoom.
 Attendance is still required.
 
 #### Today
+- Break at 2:10
 - Sound
 - Servo motor
 - More about circuits
