@@ -2182,8 +2182,8 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 	I think they mean that it 
 	prevents `analogWrite()` from working on pins 3 and 11
 - The `tone()` function is *non-blocking*
-- Arduino supports tabs just like in p5.js
-- Arduino has arrays just like in p5.js
+- Arduino supports tabs 
+- Arduino has arrays 
 - What is resistor for? 
 	- LED needs a resistor to limit current so it doesn't burn out
 	- LDR needs a resistor to form a voltage divider
