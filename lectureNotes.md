@@ -2147,11 +2147,6 @@ void loop() {
 	map the range of values from the LDR to the full range of the LED brightness
 
 ### Tuesday November 8, 2022
-# todays-lecture
-#### Administration
-- [Zoom](https://nyu.zoom.us/j/97909657731) 
-- Record
-- Unmute
 
 #### Announcement
 Thursday I'm at a conference so our class will be held online via Zoom.
@@ -2263,49 +2258,6 @@ variable:
 	- If you use the buses on the sides of the breadboard
 		- Red bus for 5V only
 		- Black or Blue bus for GND only
-
-#### Circuits
-
-Some theory that might help you think about why circuits are they way they
-are
-- Important concepts:
-	- Voltage 
-		- Voltage is a relative quantity so it's always measured or identified
-			relative to some other point (usually a common reference point such as
-			"ground")
-		- Can be thought of the "pressure" applied to the electrons
-		- Analogous to holding a brick at a certain height above the floor. Relative
-			to the floor, the brick has a certain amount of potential energy
-		- Voltage exists whether or not there is a circuit
-	- Resistance 
-		- The resistance the electrons face as they try to get through
-		components. 
-		- Analogous to a traffic jam on a road
-		- Conductors (wires) have zero resistance (for our purposes)
-		- All components have some sort of "resistance"
-		- Resistance is a property of a component and therefore
-		exists whether or not there is a circuit
-	- Current  
-		- The rate of flow of electrons through a circuit (electrons/second)
-		- Somewhat analogous to litres/hour or cars/hour
-		- **Current only exists when there is a circuit**
-- If you measure the voltage between any two points, the voltage will not
-	change as you move to different places on the **wire**. 
-		However if you cross
-		a component the voltage might be different on the other side of the
-		component
-- If you measure current through components connected in 
-	series the current will not change. This is because **all** the electrons
-	that go through the first component have to go through the rest. No
-	electrons can leave the path, and no new ones can enter.
-		However if there are any branches some electrons might go on the
-		branches and thus the current will drop.
-- Review
-- Voltage does **not** change in a conductor
-	- That is why we can connect things to the same node in any order
-- Voltage **does** change when you go across a component
-	- That is why it is **important** to make connections to the correct side of a
-		component!
 
 #### In-class exercises
 
@@ -2458,3 +2410,57 @@ void loop() {
 }
 ````
 
+### Thursday November 10, 2022
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Discussion
+Physical computing's Greatest Hits and Misses; Making Interactive Art: Nouf and Clara
+
+#### Circuits
+
+Some theory that might help you think about why circuits are they way they
+are
+- Important concepts:
+	- Voltage 
+		- Voltage is a relative quantity so it's always measured or identified
+			relative to some other point (usually a common reference point such as
+			"ground")
+		- Can be thought of the "pressure" applied to the electrons
+		- Analogous to holding a brick at a certain height above the floor. Relative
+			to the floor, the brick has a certain amount of potential energy
+		- Voltage exists whether or not there is a circuit
+	- Resistance 
+		- The resistance the electrons face as they try to get through
+		components. 
+		- Analogous to a traffic jam on a road
+		- Conductors (wires) have zero resistance (for our purposes)
+		- All components have some sort of "resistance"
+		- Resistance is a property of a component and therefore
+		exists whether or not there is a circuit
+	- Current  
+		- The rate of flow of electrons through a circuit (electrons/second)
+		- Somewhat analogous to litres/hour or cars/hour
+		- **Current only exists when there is a circuit**
+- If you measure the voltage between any two points, the voltage will not
+	change as you move to different places on the **wire**. 
+		However if you cross
+		a component the voltage might be different on the other side of the
+		component
+- If you measure current through components connected in 
+	series the current will not change. This is because **all** the electrons
+	that go through the first component have to go through the rest. No
+	electrons can leave the path, and no new ones can enter.
+		However if there are any branches some electrons might go on the
+		branches and thus the current will drop.
+- Review
+- Voltage does **not** change in a conductor
+	- That is why we can connect things to the same node in any order
+- Voltage **does** change when you go across a component
+	- That is why it is **important** to make connections to the correct side of a
+		component!
+
+#### More examples (time permitting)
