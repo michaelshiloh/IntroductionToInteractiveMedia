@@ -2459,11 +2459,6 @@ are
 		component!
 
 ### Tuesday November 15, 2022
-# todays-lecture
-#### Administration
-- [Zoom](https://nyu.zoom.us/j/97909657731) 
-- Record
-- Unmute
 
 #### Arduino-p5.js communication
 
@@ -2501,3 +2496,13 @@ In-class exercise (break class into groups of 2-3 students)
 	it so every time the ball bounces one led lights up and then turns off, and
 	you can control the wind from one analog sensor
 
+### Thursday November 17, 2022
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Today
+- Musical instruments!
+- Discussion Zhaniya and Aisha
