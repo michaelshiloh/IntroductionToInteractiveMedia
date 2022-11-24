@@ -2503,11 +2503,6 @@ In-class exercise (break class into groups of 2-3 students)
 - Discussion Zhaniya and Aisha
 
 ### Tuesday November 22, 2022
-# todays-lecture
-#### Administration
-- [Zoom](https://nyu.zoom.us/j/97909657731) 
-- Record
-- Unmute
 
 #### Plan for today: 
 - Motors
@@ -2705,6 +2700,15 @@ What techniques have you learned to help you find problems?
 - Strain relief
 
 #### Soldering
+
+### Thursday November 24, 2022
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Reading discussion (A Brief Rant on the Future of Interaction Design; A Follow-up Article: Zhaniya and Aisha)
 
 #### How to use a Digital Multimeter (DMM) 
 
