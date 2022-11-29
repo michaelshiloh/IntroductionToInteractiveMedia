@@ -2702,11 +2702,6 @@ What techniques have you learned to help you find problems?
 #### Soldering
 
 ### Thursday November 24, 2022
-# todays-lecture
-#### Administration
-- [Zoom](https://nyu.zoom.us/j/97909657731) 
-- Record
-- Unmute
 
 #### Reading discussion (A Brief Rant on the Future of Interaction Design; A Follow-up Article: Zhaniya and Aisha)
 
@@ -2752,3 +2747,15 @@ Play a melody and blink an LED
 without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
+### Tuesday November 29, 2022
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Today
+- Discuss final project ideas
+- Review `blinkWithoutDelay()`
+- Informal course feedback
+- Work on final projects
