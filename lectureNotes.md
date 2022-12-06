@@ -2787,4 +2787,5 @@ without using `delay()`:
 		[bidirectional](https://editor.p5js.org/aaronsherwood/sketches/q2Pl77SWl) 
 		example
 - Any general problems or questions?
+- Clean up!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - Work on final projects
