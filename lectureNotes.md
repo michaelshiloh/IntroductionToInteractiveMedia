@@ -2748,6 +2748,14 @@ without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
 ### Tuesday November 29, 2022
+
+#### Today
+- Discuss final project ideas
+- Review `blinkWithoutDelay()`
+- Informal course feedback
+- Work on final projects
+
+### Tuesday December 6, 2022
 # todays-lecture
 #### Administration
 - [Zoom](https://nyu.zoom.us/j/97909657731) 
@@ -2755,7 +2763,9 @@ without using `delay()`:
 - Unmute
 
 #### Today
-- Discuss final project ideas
-- Review `blinkWithoutDelay()`
-- Informal course feedback
+- Review serial communication
+	- Use only the
+		[bidirectional](https://editor.p5js.org/aaronsherwood/sketches/q2Pl77SWl) 
+		example
+- Any general problems or questions?
 - Work on final projects
