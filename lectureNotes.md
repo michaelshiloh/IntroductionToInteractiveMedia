@@ -2763,6 +2763,25 @@ without using `delay()`:
 - Unmute
 
 #### Today
+- Homework due this week and next
+- IM Showcase!
+	- The IM Showcase is on Wed Dec 14th, exhibition 3 to 5pm, performances 5 to
+	 6pm.
+	- The Lobby and the Black Box will be available for us to set up and install
+	 starting on Mon Dec 12th.
+	- For any equipment needed for the showcase, please 
+	 book them as soon as possible. Check the
+	 items out immedialely to verify that they work with your project.
+	- I need to list all participating projects including:
+	- students' name
+	- space needs for each project, such as table/floor space 
+	- whether or not a pedestal is needed.
+	- any equipment needs that are not available on Connect2
+	such as a large TV screen on stand.
+	- We can usually get about 4 to 8 pedestals and about 3 to 5 large TVs in
+	total, so please keep this in mind when you make such requests.
+	- Intro to IM: 80x50cm area on a shared large table for demonstrating visuals
+	on a laptop with small to medium hardware components
 - Review serial communication
 	- Use only the
 		[bidirectional](https://editor.p5js.org/aaronsherwood/sketches/q2Pl77SWl) 
