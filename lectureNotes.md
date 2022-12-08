@@ -2756,12 +2756,6 @@ without using `delay()`:
 - Work on final projects
 
 ### Tuesday December 6, 2022
-### Tuesday December 6, 2022
-# todays-lecture
-#### Administration
-- [Zoom](https://nyu.zoom.us/j/97909657731) 
-- Record
-- Unmute
 
 #### Today
 - Homework due this week and next
