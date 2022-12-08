@@ -2756,6 +2756,7 @@ without using `delay()`:
 - Work on final projects
 
 ### Tuesday December 6, 2022
+### Tuesday December 6, 2022
 # todays-lecture
 #### Administration
 - [Zoom](https://nyu.zoom.us/j/97909657731) 
@@ -2789,3 +2790,19 @@ without using `delay()`:
 - Any general problems or questions?
 - Clean up!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - Work on final projects
+
+### Thursday December 8, 2022
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Today
+- Homework due this week and next
+- Legislative days:
+  - December 11 (Sunday)- Classes meet on a Wednesday schedule
+  - December 12 (Monday) - Classes meet on a Thursday schedule
+  - December 13 (Tuesday) - Classes meet on a Friday schedule
+- Evaluations - do them on your own or take time out on Sunday
+
