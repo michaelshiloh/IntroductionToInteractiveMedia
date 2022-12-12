@@ -2786,12 +2786,6 @@ without using `delay()`:
 - Work on final projects
 
 ### Thursday December 8, 2022
-# todays-lecture
-#### Administration
-- [Zoom](https://nyu.zoom.us/j/97909657731) 
-- Record
-- Unmute
-
 #### Today
 - Homework due this week and next
 - Legislative days:
@@ -2800,3 +2794,14 @@ without using `delay()`:
   - December 13 (Tuesday) - Classes meet on a Friday schedule
 - Evaluations - do them on your own or take time out on Sunday
 
+### Monday December 12, 2022 (pretending to be Thursday)
+# todays-lecture
+#### Administration
+- [Zoom](https://nyu.zoom.us/j/97909657731) 
+- Record
+- Unmute
+
+#### Today
+- Show your work
+- Schedule for Wednesday
+	- Scroll down to the schedule [here](https://intro.nyuadim.com/)
