@@ -1,5 +1,3 @@
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)
-
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
 ## Course title: Introduction to interactive Media  
@@ -8,16 +6,18 @@ Section: 1
 Credit Hours: 4         
 Prerequisites: None       
 
+Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)
+
 Course website: [https://github.com/michaelshiloh/introductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
 Meeting times:    
-	12:45-3:25 Tuesday  
-	2:10-3:25 Thursday     
-Session: Fall 2022       
+	12:45-2:00 Tuesday  
+	11:20-2:00 Thursday     
+Session: Spring 2023  
 Class location: C3-029 (IM Lab)  
 [Discord](https://discord.gg/mFJ5fqKk)  
-[Zoom](https://nyu.zoom.us/j/97909657731)  
+[Zoom](TBA)
 [Syllabus](https://intro.nyuadim.com/syllabus/)  
 My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 
@@ -25,11 +25,11 @@ My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 
 This document: Student Discussion Leaders
 
-- Casey Reas: Mohamed Alhosani will lead the discussion
-- The Art of Interactive Design: Ahmad Fraij and Hamad 
-- The Design of Everyday Things: Hessa and Marija 
-- Computer Vision for Artists: Ian and Joonha 
-- Emotions and Design; Her Code Got Humans on the Moon: Ahmed Bilal and Abigail 
-- Physical computing's Greatest Hits and Misses; Making Interactive Art: Nouf and Clara
-- A Brief Rant on the Future of Interaction Design; A Follow-up Article: Zhaniya and Aisha 
-- Design Meets Disability: Vivianna and Maryam
+- Casey Reas: 
+- The Art of Interactive Design: 
+- The Design of Everyday Things: 
+- Computer Vision for Artists: 
+- Emotions and Design; Her Code Got Humans on the Moon: 
+- Physical computing's Greatest Hits and Misses; Making Interactive Art: 
+- A Brief Rant on the Future of Interaction Design; A Follow-up Article: 
+- Design Meets Disability: 
