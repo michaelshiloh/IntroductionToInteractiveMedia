@@ -16,7 +16,6 @@ Meeting times:
 	11:20-2:00 Thursday     
 Session: Spring 2023  
 Class location: C3-029 (IM Lab)  
-- [Discord](https://discord.gg/mFJ5fqKk)  
 - [Zoom](TBA)
 - [Syllabus](https://intro.nyuadim.com/syllabus/)  
 - [Example sketches](https://editor.p5js.org/michaelshiloh/sketches)
