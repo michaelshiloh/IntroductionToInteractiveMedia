@@ -1,3 +1,4 @@
+
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
 ## Course title: Introduction to interactive Media  
@@ -14,7 +15,7 @@ Office hours: By appointment
 Meeting times:    
 	12:45-2:00 Tuesday  
 	11:20-2:00 Thursday     
-Session: Spring 2023
+Session: Spring 2023  
 Class location: C3-029 (IM Lab)  
 [Discord](https://discord.gg/mFJ5fqKk)  
 [Zoom](TBA)

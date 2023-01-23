@@ -6,7 +6,7 @@ Section: 1
 Credit Hours: 4         
 Prerequisites: None       
 
-Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)
+Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)  
 
 Course website: [https://github.com/michaelshiloh/introductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
@@ -16,11 +16,12 @@ Meeting times:
 	11:20-2:00 Thursday     
 Session: Spring 2023  
 Class location: C3-029 (IM Lab)  
-[Discord](https://discord.gg/mFJ5fqKk)  
-[Zoom](TBA)
-[Syllabus](https://intro.nyuadim.com/syllabus/)  
-My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
+- [Discord](https://discord.gg/mFJ5fqKk)  
+- [Zoom](TBA)
+- [Syllabus](https://intro.nyuadim.com/syllabus/)  
+- [Example sketches](https://editor.p5js.org/michaelshiloh/sketches)
+- [Lecture notes](lectureNotes.md)
+- [Previous sessions](previousSessions/previousSessions.md)
 
-Welcome to Introduction to Interactive Media! 
-- Lecture notes can be found [here](lectureNotes.md)
-- Previous sessions can be explored [here](previousSessions/previousSessions.md).
+**Everything here is subject to change**
+

@@ -1,3 +1,4 @@
+
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
 ## Course title: Introduction to interactive Media  
@@ -22,6 +23,7 @@ Class location: C3-029 (IM Lab)
 My example sketches are [here](https://editor.p5js.org/michaelshiloh/sketches)
 
 **This is subject to change**
+
 
 This document: Student Discussion Leaders
 
