@@ -45,15 +45,17 @@ Attendance
 		in IM, we grade by effort and progress, 
 		not by a fixed level of accomplishment.
 		- Challenge: How do I evaluate evaluate effort and progress? 
-			- Ideas?
+			- Discussion
 	- In IM we strongly encourage experimentation, thinking outside the box,
 		and risk taking. 
 		However taking risks is only possible 
 		if failure doesn't have catastrophic results. 
 		If failure results in a poor grade, 
 		how does that encourage risk taking?
-		- Suggestions?
+		- Discussion
 		- MVP
+* Phone and laptop policies
+	- Discussion
 
 * introductions
 
