@@ -29,6 +29,9 @@ This document: Lecture notes
 
 ### Tuesday 24 January 2023
 
+#### Administration
+Attendance
+
 #### Introduction to class
 * Join Discord
 * What are some examples of IM projects? 
