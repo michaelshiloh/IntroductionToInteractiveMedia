@@ -8,7 +8,7 @@ Prerequisites: None
 
 Shortcut to [today's lecture](lectureNotes.md/#todays-lecture)  
 
-Course website: [https://github.com/michaelshiloh/introductionToleteractiveMedia](https://github.com/michaelshiloh/letroductionToleteractiveMedia)      
+Course website: [https://github.com/michaelshiloh/IntroductionToInteractiveMedia](https://github.com/michaelshiloh/IntroductionToInteractiveMedia)      
 Instructor: Michael Shiloh mshiloh@nyu.edu    
 Office hours: By appointment  
 Meeting times:    
