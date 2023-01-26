@@ -249,7 +249,7 @@ function draw() {
 }
 ```
 
-#Woah!
+# Woah!
 
 If the `draw()` function runs continuously, can we use it to make things
 change?
