@@ -144,7 +144,7 @@ harp</a></li>
 
 ##### Simple shapes in p5.js
 
-Open [p5.js editor](editor.p5.js/)
+Open the p5.js editor by visiting editor.p5.js
 
 type this in:
 
