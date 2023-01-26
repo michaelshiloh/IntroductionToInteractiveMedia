@@ -130,6 +130,16 @@ harp</a></li>
 </li>
 </ul>
 
+### Thursday 26 January
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Introduction to programming in p5.js
+- Primitive drawing functions
+- How to tell where you are on the canvas
+
 #### Let's get started
 
 ##### Simple shapes in p5.js
