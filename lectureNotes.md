@@ -139,6 +139,7 @@ harp</a></li>
 - Introduction to programming in p5.js
 - Primitive drawing functions
 - How to tell where you are on the canvas
+- Homework (see weekly schedule above)
 
 #### Let's get started
 
