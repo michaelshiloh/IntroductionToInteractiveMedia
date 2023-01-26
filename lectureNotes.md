@@ -429,9 +429,9 @@ function setup() {
 
 function draw() {
   if (mouseIsPressed === true) {
-    background(color(0, 0, 255));
+    background(0, 0, 255);
   } else {
-    background(color(200, 0, 0));
+    background(200, 0, 0);
   }
 }
 ````
