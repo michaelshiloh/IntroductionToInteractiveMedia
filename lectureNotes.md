@@ -146,7 +146,27 @@ harp</a></li>
 
 Open the p5.js editor by visiting editor.p5.js
 
+If you don't already have an account on p5.js you might want to do so now, or
+after class. If you do it now you can save what you do in class
+
 type this in:
+
+```
+function setup() {
+  circle(50, 80, 30);
+  square (80, 30, 40);
+}
+```
+
+- `circle()`
+- `square()`
+- `ellipse()`
+- `rect()`
+- `fill()`
+
+Spend a few minutes playing with this
+
+##### Variables
 
 ```
 function setup() {
@@ -165,8 +185,6 @@ Now let's break this down one step at a time
 
 More primitive drawing functions
 
-- `ellipse()`
-- `rect()`
 - `triangle()`
 - `line()`
 - `point()`
