@@ -283,9 +283,8 @@ function draw() {
 	xPosition = xPosition + 1;
 }
 ```
-##### More about variables
 
-Built-in variables
+##### Built-in variables
 - `mouseX`, `mouseY`
 - `width`, `height`
 - many others; we will discover more as we go along
@@ -297,6 +296,9 @@ Javascript is not a typed language: you don't need to declare
 - `let myArray = ["the", "quick", "brown", "fox"];`
 - `let myRandomNumber = random(255);`
 - `let myRandomNumber = round(random(255));`
+
+It's important to be aware of the difference between a variables name and
+a variable's value
 
 How can we find out what a variable's value is?
 `print()` 
