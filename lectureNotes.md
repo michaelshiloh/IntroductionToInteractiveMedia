@@ -407,6 +407,9 @@ function draw() {
 }
 ````
 
+*** cellphone/laptop rules: really about attention and respect, not about
+technology***
+
 ##### What is `frameRate()`?
 
 ````
