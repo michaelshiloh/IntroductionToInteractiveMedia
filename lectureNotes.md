@@ -339,7 +339,7 @@ function draw() {
 - Animation, Conditionals, Loops
 
 #### Homework
-- Homework schedule. Note the deadline
+- [Homework schedule](https://intro.nyuadim.com/). Note the deadline
 - Late homework
 
 #### Lecture logistics and rules
@@ -348,13 +348,14 @@ so why sit through class?
 - This is not a coding class. This class includes design and critique
 - Since you already know how to code, your creativity
 	and critical thinking will be judged to a high standard
-- Today I will give a very quick overview of the material to be 
+- Today we will try something different:
+	I will give a very quick overview of the material to be 
 		covered and then give you challenges which you are expected to solve in
-		creative ways. We will then engage in critique of your works.
+		creative ways. We will all then engage in critique of your works.
 - I expect full attention and engagement. Doing something not related to class
 	is rude, disrespectful, and will result in a reduced grade. The
-	cellphone/laptop rules: really about attention and respect, not about
-	technology
+	cellphone/laptop rules that we discussed last Tuesday is really about
+	attention and respect, not about technology
 
 #### Animation, Conditionals, Loops
 
@@ -446,7 +447,7 @@ function draw() {
 }
 ````
 
-##### conditionals 
+##### Conditionals 
 
 One of the most important features of computer programming is the ability to
 do different things based on the outcome of some previous event 
@@ -577,6 +578,8 @@ Note that I've done all the above looping examples in `setup()` and not in
 
 1. Create a work of art inspired by Aaron's [examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
 
+
+# Thursday
 
 #### Functions
 
