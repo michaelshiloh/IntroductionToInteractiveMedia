@@ -133,10 +133,6 @@ harp</a></li>
 </ul>
 
 ### Thursday 26 January
-##### todays-lecture
-#### Administration
-- Attendance
-
 #### Today
 - Introduction to programming in p5.js
 - Primitive drawing functions
@@ -306,6 +302,62 @@ a variable's value
 How can we find out what a variable's value is?
 `print()` 
 
+##### Notes:
+
+- Local vs. Global variables
+- Built-in variables
+
+````
+// Example usage of a global variable
+
+let count; // this is now a global variable
+
+function setup() {
+  circle(50, 50, 30);
+  count = 7; // the variable is initialized here
+}
+
+function draw() {
+  count = count + 1; // not algebra!
+  // The result of the right hand side calculation
+  // replaces whatever value was stored in the variable
+  // on the left side of the '=' sign
+  // end result: the variable "count" is incremented by 1
+
+  print (count);
+}
+````
+
+### Tuesday 31 January
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Homework
+- Lecture logistics and rules
+- Animation, Conditionals, Loops
+
+#### Homework
+- Homework schedule. Note the deadline
+- Late homework
+
+#### Lecture logistics and rules
+Many of you already know the material we cover in these first few weeks
+so why sit through class?
+- This is not a coding class. This class includes design and critique
+- Since you already know how to code, your creativity
+	and critical thinking will be judged to a high standard
+- Today I will give a very quick overview of the material to be 
+		covered and then give you challenges which you are expected to solve in
+		creative ways. We will then engage in critique of your works.
+- I expect full attention and engagement. Doing something not related to class
+	is rude, disrespectful, and will result in a reduced grade. The
+	cellphone/laptop rules: really about attention and respect, not about
+	technology
+
+#### Animation, Conditionals, Loops
+
 ##### Animation
 
 Use the `draw()` function to draw something different in each frame. This can
@@ -381,41 +433,12 @@ function draw() {
 
 ````
 
-##### Notes:
-
-- Local vs. Global variables
-- Built-in variables
-
-````
-// Example usage of a global variable
-
-let count; // this is now a global variable
-
-function setup() {
-  circle(50, 50, 30);
-  count = 7; // the variable is initialized here
-}
-
-function draw() {
-  count = count + 1; // not algebra!
-  // The result of the right hand side calculation
-  // replaces whatever value was stored in the variable
-  // on the left side of the '=' sign
-  // end result: the variable "count" is incremented by 1
-
-  print (count);
-}
-````
-
-*** cellphone/laptop rules: really about attention and respect, not about
-technology***
-
-##### What is `frameRate()`?
+##### How often does the `draw()` loop run?
 
 ````
 function setup() {
   frameRate(10);       // frameRate() is a function
-  print(frameRate()); // it takes awhile for the frame rate to change
+  print(frameRate()); // framerate does not change immediately
 }
 
 function draw() {
@@ -458,6 +481,7 @@ In class exercise:
 - Combine these to create a primitive painting program
 
 ##### Loops
+
 - `while()` is like `if()` but it keeps on doing it as long as condition is true
 	- Whereas `if()` does it only once
 	- The assumption is that something changes while you're doing the loop which
@@ -482,6 +506,22 @@ function setup() {
 1. You should get in the habit of giving meaningful names to your variables.
 	1. What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
+
+Another example:
+
+````
+function setup() {
+  let done = false;
+  let counter = 0;
+  while (!done) {
+    print(counter++);
+    if (counter >= 10) {
+      done = true;
+      print("done");
+    }
+  }
+}
+````
 
 There is another way to make a loop using the keyword `for()`. The `for()`
 loop structure combines the initialization step and the incrementation step
@@ -524,7 +564,19 @@ function setup() {
 
 ````
 
-Note that I've done all the above examples in `setup()` and not in `draw()`
+Note that I've done all the above looping examples in `setup()` and not in
+`draw()`, so there is no animation in these examples. Loops can be used in
+`draw()` as well.
+
+##### In class exercise
+
+1. Create a work of art inspired by these early examples of computer graphics: 
+- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
+- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
+- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
+
+1. Create a work of art inspired by Aaron's [examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
+
 
 #### Functions
 
