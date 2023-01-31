@@ -341,6 +341,8 @@ function draw() {
 #### Homework
 - [Homework schedule](https://intro.nyuadim.com/). Note the deadline
 - Late homework
+- Let's look at [your
+	homework](https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/studentAccounts.md)
 
 #### Lecture logistics and rules
 Many of you already know the material we cover in these first few weeks
