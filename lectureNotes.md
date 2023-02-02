@@ -479,6 +479,9 @@ In class exercise:
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
 
+[Here](https://editor.p5js.org/michaelshiloh/sketches/izE0kdT_Q) is the
+example that we developed in class
+
 ### Thursday 2 February
 ##### todays-lecture
 #### Administration
