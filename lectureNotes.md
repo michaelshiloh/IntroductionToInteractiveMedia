@@ -490,8 +490,10 @@ In class exercise:
 - Loops
 
 ##### Painting program
-Vladimir's
-[implementation](https://editor.p5js.org/vsharkovski/sketches/0E5JFi1Pk)
+- Vladimir's
+[paint program](https://editor.p5js.org/vsharkovski/sketches/0E5JFi1Pk)
+- Jun's
+[paint program](https://editor.p5js.org/ojmjunming/sketches/8GQSFuizb)
 
 ##### Loops
 
