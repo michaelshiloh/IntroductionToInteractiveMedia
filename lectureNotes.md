@@ -329,10 +329,6 @@ function draw() {
 ````
 
 ### Tuesday 31 January
-##### todays-lecture
-#### Administration
-- Attendance
-
 #### Today
 - Homework
 - Lecture logistics and rules
@@ -483,6 +479,20 @@ In class exercise:
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
 
+### Thursday 2 February
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Questions, review, etc
+- Painting program
+- Loops
+
+##### Painting program
+Vladimir's
+[implementation](https://editor.p5js.org/vsharkovski/sketches/0E5JFi1Pk)
+
 ##### Loops
 
 - `while()` is like `if()` but it keeps on doing it as long as condition is true
@@ -581,7 +591,7 @@ Note that I've done all the above looping examples in `setup()` and not in
 1. Create a work of art inspired by Aaron's [examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
 
 
-# Thursday
+# Week 3
 
 #### Functions
 
