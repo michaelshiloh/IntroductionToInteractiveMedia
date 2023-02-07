@@ -500,27 +500,35 @@ function draw() {
 
 ### Tuesday September 13, 2022
 
-#### Review variables, variable scope, functions
+#### Arrays
+
+[Really simple array
+example](https://editor.p5js.org/michaelshiloh/sketches/8TB1ONGFA)
+
+
+Why is it better to write:
+
+```
+ if ("d" == key) {
+```
+
+rather than:
+
+```
+ if (key == "d") {
+```
 
 #### Object oriented programming
-
-Go over [this](https://p5js.org/examples/objects-objects.html) example
 
 Now let's create one from scratch. 
 1. First, let's make a ball bounce off all 4 walls of the canvas
 2. Identify carefully and isolate what's in `setup()`, 
 	what does the moving, and what does the drawing
-3. Now carefully write the class:
-	1. The code in `setup()` is most likely the *constructor*
-	1. The moving code and the drawing code are most likely 
-		the two member functions you'll need
-1. Look at the example we did and see how to create the object from the class,
-	 and how to call the member functions at the right times
 
 Let's modify the functions (both constructor and member functions) to take
 arguments
 
-````
+```
 // Commented out is the way this would work without classes
 // let xPos, yPos, xSpeed, ySpeed;
 
@@ -553,6 +561,12 @@ arguments
 //   circle(xPos, yPos, 30);
 // }
 
+3. Now carefully write the class:
+	1. The code in `setup()` is most likely the *constructor*
+	1. The moving code and the drawing code are most likely 
+		the two member functions you'll need
+1. Look at the example we did and see how to create the object from the class,
+	 and how to call the member functions at the right times
 class BouncingBall {
   constructor() {
     this.xPos = width / 2;
@@ -599,6 +613,8 @@ function draw() {
 }
 
 ````
+
+Go over [this](https://p5js.org/examples/objects-objects.html) example
 
 [Here](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) is one solution
 
