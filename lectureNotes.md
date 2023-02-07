@@ -725,13 +725,10 @@ rather than:
 
 #### Object oriented programming
 
-Now let's create one from scratch. 
+A simple bouncing ball example:
 1. First, let's make a ball bounce off all 4 walls of the canvas
 2. Identify carefully and isolate what's in `setup()`, 
-	what does the moving, and what does the drawing
-
-Let's modify the functions (both constructor and member functions) to take
-arguments
+	what does the moving, and what does the drawing?
 
 ```
 function setup() {
@@ -768,8 +765,6 @@ function draw() {
 	1. The code in `setup()` is most likely the *constructor*
 	1. The moving code and the drawing code are most likely 
 		the two member functions you'll need
-1. Look at the example we did and see how to create the object from the class,
-	 and how to call the member functions at the right times
 
 ```
 class BouncingBall {
@@ -818,9 +813,12 @@ function draw() {
 }
 ```
 
-Go over [this](https://p5js.org/examples/objects-objects.html) example
+Functions in a class are just like any other functions for example
+they can take arguments.
 
-[Here](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) is one solution
+For example, it's often useful to pass initialization
+information to the constructor, like 
+[this](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) example
 
 ##### In class exercise
 Write your own class to do something, perhaps inspired by the computer
@@ -858,24 +856,7 @@ function draw() {
 }
 ```
 
-Now we learn about arrays. There is an example
-[here](https://p5js.org/examples/arrays-array.html) but unfortunately it is a
-little complex. The important things to notice are:
-1. Creating the array `let ball = [];` the `[]` is what tells p5 that you're
-	 making an array
-2. Filling the array is what determines the size:
-```
-    if (this.xPos <= 15 || this.xPos >= width - 15) {
-			ball[i] = new BouncingBall(i + 1, 2);
-    }
-```
-Since we have put 10 values into the array, the array has 10 elements in it
-
-Similarly, to access any element in the array you index into the array:
-```
-// Refer to the third element in the array (remember the index starts at 0):
-ball[2];
-```
+#### Arrays of objects
 
 Here then is the bouncing ball example, this time creating 10 
 balls, and storing them in an array:
