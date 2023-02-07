@@ -483,9 +483,6 @@ In class exercise:
 example that we developed in class
 
 ### Thursday 2 February
-##### todays-lecture
-#### Administration
-- Attendance
 
 #### Today
 - Questions, review, etc
@@ -596,7 +593,13 @@ Note that I've done all the above looping examples in `setup()` and not in
 1. Create a work of art inspired by Aaron's [examples](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
 
 
-# Week 3
+### Tuesday 7 February
+##### todays-lecture
+#### Administration
+- Attendance
+- Discussion on Thursday
+
+#### Today
 
 #### Functions
 
@@ -682,7 +685,7 @@ function drawOneHouseAt( x) {
 
 #### Variable Scope (again)
 
-````
+```
 let foo;  // this is a global variable, visible in all functions
 
 function setup() {
@@ -700,5 +703,240 @@ function draw() {
     ellipse(i, height/2, 10,15);
   }
 }
-````
+```
+
+#### Arrays
+
+[Really simple array
+example](https://editor.p5js.org/michaelshiloh/sketches/8TB1ONGFA)
+
+
+Why is it better to write:
+
+```
+ if ("d" == key) {
+```
+
+rather than:
+
+```
+ if (key == "d") {
+```
+
+#### Object oriented programming
+
+Now let's create one from scratch. 
+1. First, let's make a ball bounce off all 4 walls of the canvas
+2. Identify carefully and isolate what's in `setup()`, 
+	what does the moving, and what does the drawing
+
+Let's modify the functions (both constructor and member functions) to take
+arguments
+
+```
+function setup() {
+  createCanvas(400, 400);
+  xPos = width / 2;
+  yPos = random(100, 300);
+  xSpeed = 4;
+  ySpeed = 7;
+}
+
+function draw() {
+  background(220);
+
+  // move the ball
+  xPos += xSpeed;
+  yPos += ySpeed;
+
+  // check for collisions
+  // check first for left and right wall
+  if (xPos <= 15 || xPos >= (width-15)) {
+    xSpeed = -xSpeed;
+  }
+
+  // do the same for the ceiling and the floor
+  if (yPos <= 15 || yPos >= (height-15)) {
+    ySpeed = -ySpeed;
+  }
+
+  circle(xPos, yPos, 30);
+}
+```
+
+3. Now carefully write the class:
+	1. The code in `setup()` is most likely the *constructor*
+	1. The moving code and the drawing code are most likely 
+		the two member functions you'll need
+1. Look at the example we did and see how to create the object from the class,
+	 and how to call the member functions at the right times
+
+```
+class BouncingBall {
+  constructor() {
+    this.xPos = width / 2;
+    this.yPos = random(100, 300);
+    this.xSpeed = 4;
+    this.ySpeed = 7;
+  }
+
+  move() {
+    // move the ball
+    this.xPos += this.xSpeed;
+    this.yPos += this.ySpeed;
+  }
+
+  checkForCollisions() {
+    // check first for left and right wall
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+      this.xSpeed = -this.xSpeed;
+    }
+
+    // do the same for the ceiling and the floor
+    if (this.yPos <= 15 || this.yPos >= height - 15) {
+      this.ySpeed = -this.ySpeed;
+    }
+  }
+
+  draw() {
+    circle(this.xPos, this.yPos, 30);
+  }
+}
+
+let myBouncingBall;
+
+function setup() {
+  createCanvas(400, 400);
+  myBouncingBall = new BouncingBall();
+}
+
+function draw() {
+  background(240);
+  myBouncingBall.move();
+  myBouncingBall.checkForCollisions();
+  myBouncingBall.draw();
+}
+```
+
+Go over [this](https://p5js.org/examples/objects-objects.html) example
+
+[Here](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) is one solution
+
+##### In class exercise
+Write your own class to do something, perhaps inspired by the computer
+graphics homework you just did. Start with something very simple, and slowly
+add features. Or, do this:
+
+Make a class that draws a square in the middle of the screen, and have it
+slowly give the effect of breathing: slowly change size a little bigger and a
+little smaller, and slowly change color slightly, at about the same rate of
+breathing
+
+How to use the modulo function to make something happen less often than every
+frame: 
+
+```
+let shade = 0;
+let amount = 5;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(shade);
+
+  // change the shade only on every other frame
+  if (frameCount % 2 == 0) {
+    shade += amount;
+
+    // make sure the shade stays between 0 and 255
+    if (shade <= 0 || shade >= 255) {
+      amount = -amount;
+    }
+  }
+}
+```
+
+Now we learn about arrays. There is an example
+[here](https://p5js.org/examples/arrays-array.html) but unfortunately it is a
+little complex. The important things to notice are:
+1. Creating the array `let ball = [];` the `[]` is what tells p5 that you're
+	 making an array
+2. Filling the array is what determines the size:
+```
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+			ball[i] = new BouncingBall(i + 1, 2);
+    }
+```
+Since we have put 10 values into the array, the array has 10 elements in it
+
+Similarly, to access any element in the array you index into the array:
+```
+// Refer to the third element in the array (remember the index starts at 0):
+ball[2];
+```
+
+Here then is the bouncing ball example, this time creating 10 
+balls, and storing them in an array:
+
+```
+class BouncingBall {
+  constructor(xSpeed0, ySpeed0) {
+    this.xPos = width / 2;
+    this.yPos = random(100, 300);
+    this.xSpeed = xSpeed0;
+    this.ySpeed = ySpeed0;
+  }
+
+  move() {
+    // move the ball
+    this.xPos += this.xSpeed;
+    this.yPos += this.ySpeed;
+  }
+
+  checkForCollisions() {
+    // check first for left and right wall
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+      this.xSpeed = -this.xSpeed;
+    }
+
+    // do the same for the ceiling and the floor
+    if (this.yPos <= 15 || this.yPos >= height - 15) {
+      this.ySpeed = -this.ySpeed;
+    }
+  }
+
+  draw() {
+    circle(this.xPos, this.yPos, 30);
+  }
+}
+
+let ball = [];
+
+function setup() {
+  
+  createCanvas(400, 400);
+  
+  for (let i = 0; i < 10; i++) {
+    // each ball will have a slightly different
+    // initial speed in the X axis, but all balls
+    // will have the same speed in the Y axis
+    ball[i] = new BouncingBall(i + 1, 2);
+  }
+}
+
+function draw() {
+  background(240);
+
+  for (let i = 0; i < 10; i++) {
+    ball[i].move();
+    ball[i].checkForCollisions();
+    ball[i].draw();
+  }
+}
+```
+
+[Here](https://p5js.org/examples/arrays-array-objects.html)
+is another example showing how to make an array of objects
 
