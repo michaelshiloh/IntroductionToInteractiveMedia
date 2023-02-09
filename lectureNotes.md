@@ -594,12 +594,11 @@ Note that I've done all the above looping examples in `setup()` and not in
 
 
 ### Tuesday 7 February
-##### todays-lecture
-#### Administration
-- Attendance
-- Discussion on Thursday
 
 #### Today
+- Functions
+- Arrays
+- Object Oriented Programming
 
 #### Functions
 
@@ -813,29 +812,32 @@ function draw() {
 }
 ```
 
-Functions in a class are just like any other functions for example
-they can take arguments.
+### Thursday 9 February
+##### todays-lecture
+#### Administration
+- Attendance
 
-For example, it's often useful to pass initialization
-information to the constructor, like 
-[this](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) example
+#### Today
+- Participation and engagement
+- Review arrays and OOP
+- Arrays of objects
+- IM instructors and lab rules
 
-##### In class exercise
-Write your own class to do something, perhaps inspired by the computer
-graphics homework you just did. Start with something very simple, and slowly
-add features. Or, do this:
+#### Review arrays and OOP
 
-Make a class that draws a square in the middle of the screen, and have it
-slowly give the effect of breathing: slowly change size a little bigger and a
-little smaller, and slowly change color slightly, at about the same rate of
-breathing
+- Review the class example we did on Tuesday
+	- What does `this` mean?
+- Functions in a class are mostly like any other functions 
+	- For example, it's often useful to pass initialization information to the
+		constructor, like
+		[this](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) example
 
 How to use the modulo function to make something happen less often than every
 frame: 
 
 ```
 let shade = 0;
-let amount = 5;
+let changeAmount = 5;
 
 function setup() {
   createCanvas(400, 400);
@@ -846,11 +848,11 @@ function draw() {
 
   // change the shade only on every other frame
   if (frameCount % 2 == 0) {
-    shade += amount;
+    shade += changeAmount;
 
     // make sure the shade stays between 0 and 255
     if (shade <= 0 || shade >= 255) {
-      amount = -amount;
+      changeAmount = -changeAmount;
     }
   }
 }
@@ -921,3 +923,6 @@ function draw() {
 [Here](https://p5js.org/examples/arrays-array-objects.html)
 is another example showing how to make an array of objects
 
+##### In class exercise
+Modify your computer graphic homework assignment to 
+use at least one class
