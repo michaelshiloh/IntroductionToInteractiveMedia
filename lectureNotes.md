@@ -926,3 +926,19 @@ is another example showing how to make an array of objects
 ##### In class exercise
 Modify your computer graphic homework assignment to 
 use at least one class
+
+##### Homework
+
+For those of you who know how to use classes and arrays, I want you to use
+this homework assignment to develop your creativity. We will critique your
+assignments in class, so pay extra attention to aesthetics. I don't expect you
+all to be artists, but everyone can pay attention to the visual appearance of
+their work and make conscious choices. Be ready to discuss your work in this
+context, explaining your influences, inspiration, and choices. 
+
+Next week:
+
+##### Review
+
+- [How to remove elemnts from an array](https://love2dev.com/blog/javascript-remove-from-array/)
+- [Adding unique IDs](https://editor.p5js.org/michaelshiloh/sketches/4K4yYYVQA) to objects in an array for identification
