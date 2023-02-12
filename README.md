@@ -20,7 +20,7 @@ Session: Spring 2023
 Class location: C3-029 (IM Lab)  
 - [Zoom](TBA)
 - [Syllabus](https://intro.nyuadim.com/syllabus/)  
-- [Weekly schedule](https://intro.nyuadim.com/spring-22-weekly-schedule/)
+- [Weekly schedule](https://intro.nyuadim.com/)
 - [Example sketches](https://editor.p5js.org/michaelshiloh/sketches)
 - [Lecture notes](lectureNotes.md)
 - [Previous sessions](previousSessions/previousSessions.md)
