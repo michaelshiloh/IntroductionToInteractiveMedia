@@ -813,9 +813,6 @@ function draw() {
 ```
 
 ### Thursday 9 February
-##### todays-lecture
-#### Administration
-- Attendance
 
 #### Today
 - Participation and engagement
@@ -936,9 +933,487 @@ all to be artists, but everyone can pay attention to the visual appearance of
 their work and make conscious choices. Be ready to discuss your work in this
 context, explaining your influences, inspiration, and choices. 
 
-Next week:
+### Tuesday 14 February
+##### todays-lecture
+#### Administration
+- Attendance
 
-##### Review
+#### Today
+-  Reading discussion
+-  Notes on arrays
+-  Transformations
+-  Working with text: Putting on canvas, data visualization, generative text
 
-- [How to remove elemnts from an array](https://love2dev.com/blog/javascript-remove-from-array/)
+#### Notes on arrays
+
+- [How to remove elements from an array](https://love2dev.com/blog/javascript-remove-from-array/)
 - [Adding unique IDs](https://editor.p5js.org/michaelshiloh/sketches/4K4yYYVQA) to objects in an array for identification
+- Randomly choosing elements from an array
+	[example](https://editor.p5js.org/mangtronix/sketches/DMnZyF6Xc)
+
+#### Transformations
+Transformations move the coordinate system
+so you can draw in different places with the same code
+- Available 2D transforms are 
+	- `translate()`
+	- `rotate()`
+	- `scale()`
+- `push()` and `pop()` allow you to remember (record) where the canvas was, 
+and then return to a stored position later
+
+Example: Draw a house at a given location, no transform:
+
+```
+function house(int x, int y)
+{
+  triangle(x + 15, y, x, y + 15, x + 30, y + 15);
+  rect(x, y + 15, 30, 30);
+  rect(x + 12, y + 30, 10, 15);
+}
+```
+
+Same result, but using a transform:
+
+```
+function house(x, y)
+{
+	// Using transformations, no need for clumsy
+	// offsets to each drawing function
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+}
+```
+
+Why do this?
+- Easier to read (and hence less likely to have errors)
+- Easier to code complex motions relative to other motions
+
+**Notes**
+- Just like with `fill()` and `rectMode()`, once you've moved the origin it
+	stays there unless you return it to its starting position. E.g. try putting
+	a circle in the center of the canvas `ellipse (width/2, height/2, 20);`
+- Whenever you do a transformation, it's good practice to **always** 
+	- Store where you were before the transformation using`push()` 
+	- return where you were after the transformation using `pop()`
+
+```
+function house(x, y)
+{
+  push();
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+  pop();
+}
+```
+
+*Suggestion*
+- I encourage you to see what the other section is up to; the other teacher and
+I often exchange ideas and build on each other's examples and lectures. In
+particular, Mang has curated a very nice list of [Additional
+Resources](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#week-22-additional-resources)
+on transformations.
+
+#### Rotation and scaling 
+
+```
+function setup() {
+  createCanvas(400,400);
+  background(240);
+
+  // the red rectangle is drawn before the rotation so
+  // it will stay in place
+  fill(255, 0, 0);
+  rect(200, 200, 100, 100);
+  line(0, 0, 200, 200);
+
+  // Now a green rectangle
+  fill(0, 255, 0);
+
+  // rotation is done here. all subsequent drawing
+  // is done post-rotation
+  rotate(radians(10));
+
+  // the green rectangle is drawn after rotating the canvas
+  rect(200, 200, 100, 100);
+  line(0, 0, 200, 200);
+}
+```
+
+Work through 
+[this](https://genekogan.com/code/p5js-transformations/) resource
+
+#### Working with text: Putting on canvas, data visualization, generative text
+
+##### Putting text on the canvas
+
+Basic default text:
+
+```
+function setup() {
+  createCanvas(400, 400);
+
+  text("My Important Message", width / 2, height / 2);
+}
+```
+
+Using a specific font
+
+```
+function setup() {
+  createCanvas(400, 400);
+  textFont("Courier New", 25);
+
+  text("My Important Message", width / 2, height / 2);
+}
+```
+Fonts that seem to be available are 'Courier New' (monospace), and 'Helvetica'
+(non-monospace)
+
+You can also load your own fonts but that requires uploading them to the p5.js
+server
+
+Help->Reference->LoadFont Typography (p5 reference)
+
+Note that p5.js is **asynchronous**, meaning that setup() will continue even
+if the loadFont() hasn't finished. 
+
+(What are *blocking* vs. *non-blocking* functinos?)
+
+There are two ways to force your program to
+wait for the font to load:
+- Use preLoad()
+- Specify an optional callback function in loadFont()
+
+Selecting one of many fonts
+
+Note that loading a font takes time, so if you expect to use multiple fonts
+it's best to preload all of them, and then switch between them using
+textFont()
+
+There are of course many other things you can do with text. You can look at Help->Reference->Typography and File->Examples->Typography for ideas and examples.
+
+Some advanced examples using text are
+[here](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
+
+Some awesome examples alas without code:
+- https://www.syedrezaali.com/generative-typography-experiments/
+
+##### Data Visualization
+
+What is data visualization? Here are some examples:
+
+- [Ben Fry](http://benfry.com/allstreets/)
+- [Aaron Koblin](http://www.aaronkoblin.com/project/flight-patterns)
+- [Jer Thorp](https://www.jerthorp.com/portfolio) e.g. Just Landed
+
+###### Finding data
+
+Sources
+
+- https://www.springboard.com/blog/free-public-data-sets-data-science-project/
+- https://www.ndbc.noaa.gov/rt_data_access.shtml
+- https://www.kaggle.com/datasets
+- Professor Mathura's 
+	[list of data sources](https://github.com/MathuraMG/ConnectionsLabSpring22/blob/master/Week_3_JSON_Fetch/README.md#list-of-data-sources)
+
+###### Data formats
+
+- The most common format is CSV, especially as you can use any spreadsheet
+	(Excel, OpenOffice Calc, Google Sheets) to export any table in CSV format
+- Other formats are JSON and XML. We won't spend much time on them, but there
+	are p5.js libraries available for parsing them
+
+
+###### Worked example: Getting and working with a CSV file
+
+- A [database](https://eerscmap.usgs.gov/uswtdb/) of energy generated by wind turbines
+- Click "Get Data"
+- Scroll down a bit to "Tabular Data: CSV format" and click on "CSV
+format".
+	- This will download a `.zip` file.
+- Unzip the file.
+	- This will create `uswtdb_v4_1_20210721.csv`
+- This is a plain text file; you can view it with a text editor
+	- You will see that the first line is the heading of each column
+	- Some of the fields are numerical (e.g. case_id)
+	- Some of the fields are text (e.g. t_state, t_county)
+	- Some of the fields are missing (e.g. faa_ors, faa_asn)
+- Upload the file into your sketch (Sketch Files -> Upload Files)
+- Now you can load this file into an array of `Strings` and then process each
+	line one at a time, pulling out individual fields:
+
+```
+/*
+ * example to process a CSV file containing data
+ * about wind turbines in the USA
+ * Source: https://eerscmap.usgs.gov/uswtdb/
+ */
+
+// An array of strings to hold the entire file
+let strings = [];
+
+// For scaling, we want to know the minimum and maximum latitude and longitude
+let minLat;
+let maxLat;
+let minLong;
+let maxLong;
+
+function preload() {
+  // The text from the file is loaded into an array.
+  strings = loadStrings("uswtdb_v4_3_20220114.csv");
+}
+
+function setup() {
+  createCanvas(500, 400);
+  background(235);
+
+  // Did we succeed to load anything?
+  if (strings == null) {
+    print("failed to load the file, stopping here");
+
+    // this is an endless loop; it's a common way
+    // to prevent a program from continuing when
+    // something is so wrong that there is no sense
+    // in continuing
+    while (true) {}
+  }
+
+  print(
+    "strings loaded from file successfully, read " + strings.length + " lines"
+  );
+
+  // Find the minimum and maximum latitude
+  // and longitude
+  findMinMaxLatLong();
+}
+
+function findMinMaxLatLong() {
+  let singleRow = [];
+
+  // loop over each row in the file
+  for (let csvRowNumber = 1; csvRowNumber < strings.length; csvRowNumber++) {
+    // get a single row and split that row
+    // into individual words
+    singleRow = split(strings[csvRowNumber], ",");
+
+    // We know that the last two fields are the
+    // latitude and longitude and so they are
+    // numerical:
+    let longitude = float(singleRow[25]);
+    let latitude = float(singleRow[26]);
+
+    // The file may be missing a field, in which case
+    // the converstion to a float might have failed
+    if (isNaN(longitude) || isNaN(latitude)) {
+      print("conversion to float failed; skipping row " + csvRowNumber);
+    } else {
+      if (csvRowNumber == 1) {
+        minLat = latitude - 10;
+        maxLat = latitude + 10;
+        minLong = longitude - 10;
+        maxLong = longitude + 10;
+      }
+
+      if (latitude < minLat) minLat = latitude;
+      if (latitude > maxLat) maxLat = latitude;
+      if (longitude < minLong) minLong = longitude;
+      if (longitude > maxLong) maxLong = longitude;
+    }
+  } // end of for() loop
+
+  print("Latitude (min, max) = (" + minLat + "," + maxLat + ") ");
+  print("Longitude (min, max) = (" + minLong + "," + maxLong + ")");
+} // end of findMinMaxLatLong
+
+let csvRowNumber = 1;
+// Skip the first line, since we know it's a header
+
+function draw() {
+  let singleRow = [];
+
+  // get a single row and split that row into
+  // individual words
+  singleRow = split(strings[csvRowNumber], ",");
+
+  // This really slows things
+  // down so use only when debugging
+  //print("Row " +
+  // csvRowNumber +
+  //   " contains " +
+  //   singleRow.length +
+  //   " fields" );
+
+  // We know that the last two fields are the
+  // latitude and longitude and so they are
+  // numerical:
+  let longitude = float(singleRow[25]);
+  let latitude = float(singleRow[26]);
+
+  // use only when debugging
+  // print("Latitude " +
+  // latitude +
+  //   " longitude " +
+  //   longitude );
+
+  // Check for non-numerical strings.
+  if (isNaN(longitude) || isNaN(latitude)) {
+    print("conversion to float failed; skipping row " + csvRowNumber);
+  } else {
+    // scale that to fit on our canvas
+    //print(csvRowNumber);
+    let ypos = map(latitude, minLat, maxLat, 0, height);
+    let xpos = map(longitude, minLong, maxLong, 0, width);
+
+    // Put a mark there
+    point(xpos, ypos);
+  } // end of valid data
+
+  csvRowNumber++;
+  if (csvRowNumber >= strings.length) {
+    print("finished");
+    noLoop();
+  }
+}
+
+```
+
+
+Things to notice:
+1. The `split()` function does half the magic
+1. The `int()` or `float()` function does much of the rest
+1. Data files might have errors in them and you need to defend your program
+	 against them
+1. `loop()` and `noLoop()` can be used anytime you want to start or stop the
+	 `draw()` function from repeating
+
+
+##### JSON and XML: Other file formats
+
+JSON and XML are other format for organizing data in a file.
+They are more complex than CSV, and again p5.js provides functions.
+
+###### Generative Text
+
+Pull words from a CSV file
+and by using `random()` in a clever way,
+write poems or slogans or whatever.
+
+Here is a terribly lame example:
+
+```
+/*
+Generate poetry from a file of words
+ the file has words in this format:
+
+ roses,red,violets,blue,dream,disneyland
+
+ we will refer to them as:
+
+ item1,color1,item2,color2,verb,location
+
+ and construct a poem:
+
+ item1 are color1, item2 are color2
+ when I verb I verb to location
+ */
+
+// Let's put the index of the word into numbers:
+const ITEM1 = 0;
+const COLOR1 = 1;
+const ITEM2 = 2;
+const COLOR2 = 3;
+const VERB = 4;
+const LOCATION = 5;
+// final means that I will not change these variables
+// It is conventional to use all caps for variable names that will not change
+
+
+let strings = [];
+
+function setup() {
+
+  // The text from the file is loaded into an array.
+  strings = loadStrings("words.csv");
+
+  // How many lines did we get?
+ // print("strings array contains this many lines: " + strings.length);
+}
+
+let csvRowNumber = 0;
+
+function draw() {
+  let singleRow = [];
+
+  // First line: "item1 are color1, item2 are color2"
+
+  // Pick a random number, round that number DOWN to a whole number,
+  // and split that row into individual words
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get item1
+  let item1 = singleRow[ITEM1] + " are " ;
+
+  // Now keep doing this for each word
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get color1
+  let color1 = singleRow[COLOR1] + ", " ;
+
+  // Now the second half of the first line: "violets are blue"
+  singleRow = split(strings[int (random(strings.length))], ',');
+  let item2 = singleRow[ITEM2] + " are " ;
+  singleRow = split(strings[int (random(strings.length))], ',');
+  // get color2
+  let color2 =  singleRow[COLOR2];
+
+  // that's the end of the first line of the poem
+  print(item1 + " are " + color1 ", " + item2 + " are " + color2);
+
+  // Now the second line: when I verb I verb of location
+
+  message = "When I " ;
+  singleRow = split(strings[int (random(strings.length))], ',');
+  message = message + singleRow[VERB]);
+  print(" I " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  message = message + singleRow[VERB]);
+  print(" to the " );
+  singleRow = split(strings[int (random(strings.length))], ',');
+  message = message + singleRow[LOCATION]);
+
+  // that's the end of the second line of the poem so start a new line
+  // and also put an extra blank line
+  print('\n');
+  print('\n');
+
+  noLoop(); // Wait for a mouse click then do it again
+}
+
+// If you click the mouse, allow the draw() function to resume
+function mouseClicked() {
+  loop();
+}
+```
+
+and this is an example of the words you can feed it.
+put these contents into a file called `words.csv`:
+
+```
+roses,red,violets,blue,dream,disneyland
+robots,silver,pencils,grey,run,supermarket
+goldfish,orange,motors,white,turn,workbench
+books,multicolored,lamposts,azure,swim,island
+computers,black,mice,pink,squeak,home
+```
+
+#### More Data Visualization and generative text (Time permitting):
+
+- have students make a scroller in pairs
+- add randomness/perlin noise
+- have them look at circle letters, 
+	come up with questions and explanations in pairs
+- have students work through example on their own and use data
+- show generative word from circles sketch
+
