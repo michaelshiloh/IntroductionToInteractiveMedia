@@ -964,7 +964,7 @@ and then return to a stored position later
 Example: Draw a house at a given location, no transform:
 
 ```
-function house(int x, int y)
+function house(x, y)
 {
   triangle(x + 15, y, x, y + 15, x + 30, y + 15);
   rect(x, y + 15, 30, 30);
@@ -1352,19 +1352,19 @@ function draw() {
 
   // Pick a random number, round that number DOWN to a whole number,
   // and split that row into individual words
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   // get item1
   let item1 = singleRow[ITEM1] + " are " ;
 
   // Now keep doing this for each word
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   // get color1
   let color1 = singleRow[COLOR1] + ", " ;
 
   // Now the second half of the first line: "violets are blue"
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   let item2 = singleRow[ITEM2] + " are " ;
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   // get color2
   let color2 =  singleRow[COLOR2];
 
@@ -1374,13 +1374,13 @@ function draw() {
   // Now the second line: when I verb I verb of location
 
   message = "When I " ;
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   message = message + singleRow[VERB]);
   print(" I " );
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   message = message + singleRow[VERB]);
   print(" to the " );
-  singleRow = split(strings[int (random(strings.length))], ',');
+  singleRow = split(strings[(random(strings.length))], ',');
   message = message + singleRow[LOCATION]);
 
   // that's the end of the second line of the poem so start a new line
