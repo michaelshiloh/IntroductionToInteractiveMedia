@@ -934,9 +934,6 @@ their work and make conscious choices. Be ready to discuss your work in this
 context, explaining your influences, inspiration, and choices. 
 
 ### Tuesday 14 February
-##### todays-lecture
-#### Administration
-- Attendance
 
 #### Today
 -  Reading discussion
@@ -1017,6 +1014,14 @@ particular, Mang has curated a very nice list of [Additional
 Resources](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#week-22-additional-resources)
 on transformations.
 
+### Thursday 16 February
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Transformations (rotation and scaling)
+
 #### Rotation and scaling 
 
 ```
@@ -1044,7 +1049,8 @@ function setup() {
 ```
 
 Work through 
-[this](https://genekogan.com/code/p5js-transformations/) resource
+[this](https://genekogan.com/code/p5js-transformations/) 
+nice explanation of transformations with great examples
 
 #### Working with text: Putting on canvas, data visualization, generative text
 
@@ -1060,7 +1066,7 @@ function setup() {
 }
 ```
 
-Using a specific font
+###### Using a specific font
 
 ```
 function setup() {
@@ -1070,29 +1076,27 @@ function setup() {
   text("My Important Message", width / 2, height / 2);
 }
 ```
-Fonts that seem to be available are 'Courier New' (monospace), and 'Helvetica'
-(non-monospace)
-
-You can also load your own fonts but that requires uploading them to the p5.js
-server
-
-Help->Reference->LoadFont Typography (p5 reference)
-
-Note that p5.js is **asynchronous**, meaning that setup() will continue even
-if the loadFont() hasn't finished. 
-
-(What are *blocking* vs. *non-blocking* functinos?)
-
-There are two ways to force your program to
+- Fonts that seem to be available are 'Courier New' (monospace), and
+	'Helvetica' (non-monospace)
+- You can also load your own fonts but that requires uploading them to the
+	p5.js server. For more information look at the p5 reference for typography:
+	Help->Reference->LoadFont Typography 
+- Note that p5.js is **asynchronous** and that `loadFont()` is
+	**non-blocking**, meaning that `setup()` will continue even if the
+	`loadFont()` hasn't finished. 
+- What are *blocking* vs. *non-blocking* functions?
+- There are two ways to force your program to
 wait for the font to load:
-- Use preLoad()
-- Specify an optional callback function in loadFont()
+	- Use `preLoad()`
+	- Specify an optional callback function in `loadFont()`
 
-Selecting one of many fonts
+###### Selecting one of many fonts
 
 Note that loading a font takes time, so if you expect to use multiple fonts
 it's best to preload all of them, and then switch between them using
-textFont()
+`textFont()`
+
+###### Further exploration
 
 There are of course many other things you can do with text. You can look at Help->Reference->Typography and File->Examples->Typography for ideas and examples.
 
@@ -1164,7 +1168,7 @@ let maxLong;
 
 function preload() {
   // The text from the file is loaded into an array.
-  strings = loadStrings("uswtdb_v4_3_20220114.csv");
+  strings = loadStrings("uswtdb_v5_3_20230113.csv");
 }
 
 function setup() {
@@ -1302,111 +1306,11 @@ Pull words from a CSV file
 and by using `random()` in a clever way,
 write poems or slogans or whatever.
 
-Here is a terribly lame example:
-
-```
-/*
-Generate poetry from a file of words
- the file has words in this format:
-
- roses,red,violets,blue,dream,disneyland
-
- we will refer to them as:
-
- item1,color1,item2,color2,verb,location
-
- and construct a poem:
-
- item1 are color1, item2 are color2
- when I verb I verb to location
- */
-
-// Let's put the index of the word into numbers:
-const ITEM1 = 0;
-const COLOR1 = 1;
-const ITEM2 = 2;
-const COLOR2 = 3;
-const VERB = 4;
-const LOCATION = 5;
-// final means that I will not change these variables
-// It is conventional to use all caps for variable names that will not change
+[Here](https://editor.p5js.org/michaelshiloh/sketches/XSlxycR-c) is a terribly
+lame example:
 
 
-let strings = [];
-
-function setup() {
-
-  // The text from the file is loaded into an array.
-  strings = loadStrings("words.csv");
-
-  // How many lines did we get?
- // print("strings array contains this many lines: " + strings.length);
-}
-
-let csvRowNumber = 0;
-
-function draw() {
-  let singleRow = [];
-
-  // First line: "item1 are color1, item2 are color2"
-
-  // Pick a random number, round that number DOWN to a whole number,
-  // and split that row into individual words
-  singleRow = split(strings[(random(strings.length))], ',');
-  // get item1
-  let item1 = singleRow[ITEM1] + " are " ;
-
-  // Now keep doing this for each word
-  singleRow = split(strings[(random(strings.length))], ',');
-  // get color1
-  let color1 = singleRow[COLOR1] + ", " ;
-
-  // Now the second half of the first line: "violets are blue"
-  singleRow = split(strings[(random(strings.length))], ',');
-  let item2 = singleRow[ITEM2] + " are " ;
-  singleRow = split(strings[(random(strings.length))], ',');
-  // get color2
-  let color2 =  singleRow[COLOR2];
-
-  // that's the end of the first line of the poem
-  print(item1 + " are " + color1 ", " + item2 + " are " + color2);
-
-  // Now the second line: when I verb I verb of location
-
-  message = "When I " ;
-  singleRow = split(strings[(random(strings.length))], ',');
-  message = message + singleRow[VERB]);
-  print(" I " );
-  singleRow = split(strings[(random(strings.length))], ',');
-  message = message + singleRow[VERB]);
-  print(" to the " );
-  singleRow = split(strings[(random(strings.length))], ',');
-  message = message + singleRow[LOCATION]);
-
-  // that's the end of the second line of the poem so start a new line
-  // and also put an extra blank line
-  print('\n');
-  print('\n');
-
-  noLoop(); // Wait for a mouse click then do it again
-}
-
-// If you click the mouse, allow the draw() function to resume
-function mouseClicked() {
-  loop();
-}
-```
-
-and this is an example of the words you can feed it.
-put these contents into a file called `words.csv`:
-
-```
-roses,red,violets,blue,dream,disneyland
-robots,silver,pencils,grey,run,supermarket
-goldfish,orange,motors,white,turn,workbench
-books,multicolored,lamposts,azure,swim,island
-computers,black,mice,pink,squeak,home
-```
+#### Look at homework. Is it creative?
 
 #### More Data Visualization and generative text (Time permitting):
 
