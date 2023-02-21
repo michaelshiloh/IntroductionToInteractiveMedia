@@ -31,20 +31,35 @@ Class location: C3-029 (IM Lab)
 This document: Student Accounts
 
 P5js.org accounts
-- [Zunair](https://editor.p5js.org/mzv205/sketches)
-- [Vladimir](https://editor.p5js.org/vsharkovski/sketches)
-- [Deriga](https://editor.p5js.org/ojmjunming/sketches)
+- [Zunair](https://editor.p5js.org/mzv205/sketches) 
+Wordpress: Zunair Discord: Zunair
+- [Vladimir](https://editor.p5js.org/vsharkovski/sketches) 
+Wordpress: Vladimir Sharkovski Discord: Vladimir Sharkovski
 - [Hassan](https://editor.p5js.org/mhh410/sketches)
-- [Swostik](https://editor.p5js.org/swostikpati/sketches)
-- [Aaron](https://editor.p5js.org/r-0n/sketches)
-- [someone](https://editor.p5js.org/awesomeadi00/sketches)
-- [Ishmal](https://editor.p5js.org/ishmal2000/sketches/)
-- [Abraiz](https://editor.p5js.org/mk7592/sketches)
-- [Aibar](https://editor.p5js.org/aibartt/sketches)
-- [Deriga](https://editor.p5js.org/ds6058/sketches)
-- [Majid](https://editor.p5js.org/mi1171/sketches)
-- [Aigerem](https://editor.p5js.org/aigerimZhusubalieva/sketches)
-- [Akhat](https://editor.p5js.org/akhats/sketches)
-- [Hana](https://editor.p5js.org/hs4311/sketches)
-- [Adina](https://editor.p5js.org/renaidn/sketches)
-- [Naz](https://editor.p5js.org/iremnaz/sketches)
+Wordpress: Hassan Hamdani Discord: kakashi
+- [Swostik](https://editor.p5js.org/swostikpati/sketches) 
+Wordpress: Swostik Pati Discord: Swostik
+- [Aaron](https://editor.p5js.org/r-0n/sketches) 
+Wordpress: Wajah Aaron Discord r-0n
+- [Ishmal](https://editor.p5js.org/ishmal2000/sketches/) 
+Wordpress: Ishmal Discord: Ishmal
+- [Abraiz](https://editor.p5js.org/mk7592/sketches) 
+Wordpress: Abraiz Discord: mamu
+- [Aibar](https://editor.p5js.org/aibartt/sketches) 
+Wordpress: Aibar Talip Discord: Aibar
+- [Majid](https://editor.p5js.org/mi1171/sketches) 
+Wordpress: Majid Ibrahim Discord: Majid
+- [Aigerem](https://editor.p5js.org/aigerimZhusubalieva/sketches) 
+Wordpress: az2177 Discord: Aigerem
+- [Akhat](https://editor.p5js.org/akhats/sketches) 
+Wordpress: Akhat Suleimenov Discord: daisy
+- [Hana](https://editor.p5js.org/hs4311/sketches) 
+Wordpress: Hana Selmani Discord: hana
+- [Adina](https://editor.p5js.org/renaidn/sketches) 
+Wordpress: Adina Maratkyzy Discord: renaidn
+- [Naz](https://editor.p5js.org/iremnaz/sketches) 
+Wordpress: naz Discord: naz
+- [Ajla](https://editor.p5js.org/ajlasacic/sketches)
+Wordpress: as15471 Discord: aylasacic
+- [Deriga](https://editor.p5js.org/ds6058/sketches) 
+Wordpress: Dariga Shokayeva Discord: DS
