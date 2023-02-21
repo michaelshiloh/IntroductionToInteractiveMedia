@@ -1015,10 +1015,6 @@ Resources](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/mas
 on transformations.
 
 ### Thursday 16 February
-##### todays-lecture
-#### Administration
-- Attendance
-
 #### Today
 - Transformations (rotation and scaling)
 
@@ -1321,3 +1317,19 @@ lame example:
 - have students work through example on their own and use data
 - show generative word from circles sketch
 
+### Tuesday 21 February
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Discussion
+- Look at and comment on homework
+
+##### Discussion
+Aaron and Naz
+
+##### Look at and comment on homework
+- Be consistent with other section: embed code in Wordpress blog
+- Give me your screen name on the blog (put in studentAccounts)
+- Look at homework
