@@ -1375,9 +1375,9 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
   background(255);
-  image(someImage, 0, 0);
+  image(photo, 0, 0);
 
-  let newImg = someImage.get( 50,60, 100,100);
+  let newImg = photo.get( 50,60, 100,100);
   image (newImg, 20, 80);
 }
 ```

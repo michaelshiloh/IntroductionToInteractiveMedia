@@ -1743,7 +1743,7 @@ function draw() {
 Reference page for
 [createCapture](https://p5js.org/reference/#/p5/createCapture)
 
-Frame Diferencing
+Frame Differencing
 
 - [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
 - A more complex
