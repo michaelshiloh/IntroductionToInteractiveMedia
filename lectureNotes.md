@@ -1803,3 +1803,9 @@ If we had multiple sound files, how would we play the
 next one when we click the mouse?
 
 #### Introduce the midterm project
+
+
+
+next week
+- look at midterm proposals
+- look at midterm most frightening part
