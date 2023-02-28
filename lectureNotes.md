@@ -1332,10 +1332,6 @@ Aaron and Naz
 - Look at homework
 
 ### Thursday 23 February
-##### todays-lecture
-#### Administration
-- Attendance
-
 #### Today
 - Image Processing
 - Sound
@@ -1804,8 +1800,14 @@ next one when we click the mouse?
 
 #### Introduce the midterm project
 
+### Tuesday 28 February
+##### todays-lecture
+#### Administration
+- Attendance
 
-
-next week
-- look at midterm proposals
-- look at midterm most frightening part
+#### Today
+- Discussion (30 minutes max) 
+	- Computer Vision for Artists and Designers – Zunair and Hassan 
+- Midterm proposals
+- Midterm most frightening part
+- Time permitting, look at homework

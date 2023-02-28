@@ -46,6 +46,7 @@ Wordpress: as15471 Discord: aylasacic
 - [Akhat](https://editor.p5js.org/akhats/sketches) 
 Wordpress: Akhat Suleimenov Discord: daisy
 - [Dariga](https://editor.p5js.org/ds6058/sketches) 
+Wordpress: Dariga Discord:
 - [Hana](https://editor.p5js.org/hs4311/sketches) 
 Wordpress: Hana Selmani Discord: hana
 - [Hassan](https://editor.p5js.org/mhh410/sketches)
