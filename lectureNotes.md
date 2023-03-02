@@ -1801,13 +1801,83 @@ next one when we click the mouse?
 #### Introduce the midterm project
 
 ### Tuesday 28 February
-##### todays-lecture
-#### Administration
-- Attendance
-
-#### Today
 - Discussion (30 minutes max) 
 	- Computer Vision for Artists and Designers – Zunair and Hassan 
 - Midterm proposals
 - Midterm most frightening part
 - Time permitting, look at homework
+
+### Thursday 2 March
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Computer vision
+- Midterm hints and finish proposals
+
+#### Working with a camera: Computer Vision!
+
+Basic sketch showing how to get input from camera:
+
+```
+let capture;
+
+function setup() {
+  createCanvas(200, 200);
+  capture = createCapture(VIDEO);
+  capture.hide();
+}
+
+function draw() {
+  image(capture, // what image to display
+        0, 0,    // where to place the image on the canvas
+        width,   // width to display
+
+        // the height is more complicated:
+        // we want the capture height to be
+        // the width multiplied by the aspect ratio
+        width * capture.height / capture.width);
+}
+```
+
+Reference page for
+[createCapture](https://p5js.org/reference/#/p5/createCapture)
+
+Frame Differencing
+
+- [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
+- A more complex
+	[example](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT) by Prof.
+	Aaron that uses frame differencing to detect which vertical slice of the
+	camera image has the most motion, and trigger a corresponding sound clip
+
+Other video tricks
+
+- Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
+
+- Color tracking
+
+##### In class exercises
+- If you wanted to display white (instead of the color of the difference)
+	wherever motion above a certain threshold is detected, how would you do this?
+- Can you trigger sounds according to where there is
+	motion? You may start with Aaron's complex example and simplify
+	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
+
+#### Finish midterm proposals
+
+#### Midterm hints
+
+- Mang added some useful game techniques [here](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#game-techniques)
+- In the reading [introduction to computer
+	vision](http://www.yorku.ca/caitlin/futurecinemas/resources/coursepack/readings/computervision),
+	the code examples use a language called *Processing* which is 
+	very similar to *p5.js*. My example for frame differencing is based on this
+	article.
+- [P5.js version](https://editor.p5js.org/mimi/sketches/E9f0eRBgH) 
+	of the color tracking example from Dan Shiffman's book 
+	[Learning Processing](http://www.learningprocessing.com)
+
+#### Work on projects
+
