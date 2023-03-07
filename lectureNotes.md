@@ -1808,10 +1808,6 @@ next one when we click the mouse?
 - Time permitting, look at homework
 
 ### Thursday 2 March
-##### todays-lecture
-#### Administration
-- Attendance
-
 #### Today
 - Computer vision
 - Midterm hints and finish proposals
@@ -1881,3 +1877,39 @@ Other video tricks
 
 #### Work on projects
 
+### Tuesday 7 March
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
+- Project status (groups)
+- Debugging
+
+
+#### Debugging
+
+##### General guidelines
+- Don't just randomly change stuff! At best, you might fix the problem but you
+	won't learn anything. At worst, you'll make the problem much worse
+- Bugs are opportunities to learn! Remember what I did with the array removal
+	bug
+- Beginners often forget the most useful, built-in debugging aid: `print()`!
+- Think carefully about what *is* happening, what *should be* happening, and
+	what information you can print to help you understand *why* that is
+	happening. 
+
+##### Before you ask for help:
+	- Use the steps above to try to narrow down the bug as much as possible.
+		Show that you have tried to solve the problem yourself and are not
+		just being lazy.
+	- Create a small test program which reproduces your bug in the least
+		amount of code. In my experience I usually find the bug during this step.
+	- Explain clearly what you think should be happening, and what you observe
+		happening instead
+
+##### Some debugging resources:
+- [p5js Field Guide to Debugging](https://p5js.org/learn/debugging.html)
+- [p5js Debugging (Happy
+	Coding)](https://happycoding.io/tutorials/p5js/debugging)
+- [A Brief Introduction to Debugging](https://vimeo.com/channels/debugging)
