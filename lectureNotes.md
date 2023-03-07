@@ -1883,8 +1883,22 @@ Other video tricks
 - Attendance
 
 #### Today
-- Project status (groups)
+- Interactivity
 - Debugging
+
+
+#### Interactivity
+Great chapter on [Interactivity](https://p5js.org/learn/interactivity.html)
+especially note the sections on Mouse Buttons, Keyboard Data, Coded Keys, and
+Events. Especially note:
+
+The `mousePressed()` function works differently than the `mouseIsPressed`
+variable. The value of the `mouseIsPressed` variable is true **until** the
+mouse button is released. It can therefore be used within `draw()` to have a
+line of code run while the mouse is pressed. In contrast, the code inside the
+`mousePressed()` function only runs **once** when a button is pressed. This
+makes it useful when a mouse click is used to trigger an action, such as
+incrementing a value
 
 
 #### Debugging
