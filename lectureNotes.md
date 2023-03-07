@@ -1883,11 +1883,16 @@ Other video tricks
 - Attendance
 
 #### Today
+- Thursday: share midterm project
 - Interactivity
 - Debugging
 
 
+#### Sharing midterm projects
+Showing your project on Thursday is part of the assignment
+
 #### Interactivity
+
 Great chapter on [Interactivity](https://p5js.org/learn/interactivity.html)
 especially note the sections on Mouse Buttons, Keyboard Data, Coded Keys, and
 Events. Especially note:
