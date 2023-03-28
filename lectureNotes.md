@@ -1878,10 +1878,6 @@ Other video tricks
 #### Work on projects
 
 ### Tuesday 7 March
-##### todays-lecture
-#### Administration
-- Attendance
-
 #### Today
 - Thursday: share midterm project
 - Interactivity
@@ -1932,3 +1928,382 @@ incrementing a value
 - [p5js Debugging (Happy
 	Coding)](https://happycoding.io/tutorials/p5js/debugging)
 - [A Brief Introduction to Debugging](https://vimeo.com/channels/debugging)
+
+
+### Thursday
+#### Today
+- Introduction to breadboard
+- Introduction to electricity
+- Introduction to Arduino
+- `digitalWrite()`
+- `analogWrite()`
+- `analogRead()`
+
+##### Introduction to Arduino
+
+- IDE
+- `blink`
+- What role does Arduino play?
+- Switches and other sensors
+- LEDs and other actuators
+- Inputs and outputs
+- Electricity
+- Circuits
+- Schematics
+- Series and Parallel
+
+#### Electricity 
+
+**Simple circuit using Arduino, LED, and Resistor**
+
+The most confusing part of this lecture will be the solderless breadboard:
+![](media/breadboard.jpg)
+Image courtesy of
+[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+
+Here is how to build the circuit
+
+![](media/ArduinoPoweringLED_bb.png)
+
+
+**Theory**
+
+Electricity is mysterious
+
+- We can predict what it will do quite accurately, but don't really understand
+	it what is it
+- Flow of electrons
+- Electrons want to move from place of higher potential energy to place of lower potential energy
+	- Like a rock or water falling from a height
+	- Unlike a rock or water, electricity can only travel in a conductor
+- AC vs. DC - very briefly, will discuss more as it comes up
+
+What makes a circuit?
+
+- Something to provide that difference in potential 
+that will cause the electrons to want to move. 
+	- Typically a battery, charger, or USB port
+	- The technical term is "power supply"
+	- In our case your laptop via the Arduino
+		- What is the Arduino doing in this case?
+- Conductors to allow the electronics to move
+- Components or other things that usually convert this electrical energy 
+to some other form of energy (e.g. light, sound, heat, movement)
+- Optionally, switches or other sensors to control the flow of energy
+	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
+
+#### Schematics
+
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
+- Important part of something, 
+	without getting distracted by details (e.g. subway maps)
+- What's important in an electrical schematic?
+	- Where is the power coming from?
+	- What other components are there in the circuit?
+	- How are they connected?
+
+**Schematics are an important way to show a circuit. You will be required to
+understand and use them**
+
+#### Switches
+
+- What if we want to turn it the LED on and off?
+ 	- Pull out a wire
+ 	- That's a switch, but a pretty inconvenient one
+	- Schematic symbol of switch
+	- How does it work?
+		- Breaks the flow of electrons by breaking the continuous path
+		- Doesn't electricity (the electrons) just flow out the end of the wire?
+	- The switch can go on either side. How is this possible?
+
+Let's use a real switch
+
+![](media/ArduinoPoweringLEDWithSwitch_schem.png)
+![](media/ArduinoPoweringLEDWithSwitch_bb.png)
+
+- How is this switch different from the earlier switch?
+	- Schematic symbol of momentary switch
+	- What was the previous "switch"?
+	- Schematic symbol of toggle switch
+
+#### Arduino finally!
+
+Make sure everything is working
+
+- Upload the Blink example
+- Change the parameter in delay()
+- Upload again and verify that the LED blinks at the new rate
+
+#### Basic Arduino and Digital Output
+
+Upload File -> Examples -> Basic -> Blink example
+
+Let's extend this circuit to the breadboard:
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
+### Thursday October 27, 2022
+
+Review
+
+- Code
+- Circuit
+- Input and Output (I/O) pins
+	- 20 IO pins
+	- All 20 pins can do digital input and digital output
+	- Many of the pins have additional special functionality
+- Built-in LED
+	- On the Arduino Uno this LED is on pin 13
+	- On the Arduino Uno LED_BUILTIN = 13 
+
+#### Analogue Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analogue Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+- Remember that the so-called analog input pins can do digital input and
+	output as well
+- Since you have so few analog input pins, when you decide which pins to use
+	for which device, reserve the analog input pins for analog input devices
+	as much as possible
+
+#### Analogue Output
+
+- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- `analogWrite()` only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- LEDs, motors, and some other actuators respond properly to PWM
+	- Other actuators, like a solenoid, do not respond well to PWM and really
+		should be considered digital actuators
+	- Since you have so few analog outputs, when you decide which pins to use
+		for which device, reserve the analog output pins for analog output devices
+		as much as possible
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from p5.js which are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in p5.js to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.print()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+Example using an analog input to control the brightness of an LED
+
+````
+const int LED_PIN = 3;           // the PWM pin the LED is attached to
+const int POT_PIN = A2;
+int brightness = 0;    // how bright the LED is
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 9 to be an output:
+  pinMode(LED_PIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  int pot_value = analogRead(POT_PIN); // 0-1023
+  brightness = map(pot_value, 0, 1023, 255, 0);
+  Serial.println(brightness);
+  analogWrite(LED_PIN, brightness); // 0-255
+}
+````
+
+### Tuesday 28 March
+##### todays-lecture
+#### Administration
+- Attendance
+- Limit discussion to 30 minutes (maybe 15 minutes each, or not)
+
+#### Today
+- Discussion: Majid and Aibar 
+	- Norman,“Emotion & Design: Attractive things work better”
+	- Her Code Got Humans on the Moon
+- Time permitting, some homework feedback
+
+##### Homework and Midterm Feedback
+- [How to add syntax highlighting for code](https://intro.nyuadim.com/2022/01/06/how-to-embed-a-p5js-sketch-in-your-blog-post/) in your blog posts
+- Make links active
+- Better discussion of failures. Include code, explain how you figured it out
+	or worked around it
+- Never never never use screenshots of code (or of any text)!
+	- Unless there is a really good reason to do so, in which case you should
+		explain it
+- If a function's return value is used, the function should always return
+	something
+- Comments
+	[e.g.](https://github.com/aylasacic/Intro-to-IM/blob/main/Midterm%20Project/sketch.js)
+- Explain all variables, functions, classes, and objects unless their names
+	make it perfectly clear what they are for
+- Describe user testing feedback and what you did with that feedback
+- Block at beginning with name, date, description
+- Better descriptions in your blog posts
+	([e.g.](https://intro.nyuadim.com/author/at4888/))
+- Break up large chunks of code into functions
+- Complex state machine with multiple variables and states
+
+#### More electronics
+
+#### Ohm's law
+- I=V/R
+- The math only works for linear components 
+	- But the principle is the same for non-linear components 
+	- **is a very important concept**:
+		- For a given resistance, 
+			the higher the pressure (voltage), 
+				the higher the current
+		- For a given voltage, the higher the "resistance", 
+			the lower the current
+
+![](media/electricityExplained.jpg)
+
+#### Digital Input
+
+Adding a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+An example:
+
+````
+
+const int pushButton = A2;
+const int redLEDPin = A0;
+const int greenLEDPin = 8;
+
+void setup() {
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(greenLEDPin, OUTPUT);
+}
+
+void loop() {
+
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == HIGH) {
+    digitalWrite(redLEDPin, HIGH);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(500);
+    digitalWrite(greenLEDPin, LOW);
+    delay(300);
+    digitalWrite(redLEDPin, LOW);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(700);
+  }
+  allOff();
+  delay(1000);
+}
+
+void allOff() {
+  digitalWrite(redLEDPin, LOW);
+  digitalWrite(greenLEDPin, LOW);
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+#### In-class exercise
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. 
+Using two switches you can select between four patterns.
+How is that possible?
+
+Do you see a similarity between this circuit and 
+something we learned earlier?
+
+Some analogue sensors are resistive, some are not. 
+Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch.
+The switch circuit is also effectively a voltage divider, one that has only
+two values instead of an infinite range of values
+
+What other sensors do we have in the kit?
+
+Which ones are resistive?
+
+#### Potentiometer
+
+[Here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-1b-potentiometer)
+
+#### Misc
+- Hand drawn schematics in your homework are fine!
+Here is an example:
+
+![](media/handDrawnSchematicExample.jpg)
+
+- Hand drawn switches can use the simple symbol
+- Resources are available to help you with homework (me, Jack), but only
+	if you start your homework early enough. If you wait until the last minute
+	and then don't have time to get help, that is unexcusable.
+- Use constants for pin numbers
+
+#### In-class exercise
+
+1. Use one of the analogue sensors to select which of two LEDs lights up
+1. Use one of the analogue sensor to control how fast two LEDs alternate
+1. Use a momentary switch (often called a *pushbutton* or a *button* in the
+	 Arduino literature) to select a different range for mapping an analog
+	 sensor to an analog output device
+1. Use a potentiometer to select from 4 different behaviors of a circuit
+1. Use a momentary switch to enter a mode where the minimum and maximum values
+	from the LDR are stored. When the switch is released, use those values to
+	map the range of values from the LDR to the full range of the LED brightness
