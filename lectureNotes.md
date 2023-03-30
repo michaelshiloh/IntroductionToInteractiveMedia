@@ -2135,11 +2135,6 @@ void loop() {
 ````
 
 ### Tuesday 28 March
-##### todays-lecture
-#### Administration
-- Attendance
-- Limit discussion to 30 minutes (maybe 15 minutes each, or not)
-
 #### Today
 - Discussion: Majid and Aibar 
 	- Norman,“Emotion & Design: Attractive things work better”
@@ -2166,6 +2161,19 @@ void loop() {
 	([e.g.](https://intro.nyuadim.com/author/at4888/))
 - Break up large chunks of code into functions
 - Complex state machine with multiple variables and states
+
+### Thursday 30 March
+##### todays-lecture
+#### Administration
+- Attendance
+- Limit discussion to 30 minutes (maybe 15 minutes each, or not)
+
+#### Today
+- More electronics
+- Digital Input
+- Analog Input 
+- Analog Output
+- More sensors
 
 #### More electronics
 
