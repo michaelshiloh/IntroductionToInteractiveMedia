@@ -2427,6 +2427,12 @@ variable:
 		- Red bus for 5V only
 		- Black or Blue bus for GND only
 
+#### Getting rid of delay
+- Blink without `delay()`](Files -> Examples -> Digital -> BlinkWithoutDelay
+- Excellent [tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all) 
+showing classes for blinking an LED and sweeping a servo motor without using
+	`delay()`
+- Examples of
 #### In-class exercises
 
 
