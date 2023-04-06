@@ -2437,6 +2437,9 @@ without using `delay()`
 - An [improved
 	class](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/noDelay/toneMelodyWithoutDelayClassMultipleMelodies/toneMelodyWithoutDelayClassMultipleMelodies.ino) which lets you play different melodies, also 
 without using `delay()`
+- [Playing a melody and blinking an LED without using
+	`delay()`](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/noDelay/toneMelodyAndBlinkWithoutDelay/toneMelodyAndBlinkWithoutDelay.ino), not using a
+	class
 
 
 #### In-class exercises
