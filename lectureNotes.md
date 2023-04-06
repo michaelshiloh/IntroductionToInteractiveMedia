@@ -2432,7 +2432,11 @@ variable:
 - Excellent [tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all) 
 showing classes for blinking an LED and sweeping a servo motor without using
 	`delay()`
-- [Example](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/noDelay/toneMelodyWithoutDelayClass/toneMelodyWithoutDelayClass.ino)  using a class to play a melody without using `delay()`
+- [Example](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/noDelay/toneMelodyWithoutDelayClass/toneMelodyWithoutDelayClass.ino)  using a class to play a melody 
+without using `delay()`
+- An [improved
+	class](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/noDelay/toneMelodyWithoutDelayClassMultipleMelodies/toneMelodyWithoutDelayClassMultipleMelodies.ino) which lets you play different melodies, also 
+without using `delay()`
 
 
 #### In-class exercises
