@@ -2311,11 +2311,6 @@ Here is an example:
 	map the range of values from the LDR to the full range of the LED brightness
 
 ### Tuesday 4 April 2023
-##### todays-lecture
-#### Administration
-- Attendance
-- Limit discussion to 30 minutes (maybe 15 minutes each, or not)
-
 #### Today
 - Akhat and Ishmal
 	- Physical Computing’s Greatest hits and misses
@@ -2324,7 +2319,12 @@ Here is an example:
 
 
 
-#### Thursday
+### Thursday 6 April 2023
+##### todays-lecture
+#### Administration
+- Attendance
+
+#### Today
 - Sound
 - Servo motor
 
