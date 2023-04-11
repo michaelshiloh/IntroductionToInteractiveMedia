@@ -2320,7 +2320,6 @@ Here is an example:
 
 
 ### Thursday 6 April 2023
-##### todays-lecture
 #### Administration
 - Attendance
 
@@ -2592,3 +2591,13 @@ void loop() {
   delay(1);        // delay in between reads for stability
 }
 ````
+
+##### todays-lecture
+### Tuesday 11 April 2023
+#### Administration
+- Attendance
+#### Today
+- Discussion
+	- Ajla and Adina: A Brief Rant, follow-up
+	- I will set alarm for 20 minutes. Do you want earlier warning?
+- Musical Instruments
