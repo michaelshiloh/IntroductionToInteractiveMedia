@@ -2657,11 +2657,14 @@ thoroughly understand how they work, they are best avoided, and certainly
 don't mix code based on one library with code using another library.
 
 In-class exercise (break class into groups of 2-3 students)
-- make something that uses only one sensor on arduino and makes the ellipse in
+- Make something that uses only one sensor on arduino and makes the ellipse in
 	p5 move on the horizontal axis, in the middle of the screen, and nothing on
 	arduino is controlled by p5
-- make something that controls the LED brightness from p5
-- take the [gravity wind
+- Make something that controls the LED brightness from p5
+- Use p5 to control a servo motor and make a sound using `tone()` on Arduino
+- Use one or more sensors on Arduino to control some aspect of your midterm
+	project on p5
+- Take the [gravity wind
 	example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make
 	it so every time the ball bounces one led lights up and then turns off, and
 	you can control the wind from one analog sensor
