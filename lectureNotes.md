@@ -2592,12 +2592,76 @@ void loop() {
 }
 ````
 
-##### todays-lecture
 ### Tuesday 11 April 2023
-#### Administration
-- Attendance
 #### Today
 - Discussion
 	- Ajla and Adina: A Brief Rant, follow-up
 	- I will set alarm for 20 minutes. Do you want earlier warning?
 - Musical Instruments
+
+### Thursday 11 April 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Serial Communication
+
+#### Arduino-p5.js communication
+- Build [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes2.md#week-112---413---serial-communication) circuit
+- Download [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week11Serial.ino) sketch to your Arduino
+- Run [this](https://editor.p5js.org/mangtronix/sketches/s67XC0zT4) p5 code on your laptop
+
+What's going on here?
+
+- Arduino waits for a message from p5.
+- Arduino expects two values separated by a comma. It uses these two values to
+	control two LEDs.
+- Arduino then reads two sensors and sends the values back to p5, separated by
+	a comma.
+- p5 reads these two values from Arduino. One value controls the text color,
+	the other controls the text transparency
+- p5 sends two values back to Arduino indicating if the mouse was clicked, and
+	if so, which half of the screen it was in.
+- Meanwhile, Arduino is waiting for a message from p5
+- Repeat
+
+Things to notice
+- Each side only sends a message when it receives a message from the other.
+	This way, neither side is flooded by too many messages
+- The amount of information in each message is arbitrary. You can reduce it or
+	extend it by changing the code appropriately on both ends. However you
+	always need to send something.
+- Another way of saying this is that the number of sensors on Arduino is
+	arbitrary. You can have more or less (as long as you change the code on p5
+	to agree). Likewise you can change what you are detecing in p5 and sending
+	to Arduino (keypresses, canvas coordinates, colors, whatever)
+- What the information conveys is also arbitrary. Arduino sends messages to
+	p5, it has no idea what p5 does with this information. Similarly p5 sends
+	information to Arduino and has no understanding of what happens with it.
+	Either side can be arbitrarily complex, or can in fact ignore the
+	information after reading it.
+
+Make it your own
+- Duplicate Mang's project so that you get the other files as well
+- Modify the data that is exchanged. You may need a digital sensor on the
+	Arduino instead of an analog sensor. Similarly, on the p5 side, you may need
+	something different from a mouse click or changing the text color and
+	transparency.
+- Once you are reliable sending information back and forth you can start
+	adding the rest of your program
+
+**Caution**
+There are many different ways to communicate between Arduino and p5, such as
+using different synchronization methods or different libraries. Unless you
+thoroughly understand how they work, they are best avoided, and certainly
+don't mix code based on one library with code using another library.
+
+In-class exercise (break class into groups of 2-3 students)
+- make something that uses only one sensor on arduino and makes the ellipse in
+	p5 move on the horizontal axis, in the middle of the screen, and nothing on
+	arduino is controlled by p5
+- make something that controls the LED brightness from p5
+- take the [gravity wind
+	example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make
+	it so every time the ball bounces one led lights up and then turns off, and
+	you can control the wind from one analog sensor
