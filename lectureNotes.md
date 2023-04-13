@@ -2599,7 +2599,7 @@ void loop() {
 	- I will set alarm for 20 minutes. Do you want earlier warning?
 - Musical Instruments
 
-### Thursday 11 April 2023
+### Thursday 13 April 2023
 ##### todays-lecture
 #### Administration
 - Attendance
