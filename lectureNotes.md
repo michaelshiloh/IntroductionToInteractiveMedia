@@ -2607,7 +2607,7 @@ void loop() {
 - Serial Communication
 
 #### Arduino-p5.js communication
-- Build [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes2.md#week-112---413---serial-communication) circuit
+- Build [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week_11_Serial_schematic.png) circuit
 - Download [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week11Serial.ino) sketch to your Arduino
 - Run [this](https://editor.p5js.org/mangtronix/sketches/s67XC0zT4) p5 code on your laptop
 
