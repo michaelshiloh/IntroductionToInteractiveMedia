@@ -2554,8 +2554,7 @@ Electrical devices that rely on the principle of electromagnetism:
 
 Can we connect the motor to an Arduino output just like we did with the piezo
 buzzer?
-- How would we reverse it?
-- Another problem: Arduino current limitations
+- Arduino current limitations
 
 ##### Arduino current limitations
 
