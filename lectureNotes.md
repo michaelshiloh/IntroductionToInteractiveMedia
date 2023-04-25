@@ -2676,6 +2676,7 @@ In-class exercise (break class into groups of 2-3 students)
 ### Tuesday 25 April 2023
 ##### todays-lecture
 #### Today
+- Laptops in class for registration
 - Midterm project status
 - Motors and H-bridge
 
