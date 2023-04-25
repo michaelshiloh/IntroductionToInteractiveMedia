@@ -2600,7 +2600,6 @@ void loop() {
 - Musical Instruments
 
 ### Thursday 13 April 2023
-##### todays-lecture
 #### Administration
 - Attendance
 #### Today
@@ -2670,7 +2669,6 @@ In-class exercise (break class into groups of 2-3 students)
 	you can control the wind from one analog sensor
 
 ### Tuesday 18 April 2023
-##### todays-lecture
 #### Today
 - Discussion
 - Midterm project ideas
