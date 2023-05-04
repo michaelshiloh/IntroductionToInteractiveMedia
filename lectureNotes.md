@@ -2592,7 +2592,6 @@ void loop() {
 }
 ````
 
-### Tuesday 11 April 2023
 #### Today
 - Discussion
 	- Ajla and Adina: A Brief Rant, follow-up
@@ -2868,11 +2867,17 @@ What techniques have you learned to help you find problems?
 
 #### Soldering
 
-### Thursday November 24, 2022
+### Thursday 4 May 2023
+##### todays-lecture
 
-#### Reading discussion (A Brief Rant on the Future of Interaction Design; A Follow-up Article: Zhaniya and Aisha)
+#### Administration
+Attendance
+#### Today
+- Evaluations
+- Digital Multimeter
+- Wiring 
 
-#### How to use a Digital Multimeter (DMM) 
+##### How to use a Digital Multimeter (DMM) 
 
 - The three most useful measurements
 	- Continuity
@@ -2885,3 +2890,8 @@ What techniques have you learned to help you find problems?
 		- Checking resistive sensors
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
+
+##### Wiring 
+- Switch
+- LED
+- Potentiometer
