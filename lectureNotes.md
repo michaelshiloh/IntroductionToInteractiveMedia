@@ -34,14 +34,9 @@ Class location: C3-029 (IM Lab)
 This document: Lecture notes
 
 ### Tuesday 29 August 2023
-##### todays-lecture
-
 #### Today
 - Introduction (to the course, to each other, etc.)
 - Introduction to programming (if we have time)
-
-#### Administration
-Attendance
 
 #### Introduction to class
 * Join Discord (invitation link is in Brightspace)
@@ -166,6 +161,19 @@ function setup() {
 - `fill()`
 
 Spend a few minutes playing with this
+
+### Thursday 31 August 2023
+##### todays-lecture
+
+#### Administration
+- Attendance
+- Show
+
+#### Today
+- Accounts: p5js.org, Wordpress, Discord
+- Review
+- More about programming in p5.js
+- Homework
 
 ##### Variables
 
