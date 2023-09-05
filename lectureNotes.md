@@ -297,6 +297,8 @@ function draw() {
 
 #### Administration
 - Attendance
+- TouchDesigner
+  [workshop](https://intro.nyuadim.com/2023/09/05/touchdesigner-workshop/) Sunday 4:30-7:00
 - Someone asked me about the End of Semester show: End of Semester show is
   already set for Dec. 15th time to be determined
 
