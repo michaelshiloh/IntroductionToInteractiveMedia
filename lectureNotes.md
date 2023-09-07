@@ -667,7 +667,7 @@ function draw() {
 ```
 Perlin noise example 2:
 
-'''
+```
 function setup() {
   createCanvas(400, 400);
 
@@ -679,7 +679,7 @@ function setup() {
   }
 }
 let offset = 0.0;
-'''
+```
 
 Things to notice:
 
@@ -697,7 +697,7 @@ the system. "
 
 Example:
 
-'''
+```
 let currentState = 0;
 
 function setup() {
@@ -714,4 +714,4 @@ function mouseClicked() {
   }
   background(currentState);
 }
-'''
+```
