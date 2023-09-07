@@ -293,15 +293,6 @@ function draw() {
 
 
 ### Tuesday 5 Sep 2023
-##### todays-lecture
-
-#### Administration
-- Attendance
-- TouchDesigner
-  [workshop](https://intro.nyuadim.com/2023/09/05/touchdesigner-workshop/) Sunday 4:30-7:00
-- Someone asked me about the End of Semester show: End of Semester show is
-  already set for Dec. 15th time to be determined
-
 #### Today
 - Review
 - Homework
@@ -578,15 +569,15 @@ understand best will probably have fewer problems**.
 Both `for()` loops and `while()` loops can be nested, meaning a loop inside a
 loop:
 
-````
+```
 
 function setup() {
   createCanvas(700, 700);
   background(230);
   fill(0);
 
-  let yPos = 0;
-  let xPos = 0;
+  let yPos;
+  let xPos;
 
   for (yPos = 30; yPos < height; yPos=yPos + 40) {
     for (xPos = 20; xPos<width; xPos=xPos + 40) {
@@ -595,10 +586,108 @@ function setup() {
   }
 }
 
-````
+```
 
 Note that I've done all the above looping examples in `setup()` and not in
 `draw()`, so there is no animation in these examples. Loops can be used in
 `draw()` as well.
+
+
+### Thursday 7 Sep 2023
+##### todays-lecture
+
+#### Administration
+- Attendance
+- TouchDesigner
+  [workshop](https://intro.nyuadim.com/2023/09/05/touchdesigner-workshop/) Sunday 4:30-7:00
+
+#### Today
+'random()', 'noise()', and the concept of state
+
+
+##### Grids
+- An [example](https://editor.p5js.org/itp42/sketches/dBeLZC8mm) by Prof.
+	Mathura showing how to create and move in a grid
+
+##### Randome numbers with 'random()'
+
+- 'let foo = random();'
+- 'let foo = random(5);'
+- 'let foo = random(5, 22);'
+- 'let foo = random([some array]);'
+
+Random example 1:
+
+```
+function setup() {
+  createCanvas(700, 700);
+  background(230);
+  fill(0);
+
+  for (let yPos = 30; yPos < height; yPos=yPos + 40) {
+    for (let xPos = 20; xPos<width; xPos=xPos + 40) {
+      circle(xPos,yPos, random(1, 5));
+    }
+  }
+}
+
+```
+
+Random example 2:
+```
+function draw() {}
+
+function mouseClicked() {
+  background(50 * random(6),
+             50 * random(6),
+             50 * random(6));
+}
+```
+
+##### Perlin Noise
+
+```
+function draw() {
+  background(204);
+  let n = random(0, width);
+  line(n, 0, n, height);
+}
+```
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflies, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+Perlin noise example 2:
+```
+let offset = 0.0;
+
+function draw() {
+  background(204);
+  offset = offset + .01;
+  let n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+```
+Perlin noise example 2:
+'''
+function setup() {
+  createCanvas(400, 400);
+
+  for (let yPos = 0; yPos < height; yPos = yPos + 40) {
+    for (let xPos = 0; xPos < width; xPos = xPos + 40) {
+      offset = offset + .1;
+      square(xPos+noise(offset)*20, yPos+noise(offset)*20, 40);
+    }
+  }
+}
+let offset = 0.0;
+'''
+
+Things to notice:
+
+- Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
 
 
