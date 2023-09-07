@@ -602,19 +602,19 @@ Note that I've done all the above looping examples in `setup()` and not in
   [workshop](https://intro.nyuadim.com/2023/09/05/touchdesigner-workshop/) Sunday 4:30-7:00
 
 #### Today
-'random()', 'noise()', and the concept of state
+`random()`, `noise()`, and the concept of state
 
 
 ##### Grids
 - An [example](https://editor.p5js.org/itp42/sketches/dBeLZC8mm) by Prof.
 	Mathura showing how to create and move in a grid
 
-##### Randome numbers with 'random()'
+##### Randome numbers with `random()`
 
-- 'let foo = random();'
-- 'let foo = random(5);'
-- 'let foo = random(5, 22);'
-- 'let foo = random([some array]);'
+- `let foo = random();`
+- `let foo = random(5);`
+- `let foo = random(5, 22);`
+- `let foo = random([some array]);`
 
 Random example 1:
 
@@ -691,3 +691,31 @@ Things to notice:
 	scope)
 
 
+##### State
+
+From Wikipedia:
+
+"... a system is described as stateful if it is designed to remember preceding
+events or user interactions; the remembered information is called the state of
+the system. "
+
+Example:
+
+'''
+let currentState = 0;
+
+function setup() {
+  background(currentState);
+}
+
+function draw() {}
+
+function mouseClicked() {
+  if (currentState === 0) {
+    currentState = 255;
+  } else {
+    currentState = 0;
+  }
+  background(currentState);
+}
+'''
