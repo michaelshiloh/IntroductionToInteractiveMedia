@@ -604,11 +604,6 @@ Note that I've done all the above looping examples in `setup()` and not in
 #### Today
 `random()`, `noise()`, and the concept of state
 
-
-##### Grids
-- An [example](https://editor.p5js.org/itp42/sketches/dBeLZC8mm) by Prof.
-	Mathura showing how to create and move in a grid
-
 ##### Randome numbers with `random()`
 
 - `let foo = random();`
