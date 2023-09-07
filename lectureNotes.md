@@ -654,7 +654,7 @@ fashion? Organic things (e.g. butterflies, leaves blowing in the wind, clouds)
 don't jump instantly from one place to another,
 they tend to move close to where they were last time
 
-Perlin noise example 2:
+Perlin noise example 1:
 ```
 let offset = 0.0;
 
@@ -666,6 +666,7 @@ function draw() {
 }
 ```
 Perlin noise example 2:
+
 '''
 function setup() {
   createCanvas(400, 400);
