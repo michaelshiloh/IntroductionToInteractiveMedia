@@ -594,13 +594,6 @@ Note that I've done all the above looping examples in `setup()` and not in
 
 
 ### Thursday 7 Sep 2023
-##### todays-lecture
-
-#### Administration
-- Attendance
-- TouchDesigner
-  [workshop](https://intro.nyuadim.com/2023/09/05/touchdesigner-workshop/) Sunday 4:30-7:00
-
 #### Today
 `random()`, `noise()`, and the concept of state
 
@@ -687,6 +680,294 @@ Things to notice:
 	scope)
 
 
+### Tuesday 12 Sep 2023
+##### todays-lecture
+
+#### Administration
+- Attendance
+- "University Take Over the Museum" at the Louvre Abu Dhabi.
+  Next info session Wednesday Sep 13, 2023 4:00 PM
+  online at [this](https://urldefense.proofpoint.com/v2/url?u=https-3A__teams.microsoft.com_l_meetup-2Djoin_19-253ameeting-5FNDFiOWEwNTEtZDk4ZC00MjU5LWE1MDktZTA0ZmYxYTFhMGNh-2540thread.v2_0-3Fcontext-3D-257b-2522Tid-2522-253a-2522cd28be52-2D5a1b-2D4dcb-2D94a1-2Df5986cb53967-2522-252c-2522Oid-2522-253a-2522a56570ee-2D0bc6-2D4c42-2Da885-2D2ff06a66a5bb-2522-257d&d=DwMFaQ&c=slrrB7dE8n7gBJbeO0g-IQ&r=tMThmSVKj79e7CBtHAdyXw&m=1-_oaXYJzoJLw489lwLmQZFDqWUhP-TTZt4WkpchFLXgc-8HLQpf07Q3ASn8JqgM&s=2nlSWuZxVXVnAgUZiB3SsixHzNv0gBa58owdT21mvRc&e=) link
+
+#### Today
+- Functions
+- Arrays
+- Object Oriented Programming
+- Arrays of objects
+
+#### Functions
+
+Every time you use one of the built-in 'commands', you are really using (or
+more properly 'calling') a built-in function. Functions are a very important
+building block of programming, and in addition to using built-in functions,
+you can also create your own. In fact, you've already been doing that, when
+you created the `setup()` and `draw()` functions. In the case of
+`setup()` and `draw()` you have to use those names, but when you create other
+functions you can make up your own names. Just like variables names, good 
+function names make your programs easier to understand.
+
+Why create your own functions?
+
+- Reuse (if it's something you might do again)
+- Clarity (remember your three important audiences: yourself, others learning
+	from you, me when I grade your work)
+- Easier to debug (what is debugging?)
+	- One of the most powerful ways to approach
+	a bug is to reproduce it with simplest possible example. 
+	This is much easier when the thing that's causing
+	the problem is already a function.
+- Modularity
+- Flexibility (with good choice of parameters)
+
+````
+function setup() {
+  createCanvas(300, 300);
+
+  // initialization, condition, and incrementation all in one line
+  for (let foo = 50; foo < width; foo = foo + 50)  {
+    rect(foo, 50, 40, 40);
+    line(foo, 50, foo+20, 30);
+    line(foo+20, 30, foo+40, 50);
+  }
+}
+````
+
+Now let's make a function called `drawOneHouse()`. If we want to
+draw a house at different locations, we need a way to tell
+the function `drawOneHouse()` where to put the house. Functions accommodate
+this by allowing us to pass information into the function by putting 
+that information in the parenthesis. In the function, we store this
+information in temporary variables that we can use within the function:
+
+````
+function setup() {
+  createCanvas(300, 300);
+
+  for (let foo = 50; foo < width; foo = foo + 50) {
+    drawOneHouseAt(foo);
+  }
+}
+
+function drawOneHouseAt( x) {
+  rect(x, 50, 40, 40);
+  line(x, 50, x+20, 30);
+  line(x+20, 30, x+40, 50);
+}
+````
+
+**Notes**
+1. I've said this before and I'll keep saying: 
+	**Choose descriptive names for your variables and functions!** 
+	`foo` is a bad name, `xPos` is a good name,
+	 `houseXPos` is a better name.
+1. The value of `foo` (50, 100, 150 ...) is the information passed to the
+	 function so that the function can do it's work. The proper name for this
+	 information is an **argument**
+1. The variable `x` is a temporary variable that **only exists in the function**.
+	 This variable is used to store the argument that was passed into the
+	 function so that the function can do its work. Once the function is
+	 finished, this variable is no longer needed and is destroyed. 
+	 A variable used in this way is called a **parameter**
+1. Functions may take zero, one, or multiple arguments. When you write 
+	a function, *you* decide how many arguments you need. For example, we might
+	have included the house size or roof height or house y location or color. 
+1. Functions can return information as well, for example the `random()`
+	 function. Functions can either return one piece of information, or none.
+	We will see later how to do this. 
+
+#### Variable Scope (again)
+
+```
+let foo;  // this is a global variable, visible in all functions
+
+function setup() {
+  foo = 7;
+}
+
+function draw() {
+
+  print(foo);
+
+  let bar; // this is a local variable, visible only inside of draw()
+
+  for (let i = 0; i < width/2; i++) { 
+    // i is a local variable visible only inside this for() loop
+    ellipse(i, height/2, 10,15);
+  }
+}
+```
+
+#### Arrays
+
+[Really simple array
+example](https://editor.p5js.org/michaelshiloh/sketches/8TB1ONGFA)
+
+
+#### Object oriented programming
+
+A simple bouncing ball example:
+1. First, let's make a ball bounce off all 4 walls of the canvas
+2. Identify carefully and isolate what's in `setup()`, 
+	what does the moving, and what does the drawing?
+
+```
+function setup() {
+  createCanvas(400, 400);
+  xPos = width / 2;
+  yPos = random(100, 300);
+  xSpeed = 4;
+  ySpeed = 7;
+}
+
+function draw() {
+  background(220);
+
+  // move the ball
+  xPos += xSpeed;
+  yPos += ySpeed;
+
+  // check for collisions
+  // check first for left and right wall
+  if (xPos <= 15 || xPos >= (width-15)) {
+    xSpeed = -xSpeed;
+  }
+
+  // do the same for the ceiling and the floor
+  if (yPos <= 15 || yPos >= (height-15)) {
+    ySpeed = -ySpeed;
+  }
+
+  circle(xPos, yPos, 30);
+}
+```
+
+3. Now carefully write the class:
+	1. The code in `setup()` is most likely the *constructor*. You can think
+       of the `constructor` as the `setup()` function of the class
+	1. The moving code and the drawing code are most likely 
+		the two *member functions* you'll need. Member functions are the
+        functions that make the object do stuff
+
+```
+class BouncingBall {
+  constructor() {
+    this.xPos = width / 2;
+    this.yPos = random(100, 300);
+    this.xSpeed = 4;
+    this.ySpeed = 7;
+  }
+
+  move() {
+    // move the ball
+    this.xPos += this.xSpeed;
+    this.yPos += this.ySpeed;
+  }
+
+  checkForCollisions() {
+    // check first for left and right wall
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+      this.xSpeed = -this.xSpeed;
+    }
+
+    // do the same for the ceiling and the floor
+    if (this.yPos <= 15 || this.yPos >= height - 15) {
+      this.ySpeed = -this.ySpeed;
+    }
+  }
+
+  draw() {
+    circle(this.xPos, this.yPos, 30);
+  }
+}
+
+let myBouncingBall;
+
+function setup() {
+  createCanvas(400, 400);
+  myBouncingBall = new BouncingBall();
+}
+
+function draw() {
+  background(240);
+  myBouncingBall.move();
+  myBouncingBall.checkForCollisions();
+  myBouncingBall.draw();
+}
+```
+
+Notes
+- What does `this` mean?
+- Functions in a class are mostly like any other functions 
+	- For example, it's often useful to pass initialization information to the
+		constructor, like
+		[this](https://editor.p5js.org/mangtronix/sketches/-7sWqG_Bu) example
+
+#### Arrays of objects
+
+Here then is the bouncing ball example, this time creating 10 
+balls, and storing them in an array:
+
+```
+class BouncingBall {
+  constructor(xSpeed0, ySpeed0) {
+    this.xPos = width / 2;
+    this.yPos = random(100, 300);
+    this.xSpeed = xSpeed0;
+    this.ySpeed = ySpeed0;
+  }
+
+  move() {
+    // move the ball
+    this.xPos += this.xSpeed;
+    this.yPos += this.ySpeed;
+  }
+
+  checkForCollisions() {
+    // check first for left and right wall
+    if (this.xPos <= 15 || this.xPos >= width - 15) {
+      this.xSpeed = -this.xSpeed;
+    }
+
+    // do the same for the ceiling and the floor
+    if (this.yPos <= 15 || this.yPos >= height - 15) {
+      this.ySpeed = -this.ySpeed;
+    }
+  }
+
+  draw() {
+    circle(this.xPos, this.yPos, 30);
+  }
+}
+
+let ball = [];
+
+function setup() {
+  
+  createCanvas(400, 400);
+  
+  for (let i = 0; i < 10; i++) {
+    // each ball will have a slightly different
+    // initial speed in the X axis, but all balls
+    // will have the same speed in the Y axis
+    ball[i] = new BouncingBall(i + 1, 2);
+  }
+}
+
+function draw() {
+  background(240);
+
+  for (let i = 0; i < 10; i++) {
+    ball[i].move();
+    ball[i].checkForCollisions();
+    ball[i].draw();
+  }
+}
+```
+
+[Here](https://p5js.org/examples/arrays-array-objects.html)
+is another example showing how to make an array of objects
+
+
 ##### State
 
 From Wikipedia:
@@ -714,4 +995,41 @@ function mouseClicked() {
   }
   background(currentState);
 }
+```
+#### The `modulo()` function
+
+How to use the modulo function to make something happen less often than every
+frame: 
+
+```
+let shade = 0;
+let changeAmount = 5;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(shade);
+
+  // change the shade only on every other frame
+  if (frameCount % 2 == 0) {
+    shade += changeAmount;
+
+    // make sure the shade stays between 0 and 255
+    if (shade <= 0 || shade >= 255) {
+      changeAmount = -changeAmount;
+    }
+  }
+}
+```
+
+What's the difference between these two `if` statements:
+
+```
+ if ("d" === key) {
+```
+
+```
+ if (key === "d") {
 ```
