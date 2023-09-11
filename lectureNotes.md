@@ -697,8 +697,8 @@ Things to notice:
 
 #### Functions
 
-Every time you use one of the built-in 'commands', you are really using (or
-more properly 'calling') a built-in function. Functions are a very important
+Every time you use one of the built-in *commands*, you are really using (or
+more properly *calling*) a built-in function. Functions are a very important
 building block of programming, and in addition to using built-in functions,
 you can also create your own. In fact, you've already been doing that, when
 you created the `setup()` and `draw()` functions. In the case of
@@ -771,9 +771,9 @@ function drawOneHouseAt( x) {
 1. Functions may take zero, one, or multiple arguments. When you write 
 	a function, *you* decide how many arguments you need. For example, we might
 	have included the house size or roof height or house y location or color. 
-1. Functions can return information as well, for example the `random()`
-	 function. Functions can either return one piece of information, or none.
-	We will see later how to do this. 
+1. Functions can return information as well, for example as the `random()`
+   function does. Functions can either return one piece of information, or
+   none.  We will see later how to do this. 
 
 #### Variable Scope (again)
 
