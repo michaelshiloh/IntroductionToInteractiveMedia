@@ -1333,21 +1333,39 @@ is requested
 - A function that only calls another function e.g.
 	is almost certainly pointless.
 	if there is a reason, it should be explained.
-````
+
+```
 foo() {
 	bar()
 }
-````
+```
+
 - If code is commented out, explain why
 - Makes sure links in your blog posts are live
 - Tidy your code frequently while coding and especially before handing it in
 - Use the correct suffix for your variables, classes, and functions. If a
-	class defines a single car, don't call it `cars`. If individual cars are
-	then gathered in an array of multiple cars, don't call it `arrayCar`.
-- Try to avoid hardcoded or magic numbers. Put them in constants with a good
-  name, and explain anything further in comments.
-	Use built-in variables (e.g. `width/2`) or `const MAX_NUMBER_CARS = 200`) 
-    whenever possible. If you must use numbers explain why.
+  class defines a single car, don't call it `cars`. If individual cars are
+  then gathered in an array of multiple cars, don't call it `arrayCar`.
+- Use `const` for variables that should never change.  This prevents you from
+  accidentally changing them:
+
+```
+// number of cars in array.
+// I don't want this to change
+const foo = 300;
+
+let bar = 300;
+
+//foo = 30;
+bar = 30;
+```
+- Try to avoid hardcoded or 
+    [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)). 
+    Put them in constants with a good name, 
+    (e.g. `const MAX_NUMBER_CARS = 200`)
+    and explain anything further in comments.
+    If you must use numbers explain why.
+- Use built-in variables (e.g. `width/2`) when possible
 - Start your homework early so that there is time to ask questions. I can't
   always check Discord or email.
 
