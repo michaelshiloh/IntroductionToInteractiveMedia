@@ -1293,6 +1293,64 @@ They are more complex than CSV, and again p5.js provides functions.
 - Generative Text
 - Working with images!
 
+##### Could I have done it all in `setup()`?
+
+In last week's data visualization, I did half of it in `setup()` and half in
+`draw()`. Why? Could I have done it differently?
+
+##### General homework feedback
+
+Culled from years of grading student homework:
+
+- Better comments. I should be able to read your code and comments and
+	completely understand your program.
+	- Your code should explain what is really happening. 
+		`things = 2; // increase the number of things` is wrong. It is setting
+		the number of things to 2, not increasing the number of things.
+- Better formatting:
+	- Remove unnecessary spaces
+	- Break long lines (both code and comments) into short lines. A line
+		should fit in the p5.js editor window.
+- Remove unnecessary functions, or explain why they are there
+- Remove unnecessary variables, or explain why they are there
+- Instead of names like thing1, thing2, thing3, give them
+	meaningful names like happyFace, sadFace, and surprisedFace
+- Any time you have more than 2 or 3 objects they should probably be in an
+	array. If there is a reason not to have them in an array you need to
+	explain why in the comments.
+- Read the assignment carefully and make sure you provide everything that 
+is requested
+- If `draw()` is empty explain why
+- Don't include your entire program in your blog post unless it's very short.
+    You may include short pieces to augment your description.
+- Explain the arguments to functions, or better yet, use names that are so 
+	clear that no comments are needed. `constructor(wid,hgt,rnd,clr)` I could
+	guess that `wid` is width and `hgt` is height, but why not use the full
+	word? You are all fast typists. Better yet, if you are drawing e.g. a
+	car, name the variables `carWidth` and `carHeight`. `clr` and `rnd` I
+	could not figure out except by seeing how they were used, but I shouldn't
+	have to do that.
+- A function that only calls another function e.g.
+	is almost certainly pointless.
+	if there is a reason, it should be explained.
+````
+foo() {
+	bar()
+}
+````
+- If code is commented out, explain why
+- Makes sure links in your blog posts are live
+- Tidy your code frequently while coding and especially before handing it in
+- Use the correct suffix for your variables, classes, and functions. If a
+	class defines a single car, don't call it `cars`. If individual cars are
+	then gathered in an array of multiple cars, don't call it `arrayCar`.
+- Try to avoid hardcoded or magic numbers. Put them in constants with a good
+  name, and explain anything further in comments.
+	Use built-in variables (e.g. `width/2`) or `const MAX_NUMBER_CARS = 200`) 
+    whenever possible. If you must use numbers explain why.
+- Start your homework early so that there is time to ask questions. I can't
+  always check Discord or email.
+
 ##### Generative Text
 Pull words from a CSV file 
 and by using `random()` in a clever way,
@@ -1402,58 +1460,6 @@ goldfish,orange,motors,white,turn,workbench
 books,multicolored,lamposts,azure,swim,island
 computers,black,mice,pink,squeak,home
 ```
-##### General homework feedback
-
-Culled from years of grading student homework:
-
-- Better comments. I should be able to read your code and comments and
-	completely understand your program.
-	- Your code should explain what is really happening. 
-		`things = 2; // increase the number of things` is wrong. It is setting
-		the number of things to 2, not increasing the number of things.
-- Better formatting:
-	- Remove unnecessary spaces
-	- Break long lines (both code and comments) into short lines. A line
-		should fit in the p5.js editor window.
-- Remove unnecessary functions, or explain why they are there
-- Remove unnecessary variables, or explain why they are there
-- Instead of names like thing1, thing2, thing3, give them
-	meaningful names like happyFace, sadFace, and surprisedFace
-- Any time you have more than 2 or 3 objects they should probably be in an
-	array. If there is a reason not to have them in an array you need to
-	explain why in the comments.
-- Read the assignment carefully and make sure you provide everything that 
-is requested
-- If `draw()` is empty explain why
-- Don't include your entire program in your blog post unless it's very short.
-    You may include short pieces to augment your description.
-- Explain the arguments to functions, or better yet, use names that are so 
-	clear that no comments are needed. `constructor(wid,hgt,rnd,clr)` I could
-	guess that `wid` is width and `hgt` is height, but why not use the full
-	word? You are all fast typists. Better yet, if you are drawing e.g. a
-	car, name the variables `carWidth` and `carHeight`. `clr` and `rnd` I
-	could not figure out except by seeing how they were used, but I shouldn't
-	have to do that.
-- A function that only calls another function e.g.
-	is almost certainly pointless.
-	if there is a reason, it should be explained.
-````
-foo() {
-	bar()
-}
-````
-- If code is commented out, explain why
-- Makes sure links in your blog posts are live
-- Tidy your code frequently while coding and especially before handing it in
-- Use the correct suffix for your variables, classes, and functions. If a
-	class defines a single car, don't call it `cars`. If individual cars are
-	then gathered in an array of multiple cars, don't call it `arrayCar`.
-- Try to avoid hardcoded or magic numbers. Put them in constants with a good
-  name, and explain anything further in comments.
-	Use built-in variables (e.g. `width/2`) or `const MAX_NUMBER_CARS = 200`) 
-    whenever possible. If you must use numbers explain why.
-- Start your homework early so that there is time to ask questions. I can't
-  always check Discord or email.
 
 #### Working with images!
 
