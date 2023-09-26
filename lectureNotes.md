@@ -1034,9 +1034,6 @@ What's the difference between these two `if` statements:
 ```
 
 ### Tuesday 19 Sep 2023
-##### todays-lecture
-#### Administration
-- Attendance
 #### Today
 - How put text on the canvas
 - Data Visualization 
@@ -1091,6 +1088,9 @@ them using [`textFont()`](https://p5js.org/reference/#/p5/textFont)
 There are of course many other things you can do with text. You can look at 
 Help->Reference->Typography and File->Examples->Typography for ideas and
 examples.
+
+![](https://imgs.xkcd.com/comics/geohydrotypography.png)
+from xkcd https://xkcd.com/2803/
 
 ##### Data Visualization
 
@@ -1283,6 +1283,16 @@ Things to notice:
 JSON and XML are other format for organizing data in a file. 
 They are more complex than CSV, and again p5.js provides functions.
 
+### Tuesday 26 Sep 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Could I have done it all in `setup()`?
+- Homework feedback
+- Generative Text
+- Working with images!
+
 ##### Generative Text
 Pull words from a CSV file 
 and by using `random()` in a clever way,
@@ -1392,6 +1402,467 @@ goldfish,orange,motors,white,turn,workbench
 books,multicolored,lamposts,azure,swim,island
 computers,black,mice,pink,squeak,home
 ```
+##### General homework feedback
+
+Culled from years of grading student homework:
+
+- Better comments. I should be able to read your code and comments and
+	completely understand your program.
+	- Your code should explain what is really happening. 
+		`things = 2; // increase the number of things` is wrong. It is setting
+		the number of things to 2, not increasing the number of things.
+- Better formatting:
+	- Remove unnecessary spaces
+	- Break long lines (both code and comments) into short lines. A line
+		should fit in the p5.js editor window.
+- Remove unnecessary functions, or explain why they are there
+- Remove unnecessary variables, or explain why they are there
+- Instead of names like thing1, thing2, thing3, give them
+	meaningful names like happyFace, sadFace, and surprisedFace
+- Any time you have more than 2 or 3 objects they should probably be in an
+	array. If there is a reason not to have them in an array you need to
+	explain why in the comments.
+- Read the assignment carefully and make sure you provide everything that 
+is requested
+- If `draw()` is empty explain why
+- Don't include your entire program in your blog post unless it's very short.
+    You may include short pieces to augment your description.
+- Explain the arguments to functions, or better yet, use names that are so 
+	clear that no comments are needed. `constructor(wid,hgt,rnd,clr)` I could
+	guess that `wid` is width and `hgt` is height, but why not use the full
+	word? You are all fast typists. Better yet, if you are drawing e.g. a
+	car, name the variables `carWidth` and `carHeight`. `clr` and `rnd` I
+	could not figure out except by seeing how they were used, but I shouldn't
+	have to do that.
+- A function that only calls another function e.g.
+	is almost certainly pointless.
+	if there is a reason, it should be explained.
+````
+foo() {
+	bar()
+}
+````
+- If code is commented out, explain why
+- Makes sure links in your blog posts are live
+- Tidy your code frequently while coding and especially before handing it in
+- Use the correct suffix for your variables, classes, and functions. If a
+	class defines a single car, don't call it `cars`. If individual cars are
+	then gathered in an array of multiple cars, don't call it `arrayCar`.
+- Try to avoid hardcoded or magic numbers. Put them in constants with a good
+  name, and explain anything further in comments.
+	Use built-in variables (e.g. `width/2`) or `const MAX_NUMBER_CARS = 200`) 
+    whenever possible. If you must use numbers explain why.
+- Start your homework early so that there is time to ask questions. I can't
+  always check Discord or email.
+
+#### Working with images!
+
+The `p5.Image` class
+- Just another class, i.e. it has
+	- Data (the pixels, width, height, etc.)
+	- Functionality `(image()`, `get()`, etc.)
+
+````
+let catImg;
+function preload() {
+  photo = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(photo, 0, 0); // this actually displays the image
+}
+````
+
+- `image(photo, positionX, positionY, width, height)` - display 
+this image at this location and scale to this size
+- `photo.resize(w,h)` - scale to this size. If one of the arguments is zero,
+	then scale to the remaining argument and retain the original aspect ratio.
+- `photo.get(x,y,w,h)` - Returns a new p5.Image containing a portion of the image
+- `photo.get(x,y)` - Returns the color of the pixel at this location
+
+````
+let catImg;
+function preload() {
+  catImg = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(catImg, 0, 0);
+
+  let newImg = catImg.get( 50,60, 100,50);
+  image (newImg, 250, 200);
+}
+````
+
+For more information and ideas
+- Reference page for p5.Image for other methods
+- Examples -> image
+
+### February 24
+
+#### Plan for today: 
+
+- Pixels array
+- Sprite sheets
+- Sound
+- Introduce midterm project
+
+#### The `pixels` array: Treating the canvas as an image
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called `pixels`. 
+Before using this array you must load everything from the canvas 
+into the `pixels` array using the `loadPixels()` function, 
+and after making any changes you must call `updatePixels()` 
+to write from the `pixels` array back to the canvas
+if you want to make the changes visible
+
+````
+function setup() {
+  let pink = color(255, 102, 204);
+  loadPixels();
+  let d = pixelDensity();
+  let halfImage = 4 * (width * d) * ((height / 2) * d);
+  for (let i = 0; i < halfImage; i += 4) {
+    pixels[i] = red(pink);
+    pixels[i + 1] = green(pink);
+    pixels[i + 2] = blue(pink);
+    pixels[i + 3] = alpha(pink);
+  }
+  updatePixels();
+}
+````
+
+- The pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths
+- Each pixel occupies 4 positions in the array
+- Thus the equation for accessing a given pixel is
+   (x + y * width) * 4
+- Remember to set `pixelDensity(1);` in case you have a high 
+resolution display
+
+
+````
+function setup() {
+  pixelDensity(1);
+
+	// blue background 
+	// makes it easier to see the pink
+  background(0, 102, 204);
+
+  loadPixels();
+
+	// Here is the equation 
+	// for the start (red value) 
+	// of a pixel 
+	// at a particular coordinate (x,y)
+  // (x + y*width) * 4
+
+  // Change most of the fiftieth row to pink
+  // instead of the whole line, 
+	// only do from x = 10 to x = 90
+  for (let i = (10 + 50 * width) * 4;
+       i < (90 + 50 * width) * 4;
+       i += 4) {
+
+		// pink
+    pixels[i + 0] = 255;
+    pixels[i + 1] = 102;
+    pixels[i + 2] = 204;
+    pixels[i + 3] = 100;
+  }
+
+	// this puts the array back on the screen
+  updatePixels();
+}
+````
+
+It's important to remember that a pixel is just four numbers
+so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+function setup() {
+  pixelDensity(1);
+  background(0, 102, 204);
+}
+
+let redValue = 0; 
+
+function draw() {
+
+  loadPixels();
+  
+  for (let i = 0; i < width * height * 4 ; i+=4) {
+    pixels[i] = redValue;
+  } 
+  updatePixels();
+
+  redValue = (redValue + 1 ) %255
+  print(redValue);
+  
+  updatePixels();
+
+}
+````
+
+Just for fun, here is the last example from the video where Dan
+created a random (only in the green channel) background:
+
+````
+function setup() {
+  createCanvas(256,256);
+  pixelDensity(1);
+}
+
+function draw() {
+  loadPixels();
+  for (var y = 0; y < height; y++) {
+    for (var x = 0; x < width; x++) {
+      var index = (x + y * width) * 4;
+
+      pixels[index + 0] = x;
+      // red value changes horizontally
+
+      pixels[index + 1] = random(255);
+      // green value random
+
+      pixels[index + 2] = y;
+      // blue value changes vertically
+
+      pixels[index + 3] = 255;
+      // no transparency
+    }
+  }
+  updatePixels();
+}
+````
+
+Look at the reference page for the pixels array
+
+A fun examples from Professor Sherwood:
+
+![](media/circularImages.png)
+
+````
+let tiles = [];
+let tileSize = 100;
+
+function preload() {
+  img = loadImage("aiweiwei.jpeg");
+}
+
+function setup() {
+  createCanvas(400, 400);
+  let numTiles = img.height / tileSize;
+  while (numTiles > 0) {
+    tiles.push(
+      img.get(
+        int(random(img.width - tileSize)),
+        int(random(img.height - tileSize)),
+        tileSize,
+        tileSize
+      )
+    );
+    numTiles--;
+  }
+  imageMode(CENTER);
+}
+
+function draw() {
+  push();
+  translate(width / 2, height / 2);
+
+  let numSegments = 10;
+  let eachAngle = TWO_PI / numSegments;
+  let whichImage = int(random(tiles.length));
+
+  for (let i = 0; i < numSegments; i++) {
+    let x = cos(eachAngle * i) * tileSize + 1;
+    let y = sin(eachAngle * i) * tileSize + 1;
+    push();
+    translate(x, y);
+    rotate(eachAngle * i);
+    image(tiles[whichImage], 0, 0);
+    pop();
+  }
+
+  pop();
+  noLoop();
+}
+
+function keyPressed() {
+  loop();
+}
+````
+
+Can we use a sequence of images for animation?
+
+![](media/walking.png)
+
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/walking.png
+
+How would we use them?
+
+````
+let spritesheet;
+let sprites = [];
+let direction = 1; // 0 up
+let step = 0;
+let x;
+let y;
+let speed = 3;
+
+function preload() {
+  spritesheet = loadImage("walking.png");
+}
+
+function setup() {
+  // fullscreen(true);
+  createCanvas(500, 450);
+
+  // 12 images across, 4 down, in the spritesheet
+
+  let w = int(spritesheet.width / 12);
+  let h = int(spritesheet.height / 4);
+
+  for (let y = 0; y < 4; y++) {
+    sprites[y] = [];
+    for (let x = 0; x < 12; x++) {
+      sprites[y][x] =
+        spritesheet.get(x * w, y * h, w, h);
+    } // iterate over rows
+  } // iterate over columns
+
+  x = width / 2;
+  y = height / 2;
+
+  imageMode(CENTER);
+
+	// Display first sprite
+  image(sprites[direction][step], x, y);
+}
+
+// nothing to do here because all the action
+// happens in the keyPressed() callback
+function draw() {}
+
+function keyPressed() {
+  // look at sprite sheet to determine 
+  // which direction is which row
+
+  if (keyCode === DOWN_ARROW) {
+    direction = 0;
+    y += speed;
+  }
+
+  if (keyCode === LEFT_ARROW) {
+    direction = 1;
+    x -= speed;
+  }
+
+  if (keyCode === RIGHT_ARROW) {
+    direction = 2;
+    x += speed;
+  }
+
+  if (keyCode === UP_ARROW) {
+    direction = 3;
+    y -= speed;
+  }
+
+	// Every so often 
+	// advance to the next sprite
+  if (frameCount % speed == 0) {
+    step = (step + 1) % 12;
+  }
+
+	// Finally draw paint the sprite
+  background(255);
+  image(sprites[direction][step], x, y);
+}
+
+````
+
+You can probably find many sprite sheets by googling "sprite sheet" +
+whatever you want.
+
+
+#### Sound!
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/doorbell.png
+
+File -> Examples -> Sound
+
+Preload Soundfile
+
+Very basic example:
+
+````
+/*
+Must upload doorbell.mp3
+Must include sound library in index.html
+*/
+
+function preload() {
+  song = loadSound('doorbell.mp3');
+}
+
+function setup() {
+  background(234);
+  song.play();
+}
+
+function draw() {
+  if (song.isPlaying()) {
+    print("song is playing")
+  } else {
+    print("song is not playing")
+    noLoop
+  }
+}
+
+function mouseClicked() {
+  if (song.isPlaying()) {
+    song.stop();
+  } else {
+    song.play();
+  }
+}
+````
+
+As always, it's useful to explore the examples and the reference page
+
+- Sound examples
+	- File -> Examples -> Sound
+		- Record Save
+		- Live Input
+
+**Remember**
+Sound requires a separate library which must be included
+
+##### Sound Synthesis
+
+The other way to make sounds is to create them mathematically
+
+- Sound examples
+	- File -> Examples -> Sound
+		- Oscillator Waveform
+		- Filters
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+
+##### Working in groups (time permitting):
+If we had multiple sound files, how would we play the
+next one when we click the mouse?
 
 (Time permitting)
 #### In class exercise
