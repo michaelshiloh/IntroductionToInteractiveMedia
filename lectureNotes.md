@@ -1284,9 +1284,6 @@ JSON and XML are other format for organizing data in a file.
 They are more complex than CSV, and again p5.js provides functions.
 
 ### Tuesday 26 Sep 2023
-##### todays-lecture
-#### Administration
-- Attendance
 #### Today
 - Could I have done it all in `setup()`?
 - Homework feedback
@@ -1448,16 +1445,16 @@ function draw() {
   message = "When I " ;
   singleRow = split(strings[int (random(strings.length))], ',');
   message = message + singleRow[VERB]);
-  print(" I " );
+  message = message + " I " ;
   singleRow = split(strings[int (random(strings.length))], ',');
   message = message + singleRow[VERB]);
-  print(" to the " );
+  message = message + " to the ";
   singleRow = split(strings[int (random(strings.length))], ',');
   message = message + singleRow[LOCATION]);
+  print(message);
 
   // that's the end of the second line of the poem so start a new line
   // and also put an extra blank line
-  print('\n');
   print('\n');
 
   noLoop(); // Wait for a mouse click then do it again
@@ -1523,15 +1520,6 @@ function setup() {
 For more information and ideas
 - Reference page for p5.Image for other methods
 - Examples -> image
-
-### February 24
-
-#### Plan for today: 
-
-- Pixels array
-- Sprite sheets
-- Sound
-- Introduce midterm project
 
 #### The `pixels` array: Treating the canvas as an image
 
@@ -1633,6 +1621,16 @@ function draw() {
 
 }
 ````
+
+### Tuesday 03 October 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Review the pixels array
+- Sprite sheets
+- Sound
+- Introduce midterm project
 
 Just for fun, here is the last example from the video where Dan
 created a random (only in the green channel) background:
