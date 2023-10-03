@@ -1988,12 +1988,12 @@ In syllabus and weekly schedule
 
 Examples of good midterm projects:
 
-[coffee shop experience](https://intro.nyuadim.com/2023/03/08/midterm-4/)
-[Pong game with a twist](https://intro.nyuadim.com/2023/03/08/midterm-ghostly-pong/)
-[Save the ocean - good message, good feedback when things happen](https://intro.nyuadim.com/2023/03/08/midterm-project-save-the-ocean-game/)
-[Nice cat game](https://intro.nyuadim.com/2023/03/08/midterm-project-help-milo/)
-[Memory card game with cultural expression](https://intro.nyuadim.com/2023/03/09/midterm-project-memory-card-game/)
-[Pong where the ball goes invisible](https://intro.nyuadim.com/2023/03/07/midterm-project-pong-blindspot-version/)
+- [coffee shop experience](https://intro.nyuadim.com/2023/03/08/midterm-4/)
+- [Pong game with a twist](https://intro.nyuadim.com/2023/03/08/midterm-ghostly-pong/)
+- [Save the ocean - good message, good feedback when things happen](https://intro.nyuadim.com/2023/03/08/midterm-project-save-the-ocean-game/)
+- [Nice cat game](https://intro.nyuadim.com/2023/03/08/midterm-project-help-milo/)
+- [Memory card game with cultural expression](https://intro.nyuadim.com/2023/03/09/midterm-project-memory-card-game/)
+- [Pong where the ball goes invisible](https://intro.nyuadim.com/2023/03/07/midterm-project-pong-blindspot-version/)
 
 (Time permitting)
 ##### Working in groups (time permitting):
