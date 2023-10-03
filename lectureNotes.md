@@ -1630,6 +1630,7 @@ function draw() {
 - Review the pixels array
 - Sprite sheets
 - Sound
+- Transformations
 - Introduce midterm project
 
 Just for fun, here is the last example from the video where Dan
@@ -1882,17 +1883,128 @@ The other way to make sounds is to create them mathematically
 We can create our own complex sounds starting with basic oscillators and then
 changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
 
-##### Working in groups (time permitting):
-If we had multiple sound files, how would we play the
-next one when we click the mouse?
+##### Transformations
+
+Transformations move the coordinate system
+so you can draw in different places with the same code
+- Available 2D transforms are 
+	- `translate()`
+	- `rotate()`
+	- `scale()`
+- `push()` and `pop()` allow you to remember (record) where the canvas was, 
+and then return to a stored position later
+
+##### Translate
+
+Example: Draw a house at a given location, no transform:
+
+```
+function house(x, y)
+{
+  triangle(x + 15, y, x, y + 15, x + 30, y + 15);
+  rect(x, y + 15, 30, 30);
+  rect(x + 12, y + 30, 10, 15);
+}
+```
+
+Same result, but using a transform:
+
+```
+function house(x, y)
+{
+	// Using transformations, no need for clumsy
+	// offsets to each drawing function
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+}
+```
+
+Why do this?
+- Easier to read (and hence less likely to have errors)
+- Easier to code complex motions relative to other motions
+
+**Notes**
+- Just like with `fill()` and `rectMode()`, once you've moved the origin it
+	stays there unless you return it to its starting position. E.g. try putting
+	a circle in the center of the canvas `ellipse (width/2, height/2, 20);`
+- Whenever you do a transformation, it's good practice to **always** 
+	- Store where you were before the transformation using`push()` 
+	- return where you were after the transformation using `pop()`
+
+```
+function house(x, y)
+{
+  push();
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+  pop();
+}
+```
+
+*Suggestion*
+- I encourage you to see what the other section is up to; the other teacher and
+I often exchange ideas and build on each other's examples and lectures. In
+particular, Mang has curated a very nice list of [Additional
+Resources](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#week-22-additional-resources)
+on transformations.
+
+##### Rotation and scaling 
+
+```
+function setup() {
+  createCanvas(400,400);
+  background(240);
+
+  // the red rectangle is drawn before the rotation so
+  // it will stay in place
+  fill(255, 0, 0);
+  rect(200, 200, 100, 100);
+  line(0, 0, 200, 200);
+
+  // Now a green rectangle
+  fill(0, 255, 0);
+
+  // rotation is done here. all subsequent drawing
+  // is done post-rotation
+  rotate(radians(10));
+
+  // the green rectangle is drawn after rotating the canvas
+  rect(200, 200, 100, 100);
+  line(0, 0, 200, 200);
+}
+```
+
+Work through 
+[this](https://genekogan.com/code/p5js-transformations/) 
+nice explanation of transformations with great examples
+
+##### Introduce midterm project
+
+In syllabus and weekly schedule
+
+Examples of good midterm projects:
+
+[coffee shop experience](https://intro.nyuadim.com/2023/03/08/midterm-4/)
+[Pong game with a twist](https://intro.nyuadim.com/2023/03/08/midterm-ghostly-pong/)
+[Save the ocean - good message, good feedback when things happen](https://intro.nyuadim.com/2023/03/08/midterm-project-save-the-ocean-game/)
+[Nice cat game](https://intro.nyuadim.com/2023/03/08/midterm-project-help-milo/)
+[Memory card game with cultural expression](https://intro.nyuadim.com/2023/03/09/midterm-project-memory-card-game/)
+[Pong where the ball goes invisible](https://intro.nyuadim.com/2023/03/07/midterm-project-pong-blindspot-version/)
 
 (Time permitting)
-#### In class exercise
+##### Working in groups (time permitting):
 
 - Have students make a scroller in pairs
 - Show how to get by char
     - E.g. using `.substring` as in
       [this](https://creative-coding.decontextualize.com/text-and-type/) example
+    - Or using `split()`
 - Make scroller again by char
 - Add randomness/Perlin noise for placement
 - Look at circle letters in pairs, come up with questions and explanations 
+- Write a simple music player program that loads multiple sound files
+and plays the next one when the user clicks the mouse
