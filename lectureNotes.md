@@ -1993,9 +1993,6 @@ Examples of good midterm projects:
 - [Pong where the ball goes invisible](https://intro.nyuadim.com/2023/03/07/midterm-project-pong-blindspot-version/)
 
 ### Thursday 05 October 2023
-##### todays-lecture
-#### Administration
-- Attendance
 #### Today
 - Homework ideas
 - Look at the last homework
@@ -2013,3 +2010,128 @@ Examples of good midterm projects:
 - Look at circle letters in pairs, come up with questions and explanations 
 - Write a simple music player program that loads multiple sound files
 and plays the next one when the user clicks the mouse
+
+### Tuesday 10 October 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+Computer vision!
+
+#### Working with a camera: Computer Vision!
+
+Basic sketch showing how to get input from camera:
+
+```
+let capture;
+
+function setup() {
+  createCanvas(200, 200);
+  capture = createCapture(VIDEO);
+  capture.hide();
+}
+
+function draw() {
+  image(capture, // what image to display
+        0, 0,    // where to place the image on the canvas
+        width,   // width to display
+
+        // the height is more complicated:
+        // we want the capture height to be
+        // the width multiplied by the aspect ratio
+        width * capture.height / capture.width);
+}
+```
+
+Reference page for
+[createCapture](https://p5js.org/reference/#/p5/createCapture)
+
+Frame Differencing
+
+- [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
+- A more complex
+	[example](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT) by Prof.
+	Aaron that uses frame differencing to detect which vertical slice of the
+	camera image has the most motion, and trigger a corresponding sound clip
+
+Other video tricks
+
+- Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
+
+- Color tracking
+
+##### In class exercises
+- If you wanted to display white (instead of the color of the difference)
+	wherever motion above a certain threshold is detected, how would you do this?
+- Can you trigger sounds according to where there is
+	motion? You may start with Aaron's complex example and simplify
+	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
+
+#### Finish midterm proposals
+
+#### Midterm hints
+
+- Mang added some useful game techniques [here](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#game-techniques)
+- In the reading [introduction to computer
+	vision](http://www.yorku.ca/caitlin/futurecinemas/resources/coursepack/readings/computervision),
+	the code examples use a language called *Processing* which is 
+	very similar to *p5.js*. My example for frame differencing is based on this
+	article.
+- [P5.js version](https://editor.p5js.org/mimi/sketches/E9f0eRBgH) 
+	of the color tracking example from Dan Shiffman's book 
+	[Learning Processing](http://www.learningprocessing.com)
+
+#### Work on projects
+
+### Tuesday 7 March 2023
+#### Today
+- Thursday: share midterm project
+- Interactivity
+- Debugging
+
+
+#### Sharing midterm projects
+Showing your project on Thursday is part of the assignment
+
+#### Interactivity
+
+Great chapter on [Interactivity](https://p5js.org/learn/interactivity.html)
+especially note the sections on Mouse Buttons, Keyboard Data, Coded Keys, and
+Events. Especially note:
+
+The `mousePressed()` function works differently than the `mouseIsPressed`
+variable. The value of the `mouseIsPressed` variable is true **until** the
+mouse button is released. It can therefore be used within `draw()` to have a
+line of code run while the mouse is pressed. In contrast, the code inside the
+`mousePressed()` function only runs **once** when a button is pressed. This
+makes it useful when a mouse click is used to trigger an action, such as
+incrementing a value
+
+
+#### Debugging
+
+##### General guidelines
+- Don't just randomly change stuff! At best, you might fix the problem but you
+	won't learn anything. At worst, you'll make the problem much worse
+- Bugs are opportunities to learn! Remember what I did with the array removal
+	bug
+- Beginners often forget the most useful, built-in debugging aid: `print()`!
+- Think carefully about what *is* happening, what *should be* happening, and
+	what information you can print to help you understand *why* that is
+	happening. 
+
+##### Before you ask for help:
+	- Use the steps above to try to narrow down the bug as much as possible.
+		Show that you have tried to solve the problem yourself and are not
+		just being lazy.
+	- Create a small test program which reproduces your bug in the least
+		amount of code. In my experience I usually find the bug during this step.
+	- Explain clearly what you think should be happening, and what you observe
+		happening instead
+
+##### Some debugging resources:
+- [p5js Field Guide to Debugging](https://p5js.org/learn/debugging.html)
+- [p5js Debugging (Happy
+	Coding)](https://happycoding.io/tutorials/p5js/debugging)
+- [A Brief Introduction to Debugging](https://vimeo.com/channels/debugging)
+
