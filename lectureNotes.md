@@ -1641,9 +1641,9 @@ function setup() {
 
 function draw() {
   loadPixels();
-  for (var y = 0; y < height; y++) {
-    for (var x = 0; x < width; x++) {
-      var index = (x + y * width) * 4;
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      let index = (x + y * width) * 4;
 
       pixels[index + 0] = x;
       // red value changes horizontally
@@ -2043,10 +2043,10 @@ function draw() {
 }
 ```
 
-Reference page for
+###### Reference page for
 [createCapture](https://p5js.org/reference/#/p5/createCapture)
 
-Frame Differencing
+###### Frame Differencing
 
 - [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
 - A more complex
@@ -2054,11 +2054,13 @@ Frame Differencing
 	Aaron that uses frame differencing to detect which vertical slice of the
 	camera image has the most motion, and trigger a corresponding sound clip
 
+###### Color tracking
+
+- [Color tracking](https://editor.p5js.org/michaelshiloh/sketches/Zk2B091iZ)
+
 Other video tricks
 
 - Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
-
-- Color tracking
 
 ##### In class exercises
 - If you wanted to display white (instead of the color of the difference)
@@ -2066,8 +2068,6 @@ Other video tricks
 - Can you trigger sounds according to where there is
 	motion? You may start with Aaron's complex example and simplify
 	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
-
-#### Finish midterm proposals
 
 #### Midterm hints
 
@@ -2080,18 +2080,6 @@ Other video tricks
 - [P5.js version](https://editor.p5js.org/mimi/sketches/E9f0eRBgH) 
 	of the color tracking example from Dan Shiffman's book 
 	[Learning Processing](http://www.learningprocessing.com)
-
-#### Work on projects
-
-### Tuesday 7 March 2023
-#### Today
-- Thursday: share midterm project
-- Interactivity
-- Debugging
-
-
-#### Sharing midterm projects
-Showing your project on Thursday is part of the assignment
 
 #### Interactivity
 
@@ -2117,15 +2105,16 @@ incrementing a value
 	bug
 - Beginners often forget the most useful, built-in debugging aid: `print()`!
 - Think carefully about what *is* happening, what *should be* happening, and
-	what information you can print to help you understand *why* that is
-	happening. 
+	what information you can print to help you understand *why* there is
+    a difference
 
 ##### Before you ask for help:
 	- Use the steps above to try to narrow down the bug as much as possible.
 		Show that you have tried to solve the problem yourself and are not
 		just being lazy.
 	- Create a small test program which reproduces your bug in the least
-		amount of code. In my experience I usually find the bug during this step.
+		amount of code. 
+        In my experience I usually find the bug during this step.
 	- Explain clearly what you think should be happening, and what you observe
 		happening instead
 
@@ -2134,4 +2123,12 @@ incrementing a value
 - [p5js Debugging (Happy
 	Coding)](https://happycoding.io/tutorials/p5js/debugging)
 - [A Brief Introduction to Debugging](https://vimeo.com/channels/debugging)
+
+#####  Mid-semester feedback
+
+- What was the more surprising thing you learned so far in this class?
+- What was the more important thing you learned so far in this class?
+- What would you like more of?
+- What would you like less of?
+- What do you wish we'd talk about, or learn, that we haven't?
 
