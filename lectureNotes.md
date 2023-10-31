@@ -1,6 +1,6 @@
 ## New York University Abu Dhabi    
 ## Interactive Media Program    
-## Course title: Introduction to interactive Media  
+## Course title: Introduction to Interactive Media  
 Course number: IM-UH 1010   
 Section: 1 (Michael Shiloh's section)
 Credit Hours: 4         
@@ -2130,16 +2130,11 @@ incrementing a value
 - What do you wish we'd talk about, or learn, that we haven't?
 
 ### Thursday 26 October 2023
-##### todays-lecture
-#### Administration
-- Attendance
 #### Today
 - Introduction to breadboard
 - Introduction to electricity
 - Introduction to Arduino
 - `digitalWrite()`
-- `analogWrite()`
-- `analogRead()`
 
 ##### Introduction to Arduino
 
@@ -2248,9 +2243,18 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
 
+### Tuesday 31 October 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Review
+- Analog output using `analogWrite()`
+- Analog input using `analogRead()`
+- Digital Input using `digitalRead()`
+- A little bit of theory
 
-Review
-
+#### Review
 - Code
 - Circuit
 - Input and Output (I/O) pins
@@ -2335,12 +2339,6 @@ void loop() {
 }
 ````
 
-### Tuesday 28 March 2023
-#### Today
-- Discussion: Majid and Aibar 
-	- Norman,“Emotion & Design: Attractive things work better”
-	- Her Code Got Humans on the Moon
-- Time permitting, some homework feedback
 
 ##### Homework and Midterm Feedback
 - [How to add syntax highlighting for code](https://intro.nyuadim.com/2022/01/06/how-to-embed-a-p5js-sketch-in-your-blog-post/) in your blog posts
@@ -2366,9 +2364,6 @@ void loop() {
 ### Thursday 30 March 2023
 #### Today
 - More electronics
-- Digital Input
-- Analog Input 
-- Analog Output
 - More sensors
 
 #### More electronics
