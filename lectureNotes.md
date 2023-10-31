@@ -2265,6 +2265,20 @@ Let's extend this circuit to the breadboard:
 	- On the Arduino Uno this LED is on pin 13
 	- On the Arduino Uno LED_BUILTIN = 13 
 
+#### Analogue Output
+
+- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- `analogWrite()` only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- LEDs, motors, and some other actuators respond properly to PWM
+	- Other actuators, like a solenoid, do not respond well to PWM and really
+		should be considered digital actuators
+    - Since you have so few analog outputs, when you decide which pins to use
+      for which device, reserve the analog output pins for analog output
+      devices as much as possible
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
 #### Analogue Input
 
 Build this circuit. Try to follow the schematic and not the breadboard view:
@@ -2281,20 +2295,6 @@ Build this circuit. Try to follow the schematic and not the breadboard view:
 - Since you have so few analog input pins, when you decide which pins to use
 	for which device, reserve the analog input pins for analog input devices
 	as much as possible
-
-#### Analogue Output
-
-- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
-	- `analogWrite()` only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
-	- LEDs, motors, and some other actuators respond properly to PWM
-	- Other actuators, like a solenoid, do not respond well to PWM and really
-		should be considered digital actuators
-	- Since you have so few analog outputs, when you decide which pins to use
-		for which device, reserve the analog output pins for analog output devices
-		as much as possible
-
-- Not true analog voltage. PWM = Pulse Width Modulation
-- Works for LEDs and motors
 
 #### Functions that you know from p5.js which are useful here:
 - `map()`
@@ -2338,48 +2338,6 @@ void loop() {
   analogWrite(LED_PIN, brightness); // 0-255
 }
 ````
-
-
-##### Homework and Midterm Feedback
-- [How to add syntax highlighting for code](https://intro.nyuadim.com/2022/01/06/how-to-embed-a-p5js-sketch-in-your-blog-post/) in your blog posts
-- Make links active
-- Better discussion of failures. Include code, explain how you figured it out
-	or worked around it
-- Never never never use screenshots of code (or of any text)!
-	- Unless there is a really good reason to do so, in which case you should
-		explain it
-- If a function's return value is used, the function should always return
-	something
-- Comments
-	[e.g.](https://github.com/aylasacic/Intro-to-IM/blob/main/Midterm%20Project/sketch.js)
-- Explain all variables, functions, classes, and objects unless their names
-	make it perfectly clear what they are for
-- Describe user testing feedback and what you did with that feedback
-- Block at beginning with name, date, description
-- Better descriptions in your blog posts
-	([e.g.](https://intro.nyuadim.com/author/at4888/))
-- Break up large chunks of code into functions
-- Complex state machine with multiple variables and states
-
-### Thursday 30 March 2023
-#### Today
-- More electronics
-- More sensors
-
-#### More electronics
-
-#### Ohm's law
-- I=V/R
-- The math only works for linear components 
-	- But the principle is the same for non-linear components 
-	- **is a very important concept**:
-		- For a given resistance, 
-			the higher the pressure (voltage), 
-				the higher the current
-		- For a given voltage, the higher the "resistance", 
-			the lower the current
-
-![](media/electricityExplained.jpg)
 
 #### Digital Input
 
@@ -2445,6 +2403,48 @@ void allOff() {
   digitalWrite(greenLEDPin, LOW);
 }
 ````
+
+
+##### Homework and Midterm Feedback
+- [How to add syntax highlighting for code](https://intro.nyuadim.com/2022/01/06/how-to-embed-a-p5js-sketch-in-your-blog-post/) in your blog posts
+- Make links active
+- Better discussion of failures. Include code, explain how you figured it out
+	or worked around it
+- Never never never use screenshots of code (or of any text)!
+	- Unless there is a really good reason to do so, in which case you should
+		explain it
+- If a function's return value is used, the function should always return
+	something
+- Comments
+	[e.g.](https://github.com/aylasacic/Intro-to-IM/blob/main/Midterm%20Project/sketch.js)
+- Explain all variables, functions, classes, and objects unless their names
+	make it perfectly clear what they are for
+- Describe user testing feedback and what you did with that feedback
+- Block at beginning with name, date, description
+- Better descriptions in your blog posts
+	([e.g.](https://intro.nyuadim.com/author/at4888/))
+- Break up large chunks of code into functions
+- Complex state machine with multiple variables and states
+
+### Thursday 30 March 2023
+#### Today
+- More electronics
+- More sensors
+
+#### More electronics
+
+#### Ohm's law
+- I=V/R
+- The math only works for linear components 
+	- But the principle is the same for non-linear components 
+	- **is a very important concept**:
+		- For a given resistance, 
+			the higher the pressure (voltage), 
+				the higher the current
+		- For a given voltage, the higher the "resistance", 
+			the lower the current
+
+![](media/electricityExplained.jpg)
 
 Other things you can do:
 
