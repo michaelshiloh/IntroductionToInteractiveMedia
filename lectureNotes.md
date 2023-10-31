@@ -2161,6 +2161,10 @@ Here is how to build the circuit
 
 ![](media/ArduinoPoweringLED_bb.png)
 
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
 
 **Theory**
 
@@ -2250,14 +2254,10 @@ Let's extend this circuit to the breadboard:
 	- On the Arduino Uno LED_BUILTIN = 13 
 
 #### Schematics
-
-Here is the schematic of what you've built
-
-![](media/ArduinoPoweringLED_schem.png)
-
-- Important part of something, 
+- Look above and see the schematics for what we made last week
+- Schematics are ways to capture the important features of a circuit
 	without getting distracted by details (e.g. subway maps)
-- What's important in an electrical schematic?
+- What's important in an electrical circuit?
 	- Where is the power coming from?
 	- What other components are there in the circuit?
 	- How are they connected?
