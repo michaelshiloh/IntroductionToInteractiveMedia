@@ -2261,17 +2261,24 @@ Let's extend this circuit to the breadboard:
 	- Where is the power coming from?
 	- What other components are there in the circuit?
 	- How are they connected?
+- Schematic conventions
+    - Positive voltage on top, ground at the bottom
+    - Inputs on the left, outputs on the right
+        - Information flows from left to right
+    - Unused pins can be left off
 
 **Schematics are an important way to show a circuit. You will be required to
 understand and use them**
 
-#### Analogue Output
+#### Analog Output
 
-- Analogue Outputs, `analogWrite()`, PWM and (some) actuators go together
-	- `analogWrite()` only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
-	- LEDs, motors, and some other actuators respond properly to PWM
-	- Other actuators, like a solenoid, do not respond well to PWM and really
-		should be considered digital actuators
+- Analog output uses the `analogWrite()` function
+- The `analogWrite()` function only works on the six PWM pins (3, 5, 6, 9, 10,
+  and 11).
+- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
+    - LEDs, motors, and some other actuators respond properly to PWM
+    - Other actuators, like a solenoid, do not respond well to PWM and really
+      should be considered digital actuators
     - Since you have so few analog outputs, when you decide which pins to use
       for which device, reserve the analog output pins for analog output
       devices as much as possible
@@ -2279,14 +2286,14 @@ understand and use them**
 - Not true analog voltage. PWM = Pulse Width Modulation
 - Works for LEDs and motors
 
-#### Analogue Input
+#### Analog Input
 
 Build this circuit. Try to follow the schematic and not the breadboard view:
 
 ![](media/ArduinoPhotoresistor_schem.png)
 ![](media/ArduinoPhotoresistor_bb.png)
 
-- Analogue Inputs, `analogRead()`, and (some) sensors go together
+- Analog Inputs, `analogRead()`, and (some) sensors go together
 	- This only works on the six analog input pins (A0-A5)
 	- Digital sensors, like a switch, have only one of two values 
 	and so are more suited to a digital input
@@ -2468,7 +2475,7 @@ How is that possible?
 Do you see a similarity between this circuit and 
 something we learned earlier?
 
-Some analogue sensors are resistive, some are not. 
+Some analog sensors are resistive, some are not. 
 Resistive sensors all use the same
 pattern: a voltage divider.
 Note the similarity to the circuit we used for a switch.
@@ -2497,8 +2504,8 @@ Here is an example:
 
 #### In-class exercise
 
-1. Use one of the analogue sensors to select which of two LEDs lights up
-1. Use one of the analogue sensor to control how fast two LEDs alternate
+1. Use one of the analog sensors to select which of two LEDs lights up
+1. Use one of the analog sensor to control how fast two LEDs alternate
 1. Use a momentary switch (often called a *pushbutton* or a *button* in the
 	 Arduino literature) to select a different range for mapping an analog
 	 sensor to an analog output device
