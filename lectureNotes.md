@@ -2146,7 +2146,6 @@ incrementing a value
 - Inputs and outputs
 - Electricity
 - Circuits
-- Schematics
 - Series and Parallel
 
 #### Electricity 
@@ -2188,22 +2187,6 @@ that will cause the electrons to want to move.
 to some other form of energy (e.g. light, sound, heat, movement)
 - Optionally, switches or other sensors to control the flow of energy
 	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
-
-#### Schematics
-
-Here is the schematic of what you've built
-
-![](media/ArduinoPoweringLED_schem.png)
-
-- Important part of something, 
-	without getting distracted by details (e.g. subway maps)
-- What's important in an electrical schematic?
-	- Where is the power coming from?
-	- What other components are there in the circuit?
-	- How are they connected?
-
-**Schematics are an important way to show a circuit. You will be required to
-understand and use them**
 
 #### Switches
 
@@ -2249,6 +2232,7 @@ Let's extend this circuit to the breadboard:
 - Attendance
 #### Today
 - Review
+- Schematics
 - Analog output using `analogWrite()`
 - Analog input using `analogRead()`
 - Digital Input using `digitalRead()`
@@ -2264,6 +2248,22 @@ Let's extend this circuit to the breadboard:
 - Built-in LED
 	- On the Arduino Uno this LED is on pin 13
 	- On the Arduino Uno LED_BUILTIN = 13 
+
+#### Schematics
+
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
+- Important part of something, 
+	without getting distracted by details (e.g. subway maps)
+- What's important in an electrical schematic?
+	- Where is the power coming from?
+	- What other components are there in the circuit?
+	- How are they connected?
+
+**Schematics are an important way to show a circuit. You will be required to
+understand and use them**
 
 #### Analogue Output
 
