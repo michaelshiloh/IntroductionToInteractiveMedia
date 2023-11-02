@@ -2230,7 +2230,7 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
 
-### Tuesday 31 October 2023
+### Thursday 2 November 2023
 ##### todays-lecture
 #### Administration
 - Attendance
