@@ -2231,9 +2231,6 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_bb.png)
 
 ### Thursday 2 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
 #### Today
 - Review
 - Schematics
@@ -2346,6 +2343,16 @@ void loop() {
 }
 ````
 
+### Thursday 2 November 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Review
+- Digital Input
+- Sound
+- Servo motor
+
 #### Digital Input
 
 Adding a switch
@@ -2411,32 +2418,67 @@ void allOff() {
 }
 ````
 
+#### Sound
 
-##### Homework and Midterm Feedback
-- [How to add syntax highlighting for code](https://intro.nyuadim.com/2022/01/06/how-to-embed-a-p5js-sketch-in-your-blog-post/) in your blog posts
-- Make links active
-- Better discussion of failures. Include code, explain how you figured it out
-	or worked around it
-- Never never never use screenshots of code (or of any text)!
-	- Unless there is a really good reason to do so, in which case you should
-		explain it
-- If a function's return value is used, the function should always return
-	something
-- Comments
-	[e.g.](https://github.com/aylasacic/Intro-to-IM/blob/main/Midterm%20Project/sketch.js)
-- Explain all variables, functions, classes, and objects unless their names
-	make it perfectly clear what they are for
-- Describe user testing feedback and what you did with that feedback
-- Block at beginning with name, date, description
-- Better descriptions in your blog posts
-	([e.g.](https://intro.nyuadim.com/author/at4888/))
-- Break up large chunks of code into functions
-- Complex state machine with multiple variables and states
+**`tone()`**
 
-### Thursday 30 March 2023
-#### Today
-- More electronics
-- More sensors
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- Before you try that code, just try 
+`tone(spkrPin, 440);`
+and
+`tone(spkrPin, 440, 1000);`
+- [Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+	- The word "intefere" is rather vague. 
+	I think they mean that it 
+	prevents `analogWrite()` from working on pins 3 and 11
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs 
+- Arduino has arrays 
+- What is resistor for? 
+	- LED needs a resistor to limit current so it doesn't burn out
+	- LDR needs a resistor to form a voltage divider
+	- Piezo buzzer neither burns out nor needs a voltage divider
+	- So why a resistor?
+
+#### Servo motor
+
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### More about PWM
+- How do you suppose `analogWrite()` makes an LED dimmer?
+- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
+- What do `analogWrite()`, `tone()` and `Servo` have in common?
+- What is sound?
+- How does a servo motor
+	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
+
+**Notes**
+1. You may have noticed that the built-in LED blinks 3 times when you turn on
+	 your Arduino. In fact it does this every time it resets, which also happens
+	 when you upload a new program. Since this LED is connected directly to pin
+	 13, it means that whatever you have attached to pin 13 will be activated 3
+	 times briefly whenver the Arduino resets. So, if you make a big robot, 
+	 you probably should not use pin 13 for the motor
+1. Pins 0 and 1 are used for communication with your laptop, and this has two
+	 effects:
+	1. Connecting anything to pins 0 or 1 might interfere with laptop
+		 communication (which includes uploading!)
+	2. Anything connected to pins 0 or 1 might be activated during
+		 communication!
+1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
+	 pins and need to use them there are ways around this.
+
 
 #### More electronics
 
@@ -2514,83 +2556,6 @@ Here is an example:
 	from the LDR are stored. When the switch is released, use those values to
 	map the range of values from the LDR to the full range of the LED brightness
 
-### Tuesday 4 April 2023
-#### Today
-- Akhat and Ishmal
-	- Physical Computing’s Greatest hits and misses
-	- Making Interactive Art: Set the Stage, Then Shut Up and Listen
-- Look at homework
-
-
-
-### Thursday 6 April 2023
-#### Administration
-- Attendance
-
-#### Today
-- Sound
-- Servo motor
-
-#### Sound
-
-**`tone()`**
-
-- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
-- Before you try that code, just try 
-`tone(spkrPin, 440);`
-and
-`tone(spkrPin, 440, 1000);`
-- [Reference
-page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
-
-**Notes**
-- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
-	- The word "intefere" is rather vague. 
-	I think they mean that it 
-	prevents `analogWrite()` from working on pins 3 and 11
-- The `tone()` function is *non-blocking*
-- Arduino supports tabs 
-- Arduino has arrays 
-- What is resistor for? 
-	- LED needs a resistor to limit current so it doesn't burn out
-	- LDR needs a resistor to form a voltage divider
-	- Piezo buzzer neither burns out nor needs a voltage divider
-	- So why a resistor?
-
-#### Servo motor
-
-- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
-- [Reference
-page](https://www.arduino.cc/en/Reference/Servo)
-
-
-**Notes**
-- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
-- The `Servo.write()` function is *non-blocking*
-
-#### More about PWM
-- How do you suppose `analogWrite()` makes an LED dimmer?
-- [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
-- What do `analogWrite()`, `tone()` and `Servo` have in common?
-- What is sound?
-- How does a servo motor
-	[work](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)?
-
-**Notes**
-1. You may have noticed that the built-in LED blinks 3 times when you turn on
-	 your Arduino. In fact it does this every time it resets, which also happens
-	 when you upload a new program. Since this LED is connected directly to pin
-	 13, it means that whatever you have attached to pin 13 will be activated 3
-	 times briefly whenver the Arduino resets. So, if you make a big robot, 
-	 you probably should not use pin 13 for the motor
-1. Pins 0 and 1 are used for communication with your laptop, and this has two
-	 effects:
-	1. Connecting anything to pins 0 or 1 might interfere with laptop
-		 communication (which includes uploading!)
-	2. Anything connected to pins 0 or 1 might be activated during
-		 communication!
-1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
-	 pins and need to use them there are ways around this.
 
 #### Data Types
 
@@ -3072,10 +3037,6 @@ What techniques have you learned to help you find problems?
 #### Soldering
 
 ### Thursday 4 May 2023
-##### todays-lecture
-
-#### Administration
-Attendance
 #### Today
 - Evaluations
 - Digital Multimeter
