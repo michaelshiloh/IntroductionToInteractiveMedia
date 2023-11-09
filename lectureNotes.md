@@ -2343,10 +2343,7 @@ void loop() {
 }
 ````
 
-### Thursday 2 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
+### Tuesday 7 November 2023
 #### Today
 - Review
 - Digital Input
@@ -2479,6 +2476,18 @@ page](https://www.arduino.cc/en/Reference/Servo)
 1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
 	 pins and need to use them there are ways around this.
 
+### Thursday 9 November 2023
+##### todays-lecture
+#### Administration
+- Attendance
+- Good news everybody!
+#### Today
+- Discussion
+- Review
+- Examples
+- Electronics
+
+#### Examples
 
 #### More electronics
 
