@@ -2483,7 +2483,7 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Good news everybody!
 #### Today
 - Discussion
-- Review
+- Potentiometer
 - Examples
 - Electronics
 
