@@ -2477,10 +2477,6 @@ page](https://www.arduino.cc/en/Reference/Servo)
 	 pins and need to use them there are ways around this.
 
 ### Thursday 9 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
-- Good news everybody!
 #### Today
 - Discussion
 - Potentiometer
@@ -2552,6 +2548,25 @@ Here is an example:
 	if you start your homework early enough. If you wait until the last minute
 	and then don't have time to get help, that is unexcusable.
 - Use constants for pin numbers
+
+### Tuesday 14 November 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Blink without delay
+- Ask me anything
+- In-class exercises
+- Theory
+
+#### Blink without delay
+    - What is the problem
+    - Built in example
+    - How would you modify the toneMelody program?
+    - Adafruit [tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all) 
+
+#### Ask me anything
+    - For example, did anything come up while doing homework?
 
 #### In-class exercise
 
