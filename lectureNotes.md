@@ -2554,10 +2554,13 @@ Here is an example:
 #### Administration
 - Attendance
 #### Today
+- Share your projects
 - Blink without delay
 - Ask me anything
 - In-class exercises
 - Theory
+
+#### Share your projects
 
 #### Blink without delay
     - What is the problem
