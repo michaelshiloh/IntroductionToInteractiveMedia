@@ -2553,6 +2553,8 @@ Here is an example:
 ##### todays-lecture
 #### Administration
 - Attendance
+- Discussion on Thursday: “Emotion & Design: Attractive things work better”
+  and "Her Code Got Humans on the Moon"
 #### Today
 - Share your projects
 - Blink without delay
