@@ -2793,6 +2793,7 @@ void loop() {
 - Discussion “Emotion & Design: Attractive things work better”
   and "Her Code Got Humans on the Moon"
 - Musical Instruments
+- Homework (Week 10)
 
 
 
