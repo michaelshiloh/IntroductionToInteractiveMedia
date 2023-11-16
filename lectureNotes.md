@@ -2792,7 +2792,7 @@ void loop() {
 #### Today
 - Discussion “Emotion & Design: Attractive things work better”
   and "Her Code Got Humans on the Moon"
-- Musical Instruments
+- Analog and Digital, Inputs and Outputs
 - Homework (Week 10)
 
 
