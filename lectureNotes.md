@@ -2550,11 +2550,6 @@ Here is an example:
 - Use constants for pin numbers
 
 ### Tuesday 14 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
-- Discussion on Thursday: “Emotion & Design: Attractive things work better”
-  and "Her Code Got Humans on the Moon"
 #### Today
 - Share your projects
 - Blink without delay
@@ -2790,11 +2785,33 @@ void loop() {
 }
 ````
 
+### Thursday 16 November 2023
+##### todays-lecture
+#### Administration
+- Attendance
 #### Today
-- Discussion
-	- Ajla and Adina: A Brief Rant, follow-up
-	- I will set alarm for 20 minutes. Do you want earlier warning?
+- Discussion “Emotion & Design: Attractive things work better”
+  and "Her Code Got Humans on the Moon"
 - Musical Instruments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Thursday 13 April 2023
 #### Administration
