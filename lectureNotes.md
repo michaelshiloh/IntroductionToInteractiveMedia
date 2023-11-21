@@ -2786,37 +2786,21 @@ void loop() {
 ````
 
 ### Thursday 16 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
 #### Today
 - Discussion “Emotion & Design: Attractive things work better”
   and "Her Code Got Humans on the Moon"
 - Analog and Digital, Inputs and Outputs
 - Homework (Week 10)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Thursday 13 April 2023
+### Tuesday 21 November 2023
+##### todays-lecture
 #### Administration
 - Attendance
+- Pizza, Wednesday, Nov 22nd at 6:30pm in the IM Lab as we welcome new
+  additions to the IM program, eat pizza, and find connection with one another
+  in these strange times. Open to all IM majors, minors, and students enrolled
+  in IM classes.  That's tomorrow!  
+- Homework
 #### Today
 - Serial Communication
 
@@ -2846,14 +2830,14 @@ Things to notice
 	extend it by changing the code appropriately on both ends. However you
 	always need to send something.
 - Another way of saying this is that the number of sensors on Arduino is
-	arbitrary. You can have more or less (as long as you change the code on p5
-	to agree). Likewise you can change what you are detecing in p5 and sending
-	to Arduino (keypresses, canvas coordinates, colors, whatever)
+  arbitrary. You can have more or less (as long as you change the code on both
+  sides to agree). Likewise you can change what you are detecting in p5 and
+  sending to Arduino (keypresses, mouse coordinates, colors, whatever)
 - What the information conveys is also arbitrary. Arduino sends messages to
-	p5, it has no idea what p5 does with this information. Similarly p5 sends
-	information to Arduino and has no understanding of what happens with it.
-	Either side can be arbitrarily complex, or can in fact ignore the
-	information after reading it.
+  p5, it has no idea what p5 does with this information. Similarly p5 sends
+  information to Arduino and has no understanding of what happens with it.
+  Either side can be arbitrarily complex, or can in fact ignore the
+  information after reading it.
 
 Make it your own
 - Duplicate Mang's project so that you get the other files as well
@@ -2882,6 +2866,34 @@ In-class exercise (break class into groups of 2-3 students)
 	example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make
 	it so every time the ball bounces one led lights up and then turns off, and
 	you can control the wind from one analog sensor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Tuesday 18 April 2023
 #### Today
