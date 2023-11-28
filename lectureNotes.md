@@ -2793,14 +2793,6 @@ void loop() {
 - Homework (Week 10)
 
 ### Tuesday 21 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
-- Pizza, Wednesday, Nov 22nd at 6:30pm in the IM Lab as we welcome new
-  additions to the IM program, eat pizza, and find connection with one another
-  in these strange times. Open to all IM majors, minors, and students enrolled
-  in IM classes.  That's tomorrow!  
-- Homework
 #### Today
 - Serial Communication
 
@@ -2867,49 +2859,54 @@ In-class exercise (break class into groups of 2-3 students)
 	it so every time the ball bounces one led lights up and then turns off, and
 	you can control the wind from one analog sensor
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Tuesday 18 April 2023
-#### Today
-- Discussion
-- Midterm project ideas
-
-### Tuesday 25 April 2023
+### Tuesday 28 November 2023
 ##### todays-lecture
+#### Administration
+- Attendance
+- Homework
 #### Today
-- Laptops in class for registration
-- Midterm project status
-- Motors and H-bridge
+- Motors!
+- Final project ideas
+- Debugging
+- Fabrication and Construction Techniques
+- Soldering
 
 #### Motors
 
 An LED can make light, what makes motion?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	=> **Electromagnetism**
 
@@ -2933,6 +2930,9 @@ Electrical devices that rely on the principle of electromagnetism:
 
 Can we connect the motor to an Arduino output just like we did with the piezo
 buzzer?
+- **No!**
+
+Why not?
 - Arduino current limitations
 
 ##### Arduino current limitations
@@ -2951,14 +2951,14 @@ and so consume <strong>high</strong> current
 - Current flowing through any resistance causes heat (P = I^2/R)
 - Everything has resistance
 
-**Therefore, where electricity is flowing there will be heat**
+**Therefore, anytime electricity is flowing there will be heat**
 
 **Heat causes damage**
 
 (We've not had to worry about that up to now because everything we've done
 uses very little current)
 
-Arduino can not protect itself from damaged caused by overheating. 
+Arduino **can not** protect itself from damaged caused by overheating. 
 It does not <strong>limit</strong> current, 
 it is <strong>damaged</strong> by too much current
 
@@ -2971,16 +2971,12 @@ The transistors that make up Arduino are tiny
 
 (Image courtesy of SparkFun)
 
-The reason for using the separate Motor Driver is simple:
+In order to control a motor with Arduino we need a separate device
+called a *motor driver*
+
+How does the motor driver avoid overheating?
 
 **It has much bigger transistors**
-
-(It also makes it easier to control both direction and speed, 
-but you could do that with the Arduino alone, 
-it  would just be more complicated)
-
-In addition to the bigger transistors, the Motor Driver
-includes an H-bridge which allows us to control rotation direction
 
 Circuit Schematic
 
@@ -3003,7 +2999,7 @@ How did I choose which pins to use?
 
 Code
 
-````
+```
 
 const int ain1Pin = 3;
 const int ain2Pin = 4;
@@ -3038,11 +3034,11 @@ void loop() {
   }
 }
 
-````
+```
 
 Control the motor speed and direction using a potentiometer:
 
-````
+```
 const int ain1Pin = 3;
 const int ain2Pin = 4;
 const int pwmAPin = 5;
@@ -3073,17 +3069,21 @@ void loop() {
     analogWrite(pwmAPin, 255 - potVal / 4);
   }
 }
-````
+```
+
+##### Final project ideas
 
 ##### Debugging
 
 If you want my help solving a problem in your assignment, do the following:
 1. Figure out the simplest circuit and program that demonstrates your problem
-1. Upload your schematic, code, and 
-the best picture you can take of your breadboard circuit to Github 
 1. Write a message on Discord, describing carefully
 	1. What you think should happen
 	1. What you observe happens
+    1. Your schematic, code, and 
+the best picture you can take of your breadboard circuit 
+
+What is a schematic?
 
 What techniques have you learned to help you find problems?
 
@@ -3094,6 +3094,42 @@ What techniques have you learned to help you find problems?
 - Strain relief
 
 #### Soldering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Thursday 4 May 2023
 #### Today
