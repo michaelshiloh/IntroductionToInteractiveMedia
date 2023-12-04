@@ -2860,16 +2860,9 @@ In-class exercise (break class into groups of 2-3 students)
 	you can control the wind from one analog sensor
 
 ### Tuesday 28 November 2023
-##### todays-lecture
-#### Administration
-- Attendance
-- Homework
 #### Today
 - Motors!
 - Final project ideas
-- Debugging
-- Fabrication and Construction Techniques
-- Soldering
 
 #### Motors
 
@@ -2982,6 +2975,9 @@ Circuit Schematic
 
 ![](media/arduinoSparkFunMotorDriver_schem.jpg)
 
+Here's a closeup of the motor driver with pins clearly labeled:
+![](https://cdn.sparkfun.com//assets/parts/1/2/4/8/2/14450a-02.jpg)
+
 How did I choose which pins to use?
 - Never use pins 0 and 1 (dedicated for USB communication)
 - Avoid pin 13 if possible (it flashes 3 times on reset)
@@ -3073,6 +3069,17 @@ void loop() {
 
 ##### Final project ideas
 
+### Tuesday 5 December 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Debugging
+- Fabrication and Construction Techniques
+- Soldering
+- Digital Multimeter
+- Final project status
+
 ##### Debugging
 
 If you want my help solving a problem in your assignment, do the following:
@@ -3092,50 +3099,11 @@ What techniques have you learned to help you find problems?
 - Panel mount vs. PCB mount
 - Stranded vs. solid core wire
 - Strain relief
+- Switch
+- LED
+- Potentiometer
 
 #### Soldering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Thursday 4 May 2023
-#### Today
-- Evaluations
-- Digital Multimeter
-- Wiring 
 
 ##### How to use a Digital Multimeter (DMM) 
 
@@ -3150,8 +3118,3 @@ What techniques have you learned to help you find problems?
 		- Checking resistive sensors
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
-
-##### Wiring 
-- Switch
-- LED
-- Potentiometer
