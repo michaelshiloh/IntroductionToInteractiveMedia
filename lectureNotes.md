@@ -3073,6 +3073,7 @@ void loop() {
 ##### todays-lecture
 #### Administration
 - Attendance
+- **Final project presentations will be on Tuesday December 11**
 #### Today
 - Debugging
 - Fabrication and Construction Techniques
@@ -3090,9 +3091,12 @@ If you want my help solving a problem in your assignment, do the following:
     1. Your schematic, code, and 
 the best picture you can take of your breadboard circuit 
 
-What is a schematic?
-
-What techniques have you learned to help you find problems?
+* What is a schematic?
+* What would you do if your LED doesn't seem to work?
+* What would you do if your motor doesn't seem to work?
+* What would you do if your light sensor doesn't seem to work?
+* What would you do if your potentiometer doesn't seem to work?
+* What techniques have you learned to help you find problems?
 
 #### Fabrication and Construction Techniques
 
