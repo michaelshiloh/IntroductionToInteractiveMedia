@@ -3100,12 +3100,8 @@ the best picture you can take of your breadboard circuit
 
 #### Fabrication and Construction Techniques
 
-- Panel mount vs. PCB mount
-- Stranded vs. solid core wire
-- Strain relief
-- Switch
-- LED
-- Potentiometer
+Follow [this](https://github.com/michaelshiloh/ProjectConstructionTechniques)
+guide
 
 #### Soldering
 
