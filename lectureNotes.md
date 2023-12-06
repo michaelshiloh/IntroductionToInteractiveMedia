@@ -3070,10 +3070,6 @@ void loop() {
 ##### Final project ideas
 
 ### Tuesday 5 December 2023
-##### todays-lecture
-#### Administration
-- Attendance
-- **Final project presentations will be on Tuesday December 11**
 #### Today
 - Debugging
 - Fabrication and Construction Techniques
@@ -3118,3 +3114,13 @@ guide
 		- Checking resistive sensors
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
+
+### Thursday 7 December 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Course evaluations
+- Final project due date
+- [Showcase Equipment, Material, and Space Needs](https://docs.google.com/spreadsheets/d/1-8rp3WtKXeTRNX5si4_RlCaDUt9tRdaqlIOTk5iCsLs/edit#gid=1422352775)
+- [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
