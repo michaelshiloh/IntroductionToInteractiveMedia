@@ -3124,3 +3124,4 @@ guide
 - Final project due date
 - [Showcase Equipment, Material, and Space Needs](https://docs.google.com/spreadsheets/d/1-8rp3WtKXeTRNX5si4_RlCaDUt9tRdaqlIOTk5iCsLs/edit#gid=1422352775)
 - [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
+- Availability over the weekend
