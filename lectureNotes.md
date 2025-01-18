@@ -18,7 +18,7 @@ Meeting times:
 - 3:35-6:15pm Tuesday
 - 5:00-6:15pm Thursday
 
-Session: Fall 2025  
+Session: Spring 2025  
 
 Class location: C3-029 (IM Lab)  
 - [Syllabus](https://intro.nyuadim.com/syllabus/)  
