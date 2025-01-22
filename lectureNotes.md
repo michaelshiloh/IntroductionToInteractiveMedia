@@ -204,9 +204,26 @@ Controlling fill, stroke, and color
 - `stroke()`
 - `noStroke()`
 - `fill()`
+- `background(240)`
+
+##### todays-lecture
+### Thursday 23 January 2025 5:00 - 6:15
+#### Today
+- Attendance
+- Review
+- More p5.js
+
+##### Review
+- `createCanvas()`
+- `background()`
+- `stroke()`
+- `noStroke()`
+- `fill()`
+- `noFill()`
+
+##### More p5.js
 - `arc(100, 100, 100, 100, 0, 180)`
 - `arc(100, 100, 100, 100, 0, radians(180), CHORD)`
-- `background(240)`
 
 ##### In-class exercise
 
