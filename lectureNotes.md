@@ -260,10 +260,11 @@ but that's not very useful. Why does it only print the coordinates once?
 ```
 function setup() {
   createCanvas(200, 200);
+  background(220);
+  rect ( 30, 50, 60 ,90);
 }
 
 function draw() {
-  background(220);
   print(mouseX + "," + mouseY);
 }
 ```
