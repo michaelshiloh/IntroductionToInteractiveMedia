@@ -257,6 +257,8 @@ but that's not very useful. Why does it only print the coordinates once?
 - Hint: the function `setup()` only runs once at the beginning. Maybe there is
 	another function that runs more than once?
 
+##### Try this:
+
 ```
 function setup() {
   createCanvas(200, 200);
@@ -277,12 +279,12 @@ change?
 ```
 function setup() {
   createCanvas(200, 200);
-	let xPosition = 0;
+  let xPosition = 0;
 }
 
 function draw() {
   circle(xPosition, 50, 30);
-	xPosition = xPosition + 1;
+  xPosition = xPosition + 1;
 }
 ```
 
