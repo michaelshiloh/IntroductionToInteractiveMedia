@@ -210,6 +210,7 @@ Controlling fill, stroke, and color
 ### Thursday 23 January 2025 5:00 - 6:15
 #### Today
 - Attendance
+- Apply for student assistant  https://app.joinhandshake.com/emp/jobs/9559510
 - Review
 - More p5.js
 
