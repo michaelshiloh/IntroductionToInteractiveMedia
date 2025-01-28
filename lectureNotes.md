@@ -501,7 +501,7 @@ In class exercise:
 
 Example:
 
-`
+````
 function setup() {
   createCanvas(300, 300);
   let xCord = 20;
@@ -516,7 +516,7 @@ function setup() {
     xCord = xCord + 45;
   }
 }
-`
+````
 
 Notes:
 * Why is the last rectangle cut off?
