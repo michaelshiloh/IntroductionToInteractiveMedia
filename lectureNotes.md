@@ -492,3 +492,32 @@ In class exercise:
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
 
+
+##### Loops
+
+`while()` is just like `if()` with a very important difference:
+- `if()` runs once if the condition is `true`
+- `while()` runs forever as long as the condition is `true`
+
+Example:
+
+`
+function setup() {
+  createCanvas(300, 300);
+  let xCord = 20;
+  let yCord = 20;
+
+  while (yCord < height) {
+    rect(xCord, yCord, 40);
+    if (xCord >= width) {
+      xCord = 20;
+      yCord = yCord + 45;
+    }
+    xCord = xCord + 45;
+  }
+}
+`
+
+Notes:
+* Why is the last rectangle cut off?
+* Why does is first rectangle in every row but the first missing?
