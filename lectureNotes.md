@@ -206,7 +206,6 @@ Controlling fill, stroke, and color
 - `fill()`
 - `background(240)`
 
-##### todays-lecture
 ### Thursday 23 January 2025 5:00 - 6:15
 #### Today
 - Attendance
@@ -311,23 +310,17 @@ function draw() {
 - `width`, `height`
 - many others; we will discover more as we go along
 
+##### todays-lecture
+### Tuesday 28 January 2025 3:35 - 6:15
+##### Today
+- Attendance
+- Administration
+- Look at homework
+- Review
+- New material (time permitting)
 
-##### Pause
-
-Many of you already know the material we cover in these first few weeks
-so why sit through class?
-- This is not a coding class. This class includes design and critique
-- Since you already know how to code, your creativity
-	and critical thinking will be judged to a high standard
-- I expect full attention and engagement. Doing something not related to class
-	is rude, disrespectful, and will result in a reduced grade. The
-	cellphone/laptop rules that we discussed last week is really about
-	attention and respect, not about technology
-- Please use the restroom before class. 
-    We will take frequent breaks in class. 
-    If you need an additional break please ask me when is a good time. 
-    If you regularly require more frequent breaks please discuss with me
-    privately or request an accommodation from the Moses Center
+##### Administration
+- Wordpress problems?
 
 #### Homework
 - [Homework schedule](https://intro.nyuadim.com/). Note the deadline
@@ -336,7 +329,8 @@ so why sit through class?
 - Let's look at some of your homework
 
 #### Notes on variables
-Javascript is not a typed language: you don't need to declare
+
+1. Javascript is not a typed language: you don't need to declare
 	a variable's type
 - `let myNumber = 4.5;`
 - `let myString = "the quick brown fox";`
@@ -347,13 +341,11 @@ Javascript is not a typed language: you don't need to declare
 It's important to be aware of the difference between a variables name and
 a variable's value
 
-How can we find out what a variable's value is?
+2. How can we find out what a variable's value is?
 `print()` 
 
-##### Notes:
-
-- Local vs. Global variables
-- Built-in variables
+3. Scope: Local vs. Global variables
+4. Built-in variables
 
 ````
 // Example usage of a global variable
@@ -376,4 +368,129 @@ function draw() {
 }
 ````
 
+#### Animation, Conditionals, Loops
 
+##### Animation
+
+Use the `draw()` function to draw something different in each frame. This can
+be the location of a shape but you can manipulate anything such as color also:
+
+The  `draw()` function is called once per frame. Think of it as drawing a new
+page on a ["flip book"](https://en.wikipedia.org/wiki/Flip_book)
+
+````
+let foo = 0;
+
+function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  ellipse(foo, 50, 40, 40);
+  foo = foo + 1;
+}
+````
+
+By default, the previous frame is not erased. Sometimes this is useful.
+Use the `background()` function to "paint" over any previous drawings. 
+
+````
+function setup() {
+  createCanvas(500, 500);
+}
+
+let triangleTopLeftX = 0;
+let redValue = 255;
+
+function draw() {
+  // erase previous drawings
+  background(10, 255, 255);
+
+  // Move the triangle
+  triangleTopLeftX = triangleTopLeftX + 1;
+
+	// If the triangle reaches the right edge, move to the left edge
+  if (triangleTopLeftX >= width) {
+    triangleTopLeftX = 0;
+  }
+
+  // Change the value of red
+  redValue = redValue - 1;
+
+	//If red reaches a certian level, reset it
+  if (redValue === 55) {
+		redValue = 255;
+	}
+
+  // Select the fill for the triangle
+  fill(redValue, redValue - 100, redValue - 100);
+
+  // Draw the triangle
+  triangle(
+    triangleTopLeftX,
+    20, // top left corner
+    triangleTopLeftX + 100,
+    30, // top right corner
+    triangleTopLeftX + 50,
+    200
+  ); // bottom corner
+  
+  // Select the fill for the circle
+  fill(10,20, 240);
+
+  // Draw the circle
+  circle(mouseX, mouseY, 30);
+  print("mouse coordinates = " + mouseX + ", " + mouseY);
+}
+
+````
+
+##### How often does the `draw()` loop run?
+
+````
+function setup() {
+  frameRate(10);       // frameRate() is a function
+  print(frameRate()); // framerate does not change immediately
+}
+
+function draw() {
+  print(frameRate());
+}
+````
+
+##### Conditionals 
+
+One of the most important features of computer programming is the ability to
+do different things based on the outcome of some previous event 
+
+````
+function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  if (mouseIsPressed === true) {
+    background(0, 0, 255);
+  } else {
+    background(200, 0, 0);
+  }
+}
+````
+
+**Notes**:
+1. `mouseIsPressed` is another built-in variable. There are many others.
+1. `mouseIsPressed` is a new type of data, namely a `boolean`, 
+	which means it has
+	 only one of two values, `true` or `false`
+1. Note that `{` and `}` indicate the blocks
+1. The `else` part of an `if()` statement is optional (what happens if we
+	 remove it?)
+
+In class exercise:
+- Using the cursor to draw
+- Now use a mouse press to clear the screen
+- Clear the screen if the mouse is pressed inside a certain circle
+- Combine these to create a primitive painting program
+
+[Here](https://editor.p5js.org/michaelshiloh/sketches/izE0kdT_Q) is the
+example that we developed in class
