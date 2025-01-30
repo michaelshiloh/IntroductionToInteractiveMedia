@@ -542,7 +542,7 @@ function setup() {
 }
 ````
 
-The example from Tuesday:
+The example from Tuesday, modified to draw more rows of squares
 
 ````
 function setup() {
@@ -563,7 +563,7 @@ function setup() {
 
 Things to think about:
 * Why is the last rectangle cut off?
-* Why does is first rectangle in every row but the first missing?
+* Why is first rectangle in every row but the first missing?
 
 Note that in all the examples above we need three things:
 - A variable that tells the `while()` loop whether to run or not (the
