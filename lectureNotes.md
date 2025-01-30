@@ -495,9 +495,87 @@ In class exercise:
 
 ##### Loops
 
-`while()` is just like `if()` with a very important difference:
-- `if()` runs once if the condition is `true`
-- `while()` runs forever as long as the condition is `true`
+- `while()` is like `if()` but it keeps on doing it as long as condition is true
+	- Whereas `if()` does it only once
+	- The assumption is that something changes while you're doing the loop which
+		might eventually make the condition false, otherwise you'd be stuck there
+		forever
+
+````
+function setup() {
+  createCanvas(300, 300);
+
+  let foo = 50; // create and initialize a variable
+
+  while (foo < width) { // keep going as long as the condition is true
+    ellipse(foo, 50, 40, 40);
+		// modify the variable so something different happens next time
+    foo = foo + 50; 
+  }
+}
+````
+
+1. You should get in the habit of giving meaningful names to your variables.
+	1. What is a better name for the variable foo?
+1. What would happen if you replace the `while()` with `if()`?
+
+Another example:
+
+````
+function setup() {
+  let done = false;
+  let counter = 0;
+  while (!done) {
+    print(counter++);
+    if (counter >= 10) {
+      done = true;
+      print("done");
+    }
+  }
+}
+````
+
+There is another way to make a loop using the keyword `for()`. The `for()`
+loop structure combines the initialization step and the incrementation step
+into the `for()` loop construction:
+
+````
+function setup() {
+  createCanvas(300, 300);
+
+  // initialization, condition, and incrementation all in one line
+  for (let foo = 50; foo < width; foo = foo + 50)  {
+    ellipse(foo, 50, 40, 40);
+  }
+}
+````
+
+Which should you use? Whichever is easier for you to understand. Remember that
+**most of the time spent programming is fixing problems**, and **whatever you
+understand best will probably have fewer problems**.
+
+Both `for()` loops and `while()` loops can be nested, meaning a loop inside a
+loop:
+
+```
+
+function setup() {
+  createCanvas(700, 700);
+  background(230);
+  fill(0);
+
+  let yPos;
+  let xPos;
+
+  for (yPos = 30; yPos < height; yPos=yPos + 40) {
+    for (xPos = 20; xPos<width; xPos=xPos + 40) {
+      circle(xPos,yPos, 5);
+    }
+  }
+}
+
+```
+
 
 Example:
 
@@ -518,6 +596,10 @@ function setup() {
 }
 ````
 
-Notes:
+Questions:
 * Why is the last rectangle cut off?
 * Why does is first rectangle in every row but the first missing?
+
+Note that I've done all the above looping examples in `setup()` and not in
+`draw()`, so there is no animation in these examples. Loops can be used in
+`draw()` as well.
