@@ -620,6 +620,38 @@ Note that I've done all the above looping examples in `setup()` and not in
 `draw()`, so there is no animation in these examples. Loops can be used in
 `draw()` as well.
 
+```
+// Welcome to the Circle Diagonator
+// Please choose a number of circles to draw
+
+let TOTAL_CIRCLES = 5;
+let CANVAS_SIZE = 800;
+let CANVAS_COLOR = "gold";
+
+let my_number = 0;
+let circle_diameter = 0;
+
+
+function setup() {
+  createCanvas(CANVAS_SIZE, CANVAS_SIZE);
+  background(CANVAS_COLOR);
+
+  circle_diameter = (width + height) / TOTAL_CIRCLES / 2;
+
+  while (my_number < TOTAL_CIRCLES) {
+    print("I'm in a loop, drawing circle " + my_number);
+    fill(color(random(255), random(255), random(255)));
+    strokeWeight(3);
+    circle(
+      (width / TOTAL_CIRCLES) * my_number + circle_diameter / 2,
+      (height / TOTAL_CIRCLES) * my_number + circle_diameter / 2,
+      circle_diameter
+    );
+    my_number = my_number + 1;
+  }
+}
+```
+
 #### In-class exercise
 
 1. Using either a `while()` loop or a `for()` loop draw 10 nested squares. Use
