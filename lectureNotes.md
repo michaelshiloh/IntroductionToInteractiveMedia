@@ -496,6 +496,7 @@ In class exercise:
 ##### Today
 - Attendance
 - Loops
+- In-class exercise
 - Next week's homework
 
 ##### Loops
@@ -524,7 +525,8 @@ function setup() {
 	1. What is a better name for the variable foo?
 1. What would happen if you replace the `while()` with `if()`?
 
-Another example:
+In the example below we use the concept of a `boolean flag` to indicate
+whether we are "done" or not.
 
 ````
 function setup() {
@@ -540,8 +542,39 @@ function setup() {
 }
 ````
 
-There is another way to make a loop using the keyword `for()`. The `for()`
-loop structure combines the initialization step and the incrementation step
+The example from Tuesday:
+
+````
+function setup() {
+  createCanvas(300, 300);
+  let xCord = 20;
+  let yCord = 20;
+
+  while (yCord < height) {
+    rect(xCord, yCord, 40);
+    if (xCord >= width) {
+      xCord = 20;
+      yCord = yCord + 45;
+    }
+    xCord = xCord + 45;
+  }
+}
+````
+
+Things to think about:
+* Why is the last rectangle cut off?
+* Why does is first rectangle in every row but the first missing?
+
+Note that in all the examples above we need three things:
+- A variable that tells the `while()` loop whether to run or not (the
+  *condition*)
+- The variable must be initialized to something
+- The variable must change in some way so that eventually the `while()` loop
+  will end
+
+Another way to make a loop is the `for()` loop. 
+The `for()`
+loop structure combines the initialization step and the change step
 into the `for()` loop construction:
 
 ````
@@ -582,29 +615,15 @@ function setup() {
 ```
 
 
-Example:
-
-````
-function setup() {
-  createCanvas(300, 300);
-  let xCord = 20;
-  let yCord = 20;
-
-  while (yCord < height) {
-    rect(xCord, yCord, 40);
-    if (xCord >= width) {
-      xCord = 20;
-      yCord = yCord + 45;
-    }
-    xCord = xCord + 45;
-  }
-}
-````
-
-Questions:
-* Why is the last rectangle cut off?
-* Why does is first rectangle in every row but the first missing?
 
 Note that I've done all the above looping examples in `setup()` and not in
 `draw()`, so there is no animation in these examples. Loops can be used in
 `draw()` as well.
+
+#### In-class exercise
+
+1. Using either a `while()` loop or a `for()` loop draw 10 nested squares. Use
+only the `setup()` function and no `draw()`
+1. Move your code to the `draw()` function and have the squares move across
+   the canvas all together
+1. Move the squares to follow the mouse
