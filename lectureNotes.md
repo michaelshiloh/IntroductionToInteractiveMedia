@@ -620,27 +620,35 @@ Note that I've done all the above looping examples in `setup()` and not in
 `draw()`, so there is no animation in these examples. Loops can be used in
 `draw()` as well.
 
+Here is a more complex example. See if you can figure out how this works:
+
 ```
 // Welcome to the Circle Diagonator
 // Please choose a number of circles to draw
 
-let TOTAL_CIRCLES = 5;
+let TOTAL_CIRCLES = 3;
 let CANVAS_SIZE = 800;
-let CANVAS_COLOR = "gold";
+let CANVAS_COLOR = "#FFCA39";
 
 let my_number = 0;
 let circle_diameter = 0;
 
-
 function setup() {
+  colorMode(HSL);
   createCanvas(CANVAS_SIZE, CANVAS_SIZE);
   background(CANVAS_COLOR);
 
   circle_diameter = (width + height) / TOTAL_CIRCLES / 2;
+  let random_hue = random(360);
 
   while (my_number < TOTAL_CIRCLES) {
     print("I'm in a loop, drawing circle " + my_number);
-    fill(color(random(255), random(255), random(255)));
+    if (random_hue + 15 > 360) {
+      random_hue -= 345;
+    } else {
+      random_hue += 15;
+    }
+    fill(color(random_hue, 90, 50));
     strokeWeight(3);
     circle(
       (width / TOTAL_CIRCLES) * my_number + circle_diameter / 2,
