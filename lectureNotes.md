@@ -310,7 +310,6 @@ function draw() {
 - `width`, `height`
 - many others; we will discover more as we go along
 
-##### todays-lecture
 ### Tuesday 28 January 2025 3:35 - 6:15
 ##### Today
 - Attendance
@@ -492,6 +491,12 @@ In class exercise:
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
 
+##### todays-lecture
+### Thursday 30 January 2025 5:00 - 6:15
+##### Today
+- Attendance
+- Loops
+- Next week's homework
 
 ##### Loops
 
