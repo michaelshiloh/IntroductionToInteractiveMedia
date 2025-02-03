@@ -789,86 +789,42 @@ five marbles in a box, you can refer to each individual marble by the order in
 which you put it: the first marble, the second marble, and so on.
 
 
-
-Here is a really simple array
-example:
-
 ````
 let numbers = [3, 5, 19, 230, 1, 4.93];
 
 function setup() {
-  print(numbers[0]);
-  print(numbers[3]);
-
-  print(numbers);
-
-  print(numbers.length);
-
-  let something = numbers.pop();
-  print(something);
-  print(numbers.length);
-
-  print(numbers);
+  print (numbers);
+  print (numbers[3]);
+  print (numbers[3] + numbers[0]);
+  print (numbers.length);
 }
 
 ````
-
-Here is a more complex example also demonstrating some other capabilities:
+You can remove elements from an array:
 
 ````
-let numbers = [];
+
+let numbers = [3, 5, 19, 230, 1, 4.93];
 
 function setup() {
-  printInstructions();
-  print("your turn: ");
+  print(numbers);
+  print("setup is done");
 }
 
-function draw() {}
-
-function printInstructions() {
-  print("d = delete last number");
-  print("a = add a number to the array");
-  print("p = print the array");
-  print("5 = print the sixth element of the array");
-  print("l = print the length of the array");
+function draw() {
+  if (numbers.length) {
+    let something = numbers.pop();
+    print("something = " + something);
+    print("here is the array " + numbers);
+  } else {
+    print("the array is empty");
+  }
 }
 
-function keyPressed() {
-  if (key == "d") {
-    numbers.pop();
-  }
-
-  if (key == "a") {
-    numbers.push(frameCount);
-  }
-
-  if (key == "p") {
-    print(numbers);
-  }
-
-  if (key == "l") {
-    print(numbers.length);
-  }
-
-  if (key == "5") {
-    print(numbers[5]);
-  }
-
-  print("\n");
-  printInstructions();
-  print("your turn:");
-}
 
 ````
 
-Notes
-- What is this `keyPressed()` function? Where is it called?
-- Can you guess what `key` is?
-
-
-
-
-
+There is also an `array.push()` function to add things to an array.
 
 #### Object oriented programming
 
@@ -1187,3 +1143,55 @@ Things to notice:
 	scope)
 
 
+
+Here is a more complex array example also demonstrating some other capabilities:
+
+````
+let numbers = [];
+
+function setup() {
+  printInstructions();
+  print("your turn: ");
+}
+
+function draw() {}
+
+function printInstructions() {
+  print("d = delete last number");
+  print("a = add a number to the array");
+  print("p = print the array");
+  print("5 = print the sixth element of the array");
+  print("l = print the length of the array");
+}
+
+function keyPressed() {
+  if (key == "d") {
+    numbers.pop();
+  }
+
+  if (key == "a") {
+    numbers.push(frameCount);
+  }
+
+  if (key == "p") {
+    print(numbers);
+  }
+
+  if (key == "l") {
+    print(numbers.length);
+  }
+
+  if (key == "5") {
+    print(numbers[5]);
+  }
+
+  print("\n");
+  printInstructions();
+  print("your turn:");
+}
+
+````
+
+Notes
+- What is this `keyPressed()` function? Where is it called?
+- Can you guess what `key` is?
