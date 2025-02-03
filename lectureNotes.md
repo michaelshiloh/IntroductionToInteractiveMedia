@@ -987,6 +987,163 @@ function draw() {
 }
 ```
 
+### Time permitting:
+- `random()`
+- `noise()`
+- Interactive array example 
+- Something unexpected
+- State
+- `modulo()`
+
+
+##### Random numbers with `random()`
+
+- `let foo = random();`
+- `let foo = random(5);`
+- `let foo = random(5, 22);`
+- `let foo = random([some array]);`
+
+Random example 1:
+
+```
+
+function setup() {
+  createCanvas(700, 700);
+  background(230);
+  fill(0);
+
+  for (let yPos = 30; yPos < height; yPos=yPos + 40) {
+    for (let xPos = 20; xPos<width; xPos=xPos + 40) {
+      circle(xPos,yPos, random(1, 5));
+    }
+  }
+}
+
+```
+
+Random example 2:
+
+```
+function draw() {}
+
+function mouseClicked() {
+  background(50 * random(6),
+             50 * random(6),
+             50 * random(6));
+}
+```
+
+##### Perlin Noise
+
+```
+function draw() {
+  background(204);
+  let n = random(0, width);
+  line(n, 0, n, height);
+}
+```
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflies, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+Perlin noise example 1:
+```
+let offset = 0.0;
+
+function draw() {
+  background(204);
+  offset = offset + .01;
+  let n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+```
+Perlin noise example 2:
+
+```
+function setup() {
+  createCanvas(400, 400);
+
+  for (let yPos = 0; yPos < height; yPos = yPos + 40) {
+    for (let xPos = 0; xPos < width; xPos = xPos + 40) {
+      offset = offset + .1;
+      square(xPos+noise(offset)*20, yPos+noise(offset)*20, 40);
+    }
+  }
+}
+let offset = 0.0;
+```
+
+Things to notice:
+
+- Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
+##### Interactive array example
+
+````
+let numbers = [];
+
+function setup() {
+  printInstructions();
+  print("your turn: ");
+}
+
+function draw() {}
+
+function printInstructions() {
+  print("d = delete last number");
+  print("a = add a number to the array");
+  print("p = print the array");
+  print("5 = print the sixth element of the array");
+  print("l = print the length of the array");
+}
+
+function keyPressed() {
+  if (key == "d") {
+    numbers.pop();
+  }
+
+  if (key == "a") {
+    numbers.push(frameCount);
+  }
+
+  if (key == "p") {
+    print(numbers);
+  }
+
+  if (key == "l") {
+    print(numbers.length);
+  }
+
+  if (key == "5") {
+    print(numbers[5]);
+  }
+
+  print("\n");
+  printInstructions();
+  print("your turn:");
+}
+
+````
+
+Notes
+- What is this `keyPressed()` function? Where is it called?
+- Can you guess what `key` is?
+
+##### Something unexpected
+
+Why doesn't this produce the expected result?
+
+````
+let numbers = [6, 42, 7];
+
+function setup() {
+  print((numbers));
+  let last_number = numbers.pop();
+}
+````
 
 ##### State
 
@@ -1054,154 +1211,3 @@ What's the difference between these two `if` statements:
  if (key === "d") {
 ```
 
-
-##### Random numbers with `random()`
-
-- `let foo = random();`
-- `let foo = random(5);`
-- `let foo = random(5, 22);`
-- `let foo = random([some array]);`
-
-Random example 1:
-
-````
-
-function setup() {
-  createCanvas(700, 700);
-  background(230);
-  fill(0);
-
-  for (let yPos = 30; yPos < height; yPos=yPos + 40) {
-    for (let xPos = 20; xPos<width; xPos=xPos + 40) {
-      circle(xPos,yPos, random(1, 5));
-    }
-  }
-}
-
-````
-
-Random example 2:
-
-```
-function draw() {}
-
-function mouseClicked() {
-  background(50 * random(6),
-             50 * random(6),
-             50 * random(6));
-}
-```
-
-##### Perlin Noise
-
-```
-function draw() {
-  background(204);
-  let n = random(0, width);
-  line(n, 0, n, height);
-}
-```
-
-What if we wanted the line to move in a more organic, lifelike
-fashion? Organic things (e.g. butterflies, leaves blowing in the wind, clouds) 
-don't jump instantly from one place to another,
-they tend to move close to where they were last time
-
-Perlin noise example 1:
-```
-let offset = 0.0;
-
-function draw() {
-  background(204);
-  offset = offset + .01;
-  let n = noise(offset) * width;
-  line(n, 0, n, height);
-}
-```
-Perlin noise example 2:
-
-```
-function setup() {
-  createCanvas(400, 400);
-
-  for (let yPos = 0; yPos < height; yPos = yPos + 40) {
-    for (let xPos = 0; xPos < width; xPos = xPos + 40) {
-      offset = offset + .1;
-      square(xPos+noise(offset)*20, yPos+noise(offset)*20, 40);
-    }
-  }
-}
-let offset = 0.0;
-```
-
-Things to notice:
-
-- Why is the variable `offset` global? (Remember our discussion of variable
-	scope)
-
-
-
-Here is a more complex array example also demonstrating some other capabilities:
-
-````
-let numbers = [];
-
-function setup() {
-  printInstructions();
-  print("your turn: ");
-}
-
-function draw() {}
-
-function printInstructions() {
-  print("d = delete last number");
-  print("a = add a number to the array");
-  print("p = print the array");
-  print("5 = print the sixth element of the array");
-  print("l = print the length of the array");
-}
-
-function keyPressed() {
-  if (key == "d") {
-    numbers.pop();
-  }
-
-  if (key == "a") {
-    numbers.push(frameCount);
-  }
-
-  if (key == "p") {
-    print(numbers);
-  }
-
-  if (key == "l") {
-    print(numbers.length);
-  }
-
-  if (key == "5") {
-    print(numbers[5]);
-  }
-
-  print("\n");
-  printInstructions();
-  print("your turn:");
-}
-
-````
-
-Notes
-- What is this `keyPressed()` function? Where is it called?
-- Can you guess what `key` is?
-
-##### Something unexpected
-
-Why doesn't this produce the expected result?
-
-````
-let numbers = [6, 42, 7];
-
-function setup() {
-  print((numbers));
-  let last_number = numbers.pop();
-}
-````
