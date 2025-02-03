@@ -987,9 +987,6 @@ function draw() {
 }
 ```
 
-[Here](https://p5js.org/examples/arrays-array-objects.html)
-is another example showing how to make an array of objects
-
 
 ##### State
 
@@ -1195,3 +1192,16 @@ function keyPressed() {
 Notes
 - What is this `keyPressed()` function? Where is it called?
 - Can you guess what `key` is?
+
+##### Something unexpected
+
+Why doesn't this produce the expected result?
+
+````
+let numbers = [6, 42, 7];
+
+function setup() {
+  print((numbers));
+  let last_number = numbers.pop();
+}
+````
