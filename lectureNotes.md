@@ -1073,6 +1073,9 @@ Things to notice:
 - Why is the variable `offset` global? (Remember our discussion of variable
 	scope)
 
+###### next week
+
+
 ##### Interactive array example
 
 ```js
