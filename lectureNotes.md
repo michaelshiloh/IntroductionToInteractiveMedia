@@ -1072,7 +1072,6 @@ Things to notice:
 - Why is the variable `offset` global? (Remember our discussion of variable
 	scope)
 
-##### todays-lecture
 ### Tuesday 11 February 2025 3:35 - 6:15
 ##### Today
 - Attendance
@@ -1259,6 +1258,13 @@ Sources
 - Other formats are JSON and XML. We won't spend much time on them, but there
 	are p5.js libraries available for parsing them
 
+##### todays-lecture
+### Thursday 13 February 2025 3:35 - 6:15
+##### Today
+- Attendance
+- Finish example of data visualization
+- Look at homework
+- Discuss reading
 
 ####### Worked example: Getting and working with a CSV file
 
@@ -1335,8 +1341,8 @@ function findMinMaxLatLong() {
     // We know that the last two fields are the
     // latitude and longitude and so they are
     // numerical:
-    let longitude = float(singleRow[25]);
-    let latitude = float(singleRow[26]);
+    let longitude = float(singleRow[26]);
+    let latitude = float(singleRow[27]);
 
     // The file may be missing a field, in which case
     // the converstion to a float might have failed
