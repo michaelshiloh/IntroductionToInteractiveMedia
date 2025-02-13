@@ -1388,8 +1388,8 @@ function draw() {
   // We know that the last two fields are the
   // latitude and longitude and so they are
   // numerical:
-  let longitude = float(singleRow[25]);
-  let latitude = float(singleRow[26]);
+  let longitude = float(singleRow[26]);
+  let latitude = float(singleRow[27]);
 
   // use only when debugging
   // print("Latitude " +
