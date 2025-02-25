@@ -1258,7 +1258,6 @@ Sources
 - Other formats are JSON and XML. We won't spend much time on them, but there
 	are p5.js libraries available for parsing them
 
-##### todays-lecture
 ### Thursday 13 February 2025 3:35 - 6:15
 ##### Today
 - Attendance
@@ -1592,6 +1591,7 @@ What's the difference between these two `if` statements:
 
 Tool Training
 
+##### todays-lecture
 ### Tuesday 25 February 2025 3:35 - 6:15 Week 6
 ##### Today
 - Introduce Midterm Project
