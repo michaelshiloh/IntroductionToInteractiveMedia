@@ -2061,7 +2061,7 @@ Other video tricks
 
 ##### In class exercises
 - If you wanted to display white (instead of the color of the difference)
-	wherever motion above a certain threshold is detected, how would you do this?
+	wherhttps://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6aever motion above a certain threshold is detected, how would you do this?
 - Can you trigger sounds according to where there is
 	motion? You may start with Aaron's complex example and simplify
 	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
