@@ -32,7 +32,7 @@ Class location: C3-029 (IM Lab)
 
 This document: Lecture notes
 
-### Tuesday 21 January 2025 3:35 - 6:15
+### Tuesday 21 January 2025 3:35 - 6:15 Week 1
 #### Today
 - Administration
 - Introduction (to the course, to each other, etc.)
@@ -311,7 +311,7 @@ function draw() {
 - `width`, `height`
 - many others; we will discover more as we go along
 
-### Tuesday 28 January 2025 3:35 - 6:15
+### Tuesday 28 January 2025 3:35 - 6:15 Week 2
 ##### Today
 - Attendance
 - Administration
@@ -666,7 +666,7 @@ only the `setup()` function and no `draw()`
 1. Move the squares to follow the mouse
 
 
-### Tuesday 4 February 2025 3:35 - 6:15
+### Tuesday 4 February 2025 3:35 - 6:15 Week 3
 ##### Today
 - Attendance
 - We will look at homework on Thursday
@@ -1072,7 +1072,7 @@ Things to notice:
 - Why is the variable `offset` global? (Remember our discussion of variable
 	scope)
 
-### Tuesday 11 February 2025 3:35 - 6:15
+### Tuesday 11 February 2025 3:35 - 6:15 Week 4
 ##### Today
 - Attendance
 - Questions from last week: arrays, classes, functions, `random()`, `noise()`
@@ -1587,3 +1587,520 @@ What's the difference between these two `if` statements:
 ```js
  if (key === "d") {
 ```
+
+### Tuesday 18 February 2025 3:35 - 6:15 Week 5
+
+Tool Training
+
+### Tuesday 25 February 2025 3:35 - 6:15 Week 6
+##### Today
+- Introduce Midterm Project
+- Working with images
+- Sounds (download files for use in class)
+- Computer Vision (time permitting)
+
+
+#### Working with images!
+
+The `p5.Image` class
+- Just another class, i.e. it has
+	- Data (the pixels, width, height, etc.)
+	- Functionality `(image()`, `get()`, etc.)
+
+````
+let catImg;
+function preload() {
+  photo = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(photo, 0, 0); // this actually displays the image
+}
+````
+
+- `image(photo, positionX, positionY, width, height)` - display 
+this image at this location and scale to this size
+- `photo.resize(w,h)` - scale to this size. If one of the arguments is zero,
+	then scale to the remaining argument and retain the original aspect ratio.
+- `photo.get(x,y,w,h)` - Returns a new p5.Image containing a portion of the image
+- `photo.get(x,y)` - Returns the color of the pixel at this location
+
+````
+let catImg;
+function preload() {
+  catImg = loadImage("https://placekitten.com/400/400");
+}
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  image(catImg, 0, 0);
+
+  let newImg = catImg.get( 50,60, 100,50);
+  image (newImg, 250, 200);
+}
+````
+
+For more information and ideas
+- Reference page for p5.Image for other methods
+- Examples -> image
+
+#### The `pixels` array: Treating the canvas as an image
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called `pixels`. 
+Before using this array you must load everything from the canvas 
+into the `pixels` array using the `loadPixels()` function, 
+and after making any changes you must call `updatePixels()` 
+to write from the `pixels` array back to the canvas
+if you want to make the changes visible
+
+````
+function setup() {
+  let pink = color(255, 102, 204);
+  loadPixels();
+  let d = pixelDensity();
+  let halfImage = 4 * (width * d) * ((height / 2) * d);
+  for (let i = 0; i < halfImage; i += 4) {
+    pixels[i] = red(pink);
+    pixels[i + 1] = green(pink);
+    pixels[i + 2] = blue(pink);
+    pixels[i + 3] = alpha(pink);
+  }
+  updatePixels();
+}
+````
+
+- The pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths
+- Each pixel occupies 4 positions in the array
+- Thus the equation for accessing a given pixel is
+   (x + y * width) * 4
+- Remember to set `pixelDensity(1);` in case you have a high 
+resolution display
+
+
+````
+function setup() {
+  pixelDensity(1);
+
+	// blue background 
+	// makes it easier to see the pink
+  background(0, 102, 204);
+
+  loadPixels();
+
+	// Here is the equation 
+	// for the start (red value) 
+	// of a pixel 
+	// at a particular coordinate (x,y)
+  // (x + y*width) * 4
+
+  // Change most of the fiftieth row to pink
+  // instead of the whole line, 
+	// only do from x = 10 to x = 90
+  for (let i = (10 + 50 * width) * 4;
+       i < (90 + 50 * width) * 4;
+       i += 4) {
+
+		// pink
+    pixels[i + 0] = 255;
+    pixels[i + 1] = 102;
+    pixels[i + 2] = 204;
+    pixels[i + 3] = 100;
+  }
+
+	// this puts the array back on the screen
+  updatePixels();
+}
+````
+
+It's important to remember that a pixel is just four numbers
+so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+function setup() {
+  pixelDensity(1);
+  background(0, 102, 204);
+}
+
+let redValue = 0; 
+
+function draw() {
+
+  loadPixels();
+  
+  for (let i = 0; i < width * height * 4 ; i+=4) {
+    pixels[i] = redValue;
+  } 
+  updatePixels();
+
+  redValue = (redValue + 1 ) %255
+  print(redValue);
+  
+  updatePixels();
+
+}
+````
+
+
+Just for fun, here is the last example from one of the Coding Train videos 
+in which Dan created a random (only in the green channel) background:
+
+````
+function setup() {
+  createCanvas(256,256);
+  pixelDensity(1);
+}
+
+function draw() {
+  loadPixels();
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      let index = (x + y * width) * 4;
+
+      pixels[index + 0] = x;
+      // red value changes horizontally
+
+      pixels[index + 1] = random(255);
+      // green value random
+
+      pixels[index + 2] = y;
+      // blue value changes vertically
+
+      pixels[index + 3] = 255;
+      // no transparency
+    }
+  }
+  updatePixels();
+}
+````
+
+Look at the reference page for the pixels array
+
+A fun examples from Professor Sherwood:
+
+![](media/circularImages.png)
+
+````
+let tiles = [];
+let tileSize = 100;
+
+function preload() {
+  img = loadImage("aiweiwei.jpeg");
+}
+
+function setup() {
+  createCanvas(400, 400);
+  let numTiles = img.height / tileSize;
+  while (numTiles > 0) {
+    tiles.push(
+      img.get(
+        int(random(img.width - tileSize)),
+        int(random(img.height - tileSize)),
+        tileSize,
+        tileSize
+      )
+    );
+    numTiles--;
+  }
+  imageMode(CENTER);
+}
+
+function draw() {
+  push();
+  translate(width / 2, height / 2);
+
+  let numSegments = 10;
+  let eachAngle = TWO_PI / numSegments;
+  let whichImage = int(random(tiles.length));
+
+  for (let i = 0; i < numSegments; i++) {
+    let x = cos(eachAngle * i) * tileSize + 1;
+    let y = sin(eachAngle * i) * tileSize + 1;
+    push();
+    translate(x, y);
+    rotate(eachAngle * i);
+    image(tiles[whichImage], 0, 0);
+    pop();
+  }
+
+  pop();
+  noLoop();
+}
+
+function keyPressed() {
+  loop();
+}
+````
+
+Can we use a sequence of images for animation?
+
+![](media/walking.png)
+
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/walking.png
+
+How would we use them?
+
+````
+let spritesheet;
+let sprites = [];
+let direction = 1; // 0 up
+let step = 0;
+let x;
+let y;
+let speed = 3;
+
+function preload() {
+  spritesheet = loadImage("walking.png");
+}
+
+function setup() {
+  // fullscreen(true);
+  createCanvas(500, 450);
+
+  // 12 images across, 4 down, in the spritesheet
+
+  let w = int(spritesheet.width / 12);
+  let h = int(spritesheet.height / 4);
+
+  for (let y = 0; y < 4; y++) {
+    sprites[y] = [];
+    for (let x = 0; x < 12; x++) {
+      sprites[y][x] =
+        spritesheet.get(x * w, y * h, w, h);
+    } // iterate over rows
+  } // iterate over columns
+
+  x = width / 2;
+  y = height / 2;
+
+  imageMode(CENTER);
+
+	// Display first sprite
+  image(sprites[direction][step], x, y);
+}
+
+// nothing to do here because all the action
+// happens in the keyPressed() callback
+function draw() {}
+
+function keyPressed() {
+  // look at sprite sheet to determine 
+  // which direction is which row
+
+  if (keyCode === DOWN_ARROW) {
+    direction = 0;
+    y += speed;
+  }
+
+  if (keyCode === LEFT_ARROW) {
+    direction = 1;
+    x -= speed;
+  }
+
+  if (keyCode === RIGHT_ARROW) {
+    direction = 2;
+    x += speed;
+  }
+
+  if (keyCode === UP_ARROW) {
+    direction = 3;
+    y -= speed;
+  }
+
+	// Every so often 
+	// advance to the next sprite
+  if (frameCount % speed == 0) {
+    step = (step + 1) % 12;
+  }
+
+	// Finally draw paint the sprite
+  background(255);
+  image(sprites[direction][step], x, y);
+}
+
+````
+
+You can probably find many sprite sheets by googling "sprite sheet" +
+whatever you want.
+
+
+##### Sound!
+
+Download this to your laptop: 
+https://github.com/michaelshiloh/IntroductionToInteractiveMedia/blob/master/media/doorbell.png
+
+File -> Examples -> Sound
+
+Preload Soundfile
+
+Very basic example:
+
+````
+/*
+Must upload doorbell.mp3
+Must include sound library in index.html
+*/
+
+function preload() {
+  song = loadSound('doorbell.mp3');
+}
+
+function setup() {
+  background(234);
+  song.play();
+}
+
+function draw() {
+  if (song.isPlaying()) {
+    print("song is playing")
+  } else {
+    print("song is not playing")
+    noLoop
+  }
+}
+
+function mouseClicked() {
+  if (song.isPlaying()) {
+    song.stop();
+  } else {
+    song.play();
+  }
+}
+````
+
+As always, it's useful to explore the examples and the reference page
+
+- Sound examples
+	- File -> Examples -> Sound
+		- Record Save
+		- Live Input
+
+**Remember**
+Sound requires a separate library which must be included
+
+###### Sound Synthesis
+
+The other way to make sounds is to create them mathematically
+
+- Sound examples
+	- File -> Examples -> Sound
+		- Oscillator Waveform
+		- Filters
+
+We can create our own complex sounds starting with basic oscillators and then
+changing the envelopes. [Example](https://github.com/aaronsherwood/introduction_interactive_media/blob/master/processingExamples/sound/synthesis/synthesis.pde)
+
+
+##### Working with a camera: Computer Vision!
+
+Basic sketch showing how to get input from camera:
+
+```
+let capture;
+
+function setup() {
+  createCanvas(200, 200);
+  capture = createCapture(VIDEO);
+  capture.hide();
+}
+
+function draw() {
+  image(capture, // what image to display
+        0, 0,    // where to place the image on the canvas
+        width,   // width to display
+
+        // the height is more complicated:
+        // we want the capture height to be
+        // the width multiplied by the aspect ratio
+        width * capture.height / capture.width);
+}
+```
+
+###### Reference page for
+[createCapture](https://p5js.org/reference/#/p5/createCapture)
+
+###### Frame Differencing
+
+- [Simple frame differencing](https://editor.p5js.org/michaelshiloh/sketches/ZqXC5-6M0), similar to the method in Golan Levin's article
+- A more complex
+	[example](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT) by Prof.
+	Aaron that uses frame differencing to detect which vertical slice of the
+	camera image has the most motion, and trigger a corresponding sound clip
+
+###### Color tracking
+
+- [Color tracking](https://editor.p5js.org/michaelshiloh/sketches/Zk2B091iZ)
+
+Other video tricks
+
+- Video [Mirror](https://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6a) (flipping the x)
+
+##### In class exercises
+- If you wanted to display white (instead of the color of the difference)
+	wherhttps://editor.p5js.org/aaronsherwood/sketches/cK59ueQ6aever motion above a certain threshold is detected, how would you do this?
+- Can you trigger sounds according to where there is
+	motion? You may start with Aaron's complex example and simplify
+	[here](https://editor.p5js.org/aaronsherwood/sketches/uxNAkReWT)
+
+#### Midterm hints
+
+- Mang added some useful game techniques [here](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/lectureNotes.md#game-techniques)
+- In the reading [introduction to computer
+	vision](http://www.yorku.ca/caitlin/futurecinemas/resources/coursepack/readings/computervision),
+	the code examples use a language called *Processing* which is 
+	very similar to *p5.js*. My example for frame differencing is based on this
+	article.
+- [P5.js version](https://editor.p5js.org/mimi/sketches/E9f0eRBgH) 
+	of the color tracking example from Dan Shiffman's book 
+	[Learning Processing](http://www.learningprocessing.com)
+
+#### Interactivity
+
+Great chapter on [Interactivity](https://p5js.org/learn/interactivity.html)
+especially note the sections on Mouse Buttons, Keyboard Data, Coded Keys, and
+Events. Especially note:
+
+The `mousePressed()` function works differently than the `mouseIsPressed`
+variable. The value of the `mouseIsPressed` variable is true **until** the
+mouse button is released. It can therefore be used within `draw()` to have a
+line of code run while the mouse is pressed. In contrast, the code inside the
+`mousePressed()` function only runs **once** when a button is pressed. This
+makes it useful when a mouse click is used to trigger an action, such as
+incrementing a value
+
+
+#### Debugging
+
+##### General guidelines
+- Don't just randomly change stuff! At best, you might fix the problem but you
+	won't learn anything. At worst, you'll make the problem much worse
+- Bugs are opportunities to learn! Remember what I did with the array removal
+	bug
+- Beginners often forget the most useful, built-in debugging aid: `print()`!
+- Think carefully about what *is* happening, what *should be* happening, and
+	what information you can print to help you understand *why* there is
+    a difference
+
+##### Before you ask for help:
+	- Use the steps above to try to narrow down the bug as much as possible.
+		Show that you have tried to solve the problem yourself and are not
+		just being lazy.
+	- Create a small test program which reproduces your bug in the least
+		amount of code. 
+        In my experience I usually find the bug during this step.
+	- Explain clearly what you think should be happening, and what you observe
+		happening instead
+
+##### Some debugging resources:
+- [p5js Field Guide to Debugging](https://p5js.org/learn/debugging.html)
+- [p5js Debugging (Happy
+	Coding)](https://happycoding.io/tutorials/p5js/debugging)
+- [A Brief Introduction to Debugging](https://vimeo.com/channels/debugging)
+
