@@ -2061,10 +2061,40 @@ Other video tricks
 	of the color tracking example from Dan Shiffman's book 
 	[Learning Processing](http://www.learningprocessing.com)
 
-#### Interactivity
+##### todays-lecture
+### Tuesday 25 February 2025 3:35 - 6:15 Week 6
+##### Today
+- Share midterm projects
+- Homework feedback
+- Interactivity
+- Debugging
+- Arduino!
+
+
+##### Homework feedback
+- Creative concept
+- Make it easy for me to give you a good grade
+    - Code comments
+    - Usage instructions 
+- Technical
+    - Avoid duplicating information
+- "Creating a __ and __ experience"
+- Don't put all your code in the blog post - only little sections that you
+  discuss in your post
+    - If you put a little section of your code in your blog post, explain it
+      well
+- If you use any features (libraries, techniques, etc.) that we have not
+  discussed in class explain them and provide a link to where you learned
+  about it (as appropriate)
+- Your writing must be good: Use complete sentences, correct grammar, correct
+  spelling, etc.
+
+
+
+##### Interactivity
 
 Great chapter on [Interactivity](https://p5js.org/learn/interactivity.html)
-especially note the sections on Mouse Buttons, Keyboard Data, Coded Keys, and
+Especially note the sections on Mouse Buttons, Keyboard Data, Coded Keys, and
 Events. Especially note:
 
 The `mousePressed()` function works differently than the `mouseIsPressed`
@@ -2076,9 +2106,9 @@ makes it useful when a mouse click is used to trigger an action, such as
 incrementing a value
 
 
-#### Debugging
+##### Debugging
 
-##### General guidelines
+###### General guidelines
 - Don't just randomly change stuff! At best, you might fix the problem but you
 	won't learn anything. At worst, you'll make the problem much worse
 - Bugs are opportunities to learn! Remember what I did with the array removal
@@ -2088,7 +2118,7 @@ incrementing a value
 	what information you can print to help you understand *why* there is
     a difference
 
-##### Before you ask for help:
+###### Before you ask for help:
 	- Use the steps above to try to narrow down the bug as much as possible.
 		Show that you have tried to solve the problem yourself and are not
 		just being lazy.
@@ -2098,9 +2128,16 @@ incrementing a value
 	- Explain clearly what you think should be happening, and what you observe
 		happening instead
 
-##### Some debugging resources:
+###### Some debugging resources:
 - [p5js Field Guide to Debugging](https://p5js.org/learn/debugging.html)
 - [p5js Debugging (Happy
 	Coding)](https://happycoding.io/tutorials/p5js/debugging)
 - [A Brief Introduction to Debugging](https://vimeo.com/channels/debugging)
+
+###### Arduino!
+- `blink()`
+- Solderless breadboard
+- Inputs and outputs, sensors and actuators
+- Analog vs. digital
+- Communication
 
