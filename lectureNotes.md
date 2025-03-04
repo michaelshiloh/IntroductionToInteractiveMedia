@@ -2072,13 +2072,12 @@ Other video tricks
 
 
 ##### Homework feedback
-- Creative concept
 - Make it easy for me to give you a good grade
     - Code comments
     - Usage instructions 
 - Technical
     - Avoid duplicating information
-- "Creating a __ and __ experience"
+- Creative concept
 - Don't put all your code in the blog post - only little sections that you
   discuss in your post
     - If you put a little section of your code in your blog post, explain it
@@ -2088,6 +2087,10 @@ Other video tricks
   about it (as appropriate)
 - Your writing must be good: Use complete sentences, correct grammar, correct
   spelling, etc.
+- "Creating a __ and __ experience"
+- In your reading responses, do not summarize the reading. Rather, talk about
+  what it means to you: Did you learn anything new? Does it change the way you
+  look at the world? Did it give you ideas that you can use in your projects?
 
 
 
