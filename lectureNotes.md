@@ -1591,7 +1591,6 @@ What's the difference between these two `if` statements:
 
 Tool Training
 
-##### todays-lecture
 ### Tuesday 25 February 2025 3:35 - 6:15 Week 6
 ##### Today
 - Introduce Midterm Project
@@ -2061,8 +2060,7 @@ Other video tricks
 	of the color tracking example from Dan Shiffman's book 
 	[Learning Processing](http://www.learningprocessing.com)
 
-##### todays-lecture
-### Tuesday 25 February 2025 3:35 - 6:15 Week 6
+### Tuesday 4 March 2025 3:35 - 6:15 Week 6
 ##### Today
 - Share midterm projects
 - Homework feedback
@@ -2142,5 +2140,24 @@ incrementing a value
 - Solderless breadboard
 - Inputs and outputs, sensors and actuators
 - Analog vs. digital
-- Communication
+
+##### todays-lecture
+### Thursday 6 March 2025 3:35 - 6:15 Week 6
+##### Today
+- TouchDesigner workshop
+- Share midterm projects
+
+##### TouchDesigner workshop
+
+We are excited to be announcing a TouchDesigner for Beginners workshop that
+will be led by artist and engineer Weeratouch (Wave) Pongruengkiat. This
+hands-on session will introduce basic node programming, data visualization,
+and generative animation techniques.
+
+Monday, March 10 | 7:30 - 9:00 PM
+C3-153 (Arts Center upper floor, near IM Lounge)
+
+Weeratouch (Wave) is an artist and engineer from FREAK Lab, TomorrowLab
+Thailand. His work explores animism as a lens to connect with non-human
+entities, including nature and artificial intelligence.
 
