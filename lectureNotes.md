@@ -2168,10 +2168,7 @@ entities, including nature and artificial intelligence.
     - IDE
     - `blink`
     - `digitalWrite()`
-    - What role does Arduino play?
-    - Switches and other sensors
-    - LEDs and other actuators
-    - Inputs and outputs
+    - `analogRead()`
 - Introduction to electricity
     - Electricity
     - Circuits
@@ -2181,20 +2178,89 @@ entities, including nature and artificial intelligence.
 
 Make sure everything is working
 
-- Upload the Blink example
-- Change the parameter in delay()
+- Change the parameter in `delay()`
 - Upload again and verify that the LED blinks at the new rate
 
-#### Basic Arduino and Digital Output
+###### Basic Arduino and Digital Output
 
-Upload File -> Examples -> Basic -> Blink example
+Upload the Blink example (`File -> Examples -> Basics -> Blink`)
 
 Let's extend this circuit to the breadboard:
 
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
 
-#### Electricity 
+###### Analog Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+Upload the AnalogRead example (`File -> Examples -> Basics -> AnalogRead`)
+
+- Analog Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+- Remember that the so-called analog input pins can do digital input and
+	output as well
+- Since you have so few analog input pins, when you decide which pins to use
+	for which device, reserve the analog input pins for analog input devices
+	as much as possible
+
+###### Functions that you know from p5.js which are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in p5.js to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.print()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+Example using an analog input to control the brightness of an LED
+
+````
+const int LED_PIN = 3;           // the PWM pin the LED is attached to
+const int POT_PIN = A2;
+int brightness = 0;    // how bright the LED is
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 9 to be an output:
+  pinMode(LED_PIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  int pot_value = analogRead(POT_PIN); // 0-1023
+  brightness = map(pot_value, 0, 1023, 255, 0);
+  Serial.println(brightness);
+  analogWrite(LED_PIN, brightness); // 0-255
+}
+````
+
+
+##### Discussion
+
+- What role does Arduino play?
+- Switches and other sensors
+- LEDs and other actuators
+- Inputs and outputs
+
+##### Electricity 
 
 **Simple circuit using Arduino, LED, and Resistor**
 
@@ -2238,7 +2304,7 @@ to some other form of energy (e.g. light, sound, heat, movement)
 - Optionally, switches or other sensors to control the flow of energy
 	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
 
-#### Switches
+###### Switches
 
 - What if we want to turn it the LED on and off?
  	- Pull out a wire
@@ -2261,7 +2327,7 @@ Let's use a real switch
 
 
 
-#### Review
+##### Review
 - Code
 - Circuit
 - Input and Output (I/O) pins
@@ -2289,7 +2355,7 @@ Let's use a real switch
 **Schematics are an important way to show a circuit. You will be required to
 understand and use them**
 
-#### Analog Output
+##### Analog Output
 
 - Analog output uses the `analogWrite()` function
 - The `analogWrite()` function only works on the six PWM pins (3, 5, 6, 9, 10,
@@ -2305,73 +2371,14 @@ understand and use them**
 - Not true analog voltage. PWM = Pulse Width Modulation
 - Works for LEDs and motors
 
-#### Analog Input
 
-Build this circuit. Try to follow the schematic and not the breadboard view:
-
-![](media/ArduinoPhotoresistor_schem.png)
-![](media/ArduinoPhotoresistor_bb.png)
-
-- Analog Inputs, `analogRead()`, and (some) sensors go together
-	- This only works on the six analog input pins (A0-A5)
-	- Digital sensors, like a switch, have only one of two values 
-	and so are more suited to a digital input
-- Remember that the so-called analog input pins can do digital input and
-	output as well
-- Since you have so few analog input pins, when you decide which pins to use
-	for which device, reserve the analog input pins for analog input devices
-	as much as possible
-
-#### Functions that you know from p5.js which are useful here:
-- `map()`
-- `constrain()`
-- `if()`
-
-Remember how we used `print()` in p5.js to help us find problems in our 
-program? You can do that in Arduino to but the function has a slightly
-different name: `Serial.println()`
-- Must be initialized `Serial.begin()`
-- Can not concatenate strings with the `+` function
-	- Instead, you need multiple calls to `Serial.print()` e.g.:
-
-````
-Serial.print("First value = ");
-Serial.print(firstValue);
-Serial.print(" Second value = ");
-Serial.print(secondValue);
-Serial.println();
-````
-
-Example using an analog input to control the brightness of an LED
-
-````
-const int LED_PIN = 3;           // the PWM pin the LED is attached to
-const int POT_PIN = A2;
-int brightness = 0;    // how bright the LED is
-
-// the setup routine runs once when you press reset:
-void setup() {
-  // declare pin 9 to be an output:
-  pinMode(LED_PIN, OUTPUT);
-  Serial.begin(9600);
-}
-
-// the loop routine runs over and over again forever:
-void loop() {
-  int pot_value = analogRead(POT_PIN); // 0-1023
-  brightness = map(pot_value, 0, 1023, 255, 0);
-  Serial.println(brightness);
-  analogWrite(LED_PIN, brightness); // 0-255
-}
-````
-
-#### Today
+##### Today
 - Review
 - Digital Input
 - Sound
 - Servo motor
 
-#### Digital Input
+##### Digital Input
 
 Adding a switch
 
@@ -2436,7 +2443,7 @@ void allOff() {
 }
 ````
 
-#### Sound
+##### Sound
 
 **`tone()`**
 
@@ -2462,7 +2469,7 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 	- Piezo buzzer neither burns out nor needs a voltage divider
 	- So why a resistor?
 
-#### Servo motor
+##### Servo motor
 
 - [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
 - [Reference
@@ -2473,7 +2480,7 @@ page](https://www.arduino.cc/en/Reference/Servo)
 - Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
 - The `Servo.write()` function is *non-blocking*
 
-#### More about PWM
+##### More about PWM
 - How do you suppose `analogWrite()` makes an LED dimmer?
 - [PWM](https://www.ekwb.com/blog/what-is-pwm-and-how-does-it-work/)
 - What do `analogWrite()`, `tone()` and `Servo` have in common?
@@ -2497,17 +2504,17 @@ page](https://www.arduino.cc/en/Reference/Servo)
 1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
 	 pins and need to use them there are ways around this.
 
-#### Today
+##### Today
 - Discussion
 - Potentiometer
 - Examples
 - Electronics
 
-#### Examples
+##### Examples
 
-#### More electronics
+##### More electronics
 
-#### Ohm's law
+###### Ohm's law
 - I=V/R
 - The math only works for linear components 
 	- But the principle is the same for non-linear components 
@@ -2532,7 +2539,7 @@ Add another switch on a different pin
 ![](media/ArduinoTwoSwitches_schem.png)
 ![](media/ArduinoTwoSwitches_bb.png)
 
-#### In-class exercise
+##### In-class exercise
 
 Now write a program that will blink different patterns depending on which
 switch is pressed. 
@@ -2553,11 +2560,11 @@ What other sensors do we have in the kit?
 
 Which ones are resistive?
 
-#### Potentiometer
+##### Potentiometer
 
 [Here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-1b-potentiometer)
 
-#### Misc
+##### Misc
 - Hand drawn schematics in your homework are fine!
 Here is an example:
 
@@ -2569,25 +2576,25 @@ Here is an example:
 	and then don't have time to get help, that is unexcusable.
 - Use constants for pin numbers
 
-#### Today
+##### Today
 - Share your projects
 - Blink without delay
 - Ask me anything
 - In-class exercises
 - Theory
 
-#### Share your projects
+##### Share your projects
 
-#### Blink without delay
+##### Blink without delay
     - What is the problem
     - Built in example
     - How would you modify the toneMelody program?
     - Adafruit [tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all) 
 
-#### Ask me anything
+##### Ask me anything
     - For example, did anything come up while doing homework?
 
-#### In-class exercise
+##### In-class exercise
 
 1. Use one of the analog sensors to select which of two LEDs lights up
 1. Use one of the analog sensor to control how fast two LEDs alternate
@@ -2600,7 +2607,7 @@ Here is an example:
 	map the range of values from the LDR to the full range of the LED brightness
 
 
-#### Data Types
+##### Data Types
 
 Unlike in p5.js, you must declare what type of data you want to store in a
 variable:
@@ -2610,7 +2617,7 @@ variable:
 - `char` - a character
 - `boolean` - only either `true` or `false`
 
-#### Conventions: Schematics and Wire Colours
+##### Conventions: Schematics and Wire Colours
 
 - When drawing schematics
 
@@ -2638,7 +2645,7 @@ variable:
 		- Red bus for 5V only
 		- Black or Blue bus for GND only
 
-#### Getting rid of delay
+##### Getting rid of delay
 - Blink without `delay()`(Files -> Examples -> Digital -> BlinkWithoutDelay
 - Excellent [tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all) 
 showing classes for blinking an LED and sweeping a servo motor without using
@@ -2653,7 +2660,7 @@ without using `delay()`
 	class
 
 
-#### In-class exercises
+##### In-class exercises
 
 
 1. Build a circuit with a switch (pushbutton) and a servo motor, and when you
@@ -2673,7 +2680,7 @@ without using `delay()`
 5. Add a potentiometer which controls how fast the servo motor moves from one
 	 position to the next
 
-#### Examples
+##### Examples
 
 Some examples using the piezo speaker, servo motor, and a potentiometer:
 
