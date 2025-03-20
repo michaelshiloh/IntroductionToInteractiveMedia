@@ -2161,7 +2161,6 @@ Thailand. His work explores animism as a lens to connect with non-human
 entities, including nature and artificial intelligence.
 
 
-##### todays-lecture
 ### Tuesday 18 March 2025 3:35 - 6:15 Week 7
 #### Today
 - Introduction to Arduino
@@ -2189,6 +2188,23 @@ Let's extend this circuit to the breadboard:
 
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
+
+##### todays-lecture
+### Thursday 20 March 2025 5:00 - 6:15 Week 7
+#### Today
+- Review
+- Analog Input
+- Analog Output
+- Homework
+
+###### Review
+- Outputs, actuators, and `digitalWrite()`
+- Inputs, sensors, and `digitalRead()`
+- Circuits
+- Schematics
+- Solderless breadboard
+- Debugging
+
 
 ###### Analog Input
 
