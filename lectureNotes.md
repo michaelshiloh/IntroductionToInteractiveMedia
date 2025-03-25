@@ -2337,6 +2337,11 @@ void loop() {
 }
 ````
 
+##### Potentiometer
+
+[Here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-1b-potentiometer)
+
+**What sketch should you use?**
 
 ##### Discussion
 
@@ -2461,7 +2466,6 @@ page](https://www.arduino.cc/en/Reference/Servo)
 
 ##### Today
 - Discussion
-- Potentiometer
 - Examples
 - Electronics
 
@@ -2501,9 +2505,6 @@ What other sensors do we have in the kit?
 
 Which ones are resistive?
 
-##### Potentiometer
-
-[Here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-1b-potentiometer)
 
 ##### Misc
 - Hand drawn schematics in your homework are fine!
