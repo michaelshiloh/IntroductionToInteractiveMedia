@@ -207,7 +207,7 @@ Controlling fill, stroke, and color
 - `fill()`
 - `background(240)`
 
-### Thursday 23 January 2025 5:00 - 6:15
+### Thursday 23 January 2025 5:00 - 6:15 Week 1
 #### Today
 - Attendance
 - Apply for student assistant  https://app.joinhandshake.com/emp/jobs/9559510
@@ -491,7 +491,7 @@ In class exercise:
 - Clear the screen if the mouse is pressed inside a certain circle
 - Combine these to create a primitive painting program
 
-### Thursday 30 January 2025 5:00 - 6:15
+### Thursday 30 January 2025 5:00 - 6:15 Week 2
 ##### Today
 - Attendance
 - Loops
@@ -1258,7 +1258,7 @@ Sources
 - Other formats are JSON and XML. We won't spend much time on them, but there
 	are p5.js libraries available for parsing them
 
-### Thursday 13 February 2025 3:35 - 6:15
+### Thursday 13 February 2025 3:35 - 6:15 Week 3
 ##### Today
 - Attendance
 - Finish example of data visualization
@@ -2060,7 +2060,7 @@ Other video tricks
 	of the color tracking example from Dan Shiffman's book 
 	[Learning Processing](http://www.learningprocessing.com)
 
-### Tuesday 4 March 2025 3:35 - 6:15 Week 6
+### Tuesday 4 March 2025 3:35 - 6:15 Week 7
 ##### Today
 - Share midterm projects
 - Homework feedback
@@ -2141,7 +2141,7 @@ incrementing a value
 - Inputs and outputs, sensors and actuators
 - Analog vs. digital
 
-### Thursday 6 March 2025 3:35 - 6:15 Week 6
+### Thursday 6 March 2025 3:35 - 6:15 Week 7
 ##### Today
 - TouchDesigner workshop
 - Share midterm projects
@@ -2161,17 +2161,13 @@ Thailand. His work explores animism as a lens to connect with non-human
 entities, including nature and artificial intelligence.
 
 
-### Tuesday 18 March 2025 3:35 - 6:15 Week 7
+### Tuesday 18 March 2025 3:35 - 6:15 Week 8
 #### Today
 - Introduction to Arduino
     - IDE
     - `blink`
     - `digitalWrite()`
-    - `analogRead()`
-- Introduction to electricity
-    - Electricity
-    - Circuits
-    - Series and Parallel
+    - `digitalRead()`
 
 ##### Introduction to Arduino
 
@@ -2189,8 +2185,72 @@ Let's extend this circuit to the breadboard:
 ![](media/ArduinoControllingLED_schem.png)
 ![](media/ArduinoControllingLED_bb.png)
 
-##### todays-lecture
-### Thursday 20 March 2025 5:00 - 6:15 Week 7
+##### Digital Input
+
+Adding a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+An example:
+
+````
+
+const int pushButton = A2;
+const int redLEDPin = A0;
+const int greenLEDPin = 8;
+
+void setup() {
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(greenLEDPin, OUTPUT);
+}
+
+void loop() {
+
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == HIGH) {
+    digitalWrite(redLEDPin, HIGH);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(500);
+    digitalWrite(greenLEDPin, LOW);
+    delay(300);
+    digitalWrite(redLEDPin, LOW);
+    digitalWrite(greenLEDPin, HIGH);
+    delay(700);
+  }
+  allOff();
+  delay(1000);
+}
+
+void allOff() {
+  digitalWrite(redLEDPin, LOW);
+  digitalWrite(greenLEDPin, LOW);
+}
+````
+
+### Thursday 20 March 2025 5:00 - 6:15 Week 8
 #### Today
 - Review
 - Analog Input
@@ -2205,6 +2265,14 @@ Let's extend this circuit to the breadboard:
 - Solderless breadboard
 - Debugging
 
+
+##### todays-lecture
+### Tuesday 25 March 2025 3:35 - 6:15 Week 9
+##### Today
+- Announcements
+- Review
+- Analog Input and Output
+- Mixing it all up (A/D, I/O)
 
 ###### Analog Input
 
@@ -2276,70 +2344,6 @@ void loop() {
 - LEDs and other actuators
 - Inputs and outputs
 
-##### Electricity 
-
-**Simple circuit using Arduino, LED, and Resistor**
-
-The most confusing part of this lecture will be the solderless breadboard:
-![](media/breadboard.jpg)
-Image courtesy of
-[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
-
-Here is how to build the circuit
-
-![](media/ArduinoPoweringLED_bb.png)
-
-Here is the schematic of what you've built
-
-![](media/ArduinoPoweringLED_schem.png)
-
-
-**Theory**
-
-Electricity is mysterious
-
-- We can predict what it will do quite accurately, but don't really understand
-	it what is it
-- Flow of electrons
-- Electrons want to move from place of higher potential energy to place of lower potential energy
-	- Like a rock or water falling from a height
-	- Unlike a rock or water, electricity can only travel in a conductor
-- AC vs. DC - very briefly, will discuss more as it comes up
-
-What makes a circuit?
-
-- Something to provide that difference in potential 
-that will cause the electrons to want to move. 
-	- Typically a battery, charger, or USB port
-	- The technical term is "power supply"
-	- In our case your laptop via the Arduino
-		- What is the Arduino doing in this case?
-- Conductors to allow the electronics to move
-- Components or other things that usually convert this electrical energy 
-to some other form of energy (e.g. light, sound, heat, movement)
-- Optionally, switches or other sensors to control the flow of energy
-	- In our circuit the resistor is controlling the brightness of the LED so that it doesn't burn out
-
-###### Switches
-
-- What if we want to turn it the LED on and off?
- 	- Pull out a wire
- 	- That's a switch, but a pretty inconvenient one
-	- Schematic symbol of switch
-	- How does it work?
-		- Breaks the flow of electrons by breaking the continuous path
-		- Doesn't electricity (the electrons) just flow out the end of the wire?
-	- The switch can go on either side. How is this possible?
-
-Let's use a real switch
-
-![](media/ArduinoPoweringLEDWithSwitch_schem.png)
-![](media/ArduinoPoweringLEDWithSwitch_bb.png)
-
-- How is this switch different from the earlier switch?
-	- Schematic symbol of momentary switch
-	- What was the previous "switch"?
-	- Schematic symbol of toggle switch
 
 
 
@@ -2389,75 +2393,9 @@ understand and use them**
 
 
 ##### Today
-- Review
-- Digital Input
 - Sound
 - Servo motor
 
-##### Digital Input
-
-Adding a switch
-
-![](media/ArduinoLEDMomentarySwitch_schem.png)
-![](media/ArduinoLEDMomentarySwitch_bb.png)
-
-````
-void setup() {
-  pinMode(8, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(A2, INPUT);
-}
-
-void loop() {
-
-  int switchPosition = digitalRead(A2);
-
-  if (switchPosition == HIGH) {
-    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
-    digitalWrite(13, LOW);
-  } else  {
-    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
-    digitalWrite(13, HIGH);
-  }
-}
-````
-
-An example:
-
-````
-
-const int pushButton = A2;
-const int redLEDPin = A0;
-const int greenLEDPin = 8;
-
-void setup() {
-  pinMode(redLEDPin, OUTPUT);
-  pinMode(greenLEDPin, OUTPUT);
-}
-
-void loop() {
-
-  int buttonState = digitalRead(pushButton);
-
-  if (buttonState == HIGH) {
-    digitalWrite(redLEDPin, HIGH);
-    digitalWrite(greenLEDPin, HIGH);
-    delay(500);
-    digitalWrite(greenLEDPin, LOW);
-    delay(300);
-    digitalWrite(redLEDPin, LOW);
-    digitalWrite(greenLEDPin, HIGH);
-    delay(700);
-  }
-  allOff();
-  delay(1000);
-}
-
-void allOff() {
-  digitalWrite(redLEDPin, LOW);
-  digitalWrite(greenLEDPin, LOW);
-}
-````
 
 ##### Sound
 
@@ -2528,20 +2466,6 @@ page](https://www.arduino.cc/en/Reference/Servo)
 
 ##### Examples
 
-##### More electronics
-
-###### Ohm's law
-- I=V/R
-- The math only works for linear components 
-	- But the principle is the same for non-linear components 
-	- **is a very important concept**:
-		- For a given resistance, 
-			the higher the pressure (voltage), 
-				the higher the current
-		- For a given voltage, the higher the "resistance", 
-			the lower the current
-
-![](media/electricityExplained.jpg)
 
 Other things you can do:
 
@@ -2826,3 +2750,89 @@ void loop() {
   delay(1);        // delay in between reads for stability
 }
 ````
+
+
+
+
+##### Electricity 
+- Introduction to electricity
+    - Electricity
+    - Circuits
+    - Series and Parallel
+
+**Simple circuit using Arduino, LED, and Resistor**
+
+The most confusing part of this lecture will be the solderless breadboard:
+![](media/breadboard.jpg)
+Image courtesy of
+[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+
+Here is how to build the circuit
+
+![](media/ArduinoPoweringLED_bb.png)
+
+Here is the schematic of what you've built
+
+![](media/ArduinoPoweringLED_schem.png)
+
+
+**Theory**
+
+Electricity is mysterious
+
+- We can predict what it will do quite accurately, but don't really understand
+	it what is it
+- Flow of electrons
+- Electrons want to move from place of higher potential energy to place of lower potential energy
+	- Like a rock or water falling from a height
+	- Unlike a rock or water, electricity can only travel in a conductor
+- AC vs. DC - very briefly, will discuss more as it comes up
+
+What makes a circuit?
+
+- Something to provide that difference in potential 
+that will cause the electrons to want to move. 
+	- Typically a battery, charger, or USB port
+	- The technical term is "power supply"
+	- In our case your laptop via the Arduino
+		- What is the Arduino doing in this case?
+- Conductors to allow the electronics to move
+- Components or other things that usually convert this electrical energy 
+to some other form of energy (e.g. light, sound, heat, movement)
+- Optionally, switches or other sensors to control the flow of energy
+    - In our circuit the resistor is controlling the brightness of the LED so
+      that it doesn't burn out
+
+###### Ohm's law
+- I=V/R
+- The math only works for linear components 
+	- But the principle is the same for non-linear components 
+	- **is a very important concept**:
+		- For a given resistance, 
+			the higher the pressure (voltage), 
+				the higher the current
+		- For a given voltage, the higher the "resistance", 
+			the lower the current
+
+![](media/electricityExplained.jpg)
+
+###### Switches
+
+- What if we want to turn it the LED on and off?
+ 	- Pull out a wire
+ 	- That's a switch, but a pretty inconvenient one
+	- Schematic symbol of switch
+	- How does it work?
+		- Breaks the flow of electrons by breaking the continuous path
+		- Doesn't electricity (the electrons) just flow out the end of the wire?
+	- The switch can go on either side. How is this possible?
+
+Let's use a real switch
+
+![](media/ArduinoPoweringLEDWithSwitch_schem.png)
+![](media/ArduinoPoweringLEDWithSwitch_bb.png)
+
+- How is this switch different from the earlier switch?
+	- Schematic symbol of momentary switch
+	- What was the previous "switch"?
+	- Schematic symbol of toggle switch
