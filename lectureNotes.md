@@ -2250,6 +2250,21 @@ void allOff() {
 }
 ````
 
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+##### In-class exercise
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. 
+Using two switches you can select between four patterns.
+How is that possible?
+
+Do you see a similarity between this circuit and 
+something we learned earlier?
+
 ### Thursday 20 March 2025 5:00 - 6:15 Week 8
 #### Today
 - Review
@@ -2266,7 +2281,6 @@ void allOff() {
 - Debugging
 
 
-##### todays-lecture
 ### Tuesday 25 March 2025 3:35 - 6:15 Week 9
 ##### Today
 - Announcements
@@ -2351,8 +2365,6 @@ void loop() {
 - Inputs and outputs
 
 
-
-
 ##### Review
 - Code
 - Circuit
@@ -2398,11 +2410,6 @@ understand and use them**
 - Works for LEDs and motors
 
 
-##### Today
-- Sound
-- Servo motor
-
-
 ##### Sound
 
 **`tone()`**
@@ -2415,11 +2422,21 @@ and
 - [Reference
 page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 
+##### todays-lecture
+### Tuesday 8 April 2025 3:35 - 6:15 Week 10
+##### Today
+- Review
+- Servo motor
+
+##### Review
+- A/D I/O
+- Tone
+    
 **Notes**
 - "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
-	- The word "intefere" is rather vague. 
+	- The word "interfere" is rather vague. 
 	I think they mean that it 
-	prevents `analogWrite()` from working on pins 3 and 11
+	**prevents** `analogWrite()` from working on pins 3 and 11
 - The `tone()` function is *non-blocking*
 - Arduino supports tabs 
 - Arduino has arrays 
@@ -2428,6 +2445,7 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 	- LDR needs a resistor to form a voltage divider
 	- Piezo buzzer neither burns out nor needs a voltage divider
 	- So why a resistor?
+
 
 ##### Servo motor
 
@@ -2438,6 +2456,7 @@ page](https://www.arduino.cc/en/Reference/Servo)
 
 **Notes**
 - Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+    - Compare to note above about the `tone()` function
 - The `Servo.write()` function is *non-blocking*
 
 ##### More about PWM
@@ -2464,46 +2483,6 @@ page](https://www.arduino.cc/en/Reference/Servo)
 1. For these reasons it is best to avoid pins 0, 1, and 13. If you run out of
 	 pins and need to use them there are ways around this.
 
-##### Today
-- Discussion
-- Examples
-- Electronics
-
-##### Examples
-
-
-Other things you can do:
-
-Add another LED on a different pin
-
-![](media/ArduinoTwoLEDs_schem.png)
-![](media/ArduinoTwoLEDs_bb.png)
-
-Add another switch on a different pin
-
-![](media/ArduinoTwoSwitches_schem.png)
-![](media/ArduinoTwoSwitches_bb.png)
-
-##### In-class exercise
-
-Now write a program that will blink different patterns depending on which
-switch is pressed. 
-Using two switches you can select between four patterns.
-How is that possible?
-
-Do you see a similarity between this circuit and 
-something we learned earlier?
-
-Some analog sensors are resistive, some are not. 
-Resistive sensors all use the same
-pattern: a voltage divider.
-Note the similarity to the circuit we used for a switch.
-The switch circuit is also effectively a voltage divider, one that has only
-two values instead of an infinite range of values
-
-What other sensors do we have in the kit?
-
-Which ones are resistive?
 
 
 ##### Misc
@@ -2518,14 +2497,10 @@ Here is an example:
 	and then don't have time to get help, that is unexcusable.
 - Use constants for pin numbers
 
-##### Today
-- Share your projects
 - Blink without delay
 - Ask me anything
 - In-class exercises
 - Theory
-
-##### Share your projects
 
 ##### Blink without delay
     - What is the problem
@@ -2547,6 +2522,14 @@ Here is an example:
 1. Use a momentary switch to enter a mode where the minimum and maximum values
 	from the LDR are stored. When the switch is released, use those values to
 	map the range of values from the LDR to the full range of the LED brightness
+
+**Note**
+Some analog sensors are resistive, some are not. 
+Resistive sensors all use the same
+pattern: a voltage divider.
+Note the similarity to the circuit we used for a switch.
+The switch circuit is also effectively a voltage divider, one that has only
+two values instead of an infinite range of values
 
 
 ##### Data Types
@@ -2686,7 +2669,8 @@ Is the `tone()` function blocking?
 
 ````
 // If tone() is a blocking function, the LED will be off while the tone sounds
-// If the LED comes on as soon as the tone starts, tone() is non-blocking
+// If the LED comes on as soon as the tone starts, 
+// it must mean that the tone() function is non-blocking
 const int spkrPin = 7;
 
 void setup() {
