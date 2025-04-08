@@ -2425,8 +2425,10 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 ##### todays-lecture
 ### Tuesday 8 April 2025 3:35 - 6:15 Week 10
 ##### Today
+- Remember homework due on Thursday
 - Review
 - Servo motor
+- Homework for next week
 
 ##### Review
 - A/D I/O
