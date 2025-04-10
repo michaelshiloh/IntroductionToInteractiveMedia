@@ -2422,7 +2422,6 @@ and
 - [Reference
 page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 
-##### todays-lecture
 ### Tuesday 8 April 2025 3:35 - 6:15 Week 10
 ##### Today
 - Remember homework due on Thursday
@@ -2512,6 +2511,18 @@ Here is an example:
 
 ##### Ask me anything
     - For example, did anything come up while doing homework?
+
+
+##### todays-lecture
+### Tuesday 8 April 2025 3:35 - 6:15 Week 10
+##### Today
+- Discuss reading
+- Practice
+- [More](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/noDelay) without delay
+
+##### Discuss reading
+- Physical Computing’s Greatest hits and misses
+- Making Interactive Art: Set the Stage, Then Shut Up and Listen
 
 ##### In-class exercise
 
