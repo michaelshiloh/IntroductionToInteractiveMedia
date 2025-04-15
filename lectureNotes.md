@@ -2513,8 +2513,7 @@ Here is an example:
     - For example, did anything come up while doing homework?
 
 
-##### todays-lecture
-### Tuesday 8 April 2025 3:35 - 6:15 Week 10
+### Thursday 10 April 2025 5:00 - 6:15 Week 10
 ##### Today
 - Discuss reading
 - Practice
@@ -2617,6 +2616,17 @@ without using `delay()`
 
 5. Add a potentiometer which controls how fast the servo motor moves from one
 	 position to the next
+
+
+##### todays-lecture
+### Tuesday 15 April 2025 3:35 - 6:15 Week 11
+##### Today
+- Remember homework due on Thursday
+- Review
+- Serial Communication
+- Introduce final project
+- Motors
+- Soldering
 
 ##### Examples
 
@@ -2750,6 +2760,339 @@ void loop() {
 }
 ````
 
+
+##### Arduino-p5.js communication
+- Build [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week_11_Serial_schematic.png) circuit
+- Download [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week11Serial.ino) sketch to your Arduino
+- Run [this](https://editor.p5js.org/mangtronix/sketches/s67XC0zT4) p5 code on your laptop
+
+What's going on here?
+
+- Arduino waits for a message from p5.
+- Arduino expects two values separated by a comma. It uses these two values to
+	control two LEDs.
+- Arduino then reads two sensors and sends the values back to p5, separated by
+	a comma.
+- p5 reads these two values from Arduino. One value controls the text color,
+	the other controls the text transparency
+- p5 sends two values back to Arduino indicating if the mouse was clicked, and
+	if so, which half of the screen it was in.
+- Meanwhile, Arduino is waiting for a message from p5
+- Repeat
+
+Things to notice
+- Each side only sends a message when it receives a message from the other.
+	This way, neither side is flooded by too many messages
+- The amount of information in each message is arbitrary. You can reduce it or
+	extend it by changing the code appropriately on both ends. However you
+	always need to send something.
+- Another way of saying this is that the number of sensors on Arduino is
+  arbitrary. You can have more or less (as long as you change the code on both
+  sides to agree). Likewise you can change what you are detecting in p5 and
+  sending to Arduino (keypresses, mouse coordinates, colors, whatever)
+- What the information conveys is also arbitrary. Arduino sends messages to
+  p5, it has no idea what p5 does with this information. Similarly p5 sends
+  information to Arduino and has no understanding of what happens with it.
+  Either side can be arbitrarily complex, or can in fact ignore the
+  information after reading it.
+
+Make it your own
+- Duplicate Mang's project so that you get the other files as well
+- Modify the data that is exchanged. You may need a digital sensor on the
+	Arduino instead of an analog sensor. Similarly, on the p5 side, you may need
+	something different from a mouse click or changing the text color and
+	transparency.
+- Once you are reliable sending information back and forth you can start
+	adding the rest of your program
+
+**Caution**
+There are many different ways to communicate between Arduino and p5, such as
+using different synchronization methods or different libraries. Unless you
+thoroughly understand how they work, they are best avoided, and certainly
+don't mix code based on one library with code using another library.
+
+In-class exercise (break class into groups of 2-3 students)
+- Make something that uses only one sensor on arduino and makes the ellipse in
+	p5 move on the horizontal axis, in the middle of the screen, and nothing on
+	arduino is controlled by p5
+- Make something that controls the LED brightness from p5
+- Use p5 to control a servo motor and make a sound using `tone()` on Arduino
+- Use one or more sensors on Arduino to control some aspect of your midterm
+	project on p5
+- Take the [gravity wind
+	example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make
+	it so every time the ball bounces one led lights up and then turns off, and
+	you can control the wind from one analog sensor
+
+#### Introduce final project
+
+time permitting
+
+#### Motors
+
+An LED can make light, what makes motion?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	=> **Electromagnetism**
+
+Electrical devices that rely on the principle of electromagnetism:
+
+- Electromagnets
+- Loudspeakers and headphones
+- Solenoid
+- Relays
+- All kind of motors
+	- AC motors
+	- DC motors
+	- Brushless DC motors
+	- Stepper motors
+	- Servo motors (which actually consist of a DC motor + servo circuitry)
+
+##### In-class exercise
+
+- Take the DC motor and connect it directly to 5V and GND
+- Now reverse the wires
+
+Can we connect the motor to an Arduino output just like we did with the piezo
+buzzer?
+- **No!**
+
+Why not?
+- Arduino current limitations
+
+##### Arduino current limitations
+
+- What is current? It is the rate of flow of electrons through a conductor.
+	- You don't get to control the current. 
+	- The voltage depends on the current and the resistance (Ohm's law: I=V/R)
+	- You can provide a voltage (with Arduino, the voltage is always 5V)
+	- Each device has it's own "resistance"
+
+LEDs have relatively <strong>high</strong> "resistance", 
+and so consume <strong>low</strong> current.
+Motors have relatively <strong>low</strong> "resistance", 
+and so consume <strong>high</strong> current
+
+- Current flowing through any resistance causes heat (P = I^2/R)
+- Everything has resistance
+
+**Therefore, anytime electricity is flowing there will be heat**
+
+**Heat causes damage**
+
+(We've not had to worry about that up to now because everything we've done
+uses very little current)
+
+Arduino **can not** protect itself from damaged caused by overheating. 
+It does not <strong>limit</strong> current, 
+it is <strong>damaged</strong> by too much current
+
+The amount of heat a component can withstand before it is damaged 
+is governed, to a large extent, by its size
+
+The transistors that make up Arduino are tiny 
+
+![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
+
+(Image courtesy of SparkFun)
+
+In order to control a motor with Arduino we need a separate device
+called a *motor driver*
+
+How does the motor driver avoid overheating?
+
+**It has much bigger transistors**
+
+Circuit Schematic
+
+![](media/arduinoSparkFunMotorDriver_schem.jpg)
+
+Here's a closeup of the motor driver with pins clearly labeled:
+![](https://cdn.sparkfun.com//assets/parts/1/2/4/8/2/14450a-02.jpg)
+
+How did I choose which pins to use?
+- Never use pins 0 and 1 (dedicated for USB communication)
+- Avoid pin 13 if possible (it flashes 3 times on reset)
+- Directional control pins (ain1, ain2, bin1, bin2) only require
+	digital signals so avoid pins with extra functionality 
+	(analog input, SPI, PWM)
+- Inclusion of the servo library 
+	disables `analogWrite()` on pins 9 and 10
+	(I'm not using the servo library now but perhaps I'll add it later)
+- Use of the `tone()` function 
+	disables `analogWrite()` on pins 3 and 11
+	(I'm not using the `tone()` function now but perhaps I'll add it later)
+- This leaves PWM pins 5 and 6 for the speed controls (pwma and pwmb)
+- Might as well choose nearby digital pins
+
+Code
+
+```
+
+const int ain1Pin = 3;
+const int ain2Pin = 4;
+const int pwmAPin = 5;
+
+const int bin1Pin = 8;
+const int bin2Pin = 7;
+const int pwmBPin = 6;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  // turn in one direction, full speed
+  Serial.println("full speed");
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, HIGH);
+  digitalWrite(ain2Pin, LOW);
+  // stay here for a second
+  delay(1000);
+
+  // slow down
+  Serial.println("slowing down");
+  int speed = 255;
+  while (speed--) {
+    analogWrite(pwmAPin, speed);
+    delay(20);
+  }
+}
+
+```
+
+Control the motor speed and direction using a potentiometer:
+
+```
+const int ain1Pin = 3;
+const int ain2Pin = 4;
+const int pwmAPin = 5;
+
+const int bin1Pin = 8;
+const int bin2Pin = 7;
+const int pwmBPin = 6;
+
+const int potPin = A5;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  int potVal = analogRead(potPin);
+  delay(20);
+  if (potVal > 1023 / 2) { //counterclockwise
+    digitalWrite(ain1Pin, HIGH);
+    digitalWrite(ain2Pin, LOW);
+    analogWrite(pwmAPin, potVal / 4);
+  } else { //clockwise
+    digitalWrite(ain1Pin, LOW);
+    digitalWrite(ain2Pin, HIGH);
+    analogWrite(pwmAPin, 255 - potVal / 4);
+  }
+}
+```
+
+##### Final project ideas
+
+### Tuesday 5 December 2023
+#### Today
+- Debugging
+- Fabrication and Construction Techniques
+- Soldering
+- Digital Multimeter
+- Final project status
+
+##### Debugging
+
+If you want my help solving a problem in your assignment, do the following:
+1. Figure out the simplest circuit and program that demonstrates your problem
+1. Write a message on Discord, describing carefully
+	1. What you think should happen
+	1. What you observe happens
+    1. Your schematic, code, and 
+the best picture you can take of your breadboard circuit 
+
+* What is a schematic?
+* What would you do if your LED doesn't seem to work?
+* What would you do if your motor doesn't seem to work?
+* What would you do if your light sensor doesn't seem to work?
+* What would you do if your potentiometer doesn't seem to work?
+* What techniques have you learned to help you find problems?
+
+#### Fabrication and Construction Techniques
+
+Follow [this](https://github.com/michaelshiloh/ProjectConstructionTechniques)
+guide
+
+#### Soldering
+
+##### How to use a Digital Multimeter (DMM) 
+
+- The three most useful measurements
+	- Continuity
+		- Checking connections
+		- Checking switches
+	- Voltage
+		- Checking sensor circuits
+		- Checking Arduino digital outputs
+	- Resistance
+		- Checking resistive sensors
+		- Checking motorso
+- How to connect to Arduino pins or the solderless breadboard
+
+### Thursday 7 December 2023
+#### Today
+- Course evaluations
+- Final project due date
+- [Showcase Equipment, Material, and Space Needs](https://docs.google.com/spreadsheets/d/1-8rp3WtKXeTRNX5si4_RlCaDUt9tRdaqlIOTk5iCsLs/edit#gid=1422352775)
+- [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
+- Availability over the weekend
+
+### Tuesday 12 December 2023
+##### todays-lecture
+#### Administration
+- Attendance
+#### Today
+- Course evaluations
 
 
 
