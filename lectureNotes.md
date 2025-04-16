@@ -2618,14 +2618,12 @@ without using `delay()`
 	 position to the next
 
 
-##### todays-lecture
 ### Tuesday 15 April 2025 3:35 - 6:15 Week 11
 ##### Today
 - Remember homework due on Thursday
 - Review
 - Serial Communication
 - Introduce final project
-- Motors
 - Soldering
 
 ##### Examples
@@ -2826,7 +2824,10 @@ In-class exercise (break class into groups of 2-3 students)
 
 #### Introduce final project
 
-time permitting
+##### todays-lecture
+### Thursday 17 April 2025 5:00 - 6:15 Week 11
+##### Today
+- Motors
 
 #### Motors
 
@@ -3033,7 +3034,6 @@ void loop() {
 
 ##### Final project ideas
 
-### Tuesday 5 December 2023
 #### Today
 - Debugging
 - Fabrication and Construction Techniques
@@ -3079,20 +3079,11 @@ guide
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
 
-### Thursday 7 December 2023
-#### Today
 - Course evaluations
 - Final project due date
 - [Showcase Equipment, Material, and Space Needs](https://docs.google.com/spreadsheets/d/1-8rp3WtKXeTRNX5si4_RlCaDUt9tRdaqlIOTk5iCsLs/edit#gid=1422352775)
 - [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
 - Availability over the weekend
-
-### Tuesday 12 December 2023
-##### todays-lecture
-#### Administration
-- Attendance
-#### Today
-- Course evaluations
 
 
 
