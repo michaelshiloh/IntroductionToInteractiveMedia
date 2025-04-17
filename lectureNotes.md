@@ -2828,6 +2828,8 @@ In-class exercise (break class into groups of 2-3 students)
 ### Thursday 17 April 2025 5:00 - 6:15 Week 11
 ##### Today
 - Announcement
+    - Thursday
+    - Discuss final projects on Tuesday (if you are ready)
 - Discuss reading: 
     - A Brief Rant on the Future of Interaction Design
     - A follow-up article
