@@ -2827,44 +2827,17 @@ In-class exercise (break class into groups of 2-3 students)
 ##### todays-lecture
 ### Thursday 17 April 2025 5:00 - 6:15 Week 11
 ##### Today
+- Announcement
+- Discuss reading: 
+    - A Brief Rant on the Future of Interaction Design
+    - A follow-up article
+- Show your homework: 
+    - Musical Instrument (working in pairs)
 - Motors
 
 #### Motors
 
 An LED can make light, what makes motion?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	=> **Electromagnetism**
 
