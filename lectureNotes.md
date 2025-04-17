@@ -2830,6 +2830,7 @@ In-class exercise (break class into groups of 2-3 students)
 - Announcement
     - Thursday
     - Discuss final projects on Tuesday (if you are ready)
+    - Capstone Festival opening
 - Discuss reading: 
     - A Brief Rant on the Future of Interaction Design
     - A follow-up article
