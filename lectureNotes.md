@@ -2824,7 +2824,6 @@ In-class exercise (break class into groups of 2-3 students)
 
 #### Introduce final project
 
-##### todays-lecture
 ### Thursday 17 April 2025 5:00 - 6:15 Week 11
 ##### Today
 - Announcement
@@ -2838,7 +2837,19 @@ In-class exercise (break class into groups of 2-3 students)
     - Musical Instrument (working in pairs)
 - Motors
 
-#### Motors
+##### todays-lecture
+### Tuesday 22 April 2025 3:35 - 6:15 Week 12
+##### Today
+- Final Project Proposal
+- DC motors
+- Fabrication and Construction Techniques
+- Debugging
+- Digital Multimeter
+
+
+##### Final project ideas
+
+##### Motors
 
 An LED can make light, what makes motion?
 
@@ -3008,14 +3019,10 @@ void loop() {
 }
 ```
 
-##### Final project ideas
+##### Fabrication and Construction Techniques
 
-#### Today
-- Debugging
-- Fabrication and Construction Techniques
-- Soldering
-- Digital Multimeter
-- Final project status
+Follow [this](https://github.com/michaelshiloh/ProjectConstructionTechniques)
+guide
 
 ##### Debugging
 
@@ -3034,14 +3041,7 @@ the best picture you can take of your breadboard circuit
 * What would you do if your potentiometer doesn't seem to work?
 * What techniques have you learned to help you find problems?
 
-#### Fabrication and Construction Techniques
-
-Follow [this](https://github.com/michaelshiloh/ProjectConstructionTechniques)
-guide
-
-#### Soldering
-
-##### How to use a Digital Multimeter (DMM) 
+###### How to use a Digital Multimeter (DMM) 
 
 - The three most useful measurements
 	- Continuity
@@ -3055,11 +3055,8 @@ guide
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
 
-- Course evaluations
-- Final project due date
-- [Showcase Equipment, Material, and Space Needs](https://docs.google.com/spreadsheets/d/1-8rp3WtKXeTRNX5si4_RlCaDUt9tRdaqlIOTk5iCsLs/edit#gid=1422352775)
-- [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
-- Availability over the weekend
+##### Course evaluations
+##### [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
 
 
 
