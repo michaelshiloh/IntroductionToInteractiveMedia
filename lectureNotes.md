@@ -3071,8 +3071,8 @@ come up with a test that would tell you if that was the problem
 **Final Project Grading**
 
 - Setup projects in Arts Center Lobby during last class (Tuesday May 6)
-- Bring your project to the lobby at the start of class - 2:10pm
-- Projects will be presented and evaluated at 2:30pm sharp!
+- Bring your project to the lobby at the start of class - 3:35pm
+- Projects will be presented and evaluated at 3:35pm sharp!
 
 **End of Semester Showcase**
 
