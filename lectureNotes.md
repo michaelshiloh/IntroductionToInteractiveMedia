@@ -3070,6 +3070,7 @@ come up with a test that would tell you if that was the problem
 ##### [IM End of Semester Show Timeline](https://intro.nyuadim.com/)
 
 
+------Electric circuit theory reference ----
 
 ##### Electricity 
 - Introduction to electricity
