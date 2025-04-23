@@ -2837,14 +2837,11 @@ In-class exercise (break class into groups of 2-3 students)
     - Musical Instrument (working in pairs)
 - Motors
 
-##### todays-lecture
 ### Tuesday 22 April 2025 3:35 - 6:15 Week 12
 ##### Today
 - Final Project Proposal
 - DC motors
 - Fabrication and Construction Techniques
-- Debugging
-- Digital Multimeter
 
 
 ##### Final project ideas
@@ -3024,6 +3021,15 @@ void loop() {
 Follow [this](https://github.com/michaelshiloh/ProjectConstructionTechniques)
 guide
 
+##### todays-lecture
+##### aya-start-here
+### Thursday 24 April 2025 5:00 - 6:15 Week 12
+##### Today
+- Discuss reading
+- Show homework
+- Debugging
+- Digital Multimeter
+
 ##### Debugging
 
 If you want my help solving a problem in your assignment, do the following:
@@ -3034,8 +3040,13 @@ If you want my help solving a problem in your assignment, do the following:
     1. Your schematic, code, and 
 the best picture you can take of your breadboard circuit 
 
-* What is a schematic?
+Try to think logically what could be the cause of these problems, and try to
+come up with a test that would tell you if that was the problem
 * What would you do if your LED doesn't seem to work?
+    - Is the LED backwards?
+    - Is the LED burned out?
+    - Is the Arduino pin damaged?
+    - Is one of the jumper wires broken?
 * What would you do if your motor doesn't seem to work?
 * What would you do if your light sensor doesn't seem to work?
 * What would you do if your potentiometer doesn't seem to work?
