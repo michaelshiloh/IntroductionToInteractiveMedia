@@ -3021,8 +3021,6 @@ void loop() {
 Follow [this](https://github.com/michaelshiloh/ProjectConstructionTechniques)
 guide
 
-##### todays-lecture
-##### aya-start-here
 ### Thursday 24 April 2025 5:00 - 6:15 Week 12
 ##### Today
 - Discuss reading
@@ -3066,13 +3064,22 @@ come up with a test that would tell you if that was the problem
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
 
-##### IM End of Semester Show Timeline
+##### todays-lecture
+### Thursday 1 May 2025 5:00 - 6:15 Week 13
+##### Today
+- IM End of Semester Show Timeline
+- Course evaluations
+
+##### Final Project is due Tuesday May 6 at 3:55pm
 
 **Final Project Grading**
 
-- Setup projects in Arts Center Lobby during last class (Tuesday May 6)
+- You will have 20 minutes to set up your project. You should come prepared.
+  Come early if you can, or prepare your project in whatever way is necessary
+  so that you can have it set up in 20 minutes or less
 - Bring your project to the lobby at the start of class - 3:35pm
-- Projects will be presented and evaluated at 3:35pm sharp!
+- Setup projects at your designated table
+- Projects will be presented and evaluated at 3:55pm sharp!
 
 **End of Semester Showcase**
 
