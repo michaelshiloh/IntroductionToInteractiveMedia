@@ -2760,6 +2760,10 @@ void loop() {
 
 
 ##### Arduino-p5.js communication
+
+**Only Google Chrome web browser is known to work**
+
+
 - Build [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week_11_Serial_schematic.png) circuit
 - Download [this](https://github.com/mangtronix/IntroductionToInteractiveMedia/blob/master/code/Week11Serial.ino) sketch to your Arduino
 - Run [this](https://editor.p5js.org/mangtronix/sketches/s67XC0zT4) p5 code on your laptop
@@ -3070,24 +3074,32 @@ come up with a test that would tell you if that was the problem
 - IM End of Semester Show Timeline
 - Course evaluations
 
-##### Final Project is due Tuesday May 6 at 3:55pm
+##### Final Project Evaluations
 
-**Final Project Grading**
+We will have a semi-final evaluation of your project on Tuesday.  Your project
+should be completely functional at this date. Aesthetic details can be added
+between Tuesday and Thursday.
 
-- You will have 20 minutes to set up your project. You should come prepared.
-  Come early if you can, or prepare your project in whatever way is necessary
-  so that you can have it set up in 20 minutes or less
-- Bring your project to the lobby at the start of class - 3:35pm
-- Setup projects at your designated table
+- You will have 20 minutes in class to set up your project.  Practice setting
+  it up beforehand, and if it takes longer than 20 minutes, then you need to
+  prepare your project beforehand so that it can be set up in class in 20
+  minutes or less. 
+- These 20 minutes are not for debugging projects. 
 - Projects will be presented and evaluated at 3:55pm sharp!
 
 **End of Semester Showcase**
 
 The showcase takes place on Thursday May 8, 5-8pm
 
-- Have your project running by 4:30pm. 
-- Exhibit your project in the IM End of Semester Show
-- Deinstall your work at end of show. 
+- Setup projects at your designated table
+- Typically you can set up as early as the day before. Take advantage of this.
+  I will update you as soon as I know myself.
+- Your project set up and functioning perfectly by 4:30pm. The tables must be
+  cleared of any tools, backpacks, food, etc. Nothing should be on the table
+  apart from your project.
+- Exhibit your project in the IM End of Semester Show. Details to follow.
+- Deinstall your work at end of show. Do not leave any part of your project
+  behind.
 
 
 ##### Course evaluations
