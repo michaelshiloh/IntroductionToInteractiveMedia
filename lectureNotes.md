@@ -3113,11 +3113,11 @@ The showcase takes place on Thursday May 8, 5-8pm
 
 ##### Course evaluations
 
-------Electric circuit theory reference ----
 
 ##### todays-lecture
 ### Tuesday 6 May 2025 3:35 - 6:15 Week 14
 ##### Today
+- **Turn off Soldering Irons**!
 - 3:35-3:55 set up projects
 - 3:55 Semi-final project evaluation 
 - Review schedule for Thursday
@@ -3129,6 +3129,8 @@ The showcase takes place on Thursday May 8, 5-8pm
 - Projects that are not set up by 4:30 on Thursday can not be shown
 - See [End of Semester Showcase](lectureNotes.md/#end-of-semester-showcase) above
 
+
+------Electric circuit theory reference ----
 
 ##### Electricity 
 - Introduction to electricity
