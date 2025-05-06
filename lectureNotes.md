@@ -3035,12 +3035,14 @@ guide
 ##### Debugging
 
 If you want help solving a problem in your assignment, do the following:
-1. Reduce your problem to the simplest circuit and program that demonstrates your problem. 
+1. Reduce your problem to the simplest circuit and program that demonstrates
+   your problem.  (Don't be surprised if while doing this you solve your
+   problem. This is usually what happens to me.)
 1. Write a message on Discord, describing carefully
-	1. What you think should happen
-	1. What you observe happens
-    1. Your schematic, code (both p5js and Arduino), and 
-the best picture you can take of your breadboard circuit 
+    1. What you think should happen
+    1. What you observe happens
+    1. Your schematic, code (both p5js and Arduino), and the best picture you
+       can take of your breadboard circuit 
 
 Try to think logically what could be the cause of these problems, and try to
 come up with a test that would tell you if that was the problem
@@ -3068,7 +3070,6 @@ come up with a test that would tell you if that was the problem
 		- Checking motorso
 - How to connect to Arduino pins or the solderless breadboard
 
-##### todays-lecture
 ### Thursday 1 May 2025 5:00 - 6:15 Week 13
 ##### Today
 - IM End of Semester Show Timeline
@@ -3087,7 +3088,7 @@ between Tuesday and Thursday.
 - These 20 minutes are not for debugging projects. 
 - Projects will be presented and evaluated at 3:55pm sharp!
 
-**End of Semester Showcase**
+##### End of Semester Showcase
 
 The showcase takes place on Thursday May 8, 5-8pm
 
@@ -3105,6 +3106,21 @@ The showcase takes place on Thursday May 8, 5-8pm
 ##### Course evaluations
 
 ------Electric circuit theory reference ----
+
+##### todays-lecture
+### Tuesday 6 May 2025 3:35 - 6:15 Week 14
+##### Today
+- 3:35-3:55 set up projects
+- 3:55 Semi-final project evaluation 
+- Review schedule for Thursday
+- Visit showcase area
+
+##### Review schedule for Thursday
+- Our tables are ready. You can set up your projects any time before Thursday
+  at 4:30
+- Projects that are not set up by 4:30 on Thursday can not be shown
+- See [End of Semester Showcase](lectureNotes.md/#end-of-semester-showcase) above
+
 
 ##### Electricity 
 - Introduction to electricity
