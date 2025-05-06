@@ -2493,7 +2493,7 @@ Here is an example:
 ![](media/handDrawnSchematicExample.jpg)
 
 - Hand drawn switches can use the simple symbol
-- Resources are available to help you with homework (me, Jack), but only
+- Resources are available to help you with homework, but only
 	if you start your homework early enough. If you wait until the last minute
 	and then don't have time to get help, that is unexcusable.
 - Use constants for pin numbers
@@ -3034,12 +3034,12 @@ guide
 
 ##### Debugging
 
-If you want my help solving a problem in your assignment, do the following:
-1. Figure out the simplest circuit and program that demonstrates your problem
+If you want help solving a problem in your assignment, do the following:
+1. Reduce your problem to the simplest circuit and program that demonstrates your problem. 
 1. Write a message on Discord, describing carefully
 	1. What you think should happen
 	1. What you observe happens
-    1. Your schematic, code, and 
+    1. Your schematic, code (both p5js and Arduino), and 
 the best picture you can take of your breadboard circuit 
 
 Try to think logically what could be the cause of these problems, and try to
