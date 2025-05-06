@@ -3094,12 +3094,21 @@ The showcase takes place on Thursday May 8, 5-8pm
 
 - Set up your project at your designated table
 - You can set up any time from Tuesday morning through Thursday at 4:30pm
-- Your project set up and functioning perfectly by 4:30pm. The tables must be
+- Your project must be set up and functioning perfectly by 4:30pm. 
+- The tables must be
   cleared of any tools, backpacks, food, etc. Nothing should be on the table
   apart from your project.
-- Exhibit your project in the IM End of Semester Show. Details to follow.
+- Exhibit your project in the IM End of Semester Show. 
 - Deinstall your work at end of show. Do not leave any part of your project
   behind.
+- Return any equipment you have checked out to room 028
+- You may keep your kit and any parts from the consumables area
+- If you wish to donate any of your electronics to the IM program, leave them
+  in the designated area
+- Recycle any part of your project that can be recycled (plastic, cardboard,
+  metal)
+- Dispose properly of any parts that can not be recycled. If the waste bin is
+  full, find another one down the hall
 
 
 ##### Course evaluations
