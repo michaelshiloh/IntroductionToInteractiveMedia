@@ -3092,9 +3092,8 @@ between Tuesday and Thursday.
 
 The showcase takes place on Thursday May 8, 5-8pm
 
-- Setup projects at your designated table
-- Typically you can set up as early as the day before. Take advantage of this.
-  I will update you as soon as I know myself.
+- Set up your project at your designated table
+- You can set up any time from Tuesday morning through Thursday at 4:30pm
 - Your project set up and functioning perfectly by 4:30pm. The tables must be
   cleared of any tools, backpacks, food, etc. Nothing should be on the table
   apart from your project.
